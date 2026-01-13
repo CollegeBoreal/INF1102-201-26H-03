@@ -16,7 +16,7 @@
 
 |:hash:| Boréal :id:                | README.md    | images |
 |------|----------------------------|--------------|--------|
-| 0 | [300133071](../300133071/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
+| 0 | [300133071](../300133071/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
 | 1 | [300137754](../300137754/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
 | 2 | [300138205](../300138205/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 3 | [300138573](../300138573/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
@@ -42,4 +42,4 @@
 | 23 | [300151042](../300151042/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 24 | [300151354](../300151354/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 25 | [300151607](../300151607/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
-| :abacus: | \$\\frac{4}{26}\$ = 15.38% | \$\displaystyle\sum_{i=1}^{26} s_i\$ = 4 |
+| :abacus: | \$\\frac{5}{26}\$ = 19.23% | \$\displaystyle\sum_{i=1}^{26} s_i\$ = 5 |
