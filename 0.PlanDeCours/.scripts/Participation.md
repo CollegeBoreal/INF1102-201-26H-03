@@ -1,4 +1,4 @@
-# Participation au 13-01-2026 23:18
+# Participation au 13-01-2026 23:20
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -32,7 +32,7 @@
 | 13 | [300146418](../300146418/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
 | 14 | [300146721](../300146721/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 15 | [300147629](../300147629/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
-| 16 | [300147816](../300147816/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
+| 16 | [300147816](../300147816/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
 | 17 | [300150195](../300150195/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 18 | [300150385](../300150385/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 19 | [300150416](../300150416/README.md) :point_right: [](https://github.com/) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
