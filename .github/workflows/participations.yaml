@@ -1,0 +1,35 @@
+name: Participations
+
+on: [push]
+
+jobs:
+  presence:
+    name: Vérification de la participation
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Évaluer les chapitres
+        shell: pwsh
+        run: |
+          ##
+          ## Évaluation du chapitre 0.PlanDeCours
+          ##
+          Write-Host "Evaluating chapter 0.PlanDeCours Participation"
+          Set-Location 0.PlanDeCours
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+      - name: Commit files
+        shell: pwsh
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Vérification de la participation" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
