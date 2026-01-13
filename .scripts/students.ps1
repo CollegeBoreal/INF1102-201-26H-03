@@ -33,47 +33,61 @@ $ETUDIANTS = @(
 
 # GitHub usernames correspondants
 $IDS = @(
-    'RedaYousfi'          # 300135538
-    'laggabkhalef'        # 300146112
-    'harkatiaymen'        # 300146676 → 1ere liste
-    'ouailg28'            # 300148094 → 1ere liste
-    'kemiche06'           # 300150268 → 2e liste
-    'remplir_ici_6'       # 300150275 → pas trouvé
-    'lounasallouti1'      # 300150296 → 2e liste
-    'ismailtrache'        # 300150395
-    'hanichou'            # 300150557 → pas trouvé
-    'jessmaud'            # 300151233 → 2e liste
-    'hakimsb'             # 300151258 → 1ere liste
-    'sarahocine'          # 300151347 → 1ere liste
-    'justinsandy99'       # 300151403
-    'remplir_ici_14'      # 300151466 → pas trouvé
-    'Rabia-777'           # 300151556 → 1ere liste
-    '205994799'           # 300151608 → 2e liste (IDS manquant exact, utiliser username précédent ou placeholder)
-    'el-calvino'          # 300152131
-    'Hannibalcarthage'    # 300152260 → 1ere liste
-    'syphax25'            # 300152410 → 2e liste
+octocat # 300133071
+octocat # 300137754
+octocat # 300138205
+octocat # 300138573
+octocat # 300141429
+octocat # 300141625
+octocat # 300141657
+octocat # 300141716
+octocat # 300141858
+octocat # 300142072
+octocat # 300143951
+octocat # 300144176
+octocat # 300145405
+octocat # 300146418
+octocat # 300146721
+octocat # 300147629
+octocat # 300147816
+octocat # 300150195
+octocat # 300150385
+octocat # 300150416
+octocat # 300150433
+octocat # 300150485
+octocat # 300150558
+octocat # 300151042
+octocat # 300151354
+octocat # 300151607
 )
 
 # GitHub avatars correspondants
 $AVATARS = @(
-    133056385    # 300135538 → 2e liste
-    205994703    # 300146112
-    211595997    # 300146676 → 1ere liste
-    212054634    # 300148094 → 1ere liste
-    207268490    # 300150268 → 2e liste
-    205994740    # 300150275 → pas trouvé exact
-    205994785    # 300150296 → 2e liste
-    211577767    # 300150395 → 2e liste
-    205994753    # 300150557 → pas trouvé exact
-    223416913    # 300151233 → 2e liste
-    231778604    # 300151258 → 1ere liste
-    207281891    # 300151347 → 1ere liste
-    211593057    # 300151403 → 1ere liste
-    205994792    # 300151466 → pas trouvé exact
-    231781132    # 300151556 → 1ere liste
-    206000307    # 300151608 → 2e liste
-    205994709    # 300152131
-    195238262    # 300152260 → 1ere liste
-    212047331    # 300152410 → 2e liste
+583231 # 300133071
+583231 # 300137754
+583231 # 300138205
+583231 # 300138573
+583231 # 300141429
+583231 # 300141625
+583231 # 300141657
+583231 # 300141716
+583231 # 300141858
+583231 # 300142072
+583231 # 300143951
+583231 # 300144176
+583231 # 300145405
+583231 # 300146418
+583231 # 300146721
+583231 # 300147629
+583231 # 300147816
+583231 # 300150195
+583231 # 300150385
+583231 # 300150416
+583231 # 300150433
+583231 # 300150485
+583231 # 300150558
+583231 # 300151042
+583231 # 300151354
+583231 # 300151607
 )
 
