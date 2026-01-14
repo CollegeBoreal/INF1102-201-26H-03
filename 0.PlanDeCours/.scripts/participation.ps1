@@ -1,6 +1,6 @@
 #!/usr/bin/env pwsh
 # --------------------------------------
-# PowerShell equivalent of participation.sh
+# PowerShell participation script using $STUDENTS array
 # --------------------------------------
 
 # Import variables from another script (students.ps1)
@@ -32,15 +32,20 @@ Write-Output "|------|----------------------------|--------------|--------|"
 $i = 0
 $s = 0
 
-# Loop through student IDs
-foreach ($id in $ETUDIANTS) {
-    $URL = "[{0}](https://github.com/{0}) <image src='https://avatars0.githubusercontent.com/u/{1}?s=460&v=4' width=20 height=20></image>" -f $IDS[$i], $AVATARS[$i]
-    $FILE = "$id/README.md"
-    $FOLDER = "$id/images"
+# Loop through the textual $STUDENTS array
+foreach ($entry in $STUDENTS) {
+    $parts = $entry -split '\|'
+    $StudentID = $parts[0]
+    $GitHubID  = $parts[1]
+    $AvatarID  = $parts[2]
 
-    $OK = "| $i | [$id](../$FILE) :point_right: $URL | :heavy_check_mark: | :x: |"
-    $FULL_OK = "| $i | [$id](../$FILE) :point_right: $URL | :heavy_check_mark: | :heavy_check_mark: |"
-    $KO = "| $i | [$id](../$FILE) :point_right: $URL | :x: | :x: |"
+    $URL = "[{0}](https://github.com/{0}) <image src='https://avatars0.githubusercontent.com/u/{1}?s=460&v=4' width=20 height=20></image>" -f $GitHubID, $AvatarID
+    $FILE = "$StudentID/README.md"
+    $FOLDER = "$StudentID/images"
+
+    $OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :x: |"
+    $FULL_OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :heavy_check_mark: |"
+    $KO = "| $i | [$StudentID](../$FILE) :point_right: $URL | :x: | :x: |"
 
     if (Test-Path $FILE) {
         $ACTUAL_NAME = Split-Path -Leaf (Resolve-Path $FILE)
