@@ -30,12 +30,12 @@ $STUDENTS = @(
 "300151607|octocat|583231"
 )
 
-foreach ($entry in $STUDENTS) {
-    $parts = $entry -split '\|'
-    $StudentID = $parts[0]
-    $GitHubID  = $parts[1]
-    $AvatarID  = $parts[2]
-
-    Write-Output "Student: $StudentID, GitHub: $GitHubID, Avatar: $AvatarID"
-}
+#foreach ($entry in $STUDENTS) {
+    #$parts = $entry -split '\|'
+    #$StudentID = $parts[0]
+    #$GitHubID  = $parts[1]
+    #$AvatarID  = $parts[2]
+#
+    #Write-Output "Student: $StudentID, GitHub: $GitHubID, Avatar: $AvatarID"
+#}
 
