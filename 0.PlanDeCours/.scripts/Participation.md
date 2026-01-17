@@ -1,4 +1,4 @@
-# Participation au 17-01-2026 04:16
+# Participation au 17-01-2026 04:27
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -31,7 +31,7 @@
 | 12 | [300145405](../300145405/README.md) :point_right: [octocat](https://github.com/octocat) <image src='https://avatars0.githubusercontent.com/u/583231?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 13 | [300146418](../300146418/README.md) :point_right: [IkramSidhoum](https://github.com/IkramSidhoum) <image src='https://avatars0.githubusercontent.com/u/198275764?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
 | 14 | [300146721](../300146721/README.md) :point_right: [smailikh](https://github.com/smailikh) <image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image> | :x: | :x: |
-| 15 | [300147629](../300147629/README.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :x: | :x: |
+| 15 | [300147629](../300147629/README.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
 | 16 | [300147816](../300147816/README.md) :point_right: [HananeZerrouki](https://github.com/HananeZerrouki) <image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
 | 17 | [300150195](../300150195/README.md) :point_right: [amelzourane](https://github.com/amelzourane) <image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 18 | [300150385](../300150385/README.md) :point_right: [belka1996](https://github.com/belka1996) <image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
