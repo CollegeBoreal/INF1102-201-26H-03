@@ -1,4 +1,4 @@
-# Participation au 20-01-2026 20:19
+# Participation au 20-01-2026 20:20
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -14,8 +14,8 @@
 
 ## :a: Présence
 
-|:hash:| Boréal :id:                | README.md    | images |
-|------|----------------------------|--------------|--------|
+|:hash:| Boréal :id:                | :scroll: RAPPORT.ipynb |
+|------|----------------------------|------------------------|
 | 0 | [300133071](../300133071/RAPPORT.ipynb) :point_right: [nelsonwilliam237](https://github.com/nelsonwilliam237) <image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 1 | [300137754](../300137754/RAPPORT.ipynb) :point_right: [josephbeni1](https://github.com/josephbeni1) <image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 2 | [300138205](../300138205/RAPPORT.ipynb) :point_right: [taylor123marc](https://github.com/taylor123marc) <image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
