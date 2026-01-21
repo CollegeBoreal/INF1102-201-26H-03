@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "password": false,
+  "pid": 13012,
+  "port": 8888,
+  "root_dir": "C:\\Users\\HICHEM\\developer\\INF1102-201-26H-03\\1.Programmation\\2.Jupyter\\300151042",
+  "secure": false,
+  "sock": "",
+  "token": "5a7c6ceeb82b6af808c41761a2d6c5196b1e68e7af7f8330",
+  "url": "http://localhost:8888/",
+  "version": "2.17.0"
+}
