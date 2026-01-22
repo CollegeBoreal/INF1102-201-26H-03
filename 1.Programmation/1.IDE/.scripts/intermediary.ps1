@@ -47,7 +47,7 @@ foreach ($entry in $STUDENTS) {
 
     if (Test-Path $FILE) {
         $ACTUAL_NAME = Split-Path -Leaf (Resolve-Path $FILE)
-        if ($ACTUAL_NAME -eq "README.md") {
+        if ($ACTUAL_NAME -eq "$StudentID.md") {
                 Write-Output $OK
         }
         else {

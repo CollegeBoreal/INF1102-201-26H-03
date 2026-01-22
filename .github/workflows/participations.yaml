@@ -22,6 +22,14 @@ jobs:
           Set-Location ..
 
           ##
+          ## Évaluation du chapitre 1.IDE
+          ##
+          Write-Host "Evaluating chapter 1.IDE Participation"
+          Set-Location 1.Programmation/1.IDE
+          pwsh .scripts/run.ps1
+          Set-Location ../..
+
+          ##
           ## Évaluation du chapitre 2.Jupyter
           ##
           Write-Host "Evaluating chapter 2.Jupyter Participation"

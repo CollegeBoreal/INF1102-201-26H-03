@@ -1,4 +1,4 @@
-# Participation au 22-01-2026 18:40
+# Participation au 22-01-2026 18:48
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -16,23 +16,23 @@
 
 |:hash:| Boréal :id:                | :id:.md    |
 |------|----------------------------|------------|
-| 0 | [300133071](../300133071.md) :point_right: [nelsonwilliam237](https://github.com/nelsonwilliam237) <image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image> | :x: |
-| 1 | [300137754](../300137754.md) :point_right: [josephbeni1](https://github.com/josephbeni1) <image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image> | :x: |
+| 0 | [300133071](../300133071.md) :point_right: [nelsonwilliam237](https://github.com/nelsonwilliam237) <image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
+| 1 | [300137754](../300137754.md) :point_right: [josephbeni1](https://github.com/josephbeni1) <image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 2 | [300138205](../300138205.md) :point_right: [taylor123marc](https://github.com/taylor123marc) <image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image> | :x: |
-| 3 | [300138573](../300138573.md) :point_right: [nourmiri](https://github.com/nourmiri) <image src='https://avatars0.githubusercontent.com/u/185266428?s=460&v=4' width=20 height=20></image> | :x: |
-| 4 | [300141429](../300141429.md) :point_right: [barrynetwork](https://github.com/barrynetwork) <image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image> | :x: |
-| 5 | [300141625](../300141625.md) :point_right: [Mamefatim14](https://github.com/Mamefatim14) <image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image> | :x: |
+| 3 | [300138573](../300138573.md) :point_right: [nourmiri](https://github.com/nourmiri) <image src='https://avatars0.githubusercontent.com/u/185266428?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
+| 4 | [300141429](../300141429.md) :point_right: [barrynetwork](https://github.com/barrynetwork) <image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
+| 5 | [300141625](../300141625.md) :point_right: [Mamefatim14](https://github.com/Mamefatim14) <image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 6 | [300141657](../300141657.md) :point_right: [leandre00126](https://github.com/leandre00126) <image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image> | :x: |
 | 7 | [300141716](../300141716.md) :point_right: [nabilaouladbouih](https://github.com/nabilaouladbouih) <image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image> | :x: |
-| 8 | [300141858](../300141858.md) :point_right: [karimcode24](https://github.com/karimcode24) <image src='https://avatars0.githubusercontent.com/u/205304457?s=460&v=4' width=20 height=20></image> | :x: |
+| 8 | [300141858](../300141858.md) :point_right: [karimcode24](https://github.com/karimcode24) <image src='https://avatars0.githubusercontent.com/u/205304457?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 9 | [300142072](../300142072.md) :point_right: [sigadiarra](https://github.com/sigadiarra) <image src='https://avatars0.githubusercontent.com/u/230452797?s=460&v=4' width=20 height=20></image> | :x: |
-| 10 | [300143951](../300143951.md) :point_right: [frank17art](https://github.com/frank17art) <image src='https://avatars0.githubusercontent.com/u/205994994?s=460&v=4' width=20 height=20></image> | :x: |
+| 10 | [300143951](../300143951.md) :point_right: [frank17art](https://github.com/frank17art) <image src='https://avatars0.githubusercontent.com/u/205994994?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 11 | [300144176](../300144176.md) :point_right: [awaworks](https://github.com/awaworks) <image src='https://avatars0.githubusercontent.com/u/223561186?s=460&v=4' width=20 height=20></image> | :x: |
 | 12 | [300145405](../300145405.md) :point_right: [Barry224Sadou](https://github.com/Barry224Sadou) <image src='https://avatars0.githubusercontent.com/u/202224344?s=460&v=4' width=20 height=20></image> | :x: |
 | 13 | [300145940](../300145940.md) :point_right: [TasnimMarzouki](https://github.com/TasnimMarzouki) <image src='https://avatars0.githubusercontent.com/u/234069235?s=460&v=4' width=20 height=20></image> | :x: |
 | 14 | [300146418](../300146418.md) :point_right: [IkramSidhoum](https://github.com/IkramSidhoum) <image src='https://avatars0.githubusercontent.com/u/198275764?s=460&v=4' width=20 height=20></image> | :x: |
 | 15 | [300146721](../300146721.md) :point_right: [smailikh](https://github.com/smailikh) <image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image> | :x: |
-| 16 | [300147629](../300147629.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :x: |
+| 16 | [300147629](../300147629.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 17 | [300147816](../300147816.md) :point_right: [HananeZerrouki](https://github.com/HananeZerrouki) <image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image> | :x: |
 | 18 | [300150195](../300150195.md) :point_right: [amelzourane](https://github.com/amelzourane) <image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image> | :x: |
 | 19 | [300150385](../300150385.md) :point_right: [belka1996](https://github.com/belka1996) <image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image> | :x: |
