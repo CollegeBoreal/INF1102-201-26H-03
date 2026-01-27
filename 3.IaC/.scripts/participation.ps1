@@ -34,7 +34,7 @@ switch ($Group) {
 
 
 # Header
-Write-Output "# Participation – Groupe $Group – $(Get-Date -Format 'dd-MM-yyyy HH:mm')"
+Write-Output "# Participation – Groupe $Group"
 Write-Output ""
 
 Write-Output "| Table des matières            | Description                                             |"
