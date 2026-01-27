@@ -315,12 +315,16 @@ on darwin_arm64
 
 #### 2️⃣ Create project structure
 
-`mkdir` :id:
-
-`cd` :id:
+- [ ] Sur bash 🐧
 
 ```bash
 touch provider.tf main.tf variables.tf terraform.tfvars
+```
+
+- [ ] Sur Powershell 🪟
+
+```powershell
+New-Item provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
 ```
 
 ---
