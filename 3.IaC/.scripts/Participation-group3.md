@@ -1,4 +1,4 @@
-# Participation – Groupe 3 – 27-01-2026 19:03
+# Participation – Groupe 3
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|

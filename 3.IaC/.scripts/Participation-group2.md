@@ -1,4 +1,4 @@
-# Participation – Groupe 2 – 27-01-2026 19:03
+# Participation – Groupe 2
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
