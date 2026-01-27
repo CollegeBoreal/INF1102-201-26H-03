@@ -37,6 +37,14 @@ jobs:
           pwsh .scripts/run.ps1
           Set-Location ../..
 
+          ##
+          ## Évaluation du chapitre 3.IaC
+          ##
+          Write-Host "Evaluating chapter 3.IaC Participation"
+          Set-Location 3.IaC
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
       - name: Commit files
         shell: pwsh
         run: |
