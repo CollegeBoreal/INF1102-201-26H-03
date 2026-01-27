@@ -18,6 +18,13 @@ switch ($Group) {
     default { throw "Groupe invalide" }
 }
 
+switch ($Group) {
+    1 { $ACTIVE_SERVERS = $SERVER_GROUP_1 }
+    2 { $ACTIVE_SERVERS = $SERVER_GROUP_2 }
+    3 { $ACTIVE_SERVERS = $SERVER_GROUP_3 }
+    default { throw "Groupe invalide" }
+}
+
 # Header
 Write-Output "# Participation – Groupe $Group – $(Get-Date -Format 'dd-MM-yyyy HH:mm')"
 Write-Output ""
@@ -37,27 +44,28 @@ Write-Output "| :x:                | Projet inexistant             |"
 Write-Output ""
 Write-Output "## :a: Présence"
 Write-Output ""
-Write-Output "|:hash:| Boréal :id:                | README.md    | images |"
-Write-Output "|------|----------------------------|--------------|--------|"
+Write-Output "|:hash:| Boréal :id:                | README.md    | images | :links: IP |"
+Write-Output "|------|----------------------------|--------------|--------|------------|"
 
 # Initialize counters
 $i = 0
 $s = 0
 
 # Loop through the textual $STUDENTS array
-foreach ($entry in $ACTIVE_GROUP) {
-    $parts = $entry -split '\|'
+for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
+    $parts = $ACTIVE_GROUP[$g] -split '\|'
     $StudentID = $parts[0]
     $GitHubID  = $parts[1]
     $AvatarID  = $parts[2]
+    $ServerID  = $ACTIVE_SERVERS[$g]
 
     $URL = "[{0}](https://github.com/{0}) <image src='https://avatars0.githubusercontent.com/u/{1}?s=460&v=4' width=20 height=20></image>" -f $GitHubID, $AvatarID
     $FILE = "$StudentID/README.md"
     $FOLDER = "$StudentID/images"
 
-    $OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :x: |"
-    $FULL_OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :heavy_check_mark: |"
-    $KO = "| $i | [$StudentID](../$FILE) :point_right: $URL | :x: | :x: |"
+    $OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :x: | ${ServerID} |"
+    $FULL_OK = "| $i | [$StudentID](../$FILE) :point_right: $URL | :heavy_check_mark: | :heavy_check_mark: | ${ServerID} |"
+    $KO = "| $i | [$StudentID](../$FILE) :point_right: $URL | :x: | :x: | ${ServerID} |"
 
     if (Test-Path $FILE) {
         $ACTUAL_NAME = Split-Path -Leaf (Resolve-Path $FILE)

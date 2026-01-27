@@ -1,11 +1,11 @@
 resource "proxmox_vm_qemu" "vm1" {
-  name        = "vm098957"
+  name        = var.pm_vm_name
   target_node = "labinfo"
   clone       = "ubuntu-jammy-template"
 
   cores   = 2
   sockets = 1
-  memory  = 2048
+  memory  = 4096
 
   scsihw = "virtio-scsi-pci"
 
@@ -22,10 +22,8 @@ resource "proxmox_vm_qemu" "vm1" {
 
   os_type = "cloud-init"
 
-  # ipconfig0 = "ip=dhcp"
-  ipconfig0 = "ip=10.7.237.193/23,gw=10.7.237.1"
-  nameserver = "10.7.237.3"
-
+  ipconfig0 = var.pm_ipconfig0
+  nameserver = var.pm_nameserver
 
   ciuser  = "ubuntu"
   sshkeys = <<EOF

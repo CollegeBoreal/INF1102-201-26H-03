@@ -32,15 +32,6 @@ $STUDENTS = @(
 "300151970|adissa29|212268227"
 )
 
-#foreach ($entry in $STUDENTS) {
-    #$parts = $entry -split '\|'
-    #$StudentID = $parts[0]
-    #$GitHubID  = $parts[1]
-    #$AvatarID  = $parts[2]
-#
-    #Write-Output "Student: $StudentID, GitHub: $GitHubID, Avatar: $AvatarID"
-#}
-
 # --------------------------------------
 # Division des étudiants en 3 groupes
 # --------------------------------------
@@ -52,8 +43,40 @@ $GROUP_1 = $STUDENTS[0..($GROUP_SIZE - 1)]
 $GROUP_2 = $STUDENTS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
 $GROUP_3 = $STUDENTS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
 
-# Optionnel : noms plus explicites
-$GROUPE_A = $GROUP_1
-$GROUPE_B = $GROUP_2
-$GROUPE_C = $GROUP_3
+$SERVERS = @(
+"10.7.237.194"
+"10.7.237.195"
+"10.7.237.196"
+"10.7.237.197"
+"10.7.237.198"
+"10.7.237.199"
+"10.7.237.200"
+"10.7.237.201"
+"10.7.237.202"
+"10.7.237.203"
+"10.7.237.204"
+"10.7.237.205"
+"10.7.237.206"
+"10.7.237.207"
+"10.7.237.208"
+"10.7.237.209"
+"10.7.237.210"
+"10.7.237.211"
+"10.7.237.212"
+"10.7.237.213"
+"10.7.237.214"
+"10.7.237.215"
+"10.7.237.216"
+"10.7.237.217"
+"10.7.237.218"
+"10.7.237.219"
+"10.7.237.220"
+"10.7.237.221"
+"10.7.237.222"
+"10.7.237.223"
+)
+
+$SERVER_GROUP_1 = $SERVERS[0..($GROUP_SIZE - 1)]
+$SERVER_GROUP_2 = $SERVERS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
+$SERVER_GROUP_3 = $SERVERS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
 
