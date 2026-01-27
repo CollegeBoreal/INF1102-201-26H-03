@@ -1,6 +1,6 @@
 # 🏗️ Infrastructure as Code (IaC)
 
-| | |
+| #️⃣ | Groupes |
 |-|-|
 | 🥇 | [:tada: Participation](.scripts/Participation-group1.md) |
 | 🥈 | [:tada: Participation](.scripts/Participation-group2.md) |
