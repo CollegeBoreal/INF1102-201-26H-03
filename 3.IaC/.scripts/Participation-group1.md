@@ -14,14 +14,14 @@
 
 ## Configuration
 
-| Signe              | Proxmox Serveur:              | User/Pwd |
-|--------------------|-------------------------------|----------|
-| :heavy_check_mark: | [10.7.237.16](https://10.7.237.16:8006) | root/Boreal@2️⃣02️⃣6 |
+| Proxmox Serveur:                                    | User/Pwd         |
+|-----------------------------------------------------|------------------|
+| [10.7.237.16](https://10.7.237.16:8006) | root/Boreal@2️⃣02️⃣6 |
 
 
 ## :a: Présence
 
-|:hash:| Boréal :id:                | README.md    | images | :links: IP |
+|:hash:| Boréal :id:                | README.md    | images | :link: IP |
 |------|----------------------------|--------------|--------|------------|
 | 0 | [300133071](../300133071/README.md) :point_right: [nelsonwilliam237](https://github.com/nelsonwilliam237) <image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image> | :x: | :x: | 10.7.237.194 |
 | 1 | [300137754](../300137754/README.md) :point_right: [josephbeni1](https://github.com/josephbeni1) <image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image> | :x: | :x: | 10.7.237.195 |
