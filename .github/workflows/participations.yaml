@@ -21,6 +21,30 @@ jobs:
           pwsh .scripts/run.ps1
           Set-Location ..
 
+          ##
+          ## Évaluation du chapitre 1.IDE
+          ##
+          Write-Host "Evaluating chapter 1.IDE Participation"
+          Set-Location 1.Programmation/1.IDE
+          pwsh .scripts/run.ps1
+          Set-Location ../..
+
+          ##
+          ## Évaluation du chapitre 2.Jupyter
+          ##
+          Write-Host "Evaluating chapter 2.Jupyter Participation"
+          Set-Location 1.Programmation/2.Jupyter
+          pwsh .scripts/run.ps1
+          Set-Location ../..
+
+          ##
+          ## Évaluation du chapitre 3.IaC
+          ##
+          Write-Host "Evaluating chapter 3.IaC Participation"
+          Set-Location 3.IaC
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
       - name: Commit files
         shell: pwsh
         run: |
