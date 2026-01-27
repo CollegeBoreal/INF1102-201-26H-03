@@ -41,3 +41,19 @@ $STUDENTS = @(
     #Write-Output "Student: $StudentID, GitHub: $GitHubID, Avatar: $AvatarID"
 #}
 
+# --------------------------------------
+# Division des étudiants en 3 groupes
+# --------------------------------------
+
+$TOTAL = $STUDENTS.Count
+$GROUP_SIZE = [Math]::Ceiling($TOTAL / 3)
+
+$GROUP_1 = $STUDENTS[0..($GROUP_SIZE - 1)]
+$GROUP_2 = $STUDENTS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
+$GROUP_3 = $STUDENTS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
+
+# Optionnel : noms plus explicites
+$GROUPE_A = $GROUP_1
+$GROUPE_B = $GROUP_2
+$GROUPE_C = $GROUP_3
+
