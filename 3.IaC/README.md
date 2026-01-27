@@ -315,6 +315,9 @@ on darwin_arm64
 
 #### 2️⃣ Create project structure
 
+
+Go to your directory :id:
+
 - [ ] Sur bash 🐧
 
 ```bash
