@@ -27,9 +27,8 @@ resource "proxmox_vm_qemu" "vm1" {
 
   ciuser  = "ubuntu"
   sshkeys = <<EOF
-   ${file("~/.ssh/github.com-setrar.pub")}
-   ${file("~/.ssh/b300098957@ramena.pub")}
+   ${file("~/.ssh/ma_cle.pub")}
+   ${file("~/.ssh/cle_publique_du_prof.pub")}
   EOF
-  # sshkeys = file("~/.ssh/b300098957@ramena.pub")
 }
 
