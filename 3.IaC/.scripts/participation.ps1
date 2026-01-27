@@ -25,6 +25,14 @@ switch ($Group) {
     default { throw "Groupe invalide" }
 }
 
+switch ($Group) {
+    1 { $PROXMOX_SERVER = $PROXMOX_GROUP_1 }
+    2 { $PROXMOX_SERVER = $PROXMOX_GROUP_2 }
+    3 { $PROXMOX_SERVER = $PROXMOX_GROUP_3 }
+    default { throw "Groupe invalide" }
+}
+
+
 # Header
 Write-Output "# Participation – Groupe $Group – $(Get-Date -Format 'dd-MM-yyyy HH:mm')"
 Write-Output ""
@@ -41,6 +49,13 @@ Write-Output "| Signe              | Signification                 |"
 Write-Output "|--------------------|-------------------------------|"
 Write-Output "| :heavy_check_mark: | Prêt à être corrigé           |"
 Write-Output "| :x:                | Projet inexistant             |"
+Write-Output ""
+Write-Output "## Configuration"
+Write-Output ""
+Write-Output "| Signe              | Signification                 |"
+Write-Output "|--------------------|-------------------------------|"
+Write-Output "| :heavy_check_mark: | Proxmox Serveur: [${PROXMOX_SERVER}](https://${PROXMOX_SERVER}:8006)   |"
+Write-Output ""
 Write-Output ""
 Write-Output "## :a: Présence"
 Write-Output ""

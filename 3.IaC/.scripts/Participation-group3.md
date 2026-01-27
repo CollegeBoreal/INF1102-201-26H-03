@@ -1,4 +1,4 @@
-# Participation – Groupe 3 – 27-01-2026 13:34
+# Participation – Groupe 3 – 27-01-2026 14:00
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -11,6 +11,13 @@
 |--------------------|-------------------------------|
 | :heavy_check_mark: | Prêt à être corrigé           |
 | :x:                | Projet inexistant             |
+
+## Configuration
+
+| Signe              | Signification                 |
+|--------------------|-------------------------------|
+| :heavy_check_mark: | Proxmox Serveur: [10.7.237.33](https://10.7.237.33:8006)   |
+
 
 ## :a: Présence
 

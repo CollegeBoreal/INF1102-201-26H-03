@@ -45,6 +45,10 @@ $GROUP_1 = $STUDENTS[0..($GROUP_SIZE - 1)]
 $GROUP_2 = $STUDENTS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
 $GROUP_3 = $STUDENTS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
 
+# --------------------------------------
+# Division des VMs en 3 groupes
+# --------------------------------------
+
 $SERVERS = @(
 "10.7.237.194"
 "10.7.237.195"
@@ -82,3 +86,19 @@ $SERVER_GROUP_1 = $SERVERS[0..($GROUP_SIZE - 1)]
 $SERVER_GROUP_2 = $SERVERS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
 $SERVER_GROUP_3 = $SERVERS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
 
+
+# --------------------------------------
+# S13	https://10.7.237.16:8006	64	16	272	Virtual Environment 7.4-20
+# S17	https://10.7.237.28:8006	64	16	272	Virtual Environment 7.4-20
+# S18	https://10.7.237.33:8006	64	16	272	Virtual Environment 7.4-20
+# --------------------------------------
+
+$PROXMOX_SERVERS = @(
+"10.7.237.16"
+"10.7.237.28"
+"10.7.237.33"
+)
+
+$PROXMOX_GROUP_1 = $PROXMOX_SERVERS[0] 
+$PROXMOX_GROUP_2 = $PROXMOX_SERVERS[1] 
+$PROXMOX_GROUP_3 = $PROXMOX_SERVERS[2] 
