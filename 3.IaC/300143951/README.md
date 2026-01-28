@@ -334,7 +334,7 @@ Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
 La VM a été créée avec succès sur le serveur Proxmox :
 
-![VM créée avec succès dans Proxmox](images/machine_cree.png)
+# <p align="center"><img src="images//machine cree.png" alt="Images" width="450"/></p>
 
 **Informations visibles dans l'interface Proxmox :**
 - **ID VM :** 101
