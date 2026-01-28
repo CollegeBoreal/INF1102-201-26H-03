@@ -5,12 +5,12 @@ resource "proxmox_vm_qemu" "vm1" {
 
   cores   = 2
   sockets = 1
-  memory  = 4096
+  memory  = 2048
 
   scsihw = "virtio-scsi-pci"
 
   disk {
-    size    = "20G"
+    size    = "10G"
     type    = "scsi"
     storage = "local-lvm"
   }
