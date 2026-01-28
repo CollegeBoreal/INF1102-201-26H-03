@@ -1,4 +1,4 @@
-# Participation au 28-01-2026 00:00
+# Participation au 28-01-2026 00:22
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -40,10 +40,10 @@
 | 21 | [300150385](../300150385/RAPPORT.ipynb) :point_right: [belka1996](https://github.com/belka1996) <image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 22 | [300150416](../300150416/RAPPORT.ipynb) :point_right: [hachemsouyadi](https://github.com/hachemsouyadi) <image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 23 | [300150433](../300150433/RAPPORT.ipynb) :point_right: [zakariadjellouli](https://github.com/zakariadjellouli) <image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
-| 24 | [300150485](../300150485/RAPPORT.ipynb) :point_right: [nad1111](https://github.com/nad1111) <image src='https://avatars0.githubusercontent.com/u/205994799?s=460&v=4' width=20 height=20></image> | :x: |
+| 24 | [300150485](../300150485/RAPPORT.ipynb) :point_right: [nad1111](https://github.com/nad1111) <image src='https://avatars0.githubusercontent.com/u/205994799?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 25 | [300150558](../300150558/RAPPORT.ipynb) :point_right: [amirasadouni00](https://github.com/amirasadouni00) <image src='https://avatars0.githubusercontent.com/u/212186770?s=460&v=4' width=20 height=20></image> | :x: |
 | 26 | [300151042](../300151042/RAPPORT.ipynb) :point_right: [hichemhamdi10](https://github.com/hichemhamdi10) <image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image> | :x: |
 | 27 | [300151354](../300151354/RAPPORT.ipynb) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :x: |
 | 28 | [300151607](../300151607/RAPPORT.ipynb) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: |
 | 29 | [300151970](../300151970/RAPPORT.ipynb) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :x: |
-| :abacus: | \$\\frac{12}{30}\$ = 40% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 12 |
+| :abacus: | \$\\frac{13}{30}\$ = 43.33% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 13 |
