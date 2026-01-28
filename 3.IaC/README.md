@@ -366,12 +366,12 @@ resource "proxmox_vm_qemu" "vm1" {
 
   cores   = 2
   sockets = 1
-  memory  = 4096
+  memory  = 2048
 
   scsihw = "virtio-scsi-pci"
 
   disk {
-    size    = "20G"
+    size    = "10G"
     type    = "scsi"
     storage = "local-lvm"
   }
@@ -468,6 +468,14 @@ ssh -i ~/.ssh/ma_cle.pk \
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
   ubuntu@10.7.237.xxx
 ```
+
+```powershell
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.xxx
+```
+
 
 # :books: References
 
