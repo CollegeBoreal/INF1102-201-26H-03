@@ -469,6 +469,14 @@ ssh -i ~/.ssh/ma_cle.pk \
   ubuntu@10.7.237.xxx
 ```
 
+```powershell
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.xxx
+```
+
+
 # :books: References
 
 | Cle du prof                     |
