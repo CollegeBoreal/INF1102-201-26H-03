@@ -36,8 +36,8 @@ INF1102 (201) - Programmation de systèmes
 
 Le déroulement peut être modifié au besoin. La personne étudiante sera avisée.
 
-| Période | Sem | Activités / Thèmes |
-|-|-:|-|
+| Période | Sem | Activités / Thèmes | Commentaires |
+|-|-:|-|-|
 | 12-Jan | 1️⃣ | [0.PlanDeCours](0.PlanDeCours)
 | 19-Jan | 2️⃣ | [1.Programmation](1.Programmation) de [2.Systemes](2.Systemes)
 | 26-Jan | 3️⃣ | [3.IaC](3.IaC)
