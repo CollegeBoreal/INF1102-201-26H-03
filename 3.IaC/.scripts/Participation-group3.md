@@ -29,7 +29,7 @@
 |:hash:| Boréal :id:                | README.md | images | main.tf | :link: IP |
 |------|----------------------------|-----------|--------|---------|------------|
 | 0 | [300150195](../300150195/README.md) :point_right: [amelzourane](https://github.com/amelzourane) <image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.214 |
-| 1 | [300150385](../300150385/README.md) :point_right: [belka1996](https://github.com/belka1996) <image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.215 |
+| 1 | [300150385](../300150385/README.md) :point_right: [belka1996](https://github.com/belka1996) <image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.215 |
 | 2 | [300150416](../300150416/README.md) :point_right: [hachemsouyadi](https://github.com/hachemsouyadi) <image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.216 |
 | 3 | [300150433](../300150433/README.md) :point_right: [zakariadjellouli](https://github.com/zakariadjellouli) <image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: | :x: | 10.7.237.217 |
 | 4 | [300150485](../300150485/README.md) :point_right: [nad1111](https://github.com/nad1111) <image src='https://avatars0.githubusercontent.com/u/205994799?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.218 |
@@ -38,4 +38,4 @@
 | 7 | [300151354](../300151354/README.md) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: | :x: | 10.7.237.221 |
 | 8 | [300151607](../300151607/README.md) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.222 |
 | 9 | [300151970](../300151970/README.md) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: | :x: | 10.7.237.223 |
-| :abacus: | \$\\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+| :abacus: | \$\\frac{1}{10}\$ = 10% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 1 |
