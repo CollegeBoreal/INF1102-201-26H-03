@@ -1,4 +1,4 @@
-# Participation au 03-02-2026 20:16
+# Participation au 03-02-2026 21:31
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -24,7 +24,7 @@
 | 5 | [300141368](../300141368.md) :point_right: [daniella-diwa](https://github.com/daniella-diwa) <image src='https://avatars0.githubusercontent.com/u/132600996?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 6 | [300141429](../300141429.md) :point_right: [barrynetwork](https://github.com/barrynetwork) <image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 7 | [300141625](../300141625.md) :point_right: [Mamefatim14](https://github.com/Mamefatim14) <image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
-| 8 | [300141657](../300141657.md) :point_right: [leandre00126](https://github.com/leandre00126) <image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image> | :x: |
+| 8 | [300141657](../300141657.md) :point_right: [leandre00126](https://github.com/leandre00126) <image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 9 | [300141716](../300141716.md) :point_right: [nabilaouladbouih](https://github.com/nabilaouladbouih) <image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image> | :x: |
 | 10 | [300141858](../300141858.md) :point_right: [karimcode24](https://github.com/karimcode24) <image src='https://avatars0.githubusercontent.com/u/205304457?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 11 | [300142072](../300142072.md) :point_right: [sigadiarra](https://github.com/sigadiarra) <image src='https://avatars0.githubusercontent.com/u/230452797?s=460&v=4' width=20 height=20></image> | :x: |
@@ -46,4 +46,4 @@
 | 27 | [300151354](../300151354.md) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :x: |
 | 28 | [300151607](../300151607.md) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: |
 | 29 | [300151970](../300151970.md) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :x: |
-| :abacus: | \$\\frac{9}{30}\$ = 30% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 9 |
+| :abacus: | \$\\frac{10}{30}\$ = 33.33% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 10 |
