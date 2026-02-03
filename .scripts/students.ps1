@@ -6,6 +6,8 @@ $STUDENTS = @(
 "300137754|josephbeni1|174143444"
 "300138205|taylor123marc|200685761"
 "300138573|nourmiri|185266428"
+"300138576|houja13|185265742"
+"300141368|daniella-diwa|132600996"
 "300141429|barrynetwork|231347874"
 "300141625|Mamefatim14|188626020"
 "300141657|leandre00126|194731088"
@@ -32,12 +34,86 @@ $STUDENTS = @(
 "300151970|adissa29|212268227"
 )
 
-#foreach ($entry in $STUDENTS) {
-    #$parts = $entry -split '\|'
-    #$StudentID = $parts[0]
-    #$GitHubID  = $parts[1]
-    #$AvatarID  = $parts[2]
-#
-    #Write-Output "Student: $StudentID, GitHub: $GitHubID, Avatar: $AvatarID"
-#}
+# --------------------------------------
+# Division des étudiants en 3 groupes
+# --------------------------------------
 
+$TOTAL = $STUDENTS.Count
+$GROUP_SIZE = [Math]::Ceiling($TOTAL / 3)
+
+$GROUP_1 = $STUDENTS[0..($GROUP_SIZE - 1)]
+$GROUP_2 = $STUDENTS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
+$GROUP_3 = $STUDENTS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
+
+# --------------------------------------
+# Division des VMs en 3 groupes
+# --------------------------------------
+
+$SERVERS = @(
+"10.7.237.194"
+"10.7.237.195"
+"10.7.237.196"
+"10.7.237.197"
+"10.7.237.198"
+"10.7.237.199"
+"10.7.237.200"
+"10.7.237.201"
+"10.7.237.202"
+"10.7.237.203"
+"10.7.237.204"
+"10.7.237.205"
+"10.7.237.206"
+"10.7.237.207"
+"10.7.237.208"
+"10.7.237.209"
+"10.7.237.210"
+"10.7.237.211"
+"10.7.237.212"
+"10.7.237.213"
+"10.7.237.214"
+"10.7.237.215"
+"10.7.237.216"
+"10.7.237.217"
+"10.7.237.218"
+"10.7.237.219"
+"10.7.237.220"
+"10.7.237.221"
+"10.7.237.222"
+"10.7.237.223"
+)
+
+$SERVER_GROUP_1 = $SERVERS[0..($GROUP_SIZE - 1)]
+$SERVER_GROUP_2 = $SERVERS[$GROUP_SIZE..(2 * $GROUP_SIZE - 1)]
+$SERVER_GROUP_3 = $SERVERS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
+
+
+# --------------------------------------
+# S13	https://10.7.237.16:8006	64	16	272	Virtual Environment 7.4-20
+# S17	https://10.7.237.28:8006	64	16	272	Virtual Environment 7.4-20
+# S18	https://10.7.237.33:8006	64	16	272	Virtual Environment 7.4-20
+# --------------------------------------
+
+$PROXMOX_SERVERS = @(
+"10.7.237.16"
+"10.7.237.28"
+"10.7.237.33"
+)
+
+$PROXMOX_GROUP_1 = $PROXMOX_SERVERS[0] 
+$PROXMOX_GROUP_2 = $PROXMOX_SERVERS[1] 
+$PROXMOX_GROUP_3 = $PROXMOX_SERVERS[2] 
+
+# --------------------------------------
+pm_token_id     = "tofu@pve!opentofu"
+pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
+# --------------------------------------
+
+$TOFU_SECRETS = @(
+"4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
+"f728d095-1506-490f-81b1-ecdafdfb8ef9"
+"6ad11b5a-8883-445e-bdf0-5b0a6b8b9b7c"
+)
+
+$TOFU_SECRET_GROUP_1 = $TOFU_SECRETS[0] 
+$TOFU_SECRET_GROUP_2 = $TOFU_SECRETS[1] 
+$TOFU_SECRET_GROUP_3 = $TOFU_SECRETS[2] 
