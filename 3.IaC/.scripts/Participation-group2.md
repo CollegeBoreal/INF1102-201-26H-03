@@ -36,6 +36,6 @@
 | 5 | [300145940](../300145940/README.md) :point_right: [TasnimMarzouki](https://github.com/TasnimMarzouki) <image src='https://avatars0.githubusercontent.com/u/234069235?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.209 |
 | 6 | [300146418](../300146418/README.md) :point_right: [IkramSidhoum](https://github.com/IkramSidhoum) <image src='https://avatars0.githubusercontent.com/u/198275764?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.210 |
 | 7 | [300146721](../300146721/README.md) :point_right: [smailikh](https://github.com/smailikh) <image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: | :x: | 10.7.237.211 |
-| 8 | [300147629](../300147629/README.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: | :x: | 10.7.237.212 |
+| 8 | [300147629](../300147629/README.md) :point_right: [zoumarbalde-blip](https://github.com/zoumarbalde-blip) <image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.212 |
 | 9 | [300147816](../300147816/README.md) :point_right: [HananeZerrouki](https://github.com/HananeZerrouki) <image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image> | :x: | :x: | :x: | 10.7.237.213 |
-| :abacus: | \$\\frac{1}{10}\$ = 10% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 1 |
+| :abacus: | \$\\frac{2}{10}\$ = 20% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 2 |
