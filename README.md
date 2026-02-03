@@ -1,4 +1,4 @@
-# INF1102-201-26H-03 (Mardi)
+# INF1102-201-26H-03 (Mardi ✅ )
 
 INF1102 (201) - Programmation de systèmes
 
@@ -36,11 +36,11 @@ INF1102 (201) - Programmation de systèmes
 
 Le déroulement peut être modifié au besoin. La personne étudiante sera avisée.
 
-| Période | Sem | Activités / Thèmes | Ressources/module |  Résultat d’apprentissage visé |
-|-|-:|-|-|-|
+| Période | Sem | Activités / Thèmes | Commentaires |
+|-|-:|-|-|
 | 12-Jan | 1️⃣ | [0.PlanDeCours](0.PlanDeCours)
 | 19-Jan | 2️⃣ | [1.Programmation](1.Programmation) de [2.Systemes](2.Systemes)
-| 26-Jan | 3️⃣ |
+| 26-Jan | 3️⃣ | [3.IaC](3.IaC)
 | 02-Feb | 4️⃣ |
 | 09-Feb | 5️⃣ |
 | 16-Feb | 6️⃣ |
@@ -59,3 +59,5 @@ Le déroulement peut être modifié au besoin. La personne étudiante sera avis�
 ---
 
 # :books: References
+
+- [ ] [LinkedIn Carreer Hub: Proxmox Virtual Environment Essential Training Using Proxmox VE](www.linkedin.com/learning/proxmox-virtual-environment-essential-training)

@@ -4,8 +4,6 @@
 |-|-|
 | 🥇 | [:tada: Participation](.scripts/Participation-group1.md) |
 | 🥈 | [:tada: Participation](.scripts/Participation-group2.md) |
-| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) |
-
 
 ## 1. Introduction
 
@@ -279,6 +277,8 @@ L’IaC est un **pilier du DevOps** :
 
 ### 🔄 Exercices
 
+<img src=images/Proxmox-INF1102.png width='50%' height='50%' > </img>
+
 
 OpenTofu works **almost exactly like Terraform**, and Proxmox VE 7 is well-supported via the **Telmate Proxmox provider**.
 
@@ -314,6 +314,9 @@ on darwin_arm64
 ---
 
 #### 2️⃣ Create project structure
+
+
+Go to your directory :id:
 
 - [ ] Sur bash 🐧
 
@@ -363,12 +366,12 @@ resource "proxmox_vm_qemu" "vm1" {
 
   cores   = 2
   sockets = 1
-  memory  = 4096
+  memory  = 2048
 
   scsihw = "virtio-scsi-pci"
 
   disk {
-    size    = "20G"
+    size    = "10G"
     type    = "scsi"
     storage = "local-lvm"
   }
@@ -427,16 +430,12 @@ variable "pm_token_secret" {
 #### 6️⃣ Secrets (`terraform.tfvars`)
 
 ```hcl
-pm_vm_name      = "vm098957"
+pm_vm_name      = "vm300xxxxxx"
 pm_ipconfig0    = "ip=10.7.237.xxx/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
 pm_url          = "https://10.7.237.xx:8006/api2/json"
 pm_token_id     = "tofu@pve!opentofu"
 pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09xxxxxxx3b00"
-sshkeys = [
-  file("~/.ssh/ma_cle.pub"),
-  file("~/.ssh/cle_publique_du_prof.pub")
-]
 ```
 
 ⚠️ **Do not commit this file**
@@ -459,6 +458,8 @@ Type `yes`.
 
 #### 8️⃣ Test VM
 
+- [ ] 🐧 Linux
+
 ```lua
 ssh -i ~/.ssh/ma_cle.pk \
   -o StrictHostKeyChecking=no \
@@ -466,11 +467,21 @@ ssh -i ~/.ssh/ma_cle.pk \
   ubuntu@10.7.237.xxx
 ```
 
+- [ ] 🪟 Powershell
+
+```powershell
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.xxx
+```
+
+
 # :books: References
 
 | Cle du prof                     |
 |---------------------------------|
-| > nano ~/.ssh/cle_publique_du_prof.pub |
+| nano ~/.ssh/cle_publique_du_prof.pub |
 
 - [ ] Copier dans le fichier ci-dessus
 
@@ -529,3 +540,7 @@ qm set 9000 --serial0 socket --vga serial0
 # Convert to template
 qm template 9000
 ```
+
+## 🏗️ Installation
+
+- [ ] [💻 Proxmox VE Installation – HP ProLiant DL360 G6](https://github.com/CollegeBoreal/Laboratoires/tree/main/D.DC/S.Servers/Proliant/Proxmox)
