@@ -430,7 +430,7 @@ variable "pm_token_secret" {
 #### 6️⃣ Secrets (`terraform.tfvars`)
 
 ```hcl
-pm_vm_name      = "vm098957"
+pm_vm_name      = "vm300xxxxxx"
 pm_ipconfig0    = "ip=10.7.237.xxx/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
 pm_url          = "https://10.7.237.xx:8006/api2/json"
