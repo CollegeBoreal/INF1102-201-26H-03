@@ -59,7 +59,7 @@ Ce travail permet de :
 └── README.md
 ```
 
-## contenue de terraform.tfvars
+## contenu de terraform.tfvars
 
 ```text
 pm_vm_name      = "vm300133071"
@@ -86,7 +86,7 @@ tofu apply
 via 
 <a href="https://10.7.237.16:8006/#v1:0:18:4:::::::" target="_blank" rel="noopener noreferrer">Serveur Promox</a>
 
-##🔍 Vérification
+## 🔍 Vérification
 
 Connexion à la VM via SSH :
 
@@ -109,7 +109,6 @@ http://10.7.237.194:80
 
 # ✅ Résultats obtenus
 
-```text
 VM Ubuntu déployée automatiquement
 
 Infrastructure reproductible
@@ -119,4 +118,3 @@ Aucune configuration manuelle sur Proxmox
 Déploiement rapide et fiable
 
 Infrastructure entièrement décrite par du code
-```

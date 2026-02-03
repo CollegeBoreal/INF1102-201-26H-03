@@ -95,7 +95,7 @@ $SERVER_GROUP_3 = $SERVERS[(2 * $GROUP_SIZE)..($TOTAL - 1)]
 
 $PROXMOX_SERVERS = @(
 "10.7.237.16"
-"10.7.237.28"
+"10.7.237.13"
 "10.7.237.33"
 )
 
@@ -106,11 +106,12 @@ $PROXMOX_GROUP_3 = $PROXMOX_SERVERS[2]
 # --------------------------------------
 pm_token_id     = "tofu@pve!opentofu"
 pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
+# 2 = "f728d095-1506-490f-81b1-ecdafdfb8ef9"
 # --------------------------------------
 
 $TOFU_SECRETS = @(
 "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
-"f728d095-1506-490f-81b1-ecdafdfb8ef9"
+"55dccf39-a3db-4bad-8a28-954addb13739"
 "6ad11b5a-8883-445e-bdf0-5b0a6b8b9b7c"
 )
 
