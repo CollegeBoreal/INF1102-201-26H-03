@@ -1,4 +1,6 @@
-#commande tofu version
+```powershell
+tofu version
+```
 <details>
 
   ```powershell
@@ -26,8 +28,9 @@ Sans cette étape, OpenTofu ne peut pas fonctionner.
 <img width="601" height="238" alt="image" src="https://github.com/user-attachments/assets/186d514e-a825-4193-9cf1-5342bd11e201" />
 
 
-
+```powershell
 tofu plan
+```
 Rôle :
 Affiche ce que OpenTofu va créer sans encore l’exécuter.
 On voit que la ressource proxmox_vm_qemu.vm1 sera créée.
@@ -35,22 +38,26 @@ Cela permet de valider que le code est correct avant le déploiement.
 <img width="826" height="455" alt="image" src="https://github.com/user-attachments/assets/49f7ddaf-b8d2-4839-b838-cc2072c917e1" />
 
 
-📸 Capture 4 — tofu apply
+```powershell
 tofu apply
+```
 Rôle :
 Déploie réellement la machine virtuelle sur Proxmox via l’API.
 Cette étape transforme le code en infrastructure réelle.
 <img width="827" height="459" alt="image" src="https://github.com/user-attachments/assets/9ae4584d-6763-4a2a-927b-e9ec773ddff3" />
 
-
+```powershell
 Verification de mon VM sur proxmox
+```
 <img width="1906" height="655" alt="image" src="https://github.com/user-attachments/assets/c69e23e4-6e47-41a7-9761-eff47b8d25fb" />
 
 #verification d'acces a mon serveur via ssh avec:
+```powershell
 ssh -i ~/.ssh/ma_cle.pk `
   -o StrictHostKeyChecking=no `
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
   ubuntu@10.7.237.200
+```
 
 Cette commande se connecte en SSH à la VM avec une clé privée tout en désactivant les vérifications d’empreinte pour éviter les blocages dans un lab où les VMs sont recréées souvent.
 
@@ -58,22 +65,27 @@ Cette commande se connecte en SSH à la VM avec une clé privée tout en désact
 
 
 
-
-
-
 # commandes:
+```powershell
 sudo apt update
 sudo apt install nginx -y
+```
 
 Il permet d'installer un service réel dans la VM pour démontrer qu’elle est pleinement fonctionnelle après le déploiement IaC.
 
 <img width="473" height="187" alt="image" src="https://github.com/user-attachments/assets/88479a07-39f4-42c0-a4ce-d49fe9dc9bc1" />
 
-# commande:systemctl start nginx puis verication du web avec mon ip : 10.7.237.200:80
+# commande:
+```powershell
+systemctl start nginx
+```
 systemctl start nginx démarre le service NGINX pour lancer le serveur web sur la machine.
 
-#Verification finale de la page web nginx
+#Verification finale de la page web nginx mon ip et le port 80 : 10.7.237.200:80
 <img width="707" height="224" alt="image" src="https://github.com/user-attachments/assets/f55495fe-e0fe-4d3c-87e5-1b7e448f1a42" />
+
+Cela montre que le travail demande est effectue avec succes
+
 
 
 
