@@ -1,7 +1,9 @@
 <details>
-  
+#commande tofu version
   ```powershell
-  tofu version
+  (base) PS C:\WINDOWS\system32> tofu version
+OpenTofu v1.11.4
+on windows_amd64
   ```
 Rôle :
 Vérifie que OpenTofu est correctement installé sur ma machine et que le provider Proxmox est disponible.
@@ -67,3 +69,4 @@ Preuve que la configuration vient du code IaC.
 
 📸 Capture 10 — Clés SSH injectées
 cat ~/.ssh/authorized_keys
+
