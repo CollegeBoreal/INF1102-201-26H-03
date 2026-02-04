@@ -68,9 +68,12 @@ Il permet d'installer un service réel dans la VM pour démontrer qu’elle est 
 
 <img width="473" height="187" alt="image" src="https://github.com/user-attachments/assets/88479a07-39f4-42c0-a4ce-d49fe9dc9bc1" />
 
-# commande: systemctl status nginx
-Rôle :
-Prouve que le service web est actif
+# commande:systemctl start nginx puis verication du web avec mon ip : 10.7.237.200:80
+systemctl start nginx démarre le service NGINX pour lancer le serveur web sur la machine.
+
+#Verification finale de la page web nginx
+<img width="707" height="224" alt="image" src="https://github.com/user-attachments/assets/f55495fe-e0fe-4d3c-87e5-1b7e448f1a42" />
+
 
 
 
