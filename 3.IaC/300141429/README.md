@@ -42,39 +42,39 @@ Cette étape transforme le code en infrastructure réelle.
 <img width="827" height="459" alt="image" src="https://github.com/user-attachments/assets/9ae4584d-6763-4a2a-927b-e9ec773ddff3" />
 
 
-📸 Capture 5 — VM visible dans l’interface Proxmox
+Verification de mon VM sur proxmox
+<img width="1906" height="655" alt="image" src="https://github.com/user-attachments/assets/c69e23e4-6e47-41a7-9761-eff47b8d25fb" />
+
+#verification d'acces a mon serveur via ssh avec:
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.200
+
+Cette commande se connecte en SSH à la VM avec une clé privée tout en désactivant les vérifications d’empreinte pour éviter les blocages dans un lab où les VMs sont recréées souvent.
+
+<img width="309" height="218" alt="image" src="https://github.com/user-attachments/assets/274ef884-5bac-4392-8f5a-8f44aebda091" />
+
+
+
+
+
+
+# commandes:
+sudo apt update
+sudo apt install nginx -y
+
+Il permet d'installer un service réel dans la VM pour démontrer qu’elle est pleinement fonctionnelle après le déploiement IaC.
+
+<img width="473" height="187" alt="image" src="https://github.com/user-attachments/assets/88479a07-39f4-42c0-a4ce-d49fe9dc9bc1" />
+
+# commande: systemctl status nginx
 Rôle :
-Prouve que la VM a été créée automatiquement par OpenTofu et non manuellement.
+Prouve que le service web est actif
 
-📸 Capture 6 — Onglet Cloud-Init / Summary (IP de la VM)
-Rôle :
-Montre que l’adresse IP configurée dans terraform.tfvars a été appliquée automatiquement grâce à Cloud-Init.
 
-📸 Capture 7 — Connexion SSH réussie
-ssh -i ~/.ssh/ma_cle.pk ubuntu@IP
-Rôle :
-Prouve que :
 
-la VM fonctionne
 
-les clés SSH ont été injectées automatiquement par OpenTofu
-
-aucun mot de passe n’a été configuré manuellement
-
-📸 Capture 8 — cloud-init status
-cloud-init status
-Rôle :
-Confirme que la configuration automatique de la VM par Cloud-Init s’est terminée correctement (status: done).
-
-📸 Capture 9 — Vérification CPU et RAM
-lscpu
-free -h
-Rôle :
-Montre que les ressources (CPU, RAM) correspondent exactement à celles définies dans le fichier main.tf.
-Preuve que la configuration vient du code IaC.
-
-📸 Capture 10 — Clés SSH injectées
-cat ~/.ssh/authorized_keys
 
 
 
