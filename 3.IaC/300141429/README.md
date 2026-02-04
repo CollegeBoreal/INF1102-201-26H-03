@@ -12,8 +12,9 @@ Vérifie que OpenTofu est correctement installé sur ma machine et que le provid
 Cela prouve que l’environnement IaC est prêt.
 
 
-
+```powershell
 tofu init
+```
 Rôle :
 Initialise le projet IaC :
 
@@ -73,6 +74,7 @@ systemctl start nginx démarre le service NGINX pour lancer le serveur web sur l
 
 #Verification finale de la page web nginx
 <img width="707" height="224" alt="image" src="https://github.com/user-attachments/assets/f55495fe-e0fe-4d3c-87e5-1b7e448f1a42" />
+
 
 
 
