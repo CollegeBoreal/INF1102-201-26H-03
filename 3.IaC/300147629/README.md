@@ -1,37 +1,59 @@
 # My projet IaC with OpenTofu
-Ce répertoire contient mes fichiers Terraform pour créer une VM sur Proxmox.
+
 ```powershell
-resource "proxmox_vm_qemu" "vm1" {
-  name        = var.pm_vm_name
-  target_node = "labinfo"
-  clone       = "ubuntu-jammy-template"
-
-  cores   = 2
-  sockets = 1
-  memory  = 2048
-
-  scsihw = "virtio-scsi-pci"
-
-  disk {
-    size    = "10G"
-    type    = "scsi"
-    storage = "local-lvm"
-  }
-
-  network {
-    model  = "virtio"
-    bridge = "vmbr0"
-  }
-
-  os_type = "cloud-init"
-
-  ipconfig0 = var.pm_ipconfig0
-  nameserver = var.pm_nameserver
-
-  ciuser  = "ubuntu"
-  sshkeys = <<EOF
-   ${file("~/.ssh/ma_cle.pub")}
-   ${file("~/.ssh/cle_publique_du_prof.pub")}
-  EOF
-}
+tofu version
 ```
+<details>
+
+  ```powershell
+(base) PS C:\Users\zouma> tofu version
+OpenTofu v1.11.4
+on windows_amd64
+  ```
+
+</details>
+
+Objectif:
+Vérifiez que OpenTofu est correctement installer sur ma machine et que le provider Proxmox est disponible.
+Donc ca prouve que l’environnement IaC est prêt.
+
+```powershell
+tofu init
+```
+Objectif:
+Initialise le projet IaC :
+
+télécharge le provider telmate/proxmox
+
+préparer le dossier pour communiquer avec l’API Proxmox
+Sans cette étape, OpenTofu ne peut pas fonctionner.
+<img width="1016" height="442" alt="tofu init png" src="https://github.com/user-attachments/assets/19f322f0-0d0e-43ff-9ea5-da0b39d219cc" />
+
+```powershell
+tofu plan
+```
+Objectif:
+Affiche ce que OpenTofu va créer sans encore l’exécuter.
+On observe  que la ressource proxmox_vm_qemu.vm1 sera créée.
+Cela permet de valider que le code est correct avant le déploiement.
+<img width="1918" height="927" alt="tufo plan png" src="https://github.com/user-attachments/assets/b9374044-50a0-40db-9fb7-2ead27a8f073" />
+
+```powershell
+tofu apply
+```
+
+Objectif:
+C’est de déploier réellement la machine virtuelle sur Proxmox via l’API.
+Cette étape transforme le code en infrastructure réelle.
+<img width="1593" height="371" alt="tufo apply png" src="https://github.com/user-attachments/assets/9993c96b-25a8-4134-b072-c7f856e221bf" />
+```powershell
+Verification de mon VM sur proxmox
+```
+
+
+
+
+
+
+
+
