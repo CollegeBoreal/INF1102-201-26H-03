@@ -50,6 +50,11 @@ Cette étape transforme le code en infrastructure réelle.
 Verification de mon VM sur proxmox
 ```
 
+<img width="1918" height="1011" alt="Verifier VM png" src="https://github.com/user-attachments/assets/7a2e74cb-6260-4d3b-b633-6c5febdd6673" />
+
+
+#verifier l'acces a mon serveur via ssh
+
 
 
 
