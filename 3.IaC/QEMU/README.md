@@ -85,15 +85,15 @@ qm config <VMID>
 **Destroy a VM (remove config + disk):**
 
 ```bash
-qm destroy <VMID>
+qm destroy <VMID> --purge
 ```
 
 Example:
 
 ```bash
-qm destroy 100
-qm destroy 101
-qm destroy 102
+qm destroy 100 --purge
+qm destroy 101 --purge
+qm destroy 102 --purge
 ```
 
 **Destroy a template (optional):**
