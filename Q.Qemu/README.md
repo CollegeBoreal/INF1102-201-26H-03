@@ -1,6 +1,8 @@
 # 🐦‍⬛ [QEMU](https://www.qemu.org) (Quick EMUlator)
 
-## 🔹 Gestion générale des VM
+
+
+### 🔹 Gestion générale des VM
 
 ```bash
 qm list
@@ -22,7 +24,7 @@ Affiche la configuration complète d’une VM.
 
 ---
 
-## 🔹 Création et suppression
+### 🔹 Création et suppression
 
 ```bash
 qm create <VMID> [options]
@@ -56,7 +58,7 @@ Convertit une VM en **template**.
 
 ---
 
-## 🔹 Démarrage / arrêt
+### 🔹 Démarrage / arrêt
 
 ```bash
 qm start <VMID>
@@ -80,7 +82,7 @@ Redémarrage brutal.
 
 ---
 
-## 🔹 Verrous (locks) 🔐
+### 🔹 Verrous (locks) 🔐
 
 ```bash
 qm unlock <VMID>
@@ -96,7 +98,7 @@ Verrouille manuellement une VM (rarement utilisé).
 
 ---
 
-## 🔹 Disques
+### 🔹 Disques
 
 ```bash
 qm importdisk <VMID> <image> <storage>
@@ -130,7 +132,7 @@ Déplace un disque vers un autre stockage.
 
 ---
 
-## 🔹 Cloud-init ☁️
+### 🔹 Cloud-init ☁️
 
 ```bash
 qm set <VMID> --ide2 <storage>:cloudinit
@@ -152,7 +154,7 @@ qm set <VMID> --ipconfig0 ip=dhcp
 
 ---
 
-## 🔹 Réseau
+### 🔹 Réseau
 
 ```bash
 qm set <VMID> --net0 virtio,bridge=vmbr0
@@ -164,7 +166,7 @@ qm set <VMID> --net1 virtio,bridge=vmbr1
 
 ---
 
-## 🔹 CPU / Mémoire
+### 🔹 CPU / Mémoire
 
 ```bash
 qm set <VMID> --cores 2 --sockets 1
@@ -180,7 +182,7 @@ qm set <VMID> --cpu host
 
 ---
 
-## 🔹 Console / affichage
+### 🔹 Console / affichage
 
 ```bash
 qm set <VMID> --serial0 socket --vga serial0
@@ -194,7 +196,7 @@ Ouvre une console série.
 
 ---
 
-## 🔹 Snapshots (attention ⚠️)
+### 🔹 Snapshots (attention ⚠️)
 
 ```bash
 qm snapshot <VMID> <name>
@@ -212,7 +214,7 @@ qm delsnapshot <VMID> <name>
 
 ---
 
-## 🔹 Debug & maintenance
+### 🔹 Debug & maintenance
 
 ```bash
 qm showcmd <VMID> --pretty
@@ -228,7 +230,7 @@ Rescan des stockages.
 
 ---
 
-## 🧠 Commandes LVM utiles avec qm
+### 🧠 Commandes LVM utiles avec qm
 
 ```bash
 lvs
