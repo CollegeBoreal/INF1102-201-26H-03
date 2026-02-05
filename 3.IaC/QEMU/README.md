@@ -136,15 +136,3 @@ lvs -o+data_percent,metadata_percent
   ```
 
   prevents stale locks during parallel cloning.
-
----
-
-If you want, I can make a **single compact block of commands** that:
-
-1. Cleans all locks
-2. Restarts Proxmox
-3. Destroys all VMs
-
-…so you can run it **once and everything is gone**.
-
-Do you want me to do that?
