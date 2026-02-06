@@ -21,7 +21,7 @@ Donc ca prouve que l’environnement IaC est prêt.
 tofu init
 ```
 Objectif:
-Initialise le projet IaC :
+Initialiser le projet IaC :
 
 télécharge le provider telmate/proxmox
 
@@ -55,8 +55,35 @@ Verification de mon VM sur proxmox
 
 #verifier l'acces a mon serveur via ssh
 
+```powershell
+ ssh -i ~/.ssh/ma_cle.pk `
+>>   -o StrictHostKeyChecking=no `
+>>   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+>>   ubuntu@10.7.237.212
+
+```
+<img width="1025" height="742" alt="connection ssh png" src="https://github.com/user-attachments/assets/034c181b-609e-40ad-9157-18f4967217da" />
+
+#Les commandes sont ci-dessous:
+```powershell
+sudo apt update
+sudo apt install nginx -y
+```
+#Cela permet d'installer un service réel dans la VM pour démontrer qu’elle est pleinement fonctionnelle après le déploiement IaC.
+
+<img width="1335" height="881" alt="install ngnix png" src="https://github.com/user-attachments/assets/95265db2-7484-4cf6-be1c-0db0e23db3b9" />
+
+# La commande:
+```powershell
+systemctl start nginx
+```
+systemctl start nginx permet de démarrer le service ngnix pour lancer le serveur web sur la machine.
 
 
+```powershell
+#Effectuions un test  finale surla page web nginx.
+```
+<img width="1710" height="557" alt="welcom ngnix png" src="https://github.com/user-attachments/assets/d1bcef48-3d1b-47c4-afae-21a0e38d8113" />
 
 
 
