@@ -347,3 +347,61 @@ journalctl -u pvedaemon -f
 
 Ça te donnera la raison exacte de l’échec (mot de passe, permission, SSL, etc.).
 
+# :books: References 
+
+---
+
+##  Prereqs on Proxmox (PVE 7) (Déjâ fait sur le serveur)
+
+### ✔ Enable API access
+
+You need either:
+
+* a **user + password**, or
+* **API token** (recommended)
+
+**Recommended (API token):**
+
+```bash
+pveum user add tofu@pve
+pveum aclmod / -user tofu@pve -role Administrator
+pveum user token add tofu@pve opentofu --privsep 0
+```
+
+Save:
+
+* **Token ID**: `tofu@pve!opentofu`
+* **Token Secret**: (shown once)
+
+---
+
+### ✔ Create VM Template (cloud-init_template.sh)
+
+```lua
+# Download cloud image
+wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+
+# Create VM
+qm create 9000 --name ubuntu-jammy-template --memory 2048 --cores 2 --net0 virtio,bridge=vmbr0
+
+# Import disk
+qm importdisk 9000 jammy-server-cloudimg-amd64.img local-lvm
+
+# Attach disk
+qm set 9000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-9000-disk-0
+
+# Cloud-init disk
+qm set 9000 --ide2 local-lvm:cloudinit
+
+# Boot settings
+qm set 9000 --boot c --bootdisk scsi0
+qm set 9000 --serial0 socket --vga serial0
+
+# Convert to template
+qm template 9000
+```
+
+## 🏗️ Installation
+
+- [ ] [💻 Proxmox VE Installation – HP ProLiant DL360 G6](https://github.com/CollegeBoreal/Laboratoires/tree/main/D.DC/S.Servers/Proliant/Proxmox)
+
