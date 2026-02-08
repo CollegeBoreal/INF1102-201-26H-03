@@ -2,7 +2,8 @@
 
 ## 👤 Étudiant
 
-- Identifiant Boréal : **300138205**
+- Identifiant : **300138205**
+- Nom: Taylor
 - Cours : Programmation système 
 - Thème : **Infrastructure as Code (IaC)**
 
@@ -55,7 +56,8 @@ tofu apply
 
 ```
 
-<img src="images/t.png" alt="Connexion Promox" width="600" />
+<img src="images/t.png" alt="Connexion Promox" width="600" height="900" />
+
 
 
 
