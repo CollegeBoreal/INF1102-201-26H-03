@@ -44,5 +44,19 @@ elle pilote l’infrastructure via des API, services système, hyperviseurs ou c
 
 elle transforme l’infrastructure en programme
 
+## Déploiement
+
+Commandes utilisées :
+
+```text
+tofu init
+tofu plan
+tofu apply
+
+```
+
+<img src="images/1.png" alt="Connexion Promox" width="600" />
+
+
 
 
