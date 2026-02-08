@@ -58,6 +58,8 @@ tofu apply
 
 
 
+<img width="1908" height="1077" alt="t" src="https://github.com/user-attachments/assets/02486dc5-96cd-4f17-9029-9b016b0b280f" />
+
 
 
 
