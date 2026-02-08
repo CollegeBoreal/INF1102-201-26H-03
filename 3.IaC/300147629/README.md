@@ -27,8 +27,6 @@ Le déploiement.
 ```powershell
 tofu apply
 ```
-
-Objectif:
 Déploier la machine virtuelle sur Proxmox
 <img width="1593" height="371" alt="tufo apply png" src="https://github.com/user-attachments/assets/9993c96b-25a8-4134-b072-c7f856e221bf" />
 ```powershell
