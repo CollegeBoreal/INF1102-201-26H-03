@@ -13,6 +13,7 @@ on windows_amd64
 
 </details>
  Voir si OpenTofu  est installer sur Vm
+ 
 ```powershell
 tofu init
 ```
