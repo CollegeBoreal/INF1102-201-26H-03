@@ -55,7 +55,8 @@ tofu apply
 
 ```
 
-<img src="images/1.png" alt="Connexion Promox" width="600" />
+<img src="images/t.png" alt="Connexion Promox" width="600" />
+
 
 
 
