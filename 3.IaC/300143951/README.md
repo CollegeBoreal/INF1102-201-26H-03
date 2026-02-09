@@ -3,6 +3,15 @@
 **Étudiant:** Frank Kadji | **ID:** 300143951 | **VM:** vm300143951
 
 ---
+## 📋 Informations générales
+
+**Cours :** INF1102-201-26H-03  
+**Étudiant :** Frank Kadji  
+**ID Boréal :** 300143951  
+**Date :** 07 janvier 2026  
+**Sujet :** Déploiement automatisé avec OpenTofu et Proxmox
+
+---
 
 ## 🚀 Déploiement rapide
 
