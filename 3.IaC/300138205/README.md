@@ -77,6 +77,10 @@ ou
 ssh -i C:\Users\Utilisateur\.ssh\taylor.pk ubuntu@10.7.237.196
 
 ```
+<img width="774" height="377" alt="image" src="https://github.com/user-attachments/assets/94e0bca1-7bd5-4999-8709-72de7aee70b1" />
+
+<img width="1521" height="450" alt="image" src="https://github.com/user-attachments/assets/1010ab0c-2a14-448e-a4d9-b9fec33bbc7e" />
+
 
 ## Accès web
 
@@ -90,6 +94,7 @@ http://10.7.237.196
 ## site web personnalisé
 
 <img width="1919" height="801" alt="Capture d’écran 2026-02-03 190219" src="https://github.com/user-attachments/assets/810f0b45-e86e-49e8-9daa-3f0be9223022" />
+
 
 
 
