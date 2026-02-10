@@ -58,7 +58,8 @@ tofu apply
 
 
 
-<img width="1908" height="1077" alt="t" src="https://github.com/user-attachments/assets/02486dc5-96cd-4f17-9029-9b016b0b280f" />
+<img width="1917" height="635" alt="image" src="https://github.com/user-attachments/assets/d7f395e0-632d-42c7-8200-a2d64ab0cf24" />
+
 
 ## 🔍 Vérification
 
@@ -94,6 +95,7 @@ http://10.7.237.196
 ## site web personnalisé
 
 <img width="1919" height="801" alt="Capture d’écran 2026-02-03 190219" src="https://github.com/user-attachments/assets/810f0b45-e86e-49e8-9daa-3f0be9223022" />
+
 
 
 
