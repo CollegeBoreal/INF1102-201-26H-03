@@ -168,9 +168,8 @@ tofu apply
 
 ```
 http://10.7.237.217:80
-<img width="1239" height="681" alt="Capture d’écran 2026-02-10 182440" src="https://github.com/user-attachments/assets/3cb46b82-70c8-46ef-9970-6644ee4ce6ae" />
-
 ```
+<img width="1239" height="681" alt="Capture d’écran 2026-02-10 182440" src="https://github.com/user-attachments/assets/3cb46b82-70c8-46ef-9970-6644ee4ce6ae" />
 ---
 
 ```markdown
@@ -183,15 +182,12 @@ Une fois la machine virtuelle déployée automatiquement à l’aide d’OpenTof
 1. Connexion à la machine virtuelle via SSH.
 2. Accès au fichier HTML par défaut de NGINX :
 ```
-
 /var/www/html/index.nginx-debian.html
-
 ````
 3. Ouverture et modification du fichier avec l’éditeur nano :
 ```bash
 sudo nano /var/www/html/index.nginx-debian.html
 ````
-
 4. Suppression du contenu existant et ajout d’une interface web personnalisée.
 5. Sauvegarde du fichier et fermeture de l’éditeur.
 6. Redémarrage du service NGINX pour appliquer les changements :
