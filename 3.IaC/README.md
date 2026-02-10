@@ -1,11 +1,10 @@
 # 🏗️ Infrastructure as Code (IaC)
 
-| #️⃣ | Groupes |
-|-|-|
-| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) |
-| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) |
-| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) |
-
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) | [:checkered_flag: Vérification](.scripts/Check-group1.md) |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) | [:checkered_flag: Vérification](.scripts/Check-group2.md) |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) | [:checkered_flag: Vérification](.scripts/Check-group3.md) |
 
 ## 1. Introduction
 
@@ -279,6 +278,8 @@ L’IaC est un **pilier du DevOps** :
 
 ### 🔄 Exercices
 
+<img src=images/Proxmox-INF1102.png width='50%' height='50%' > </img>
+
 
 OpenTofu works **almost exactly like Terraform**, and Proxmox VE 7 is well-supported via the **Telmate Proxmox provider**.
 
@@ -363,15 +364,16 @@ resource "proxmox_vm_qemu" "vm1" {
   name        = var.pm_vm_name
   target_node = "labinfo"
   clone       = "ubuntu-jammy-template"
+  full_clone  = false
 
   cores   = 2
   sockets = 1
-  memory  = 4096
+  memory  = 2048
 
   scsihw = "virtio-scsi-pci"
 
   disk {
-    size    = "20G"
+    size    = "10G"
     type    = "scsi"
     storage = "local-lvm"
   }
@@ -430,16 +432,12 @@ variable "pm_token_secret" {
 #### 6️⃣ Secrets (`terraform.tfvars`)
 
 ```hcl
-pm_vm_name      = "vm098957"
+pm_vm_name      = "vm300xxxxxx"
 pm_ipconfig0    = "ip=10.7.237.xxx/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
 pm_url          = "https://10.7.237.xx:8006/api2/json"
 pm_token_id     = "tofu@pve!opentofu"
 pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09xxxxxxx3b00"
-sshkeys = [
-  file("~/.ssh/ma_cle.pub"),
-  file("~/.ssh/cle_publique_du_prof.pub")
-]
 ```
 
 ⚠️ **Do not commit this file**
@@ -462,6 +460,8 @@ Type `yes`.
 
 #### 8️⃣ Test VM
 
+- [ ] 🐧 Linux
+
 ```lua
 ssh -i ~/.ssh/ma_cle.pk \
   -o StrictHostKeyChecking=no \
@@ -469,11 +469,21 @@ ssh -i ~/.ssh/ma_cle.pk \
   ubuntu@10.7.237.xxx
 ```
 
+- [ ] 🪟 Powershell
+
+```powershell
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.xxx
+```
+
+
 # :books: References
 
 | Cle du prof                     |
 |---------------------------------|
-| > nano ~/.ssh/cle_publique_du_prof.pub |
+| nano ~/.ssh/cle_publique_du_prof.pub |
 
 - [ ] Copier dans le fichier ci-dessus
 
@@ -481,54 +491,3 @@ ssh -i ~/.ssh/ma_cle.pk \
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7IE6vq42+yGzqEUzZu9WrFckFD4Hq52rIU5DeOvi83DCF3uroXjNTEtCKdi+tY7cV18bHmsDsBHMqTnpuvroofgFWA0Pi++b2kGW2I5eyy1Qjv5rOp7y11Xe6XeZFEz7qQO1/xNiBMJEruG9Xldgooe4hkaOF39qnbqD4ui3LxYaTUTEulstw4wN70dSB8Zu9YQP7A7KU2zIEwJ1aw8whfO1CAM/AVvoDyqMtV8VXoaZSHOBgluMtinQfyyt473S2ZZeJlnmhK0F1gdOhO4SVZNRMj96m30ryYkYBFWvvLRP5N b300098957@ramena
 ```
 
----
-
-##  Prereqs on Proxmox (PVE 7) (Déjâ fait sur le serveur)
-
-### ✔ Enable API access
-
-You need either:
-
-* a **user + password**, or
-* **API token** (recommended)
-
-**Recommended (API token):**
-
-```bash
-pveum user add tofu@pve
-pveum aclmod / -user tofu@pve -role Administrator
-pveum user token add tofu@pve opentofu --privsep 0
-```
-
-Save:
-
-* **Token ID**: `tofu@pve!opentofu`
-* **Token Secret**: (shown once)
-
----
-
-### ✔ Create VM Template (cloud-init_template.sh)
-
-```lua
-# Download cloud image
-wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
-
-# Create VM
-qm create 9000 --name ubuntu-jammy-template --memory 2048 --cores 2 --net0 virtio,bridge=vmbr0
-
-# Import disk
-qm importdisk 9000 jammy-server-cloudimg-amd64.img local-lvm
-
-# Attach disk
-qm set 9000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-9000-disk-0
-
-# Cloud-init disk
-qm set 9000 --ide2 local-lvm:cloudinit
-
-# Boot settings
-qm set 9000 --boot c --bootdisk scsi0
-qm set 9000 --serial0 socket --vga serial0
-
-# Convert to template
-qm template 9000
-```
