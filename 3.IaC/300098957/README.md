@@ -417,3 +417,205 @@ ssh -i ~/.ssh/b300098957@ramena \
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
   ubuntu@10.7.237.193
 ```
+
+
+```lua
+pm_vm_name      = "vm300098957"
+pm_ipconfig0    = "ip=10.7.237.193/23,gw=10.7.237.1"
+pm_nameserver   = "10.7.237.3"
+pm_url          = "https://10.7.237.16:8006/api2/json"
+pm_token_id     = "tofu@pve!opentofu"
+pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
+sshkeys = [
+  file("~/.ssh/github.com-setrar.pub"),
+  file("~/.ssh/b300098957@ramena.pub")
+]
+```
+
+<details>
+
+
+```lua
+tofu apply
+
+OpenTofu used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+OpenTofu will perform the following actions:
+
+  # proxmox_vm_qemu.vm1 will be created
+  + resource "proxmox_vm_qemu" "vm1" {
+      + additional_wait           = 5
+      + automatic_reboot          = true
+      + balloon                   = 0
+      + bios                      = "seabios"
+      + boot                      = (known after apply)
+      + bootdisk                  = (known after apply)
+      + ciuser                    = "ubuntu"
+      + clone                     = "ubuntu-jammy-template"
+      + clone_wait                = 10
+      + cores                     = 2
+      + cpu                       = "host"
+      + default_ipv4_address      = (known after apply)
+      + define_connection_info    = true
+      + force_create              = false
+      + full_clone                = true
+      + guest_agent_ready_timeout = 100
+      + hotplug                   = "network,disk,usb"
+      + id                        = (known after apply)
+      + ipconfig0                 = "ip=10.7.237.193/23,gw=10.7.237.1"
+      + kvm                       = true
+      + memory                    = 2048
+      + name                      = "vm300098957"
+      + nameserver                = "10.7.237.3"
+      + onboot                    = false
+      + oncreate                  = true
+      + os_type                   = "cloud-init"
+      + preprovision              = true
+      + reboot_required           = (known after apply)
+      + scsihw                    = "virtio-scsi-pci"
+      + searchdomain              = (known after apply)
+      + sockets                   = 1
+      + ssh_host                  = (known after apply)
+      + ssh_port                  = (known after apply)
+      + sshkeys                   = <<-EOT
+            ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+cyUVsuMeCZDra7UrWshCC0RO166/lOiOqG5wXG20nsVv43hz1BI04Sxst9LKqXdw4bzJlbZwnVpfD+FEzK360f//iLMDn00UcglvFSJZKp83ar5Jkvd00SQt9nkA4DkabGRbRj26QZS01oZKCg8tfmD9Z+8mGMypc1wJtqFUYnFcOHhqSQ6Mwgs/J0eGlff9QLxM/HDmul0Cc846E8+FhnNiuBKlJzDQ9ifFOudzt/VyFljxlaSUGZg4L1HqUx4RyCJWJE0CpO85L72pVnGqSTBtgMsQ9NMGtK49frz20zeD9e5x2Whpk/5wfmQayW5gUIL8aHhK4EPjTZj5QXhp setrar@valiha.com
+            
+               ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7IE6vq42+yGzqEUzZu9WrFckFD4Hq52rIU5DeOvi83DCF3uroXjNTEtCKdi+tY7cV18bHmsDsBHMqTnpuvroofgFWA0Pi++b2kGW2I5eyy1Qjv5rOp7y11Xe6XeZFEz7qQO1/xNiBMJEruG9Xldgooe4hkaOF39qnbqD4ui3LxYaTUTEulstw4wN70dSB8Zu9YQP7A7KU2zIEwJ1aw8whfO1CAM/AVvoDyqMtV8VXoaZSHOBgluMtinQfyyt473S2ZZeJlnmhK0F1gdOhO4SVZNRMj96m30ryYkYBFWvvLRP5N b300098957@ramena
+        EOT
+      + tablet                    = true
+      + target_node               = "labinfo"
+      + unused_disk               = (known after apply)
+      + vcpus                     = 0
+      + vlan                      = -1
+      + vmid                      = (known after apply)
+
+      + disk {
+          + backup             = true
+          + cache              = "none"
+          + file               = (known after apply)
+          + format             = (known after apply)
+          + iops               = 0
+          + iops_max           = 0
+          + iops_max_length    = 0
+          + iops_rd            = 0
+          + iops_rd_max        = 0
+          + iops_rd_max_length = 0
+          + iops_wr            = 0
+          + iops_wr_max        = 0
+          + iops_wr_max_length = 0
+          + iothread           = 0
+          + mbps               = 0
+          + mbps_rd            = 0
+          + mbps_rd_max        = 0
+          + mbps_wr            = 0
+          + mbps_wr_max        = 0
+          + media              = (known after apply)
+          + replicate          = 0
+          + size               = "10G"
+          + slot               = (known after apply)
+          + ssd                = 0
+          + storage            = "local-lvm"
+          + storage_type       = (known after apply)
+          + type               = "scsi"
+          + volume             = (known after apply)
+        }
+
+      + network {
+          + bridge    = "vmbr0"
+          + firewall  = false
+          + link_down = false
+          + macaddr   = (known after apply)
+          + model     = "virtio"
+          + queues    = (known after apply)
+          + rate      = (known after apply)
+          + tag       = -1
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  OpenTofu will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+proxmox_vm_qemu.vm1: Creating...
+proxmox_vm_qemu.vm1: Still creating... [10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [1m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [2m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [3m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [4m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [5m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [6m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [7m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [8m50s elapsed]
+
+proxmox_vm_qemu.vm1: Still creating... [9m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [9m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [9m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [9m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [9m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [9m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m40s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [10m50s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [11m0s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [11m10s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [11m20s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [11m30s elapsed]
+proxmox_vm_qemu.vm1: Still creating... [11m40s elapsed]
+proxmox_vm_qemu.vm1: Creation complete after 11m45s [id=labinfo/qemu/100]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+```
+
+</details>
