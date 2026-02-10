@@ -1,7 +1,3 @@
-Parfait ! Ce que tu m’as envoyé est essentiellement ton **README.md** avec le markdown échappé (`\#`, `\&`, `\_`…), ce qui n’est pas nécessaire dans le fichier réel.
-
-Voici la **version propre que tu peux mettre directement dans `README.md`** sans les caractères d’échappement inutiles :
-
 ---
 
 ```markdown
