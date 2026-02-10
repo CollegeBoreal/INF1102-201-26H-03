@@ -4,6 +4,16 @@
 ```powershell
 tofu version
 ```
+
+<details>
+
+  ```powershell
+(base) PS C:\Users\zouma> tofu version
+OpenTofu v1.11.4
+on windows_amd64
+  ```
+#Terraform.tfvars
+``` lua
 pm_vm_name      = "vm300147629"
 pm_ipconfig0    = "ip=10.7.237.212/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
@@ -13,13 +23,7 @@ pm_token_secret = "55dccf39-a3db-4bad-8a28-954addb13739"
 sshkeys = [
   file("~/.ssh/ma_cle.pub"),
   file("~/.ssh/cle_publique_du_prof.pub")
-<details>
-
-  ```powershell
-(base) PS C:\Users\zouma> tofu version
-OpenTofu v1.11.4
-on windows_amd64
-  ```
+```
 
 </details>
  Voir si OpenTofu  est installer sur Vm
