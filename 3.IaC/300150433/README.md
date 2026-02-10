@@ -172,7 +172,6 @@ http://10.7.237.217:80
 <img width="1239" height="681" alt="Capture d’écran 2026-02-10 182440" src="https://github.com/user-attachments/assets/3cb46b82-70c8-46ef-9970-6644ee4ce6ae" />
 ---
 
-```markdown
 ## 🌐 Test et personnalisation du serveur web NGINX
 
 Une fois la machine virtuelle déployée automatiquement à l’aide d’OpenTofu et Proxmox, un serveur web NGINX a été utilisé afin de valider le bon fonctionnement de l’infrastructure.
