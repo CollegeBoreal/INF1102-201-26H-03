@@ -13,7 +13,7 @@ OpenTofu v1.11.4
 on windows_amd64
 
 ```
-
+</details>
 #Terraform.tfvars
 ``` lua
 pm_vm_name      = "vm300147629"
