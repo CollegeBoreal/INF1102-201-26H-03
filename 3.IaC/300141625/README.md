@@ -106,7 +106,7 @@ Ce laboratoire permet de :
 
 
 
-pm\_vm\_name      = "vm300201"  
+pm\_vm\_name      = "vm300141625"  
 
 pm\_ipconfig0    = "ip=10.7.237.201/23,gw=10.7.237.1"  
 
@@ -152,7 +152,7 @@ Connexion à la VM via SSH :
 
 
 
-ssh -i ~/.ssh/ma\_cle.pk \\
+ssh -i ~/.ssh/ma\_cle.pub \\
 
 -o StrictHostKeyChecking=no \\
 
