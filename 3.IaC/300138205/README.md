@@ -11,7 +11,7 @@
 * terraform.tfvars
 
 ```lua
-pm_vm_name      = "vm138205"   
+pm_vm_name      = "vm300138205"   
 pm_ipconfig0    = "ip=10.7.237.196/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"    
 pm_url          = "https://10.7.237.16:8006/api2/json"
@@ -94,6 +94,7 @@ http://10.7.237.196
 ## site web personnalisé
 
 <img width="1919" height="801" alt="Capture d’écran 2026-02-03 190219" src="https://github.com/user-attachments/assets/810f0b45-e86e-49e8-9daa-3f0be9223022" />
+
 
 
 
