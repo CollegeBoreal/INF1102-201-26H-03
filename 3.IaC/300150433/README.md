@@ -1,6 +1,3 @@
----
-
-```markdown
 # Infrastructure as Code (IaC) – OpenTofu & Proxmox
 
 ## 👤 Étudiant
