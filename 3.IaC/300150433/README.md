@@ -157,32 +157,12 @@ tofu apply
 
 * Tapez `yes` pour appliquer.
 
-### 2. Connexion à la VM
-
-#### Linux
-
-```bash
-ssh -i ~/.ssh/ma_cle.pk \
-  -o StrictHostKeyChecking=no \
-  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
-  ubuntu@10.7.237.xxx
-```
-
-#### Powershell
-
-```powershell
-ssh -i ~/.ssh/ma_cle.pk `
-  -o StrictHostKeyChecking=no `
-  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
-  ubuntu@10.7.237.xxx
-```
-
-### 3. Vérification web
+### 2. Vérification web
 
 * Depuis un navigateur, accéder à :
 
 ```
-http://10.7.237.xxx:80
+http://10.7.237.217:80
 ```
 
 ## ✅ Résultats attendus
@@ -192,12 +172,6 @@ http://10.7.237.xxx:80
 * Aucune configuration manuelle sur Proxmox
 * Déploiement rapide et fiable
 * Infrastructure entièrement décrite par du code
-
-## 📚 Références
-
-* Clé publique du professeur : `~/.ssh/cle_publique_du_prof.pub`
-* Documentation OpenTofu : [https://opentofu.io](https://opentofu.io)
-* Provider Proxmox : [https://registry.opentofu.org/telmate/proxmox](https://registry.opentofu.org/telmate/proxmox)
 
 
 ```
