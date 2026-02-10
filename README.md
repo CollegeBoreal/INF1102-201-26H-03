@@ -41,8 +41,8 @@ Le déroulement peut être modifié au besoin. La personne étudiante sera avis�
 | 12-Jan | 1️⃣ | [0.PlanDeCours](0.PlanDeCours)
 | 19-Jan | 2️⃣ | [1.Programmation](1.Programmation) de [2.Systemes](2.Systemes)
 | 26-Jan | 3️⃣ | [3.IaC](3.IaC)
-| 02-Feb | 4️⃣ |
-| 09-Feb | 5️⃣ |
+| 02-Feb | 4️⃣ | [P.Proxmox](P.Proxmox)
+| 09-Feb | 5️⃣ | [4.CRON-TASK](4.CRON-TASK)
 | 16-Feb | 6️⃣ |
 | 23-Feb | 7️⃣ |
 | 02-Mar | 📚 |
