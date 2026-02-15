@@ -24,7 +24,7 @@ nano /home/ubuntu/scruter_nginx.sh
 ```
 
 ### Contenu du script (annoté ligne par ligne) :
-ce strip permet de ressortir toutes les adresse ip qui on visitee le site tout en affichant le nombre de visites par adresse et leeur ordre d'anciennetee.
+ce script permet de ressortir toutes les adresse ip qui on visitee le site tout en affichant le nombre de visites par adresse et leeur ordre d'anciennetee.
 
 ```bash
 #!/bin/bash
@@ -92,8 +92,7 @@ chmod +x /home/ubuntu/scruter_nginx.sh
 /home/ubuntu/scruter_nginx.sh
 cat /home/ubuntu/nginx_ips.txt
 ```
-
-![Exécution du script](image/scrip_shell_automatisee.png)
+# <p align="center"><img src="images//scrip shell automatisee.png" alt="Images" width="450"/></p>
 *Résultat : 60 visites de l'IP 10.250.3.68*
 
 ---
@@ -104,8 +103,7 @@ cat /home/ubuntu/nginx_ips.txt
 ```bash
 crontab -e
 ```
-
-![Configuration du crontab](image/auto_chrontab.png)
+# <p align="center"><img src="images//auto chrontab.png" alt="Images" width="450"/></p>
 *Ajout de la ligne pour automatiser l'exécution*
 
 ### Ajouter cette ligne :
@@ -119,15 +117,14 @@ crontab -e
 ```bash
 systemctl status cron
 ```
-
-![Vérification du service cron](image/verification_chrontab.png)
+# <p align="center"><img src="images//verification chrontab.png" alt="Images" width="450"/></p>
 *Le service cron est actif et fonctionne correctement*
 
 
 
 ---
 
-## 4️⃣ Bonus : IP les plus fréquentes
+## 4️⃣ verification manuelle des IP les plus fréquentes
 
 Pour détecter les visiteurs les plus actifs :
 
@@ -138,7 +135,7 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr > /home/u
 - `uniq -c` → compte le nombre d'occurrences
 - `sort -nr` → trie par fréquence décroissante
 
-![Extraction manuelle](image/etraction_manuelle_d_ip.png)
+# <p align="center"><img src="images//etraction manuelle d'ip.png" alt="Images" width="450"/></p>
 *Vérification manuelle des IPs avec compteur de fréquence*
 
 ---
@@ -152,3 +149,4 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr > /home/u
 
 **Auteur** : frank kadji  
 **Date** : Février 2026
+
