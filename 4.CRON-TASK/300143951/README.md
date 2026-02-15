@@ -1,4 +1,4 @@
-# 👁️ Big Brother - Surveillance Nginx
+#     LAB Surveillance Nginx
 
 ## 1️⃣  Introduction
 
@@ -149,4 +149,5 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr > /home/u
 
 **Auteur** : frank kadji  
 **Date** : Février 2026
+
 
