@@ -240,3 +240,102 @@ fi
 ✔ Lire les logs système
 ✔ Diagnostiquer et corriger un problème
 
+# 📚 References
+
+Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, classées par fonction.
+
+---
+
+## 📁 1️⃣ Gestion de fichiers et dossiers
+
+| Commande    | Rôle                                    | Exemple                            |                       |
+| ----------- | --------------------------------------- | ---------------------------------- | --------------------- |
+| `mkdir -p`  | Créer un dossier (et parents si besoin) | `mkdir -p /entreprise/data`        |                       |
+| `cp -r`     | Copier un dossier récursivement         | `cp -r source/ dest/`              |                       |
+| `rm`        | Supprimer fichier/dossier               | `rm fichier.txt`                   |                       |
+| `tar -czvf` | Créer une archive compressée            | `tar -czvf backup.tar.gz dossier/` |                       |
+| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test                         | sudo tee fichier.txt` |
+
+---
+
+## 👤 2️⃣ Gestion des utilisateurs
+
+| Commande          | Rôle                            | Exemple                   |                |
+| ----------------- | ------------------------------- | ------------------------- | -------------- |
+| `useradd`         | Créer un utilisateur            | `sudo useradd employe`    |                |
+| `chpasswd`        | Définir mot de passe            | `echo "user:pass"         | sudo chpasswd` |
+| `userdel -r`      | Supprimer utilisateur + dossier | `sudo userdel -r employe` |                |
+| `id`              | Vérifier existence utilisateur  | `id employe`              |                |
+| `cat /etc/passwd` | Lister utilisateurs             | `cat /etc/passwd`         |                |
+
+---
+
+## 🌐 3️⃣ Réseau
+
+| Commande    | Rôle                | Exemple             |
+| ----------- | ------------------- | ------------------- |
+| `ping -c 4` | Tester connectivité | `ping -c 4 8.8.8.8` |
+
+---
+
+## 📜 4️⃣ Journalisation (Logs)
+
+| Élément | Rôle                           |
+| ------- | ------------------------------ |
+| `>>`    | Ajouter sortie dans un fichier |
+| `2>&1`  | Rediriger erreurs vers le log  |
+| `date`  | Inscrire date et heure         |
+
+Exemple :
+
+```bash
+echo "Début $(date)" >> log.txt
+```
+
+---
+
+## ⏰ 5️⃣ Planification
+
+| Commande                | Rôle                       |
+| ----------------------- | -------------------------- |
+| `crontab -e`            | Modifier tâches planifiées |
+| `systemctl status cron` | Vérifier service cron      |
+| `journalctl -u cron`    | Voir logs cron             |
+
+Exemple cron :
+
+```
+0 2 * * * /entreprise/script_gestion.sh
+```
+
+---
+
+## 🔐 6️⃣ Permissions
+
+| Commande   | Rôle                           |
+| ---------- | ------------------------------ |
+| `chmod +x` | Rendre script exécutable       |
+| `sudo`     | Exécuter avec privilèges admin |
+
+---
+
+## 🔎 7️⃣ Vérification et diagnostic
+
+| Commande    | Rôle                 |
+| ----------- | -------------------- |
+| `cat`       | Lire un fichier      |
+| `grep`      | Rechercher texte     |
+| `$?`        | Code retour commande |
+| `systemctl` | Vérifier service     |
+
+---
+
+## 🧠 Concepts clés retenus
+
+* Automatisation avec Bash
+* Gestion utilisateurs
+* Sauvegarde et archivage
+* Journalisation des opérations
+* Planification avec cron
+* Diagnostic d’erreurs
+
