@@ -4,6 +4,8 @@
 - Nom : Djellouli Zakaria  
 - Identifiant Boréal : 300150433  
 - Thème : Infrastructure as Code (IaC)
+- web : http://10.7.237.217:80
+
 
 ## 📌 Objectif du laboratoire
 L’objectif de ce laboratoire est de mettre en pratique le concept d’**Infrastructure as Code (IaC)** en utilisant **OpenTofu** avec **Proxmox VE 7** afin de déployer automatiquement une **machine virtuelle Linux** via une configuration déclarative.  
@@ -167,6 +169,31 @@ tofu apply
 ```
 http://10.7.237.217:80
 ```
+<img width="1239" height="681" alt="Capture d’écran 2026-02-10 182440" src="https://github.com/user-attachments/assets/3cb46b82-70c8-46ef-9970-6644ee4ce6ae" />
+---
+
+## 🌐 Test et personnalisation du serveur web NGINX
+
+Une fois la machine virtuelle déployée automatiquement à l’aide d’OpenTofu et Proxmox, un serveur web NGINX a été utilisé afin de valider le bon fonctionnement de l’infrastructure.
+
+### Étapes effectuées
+
+1. Connexion à la machine virtuelle via SSH.
+2. Accès au fichier HTML par défaut de NGINX :
+```
+/var/www/html/index.nginx-debian.html
+````
+3. Ouverture et modification du fichier avec l’éditeur nano :
+```bash
+sudo nano /var/www/html/index.nginx-debian.html
+````
+4. Suppression du contenu existant et ajout d’une interface web personnalisée.
+5. Sauvegarde du fichier et fermeture de l’éditeur.
+6. Redémarrage du service NGINX pour appliquer les changements :
+
+   ```bash
+   sudo systemctl restart nginx
+   ```
 
 ## ✅ Résultats attendus
 
