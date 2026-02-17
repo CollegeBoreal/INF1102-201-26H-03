@@ -10,6 +10,7 @@ awk '{print $1}' /var/log/nginx/access.log
  cat /var/log/nginx/access.log
 ```
 
+<img width="1497" height="388" alt="Fin TP Cronte png" src="https://github.com/user-attachments/assets/b2b656d4-bdd0-4cba-b25d-b24f7574dd69" />
 
 
 
