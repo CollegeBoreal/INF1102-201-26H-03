@@ -254,7 +254,7 @@ Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, 
 | `cp -r`     | Copier un dossier récursivement         | `cp -r source/ dest/`              |
 | `rm`        | Supprimer fichier/dossier               | `rm fichier.txt`                   |
 | `tar -czvf` | Créer une archive compressée            | `tar -czvf backup.tar.gz dossier/` |
-| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test \| sudo tee fichier.txt` |
+| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test || sudo tee fichier.txt` |
 
 ---
 
