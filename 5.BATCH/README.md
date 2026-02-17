@@ -260,13 +260,13 @@ Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, 
 
 ## 👤 2️⃣ Gestion des utilisateurs
 
-| Commande          | Rôle                            | Exemple                   |                |
-| ----------------- | ------------------------------- | ------------------------- | -------------- |
-| `useradd`         | Créer un utilisateur            | `sudo useradd employe`    |                |
-| `chpasswd`        | Définir mot de passe            | `echo "user:pass"         | sudo chpasswd` |
-| `userdel -r`      | Supprimer utilisateur + dossier | `sudo userdel -r employe` |                |
-| `id`              | Vérifier existence utilisateur  | `id employe`              |                |
-| `cat /etc/passwd` | Lister utilisateurs             | `cat /etc/passwd`         |                |
+| Commande          | Rôle                            | Exemple                              |
+| ----------------- | ------------------------------- | ------------------------------------ |
+| `useradd`         | Créer un utilisateur            | `sudo useradd employe`               |
+| `chpasswd`        | Définir mot de passe            | `echo "user:pass"  || sudo chpasswd` |
+| `userdel -r`      | Supprimer utilisateur + dossier | `sudo userdel -r employe`            |
+| `id`              | Vérifier existence utilisateur  | `id employe`                         |
+| `cat /etc/passwd` | Lister utilisateurs             | `cat /etc/passwd`                    |
 
 ---
 
