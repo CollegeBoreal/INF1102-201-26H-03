@@ -9,7 +9,8 @@ awk '{print $1}' /var/log/nginx/access.log
 
  cat /var/log/nginx/access.log
 ```
-<img width="737" height="195" alt="4 Cronte5 png" src="https://github.com/user-attachments/assets/4bdfb7fe-7a11-4985-83af-fc43ac9f260b" />
+<img width="1497" height="388" alt="Fin TP Cronte png" src="https://github.com/user-attachments/assets/05bd32de-532f-4420-853d-fb9e1b93e092" />
+
 
 
  ```powershell
