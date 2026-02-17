@@ -37,5 +37,5 @@
 | 6 | [300151042](../300151042/README.md) [<image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image>](https://github.com/hichemhamdi10) | :x: | :x: | :x: | 10.7.237.220 |
 | 7 | [300151354](../300151354/README.md) [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :heavy_check_mark: | :x: | :x: | 10.7.237.221 |
 | 8 | [300151607](../300151607/README.md) [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :x: | :x: | 10.7.237.222 |
-| 9 | [300151970](../300151970/README.md) [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :heavy_check_mark: | :x: | :x: | 10.7.237.223 |
-| :abacus: | \$\\frac{2}{10}\$ = 20% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 2 |
+| 9 | [300151970](../300151970/README.md) [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.223 |
+| :abacus: | \$\\frac{3}{10}\$ = 30% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 3 |

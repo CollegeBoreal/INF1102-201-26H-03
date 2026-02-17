@@ -1,4 +1,4 @@
-# Participation au 17-02-2026 21:51
+# Participation au 17-02-2026 23:35
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -18,7 +18,7 @@
 |------|----------------------------|------------------------|
 | 0 | [300133071](../300133071/RAPPORT.ipynb) :point_right: [nelsonwilliam237](https://github.com/nelsonwilliam237) <image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 1 | [300137754](../300137754/RAPPORT.ipynb) :point_right: [josephbeni1](https://github.com/josephbeni1) <image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
-| 2 | [300138205](../300138205/RAPPORT.ipynb) :point_right: [taylor123marc](https://github.com/taylor123marc) <image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
+| 2 | [300138205](../300138205/RAPPORT.ipynb) :point_right: [taylor123marc](https://github.com/taylor123marc) <image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image> | :x: |
 | 3 | [300138573](../300138573/RAPPORT.ipynb) :point_right: [nourmiri](https://github.com/nourmiri) <image src='https://avatars0.githubusercontent.com/u/185266428?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
 | 4 | [300138576](../300138576/RAPPORT.ipynb) :point_right: [houja13](https://github.com/houja13) <image src='https://avatars0.githubusercontent.com/u/185265742?s=460&v=4' width=20 height=20></image> | :x: |
 | 5 | [300141368](../300141368/RAPPORT.ipynb) :point_right: [daniella-diwa](https://github.com/daniella-diwa) <image src='https://avatars0.githubusercontent.com/u/132600996?s=460&v=4' width=20 height=20></image> | :x: |
@@ -46,4 +46,4 @@
 | 27 | [300151354](../300151354/RAPPORT.ipynb) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :x: |
 | 28 | [300151607](../300151607/RAPPORT.ipynb) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: |
 | 29 | [300151970](../300151970/RAPPORT.ipynb) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :x: |
-| :abacus: | \$\\frac{16}{30}\$ = 53.33% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 16 |
+| :abacus: | \$\\frac{15}{30}\$ = 50% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 15 |
