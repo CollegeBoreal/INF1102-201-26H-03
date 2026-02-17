@@ -254,7 +254,7 @@ Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, 
 | `cp -r`     | Copier un dossier récursivement         | `cp -r source/ dest/`              |
 | `rm`        | Supprimer fichier/dossier               | `rm fichier.txt`                   |
 | `tar -czvf` | Créer une archive compressée            | `tar -czvf backup.tar.gz dossier/` |
-| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test || sudo tee fichier.txt` |
+| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test | sudo tee fichier.txt` |
 
 ---
 
@@ -263,7 +263,7 @@ Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, 
 | Commande          | Rôle                            | Exemple                              |
 | ----------------- | ------------------------------- | ------------------------------------ |
 | `useradd`         | Créer un utilisateur            | `sudo useradd employe`               |
-| `chpasswd`        | Définir mot de passe            | `echo \"user:pass\"  || sudo chpasswd` |
+| `chpasswd`        | Définir mot de passe            | `echo "user:pass"  | sudo chpasswd` |
 | `userdel -r`      | Supprimer utilisateur + dossier | `sudo userdel -r employe`            |
 | `id`              | Vérifier existence utilisateur  | `id employe`                         |
 | `cat /etc/passwd` | Lister utilisateurs             | `cat /etc/passwd`                    |
