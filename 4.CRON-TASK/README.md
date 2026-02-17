@@ -1,5 +1,12 @@
 # Linux — Gestionnaire de tâches & Observateur d’évènements
 
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) | [:checkered_flag: Vérification](.scripts/Check-group1.md) |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) | [:checkered_flag: Vérification](.scripts/Check-group2.md) |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) | [:checkered_flag: Vérification](.scripts/Check-group3.md) |
+
+
 ## 🎯 Objectif
 
 Surveiller le système **en temps réel** et **analyser les pannes après coup**.
