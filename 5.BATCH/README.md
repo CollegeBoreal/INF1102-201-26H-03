@@ -332,10 +332,10 @@ Exemple cron :
 
 ## 🧠 Concepts clés retenus
 
-* Automatisation avec Bash
-* Gestion utilisateurs
-* Sauvegarde et archivage
-* Journalisation des opérations
-* Planification avec cron
-* Diagnostic d’erreurs
+- Automatisation avec Bash
+- Gestion utilisateurs
+- Sauvegarde et archivage
+- Journalisation des opérations
+- Planification avec cron
+- Diagnostic d’erreurs
 
