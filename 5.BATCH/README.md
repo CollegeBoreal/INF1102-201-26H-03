@@ -248,13 +248,13 @@ Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, 
 
 ## 📁 1️⃣ Gestion de fichiers et dossiers
 
-| Commande    | Rôle                                    | Exemple                            |                       |
-| ----------- | --------------------------------------- | ---------------------------------- | --------------------- |
-| `mkdir -p`  | Créer un dossier (et parents si besoin) | `mkdir -p /entreprise/data`        |                       |
-| `cp -r`     | Copier un dossier récursivement         | `cp -r source/ dest/`              |                       |
-| `rm`        | Supprimer fichier/dossier               | `rm fichier.txt`                   |                       |
-| `tar -czvf` | Créer une archive compressée            | `tar -czvf backup.tar.gz dossier/` |                       |
-| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test                         | sudo tee fichier.txt` |
+| Commande    | Rôle                                    | Exemple                            |
+| ----------- | --------------------------------------- | ---------------------------------- |
+| `mkdir -p`  | Créer un dossier (et parents si besoin) | `mkdir -p /entreprise/data`        |
+| `cp -r`     | Copier un dossier récursivement         | `cp -r source/ dest/`              |
+| `rm`        | Supprimer fichier/dossier               | `rm fichier.txt`                   |
+| `tar -czvf` | Créer une archive compressée            | `tar -czvf backup.tar.gz dossier/` |
+| `tee`       | Écrire dans un fichier (avec sudo)      | `echo test \| sudo tee fichier.txt` |
 
 ---
 
