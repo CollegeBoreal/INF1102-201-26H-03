@@ -91,7 +91,7 @@ Exécution manuelle :
 Commentaire :
 Cette capture montre l’exécution manuelle du script ainsi que l’enregistrement de la date d’exécution dans le fichier nginx_execution.log.
 
-![Wait]("https://github.com/user-attachments/assets/1fc8d902-3b2a-43dc-8ca3-9faf45e981cc")
+![Wait](https://github.com/user-attachments/assets/1fc8d902-3b2a-43dc-8ca3-9faf45e981cc)
 
 
 4️⃣ Automatisation avec CRON
@@ -151,4 +151,5 @@ Dans ce TP, nous avons :
 ✔ Vérifié le bon fonctionnement du service
 
 Le système est maintenant capable d’analyser automatiquement les visiteurs du serveur web.
+
 
