@@ -60,5 +60,7 @@ Le script s’exécute toutes les heures.
 <img width="832" height="621" alt="Capture d’écran 2026-02-10 185705" src="https://github.com/user-attachments/assets/2cee83a3-4703-4f7a-b0f7-d635fd350f7d" />
 
 <img width="709" height="135" alt="image" src="https://github.com/user-attachments/assets/a053d7ce-6e13-44a4-84e6-5e8907596f67" />
+<img width="643" height="151" alt="image" src="https://github.com/user-attachments/assets/9613d374-00c4-4775-b406-a7a780891090" />
+
 
 
