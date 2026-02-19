@@ -29,9 +29,4 @@ resource "proxmox_vm_qemu" "vm1" {
   nameserver = var.pm_nameserver
 
   ciuser = "ubuntu"
-
-  sshkeys = <<EOF
-  ${file("C:/Users/300150485/.ssh/ma_cle.pub")}
-  ${file("C:/Users/300150485/.ssh/cle_publique_du_prof.pub")}
-EOF
 }

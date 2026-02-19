@@ -1,9 +1,6 @@
 # Infrastructure as Code – OpenTofu & Proxmox
 
-## Étudiant
 ID Boréal : 300150485
-
-## Description
 
 Déploiement d’une VM Ubuntu via OpenTofu sur Proxmox.
 
