@@ -3,6 +3,9 @@ resource "proxmox_vm_qemu" "vm1" {
   target_node = "labinfo"
   clone       = "ubuntu-jammy-template"
   full_clone  = false
+  
+  boot = "order=scsi0"
+
 
   cores   = 2
   sockets = 1
@@ -29,7 +32,8 @@ resource "proxmox_vm_qemu" "vm1" {
   ciuser = "ubuntu"
 
   sshkeys = <<EOF
-${file("~/.ssh/ma_cle.pub")}
-${file("~/.ssh/cle_publique_du_prof.pub")}
+  ${file("C:/Users/300150485/.ssh/ma_cle.pub")}
+  ${file("C:/Users/300150485/.ssh/cle_publique_du_prof.pub")}
 EOF
 }
+
