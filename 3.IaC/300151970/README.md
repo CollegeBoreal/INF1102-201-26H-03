@@ -26,7 +26,7 @@ Elle affiche la version utilisée et confirme que l’outil est opérationnel.
 
 Cette vérification est essentielle avant de démarrer le projet afin d’éviter tout problème lié à l’environnement.
 
-<img src="images/01-tofu-version.png" alt="Capture d'écran tofu version" width="800">
+<img src="image1.png" alt="Capture d'écran tofu version" width="800">
 
 ## 2. Initialisation du projet
 
@@ -262,3 +262,4 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
