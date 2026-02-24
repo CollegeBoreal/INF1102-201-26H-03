@@ -9,6 +9,8 @@
 
 ---
 
+<image src=images/crontab.png width='50%' height='50%' > </image>
+
 # 🎯 Objectif du TP
 
 Surveiller le système Linux en temps réel et analyser les journaux NGINX.
@@ -151,5 +153,6 @@ Dans ce TP, nous avons :
 ✔ Vérifié le bon fonctionnement du service
 
 Le système est maintenant capable d’analyser automatiquement les visiteurs du serveur web.
+
 
 
