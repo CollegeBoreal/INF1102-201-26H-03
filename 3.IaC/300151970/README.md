@@ -83,9 +83,8 @@ Cette étape :
 
 Le code est ainsi transformé en infrastructure fonctionnelle.
 
-📸 **Insérer ici la capture d’écran de `tofu apply`**
-Nom du fichier recommandé :
-`images/04-tofu-apply.png`
+<img width="1440" height="711" alt="tofu apply" src="https://github.com/user-attachments/assets/a59f6f5f-ea77-46a4-ac25-16168ca07b0d" />
+
 
 ---
 
@@ -245,6 +244,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
