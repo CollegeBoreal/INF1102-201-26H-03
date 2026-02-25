@@ -1,18 +1,3 @@
-# Déploiement d’une machine virtuelle avec OpenTofu sur Proxmox
-
-## INF1102 – Infrastructure as Code
-
-Étudiant: Babatundé Adissa Fadolle Arouna
-
-## Introduction
-
-Dans le cadre de ce travail pratique, l’objectif était de mettre en œuvre le concept d’Infrastructure as Code (IaC) en utilisant OpenTofu afin d’automatiser le déploiement d’une machine virtuelle sur une plateforme Proxmox.
-
-Plutôt que de créer la machine manuellement via l’interface graphique, l’infrastructure a été décrite dans des fichiers de configuration (`.tf`). OpenTofu se charge ensuite d’interpréter ces fichiers et de créer automatiquement les ressources nécessaires.
-
-Cette approche permet d’obtenir une infrastructure reproductible, traçable et facilement maintenable.
-
-
 ## 1. Vérification de l’installation d’OpenTofu
 
 Commande exécutée :
@@ -263,6 +248,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
