@@ -1,9 +1,9 @@
 ## 1. Vérification de l’installation d’OpenTofu
 
 Commande exécutée :
-
+```bash
 tofu version
-
+```
 ### Explication
 
 Cette commande permet de vérifier que OpenTofu est correctement installé sur la machine locale.
@@ -225,6 +225,7 @@ Toutes les étapes ont été validées avec succès :
 création de la VM, accès SSH, installation d’un service et validation via navigateur.
 
 Le travail demandé est donc complété et fonctionnel.
+
 
 
 
