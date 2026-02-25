@@ -191,7 +191,7 @@ Cela valide que l’infrastructure déployée via OpenTofu est pleinement opéra
 
 ```
 3.IaC/
- └── VOTRE_ID/
+ └── 300151970/
       ├── README.md
       ├── main.tf
       ├── provider.tf
@@ -225,6 +225,7 @@ Toutes les étapes ont été validées avec succès :
 création de la VM, accès SSH, installation d’un service et validation via navigateur.
 
 Le travail demandé est donc complété et fonctionnel.
+
 
 
 
