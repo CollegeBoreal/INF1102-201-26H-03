@@ -58,9 +58,8 @@ Cette étape permet de :
 * confirmer les paramètres (CPU, mémoire, disque, réseau)
 * détecter d’éventuelles erreurs avant le déploiement
 
-📸 **Insérer ici la capture d’écran de `tofu plan`**
-Nom du fichier recommandé :
-`images/03-tofu-plan.png`
+<img width="1436" height="678" alt="tofu plan" src="https://github.com/user-attachments/assets/d1cdeeb6-f9e8-4bda-9fcb-185f766b17b7" />
+
 
 ---
 
@@ -246,6 +245,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
