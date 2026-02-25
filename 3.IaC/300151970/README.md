@@ -100,9 +100,8 @@ Points vérifiés :
 
 Cette vérification confirme le succès du déploiement automatisé.
 
-📸 **Insérer ici la capture de la VM visible dans Proxmox**
-Nom du fichier recommandé :
-`images/05-proxmox-vm.png`
+<img width="1918" height="971" alt="Image" src="https://github.com/user-attachments/assets/4c993277-3d30-4c0f-a46f-05551bbe4fd8" />
+
 
 ---
 
@@ -244,6 +243,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
