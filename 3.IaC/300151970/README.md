@@ -165,20 +165,12 @@ Commande exécutée :
 sudo systemctl start nginx
 ```
 
-Cette commande démarre le service NGINX afin qu’il écoute sur le port 80.
-
-📸 **Insérer ici la capture du démarrage ou du status du service**
-Nom du fichier recommandé :
-`images/08-nginx-start.png`
-
----
-
-## 9. Vérification finale via navigateur
+Vérification finale via navigateur
 
 Accès depuis un navigateur :
 
 ```
-http://10.7.237.200:80
+http://10.7.237.223:80
 ```
 
 L’affichage de la page par défaut de NGINX confirme que :
@@ -189,13 +181,13 @@ L’affichage de la page par défaut de NGINX confirme que :
 
 Cela valide que l’infrastructure déployée via OpenTofu est pleinement opérationnelle.
 
-📸 **Insérer ici la capture de la page web NGINX affichée**
-Nom du fichier recommandé :
-`images/09-nginx-web.png`
+
+<img width="1918" height="975" alt="final" src="https://github.com/user-attachments/assets/bb2ab910-a0f2-4594-ac4a-324fdd3a1df7" />
+
 
 ---
 
-## Structure du dépôt recommandée
+## Structure du dépôt
 
 ```
 3.IaC/
@@ -213,7 +205,7 @@ Nom du fichier recommandé :
            ├── 06-ssh-connection.png
            ├── 07-nginx-install.png
            ├── 08-nginx-start.png
-           └── 09-nginx-web.png
+           └----nginx-web.png
 ```
 
 ---
@@ -234,13 +226,7 @@ création de la VM, accès SSH, installation d’un service et validation via na
 
 Le travail demandé est donc complété et fonctionnel.
 
----
 
-Si tu veux, je peux maintenant vérifier :
-
-* que ton dossier respecte exactement ce que le prof attend
-* que tu n’as rien oublié pour sécuriser le 100%
-* ou t’aider à faire un dernier check avant push GitHub 🚀
 
 
 
