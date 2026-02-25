@@ -33,9 +33,7 @@ Elle permet notamment de :
 
 Sans cette étape, OpenTofu ne peut pas exécuter les configurations définies.
 
-📸 **Insérer ici la capture d’écran de `tofu init`**
-Nom du fichier recommandé :
-`images/02-tofu-init.png`
+<img width="1478" height="552" alt="tufu init" src="https://github.com/user-attachments/assets/b0a4193e-3157-4597-b4a2-d13747a147fb" />
 
 ---
 
@@ -248,6 +246,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
