@@ -150,10 +150,10 @@ Cette étape confirme que :
 * les mises à jour peuvent être téléchargées
 * les paquets peuvent être installés
 * le système est pleinement fonctionnel
+  
+<img width="1300" height="690" alt="sudo" src="https://github.com/user-attachments/assets/8f9c257a-9363-4ba2-806e-a7d132963d8c" />
 
-📸 **Insérer ici la capture de l’installation de NGINX**
-Nom du fichier recommandé :
-`images/07-nginx-install.png`
+
 
 ---
 
@@ -241,6 +241,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
