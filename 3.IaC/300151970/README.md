@@ -113,7 +113,7 @@ Commande utilisée :
 ssh -i ~/.ssh/ma_cle.pk \
   -o StrictHostKeyChecking=no \
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
-  ubuntu@10.7.237.200
+  ubuntu@10.7.237.223
 ```
 
 ### Explication
@@ -128,9 +128,7 @@ Une connexion réussie confirme que :
 * la configuration SSH fonctionne correctement
 * le système d’exploitation est opérationnel
 
-📸 **Insérer ici la capture de la connexion SSH réussie**
-Nom du fichier recommandé :
-`images/06-ssh-connection.png`
+<img width="1048" height="288" alt="umbuntu" src="https://github.com/user-attachments/assets/9c7dbd4d-ff8b-4b62-a75e-2dcc34097ae7" />
 
 ---
 
@@ -243,6 +241,7 @@ Si tu veux, je peux maintenant vérifier :
 * que ton dossier respecte exactement ce que le prof attend
 * que tu n’as rien oublié pour sécuriser le 100%
 * ou t’aider à faire un dernier check avant push GitHub 🚀
+
 
 
 
