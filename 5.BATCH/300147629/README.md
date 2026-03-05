@@ -42,6 +42,11 @@ sudo crontab -e
 #Vérification de l’exécution
 ```
 Powershell
+systemctl status cron
+```
+<img width="956" height="732" alt="journalctl -u cron png" src="https://github.com/user-attachments/assets/75d4c900-e9b5-4b12-b41e-8c4d2336a095" />
+
+#
 
 
 
