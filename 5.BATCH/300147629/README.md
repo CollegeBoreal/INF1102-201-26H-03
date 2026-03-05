@@ -28,6 +28,9 @@ Powershell
 
 ```
 Powershell
+sudo chmod +x /entreprise/script_gestion.sh
+```
+#
 
 
 
