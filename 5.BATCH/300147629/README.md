@@ -39,7 +39,12 @@ sudo crontab -e
 ```
 <img width="955" height="952" alt="bash5 ajouter le cront png" src="https://github.com/user-attachments/assets/eab4e1ec-e6a7-4e93-a6f6-54d256479781" />
 
-#
+#Vérification de l’exécution
+```
+Powershell
+
+
+
 
 
 
