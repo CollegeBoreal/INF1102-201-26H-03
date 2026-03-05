@@ -46,7 +46,13 @@ systemctl status cron
 ```
 <img width="956" height="732" alt="journalctl -u cron png" src="https://github.com/user-attachments/assets/75d4c900-e9b5-4b12-b41e-8c4d2336a095" />
 
-#
+```
+Powershell
+journalctl -u cron
+```
+<img width="935" height="522" alt="systemctl status cron png" src="https://github.com/user-attachments/assets/969b72db-f364-4670-98de-2bb0b1ba165d" />
+
+
 
 
 
