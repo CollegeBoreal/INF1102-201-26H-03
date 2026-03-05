@@ -12,7 +12,13 @@ sudo mkdir -p /entreprise/logs
 
 ```
 Powershell
+echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
+echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
+```
+<img width="941" height="140" alt="fichiers png" src="https://github.com/user-attachments/assets/b4f93738-27c1-495c-890c-4a606d5436df" />
 
+
+#
 
 
 
