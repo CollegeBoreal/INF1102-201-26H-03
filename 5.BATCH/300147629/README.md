@@ -22,6 +22,10 @@ echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 ```
 Powershell
 ```
+<img width="948" height="966" alt="Bahs1 png" src="https://github.com/user-attachments/assets/8f8b1146-5dfa-448b-957b-209e18bc727e" />
+#
+
+
 
 
 
