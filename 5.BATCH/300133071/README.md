@@ -15,9 +15,24 @@ Le script doit permettre de :
 
 ---
 
+Crontab</br>
+
 <img width="50%" height="50%" alt="image" src="images/1.png" />
+
+---
+Les fichiers copiés dans /entreprise/backup
+L’archive .tar.gz</br>
+
 <img width="50%" height="50%" alt="image" src="images/2.png" />
+
+---
+L’utilisateur créé </br>
+
 <img width="50%" height="50%" alt="image" src="images/3.png" />
+
+--- 
+Le fichier log</br>
+
 <img width="50%" height="50%" alt="image" src="images/4.png" />
 
 
