@@ -261,6 +261,35 @@ Résultat attendu :
 └── rapport.json          # Rapport JSON généré
 ```
 
+```mermaid
+flowchart TD
+    A[devops_batch.ps1<br>Script principal PowerShell] --> B[Collecte des infos système]
+    B --> C[Traitement / Filtrage]
+    C --> D1[Rapport TXT<br>rapport.txt<br>- Logs étape par étape<br>- SSH status<br>- Disque]
+    C --> D2[Rapport JSON<br>rapport.json<br>- Objets PowerShell<br>- Top CPU<br>- Top Memory<br>- Disk info]
+
+    %% Détails de la collecte
+    B1[Date / Heure] --> B
+    B2[Utilisateur courant] --> B
+    B3[Hostname] --> B
+    B4[Processus CPU / Mémoire] --> B
+    B5[Disque df -h] --> B
+    B6[Test SSH] --> B
+
+    %% Détails traitement
+    C1[Top 5 CPU] --> C
+    C2[Top 5 Mémoire] --> C
+    C3[Analyse disque] --> C
+    C4[SSH status OK / Failed] --> C
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:1px
+    style C fill:#bfb,stroke:#333,stroke-width:1px
+    style D1 fill:#ffe,stroke:#333,stroke-width:1px
+    style D2 fill:#fee,stroke:#333,stroke-width:1px
+```
+
+
 ---
 
 :fortune_cookie: Utiliser **PowerShell sous Linux** apporte plusieurs avantages, surtout dans un contexte **administration système, DevOps ou automatisation multi-plateforme**. Voici les principaux points :
@@ -382,30 +411,3 @@ $report | ConvertTo-Json | Set-Content report.json
 
 ✅ Résultat : un **JSON prêt pour ingestion**, pas besoin de parsing.
 
-```mermaid
-flowchart TD
-    A[devops_batch.ps1<br>Script principal PowerShell] --> B[Collecte des infos système]
-    B --> C[Traitement / Filtrage]
-    C --> D1[Rapport TXT<br>rapport.txt<br>- Logs étape par étape<br>- SSH status<br>- Disque]
-    C --> D2[Rapport JSON<br>rapport.json<br>- Objets PowerShell<br>- Top CPU<br>- Top Memory<br>- Disk info]
-
-    %% Détails de la collecte
-    B1[Date / Heure] --> B
-    B2[Utilisateur courant] --> B
-    B3[Hostname] --> B
-    B4[Processus CPU / Mémoire] --> B
-    B5[Disque df -h] --> B
-    B6[Test SSH] --> B
-
-    %% Détails traitement
-    C1[Top 5 CPU] --> C
-    C2[Top 5 Mémoire] --> C
-    C3[Analyse disque] --> C
-    C4[SSH status OK / Failed] --> C
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:1px
-    style C fill:#bfb,stroke:#333,stroke-width:1px
-    style D1 fill:#ffe,stroke:#333,stroke-width:1px
-    style D2 fill:#fee,stroke:#333,stroke-width:1px
-```
