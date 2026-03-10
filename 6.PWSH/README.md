@@ -108,7 +108,7 @@ Shell : **PowerShell (pwsh)**
 
 ---
 
-## 1. Objectifs
+## 🔹 PARTIE 1 –Objectifs
 
 À la fin de ce laboratoire, l’étudiant sera capable de :
 
@@ -120,19 +120,18 @@ Shell : **PowerShell (pwsh)**
 6. Comprendre le pipeline **PowerShell orienté objets**.
 
 ---
+## 🔹 PARTIE 1 – Préparation de l’environnement
 
-## 2. Préparation
-
-### Créer le dossier du TP
+- [ ]  Créer le dossier du TP
 
 ```bash
-mkdir devops-batch
-cd devops-batch
+sudo mkdir /devops-batch
+cd /devops-batch
 ```
 
 ---
 
-## 3. Créer le script principal
+## 🔹 PARTIE 2 – Créer le script principal
 
 Créer le fichier `devops_batch.ps1` :
 
@@ -148,7 +147,9 @@ Ajouter le **shebang** pour Linux :
 
 ---
 
-## 4. Script complet (exemple)
+## 🔹 PARTIE 3 - Script complet (exemple)
+
+📄 CODE COMPLET À INTÉGRER
 
 ```powershell
 #!/usr/bin/env pwsh
@@ -228,7 +229,7 @@ Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 
 ---
 
-## 5. Rendre le script exécutable
+## 🔹 PARTIE 4. Rendre le script exécutable
 
 ```bash
 chmod +x devops_batch.ps1
@@ -236,7 +237,7 @@ chmod +x devops_batch.ps1
 
 ---
 
-## 6. Exécuter le batch
+## 🔹 PARTIE 5. Exécuter le batch
 
 ```bash
 ./devops_batch.ps1
@@ -252,7 +253,7 @@ Résultat attendu :
 
 ---
 
-## 7. Structure finale du TP
+## 🔹 PARTIE 7. Structure finale du TP
 
 ```plaintext
 devops-batch/
