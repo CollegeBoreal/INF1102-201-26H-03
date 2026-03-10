@@ -75,8 +75,8 @@ Write-Output ""
 # Présence table
 Write-Output "## :a: Présence"
 Write-Output ""
-Write-Output "|:hash:| Boréal :id:                | README.md | images | main.tf | VM |"
-Write-Output "|------|----------------------------|-----------|--------|---------|----|"
+Write-Output "|:hash:| Boréal :id:                | README.md | images | main.tf | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
+Write-Output "|------|----------------------------|-----------|--------|---------|----|-----|"
 
 # -------------------------------
 # Initialisation
@@ -117,10 +117,29 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $TF_FILE = "$StudentID/main.tf"
 
     # Vérification VM
+    $VM = ":x:"
+    $SSH = ":x:"
     if ($VM_STATUS.ContainsKey($StudentID)) {
-        $VM = if ($VM_STATUS[$StudentID] -eq "running") { ":green_circle: [${ServerID}](http://${ServerID})" } else { ":orange_circle:" }
-    } else {
-        $VM = ":x:"
+        if ($VM_STATUS[$StudentID] -eq "running") {
+            $VM = ":green_circle: [${ServerID}](http://${ServerID})" 
+            
+            # ------------- SSH Test -------------
+            $SSH_TEST = ssh `
+                -o ConnectTimeout=5 `
+                -o BatchMode=yes `
+                -o StrictHostKeyChecking=no `
+                -i ~/.ssh/${PK_PROF} `
+                ubuntu@${ServerID} "echo ok" 2>$null
+
+            if ($LASTEXITCODE -eq 0) {
+                $SSH = ":link:"
+                $ssh_ok_count++
+            }
+        }
+        else {
+            $VM  = ":orange_circle:"
+        }
+
     }
 
     # Vérification fichiers
@@ -132,7 +151,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     if ($README_OK -eq ":heavy_check_mark:" -and $IMAGES_OK -eq ":heavy_check_mark:") { $s++ }
 
     # Affichage de la ligne
-    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_OK | $IMAGES_OK | $TF_OK | $VM |"
+    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_OK | $IMAGES_OK | $TF_OK | $VM | $SSH |"
 
     $i++
 }

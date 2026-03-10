@@ -45,6 +45,30 @@ jobs:
           pwsh .scripts/run.ps1
           Set-Location ..
 
+          ##
+          ## Évaluation du chapitre 4.CRON-TASK
+          ##
+          Write-Host "Evaluating chapter 4.CRON-TASK Participation"
+          Set-Location 4.CRON-TASK
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 5.BATCH
+          ##
+          Write-Host "Evaluating chapter 5.BATCH Participation"
+          Set-Location 5.BATCH
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 6.PWSH
+          ##
+          Write-Host "Evaluating chapter 6.PWSH Participation"
+          Set-Location 6.PWSH
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
       - name: Commit files
         shell: pwsh
         run: |

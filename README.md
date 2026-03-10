@@ -17,6 +17,12 @@ INF1102 (201) - Programmation de systèmes
 
 |  :hash: | Date  | Cours                              | 🎉 Participations                   |
 |---------|-------|:-----------------------------------|:------------------------------------|
+| :one:   | 19-Jan| [0.PlanDeCours](0.PlanDeCours)     | [🎉](0.PlanDeCours/.scripts/Participation.md) 👉  â Noter :x:|
+| :two:   | 02-Feb| [3.IaC](3.IaC)                     | [🎉 :1st_place_medal:](3.IaC/.scripts/Participation-group1.md) :curly_loop: [🎉 :2nd_place_medal:](3.IaC/.scripts/Participation-group2.md) :curly_loop: [🎉 :3rd_place_medal:](3.IaC/.scripts/Participation-group3.md) 👉  â Noter :x:|
+| :three: | 09-Feb| [4.CRON-TASK](4.CRON-TASK)         | [🎉 :1st_place_medal:](4.CRON-TASK/.scripts/Participation-group1.md) :curly_loop: [🎉 :2nd_place_medal:](4.CRON-TASK/.scripts/Participation-group2.md)  :curly_loop: [🎉 :3rd_place_medal:](4.CRON-TASK/.scripts/Participation-group3.md) 👉  â Noter :x:|
+| :four:  | 23-Feb| [5.BATCH](5.BATCH)                 | [🎉 :1st_place_medal:](5.BATCH/.scripts/Participation-group1.md) :curly_loop: [🎉 :2nd_place_medal:](5.BATCH/.scripts/Participation-group2.md) :curly_loop: [🎉 :3rd_place_medal:](5.BATCH/.scripts/Participation-group3.md) 👉  â Noter :x:|
+| :five:  | 16-Mar| [6.PWSH](6.PWSH)                   | [🎉 :1st_place_medal:](6.PWSH/.scripts/Participation-group1.md) :curly_loop: [🎉 :2nd_place_medal:](6.PWSH/.scripts/Participation-group2.md) :curly_loop: [🎉 :3rd_place_medal:](6.PWSH/.scripts/Participation-group3.md) 👉  â Noter :x:|
+
 
 
 ### :abacus: Évaluation
@@ -43,7 +49,7 @@ Le déroulement peut être modifié au besoin. La personne étudiante sera avis�
 | 26-Jan | 3️⃣ | [3.IaC](3.IaC)
 | 02-Feb | 4️⃣ | [P.Proxmox](P.Proxmox)
 | 09-Feb | 5️⃣ | [4.CRON-TASK](4.CRON-TASK)
-| 16-Feb | 6️⃣ |
+| 16-Feb | 6️⃣ | [5.BATCH](5.BATCH)
 | 23-Feb | 7️⃣ |
 | 02-Mar | 📚 |
 | 09-Mar | 8️⃣ |
