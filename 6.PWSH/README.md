@@ -4,7 +4,7 @@ Sous **Ubuntu 22.04 (Jammy)**, le paquet **PowerShell n’est pas dans les dép�
 
 ---
 
-## :floppy: Installation de PowerShell sur Ubuntu 22.04
+## :floppy_disk: Installation de PowerShell sur Ubuntu 22.04
 
 ### 1. Mettre à jour le système
 
