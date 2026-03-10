@@ -21,14 +21,14 @@ resource "proxmox_vm_qemu" "vm1" {
     bridge = "vmbr0"
   }
 
-  os_type    = "cloud-init"
-  ipconfig0  = var.pm_ipconfig0
+  os_type = "cloud-init"
+
+  ipconfig0 = var.pm_ipconfig0
   nameserver = var.pm_nameserver
 
-  ciuser = "ubuntu"
-
+  ciuser  = "ubuntu"
   sshkeys = <<EOF
-${file("C:/Users/Admin/.ssh/id_rsa.pub")}
-${file("C:/Users/Admin/.ssh/cle_publique_du_prof.pub")}
-EOF
+   ${file("~/.ssh/ma_cle.pub")}
+   ${file("~/.ssh/cle_publique_du_prof.pub")}
+  EOF
 }
