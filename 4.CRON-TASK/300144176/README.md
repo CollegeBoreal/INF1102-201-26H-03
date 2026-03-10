@@ -17,5 +17,6 @@ Fichier analysé : /var/log/nginx/access.log
 Commande utilisée : awk '{print $1}' /var/log/nginx/access.log | sort | uniq
 
 
+<img width="975" height="65" alt="image" src="images/"Screenshot 4 .1 cron.png "/>
 
-Screenshot 4 .1 cron.png
+
