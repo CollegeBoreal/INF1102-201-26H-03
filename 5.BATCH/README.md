@@ -206,37 +206,6 @@ fi
 
 ---
 
-# 📊 Grille d’évaluation
-
-| Critère                    | Points |
-| -------------------------- | ------ |
-| Structure script           | /10    |
-| Sauvegarde fonctionnelle   | /15    |
-| Création utilisateur       | /15    |
-| Journalisation             | /15    |
-| Compression archive        | /10    |
-| Planification cron         | /15    |
-| Vérification et diagnostic | /10    |
-| Professionnalisme          | /10    |
-| **Total**                  | /100   |
-
----
-
-# 🎓 Alignement RAFP
-
-| Compétence              | Couvert |
-| ----------------------- | ------- |
-| 2.1 Commandes Linux     | ✔       |
-| 2.2 Script enchaîné     | ✔       |
-| 2.3 Exécution auto      | ✔       |
-| 2.4 Sauvegarde/archives | ✔       |
-| 2.5 Planification       | ✔       |
-| 2.6 Vérification        | ✔       |
-| 2.7 Diagnostic          | ✔       |
-| 2.8 Correction          | ✔       |
-
----
-
 # ✅ Résultat attendu
 
 À la fin du TP, l’étudiant sera capable de :
