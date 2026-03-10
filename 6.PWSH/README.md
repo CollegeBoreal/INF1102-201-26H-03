@@ -100,3 +100,166 @@ avec le shebang :
 
 ---
 
+# :test_tube: Laboratoire — Créer un batch DevOps PowerShell
+
+Durée : **90 à 120 minutes**
+Environnement : **Ubuntu 22.04 (Jammy)**
+Shell : **PowerShell (pwsh)**
+
+---
+
+## 1. Objectifs
+
+À la fin de ce laboratoire, l’étudiant sera capable de :
+
+1. Créer un **script batch PowerShell** pour Linux.
+2. Vérifier l’état du système (CPU, mémoire, disque).
+3. Vérifier la connectivité réseau (SSH).
+4. Générer un **rapport texte et JSON**.
+5. Automatiser des tâches **administratives et DevOps**.
+6. Comprendre le pipeline **PowerShell orienté objets**.
+
+---
+
+## 2. Préparation
+
+### Créer le dossier du TP
+
+```bash
+mkdir devops-batch
+cd devops-batch
+```
+
+---
+
+## 3. Créer le script principal
+
+Créer le fichier `devops_batch.ps1` :
+
+```bash
+nano devops_batch.ps1
+```
+
+Ajouter le **shebang** pour Linux :
+
+```powershell
+#!/usr/bin/env pwsh
+```
+
+---
+
+## 4. Script complet (exemple)
+
+```powershell
+#!/usr/bin/env pwsh
+
+# =========================
+# Batch DevOps PowerShell
+# =========================
+
+# Variables
+$rapportTxt = "rapport.txt"
+$rapportJson = "rapport.json"
+$hostname = hostname
+$user = whoami
+$date = Get-Date
+
+# Création d'un rapport texte
+Write-Output "===== RAPPORT DEVOPS =====" | Tee-Object $rapportTxt
+Write-Output "Date : $date" | Tee-Object -FilePath $rapportTxt -Append
+Write-Output "Utilisateur : $user" | Tee-Object -FilePath $rapportTxt -Append
+Write-Output "Machine : $hostname" | Tee-Object -FilePath $rapportTxt -Append
+Write-Output "" | Tee-Object -FilePath $rapportTxt -Append
+
+# =========================
+# Vérification CPU & mémoire
+# =========================
+Write-Output "Top 5 processus par CPU :" | Tee-Object -FilePath $rapportTxt -Append
+$topCPU = Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
+foreach ($p in $topCPU) {
+    Write-Output ("{0} - CPU: {1}" -f $p.ProcessName, $p.CPU) | Tee-Object -FilePath $rapportTxt -Append
+}
+
+Write-Output "" | Tee-Object -FilePath $rapportTxt -Append
+Write-Output "Top 5 processus par mémoire :" | Tee-Object -FilePath $rapportTxt -Append
+$topMem = Get-Process | Sort-Object WS -Descending | Select-Object -First 5
+foreach ($p in $topMem) {
+    Write-Output ("{0} - Mémoire: {1}" -f $p.ProcessName, $p.WorkingSet) | Tee-Object -FilePath $rapportTxt -Append
+}
+
+# =========================
+# Vérification disque
+# =========================
+Write-Output "" | Tee-Object -FilePath $rapportTxt -Append
+Write-Output "Espace disque :" | Tee-Object -FilePath $rapportTxt -Append
+$disk = df -h
+Write-Output $disk | Tee-Object -FilePath $rapportTxt -Append
+
+# =========================
+# Vérification SSH
+# =========================
+Write-Output "" | Tee-Object -FilePath $rapportTxt -Append
+$sshHost = "127.0.0.1"
+Write-Output "Test SSH vers $sshHost :" | Tee-Object -FilePath $rapportTxt -Append
+try {
+    $result = ssh -o BatchMode=yes -o ConnectTimeout=5 $sshHost "echo 'OK'" 2>&1
+    Write-Output "Résultat : $result" | Tee-Object -FilePath $rapportTxt -Append
+} catch {
+    Write-Output "SSH échoué vers $sshHost" | Tee-Object -FilePath $rapportTxt -Append
+}
+
+# =========================
+# Génération JSON
+# =========================
+$reportObj = [PSCustomObject]@{
+    Date       = $date
+    Utilisateur = $user
+    Machine    = $hostname
+    TopCPU     = $topCPU | ForEach-Object { @{Process = $_.ProcessName; CPU = $_.CPU} }
+    TopMemory  = $topMem | ForEach-Object { @{Process = $_.ProcessName; Memory = $_.WorkingSet} }
+    Disk       = $disk
+}
+
+$reportObj | ConvertTo-Json -Depth 5 | Set-Content $rapportJson
+
+Write-Output ""
+Write-Output "Rapports générés : $rapportTxt et $rapportJson"
+```
+
+---
+
+## 5. Rendre le script exécutable
+
+```bash
+chmod +x devops_batch.ps1
+```
+
+---
+
+## 6. Exécuter le batch
+
+```bash
+./devops_batch.ps1
+```
+
+Résultat attendu :
+
+* Affichage console avec **CPU, mémoire, disque, SSH**
+* Création des fichiers :
+
+  * `rapport.txt`
+  * `rapport.json`
+
+---
+
+## 7. Structure finale du TP
+
+```plaintext
+devops-batch/
+│
+├── devops_batch.ps1      # Script principal
+├── rapport.txt           # Rapport texte généré
+└── rapport.json          # Rapport JSON généré
+```
+
+---
