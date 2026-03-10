@@ -1,5 +1,12 @@
 # 🧪 TP – Automatisation d’administration avec script Batch (Linux)
 
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) | [:checkered_flag: Vérification](.scripts/Check-group1.md) |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) | [:checkered_flag: Vérification](.scripts/Check-group2.md) |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) | [:checkered_flag: Vérification](.scripts/Check-group3.md) |
+
+
 ## 🎯 Objectif
 
 Programmer un script Batch sous **Linux** permettant de :
