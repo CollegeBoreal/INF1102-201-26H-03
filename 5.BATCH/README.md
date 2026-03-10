@@ -234,11 +234,11 @@ fi
 
 À la fin du TP, l’étudiant sera capable de :
 
-✔ Écrire un script Batch structuré
-✔ Automatiser une tâche système
-✔ Planifier son exécution
-✔ Lire les logs système
-✔ Diagnostiquer et corriger un problème
+- ✔ Écrire un script Batch structuré
+- ✔ Automatiser une tâche système
+- ✔ Planifier son exécution
+- ✔ Lire les logs système
+- ✔ Diagnostiquer et corriger un problème
 
 # 📚 References
 
