@@ -216,6 +216,66 @@ fi
 - ✔ Lire les logs système
 - ✔ Diagnostiquer et corriger un problème
 
+### Diagramme “avant et après” exécution
+
+```plaintext
+Avant exécution :
+
+/entreprise/
+│
+├── data/                     # Dossier original
+│   ├── fichier1.txt
+│   ├── fichier2.csv
+│   └── ...
+│
+├── backup/                   # Dossier de sauvegarde vide ou ancien contenu
+│   └── (ancien backup)
+│
+└── logs/                     # Dossier logs
+    └── log.txt               # Peut exister ou vide
+
+
+Après exécution :
+
+/entreprise/
+│
+├── data/                     # Dossier original (inchangé)
+│   ├── fichier1.txt
+│   ├── fichier2.csv
+│   └── ...
+│
+├── backup/                   # Sauvegarde des fichiers + archive
+│   ├── fichier1.txt          # Copie de data/fichier1.txt
+│   ├── fichier2.csv          # Copie de data/fichier2.csv
+│   └── backup_2026-03-10.tar.gz  # Archive compressée de tout le dossier data
+│
+└── logs/
+    └── log.txt               # Journal complet de l’exécution
+        ├── Début exécution : date
+        ├── Test réseau
+        ├── Sauvegarde fichiers
+        ├── Création utilisateur temporaire
+        ├── Compression archive
+        └── Fin exécution : date
+
+Flux de données :
+
+data/ ────copie────▶ backup/
+data/ ────archive──▶ backup/backup_YYYY-MM-DD.tar.gz
+script ────────────▶ logs/log.txt
+```
+
+---
+
+### Points clés du diagramme
+
+1. **`data/`** : source des fichiers à sauvegarder.
+2. **`backup/`** : destination des copies + archive `.tar.gz`.
+3. **`logs/log.txt`** : fichier texte qui enregistre **toutes les étapes du batch**.
+4. **Flux de données** : les fichiers passent de `data/` → `backup/` (copie), puis tout le dossier est **compressé en archive** → `backup/backup_YYYY-MM-DD.tar.gz`.
+5. **Utilisateur temporaire** `employe_temp` est créé dans le système (non représenté par un fichier mais journalisé dans `log.txt`).
+
+
 # 📚 References
 
 Voici un **résumé structuré des commandes vues dans le TP Bash sous Linux**, classées par fonction.
