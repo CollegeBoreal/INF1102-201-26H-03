@@ -25,9 +25,10 @@ resource "proxmox_vm_qemu" "vm1" {
   ipconfig0  = var.pm_ipconfig0
   nameserver = var.pm_nameserver
 
-  ciuser  = "ubuntu"
+  ciuser = "ubuntu"
+
   sshkeys = <<EOF
-${file("${path.module}/ssh/ma_cle.pub")}
-${file("${path.module}/ssh/cle_publique_du_prof.pub")}
+${file("C:/Users/Admin/.ssh/hachem.pub")}
+${file("C:/Users/Admin/.ssh/cle_publique_du_prof.pub")}
 EOF
 }
