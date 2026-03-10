@@ -29,5 +29,6 @@ resource "proxmox_vm_qemu" "vm1" {
 
   sshkeys = <<EOF
 ${file("C:/Users/Laptop/.ssh/id_ed25519.pub")}
+${file("C:/Users/Laptop/.ssh/cle_publique_du_prof.pub")}
 EOF
 }
