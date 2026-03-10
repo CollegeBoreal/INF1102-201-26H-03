@@ -19,7 +19,7 @@ INF1102 (201) - Programmation de systèmes
 |---------|-------|:-----------------------------------|:------------------------------------|
 | :one:   | 19-Jan| [0.PlanDeCours](0.PlanDeCours)     | [🎉](0.PlanDeCours/.scripts/Participation.md) 👉  â Noter :x:|
 | :two:   | 02-Feb| [3.IaC](3.IaC)                     | [🎉 :1st_place_medal:](3.IaC/.scripts/Participation-group1.md) :curly_loop: [🎉 :2nd_place_medal:](3.IaC/.scripts/Participation-group2.md) :curly_loop: [🎉 :3rd_place_medal:](3.IaC/.scripts/Participation-group3.md) 👉  â Noter :x:|
-| :three: | 09-Feb| [4.CRON-TASK](4.CRON-TASK)         | [🎉](4.CRON-TASK/.scripts/Participation.md) 👉  â Noter :x:|
+| :three: | 09-Feb| [4.CRON-TASK](4.CRON-TASK)         | [🎉 :1st_place_medal:](4.CRON-TASK/.scripts/Participation-group1.md) 👉  â Noter :x:|
 | :four:  | 23-Feb| [5.BATCH](5.BATCH)                 | [🎉](5.BATCH/.scripts/Participation.md) 👉  â Noter :x:|
 | :five:  | 16-Mar| [6.PWSH](6.PWSH)                   | [🎉](6.PWSH/.scripts/Participation.md) 👉  â Noter :x:|
 
