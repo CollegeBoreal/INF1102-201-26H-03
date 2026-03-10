@@ -373,6 +373,28 @@ Save:
 * **Token ID**: `tofu@pve!opentofu`
 * **Token Secret**: (shown once)
 
+## refresh Token
+
+```bash
+pveum user token remove tofu@pve opentofu
+```
+
+```bash
+pveum user token add tofu@pve opentofu --privsep 0
+```
+```lua
+user config - ignore invalid acl token 'tofu@pve!opentofu'
+┌──────────────┬──────────────────────────────────────┐
+│ key          │ value                                │
+╞══════════════╪══════════════════════════════════════╡
+│ full-tokenid │ tofu@pve!opentofu                    │
+├──────────────┼──────────────────────────────────────┤
+│ info         │ {"privsep":"0"}                      │
+├──────────────┼──────────────────────────────────────┤
+│ value        │ 63cd5a0b-2xxxxxxxxxxxxx-993a2d9de8dd │
+└──────────────┴──────────────────────────────────────┘
+```
+
 ---
 
 ### ✔ Create VM Template (cloud-init_template.sh)
