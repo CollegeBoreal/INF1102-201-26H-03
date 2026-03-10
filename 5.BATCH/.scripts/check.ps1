@@ -75,8 +75,8 @@ Write-Output ""
 # Présence table
 Write-Output "## :a: Présence"
 Write-Output ""
-Write-Output "|:hash:| Boréal :id:                | README.md | images | scruter_nginx.sh | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
-Write-Output "|------|----------------------------|-----------|--------|---------|----|-----|"
+Write-Output "|:hash:| Boréal :id:                | README.md | images | `/entreprise/script_gestion.sh`  | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
+Write-Output "|------|----------------------------|-----------|--------|----------------------------------|----|-----|"
 
 # -------------------------------
 # Initialisation
@@ -114,7 +114,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $URL = "[<image src='https://avatars0.githubusercontent.com/u/{1}?s=460&v=4' width=20 height=20></image>](https://github.com/{0})" -f $GitHubID, $AvatarID
     $FILE = "$StudentID/README.md"
     $FOLDER = "$StudentID/images"
-    $TF_FILE = "$StudentID/scruter_nginx.sh"
+    $TF_FILE = "$StudentID/script_gestion.sh"
 
     # Vérification VM
     $VM = ":x:"

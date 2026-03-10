@@ -26,8 +26,8 @@
 
 ## :a: Présence
 
-|:hash:| Boréal :id:                | README.md | images | scruter_nginx.sh | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |
-|------|----------------------------|-----------|--------|---------|----|-----|
+|:hash:| Boréal :id:                | README.md | images | /entreprise/script_gestion.sh  | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |
+|------|----------------------------|-----------|--------|----------------------------------|----|-----|
 | 0 | [300141858](../300141858/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205304457?s=460&v=4' width=20 height=20></image>](https://github.com/karimcode24) | :x: | :x: | :x: | :green_circle: [10.7.237.204](http://10.7.237.204) | :x: |
 | 1 | [300142072](../300142072/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/230452797?s=460&v=4' width=20 height=20></image>](https://github.com/sigadiarra) | :x: | :x: | :x: | :green_circle: [10.7.237.205](http://10.7.237.205) | :x: |
 | 2 | [300143951](../300143951/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994994?s=460&v=4' width=20 height=20></image>](https://github.com/frank17art) | :heavy_check_mark: | :heavy_check_mark: | :x: | :green_circle: [10.7.237.206](http://10.7.237.206) | :link: |
