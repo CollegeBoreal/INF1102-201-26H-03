@@ -6,9 +6,9 @@ Voici la **méthode correcte (recommandée pour un cours)**.
 
 ---
 
-# Installation de PowerShell sur Ubuntu 22.04
+## Installation de PowerShell sur Ubuntu 22.04
 
-## 1. Mettre à jour le système
+### 1. Mettre à jour le système
 
 ```bash
 sudo apt update
@@ -16,7 +16,7 @@ sudo apt update
 
 ---
 
-## 2. Installer les dépendances
+### 2. Installer les dépendances
 
 ```bash
 sudo apt install -y wget apt-transport-https software-properties-common
@@ -24,7 +24,7 @@ sudo apt install -y wget apt-transport-https software-properties-common
 
 ---
 
-## 3. Ajouter le dépôt Microsoft
+### 3. Ajouter le dépôt Microsoft
 
 Télécharger la clé du dépôt :
 
@@ -40,7 +40,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 ---
 
-## 4. Mettre à jour les dépôts
+### 4. Mettre à jour les dépôts
 
 ```bash
 sudo apt update
@@ -48,7 +48,7 @@ sudo apt update
 
 ---
 
-## 5. Installer PowerShell
+### 5. Installer PowerShell
 
 ```bash
 sudo apt install -y powershell
@@ -56,7 +56,7 @@ sudo apt install -y powershell
 
 ---
 
-## 6. Lancer PowerShell
+### 6. Lancer PowerShell
 
 ```bash
 pwsh
@@ -70,7 +70,7 @@ PS /home/user>
 
 ---
 
-## 7. Vérifier la version
+### 7. Vérifier la version
 
 Dans PowerShell :
 
@@ -80,7 +80,7 @@ $PSVersionTable
 
 ---
 
-# Astuce utile pour lancer ton script
+### 8. Astuce utile pour lancer ton script
 
 Pour exécuter un script :
 
