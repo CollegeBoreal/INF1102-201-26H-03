@@ -17,6 +17,8 @@ INF1102 (201) - Programmation de systèmes
 
 |  :hash: | Date  | Cours                              | 🎉 Participations                   |
 |---------|-------|:-----------------------------------|:------------------------------------|
+| :one:   |08-sept| [0.PlanDeCours](0.PlanDeCours)     | [🎉](0.PlanDeCours/.scripts/Participation.md) 👉  â Noter :x:|
+
 
 
 ### :abacus: Évaluation
