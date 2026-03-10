@@ -2,11 +2,9 @@
 
 Sous **Ubuntu 22.04 (Jammy)**, le paquet **PowerShell n’est pas dans les dépôts officiels d’Ubuntu**. Il faut ajouter le **dépôt Microsoft** avant de pouvoir utiliser `apt install powershell`.
 
-Voici la **méthode correcte (recommandée pour un cours)**.
-
 ---
 
-## Installation de PowerShell sur Ubuntu 22.04
+## :floppy: Installation de PowerShell sur Ubuntu 22.04
 
 ### 1. Mettre à jour le système
 
