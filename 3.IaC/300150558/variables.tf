@@ -1,4 +1,3 @@
-@'
 variable "pm_vm_name" {
   type = string
 }
@@ -23,4 +22,3 @@ variable "pm_token_secret" {
   type      = string
   sensitive = true
 }
-'@ | Set-Content -Encoding UTF8 variables.tf

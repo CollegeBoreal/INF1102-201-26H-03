@@ -21,7 +21,7 @@
 
 | TOFU Credentials                                    | :closed_lock_with_key: Secret |
 |-----------------------------------------------------|------------------|
-| tofu@pve!opentofu                                   | 6ad11b5a-8883-445e-bdf0-5b0a6b8b9b7c   |
+| tofu@pve!opentofu                                   | 63cd5a0b-24a0-42a1-9ce3-993a2d9de8dd   |
 
 
 ## :a: Présence
@@ -36,6 +36,6 @@
 | 5 | [300150558](../300150558/README.md) [<image src='https://avatars0.githubusercontent.com/u/212186770?s=460&v=4' width=20 height=20></image>](https://github.com/amirasadouni00) | :x: | :x: | :x: | 10.7.237.219 |
 | 6 | [300151042](../300151042/README.md) [<image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image>](https://github.com/hichemhamdi10) | :x: | :x: | :x: | 10.7.237.220 |
 | 7 | [300151354](../300151354/README.md) [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :x: | :x: | :x: | 10.7.237.221 |
-| 8 | [300151607](../300151607/README.md) [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :x: | :x: | 10.7.237.222 |
+| 8 | [300151607](../300151607/README.md) [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :heavy_check_mark: | :x: | :x: | 10.7.237.222 |
 | 9 | [300151970](../300151970/README.md) [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :x: | :x: | :x: | 10.7.237.223 |
 | :abacus: | \$\\frac{2}{10}\$ = 20% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 2 |

@@ -1,4 +1,3 @@
-@'
 resource "proxmox_vm_qemu" "vm1" {
   name        = var.pm_vm_name
   target_node = "labinfo"
@@ -29,8 +28,6 @@ resource "proxmox_vm_qemu" "vm1" {
   ciuser = "ubuntu"
 
   sshkeys = <<EOF
-${file("~/.ssh/ma_cle.pub")}
-${file("~/.ssh/cle_publique_du_prof.pub")}
+${file("C:/Users/Laptop/.ssh/id_ed25519.pub")}
 EOF
 }
-'@ | Set-Content -Encoding UTF8 main.tf
