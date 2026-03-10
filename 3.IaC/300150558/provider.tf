@@ -1,4 +1,3 @@
-@'
 terraform {
   required_providers {
     proxmox = {
@@ -14,4 +13,3 @@ provider "proxmox" {
   pm_api_token_secret = var.pm_token_secret
   pm_tls_insecure     = true
 }
-'@ | Set-Content -Encoding UTF8 provider.tf
