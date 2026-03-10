@@ -17,7 +17,11 @@ INF1102 (201) - Programmation de systèmes
 
 |  :hash: | Date  | Cours                              | 🎉 Participations                   |
 |---------|-------|:-----------------------------------|:------------------------------------|
-| :one:   |08-sept| [0.PlanDeCours](0.PlanDeCours)     | [🎉](0.PlanDeCours/.scripts/Participation.md) 👉  â Noter :x:|
+| :one:   | 19-Jan| [0.PlanDeCours](0.PlanDeCours)     | [🎉](0.PlanDeCours/.scripts/Participation.md) 👉  â Noter :x:|
+| :two:   | 02-Feb| [3.IaC](3.IaC)                     | [🎉](3.IaC/.scripts/Participation.md) 👉  â Noter :x:|
+| :three: | 09-Feb| [4.CRON-TASK](4.CRON-TASK)         | [🎉](4.CRON-TASK/.scripts/Participation.md) 👉  â Noter :x:|
+| :four:  | 23-Feb| [5.BATCH](5.BATCH)                 | [🎉](5.BATCH/.scripts/Participation.md) 👉  â Noter :x:|
+| :five:  | 16-Mar| [6.PWSH](6.PWSH)                   | [🎉](6.PWSH/.scripts/Participation.md) 👉  â Noter :x:|
 
 
 
