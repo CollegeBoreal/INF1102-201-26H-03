@@ -74,3 +74,16 @@ Surveillance des logs Nginx
 
 Automatisation avec cron
 
+## Vérification
+
+### Script scruter_nginx.sh
+![Script](images/script.png)
+
+### Résultat du script (IP extraites)
+![Result](images/result.png)
+
+### Tâche CRON configurée
+![Cron](images/cron.png)
+
+### Service cron actif
+![Cron Service](images/cron_service.png)
