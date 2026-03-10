@@ -263,7 +263,7 @@ Résultat attendu :
 
 ---
 
-Utiliser **PowerShell sous Linux** apporte plusieurs avantages, surtout dans un contexte **administration système, DevOps ou automatisation multi-plateforme**. Voici les principaux points :
+:fortune_cookie: Utiliser **PowerShell sous Linux** apporte plusieurs avantages, surtout dans un contexte **administration système, DevOps ou automatisation multi-plateforme**. Voici les principaux points :
 
 ---
 
