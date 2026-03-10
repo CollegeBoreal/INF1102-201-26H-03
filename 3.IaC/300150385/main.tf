@@ -1,16 +1,18 @@
-resource "proxmox_vm_qemu" "vm_iac" {
-
+resource "proxmox_vm_qemu" "vm1" {
   name        = var.pm_vm_name
   target_node = "labinfo"
   clone       = "ubuntu-jammy-template"
 
-  cores  = 2
-  memory = 2048
+  cores   = 2
+  sockets = 1
+  memory  = 2048
+
+  scsihw = "virtio-scsi-pci"
 
   disk {
     size    = "10G"
-    storage = "local-lvm"
     type    = "scsi"
+    storage = "local-lvm"
   }
 
   network {
@@ -20,6 +22,12 @@ resource "proxmox_vm_qemu" "vm_iac" {
 
   os_type = "cloud-init"
 
-  ipconfig0  = var.pm_ipconfig0
+  ipconfig0 = var.pm_ipconfig0
   nameserver = var.pm_nameserver
+
+  ciuser  = "ubuntu"
+  sshkeys = <<EOF
+   ${file("~/.ssh/ma_cle.pub")}
+   ${file("~/.ssh/cle_publique_du_prof.pub")}
+  EOF
 }

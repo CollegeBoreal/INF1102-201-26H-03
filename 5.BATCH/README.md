@@ -1,5 +1,12 @@
 # 🧪 TP – Automatisation d’administration avec script Batch (Linux)
 
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) | [:checkered_flag: Vérification](.scripts/Check-group1.md) |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) | [:checkered_flag: Vérification](.scripts/Check-group2.md) |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) | [:checkered_flag: Vérification](.scripts/Check-group3.md) |
+
+
 ## 🎯 Objectif
 
 Programmer un script Batch sous **Linux** permettant de :
@@ -199,46 +206,75 @@ fi
 
 ---
 
-# 📊 Grille d’évaluation
-
-| Critère                    | Points |
-| -------------------------- | ------ |
-| Structure script           | /10    |
-| Sauvegarde fonctionnelle   | /15    |
-| Création utilisateur       | /15    |
-| Journalisation             | /15    |
-| Compression archive        | /10    |
-| Planification cron         | /15    |
-| Vérification et diagnostic | /10    |
-| Professionnalisme          | /10    |
-| **Total**                  | /100   |
-
----
-
-# 🎓 Alignement RAFP
-
-| Compétence              | Couvert |
-| ----------------------- | ------- |
-| 2.1 Commandes Linux     | ✔       |
-| 2.2 Script enchaîné     | ✔       |
-| 2.3 Exécution auto      | ✔       |
-| 2.4 Sauvegarde/archives | ✔       |
-| 2.5 Planification       | ✔       |
-| 2.6 Vérification        | ✔       |
-| 2.7 Diagnostic          | ✔       |
-| 2.8 Correction          | ✔       |
-
----
-
 # ✅ Résultat attendu
 
 À la fin du TP, l’étudiant sera capable de :
 
-✔ Écrire un script Batch structuré
-✔ Automatiser une tâche système
-✔ Planifier son exécution
-✔ Lire les logs système
-✔ Diagnostiquer et corriger un problème
+- ✔ Écrire un script Batch structuré
+- ✔ Automatiser une tâche système
+- ✔ Planifier son exécution
+- ✔ Lire les logs système
+- ✔ Diagnostiquer et corriger un problème
+
+### Diagramme “avant et après” exécution
+
+```plaintext
+Avant exécution :
+
+/entreprise/
+│
+├── data/                     # Dossier original
+│   ├── fichier1.txt
+│   ├── fichier2.csv
+│   └── ...
+│
+├── backup/                   # Dossier de sauvegarde vide ou ancien contenu
+│   └── (ancien backup)
+│
+└── logs/                     # Dossier logs
+    └── log.txt               # Peut exister ou vide
+
+
+Après exécution :
+
+/entreprise/
+│
+├── data/                     # Dossier original (inchangé)
+│   ├── fichier1.txt
+│   ├── fichier2.csv
+│   └── ...
+│
+├── backup/                   # Sauvegarde des fichiers + archive
+│   ├── fichier1.txt          # Copie de data/fichier1.txt
+│   ├── fichier2.csv          # Copie de data/fichier2.csv
+│   └── backup_2026-03-10.tar.gz  # Archive compressée de tout le dossier data
+│
+└── logs/
+    └── log.txt               # Journal complet de l’exécution
+        ├── Début exécution : date
+        ├── Test réseau
+        ├── Sauvegarde fichiers
+        ├── Création utilisateur temporaire
+        ├── Compression archive
+        └── Fin exécution : date
+
+Flux de données :
+
+data/ ────copie────▶ backup/
+data/ ────archive──▶ backup/backup_YYYY-MM-DD.tar.gz
+script ────────────▶ logs/log.txt
+```
+
+---
+
+### Points clés du diagramme
+
+1. **`data/`** : source des fichiers à sauvegarder.
+2. **`backup/`** : destination des copies + archive `.tar.gz`.
+3. **`logs/log.txt`** : fichier texte qui enregistre **toutes les étapes du batch**.
+4. **Flux de données** : les fichiers passent de `data/` → `backup/` (copie), puis tout le dossier est **compressé en archive** → `backup/backup_YYYY-MM-DD.tar.gz`.
+5. **Utilisateur temporaire** `employe_temp` est créé dans le système (non représenté par un fichier mais journalisé dans `log.txt`).
+
 
 # 📚 References
 

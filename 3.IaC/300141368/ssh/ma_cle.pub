@@ -1,0 +1,1 @@
+copy $HOME\.ssh\ma_cle.pub .\ssh\ma_cle.pub

@@ -1,0 +1,14 @@
+@'
+# OpenTofu/Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Editor/OS
+.vscode/
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Encoding UTF8 .gitignore
