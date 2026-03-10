@@ -108,7 +108,7 @@ Shell : **PowerShell (pwsh)**
 
 ---
 
-## 🔹 PARTIE 1 –Objectifs
+## :o: Objectifs
 
 À la fin de ce laboratoire, l’étudiant sera capable de :
 
