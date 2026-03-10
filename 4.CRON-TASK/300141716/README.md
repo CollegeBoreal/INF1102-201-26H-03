@@ -22,7 +22,7 @@ OUTPUT_FILE="/home/ubuntu/nginx_ips.txt"
 awk '{print $1}' $LOG_FILE | sort | uniq > $OUTPUT_FILE
 
 echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
-
+```
 ## Vérification
 
 ### Script scruter_nginx.sh
@@ -36,4 +36,5 @@ echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 
 ### Service cron actif
 ![Cron Service](images/cron_service.png)
+
 
