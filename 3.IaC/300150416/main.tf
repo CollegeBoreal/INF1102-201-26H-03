@@ -28,7 +28,7 @@ resource "proxmox_vm_qemu" "vm1" {
   ciuser = "ubuntu"
 
   sshkeys = <<EOF
-${file("C:/Users/Admin/.ssh/hachem.pub")}
-${file("C:/Users/Admin/.ssh/cle_publique_du_prof.pub")}
-EOF
+   ${file("~/.ssh/hachem.pub")}
+   ${file("~/.ssh/cle_publique_du_prof.pub")}
+  EOF
 }
