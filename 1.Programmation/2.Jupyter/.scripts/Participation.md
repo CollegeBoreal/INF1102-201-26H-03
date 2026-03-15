@@ -1,4 +1,4 @@
-# Participation au 14-03-2026 21:56
+# Participation au 15-03-2026 23:43
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -45,5 +45,5 @@
 | 26 | [300151042](../300151042/RAPPORT.ipynb) :point_right: [hichemhamdi10](https://github.com/hichemhamdi10) <image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image> | :x: |
 | 27 | [300151354](../300151354/RAPPORT.ipynb) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :x: |
 | 28 | [300151607](../300151607/RAPPORT.ipynb) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: |
-| 29 | [300151970](../300151970/RAPPORT.ipynb) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :x: |
-| :abacus: | \$\\frac{17}{30}\$ = 56.67% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 17 |
+| 29 | [300151970](../300151970/RAPPORT.ipynb) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: |
+| :abacus: | \$\\frac{18}{30}\$ = 60% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 18 |
