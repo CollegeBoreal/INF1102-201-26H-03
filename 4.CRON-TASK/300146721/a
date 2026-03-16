@@ -1,0 +1,9 @@
+## Vérification du service Nginx
+
+Commande utilisée :
+```bash
+nano /home/ubuntu/scruter_nginx.sh
+```
+systemctl status nginx
+
+
