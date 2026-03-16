@@ -8,7 +8,7 @@ Nom : **Babatundé Adissa Fadolle AROUNA**
 
 Numéro étudiant : **300151970**
 
-Cours : **INF1102 – Administration Linux**
+Cours : **INF1102 – Programmation des Systèmes**
 
 Collège : **Collège Boréal - Campus Toronto**
 
