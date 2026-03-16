@@ -44,9 +44,8 @@ ssh -i ~/.ssh/ma_cle.pk \
 ubuntu@10.7.237.223
 ```
 
-![Description de l'image](images/1.1.png)
+<img width="352" height="91" alt="image1" src="C:/Users/300151970/OneDrive - Collège Boréal/Pictures/1.1.png" />
 
-➡️ Ajouter ici la capture de la connexion SSH.
 
 ### Résultat obtenu
 
