@@ -43,8 +43,8 @@ ssh -i ~/.ssh/ma_cle.pk \
 -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
 ubuntu@10.7.237.223
 ```
-<img width="974" height="699" alt="1 1" src="https://github.com/user-attachments/assets/ef6ab88d-368e-4410-8072-274302bf7b06" />
 
+<img width="1159" height="699" alt="1" src="https://github.com/user-attachments/assets/81839bbd-e1ea-4125-a0bd-daec34a01b25" />
 
 
 
@@ -57,6 +57,9 @@ Welcome to Ubuntu 22.04.5 LTS
 IPv4 address for eth0: 10.7.237.223
 Memory usage: 17%
 ```
+
+<img width="974" height="699" alt="1 1" src="https://github.com/user-attachments/assets/ef6ab88d-368e-4410-8072-274302bf7b06" />
+
 
 ### Explication
 
