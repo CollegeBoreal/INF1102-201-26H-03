@@ -1,10 +1,3 @@
-## Vérification du service Nginx
-
-Commande utilisée :
-```bash
-systemctl status nginx
-```
-![nginx](photos/1 systemctl status nginx.PNG)
 
 # Analyse des logs Nginx
 
@@ -13,7 +6,7 @@ systemctl status nginx
 systemctl status nginx
 ```
 
-![nginx](photos/nginx-status.png)
+<img src='photos/1 systemctl status nginx.PNG'/>
 
 ---
 
@@ -38,7 +31,7 @@ nano scruter_nginx.sh
 ```bash
 crontab -e
 ```
-![cron](photos/6.PNG)
+<img src='(photos/6.PNG'/>
 
 
 ![cron](photos/site 192.PNG)
