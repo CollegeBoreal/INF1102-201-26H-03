@@ -5,9 +5,13 @@
 ## 👤 Informations de l’étudiant
 
 Nom : **Babatundé Adissa Fadolle AROUNA**
+
 Numéro étudiant : **300151970**
+
 Cours : **INF1102 – Administration Linux**
+
 Collège : **Collège Boréal - Campus Toronto**
+
 Laboratoire : **CRON-TASK — Analyse des logs Nginx**
 
 ---
