@@ -4,7 +4,7 @@ Commande utilisée :
 ```bash
 systemctl status nginx
 ```
-![Nginx](photos/1 systemctl status nginx.PNG)
+![logs](photos/1 systemctl status nginx.PNG)
 
 # Analyse des logs Nginx
 
