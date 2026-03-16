@@ -44,7 +44,7 @@ ssh -i ~/.ssh/ma_cle.pk \
 ubuntu@10.7.237.223
 ```
 
-
+![Description de l'image](images/1.1.png)
 
 ➡️ Ajouter ici la capture de la connexion SSH.
 
