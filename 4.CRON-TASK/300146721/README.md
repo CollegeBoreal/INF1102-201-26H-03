@@ -6,7 +6,7 @@
 systemctl status nginx
 ```
 
-<img src='photos/1 systemctl status nginx.PNG'/>
+<img src='images/1 systemctl status nginx.PNG'/>
 
 ---
 
@@ -15,7 +15,7 @@ systemctl status nginx
 awk '{print $1}' /var/log/nginx/access.log
 ```
 
-![logs](photos/3.PNG)
+![logs](images/3.PNG)
 
 ---
 
@@ -23,7 +23,7 @@ awk '{print $1}' /var/log/nginx/access.log
 ```bash
 nano scruter_nginx.sh
 ```
-![script](photos/4.PNG)
+![script](images/4.PNG)
 
 ---
 
@@ -31,6 +31,6 @@ nano scruter_nginx.sh
 ```bash
 crontab -e
 ```
-<img src='photos/6.PNG'/>
-<img src='photos/site 192.PNG'/>
+<img src='images/6.PNG'/>
+<img src='images/site 192.PNG'/>
 
