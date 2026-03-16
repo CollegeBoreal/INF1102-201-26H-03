@@ -8,6 +8,7 @@ Cours : INF1102 – Programmation des Systèmes
 Collège : Collège Boréal - Campus Toronto
 
 
+
 ## 1. Vérification de l’installation d’OpenTofu
 
 Commande exécutée :
