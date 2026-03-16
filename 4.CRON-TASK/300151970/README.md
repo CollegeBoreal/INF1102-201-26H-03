@@ -43,8 +43,9 @@ ssh -i ~/.ssh/ma_cle.pk \
 -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
 ubuntu@10.7.237.223
 ```
+<img width="974" height="699" alt="1 1" src="https://github.com/user-attachments/assets/ef6ab88d-368e-4410-8072-274302bf7b06" />
 
-capture
+
 
 
 ### Résultat obtenu
