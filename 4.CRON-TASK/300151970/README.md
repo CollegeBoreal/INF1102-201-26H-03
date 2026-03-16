@@ -44,8 +44,6 @@ ssh -i ~/.ssh/ma_cle.pk \
 ubuntu@10.7.237.223
 ```
 
-<img width="352" height="91" alt="image1" src="images/1.1.png" />
-
 ### Résultat obtenu
 
 Connexion réussie au serveur :
