@@ -4,7 +4,7 @@ Commande utilisée :
 ```bash
 systemctl status nginx
 ```
-![Nginx](photos/installation_nginx.png)
+![Nginx](photos/1 systemctl status nginx.PNG)
 
 # Analyse des logs Nginx
 
@@ -13,7 +13,7 @@ systemctl status nginx
 systemctl status nginx
 ```
 
-![nginx](photos/installation_nginx.png)
+![nginx](photos/1 systemctl status nginx.PNG)
 
 ---
 
@@ -22,7 +22,7 @@ systemctl status nginx
 awk '{print $1}' /var/log/nginx/access.log
 ```
 
-![logs](photos/extraction_ip.png)
+![logs](photos/3.PNG)
 
 ---
 
@@ -30,7 +30,7 @@ awk '{print $1}' /var/log/nginx/access.log
 ```bash
 nano scruter_nginx.sh
 ```
-![script](photos/script_shell.png)
+![script](photos/4.PNG)
 
 ---
 
@@ -38,4 +38,7 @@ nano scruter_nginx.sh
 ```bash
 crontab -e
 ```
-![cron](photos/cron.png)
+![cron](photos/6.PNG)
+
+
+![cron](photos/site 192.PNG)
