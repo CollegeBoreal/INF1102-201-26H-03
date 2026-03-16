@@ -31,7 +31,5 @@ nano scruter_nginx.sh
 ```bash
 crontab -e
 ```
-<img src='(photos/6.PNG'/>
+<img src='(photos/site 192.PNG'/>
 
-
-![cron](photos/site 192.PNG)
