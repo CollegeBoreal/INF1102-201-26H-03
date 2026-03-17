@@ -515,14 +515,6 @@ crontab -e
 
 ---
 
-## Windows (PowerShell planifié)
-
-```powershell
-schtasks /create /sc daily /tn "AnalyseNginx" /tr "pwsh C:\scripts\analyse_nginx.ps1" /st 02:00
-```
-
----
-
 # 🔍 **PARTIE 4 — Vérification**
 
 ```bash
@@ -544,11 +536,11 @@ grep CRON /var/log/syslog
 
 # 🎓 **Compétences couvertes**
 
-✔ Regex (PowerShell + Python)
-✔ Analyse de logs web
-✔ Traitement de texte
-✔ Automatisation
-✔ Débogage
+- ✔ Regex (PowerShell + Python)
+- ✔ Analyse de logs web
+- ✔ Traitement de texte
+- ✔ Automatisation
+- ✔ Débogage
 
 ---
 
