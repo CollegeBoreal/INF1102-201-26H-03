@@ -91,16 +91,16 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $FOLDER = "$StudentID/images"
     $TF_FILE = "$StudentID/main.tf"
 
-    # Statut README.md
+    # --- README.md status ---
     if (-not (Test-Path $FILE)) {
         $README_STATUS = ":x:"
     }
     else {
         $Content = Get-Content $FILE -Raw
-        $HasText = ($Content -match '\S') # contient du texte non vide
-        $HasImage = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
+        $HasText = ($Content -match '\S')
+        $HasImageInReadme = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
         
-        if ($HasText -and $HasImage) {
+        if ($HasText -and $HasImageInReadme) {
             $README_STATUS = ":white_check_mark:"
         }
         else {
@@ -108,8 +108,16 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
         }
     }
 
-    # Vérification main.tf
-    if (Test-Path $FOLDER -PathType Container -and Test-Path $TF_FILE -PathType Leaf) {
+    # --- Images folder status ---
+    if (Test-Path $FOLDER -PathType Container) {
+        $IMAGES_STATUS = ":heavy_check_mark:"
+    }
+    else {
+        $IMAGES_STATUS = ":x:"
+    }
+
+    # --- main.tf status ---
+    if (Test-Path $TF_FILE -PathType Leaf) {
         $TF_STATUS = ":heavy_check_mark:"
     }
     else {
@@ -117,7 +125,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     }
 
     # Ligne du tableau
-    $LINE = "| $i | [$StudentID](../$FILE) $URL | $README_STATUS | $TF_STATUS | ${ServerID} |"
+    $LINE = "| $i | [$StudentID](../$FILE) $URL | $README_STATUS | $IMAGES_STATUS | $TF_STATUS | ${ServerID} |"
     Write-Output $LINE
 
     # Stats (optionnel)
