@@ -1,7 +1,19 @@
 
+## DIABATE 
 
+- Identifiant : **300144176**
+- Nom: awa
+- Cours : Programmation système 
+- Thème : **CRON-TASK**
+- -----
+## 🎯 Objectif
+Surveiller les accès au serveur NGINX et extraire les adresses IP des visiteurs automatiquement.
 
+---
 
+## 🔍 Analyse des logs
+
+Fichier analysé : /var/log/nginx/access.log
 
 
 <img width="525" height="72" alt="cron 4 5" src="https://github.com/user-attachments/assets/854c164e-432d-4a57-864d-e255da4bd74b" />
@@ -27,4 +39,5 @@
 
 
 <img width="1252" height="54" alt="cron4 8" src="https://github.com/user-attachments/assets/0919ee37-06b1-4934-8832-a56c1600c3e3" />
+
 
