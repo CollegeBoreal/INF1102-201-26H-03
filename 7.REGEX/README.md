@@ -366,7 +366,7 @@ rapport_nginx_YYYY-MM-DD.txt
 | IP        | `(\d{1,3}\.){3}\d{1,3}` |           |
 | Code HTTP | `" (\d{3}) `            |           |
 | Pages GET | `"GET ([^ ]+)`          |           |
-| Erreurs   | `" (4                   | 5)\d{2} ` |
+| Erreurs   | `" (4 \| 5)\d{2} `      |           |
 
 ---
 
