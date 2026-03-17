@@ -44,8 +44,7 @@ ssh -i ~/.ssh/ma_cle.pk \
 ubuntu@10.7.237.223
 ```
 
-<img width="1159" height="699" alt="1" src="https://github.com/user-attachments/assets/81839bbd-e1ea-4125-a0bd-daec34a01b25" />
-
+<img width="695" height="98" alt="image 0" src="https://github.com/user-attachments/assets/4367a80f-2ddf-4eae-a42c-f7c03bf1c4ec" />
 
 
 ### Résultat obtenu
