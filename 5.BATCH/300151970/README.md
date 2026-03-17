@@ -75,10 +75,15 @@ ls -R /entreprise
 Résultat attendu :
 
 ```
-/entreprise/
-├── data
-├── backup
-└── logs
+/entreprise:
+backup data logs script_gestion.sh
+
+/entreprise/backup:
+
+/entreprise/data:
+fichier1.txt  fichier2.txt
+
+/entreprise/logs:
 ```
 
 Explication :
