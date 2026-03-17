@@ -1,4 +1,4 @@
-# Participation au 17-03-2026 20:50
+# Participation au 17-03-2026 20:53
 
 | Table des matières            | Description                                             |
 |-------------------------------|---------------------------------------------------------|
@@ -45,5 +45,5 @@
 | 26 | [300151042](../300151042/README.md) :point_right: [hichemhamdi10](https://github.com/hichemhamdi10) <image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
 | 27 | [300151354](../300151354/README.md) :point_right: [massinissamakoudi](https://github.com/massinissamakoudi) <image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image> | :x: | :x: |
 | 28 | [300151607](../300151607/README.md) :point_right: [oussama-rgb-art](https://github.com/oussama-rgb-art) <image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image> | :x: | :x: |
-| 29 | [300151970](../300151970/README.md) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :x: |
-| :abacus: | \$\\frac{3}{30}\$ = 10% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 3 |
+| 29 | [300151970](../300151970/README.md) :point_right: [adissa29](https://github.com/adissa29) <image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | :heavy_check_mark: |
+| :abacus: | \$\\frac{4}{30}\$ = 13.33% | \$\displaystyle\sum_{i=1}^{30} s_i\$ = 4 |
