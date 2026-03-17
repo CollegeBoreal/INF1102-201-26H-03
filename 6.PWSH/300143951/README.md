@@ -24,13 +24,16 @@ Mettre en place un script PowerShell sous Linux permettant de superviser l’ét
 ## Captures d’écran
 
 ### Installation de PowerShell
-![Installation](images/install_powershell.png)
 
-### Structure des fichiers
-![Fichiers](images/les fichiers existent.png)
+<img width="952" height="867" alt="install_powershell" src="https://github.com/user-attachments/assets/471eb911-fdf4-4f17-9ea0-c438762b1942" />
 
 ### Exécution du script
-![Execution](images/script operationnel.png)
+
+<img width="1387" height="803" alt="script operationnel" src="https://github.com/user-attachments/assets/f4fda199-aa7d-4fdc-948f-3945bc8b8795" />
+
+### Structure des fichiers
+
+<img width="607" height="137" alt="les fichiers existent" src="https://github.com/user-attachments/assets/ce33b193-9c35-4ce2-a7af-d33915c670b0" />
 
 ## Résultat
 Le script fonctionne correctement et permet d’automatiser la collecte d’informations système ainsi que la génération de rapports, conformément aux objectifs du laboratoire DevOps.
