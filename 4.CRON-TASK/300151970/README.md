@@ -175,6 +175,8 @@ Pour automatiser cette tâche, j’ai créé un script shell.
 nano /home/ubuntu/scruter_nginx.sh
 ```
 
+<img width="721" height="22" alt="image 6" src="https://github.com/user-attachments/assets/f1db5468-5551-4172-b308-0eb2c737a593" />
+
 ### Contenu du script
 
 ```bash
@@ -194,11 +196,15 @@ echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 chmod +x /home/ubuntu/scruter_nginx.sh
 ```
 
+<img width="770" height="23" alt="image 7" src="https://github.com/user-attachments/assets/8758fd44-fb1a-4eda-aaac-a9a09c31b42c" />
+
 ### Test du script
 
 ```bash
 /home/ubuntu/scruter_nginx.sh
 ```
+
+<img width="756" height="67" alt="image 8" src="https://github.com/user-attachments/assets/96076dab-860f-4f8f-a94c-9c5f07592db8" />
 
 ### Résultat obtenu
 
@@ -220,6 +226,8 @@ Pour exécuter le script automatiquement toutes les heures, j’ai configuré un
 crontab -e
 ```
 
+<img width="762" height="256" alt="image 9" src="https://github.com/user-attachments/assets/370228e0-6ba2-412f-a24a-cdd8605c4117" />
+
 Choix de l’éditeur :
 
 ```
@@ -237,6 +245,8 @@ Choix de l’éditeur :
 ```bash
 systemctl status cron
 ```
+
+<img width="1005" height="257" alt="image 10" src="https://github.com/user-attachments/assets/1aa88547-1900-45d6-aea7-d40a20c730e8" />
 
 ### Résultat obtenu
 
