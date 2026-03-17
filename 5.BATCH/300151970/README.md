@@ -73,6 +73,7 @@ sudo mkdir -p /entreprise/logs
 ```bash
 ls -R /entreprise
 ```
+<img width="737" height="232" alt="image2" src="https://github.com/user-attachments/assets/5c623119-6a7a-480f-8d43-ea2c7870ea5a" />
 
 Résultat attendu :
 
@@ -87,7 +88,7 @@ fichier1.txt  fichier2.txt
 
 /entreprise/logs:
 ```
-<img width="737" height="232" alt="image2" src="https://github.com/user-attachments/assets/5c623119-6a7a-480f-8d43-ea2c7870ea5a" />
+
 
 Explication :
 L’option `-p` permet de créer les dossiers parents si nécessaire.
