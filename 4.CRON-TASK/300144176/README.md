@@ -16,6 +16,12 @@ Surveiller les accès au serveur NGINX et extraire les adresses IP des visiteurs
 Fichier analysé : /var/log/nginx/access.log
 
 
+
+
+<img width="728" height="57" alt="4 2 cron" src="https://github.com/user-attachments/assets/89996696-18d0-4ef3-a730-39e54eca7628" />
+
+
+
 <img width="525" height="72" alt="cron 4 5" src="https://github.com/user-attachments/assets/854c164e-432d-4a57-864d-e255da4bd74b" />
 
 
@@ -29,15 +35,12 @@ Fichier analysé : /var/log/nginx/access.log
 
 
 
-<img width="728" height="57" alt="4 2 cron" src="https://github.com/user-attachments/assets/89996696-18d0-4ef3-a730-39e54eca7628" />
-
-
-
 <img width="635" height="70" alt="Screenshot 4  1 cron" src="https://github.com/user-attachments/assets/f6579023-aca8-4cd2-946d-9406f4272b8d" />
 
 
 
 
 <img width="1252" height="54" alt="cron4 8" src="https://github.com/user-attachments/assets/0919ee37-06b1-4934-8832-a56c1600c3e3" />
+
 
 
