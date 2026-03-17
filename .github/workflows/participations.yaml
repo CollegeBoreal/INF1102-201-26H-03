@@ -10,6 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Run PowerShell script
+        shell: pwsh
+        env:
+          LMS_URL: ${{ secrets.LMS_URL }}            # GitHub variable
+          API_SYNC_TOKEN: ${{ secrets.API_SYNC_TOKEN }} # GitHub secret
+        run: pwsh .scripts/push_grades.ps1
+
       - name: Évaluer les chapitres
         shell: pwsh
         run: |
@@ -42,6 +49,30 @@ jobs:
           ##
           Write-Host "Evaluating chapter 3.IaC Participation"
           Set-Location 3.IaC
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 4.CRON-TASK
+          ##
+          Write-Host "Evaluating chapter 4.CRON-TASK Participation"
+          Set-Location 4.CRON-TASK
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 5.BATCH
+          ##
+          Write-Host "Evaluating chapter 5.BATCH Participation"
+          Set-Location 5.BATCH
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 6.PWSH
+          ##
+          Write-Host "Evaluating chapter 6.PWSH Participation"
+          Set-Location 6.PWSH
           pwsh .scripts/run.ps1
           Set-Location ..
 
