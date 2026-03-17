@@ -48,9 +48,13 @@ Connexion à la VM via SSH :
 
 ```powershell
 
-ssh -i ~/.ssh/taylor.pk `
-  -o StrictHostKeyChecking=no `
-  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+ssh -i ~/.ssh/ma_cle.pk \
+  -o StrictHostKeyChecking=no \
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
   ubuntu@10.7.237.208
-
 ```
+<img width="1095" height="529" alt="image" src="https://github.com/user-attachments/assets/7d10e071-d2b2-4ce2-b501-799236bf6e08" />
+
+<img width="771" height="460" alt="image" src="https://github.com/user-attachments/assets/891699e8-b4c2-4c9a-b267-b5113a42dedf" />
+
+
