@@ -286,6 +286,8 @@ Sur ma machine locale, j’ai organisé mon travail dans le dépôt du cours.
 mkdir images
 ```
 
+<img width="1122" height="253" alt="image 11" src="https://github.com/user-attachments/assets/22119002-67e9-424b-9788-330de50b3a6b" />
+
 Ce dossier servira à stocker les captures d’écran du laboratoire.
 
 ---
@@ -298,11 +300,15 @@ Ajout des fichiers :
 git add .
 ```
 
+<img width="1592" height="52" alt="image 12" src="https://github.com/user-attachments/assets/b246c894-1ddf-45a1-9970-125ffac7932a" />
+
 Commit :
 
 ```bash
 git commit -m "Je suis étudiant au collège boréal"
 ```
+
+<img width="1417" height="141" alt="image 13" src="https://github.com/user-attachments/assets/6c3065f2-44b6-4e16-b8d2-3cb7c874be95" />
 
 Synchronisation avec le dépôt distant :
 
@@ -310,6 +316,8 @@ Synchronisation avec le dépôt distant :
 git pull
 git push
 ```
+
+<img width="1196" height="536" alt="image 14" src="https://github.com/user-attachments/assets/b7c7281a-2077-4a12-9bf4-b9321a5981f3" />
 
 Le projet a été envoyé avec succès sur le dépôt GitHub du cours.
 
