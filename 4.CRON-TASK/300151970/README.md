@@ -86,7 +86,8 @@ Pour extraire les adresses IP des visiteurs, j’ai utilisé la commande suivant
 awk '{print $1}' /var/log/nginx/access.log
 ```
 
-### 📸 Capture d’écran
+<img width="792" height="85" alt="image 1" src="https://github.com/user-attachments/assets/98199403-e37f-4cc0-af7a-9a72cf389991" />
+
 
 ➡️ Ajouter la capture du terminal.
 
@@ -97,6 +98,8 @@ awk '{print $1}' /var/log/nginx/access.log
 10.250.0.38
 10.250.0.38
 ```
+
+<img width="807" height="137" alt="image 2" src="https://github.com/user-attachments/assets/77d15ce1-63c8-48ea-8acb-c86dc9a90a32" />
 
 ### Explication
 
@@ -113,7 +116,8 @@ Pour afficher seulement les IP uniques :
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq
 ```
 
-### 📸 Capture d’écran
+<img width="957" height="26" alt="image 3" src="https://github.com/user-attachments/assets/fa953100-b267-45eb-bcc2-41c7951d779a" />
+
 
 ➡️ Ajouter la capture.
 
@@ -140,7 +144,7 @@ Pour enregistrer les adresses IP uniques dans un fichier :
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq > /home/ubuntu/nginx_ips.txt
 ```
 
-### 📸 Capture d’écran
+<img width="1316" height="25" alt="image 4" src="https://github.com/user-attachments/assets/83a93913-f4d2-4520-845c-4d1b29a9e3bb" />
 
 ➡️ Ajouter la capture.
 
@@ -152,12 +156,13 @@ Vérification avec :
 cat /home/ubuntu/nginx_ips.txt
 ```
 
+<img width="812" height="110" alt="image 5" src="https://github.com/user-attachments/assets/ddfa70d4-586d-482c-b310-6bbb1e39b453" />
+
 Résultat :
 
 ```
 10.250.0.38
 ```
-
 ---
 
 # 6️⃣ Création d’un script d’automatisation
