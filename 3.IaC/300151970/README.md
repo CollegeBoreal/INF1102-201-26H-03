@@ -1,4 +1,4 @@
-👤 Informations de l’étudiant
+Informations de l’étudiant
 
 Nom : Babatundé Adissa Fadolle AROUNA
 
