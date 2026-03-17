@@ -337,6 +337,15 @@ Créer un script qui :
 
 # 📂 **1. Fichiers**
 
+```
+REGEX/
+├── analyse_nginx.ps1           # Script PowerShell complet à exécuter
+├── analyse_nginx.py            # Script Python complet à exécuter
+├── rapport_nginx_ps1_YYYY-MM-DD.txt
+└── rapport_nginx_py_YYYY-MM-DD.txt
+```
+
+
 ## 📥 Entrée
 
 ```bash
@@ -346,7 +355,7 @@ Créer un script qui :
 ## 📤 Sortie
 
 ```bash
-rapport_nginx_YYYY-MM-DD.txt
+REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 ```
 
 ---
@@ -376,7 +385,7 @@ rapport_nginx_YYYY-MM-DD.txt
 
 ```powershell
 $logfile = "/var/log/nginx/access.log"
-$rapport = "rapport_nginx_$(Get-Date -Format yyyy-MM-dd).txt"
+$rapport = "REGEX/rapport_nginx_ps1_$(Get-Date -Format yyyy-MM-dd).txt"
 
 $lines = Get-Content $logfile
 
@@ -434,7 +443,7 @@ Write-Host "✅ Rapport généré : $rapport"
 ## ▶️ **Exécution**
 
 ```powershell
-pwsh ./analyse_nginx.ps1
+pwsh ./REGEX/analyse_nginx.ps1
 ```
 
 ---
@@ -455,7 +464,7 @@ with open(logfile) as f:
 
 data = "".join(lines)
 
-rapport = f"rapport_nginx_{datetime.now().date()}.txt"
+rapport = f"REGEX/rapport_nginx_py_{datetime.now().date()}.txt"
 
 # Total
 total = len(lines)
@@ -496,7 +505,7 @@ print("✅ Rapport généré :", rapport)
 ## ▶️ **Exécution**
 
 ```bash
-python3 analyse_nginx.py
+python3 REGEX/analyse_nginx.py
 ```
 
 ---
@@ -510,7 +519,7 @@ crontab -e
 ```
 
 ```bash
-0 2 * * * /usr/bin/pwsh /home/user/analyse_nginx.ps1
+0 2 * * * /usr/bin/pwsh /home/user/REGEX/analyse_nginx.ps1
 ```
 
 ---
