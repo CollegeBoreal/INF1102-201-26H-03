@@ -39,6 +39,8 @@ sudo mkdir -p /entreprise/data
 sudo mkdir -p /entreprise/backup
 sudo mkdir -p /entreprise/logs
 ```
+<img width="960" height="158" alt="image" src="https://github.com/user-attachments/assets/eee0fae1-f8bd-43ed-8c6a-dfa7fa84dcae" />
+
 
 Créer des fichiers test :
 
