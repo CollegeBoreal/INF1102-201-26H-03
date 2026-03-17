@@ -7,14 +7,20 @@ if (-not $env:LMS_URL -or -not $env:API_SYNC_TOKEN) {
     exit 1
 }
 
-# Call Moodle API to get site info
-$response = curl -Method POST `
-    -Uri "https://$($env:LMS_URL)/webservice/rest/server.php" `
-    -Body @{
-        wstoken = $env:API_SYNC_TOKEN
-        wsfunction = "core_webservice_get_site_info"
-        moodlewsrestformat = "json"
-    }
+# Call Moodle API
+try {
+    $response = Invoke-RestMethod -Method Post `
+        -Uri "https://$($env:LMS_URL)/webservice/rest/server.php" `
+        -Body @{
+            wstoken = $env:API_SYNC_TOKEN
+            wsfunction = "core_webservice_get_site_info"
+            moodlewsrestformat = "json"
+        }
 
-# Parse JSON if desired
-$response.Content | ConvertFrom-Json | Format-List
+    # Output JSON nicely
+    $response | Format-List
+
+} catch {
+    Write-Error "Failed to call Moodle API: $_"
+    exit 1
+}
