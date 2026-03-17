@@ -72,7 +72,8 @@ sudo mkdir -p /entreprise/logs
 ```bash
 ls -R /entreprise
 ```
-<img width="737" height="232" alt="image2" src="https://github.com/user-attachments/assets/5c623119-6a7a-480f-8d43-ea2c7870ea5a" />
+<img width="798" height="231" alt="image2" src="https://github.com/user-attachments/assets/385593f4-fa6e-42c8-9e28-f5d01fa7c084" />
+
 
 Résultat attendu :
 
