@@ -93,9 +93,7 @@ fichier1.txt  fichier2.txt
 Explication :
 L’option `-p` permet de créer les dossiers parents si nécessaire.
 
----
-
-### Étape 2 : Création de fichiers de test
+### Création de fichiers de test
 
 Commande :
 
@@ -104,11 +102,12 @@ echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 ```
 
-Capture à insérer :
+<img width="962" height="118" alt="image3" src="https://github.com/user-attachments/assets/6dbd42d7-bc4e-49a5-97b6-1ef496129bed" />
 
 ```bash
 ls /entreprise/data
 ```
+<img width="627" height="71" alt="image4" src="https://github.com/user-attachments/assets/e9e33095-74fd-4280-90ac-22f1ae6a58e1" />
 
 Résultat attendu :
 
