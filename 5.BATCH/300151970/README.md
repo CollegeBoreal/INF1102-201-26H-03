@@ -64,9 +64,11 @@ sudo mkdir -p /entreprise/backup
 sudo mkdir -p /entreprise/logs
 ```
 
-Capture à insérer :
+<img width="652" height="73" alt="image1" src="https://github.com/user-attachments/assets/540cc870-74c9-4a05-aa22-81b2b72384eb" />
 
-* Résultat de la commande suivante :
+
+
+* Pour verifier, il faut taper :
 
 ```bash
 ls -R /entreprise
@@ -85,6 +87,7 @@ fichier1.txt  fichier2.txt
 
 /entreprise/logs:
 ```
+<img width="737" height="232" alt="image2" src="https://github.com/user-attachments/assets/5c623119-6a7a-480f-8d43-ea2c7870ea5a" />
 
 Explication :
 L’option `-p` permet de créer les dossiers parents si nécessaire.
