@@ -49,8 +49,7 @@ ssh -i ~/.ssh/ma_cle.pk \
 -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
 ubuntu@10.7.237.223
 ```
-<img width="952" height="875" alt="image0" src="https://github.com/user-attachments/assets/dbc5dc99-e6cb-4d0a-8b04-847a5979823f" />
-
+<img width="963" height="588" alt="image0" src="https://github.com/user-attachments/assets/dc0bcf6d-7cb2-4a9a-a513-839d8eab22cb" />
 
 ## PARTIE 1 – Préparation de l’environnement
 
