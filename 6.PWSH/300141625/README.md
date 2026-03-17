@@ -24,7 +24,7 @@ Vérification de la version installée :
 
 bash
 pwsh --version
-https://images/1.png
+(images/1.png)
 Capture 1 : affichage de pwsh --version.
 
 Script devops_batch.ps1
