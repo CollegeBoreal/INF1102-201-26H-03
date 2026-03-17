@@ -91,39 +91,38 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $FOLDER = "$StudentID/images"
     $TF_FILE = "$StudentID/main.tf"
 
-
-    $OK = "| $i | [$StudentID](../$FILE) $URL | :heavy_check_mark: | :x: | :x: | ${ServerID} |"
-    $TF_OK = "| $i | [$StudentID](../$FILE) $URL | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | ${ServerID} |"
-    $FULL_OK = "| $i | [$StudentID](../$FILE) $URL | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | ${ServerID} |"
-    $KO = "| $i | [$StudentID](../$FILE) $URL | :x: | :x: | :x: | ${ServerID} |"
-
-    if (Test-Path $FILE) {
-        if (Test-Path $FOLDER -PathType Container) {
-            if (Test-Path $TF_FILE -PathType Leaf) {
-                Write-Output $FULL_OK
-                $s++
-            }
-            else {
-                Write-Output $OK
-            }
+    # Statut README.md
+    if (-not (Test-Path $FILE)) {
+        $README_STATUS = ":x:"
+    }
+    else {
+        $Content = Get-Content $FILE -Raw
+        $HasText = ($Content -match '\S') # contient du texte non vide
+        $HasImage = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
+        
+        if ($HasText -and $HasImage) {
+            $README_STATUS = ":white_check_mark:"
         }
         else {
-            Write-Output $OK
+            $README_STATUS = ":heavy_check_mark:"
         }
     }
+
+    # Vérification main.tf
+    if (Test-Path $FOLDER -PathType Container -and Test-Path $TF_FILE -PathType Leaf) {
+        $TF_STATUS = ":heavy_check_mark:"
+    }
     else {
-        Write-Output $KO
+        $TF_STATUS = ":x:"
     }
 
+    # Ligne du tableau
+    $LINE = "| $i | [$StudentID](../$FILE) $URL | $README_STATUS | $TF_STATUS | ${ServerID} |"
+    Write-Output $LINE
+
+    # Stats (optionnel)
+    if ($TF_STATUS -eq ":heavy_check_mark:") { $s++ }
     $i++
-    $COUNT = "\$\\frac{$s}{$i}\$"
-    if ($i -gt 0) {
-        $STATS = [math]::Round(($s * 100.0 / $i), 2)
-    }
-    else {
-        $STATS = 0
-    }
-    $SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 }
 
 Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
