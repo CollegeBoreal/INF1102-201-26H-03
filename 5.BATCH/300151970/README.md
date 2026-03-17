@@ -37,6 +37,19 @@ Les objectifs sont les suivants :
 
 ---
 
+
+## Connexion au serveur Linux
+Pour accéder au serveur Ubuntu, j’ai utilisé une connexion SSH avec une clé privée.
+
+Commande utilisée
+
+  ```bash
+ssh -i ~/.ssh/ma_cle.pk \
+-o StrictHostKeyChecking=no \
+-o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
+ubuntu@10.7.237.223
+```
+
 ## PARTIE 1 – Préparation de l’environnement
 
 ### Étape 1 : Création de la structure
