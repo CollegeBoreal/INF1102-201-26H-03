@@ -1,12 +1,12 @@
-Informations de l’étudiant
+## Informations de l’étudiant
 
-Nom : Babatundé Adissa Fadolle AROUNA
+## Nom : Babatundé Adissa Fadolle AROUNA
 
-Numéro étudiant : 300151970
+## Numéro étudiant : 300151970
 
-Cours : INF1102 – Programmation des Systèmes
+## Cours : INF1102 – Programmation des Systèmes
 
-Collège : Collège Boréal - Campus Toronto
+Collège Boréal - Campus Toronto
 
 
 
