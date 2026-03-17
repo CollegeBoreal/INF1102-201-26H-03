@@ -57,4 +57,12 @@ ssh -i ~/.ssh/ma_cle.pk \
 
 <img width="771" height="460" alt="image" src="https://github.com/user-attachments/assets/891699e8-b4c2-4c9a-b267-b5113a42dedf" />
 
+## Accès web
+
+Depuis un navigateur, saisir l’adresse IP de la VM étant dans le reseau:
+
+http://10.7.237.208
+
+<img width="721" height="392" alt="image" src="https://github.com/user-attachments/assets/b2ffee85-11c1-4fbc-ad68-04ac0f6148eb" />
+
 
