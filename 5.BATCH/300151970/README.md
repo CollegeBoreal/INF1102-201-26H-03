@@ -386,14 +386,5 @@ Les compétences acquises :
 
 ---
 
-## Checklist finale
-
-* Structure créée
-* Script fonctionnel
-* Sauvegarde réalisée
-* Utilisateur créé
-* Logs générés
-* Cron configuré
-* Captures insérées
 
 ---
