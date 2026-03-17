@@ -35,7 +35,7 @@
 | 4 | [300138576](../300138576/README.md) [<image src='https://avatars0.githubusercontent.com/u/185265742?s=460&v=4' width=20 height=20></image>](https://github.com/houja13) | :x: | :x: | :x: | 10.7.237.198 |
 | 5 | [300141368](../300141368/README.md) [<image src='https://avatars0.githubusercontent.com/u/132600996?s=460&v=4' width=20 height=20></image>](https://github.com/daniella-diwa) | :x: | :x: | :x: | 10.7.237.199 |
 | 6 | [300141429](../300141429/README.md) [<image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image>](https://github.com/barrynetwork) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.200 |
-| 7 | [300141625](../300141625/README.md) [<image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image>](https://github.com/Mamefatim14) | :heavy_check_mark: | :x: | :x: | 10.7.237.201 |
+| 7 | [300141625](../300141625/README.md) [<image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image>](https://github.com/Mamefatim14) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.201 |
 | 8 | [300141657](../300141657/README.md) [<image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image>](https://github.com/leandre00126) | :x: | :x: | :x: | 10.7.237.202 |
 | 9 | [300141716](../300141716/README.md) [<image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image>](https://github.com/nabilaouladbouih) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.203 |
-| :abacus: | \$\\frac{4}{10}\$ = 40% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 4 |
+| :abacus: | \$\\frac{5}{10}\$ = 50% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 5 |
