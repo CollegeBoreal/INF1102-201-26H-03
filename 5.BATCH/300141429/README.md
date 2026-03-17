@@ -1,3 +1,9 @@
+👤 Étudiant
+Identifiant : 300141429
+Nom: Elhadji Arona Barry
+Cours : Programmation système
+Thème : BATCH
+
 1. Cette partie consiste à créer la structure de dossiers et les fichiers de test nécessaires afin de préparer l’environnement dans lequel le script pourra fonctionner correctement.
 
 ```powershell
@@ -23,9 +29,9 @@ echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 
 Cette capture montre l’édition de la crontab dans l’éditeur Nano, où l’on configure les tâches automatisées que le système exécutera selon une planification définie.
 
-4.
+4.  <img width="972" height="692" alt="image3" src="https://github.com/user-attachments/assets/d3749eb6-c62f-4fd0-9972-b4726939c79b" />
    Cette capture montre le fichier de log généré par le script, qui enregistre chaque étape de l’exécution, y compris le test réseau, la sauvegarde des fichiers, la création de l’utilisateur et l’archivage.
-  <img width="972" height="692" alt="image3" src="https://github.com/user-attachments/assets/d3749eb6-c62f-4fd0-9972-b4726939c79b" />
+
 
 5. <img width="1161" height="257" alt="image4" src="https://github.com/user-attachments/assets/b8c1719a-5cfb-4b5d-ab7d-dbf8ea7d8ddd" />
 
