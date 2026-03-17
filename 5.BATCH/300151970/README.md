@@ -4,7 +4,7 @@
 
 ## Informations de l’étudiant
 
-* Nom et Prenoms étudiant: Babatundé Adissa Fadolle Arouna
+* Nom et Prénoms: Babatundé Adissa Fadolle Arouna
 * Programme : Techniques des systèmes informatiques
 * Cours : INF 1102-201 – Programmation de systèmes
 * Session : Hiver 2026
