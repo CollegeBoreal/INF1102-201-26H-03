@@ -1,4 +1,14 @@
+## 👤 Étudiant
+
+- Identifiant : **300145405**
+- Nom: Sadou Barry
+- Cours : Programmation système 
+- Thème : **CRON-TASK**
+- -----
 \#300145405
+## 🎯 Objectif
+Surveiller les accès au serveur NGINX et extraire les adresses IP des visiteurs automatiquement.
+
 
 <img width="1457" height="235" alt="image" src="https://github.com/user-attachments/assets/8e4703e9-3ece-4e3e-bd9d-76e9cccb9e3e" />
 
