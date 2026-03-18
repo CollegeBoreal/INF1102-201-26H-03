@@ -440,8 +440,3 @@ Les compétences acquises :
 * administration système
 * planification
 * diagnostic
-
----
-
-
----
