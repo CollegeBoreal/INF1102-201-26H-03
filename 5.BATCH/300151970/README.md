@@ -350,6 +350,9 @@ systemctl status cron
 journalctl -u cron
 ```
 
+<img width="939" height="967" alt="image14" src="https://github.com/user-attachments/assets/7b63a8e3-90b3-4e28-987a-b961b47db5f1" />
+
+
 ou
 
 ```bash
