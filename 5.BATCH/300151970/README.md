@@ -240,13 +240,14 @@ Le script possède les permissions d’exécution.
 
 ## PARTIE 4 – Test manuel
 
-### Étape 4 : Exécution du script
+### Exécution du script
 
 ```bash
 sudo /entreprise/script_gestion.sh
 ```
 
-Capture à insérer :
+<img width="728" height="50" alt="image8" src="https://github.com/user-attachments/assets/af2419dc-5e67-4de7-9a0d-7f77f872fd87" />
+
 
 * Exécution dans le terminal
 
@@ -260,12 +261,11 @@ Capture à insérer :
 ls /entreprise/backup
 ```
 
-Capture à insérer
+<img width="732" height="82" alt="image9" src="https://github.com/user-attachments/assets/02362c46-3cb7-41e7-a8c4-375000fcb7d8" />
 
 Résultat attendu :
 
-* fichiers copiés
-* archive .tar.gz
+backup_2026-03-18.tar.gz  fichier1.txt  fichier2.txt
 
 ---
 
@@ -274,21 +274,18 @@ Résultat attendu :
 ```bash
 cat /etc/passwd | grep employe_temp
 ```
-
-Capture à insérer
+<img width="723" height="27" alt="image10" src="https://github.com/user-attachments/assets/eb64016a-03c5-4c35-8f17-d8e0af87046c" />
 
 Résultat attendu :
 L’utilisateur apparaît dans le système.
 
 ---
-
 #### 3. Vérification du log
 
 ```bash
 cat /entreprise/logs/log.txt
 ```
-
-Capture à insérer
+<img width="790" height="972" alt="image11" src="https://github.com/user-attachments/assets/1c715955-30d4-4d8a-82c8-02a4b9bf9224" />
 
 Résultat attendu :
 
