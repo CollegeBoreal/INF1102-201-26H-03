@@ -340,8 +340,7 @@ Exécution automatique tous les jours à 02h00.
 ```bash
 systemctl status cron
 ```
-
-Capture à insérer
+<img width="948" height="538" alt="image13" src="https://github.com/user-attachments/assets/acd2a811-7959-4846-b6da-cf6dcedd9b6e" />
 
 ---
 
