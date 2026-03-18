@@ -46,5 +46,27 @@ Créons le fichier devops_batch.ps1 :
 sudo nano /devops-batch/devops_batch.ps1
 ```
 <img width="994" height="169" alt="image" src="https://github.com/user-attachments/assets/6b6d655d-196d-4ed6-ac2b-472e77ad59ee" />
+<img width="1058" height="702" alt="image" src="https://github.com/user-attachments/assets/863ef253-0003-433e-8f72-f8be40a97750" />
 
+🔹 Partie 4 — Exécutons le batch
 
+Exécuter le script :
+```bash
+sudo pwsh /devops-batch/devops_batch.ps1
+```
+<img width="983" height="783" alt="image" src="https://github.com/user-attachments/assets/dc62d1e1-0321-4ce9-9bc4-74e6e1423334" />
+
+----
+# 🥠 Avantages de PowerShell sous Linux
+
+✈️Automatisation multi-plateforme: Fonctionne sur Windows, Linux et macOS.
+
+🫀Pipeline orienté objets :Permet filtrage (Where-Object), sélection (Select-Object) et export JSON ou CSV facilement.
+
+🥑 Intégration avec API et services :Automatisation DevOps avec Moodle API, Azure, AWS, etc.
+
+🐤 Gestion de systèmes complexe: Accès aux processus, services, utilisateurs, SSH, disque, réseau.
+
+⛹️Scripts robustes et maintenables: Variables typées, fonctions, modules → scripts DevOps plus fiables.
+
+🚑Interopérabilité avec Windows: Adaptation facile des scripts Windows vers Linux sans tout réécrire.
