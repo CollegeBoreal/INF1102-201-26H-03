@@ -353,13 +353,17 @@ journalctl -u cron
 <img width="939" height="967" alt="image14" src="https://github.com/user-attachments/assets/7b63a8e3-90b3-4e28-987a-b961b47db5f1" />
 
 
+
+
 ou
+
 
 ```bash
 cat /var/log/syslog | grep CRON
 ```
 
-Captures à insérer
+<img width="949" height="941" alt="image15" src="https://github.com/user-attachments/assets/4fb5c739-3e14-40f6-bc1e-677ee4198b1a" />
+
 
 ---
 
