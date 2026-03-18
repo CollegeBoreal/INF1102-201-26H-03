@@ -226,11 +226,15 @@ Commande :
 ```bash
 sudo chmod +x /entreprise/script_gestion.sh
 ```
+
 <img width="852" height="27" alt="image6" src="https://github.com/user-attachments/assets/38923d90-b3ce-4e94-8060-c782a25eb4be" />
+
+Pour verifier il faut taper:
 
 ```bash
 ls -l /entreprise
 ```
+
 <img width="773" height="172" alt="image7" src="https://github.com/user-attachments/assets/7ed05799-4122-4e42-ab5f-d3424455e6ec" />
 
 Résultat attendu :
