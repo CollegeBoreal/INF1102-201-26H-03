@@ -66,6 +66,7 @@ sudo crontab -e
 Ajout :
 
 0 2 * * * /entreprise/script_gestion.sh
+---
 📜 Commandes utilisées (Résumé)
 Commande	Description
 mkdir -p	Créer des dossiers
@@ -79,7 +80,7 @@ chmod +x	Rendre script exécutable
 crontab -e	Planifier tâches
 cat	Lire fichier
 grep	Rechercher texte
-
+---
 🔹 Création des fichiers
 <img width="734" height="74" alt="1" src="https://github.com/user-attachments/assets/b72af31b-65b6-4123-9f0f-764e58b1402f" />
 
