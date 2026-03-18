@@ -314,13 +314,16 @@ Le fichier log enregistre toutes les actions exécutées.
 sudo crontab -e
 ```
 
+<img width="496" height="76" alt="image12 0" src="https://github.com/user-attachments/assets/704b80bf-a791-4373-9221-9168dbe1c8b3" />
+
 Ajouter :
 
 ```bash
 0 2 * * * /entreprise/script_gestion.sh
 ```
 
-Capture à insérer :
+<img width="919" height="952" alt="image12" src="https://github.com/user-attachments/assets/c876320c-744e-4454-ada9-4bed66a191f3" />
+
 
 * ligne ajoutée dans la crontab
 
