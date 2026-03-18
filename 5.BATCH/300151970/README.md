@@ -314,7 +314,7 @@ Le fichier log enregistre toutes les actions exécutées.
 sudo crontab -e
 ```
 
-<img width="496" height="76" alt="image12 0" src="https://github.com/user-attachments/assets/704b80bf-a791-4373-9221-9168dbe1c8b3" />
+<img width="943" height="832" alt="image12 0" src="https://github.com/user-attachments/assets/feb58670-d3cc-44a4-b660-05969d0f059a" />
 
 Ajouter :
 
