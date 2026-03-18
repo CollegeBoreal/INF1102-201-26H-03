@@ -208,7 +208,7 @@ echo "Fin exécution : $(date)" >> $LOG
 echo "===================================" >> $LOG
 ```
 
-Explication :
+*Explication* :
 Ce script permet :
 
 * de tester la connectivité réseau
