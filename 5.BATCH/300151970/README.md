@@ -269,7 +269,7 @@ ls /entreprise/backup
 
 Résultat attendu :
 
-backup_2026-03-18.tar.gz  fichier1.txt  fichier2.txt
+backup_2026-03-18.tar.gz               fichier1.txt      fichier2.txt
 
 ---
 
