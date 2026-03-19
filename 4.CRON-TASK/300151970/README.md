@@ -2,7 +2,7 @@
 
 ## Analyse des logs Nginx et automatisation avec Cron
 
-## 👤 Informations de l’étudiant
+## Informations de l’étudiant
 
 Nom : **Babatundé Adissa Fadolle AROUNA**
 
@@ -16,7 +16,7 @@ Laboratoire : **CRON-TASK — Analyse des logs Nginx**
 
 ---
 
-# 🎯 Objectif du laboratoire
+# Objectif du laboratoire
 
 Dans ce laboratoire, j’ai appris à analyser les journaux d’un serveur web Nginx afin d’identifier les adresses IP des visiteurs.
 
@@ -31,7 +31,7 @@ Les objectifs étaient :
 
 ---
 
-# 1️⃣ Connexion au serveur Linux
+# 1️ Connexion au serveur Linux
 
 Pour accéder au serveur Ubuntu, j’ai utilisé une connexion SSH avec une clé privée.
 
@@ -66,7 +66,7 @@ Cette commande permet de se connecter à la machine virtuelle Ubuntu à l’aide
 
 ---
 
-# 2️⃣ Analyse des logs Nginx
+# 2️ Analyse des logs Nginx
 
 Les logs du serveur web se trouvent dans le fichier :
 
@@ -78,7 +78,7 @@ Ce fichier contient toutes les requêtes HTTP reçues par le serveur.
 
 ---
 
-# 3️⃣ Extraction des adresses IP
+# 3️ Extraction des adresses IP
 
 Pour extraire les adresses IP des visiteurs, j’ai utilisé la commande suivante :
 
@@ -89,7 +89,7 @@ awk '{print $1}' /var/log/nginx/access.log
 <img width="792" height="85" alt="image 1" src="https://github.com/user-attachments/assets/98199403-e37f-4cc0-af7a-9a72cf389991" />
 
 
-➡️ Ajouter la capture du terminal.
+ Ajouter la capture du terminal.
 
 ### Résultat obtenu
 
@@ -108,7 +108,7 @@ Dans ce fichier, la première colonne correspond à l’adresse IP du visiteur.
 
 ---
 
-# 4️⃣ Suppression des doublons
+# 4️ Suppression des doublons
 
 Pour afficher seulement les IP uniques :
 
@@ -119,7 +119,7 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq
 <img width="957" height="26" alt="image 3" src="https://github.com/user-attachments/assets/fa953100-b267-45eb-bcc2-41c7951d779a" />
 
 
-➡️ Ajouter la capture.
+Ajouter la capture.
 
 ### Résultat obtenu
 
@@ -136,7 +136,7 @@ Cela permet d’obtenir une liste unique des visiteurs.
 
 ---
 
-# 5️⃣ Sauvegarde des IP dans un fichier
+# 5️ Sauvegarde des IP dans un fichier
 
 Pour enregistrer les adresses IP uniques dans un fichier :
 
@@ -146,7 +146,7 @@ awk '{print $1}' /var/log/nginx/access.log | sort | uniq > /home/ubuntu/nginx_ip
 
 <img width="1316" height="25" alt="image 4" src="https://github.com/user-attachments/assets/83a93913-f4d2-4520-845c-4d1b29a9e3bb" />
 
-➡️ Ajouter la capture.
+Ajouter la capture.
 
 ### Résultat obtenu
 
@@ -165,7 +165,7 @@ Résultat :
 ```
 ---
 
-# 6️⃣ Création d’un script d’automatisation
+# 6️ Création d’un script d’automatisation
 
 Pour automatiser cette tâche, j’ai créé un script shell.
 
@@ -216,7 +216,7 @@ Le fichier `nginx_ips.txt` contient :
 
 ---
 
-# 7️⃣ Automatisation avec Cron
+# 7️ Automatisation avec Cron
 
 Pour exécuter le script automatiquement toutes les heures, j’ai configuré une tâche cron.
 
@@ -259,7 +259,7 @@ Cela confirme que le service cron fonctionne correctement.
 
 ---
 
-# 8️⃣ Organisation du projet avec Git
+# 8️ Organisation du projet avec Git
 
 Sur ma machine locale, j’ai organisé mon travail dans le dépôt du cours.
 
@@ -292,7 +292,7 @@ Ce dossier servira à stocker les captures d’écran du laboratoire.
 
 ---
 
-# 9️⃣ Gestion du projet avec Git
+# 9️ Gestion du projet avec Git
 
 Ajout des fichiers :
 
@@ -323,7 +323,7 @@ Le projet a été envoyé avec succès sur le dépôt GitHub du cours.
 
 ---
 
-# ✅ Conclusion
+# Conclusion
 
 Ce laboratoire m’a permis de mieux comprendre l’analyse des logs sous Linux et l’automatisation des tâches.
 
