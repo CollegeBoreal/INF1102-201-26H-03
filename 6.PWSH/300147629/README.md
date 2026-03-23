@@ -19,5 +19,12 @@ sudo nano /devops-batch/devops_batch.ps1
 ```
 <img width="1475" height="677" alt="6-4psw png" src="https://github.com/user-attachments/assets/e0e3ce39-b638-4d84-beec-f0ddac30d98e" />
 
-#
+#Exécuter le batch
+
+```powershell
+
+sudo pwsh /devops-batch/devops_batch.ps1
+```
+<img width="616" height="532" alt="6-Fin png" src="https://github.com/user-attachments/assets/504302c2-f8e1-4163-96de-3712ec447876" />
+
 
