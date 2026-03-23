@@ -14,6 +14,10 @@ pwsh
 #Préparation de l’environnement et creation du script
 
 ```powershell
-
+sudo mkdir /devops-batch
+sudo nano /devops-batch/devops_batch.ps1
 ```
+<img width="1475" height="677" alt="6-4psw png" src="https://github.com/user-attachments/assets/e0e3ce39-b638-4d84-beec-f0ddac30d98e" />
+
+#
 
