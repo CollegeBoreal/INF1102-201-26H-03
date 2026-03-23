@@ -11,7 +11,7 @@ pwsh
 ```
 <img width="460" height="75" alt="6-2pws png" src="https://github.com/user-attachments/assets/50c206ed-2113-4dad-8e23-7d5e2f6ad613" />
 
-#Creation et ajout des scriptes
+#Préparation de l’environnement et creation du script
 
 ```powershell
 
