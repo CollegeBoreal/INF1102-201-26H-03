@@ -133,7 +133,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 
             if ($LASTEXITCODE -eq 0) {
                 $SSH = ":link:"
-                $ssh_ok_count++
+                $SSH_OK_COUNT++
             }
         }
         else {
@@ -176,9 +176,6 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
         $TF_STATUS = ":x:"
     }
 
-    # Compter le score global si README + images sont ok
-    if ($README_STATUS -eq ":heavy_check_mark:" -and $IMAGES_STATUS -eq ":heavy_check_mark:") { $s++ }
-
     # Affichage de la ligne
     Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_STATUS | $IMAGES_STATUS | $TF_STATUS | $VM | $SSH |"
 
@@ -189,8 +186,8 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 # Statistiques finales
 # -------------------------------
 $COUNT = "\$\\frac{$s}{$i}\$"
-$STATS = if ($i -gt 0) { [math]::Round(($s * 100.0 / $i), 2) } else { 0 }
+$STATS = if ($i -gt 0) { [math]::Round(($SSH_OK_COUNT * 100.0 / $i), 2) } else { 0 }
 $SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 
-Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
+Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $SSH_OK_COUNT |"
 

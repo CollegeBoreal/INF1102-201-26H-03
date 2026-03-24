@@ -38,4 +38,4 @@
 | 7 | [300141625](../300141625/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image>](https://github.com/Mamefatim14) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.201](http://10.7.237.201) | :link: |
 | 8 | [300141657](../300141657/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image>](https://github.com/leandre00126) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.202](http://10.7.237.202) | :link: |
 | 9 | [300141716](../300141716/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image>](https://github.com/nabilaouladbouih) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.203](http://10.7.237.203) | :link: |
-| :abacus: | \$\\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+| :abacus: | \$\\frac{0}{10}\$ = 90% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 9 |

@@ -38,4 +38,4 @@
 | 7 | [300151354](../300151354/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :2nd_place_medal: | :x: | :x: | :red_circle: 10.7.237.221 | :boom: |
 | 8 | [300151607](../300151607/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :x: | :heavy_check_mark: | :red_circle: 10.7.237.222 | :boom: |
 | 9 | [300151970](../300151970/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.223](http://10.7.237.223) | :link: |
-| :abacus: | \$\\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+| :abacus: | \$\\frac{0}{10}\$ = 60% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 6 |
