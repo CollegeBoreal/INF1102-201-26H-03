@@ -33,6 +33,21 @@ Ce laboratoire consiste à installer PowerShell sur Ubuntu 22.04 et à créer un
 * Générer des rapports TXT et JSON
 
 ---
+Connexion au serveur Linux
+Pour accéder au serveur Ubuntu, j’ai utilisé une connexion SSH avec une clé privée.
+
+Commande utilisée
+
+ ```bash
+ssh -i ~/.ssh/ma_cle.pk \
+-o StrictHostKeyChecking=no \
+-o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
+ubuntu@10.7.237.223
+```
+
+<img width="1557" height="706" alt="1" src="https://github.com/user-attachments/assets/5c2329d6-5d0a-4fd7-aea3-1a5eb9d5022b" />
+
+
 
 # PARTIE 1 – Installation de PowerShell
 
