@@ -1,0 +1,38 @@
+===== RAPPORT DEVOPS =====
+
+Date : 2026-03-24 21:31:10
+Utilisateur : root
+Machine : vm300151042
+
+----------------------------------------
+Top 5 processus par CPU :
+----------------------------------------
+snapd                - CPU: 71.43
+rcu_sched            - CPU: 37.40
+systemd              - CPU: 31.85
+kcompactd0           - CPU: 27.46
+migration/1          - CPU: 4.86
+
+----------------------------------------
+Top 5 processus par mémoire :
+----------------------------------------
+pwsh                 - Mémoire: 107024384
+snapd                - Mémoire: 39780352
+multipathd           - Mémoire: 27906048
+unattended-upgrade   - Mémoire: 20455424
+networkd-dispatcher  - Mémoire: 17879040
+
+----------------------------------------
+Espace disque :
+----------------------------------------
+Filesystem      Size  Used  Avail  Use%  Mounted on
+/dev/sda1       9.6G  2.8G  6.8G   29%   /
+
+----------------------------------------
+Test SSH vers 127.0.0.1 :
+----------------------------------------
+Résultat : Connexion refusée (Permission denied - publickey)
+
+----------------------------------------
+Fin du rapport
+----------------------------------------
