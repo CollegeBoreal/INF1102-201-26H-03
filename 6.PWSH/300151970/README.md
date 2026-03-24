@@ -178,7 +178,7 @@ sudo mkdir /devops-batch
 Créer un dossier dédié pour organiser les fichiers du TP.
 
 **Résultat attendu :**
-Dossier `/devops-batch` créé (si existe déjà, message “File exists”).
+Dossier `/devops-batch` existe déjà, message “File exists”.
 
 ---
 
