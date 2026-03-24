@@ -118,7 +118,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 
     # Vérification VM
     $VM = ":red_circle:"
-    $SSH = ":x:"
+    $SSH = ":boom:"
     if ($VM_STATUS.ContainsKey($StudentID)) {
         if ($VM_STATUS[$StudentID] -eq "running") {
             $VM = ":green_circle: [${ServerID}](http://${ServerID})" 
