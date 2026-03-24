@@ -55,6 +55,8 @@ Write-Output "| Signe              | Signification                 |"
 Write-Output "|--------------------|-------------------------------|"
 Write-Output "| :heavy_check_mark: | Prêt à être corrigé           |"
 Write-Output "| :x:                | Projet inexistant             |"
+Write-Output "| :1st_place_medal:  | Excellent                     |"
+Write-Output "| :2nd_place_medal:  | Merci d'avoir participé       |"
 Write-Output ""
 Write-Output "## :gear: Configuration"
 Write-Output ""
@@ -101,10 +103,10 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
         $HasImageInReadme = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
         
         if ($HasText -and $HasImageInReadme) {
-            $README_STATUS = ":white_check_mark:"
+            $README_STATUS = ":1st_place_medal:"
         }
         else {
-            $README_STATUS = ":heavy_check_mark:"
+            $README_STATUS = ":2nd_place_medal:"
         }
     }
 
