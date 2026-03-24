@@ -45,6 +45,7 @@ ssh -i ~/.ssh/ma_cle.pk \
 ubuntu@10.7.237.223
 ```
 
+<img width="1557" height="706" alt="1" src="https://github.com/user-attachments/assets/5c2329d6-5d0a-4fd7-aea3-1a5eb9d5022b" />
 
 
 
