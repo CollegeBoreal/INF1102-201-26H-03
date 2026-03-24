@@ -89,6 +89,9 @@ wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
+<img width="1397" height="402" alt="4" src="https://github.com/user-attachments/assets/8c1d3302-920c-4176-a6f3-31df2553d039" />
+
+
 **Explication :**
 Télécharge et installe le dépôt officiel Microsoft contenant PowerShell.
 
@@ -102,6 +105,7 @@ Le dépôt Microsoft est ajouté correctement.
 ```bash
 sudo apt update
 ```
+<img width="872" height="237" alt="5" src="https://github.com/user-attachments/assets/f3f3b5a2-b045-4079-8bc5-d99eeaa43e97" />
 
 **Explication :**
 Recharge les dépôts afin de reconnaître PowerShell comme paquet installable.
