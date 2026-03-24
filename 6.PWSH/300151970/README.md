@@ -48,136 +48,90 @@ ubuntu@10.7.237.223
 <img width="1557" height="706" alt="1" src="https://github.com/user-attachments/assets/5c2329d6-5d0a-4fd7-aea3-1a5eb9d5022b" />
 
 
-
 # PARTIE 1 – Installation de PowerShell
 
----
-
-## Étape 1 : Mise à jour du système
+### Étape 1 : Mise à jour du système
 
 ```bash
 sudo apt update
 ```
 
-### Explication
+**Explication :**
+Met à jour la liste des paquets disponibles sur Ubuntu.
 
-Cette commande permet de mettre à jour la liste des paquets disponibles sur Ubuntu.
-
-<img width="1136" height="375" alt="2" src="https://github.com/user-attachments/assets/6895113e-62a7-443c-b89a-c8e96cb39370" />
-
-
-```markdown
-![Update](images/update.png)
-```
-
-### Résultat attendu
-
-* Liste des paquets mise à jour
-* Aucune erreur
+**Résultat attendu :**
+Le système affiche la liste des dépôts et aucun message d’erreur.
 
 ---
 
-## Étape 2 : Installation des dépendances
+### Étape 2 : Installer les dépendances
 
 ```bash
 sudo apt install -y wget apt-transport-https software-properties-common
 ```
 
-### Explication
+**Explication :**
+Ces outils permettent de télécharger et d’ajouter des dépôts externes (ici, le dépôt Microsoft pour PowerShell).
 
-Installe les outils nécessaires pour télécharger et ajouter un dépôt externe.
-
-### 📸 Capture
-
-```markdown
-![Dependances](images/dependances.png)
-```
-
-### Résultat attendu
-
-* Installation complétée
-* Message "done" ou "installed"
+**Résultat attendu :**
+Les paquets sont installés sans erreur.
 
 ---
 
-## Étape 3 : Ajouter le dépôt Microsoft
+### 🔹 Étape 3 : Ajouter le dépôt Microsoft
 
 ```bash
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
-### Explication
+**Explication :**
+Télécharge et installe le dépôt officiel Microsoft contenant PowerShell.
 
-Télécharge et installe le dépôt Microsoft pour pouvoir installer PowerShell.
-
-### 📸 Capture
-
-```markdown
-![Depot](images/repo.png)
-```
-
-### Résultat attendu
-
-* Dépôt installé sans erreur
+**Résultat attendu :**
+Le dépôt Microsoft est ajouté correctement.
 
 ---
 
-## Étape 4 : Mise à jour
+### Étape 4 : Mettre à jour les dépôts
 
 ```bash
 sudo apt update
 ```
 
-### Explication
+**Explication :**
+Recharge les dépôts afin de reconnaître PowerShell comme paquet installable.
 
-Recharge les paquets en incluant PowerShell.
-
-### ✅ Résultat attendu
-
-* PowerShell apparaît dans les paquets disponibles
+**Résultat attendu :**
+Mise à jour réussie, PowerShell disponible.
 
 ---
 
-## Étape 5 : Installer PowerShell
+### Étape 5 : Installer PowerShell
 
 ```bash
 sudo apt install -y powershell
 ```
 
-### Explication
-
+**Explication :**
 Installe PowerShell sur Ubuntu.
 
-### 📸 Capture
-
-```markdown
-![Install](images/install_pwsh.png)
-```
-
-### Résultat attendu
-
-* Installation réussie
+**Résultat attendu :**
+PowerShell 7.x installé.
 
 ---
 
-## Étape 6 : Lancer PowerShell
+### Étape 6 : Lancer PowerShell
 
 ```bash
 pwsh
 ```
 
-### Explication
+**Explication :**
+Ouvre le shell PowerShell.
 
-Permet d’ouvrir PowerShell.
-
-### 📸 Capture
-
-```markdown
-![Pwsh](images/pwsh.png)
-```
-
-### Résultat attendu
+**Résultat attendu :**
+Prompt PowerShell affiché :
 
 ```
 PS /home/user>
@@ -185,156 +139,185 @@ PS /home/user>
 
 ---
 
-## Étape 7 : Vérifier la version
+### Étape 7 : Vérifier la version
 
 ```powershell
 $PSVersionTable
 ```
 
-### Explication
+**Explication :**
+Affiche la version exacte de PowerShell installée.
 
-Affiche les informations de version.
-
-### 📸 Capture
-
-```markdown
-![Version](images/version.png)
-```
-
-### Résultat attendu
-
-* Version affichée correctement
+**Résultat attendu :**
+Version 7.x confirmée.
 
 ---
 
-# PARTIE 2 – Script DevOps
+# PARTIE 2 – Script DevOps PowerShell
 
----
-
-## Étape 1 : Créer le dossier
+### Étape 1 : Créer le dossier pour le TP
 
 ```bash
 sudo mkdir /devops-batch
 ```
 
-### Explication
+**Explication :**
+Créer un dossier dédié pour organiser les fichiers du TP.
 
-Créer un dossier pour stocker le script et les rapports.
-
-### 📸 Capture
-
-```markdown
-![mkdir](images/mkdir.png)
-```
-
-### Résultat attendu
-
-* Dossier créé sans erreur
+**Résultat attendu :**
+Dossier `/devops-batch` créé (si existe déjà, message “File exists”).
 
 ---
 
-## 🔹 Étape 2 : Créer le script
+### Étape 2 : Créer le script principal
 
 ```bash
 sudo nano /devops-batch/devops_batch.ps1
 ```
 
-### Explication
-
-Permet de créer le script PowerShell.
-
-Ajouter :
+Ajouter en première ligne :
 
 ```powershell
 #!/usr/bin/env pwsh
 ```
 
-### 📸 Capture
+**Explication :**
+Le shebang permet d’exécuter le script directement sous Linux avec `pwsh`.
 
-```markdown
-![script](images/script.png)
+**Résultat attendu :**
+Fichier créé prêt à recevoir le code PowerShell.
+
+---
+
+### Étape 3 : Script complet
+
+```powershell
+#!/usr/bin/env pwsh
+
+# Variables pour les rapports
+$rapportTxt = "/devops-batch/rapport.txt"
+$rapportJson = "/devops-batch/rapport.json"
+$hostname = hostname
+$user = whoami
+$date = Get-Date
+
+# Création d'un rapport texte
+Write-Output "===== RAPPORT DEVOPS =====" | Tee-Object $rapportTxt
+Write-Output "Date : $date" | Tee-Object -Append $rapportTxt
+Write-Output "Utilisateur : $user" | Tee-Object -Append $rapportTxt
+Write-Output "Machine : $hostname" | Tee-Object -Append $rapportTxt
+
+# CPU & Mémoire
+$topCPU = Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
+$topMem = Get-Process | Sort-Object WS -Descending | Select-Object -First 5
+
+Write-Output "Top 5 processus par CPU :" | Tee-Object -Append $rapportTxt
+foreach ($p in $topCPU) { Write-Output ("{0} - CPU: {1}" -f $p.ProcessName, $p.CPU) | Tee-Object -Append $rapportTxt }
+
+Write-Output "Top 5 processus par Mémoire :" | Tee-Object -Append $rapportTxt
+foreach ($p in $topMem) { Write-Output ("{0} - Mémoire: {1}" -f $p.ProcessName, $p.WorkingSet) | Tee-Object -Append $rapportTxt }
+
+# Disque
+$disk = df -h
+Write-Output "Espace disque :" | Tee-Object -Append $rapportTxt
+Write-Output $disk | Tee-Object -Append $rapportTxt
+
+# Test SSH
+$sshHost = "127.0.0.1"
+try {
+    $result = ssh -o BatchMode=yes -o ConnectTimeout=5 $sshHost "echo OK" 2>&1
+    Write-Output "Test SSH vers $sshHost : $result" | Tee-Object -Append $rapportTxt
+} catch {
+    Write-Output "SSH échoué vers $sshHost" | Tee-Object -Append $rapportTxt
+}
+
+# Génération JSON
+$reportObj = [PSCustomObject]@{
+    Date = $date
+    Utilisateur = $user
+    Machine = $hostname
+    TopCPU = $topCPU | ForEach-Object { @{Process=$_.ProcessName; CPU=$_.CPU} }
+    TopMemory = $topMem | ForEach-Object { @{Process=$_.ProcessName; Memory=$_.WorkingSet} }
+    Disk = $disk
+}
+
+$reportObj | ConvertTo-Json -Depth 5 | Set-Content $rapportJson
+Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 ```
 
-### Résultat attendu
+**Explication :**
+Le script :
 
-* Script créé
+1. Crée un rapport texte et JSON
+2. Affiche CPU, mémoire et disque
+3. Test SSH vers localhost
+4. Génère des fichiers prêts pour DevOps
 
----
+**Résultat attendu :**
 
-## 🔹 Étape 3 : Script complet
-
-👉 (coller ton script ici)
-
-### Explication
-
-Le script permet de :
-
-* récupérer les infos système
-* analyser CPU et mémoire
-* vérifier le disque
-* tester SSH
-* générer un rapport JSON
+* Fichiers : `/devops-batch/rapport.txt` et `/devops-batch/rapport.json`
+* Affichage console avec toutes les informations
 
 ---
 
-## 🔹 Étape 4 : Exécuter le script
+### Étape 4 : Exécuter le script
 
 ```bash
 sudo pwsh /devops-batch/devops_batch.ps1
 ```
 
-### Explication
+**Explication :**
+Exécute le script DevOps et crée les rapports.
 
-Exécute le script PowerShell.
+**Résultat attendu :**
 
-### 📸 Capture
+* Console affiche CPU, mémoire, disque et SSH
+* Création des fichiers TXT et JSON
 
-```markdown
-![execution](images/run.png)
+---
+
+# PARTIE 3 – Résultats obtenus
+
+### Informations générales
+
+```
+Date : 03/24/2026
+Utilisateur : root
+Machine : vm300151970
 ```
 
-### Résultat attendu
+### CPU
 
-* Messages affichés
-* Aucune erreur
-
----
-
-# PARTIE 3 – Résultats
-
----
-
-## 🔹 Rapport TXT
-
-### 📸 Capture
-
-```markdown
-![rapport txt](images/rapport_txt.png)
+```
+Top 5 processus par CPU
 ```
 
-### Résultat attendu
+### Mémoire
 
-* Informations système visibles
-* CPU, mémoire, disque affichés
-
----
-
-## 🔹 Rapport JSON
-
-### 📸 Capture
-
-```markdown
-![rapport json](images/rapport_json.png)
+```
+Top 5 processus par mémoire
 ```
 
-### Résultat attendu
+### Disque
 
-* Fichier JSON valide
-* Données structurées
+```
+Utilisation disque : 29%
+```
 
----
+### SSH
 
-## Structure finale
+```
+Host key verification failed
+```
+
+*(La connexion fonctionne mais la clé SSH n’est pas enregistrée)*
+
+### Fichiers générés
+
+* `/devops-batch/rapport.txt`
+* `/devops-batch/rapport.json`
+
+### Structure finale
 
 ```
 /devops-batch/
@@ -343,25 +326,15 @@ Exécute le script PowerShell.
 └── rapport.json
 ```
 
-### Capture
-
-```markdown
-![structure](images/structure.png)
-```
-
-### Résultat attendu
-
-* Tous les fichiers présents
-
----
-
 # Conclusion
 
-Ce laboratoire m’a permis d’apprendre à utiliser PowerShell sous Linux pour automatiser des tâches. J’ai compris comment analyser un système, tester un réseau et générer des rapports, ce qui est essentiel en DevOps.
+PowerShell sous Linux permet :
+
+* Une **automatisation multi-plateforme**
+* Un **pipeline orienté objets** facile à exploiter
+* La génération de **rapports JSON et TXT** prêts pour DevOps
+* Une **interopérabilité avec Windows** pour scripts existants
 
 
 
----
 
-Si tu veux, Babatundé 👇
-Je peux te dire **exactement quoi capturer écran par écran** pour que ton prof n’ait rien à redire.
