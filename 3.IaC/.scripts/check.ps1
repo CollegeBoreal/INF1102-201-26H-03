@@ -117,7 +117,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $TF_FILE = "$StudentID/main.tf"
 
     # Vérification VM
-    $VM = ":x:"
+    $VM = ":red_circle:"
     $SSH = ":x:"
     if ($VM_STATUS.ContainsKey($StudentID)) {
         if ($VM_STATUS[$StudentID] -eq "running") {
@@ -143,15 +143,44 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     }
 
     # Vérification fichiers
-    $README_OK = if (Test-Path $FILE) { ":heavy_check_mark:" } else { ":x:" }
-    $IMAGES_OK = if (Test-Path $FOLDER -PathType Container) { ":heavy_check_mark:" } else { ":x:" }
-    $TF_OK     = if (Test-Path $TF_FILE) { ":heavy_check_mark:" } else { ":x:" }
+    # --- README.md status ---
+    if (-not (Test-Path $FILE)) {
+        $README_STATUS = ":x:"
+    }
+    else {
+        $Content = Get-Content $FILE -Raw
+        $HasText = ($Content -match '\S')
+        $HasImageInReadme = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
+        
+        if ($HasText -and $HasImageInReadme) {
+            $README_STATUS = ":1st_place_medal:"
+        }
+        else {
+            $README_STATUS = ":2nd_place_medal:"
+        }
+    }
+
+    # --- Images folder status ---
+    if (Test-Path $FOLDER -PathType Container) {
+        $IMAGES_STATUS = ":heavy_check_mark:"
+    }
+    else {
+        $IMAGES_STATUS = ":x:"
+    }
+
+    # --- main.tf status ---
+    if (Test-Path $TF_FILE -PathType Leaf) {
+        $TF_STATUS = ":heavy_check_mark:"
+    }
+    else {
+        $TF_STATUS = ":x:"
+    }
 
     # Compter le score global si README + images sont ok
-    if ($README_OK -eq ":heavy_check_mark:" -and $IMAGES_OK -eq ":heavy_check_mark:") { $s++ }
+    if ($README_STATUS -eq ":heavy_check_mark:" -and $IMAGES_STATUS -eq ":heavy_check_mark:") { $s++ }
 
     # Affichage de la ligne
-    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_OK | $IMAGES_OK | $TF_OK | $VM | $SSH |"
+    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_STATUS | $IMAGES_STATUS | $TF_STATUS | $VM | $SSH |"
 
     $i++
 }
