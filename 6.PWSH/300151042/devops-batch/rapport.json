@@ -1,0 +1,50 @@
+{
+  "Date": "2026-03-24T21:31:10",
+  "Utilisateur": "root",
+  "Machine": "vm300151042",
+  "TopCPU": [
+    {
+      "ProcessName": "snapd",
+      "CPU": 71.43
+    },
+    {
+      "ProcessName": "rcu_sched",
+      "CPU": 37.4
+    },
+    {
+      "ProcessName": "systemd",
+      "CPU": 31.85
+    },
+    {
+      "ProcessName": "kcompactd0",
+      "CPU": 27.46
+    },
+    {
+      "ProcessName": "migration/1",
+      "CPU": 4.86
+    }
+  ],
+  "TopMemory": [
+    {
+      "ProcessName": "pwsh",
+      "WorkingSet": 107024384
+    },
+    {
+      "ProcessName": "snapd",
+      "WorkingSet": 39780352
+    },
+    {
+      "ProcessName": "multipathd",
+      "WorkingSet": 27906048
+    },
+    {
+      "ProcessName": "unattended-upgrade-shutdown",
+      "WorkingSet": 20455424
+    },
+    {
+      "ProcessName": "networkd-dispatcher",
+      "WorkingSet": 17879040
+    }
+  ],
+  "Disk": "Filesystem Size Used Avail Use% Mounted on\n/dev/sda1 9.6G 2.8G 6.8G 29%"
+}
