@@ -202,8 +202,6 @@ python3 scripts/analyse.py data/sample.log
 * Respecter la structure de dossier
 * RAPPORT.ipynb doit contenir du texte explicatif et éventuellement des graphiques
 
-````
-
 ---
 
 ## **4. Conseils**
