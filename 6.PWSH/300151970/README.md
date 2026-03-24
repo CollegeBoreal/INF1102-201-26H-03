@@ -135,7 +135,7 @@ PowerShell 7.x installé.
 ```bash
 pwsh
 ```
-<img width="757" height="365" alt="7" src="https://github.com/user-attachments/assets/54d1232f-7247-4ce1-a91d-3bcf1b5ff03a" />
+<img width="760" height="47" alt="7" src="https://github.com/user-attachments/assets/07fc04f0-aa96-478e-a5b5-13e4401ce910" />
 
 **Explication :**
 Ouvre le shell PowerShell.
