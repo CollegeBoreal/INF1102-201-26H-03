@@ -161,7 +161,7 @@ $PSVersionTable
 Affiche la version exacte de PowerShell installée.
 
 **Résultat attendu :**
-Version 7.x confirmée.
+Version 7.6.0.
 
 ---
 
@@ -172,6 +172,7 @@ Version 7.x confirmée.
 ```bash
 sudo mkdir /devops-batch
 ```
+<img width="758" height="61" alt="9" src="https://github.com/user-attachments/assets/71eb64b7-1dda-472b-abf2-83cbe92122e8" />
 
 **Explication :**
 Créer un dossier dédié pour organiser les fichiers du TP.
