@@ -75,8 +75,8 @@ Write-Output ""
 # Présence table
 Write-Output "## :a: Présence"
 Write-Output ""
-Write-Output "|:hash:| Boréal :id:                | README.md | images | `/entreprise/script_gestion.sh`  | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
-Write-Output "|------|----------------------------|-----------|--------|----------------------------------|----|-----|"
+Write-Output "|:hash:| Boréal :id:                | README.md | images | `/entreprise/script_gestion.sh` | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
+Write-Output "|------|----------------------------|-----------|--------|---------|----|-----|"
 
 # -------------------------------
 # Initialisation
@@ -117,8 +117,8 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $TF_FILE = "$StudentID/script_gestion.sh"
 
     # Vérification VM
-    $VM = ":x:"
-    $SSH = ":x:"
+    $VM = ":red_circle: ${ServerID}"
+    $SSH = ":boom:"
     if ($VM_STATUS.ContainsKey($StudentID)) {
         if ($VM_STATUS[$StudentID] -eq "running") {
             $VM = ":green_circle: [${ServerID}](http://${ServerID})" 
@@ -133,25 +133,52 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 
             if ($LASTEXITCODE -eq 0) {
                 $SSH = ":link:"
-                $ssh_ok_count++
+                $SSH_OK_COUNT++
             }
         }
         else {
-            $VM  = ":orange_circle:"
+            $VM = ":orange_circle: ${ServerID}"
         }
 
     }
 
     # Vérification fichiers
-    $README_OK = if (Test-Path $FILE) { ":heavy_check_mark:" } else { ":x:" }
-    $IMAGES_OK = if (Test-Path $FOLDER -PathType Container) { ":heavy_check_mark:" } else { ":x:" }
-    $TF_OK     = if (Test-Path $TF_FILE) { ":heavy_check_mark:" } else { ":x:" }
+    # --- README.md status ---
+    if (-not (Test-Path $FILE)) {
+        $README_STATUS = ":x:"
+    }
+    else {
+        $Content = Get-Content $FILE -Raw
+        $HasText = ($Content -match '\S')
+        $HasImageInReadme = ($Content -match '!\[.*\]\(.*\)') -or ($Content -match '<img.*?>') -or ($Content -match '<image.*?>')
+        
+        if ($HasText -and $HasImageInReadme) {
+            $README_STATUS = ":1st_place_medal:"
+        }
+        else {
+            $README_STATUS = ":2nd_place_medal:"
+        }
+    }
 
-    # Compter le score global si README + images sont ok
-    if ($README_OK -eq ":heavy_check_mark:" -and $IMAGES_OK -eq ":heavy_check_mark:") { $s++ }
+    # --- Images folder status ---
+    if (Test-Path $FOLDER -PathType Container) {
+        $IMAGES_STATUS = ":heavy_check_mark:"
+    }
+    else {
+        $IMAGES_STATUS = ":x:"
+    }
+
+    # --- main.tf status ---
+    if (Test-Path $TF_FILE -PathType Leaf) {
+        $TF_STATUS = ":heavy_check_mark:"
+    }
+    else {
+        $TF_STATUS = ":x:"
+    }
+
 
     # Affichage de la ligne
-    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_OK | $IMAGES_OK | $TF_OK | $VM | $SSH |"
+    Write-Output "| $i | [$StudentID](../$FILE) :point_right: $URL | $README_STATUS | $IMAGES_STATUS | $TF_STATUS | $VM | $SSH |"
 
     $i++
 }
@@ -160,8 +187,8 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 # Statistiques finales
 # -------------------------------
 $COUNT = "\$\\frac{$s}{$i}\$"
-$STATS = if ($i -gt 0) { [math]::Round(($s * 100.0 / $i), 2) } else { 0 }
+$STATS = if ($i -gt 0) { [math]::Round(($SSH_OK_COUNT * 100.0 / $i), 2) } else { 0 }
 $SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 
-Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
+Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $SSH_OK_COUNT |"
 
