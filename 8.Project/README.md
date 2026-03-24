@@ -19,7 +19,7 @@
 
 ```powershell
 # analyse.ps1
-$city = "Montreal,CA"
+$city = "Toronto,CA"
 $apiKey = "VOTRE_API_KEY"
 $outputFile = "../output/rapport.txt"
 
