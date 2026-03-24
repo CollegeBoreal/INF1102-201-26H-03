@@ -55,6 +55,7 @@ ubuntu@10.7.237.223
 ```bash
 sudo apt update
 ```
+<img width="1557" height="706" alt="1" src="https://github.com/user-attachments/assets/02a1e042-7ff4-426f-8d82-2519937a9010" />
 
 **Explication :**
 Met à jour la liste des paquets disponibles sur Ubuntu.
