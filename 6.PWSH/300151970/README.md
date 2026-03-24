@@ -55,7 +55,8 @@ ubuntu@10.7.237.223
 ```bash
 sudo apt update
 ```
-<img width="1557" height="706" alt="1" src="https://github.com/user-attachments/assets/02a1e042-7ff4-426f-8d82-2519937a9010" />
+
+<img width="1136" height="375" alt="2" src="https://github.com/user-attachments/assets/d7f5387f-7e08-4e98-9e93-51523d0f4b4f" />
 
 **Explication :**
 Met à jour la liste des paquets disponibles sur Ubuntu.
@@ -71,8 +72,7 @@ Le système affiche la liste des dépôts et aucun message d’erreur.
 sudo apt install -y wget apt-transport-https software-properties-common
 ```
 
-<img width="1136" height="375" alt="2" src="https://github.com/user-attachments/assets/d7f5387f-7e08-4e98-9e93-51523d0f4b4f" />
-
+<img width="1155" height="187" alt="3" src="https://github.com/user-attachments/assets/40b84a76-db87-4c0b-bb96-1de66d6298b7" />
 
 **Explication :**
 Ces outils permettent de télécharger et d’ajouter des dépôts externes (ici, le dépôt Microsoft pour PowerShell).
@@ -88,7 +88,6 @@ Les paquets sont installés sans erreur.
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
-<img width="1155" height="187" alt="3" src="https://github.com/user-attachments/assets/40b84a76-db87-4c0b-bb96-1de66d6298b7" />
 
 **Explication :**
 Télécharge et installe le dépôt officiel Microsoft contenant PowerShell.
