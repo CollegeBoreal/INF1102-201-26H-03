@@ -63,7 +63,8 @@ sudo apt update
 
 Cette commande permet de mettre à jour la liste des paquets disponibles sur Ubuntu.
 
-### 📸 Capture à ajouter
+<img width="1136" height="375" alt="2" src="https://github.com/user-attachments/assets/6895113e-62a7-443c-b89a-c8e96cb39370" />
+
 
 ```markdown
 ![Update](images/update.png)
