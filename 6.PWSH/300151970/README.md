@@ -120,6 +120,7 @@ Mise à jour réussie, PowerShell disponible.
 ```bash
 sudo apt install -y powershell
 ```
+<img width="797" height="153" alt="6" src="https://github.com/user-attachments/assets/6321b814-2c49-4e19-98a4-00037c71f258" />
 
 **Explication :**
 Installe PowerShell sur Ubuntu.
@@ -134,6 +135,7 @@ PowerShell 7.x installé.
 ```bash
 pwsh
 ```
+<img width="757" height="365" alt="7" src="https://github.com/user-attachments/assets/54d1232f-7247-4ce1-a91d-3bcf1b5ff03a" />
 
 **Explication :**
 Ouvre le shell PowerShell.
