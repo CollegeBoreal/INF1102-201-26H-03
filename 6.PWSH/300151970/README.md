@@ -155,6 +155,8 @@ PS /home/user>
 $PSVersionTable
 ```
 
+<img width="700" height="311" alt="8" src="https://github.com/user-attachments/assets/20ae026e-ea96-4715-bd5d-3f9fb1c5c0b6" />
+
 **Explication :**
 Affiche la version exacte de PowerShell installée.
 
