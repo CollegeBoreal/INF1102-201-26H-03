@@ -118,3 +118,104 @@ plt.savefig('../output/meteo.png')
 
 ---
 
+# 🧪 Projet:
+
+---
+
+
+## ⭕ Objectifs
+
+Créer un projet permettan l'utilisation des languages de scripts appris en cours.
+
+---
+
+## **1. Structure de projet mise à jour**
+
+- [ ] sur votre 🎰 ***VM***
+
+```bash
+🆔/
+│
+├── scripts/
+│   ├── analyse.sh       # Script Bash principal
+│   └── analyse.py       # Script Python appelé par Bash
+│
+├── data/
+│   └── sample.log       # Fichier d’exemple pour tests
+│
+├── output/
+│   └── rapport.txt      # Fichier généré automatiquement
+│
+├── RAPPORT.ipynb        # Rapport Jupyter Notebook
+└── README.md            # Instructions d’exécution + explications
+```
+
+---
+
+## **2. README type mis à jour**
+
+````md
+# Projet Bash + Python
+
+## 1. Objectif
+Ce projet consiste à analyser un fichier log (`data/sample.log`) à l’aide d’un script Bash et Python, et à générer :
+- un **fichier texte** (`output/rapport.txt`) automatique
+- un **rapport Jupyter** (`RAPPORT.ipynb`) avec visualisations et commentaires
+
+## 2. Structure du projet
+- `scripts/analyse.sh` : script Bash principal
+- `scripts/analyse.py` : script Python appelé par Bash
+- `data/sample.log` : fichier d’exemple
+- `output/rapport.txt` : fichier généré automatiquement
+- `RAPPORT.ipynb` : rapport détaillé avec analyses et graphiques
+- `README.md` : instructions et explications
+
+## 3. Exécution
+1. Exécuter le script Bash principal :
+```bash
+bash scripts/analyse.sh
+````
+
+2. Ou exécuter le script Python seul :
+
+```bash
+python3 scripts/analyse.py data/sample.log
+```
+
+3. Ouvrir `RAPPORT.ipynb` avec **Jupyter Notebook** ou **Jupyter Lab** pour le rapport écrit.
+
+## 4. Dépendances
+
+* Bash
+* Python >= 3.8
+* Modules Python : `re`, `collections`, `matplotlib` (optionnel pour graphiques)
+* Jupyter Notebook
+
+## 5. Résultat attendu
+
+* `output/rapport.txt` : statistiques principales (top IP, top URLs)
+* `RAPPORT.ipynb` : explications, visualisations, analyse approfondie
+
+## 6. Bonnes pratiques
+
+* Scripts lisibles et commentés
+* Respecter la structure de dossier
+* RAPPORT.ipynb doit contenir du texte explicatif et éventuellement des graphiques
+
+````
+
+---
+
+## **4. Conseils**
+
+1. Tester **analyse.sh** et **analyse.py** avant livraison.
+2. Générer **output/rapport.txt** automatiquement avec Bash + Python.
+3. Compléter **RAPPORT.ipynb** avec :
+
+   * description de la méthode
+   * statistiques ou graphiques
+   * analyse des résultats
+4. Respecter la **structure de dossiers** pour que le script de test fonctionne.
+5. Commenter le code pour que ce soit clair pour le correcteur.
+
+---
