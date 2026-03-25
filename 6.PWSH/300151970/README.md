@@ -188,6 +188,8 @@ Dossier `/devops-batch` existe déjà, message “File exists”.
 sudo nano /devops-batch/devops_batch.ps1
 ```
 
+<img width="732" height="31" alt="10" src="https://github.com/user-attachments/assets/8a4b25da-c32c-4272-8f18-db78cb4187ee" />
+
 Ajouter en première ligne :
 
 ```powershell
