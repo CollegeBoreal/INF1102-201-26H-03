@@ -1,9 +1,9 @@
-\# TP CRON - Surveillance Nginx
+## TP CRON - Surveillance Nginx
 ## 🌐 IP de la VM
 10.7.237.210
 
 
-\## 👩‍💻 Étudiante
+## 👩‍💻 Étudiante
 
 \- Nom : Ikram Sidhoum  
 
@@ -17,7 +17,7 @@
 
 
 
-\## 🎯 Objectif du TP
+## 🎯 Objectif du TP
 
 Surveiller le système Linux et analyser les logs du serveur Nginx afin de :
 
@@ -31,7 +31,7 @@ Surveiller le système Linux et analyser les logs du serveur Nginx afin de :
 
 
 
-\## ⚙️ Outils utilisés
+## ⚙️ Outils utilisés
 
 \- awk
 
@@ -49,7 +49,7 @@ Surveiller le système Linux et analyser les logs du serveur Nginx afin de :
 
 
 
-\## 📂 Fichiers
+## 📂 Fichiers
 
 \- `scruter\_nginx.sh` → Script pour extraire les IP
 
@@ -63,7 +63,7 @@ Surveiller le système Linux et analyser les logs du serveur Nginx afin de :
 
 
 
-\## 🧠 Fonctionnement du script
+## 🧠 Fonctionnement du script
 
 
 
@@ -83,7 +83,7 @@ Le script :
 
 
 
-\## 💻 Script utilisé
+## 💻 Script utilisé
 
 
 
@@ -104,6 +104,7 @@ awk '{print $1}' $LOG\_FILE | sort | uniq > $OUTPUT\_FILE
 
 
 echo "Script exécuté le $(date)" >> /home/ubuntu/nginx\_ips.log
+```
 
 ##⏱️ Automatisation avec cron
 
@@ -137,7 +138,7 @@ Surveiller un serveur en temps réel
 git add README.md
 git commit -m "README personnalisé"
 git push
-
+```
 
 
 
