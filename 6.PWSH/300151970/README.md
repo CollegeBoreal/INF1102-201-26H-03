@@ -281,6 +281,8 @@ Le script :
 sudo pwsh /devops-batch/devops_batch.ps1
 ```
 
+<img width="902" height="708" alt="11" src="https://github.com/user-attachments/assets/6cb54b18-3ccd-4b7f-96a5-ab4445b3b94b" />
+
 **Explication :**
 Exécute le script DevOps et crée les rapports.
 
