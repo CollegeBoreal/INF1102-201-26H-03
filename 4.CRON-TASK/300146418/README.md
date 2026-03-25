@@ -82,7 +82,6 @@ Le script :
 \---
 
 
-
 ## 💻 Script utilisé
 
 
@@ -106,7 +105,7 @@ awk '{print $1}' $LOG\_FILE | sort | uniq > $OUTPUT\_FILE
 echo "Script exécuté le $(date)" >> /home/ubuntu/nginx\_ips.log
 ```
 
-##⏱️ Automatisation avec cron
+## ⏱️ Automatisation avec cron
 
 Commande utilisée :
 
