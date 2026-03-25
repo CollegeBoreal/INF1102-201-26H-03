@@ -324,7 +324,8 @@ Utilisation disque : 29%
 ### SSH
 
 ```
-Host key verified
+Test SSH vers 127.0.0.1 :
+Résultat : Host key verification failed.
 ```
 
 *(La connexion fonctionne mais la clé SSH n’est pas enregistrée)*
