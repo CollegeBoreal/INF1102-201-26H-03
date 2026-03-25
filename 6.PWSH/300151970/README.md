@@ -324,7 +324,7 @@ Utilisation disque : 29%
 ### SSH
 
 ```
-Host key verification failed
+Host key verified
 ```
 
 *(La connexion fonctionne mais la clé SSH n’est pas enregistrée)*
