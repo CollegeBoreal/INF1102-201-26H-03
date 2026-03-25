@@ -18,6 +18,7 @@ Date de remise : 13/03/2026
 
 
 
+
 ## 1. Vérification de l’installation d’OpenTofu
 
 Commande exécutée :
