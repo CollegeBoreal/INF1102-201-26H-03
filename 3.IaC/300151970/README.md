@@ -1,16 +1,20 @@
 ## Informations de l’étudiant
 
-Nom : Babatundé Adissa Fadolle AROUNA
+Nom et Prénoms : Babatundé Adissa Fadolle AROUNA
 
 Numéro étudiant : 300151970
+
+Programme : Techniques des systèmes informatiques
 
 Cours : INF1102 – Programmation des Systèmes
 
 Collège Boréal - Campus Toronto
 
+Session : Hiver 2026
 
+Professeur : Brice Robert
 
-
+Date de remise : 13/03/2026
 
 
 
