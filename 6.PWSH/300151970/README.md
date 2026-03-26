@@ -89,6 +89,9 @@ wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
+<img width="1397" height="402" alt="4" src="https://github.com/user-attachments/assets/8c1d3302-920c-4176-a6f3-31df2553d039" />
+
+
 **Explication :**
 Télécharge et installe le dépôt officiel Microsoft contenant PowerShell.
 
@@ -102,6 +105,7 @@ Le dépôt Microsoft est ajouté correctement.
 ```bash
 sudo apt update
 ```
+<img width="872" height="237" alt="5" src="https://github.com/user-attachments/assets/f3f3b5a2-b045-4079-8bc5-d99eeaa43e97" />
 
 **Explication :**
 Recharge les dépôts afin de reconnaître PowerShell comme paquet installable.
@@ -116,6 +120,7 @@ Mise à jour réussie, PowerShell disponible.
 ```bash
 sudo apt install -y powershell
 ```
+<img width="797" height="153" alt="6" src="https://github.com/user-attachments/assets/6321b814-2c49-4e19-98a4-00037c71f258" />
 
 **Explication :**
 Installe PowerShell sur Ubuntu.
@@ -130,6 +135,7 @@ PowerShell 7.x installé.
 ```bash
 pwsh
 ```
+<img width="760" height="47" alt="7" src="https://github.com/user-attachments/assets/07fc04f0-aa96-478e-a5b5-13e4401ce910" />
 
 **Explication :**
 Ouvre le shell PowerShell.
@@ -149,11 +155,13 @@ PS /home/user>
 $PSVersionTable
 ```
 
+<img width="700" height="311" alt="8" src="https://github.com/user-attachments/assets/20ae026e-ea96-4715-bd5d-3f9fb1c5c0b6" />
+
 **Explication :**
 Affiche la version exacte de PowerShell installée.
 
 **Résultat attendu :**
-Version 7.x confirmée.
+Version 7.6.0.
 
 ---
 
@@ -164,12 +172,13 @@ Version 7.x confirmée.
 ```bash
 sudo mkdir /devops-batch
 ```
+<img width="758" height="61" alt="9" src="https://github.com/user-attachments/assets/71eb64b7-1dda-472b-abf2-83cbe92122e8" />
 
 **Explication :**
 Créer un dossier dédié pour organiser les fichiers du TP.
 
 **Résultat attendu :**
-Dossier `/devops-batch` créé (si existe déjà, message “File exists”).
+Dossier `/devops-batch` existe déjà, message “File exists”.
 
 ---
 
@@ -178,6 +187,8 @@ Dossier `/devops-batch` créé (si existe déjà, message “File exists”).
 ```bash
 sudo nano /devops-batch/devops_batch.ps1
 ```
+
+<img width="732" height="31" alt="10" src="https://github.com/user-attachments/assets/8a4b25da-c32c-4272-8f18-db78cb4187ee" />
 
 Ajouter en première ligne :
 
@@ -270,6 +281,8 @@ Le script :
 sudo pwsh /devops-batch/devops_batch.ps1
 ```
 
+<img width="902" height="708" alt="11" src="https://github.com/user-attachments/assets/6cb54b18-3ccd-4b7f-96a5-ab4445b3b94b" />
+
 **Explication :**
 Exécute le script DevOps et crée les rapports.
 
@@ -311,7 +324,8 @@ Utilisation disque : 29%
 ### SSH
 
 ```
-Host key verification failed
+Test SSH vers 127.0.0.1 :
+Résultat : Host key verification failed.
 ```
 
 *(La connexion fonctionne mais la clé SSH n’est pas enregistrée)*
