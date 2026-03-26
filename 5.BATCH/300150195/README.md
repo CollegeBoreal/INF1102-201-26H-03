@@ -70,7 +70,7 @@ sudo /entreprise/script_gestion.sh
 ⏰ Cron
 
 📦 Backup
-
+---
 🔍 Vérification
 ✔️ Fichiers copiés
 ✔️ Archive créée
