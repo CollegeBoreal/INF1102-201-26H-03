@@ -52,16 +52,20 @@ Le script `script_gestion.sh` permet de :
 5. Générer un fichier log
 
 ✅ Résultats
+
 📂 Fichiers test
 <img width="900" height="92" alt="image" src="https://github.com/user-attachments/assets/67f05a8e-715f-4380-b741-36f83e034314" />
+
 
 
 📜 Log
 <img width="900" height="557" alt="image" src="https://github.com/user-attachments/assets/fbd62416-c9e5-4c08-bab9-91e0b7720ecd" />
 
 
+
 ⏰ Cron
 <img width="900" height="470" alt="image" src="https://github.com/user-attachments/assets/ec1502de-7227-4195-88e9-2ae337113533" />
+
 
 
 📦 Backup
