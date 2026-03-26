@@ -22,20 +22,20 @@
 
 | TOFU Credentials                                    | :closed_lock_with_key: Secret |
 |-----------------------------------------------------|------------------|
-| tofu@pve!opentofu                                   | 6ad11b5a-8883-445e-bdf0-5b0a6b8b9b7c   |
+| tofu@pve!opentofu                                   | 63cd5a0b-24a0-42a1-9ce3-993a2d9de8dd   |
 
 ## :a: Présence
 
-|:hash:| Boréal :id:                | README.md | images | /entreprise/script_gestion.sh  | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |
-|------|----------------------------|-----------|--------|----------------------------------|----|-----|
-| 0 | [300150195](../300150195/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :x: | :x: | :x: | :x: | :x: |
-| 1 | [300150385](../300150385/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image>](https://github.com/belka1996) | :x: | :x: | :x: | :green_circle: [10.7.237.215](http://10.7.237.215) | :x: |
-| 2 | [300150416](../300150416/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image>](https://github.com/hachemsouyadi) | :x: | :x: | :x: | :x: | :x: |
-| 3 | [300150433](../300150433/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image>](https://github.com/zakariadjellouli) | :x: | :x: | :x: | :green_circle: [10.7.237.217](http://10.7.237.217) | :x: |
-| 4 | [300150485](../300150485/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994799?s=460&v=4' width=20 height=20></image>](https://github.com/nad1111) | :x: | :x: | :x: | :green_circle: [10.7.237.218](http://10.7.237.218) | :x: |
-| 5 | [300150558](../300150558/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212186770?s=460&v=4' width=20 height=20></image>](https://github.com/amirasadouni00) | :x: | :x: | :x: | :x: | :x: |
-| 6 | [300151042](../300151042/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image>](https://github.com/hichemhamdi10) | :x: | :x: | :x: | :x: | :x: |
-| 7 | [300151354](../300151354/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :x: | :x: | :x: | :x: | :x: |
-| 8 | [300151607](../300151607/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :x: | :x: | :x: | :x: |
-| 9 | [300151970](../300151970/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :x: | :x: | :x: | :green_circle: [10.7.237.223](http://10.7.237.223) | :x: |
-| :abacus: | \$\\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+|:hash:| Boréal :id:                | README.md | images | /entreprise/script_gestion.sh | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |
+|------|----------------------------|-----------|--------|---------|----|-----|
+| 0 | [300150195](../300150195/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :x: | :x: | :x: | :green_circle: [10.7.237.214](http://10.7.237.214) | :boom: |
+| 1 | [300150385](../300150385/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image>](https://github.com/belka1996) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.215](http://10.7.237.215) | :link: |
+| 2 | [300150416](../300150416/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image>](https://github.com/hachemsouyadi) | :x: | :x: | :x: | :green_circle: [10.7.237.216](http://10.7.237.216) | :boom: |
+| 3 | [300150433](../300150433/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image>](https://github.com/zakariadjellouli) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.217](http://10.7.237.217) | :link: |
+| 4 | [300150485](../300150485/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994799?s=460&v=4' width=20 height=20></image>](https://github.com/nad1111) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.218](http://10.7.237.218) | :link: |
+| 5 | [300150558](../300150558/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212186770?s=460&v=4' width=20 height=20></image>](https://github.com/amirasadouni00) | :x: | :x: | :x: | :green_circle: [10.7.237.219](http://10.7.237.219) | :boom: |
+| 6 | [300151042](../300151042/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/62858035?s=460&v=4' width=20 height=20></image>](https://github.com/hichemhamdi10) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.220](http://10.7.237.220) | :link: |
+| 7 | [300151354](../300151354/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :x: | :x: | :x: | :red_circle: 10.7.237.221 | :boom: |
+| 8 | [300151607](../300151607/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :x: | :x: | :green_circle: [10.7.237.222](http://10.7.237.222) | :boom: |
+| 9 | [300151970](../300151970/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :green_circle: [10.7.237.223](http://10.7.237.223) | :link: |
+| :abacus: | \$\\frac{0}{10}\$ = 50% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 5 |

@@ -1,3 +1,24 @@
+## Informations de l’étudiant
+
+Nom et Prénoms : Babatundé Adissa Fadolle AROUNA
+
+Numéro étudiant : 300151970
+
+Programme : Techniques des systèmes informatiques
+
+Cours : INF1102 – Programmation des Systèmes
+
+Collège Boréal - Campus Toronto
+
+Session : Hiver 2026
+
+Professeur : Brice Robert
+
+Date de remise : 13/03/2026
+
+
+
+
 ## 1. Vérification de l’installation d’OpenTofu
 
 Commande exécutée :
@@ -184,9 +205,7 @@ Cela valide que l’infrastructure déployée via OpenTofu est pleinement opéra
 
 <img width="1918" height="975" alt="final" src="https://github.com/user-attachments/assets/bb2ab910-a0f2-4594-ac4a-324fdd3a1df7" />
 
-
 ---
-
 ## Structure du dépôt
 
 ```
@@ -207,7 +226,6 @@ Cela valide que l’infrastructure déployée via OpenTofu est pleinement opéra
            ├── 08-nginx-start.png
            └----nginx-web.png
 ```
-
 ---
 
 ## Conclusion
