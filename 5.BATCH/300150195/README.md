@@ -51,25 +51,32 @@ Le script `script_gestion.sh` permet de :
 4. Compresser les données en `.tar.gz`
 5. Générer un fichier log
 
-✅ Résultats
-
-📂 Fichiers test
-<img width="900" height="92" alt="image" src="https://github.com/user-attachments/assets/67f05a8e-715f-4380-b741-36f83e034314" />
 
 
+## ✅ Résultats
 
-📜 Log
-<img width="900" height="557" alt="image" src="https://github.com/user-attachments/assets/fbd62416-c9e5-4c08-bab9-91e0b7720ecd" />
+### 📂 Fichiers test
+<img width="900" height="92" alt="image" src="https://github.com/user-attachments/assets/57729027-f731-4433-8fd0-4d09bc62a750" />
 
 
 
-⏰ Cron
-<img width="900" height="470" alt="image" src="https://github.com/user-attachments/assets/ec1502de-7227-4195-88e9-2ae337113533" />
+---
+
+### 📜 Log
+<img width="900" height="557" alt="image" src="https://github.com/user-attachments/assets/ea353dad-9f75-4efe-b368-a660e18c7987" />
 
 
+---
 
-📦 Backup
-<img width="900" height="59" alt="image" src="https://github.com/user-attachments/assets/bbdcfe40-032d-4fec-b5a7-3609e14016f1" />
+### ⏰ Cron
+<img width="900" height="470" alt="image" src="https://github.com/user-attachments/assets/e59873d4-265d-4adc-bc0b-b567cfcb8494" />
+
+
+---
+
+### 📦 Backup
+<img width="900" height="59" alt="image" src="https://github.com/user-attachments/assets/486533c0-8e60-4379-bf62-2f2bbf91d70c" />
+
 
 ---
 
