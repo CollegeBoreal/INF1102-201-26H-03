@@ -51,6 +51,14 @@ Le script `script_gestion.sh` permet de :
 4. Compresser les données en `.tar.gz`
 5. Générer un fichier log
 
+✅ Résultats
+📂 Fichiers test
+
+📜 Log
+
+⏰ Cron
+
+📦 Backup
 ---
 
 ## ▶️ Exécution
@@ -62,15 +70,7 @@ sudo /entreprise/script_gestion.sh
 
 ➡️ Exécution automatique tous les jours à 2h
 
-✅ Résultats
-📂 Fichiers test
 
-📜 Log
-
-⏰ Cron
-
-📦 Backup
----
 🔍 Vérification
 ✔️ Fichiers copiés
 ✔️ Archive créée
