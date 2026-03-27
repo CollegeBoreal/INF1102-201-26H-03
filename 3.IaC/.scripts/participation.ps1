@@ -131,15 +131,15 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     Write-Output $LINE
 
     # Stats (optionnel)
-    if ($README_STATUS -eq ":x:") {} else { $SSH_OK_COUNT++ }
+    if ($README_STATUS -eq ":x:") {} else { $s++ }
     $i++
 }
 
 # -------------------------------
 # Statistiques finales
 # -------------------------------
-$COUNT = "\$\\frac{$SSH_OK_COUNT}{$i}\$"
-$STATS = if ($i -gt 0) { [math]::Round(($SSH_OK_COUNT * 100.0 / $i), 2) } else { 0 }
+$COUNT = "\$\\frac{$s}{$i}\$"
+$STATS = if ($i -gt 0) { [math]::Round(($s * 100.0 / $i), 2) } else { 0 }
 $SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 
-Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $SSH_OK_COUNT |"
+Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
