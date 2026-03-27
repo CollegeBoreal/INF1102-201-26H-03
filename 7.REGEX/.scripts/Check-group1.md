@@ -27,7 +27,7 @@
 ## :a: Présence
 
 |:hash:| Boréal :id:                | README.md | images | analyse_nginx.ps1 | analyse_nginx.py | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |
-|------|----------------------------|-----------|--------|---------|----|-----|
+|------|----------------------------|-----------|--------|---------|----|-----|-----|
 | 0 | [300133071](../300133071/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image>](https://github.com/nelsonwilliam237) | :x: | :x: | :x: | :x: | :green_circle: [10.7.237.194](http://10.7.237.194) | :boom: |
 | 1 | [300137754](../300137754/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image>](https://github.com/josephbeni1) | :x: | :x: | :x: | :x: | :green_circle: [10.7.237.195](http://10.7.237.195) | :boom: |
 | 2 | [300138205](../300138205/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image>](https://github.com/taylor123marc) | :x: | :x: | :x: | :x: | :green_circle: [10.7.237.196](http://10.7.237.196) | :boom: |
