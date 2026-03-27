@@ -12,7 +12,16 @@ Cours : **INF1102 – Programmation des Systèmes**
 
 **Collège Boréal - Campus Toronto**
 
+Programme : **Techniques des systèmes informatiques**
+
+Session : **Hiver 2026**
+
+Professeur : **Brice Robert**
+
+Date de remise : **15/03/2026**
+
 Laboratoire : **CRON-TASK — Analyse des logs Nginx**
+
 
 ---
 
