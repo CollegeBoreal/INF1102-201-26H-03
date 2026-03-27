@@ -40,4 +40,4 @@
 | 7 | [300146721](../300146721/README.md) [<image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image>](https://github.com/smailikh) | :2nd_place_medal: | :x: | :heavy_check_mark: | 10.7.237.211 |
 | 8 | [300147629](../300147629/README.md) [<image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image>](https://github.com/zoumarbalde-blip) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.212 |
 | 9 | [300147816](../300147816/README.md) [<image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image>](https://github.com/HananeZerrouki) | :2nd_place_medal: | :x: | :heavy_check_mark: | 10.7.237.213 |
-| :abacus: | \$\\frac{0}{10}\$ = 90% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 9 |
+| :abacus: | \$\\frac{9}{10}\$ = 90% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 9 |

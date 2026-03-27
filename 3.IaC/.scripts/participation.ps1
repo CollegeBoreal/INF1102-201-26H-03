@@ -138,7 +138,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
 # -------------------------------
 # Statistiques finales
 # -------------------------------
-$COUNT = "\$\\frac{$s}{$i}\$"
+$COUNT = "\$\\frac{$SSH_OK_COUNT}{$i}\$"
 $STATS = if ($i -gt 0) { [math]::Round(($SSH_OK_COUNT * 100.0 / $i), 2) } else { 0 }
 $SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 
