@@ -131,9 +131,15 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     Write-Output $LINE
 
     # Stats (optionnel)
-    if ($TF_STATUS -eq ":heavy_check_mark:") { $s++ }
+    if ($README_STATUS -eq ":x:") {} else { $s++ }
     $i++
 }
 
-Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
+# -------------------------------
+# Statistiques finales
+# -------------------------------
+$COUNT = "\$\\frac{$s}{$i}\$"
+$STATS = if ($i -gt 0) { [math]::Round(($s * 100.0 / $i), 2) } else { 0 }
+$SUM = "\$\displaystyle\sum_{i=1}^{$i} s_i\$"
 
+Write-Output "| :abacus: | $COUNT = $STATS% | $SUM = $s |"
