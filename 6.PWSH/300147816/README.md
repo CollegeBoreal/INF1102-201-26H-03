@@ -1,5 +1,5 @@
 # Laboratoire — Batch DevOps PowerShell (300147816)
-** 🧨 Objectif de laboratoire:**
+**🧨 Objectif de laboratoire:**
 
 Ce projet documente l'installation de PowerShell Core sur Ubuntu 22.04 et la création d'un script de surveillance système capable de générer des rapports aux formats **Texte** et **JSON**
 
@@ -7,7 +7,7 @@ Ce projet documente l'installation de PowerShell Core sur Ubuntu 22.04 et la cr�
 
 Sous Linux, nous devons "apprendre" au système où trouver PowerShell, car il ne fait pas partie des logiciels installés par défaut.
 
-##1. Mettre à jour le système:
+## 1. Mettre à jour le système:
 
 ![Mise a jour du systeme](./images/maj.JPG)
 
@@ -15,7 +15,7 @@ Sous Linux, nous devons "apprendre" au système où trouver PowerShell, car il n
 
 Cette commande met à jour la liste des logiciels disponibles. C'est comme télécharger le nouveau catalogue avant de passer commande
 
-#2. Installation des outils de communication
+# 2. Installation des outils de communication
 
 ![Installer les dependances](./images/instaldependance.JPG)
 
@@ -27,7 +27,7 @@ Cette commande met à jour la liste des logiciels disponibles. C'est comme tél�
 
 • software-properties-common : Aide à gérer les sources de logiciels provenant de tiers (comme Microsoft).
 
-#3. Récupération de la "clé" Microsoft
+# 3. Récupération de la "clé" Microsoft
 
 Dans cette étape nous allons ajouter le dépot Microsoft. L'image suivante explique:
 
@@ -37,7 +37,7 @@ Dans cette étape nous allons ajouter le dépot Microsoft. L'image suivante expl
 
 Nous téléchargeons un petit paquet qui contient l'adresse du serveur de Microsoft et la clé de sécurité pour prouver que les fichiers sont authentiques.
 
-#4. Enregistrement du dépôt Microsoft
+# 4. Enregistrement du dépôt Microsoft
 
 Dans cette étape on installe le dépot, l'image suivante explique:
 
@@ -47,7 +47,7 @@ Dans cette étape on installe le dépot, l'image suivante explique:
 
 On installe le fichier téléchargé. Maintenant, Ubuntu sait que pour trouver PowerShell, il doit aller voir chez Microsoft.
 
-#5. Installation finale
+# 5. Installation finale
 
 
 ![Mise a jour des depots ](./images/majdepot.JPG)
@@ -64,7 +64,7 @@ Cette deuxième photo montre comment lancer l'installation de powershell
 
 **🕹 Étape 2 : Lancement et Vérification**
 
-#1. Démarrage de l'interface
+# 1. Démarrage de l'interface
 
 ![Lancer powershell](./images/lancerpowershell.JPG)
 
@@ -74,7 +74,7 @@ On quitte l'univers "Bash" pour entrer dans l'univers "PowerShell". Le prompt ch
 
 **Vérification de l'environnement:**
 
-![Verifier la version](./images/verfierversion.JPG)
+![Verifier la version](./images/verifierversion.JPG)
 
 **Explication**
 
@@ -140,7 +140,7 @@ Pour lancer le script avec les privilèges administratifs nécessaires (pour lir
 
 On aura le resultat suivant:
 
-**🧨 Affichage Console **: Le terminal affiche en temps réel le Top 5 des processus (CPU/Mémoire), l'état du disque (df -h) et le succès du test de connectivité SSH.
+**🧨 Affichage Consol :** Le terminal affiche en temps réel le Top 5 des processus (CPU/Mémoire), l'état du disque (df -h) et le succès du test de connectivité SSH.
 
 **🧨 Génération de Artefacts :**  Le script automatise la création de deux fichiers distincts dans /devops-batch/.
 
@@ -199,7 +199,9 @@ Voici la différence pour une tâche courante : *Extraire les 5 processus les pl
 
 | **Bash** | `ps aux --sort=-%mem | head -n 6 | awk '{print $11, $4}' > top.txt` | **Élevée** (Nécessite de découper du texte manuellement avec `awk`). |
 
+
 | **PowerShell** | `Get-Process | Sort-Object WS -Descending | Select-Object -First 5 Name,WS | ConvertTo-Json` | **Faible** (Utilisation d'objets natifs et export automatique). |
+
 
 
 **Conclusion :** Le résultat PowerShell est un **vrai JSON** structuré, prêt à être consommé par une API ou un outil de monitoring, sans risque d'erreur de formatage.
@@ -221,22 +223,22 @@ Bash nécessite de rediriger du texte brut vers un fichier. Le résultat est dif
 ps aux --sort=-%mem | head -n 5 > top_mem.txt
 
 df -h >> top_mem.txt
-
-✅ Méthode PowerShell (Création d'objet JSON)
+```
+**✅ Méthode PowerShell (Création d'objet JSON)**
 
 PowerShell permet de créer un [PSCustomObject]. On définit nos propres étiquettes (TopMemory, Disk) et on y stocke directement les résultats.
 
 [Powershell](./images/powershell.JPG)
 
-**🎯 Pourquoi c'est important ?**
+**♥ Pourquoi c'est important ?**
 
 - **Aucun parsing requis** : Le fichier report.json est déjà structuré.
 
-- **Prêt pour l'ingestion **: Ce fichier peut être envoyé directement à une API Web, une base de données ou un tableau de bord de monitoring.
+- **Prêt pour l'ingestion**: Ce fichier peut être envoyé directement à une API Web, une base de données ou un tableau de bord de monitoring.
 
-- **Lisibilité **: Le code PowerShell est plus explicite sur ce qu'il contient (on voit clairement les clés TopMemory et Disk).
+- **Lisibilité**: Le code PowerShell est plus explicite sur ce qu'il contient (on voit clairement les clés TopMemory et Disk).
 
-# Conclusion:
+
 
 ## 🏁 Conclusion du Laboratoire
 
