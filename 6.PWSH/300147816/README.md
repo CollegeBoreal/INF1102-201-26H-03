@@ -21,7 +21,7 @@ Cette commande met à jour la liste des logiciels disponibles. C'est comme tél�
 
 **Explication:**
 
-* wget : Permet de télécharger des fichiers depuis internet via le terminal.
+• wget : Permet de télécharger des fichiers depuis internet via le terminal.
 
 • apt-transport-https : Permet au gestionnaire de paquets de télécharger des logiciels via une connexion sécurisée (HTTPS).
 
@@ -72,13 +72,14 @@ Cette deuxième photo montre comment lancer l'installation de powershell
 
 On quitte l'univers "Bash" pour entrer dans l'univers "PowerShell". Le prompt change pour afficher PS /home/ubuntu>.
 
-**Vérification de l'environnement:**
+**🎇Vérification de l'environnement:**
 
 ![Verifier la version](./images/verifierversion.JPG)
 
 **Explication**
 
 Cette commande affiche les détails de la version installée pour confirmer que tout est correct.
+
 
 **🎁Étape 3 : Le Script DevOps Batch (devops_batch.ps1)**
 
@@ -146,6 +147,7 @@ On aura le resultat suivant:
 
 Le résultat obtenu est bien clair dans l'image en haut.
 
+
 ## 💎 Le Pipeline orienté objets : La force de PowerShell
 
 Contrairement au Bash (Linux) qui manipule uniquement des chaînes de caractères (du texte), **PowerShell travaille avec des objets**. 
@@ -204,7 +206,7 @@ Voici la différence pour une tâche courante : *Extraire les 5 processus les pl
 
 
 
-**Conclusion :** Le résultat PowerShell est un **vrai JSON** structuré, prêt à être consommé par une API ou un outil de monitoring, sans risque d'erreur de formatage.
+**🎪Conclusion :** Le résultat PowerShell est un **vrai JSON** structuré, prêt à être consommé par une API ou un outil de monitoring, sans risque d'erreur de formatage.
 
 L'image suivante explique:
 
@@ -243,6 +245,7 @@ PowerShell permet de créer un [PSCustomObject]. On définit nos propres étique
 ## 🏁 Conclusion du Laboratoire
 
 Ce laboratoire a permis de démontrer l'efficacité de **PowerShell Core** en tant qu'outil d'automatisation sur un système **Linux (Ubuntu 22.04)**. 
+
 
 ### ✅ Points clés retenus :
 
