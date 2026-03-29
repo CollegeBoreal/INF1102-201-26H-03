@@ -9,7 +9,7 @@ Sous Linux, nous devons "apprendre" au système où trouver PowerShell, car il n
 
 ##1. Mettre à jour le système:
 
-![Mise a jour du systeme](./images/maj.jpg)
+![Mise a jour du systeme](./images/maj.JPG)
 
 **Explication:**
 
@@ -17,7 +17,7 @@ Cette commande met à jour la liste des logiciels disponibles. C'est comme tél�
 
 #2. Installation des outils de communication
 
-![Installer les dependances](./images/instaldependance.jpg)
+![Installer les dependances](./images/instaldependance.JPG)
 
 **Explication:**
 
@@ -31,7 +31,7 @@ Cette commande met à jour la liste des logiciels disponibles. C'est comme tél�
 
 Dans cette étape nous allons ajouter le dépot Microsoft. L'image suivante explique:
 
-![Ajout de depot Microsoft](./images/ajoutdepot.jpg)
+![Ajout de depot Microsoft](./images/ajoutdepot.JPG)
 
 **Explication:**
 
@@ -41,7 +41,7 @@ Nous téléchargeons un petit paquet qui contient l'adresse du serveur de Micros
 
 Dans cette étape on installe le dépot, l'image suivante explique:
 
-![Installer le depot ](./images/installdepot.jpg)
+![Installer le depot ](./images/installdepot.JPG)
 
 **Explication:**
 
@@ -50,13 +50,13 @@ On installe le fichier téléchargé. Maintenant, Ubuntu sait que pour trouver P
 #5. Installation finale
 
 
-![Mise a jour des depots ](./images/majdepot.jpg)
+![Mise a jour des depots ](./images/majdepot.JPG)
 
 **Explication:**
  
 Dans cette étape, On rafraîchit le catalogue (pour qu'Ubuntu voie enfin PowerShell)
 
-![Lancer installation de powershell](./images/installpowershell.jpg)
+![Lancer installation de powershell](./images/installpowershell.JPG)
 
 **Explication:**
 
@@ -66,7 +66,7 @@ Cette deuxième photo montre comment lancer l'installation de powershell
 
 #1. Démarrage de l'interface
 
-![Lancer powershell](./images/lancerpowershell.jpg)
+![Lancer powershell](./images/lancerpowershell.JPG)
 
 **Explication:**
 
@@ -74,7 +74,7 @@ On quitte l'univers "Bash" pour entrer dans l'univers "PowerShell". Le prompt ch
 
 **Vérification de l'environnement:**
 
-![Verifier la version](./images/verfierversion.jpg)
+![Verifier la version](./images/verfierversion.JPG)
 
 **Explication**
 
@@ -86,7 +86,7 @@ Cette commande affiche les détails de la version installée pour confirmer que 
 
 Dans cette étape, nous préparons l'espace de travail sur le serveur Linux.
 
-![Preparer l'environnement](./images/dossiertp.jpg)
+![Preparer l'environnement](./images/dossiertp.JPG)
 
 L'image nous donne la commande qui permet de créer un dossier à la racine du système. L'usage de `sudo` est nécessaire car nous écrivons dans un répertoire protégé par le système.
 
@@ -96,7 +96,7 @@ L'image nous donne la commande qui permet de créer un dossier à la racine du s
 
 Ici, Nous utilisons l'éditeur de texte **Nano** pour créer le fichier source.
 
-![Creer le script principal](./images/scriptprincipal.jpg)
+![Creer le script principal](./images/scriptprincipal.JPG)
 
 L'image nous donne la commande qui permet d'ouvrir l'éditeur pour créer le script PowerShell (extension `.ps1`).
 
@@ -106,9 +106,9 @@ On a ajouté cette ligne  `#!/usr/bin/env pwsh` dans le script principal : C'est
 
 ## 🎗 PARTIE 3 : Analyse du code PowerShell
 
-![Script complet a integrer](./images/scriptcomplet1.jpg)
+![Script complet a integrer](./images/scriptcomplet1.JPG)
 
-![Script complet a integrer](./images/scriptcomplet2.jpg)
+![Script complet a integrer](./images/scriptcomplet2.JPG)
 
 **Explication**
 
@@ -136,7 +136,7 @@ Le script est divisé en sections logiques pour automatiser la surveillance :
 
 Pour lancer le script avec les privilèges administratifs nécessaires (pour lire tous les processus et écrire à la racine), on utilise :
 
-![Executer le batch](./images/executebatch.jpg)
+![Executer le batch](./images/executebatch.JPG)
 
 On aura le resultat suivant:
 
@@ -154,7 +154,7 @@ Contrairement au Bash (Linux) qui manipule uniquement des chaînes de caractère
 
 Dans ce laboratoire, nous avons utilisé cette logique pour extraire des données précises. Voici l'analyse de la commande clé avec résultats obtenus :
 
-![Pipeline orienté objets](./images/vraipipline.jpg)
+![Pipeline orienté objets](./images/vraipipline.JPG)
 
 
 1.  **Get-Process** : Récupère une liste d'objets "Processus" complets (avec ID, Nom, CPU, Mémoire, etc.).
@@ -206,7 +206,7 @@ Voici la différence pour une tâche courante : *Extraire les 5 processus les pl
 
 L'image suivante explique:
 
-![Interopérabilité avec Windows](./images/bashpowershell.jpg)
+![Interopérabilité avec Windows](./images/bashpowershell.JPG)
 
 ## 📝 Création de rapports structurés : Exemple concret
 
@@ -226,7 +226,7 @@ df -h >> top_mem.txt
 
 PowerShell permet de créer un [PSCustomObject]. On définit nos propres étiquettes (TopMemory, Disk) et on y stocke directement les résultats.
 
-[Powershell](./images/powershell.jpg)
+[Powershell](./images/powershell.JPG)
 
 **🎯 Pourquoi c'est important ?**
 
