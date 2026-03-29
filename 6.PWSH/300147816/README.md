@@ -267,4 +267,4 @@ En résumé, l'adoption de PowerShell sous Linux offre une alternative sérieuse
 
 📅 Mars 2026 — Laboratoire DevOps PowerShell
 
-![Badge de réussite](https://img.shields.io/badge/Projet-Complété-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)
+![Badge](https://img.shields.io/badge/Projet-Complété-brightgreen?style=for-the-badge&logo=powershell&logoColor=white&cacheSeconds=0)
