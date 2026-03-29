@@ -206,7 +206,9 @@ Voici la différence pour une tâche courante : *Extraire les 5 processus les pl
 
 
 
-**🎪Conclusion :** Le résultat PowerShell est un **vrai JSON** structuré, prêt à être consommé par une API ou un outil de monitoring, sans risque d'erreur de formatage.
+**🎪Conclusion :**
+
+Le résultat PowerShell est un **vrai JSON** structuré, prêt à être consommé par une API ou un outil de monitoring, sans risque d'erreur de formatage.
 
 L'image suivante explique:
 
@@ -230,7 +232,7 @@ df -h >> top_mem.txt
 
 PowerShell permet de créer un [PSCustomObject]. On définit nos propres étiquettes (TopMemory, Disk) et on y stocke directement les résultats.
 
-[Powershell](./images/powershell.JPG)
+![Powershell](./images/powershell.JPG)
 
 **♥ Pourquoi c'est important ?**
 
