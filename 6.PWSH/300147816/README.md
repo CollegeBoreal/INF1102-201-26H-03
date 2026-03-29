@@ -264,6 +264,7 @@ En résumé, l'adoption de PowerShell sous Linux offre une alternative sérieuse
 
 ## ✍️ Auteur
 **HANANE ZERROUKI** 🆔 Étudiante : 300147816  
+
 📅 Mars 2026 — Laboratoire DevOps PowerShell
 
-![Badge de réussite](https://img.shields.io/badge/Projet-Complété-success?style=for-the-badge&logo=powershell)
+![Badge de réussite](https://img.shields.io/badge/Projet-Complété-brightgreen?style=for-the-badge&logo=powershell&logoColor=white)
