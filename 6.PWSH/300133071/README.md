@@ -43,3 +43,18 @@ rapport.json </br>
 rapport.txt</br>
 
 <img width="50%" height="50%" alt="image" src="images/3.png" />
+
+----
+# 🥠 Avantages de PowerShell sous Linux
+
+✈️Automatisation multi-plateforme: Fonctionne sur Windows, Linux et macOS.
+
+🫀Pipeline orienté objets :Permet filtrage (Where-Object), sélection (Select-Object) et export JSON ou CSV facilement.
+
+🥑 Intégration avec API et services :Automatisation DevOps avec Moodle API, Azure, AWS, etc.
+
+🐤 Gestion de systèmes complexe: Accès aux processus, services, utilisateurs, SSH, disque, réseau.
+
+⛹️Scripts robustes et maintenables: Variables typées, fonctions, modules → scripts DevOps plus fiables.
+
+🚑Interopérabilité avec Windows: Adaptation facile des scripts Windows vers Linux sans tout réécrire.
