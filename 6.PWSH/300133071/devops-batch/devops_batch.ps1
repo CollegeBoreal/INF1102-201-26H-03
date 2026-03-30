@@ -5,8 +5,8 @@
 # =========================
 
 # Variables
-$rapportTxt = "~/devops-batch/rapport.txt"
-$rapportJson = "~/devops-batch/rapport.json"
+$rapportTxt = "/devops-batch/rapport.txt"
+$rapportJson = "/devops-batch/rapport.json"
 $hostname = hostname
 $user = whoami
 $date = Get-Date
