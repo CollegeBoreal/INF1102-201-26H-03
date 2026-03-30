@@ -20,11 +20,12 @@ Le script permet d’automatiser des vérifications système, tester la connecti
 ---
 
 ## 🗂️ Structure du projet</br>
-
+```text
 /devops-batch
   │── devops_batch.ps1
   │── rapport.txt
   │── rapport.json
+```
 
 <img width="50%" height="50%" alt="image" src="images/4.png" />
 
