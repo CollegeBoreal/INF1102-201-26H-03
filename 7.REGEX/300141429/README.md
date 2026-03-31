@@ -18,7 +18,7 @@ REGEX/
 ├── rapport_nginx_ps1_YYYY-MM-DD.txt
 └── rapport_nginx_py_YYYY-MM-DD.txt
 ```
-
+![](images/p1.png)
 
 ## 📥 Entrée
 
@@ -113,7 +113,7 @@ Write-Host "✅ Rapport généré : $rapport"
 ```
 
 ---
-
+![](images/p2.png)
 ## ▶️ **Exécution**
 
 ```powershell
@@ -175,7 +175,7 @@ print("✅ Rapport généré :", rapport)
 ```
 
 ---
-
+![](images/p3.png)
 ## ▶️ **Exécution**
 
 ```bash
@@ -197,7 +197,7 @@ crontab -e
 ```
 
 ---
-
+![](images/p1.png)
 # 🔍 **PARTIE 4 — Vérification**
 
 ```bash
@@ -205,3 +205,4 @@ grep CRON /var/log/syslog
 ```
 
 ---
+![](images/p4.png)
