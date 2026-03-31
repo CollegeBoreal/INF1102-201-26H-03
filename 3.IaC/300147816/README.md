@@ -80,8 +80,19 @@ La VM a été déployée avec succès sur le nœud `labinfo`.
 La connexion à la VM a été validée via la commande :
 
 ```bash
-ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.213
+ssh -i ~/.ssh/ma_cle.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.213
 ```
+## Accès web
+
+Depuis un navigateur, saisir l’adresse IP de la VM :
+
+http://10.7.237.213
+
+![capture NGINEX 300147816](./images/nginx.JPG)
+
 
 **🧠 Conclusion**
 
