@@ -1,3 +1,5 @@
+
+
 ### 1. Mettre à jour le système
 
 ```bash
@@ -120,7 +122,6 @@ Shell : **PowerShell (pwsh)**
 sudo mkdir /devops-batch
 ```
 ![](images/pic1.png)
-
 ---
 
 ## 🔹 PARTIE 2 – Créer le script principal
@@ -188,8 +189,38 @@ Write-Output "Espace disque :" | Tee-Object -FilePath $rapportTxt -Append
 $disk = df -h
 Write-Output $disk | Tee-Object -FilePath $rapportTxt -Append
 
+# =========================
+# Vérification SSH
+# =========================
+Write-Output "" | Tee-Object -FilePath $rapportTxt -Append
+$sshHost = "127.0.0.1"
+Write-Output "Test SSH vers $sshHost :" | Tee-Object -FilePath $rapportTxt -Append
+try {
+    $result = ssh -o BatchMode=yes -o ConnectTimeout=5 $sshHost "echo 'OK'" 2>&1
+    Write-Output "Résultat : $result" | Tee-Object -FilePath $rapportTxt -Append
+} catch {
+    Write-Output "SSH échoué vers $sshHost" | Tee-Object -FilePath $rapportTxt -Append
+}
 
+# =========================
+# Génération JSON
+# =========================
+$reportObj = [PSCustomObject]@{
+    Date       = $date
+    Utilisateur = $user
+    Machine    = $hostname
+    TopCPU     = $topCPU | ForEach-Object { @{Process = $_.ProcessName; CPU = $_.CPU} }
+    TopMemory  = $topMem | ForEach-Object { @{Process = $_.ProcessName; Memory = $_.WorkingSet} }
+    Disk       = $disk
+}
+
+$reportObj | ConvertTo-Json -Depth 5 | Set-Content $rapportJson
+
+Write-Output ""
+Write-Output "Rapports générés : $rapportTxt et $rapportJson"
+```
 ![](images/pic2.png)
+---
 
 ## 🔹 PARTIE 4. Exécuter le batch
 
@@ -204,7 +235,7 @@ Résultat attendu :
 
   * `rapport.txt`
   * `rapport.json`
+
 ![](images/pic3.png)
 
 ![](images/pic4.png)
-  
