@@ -278,7 +278,7 @@ IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
 # ▶️ 11. Exécution
 
 ```bash
-ansible-playbook -i inventory playbook.yml
+ansible-playbook -i inventory.ini playbook.yml
 ```
 
 ---
