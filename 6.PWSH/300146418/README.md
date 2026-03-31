@@ -113,7 +113,7 @@ Liste des fichiers
 
 Ce TP permet de :
 
-- ** Automatiser la surveillance système
-- ** Utiliser PowerShell sur Linux
-- ** Générer des rapports exploitables
-- ** Appliquer des pratiques DevOps
+- Automatiser la surveillance système
+- Utiliser PowerShell sur Linux
+- Générer des rapports exploitables
+- Appliquer des pratiques DevOps
