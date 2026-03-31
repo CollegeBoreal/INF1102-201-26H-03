@@ -62,8 +62,8 @@ state: present
 
 ## 🧩 Ce que ça signifie
 
-✔ IaC → on décrit l’infrastructure avec du code
-✔ Configuration → on agit **à l’intérieur des machines**
+- ✔ IaC → on décrit l’infrastructure avec du code
+- ✔ Configuration → on agit **à l’intérieur des machines**
 
 ---
 
