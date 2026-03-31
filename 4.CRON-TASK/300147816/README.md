@@ -87,7 +87,7 @@ Pour que ce script puisse être lancé automatiquement par le système, j'ai dû
 
 L'image suivante montre ma ligne de planification
 
-![Cron](./images/cron.JPG)
+![Cron](./images/crontab.JPG)
 
 Fréquence : Exécution automatique de script au début de chaque heure.
 
@@ -120,3 +120,14 @@ Ce laboratoire sur la gestion des tâches planifiées (Cron) et l'analyse de log
 ## Résultat final : 
 
 Le système est désormais autonome, documenté et prêt pour une analyse plus poussée du trafic réseau.
+
+
+## ✍️ Auteur
+**HANANE ZERROUKI** 🆔 Étudiante : 300147816
+
+📅 Mars 2026 — Laboratoire DevOps PowerShell
+
+
+![Badge](https://img.shields.io/static/v1?label=PROJET&message=COMPLETE&color=brightgreen&logo=powershell&logoColor=white)
+
+
