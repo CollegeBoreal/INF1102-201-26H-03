@@ -1,7 +1,11 @@
 👤 Étudiant
+
 Identifiant : 300141368
+
 Nom: Diwambuena Kembo Daniella
+
 Cours : Programmation système
+
 Thème : BATCH
 
 1. Cette partie consiste à créer la structure de dossiers et les fichiers de test nécessaires afin de préparer l’environnement dans lequel le script pourra fonctionner correctement.
