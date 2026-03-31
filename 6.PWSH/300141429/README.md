@@ -188,3 +188,23 @@ Write-Output "Espace disque :" | Tee-Object -FilePath $rapportTxt -Append
 $disk = df -h
 Write-Output $disk | Tee-Object -FilePath $rapportTxt -Append
 
+
+![](images/pic2.png)
+
+## 🔹 PARTIE 4. Exécuter le batch
+
+```bash
+sudo pwsh /devops-batch/devops_batch.ps1
+```
+
+Résultat attendu :
+
+* Affichage console avec **CPU, mémoire, disque, SSH**
+* Création des fichiers :
+
+  * `rapport.txt`
+  * `rapport.json`
+![](images/pic3.png)
+
+![](images/pic4.png)
+  
