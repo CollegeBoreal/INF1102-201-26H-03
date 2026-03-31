@@ -190,5 +190,9 @@ Ce TP démontre l’utilisation de PowerShell pour :
 
 PowerShell permet une gestion plus structurée grâce à son pipeline orienté objets.
 
+## 📸 Preuve d’exécution
+
+![Exécution du script](./images/run.png)
+
 
 
