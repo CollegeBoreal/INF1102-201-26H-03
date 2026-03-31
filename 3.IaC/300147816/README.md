@@ -86,3 +86,11 @@ ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.213
 **🧠 Conclusion**
 
 Ce laboratoire prouve qu'avec l'IaC, l'infrastructure devient un logiciel. En quelques secondes, une VM complète avec configuration réseau et clés SSH a été provisionnée sans aucune intervention manuelle dans l'interface graphique de Proxmox.
+
+## ✍️ Auteur
+**HANANE ZERROUKI** 🆔 Étudiante : 300147816  
+
+📅 Mars 2026 — Laboratoire IaC
+
+
+![Badge](https://img.shields.io/static/v1?label=PROJET&message=COMPLETE&color=brightgreen&logo=powershell&logoColor=white)
