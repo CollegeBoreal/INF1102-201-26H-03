@@ -39,7 +39,8 @@ echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 
 Cette capture montre l’édition de la crontab dans l’éditeur Nano, où l’on configure les tâches automatisées que le système exécutera selon une planification définie.
 
-4.
+4.<img width="828" height="578" alt="image" src="https://github.com/user-attachments/assets/5f570942-f3ef-44bc-946b-45ffb8174116" />
+
    Cette capture montre le fichier de log généré par le script, qui enregistre chaque étape de l’exécution, y compris le test réseau, la sauvegarde des fichiers, la création de l’utilisateur et l’archivage.
 
 
