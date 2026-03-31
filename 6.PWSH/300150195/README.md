@@ -19,6 +19,19 @@
 Script batch DevOps en PowerShell sur Ubuntu 22.04.  
 Il vérifie l'état du système (CPU, mémoire, disque) et la connectivité SSH,  
 puis génère automatiquement un rapport texte et JSON.
+## 🎯 Objectif
+
+Ce TP vise à développer un script batch **DevOps** en **PowerShell** sur **Ubuntu 22.04**,
+permettant d'automatiser la surveillance du système et de générer des rapports détaillés.
+
+### Ce TP permet de :
+
+- ✅ Créer un script batch PowerShell fonctionnel sur Linux
+- ✅ Vérifier l'état du système (CPU, mémoire, disque)
+- ✅ Tester la connectivité réseau via SSH
+- ✅ Générer un rapport texte `.txt` et structuré `.json`
+- ✅ Automatiser des tâches administratives et DevOps
+- ✅ Comprendre le pipeline PowerShell orienté objets
 
 ## 📸 Résultat — PowerShell 7.6.0
 
@@ -39,20 +52,40 @@ puis génère automatiquement un rapport texte et JSON.
     ├── pwsh_version.png   # Version PowerShell installée
     └── rapport_devops.png # Résultat du script
 ​```
+## ▶️ Installation de PowerShell
+```bash
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt update && sudo apt install -y powershell
+```
 
-## 🔍 Fonctionnalités
+---
 
-| Fonctionnalité | Détail |
-|----------------|--------|
-| 🖥️ CPU | Top 5 processus par utilisation CPU |
-| 🧠 Mémoire | Top 5 processus par mémoire (WS) |
-| 💾 Disque | Espace disponible avec `df -h` |
-| 🔌 SSH | Test de connectivité vers `127.0.0.1` |
-| 📄 Rapport TXT | `/devops-batch/rapport.txt` |
-| 🗂️ Rapport JSON | `/devops-batch/rapport.json` |
-
-## ▶️ Exécution
-
-​```bash
+## 🚀 Exécution
+```bash
 sudo pwsh /devops-batch/devops_batch.ps1
-​```
+```
+
+---
+
+## 📄 Rapports générés
+
+| Fichier | Description |
+|---------|-------------|
+| `rapport.txt` | Rapport lisible en texte brut |
+| `rapport.json` | Rapport structuré en JSON |
+
+---
+
+## ✅ Compétences couvertes
+
+| Compétence | Détail |
+|-----------|--------|
+| ⚡ PowerShell | Scripting sur Linux |
+| 🐧 Linux | Administration Ubuntu 22.04 |
+| 📊 Monitoring | CPU, mémoire, disque |
+| 🔌 Réseau | Test SSH |
+| 🗂️ JSON | Génération de rapports structurés |
+
+
+
