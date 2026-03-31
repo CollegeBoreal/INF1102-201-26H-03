@@ -205,7 +205,30 @@ apt:
 
 ---
 
-# 📂 7. Structure du projet
+# :b: Expérimentation
+
+### 🎛️ Créer un fichier dans ce répertoire `(9.Ansible)`:
+
+:checkered_flag: Finalement,
+
+- [ ] Créer un répertoire avec :id: (votre identifiant boreal)
+   - [ ] `mkdir ` :id:
+- [ ] dans votre répertoire ajouter le fichier `README.md`
+  - [ ] `nano `README.md
+- [ ] envoyer vers le serveur `github.com`
+  - [ ] `cd ..`
+  - [ ] `git add `:id: 
+  - [ ] `git commit -m "mon fichier ..."`
+  - [ ] `git push`
+
+- [ ] Se diriger vers le répertoire avec :id: (votre identifiant boreal)
+   - [ ] `cd ` :id:
+
+- [ ] Continuer les 🔄 Exercices 
+
+### 🔄 Exercices
+
+La structure de fichiers attendus:
 
 ```bash
 🆔/
@@ -231,6 +254,8 @@ IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
 ---
 
 # 📜 9. Playbook complet
+
+Dans le fichier `playbook.yml`
 
 ```yaml
 - name: Installer et configurer nginx
@@ -261,6 +286,8 @@ IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
 
 # 🌐 10. Page HTML
 
+Dans le fichier `files/index.html`
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -272,6 +299,8 @@ IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
 </body>
 </html>
 ```
+
+💡: Utilise le fichier HTML de ton choix
 
 ---
 
@@ -302,16 +331,16 @@ Créer un système automatisé qui :
 ### 1️⃣ Créer la structure
 
 ```bash
-mkdir -p ansible-nginx/files
+mkdir -p 🆔/files
 ```
 
 ---
 
 ### 2️⃣ Compléter :
 
-* `inventory`
+* `inventory.ini`
 * `playbook.yml`
-* `index.html`
+* `files/index.html`
 
 ---
 
@@ -353,7 +382,7 @@ notify: restart nginx
 # 🧾 Livrables
 
 ```bash
-ansible-nginx/
+🆔/
 ├── inventory.ini
 ├── playbook.yml
 └── files/index.html
@@ -369,25 +398,12 @@ curl http://IP_VM
 
 ---
 
-# 📊 Barème
-
-| Critère            | Points |
-| ------------------ | ------ |
-| Inventory          | 2      |
-| Playbook           | 5      |
-| Installation nginx | 3      |
-| Déploiement HTML   | 3      |
-| Service actif      | 2      |
-| Bonus              | +3     |
-
----
-
 # 🔥 Conclusion
 
-✔ Ansible = **IaC orienté configuration**
-✔ Déclaratif → plus simple et fiable
-✔ YAML → essentiel à maîtriser
-✔ Complémentaire à Terraform (Tofu)
+- ✔ Ansible = **IaC orienté configuration**
+- ✔ Déclaratif → plus simple et fiable
+- ✔ YAML → essentiel à maîtriser
+- ✔ Complémentaire à Terraform (Tofu)
 
 ---
 
