@@ -40,11 +40,6 @@ sudo mkdir -p /entreprise/logs
 
 Création des fichiers test :
 
-```bash
-echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
-echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
-```
-
 
 
 <img width="909" height="802" alt="capture1bash" src="https://github.com/user-attachments/assets/f7b8a14e-bd39-4e0e-a9ca-4d379fae4ec9" />
@@ -60,9 +55,10 @@ echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 <img width="1088" height="423" alt="capture3bash" src="https://github.com/user-attachments/assets/e9284fa4-3242-4995-ad97-ecde9d3a1f4e" />
 
 
-<img width="880" height="946" alt="capture 6bash" src="https://github.com/user-attachments/assets/421f1fb0-c4fc-4110-b8b5-ff539ebab651" />
 
 
+
+<img width="1443" height="387" alt="capture5bash" src="https://github.com/user-attachments/assets/dee8fce1-c630-4e19-8762-a44f08c37bed" />
 
 
 
