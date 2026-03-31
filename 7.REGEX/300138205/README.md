@@ -6,7 +6,8 @@
 - Nom: Taylor
 - Cours : Programmation système
 -Durée : 90 à 120 minutes
--Environnement : Ubuntu 22.04 (Jammy)
+- Environnement : Ubuntu 22.04 (Jammy)
+  
 ----
 # -Shell : PowerShell (pwsh)
 ---
@@ -26,7 +27,7 @@ REGEX/
 ├── rapport_nginx_ps1_YYYY-MM-DD.txt
 └── rapport_nginx_py_YYYY-MM-DD.txt
 
----
+-----
 
 
 
