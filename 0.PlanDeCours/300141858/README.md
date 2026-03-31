@@ -6,4 +6,4 @@ Bonjour, je m'appelle Abdou Karim.
 
 Voici quelques images ajoutées dans mon dépôt :
 
-![Image 1](page/images/photo1.jpg)
+![Photo](images/photo1.jpg)
