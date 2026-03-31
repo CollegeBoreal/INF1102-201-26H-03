@@ -21,7 +21,9 @@ sudo mkdir -p /entreprise/logs
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 ```
-![](images/image1.png)
+
+<img width="921" height="257" alt="image" src="https://github.com/user-attachments/assets/23f04274-99e5-4c2d-8fbe-37a3faf5042b" />
+
 
 2. Cette partie consiste à créer et écrire le script Batch script_gestion.sh, qui automatise la sauvegarde des fichiers, le test réseau, la création d’un utilisateur temporaire, la compression des données et la génération d’un fichier log.
    ```powershell
