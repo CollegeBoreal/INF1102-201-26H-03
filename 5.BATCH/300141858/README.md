@@ -29,7 +29,6 @@ Le script permet de :
 ├── data/       # fichiers sources
 ├── backup/     # sauvegardes et archives
 └── logs/       # journaux d’exécution
-
 📂 Création de l’environnement
 sudo mkdir -p /entreprise/data
 sudo mkdir -p /entreprise/backup
@@ -38,7 +37,7 @@ sudo mkdir -p /entreprise/logs
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 📜 Script Bash utilisé
-🔹 script_gestion.sh
+script_gestion.sh
 #!/bin/bash
 
 LOG="/entreprise/logs/log.txt"
@@ -72,11 +71,11 @@ tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 
 echo "Fin exécution : $(date)" >> $LOG
 echo "===================================" >> $LOG
 ⚙️ Fonctionnalités du script
-✔ Test de connectivité réseau (ping)
-✔ Sauvegarde des fichiers (cp)
-✔ Création d’un utilisateur (useradd)
-✔ Compression des données (tar)
-✔ Journalisation complète (log.txt)
+✔ Test de connectivité réseau avec ping
+✔ Sauvegarde des fichiers avec cp
+✔ Création d’un utilisateur avec useradd
+✔ Compression des données avec tar
+✔ Journalisation complète dans log.txt
 ▶️ Exécution du script
 sudo /entreprise/script_gestion.sh
 💾 Résultat obtenu
@@ -90,11 +89,11 @@ un fichier log est généré dans /entreprise/logs
 ⏰ Automatisation avec cron
 sudo crontab -e
 
-Ajouter :
+Ajouter la ligne suivante :
 
 0 2 * * * /entreprise/script_gestion.sh
 
-➡ Exécution automatique tous les jours à 2h00
+➡ Exécution automatique tous les jours à 2h00.
 
 🔍 Vérification
 ls /entreprise/backup
@@ -102,29 +101,19 @@ cat /etc/passwd | grep employe_temp
 cat /entreprise/logs/log.txt
 sudo crontab -l
 systemctl status cron
+📸 Preuves
+📌 Structure créée
 
-## 📸 Preuves
+📌 Fichiers data
 
-### 📌 Structure créée
-[![Structure](images/1_structure.png)](images/1_structure.png)
+📌 Script Bash
 
-### 📌 Fichiers data
-[![Data](images/2_data.png)](images/2_data.png)
+📌 Exécution du script
 
-### 📌 Script Bash
-[![Script](images/3_script.png)](images/3_script.png)
+📌 Backup et archive
 
-### 📌 Exécution du script
-[![Execution](images/4_execution.png)](images/4_execution.png)
+📌 Utilisateur créé
 
-### 📌 Backup et archive
-[![Backup](images/5_backup.png)](images/5_backup.png)
+📌 Fichier log
 
-### 📌 Utilisateur créé
-[![User](images/6_user.png)](images/6_user.png)
-
-### 📌 Fichier log
-[![Log](images/7_log.png)](images/7_log.png)
-
-### 📌 Cron configuré
-[![Cron](images/8_cron.png)](images/8_cron.png)
+📌 Cron configuré
