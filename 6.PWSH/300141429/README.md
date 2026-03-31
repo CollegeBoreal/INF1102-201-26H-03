@@ -119,6 +119,7 @@ Shell : **PowerShell (pwsh)**
 ```bash
 sudo mkdir /devops-batch
 ```
+![](images/pic1.png)
 
 ---
 
