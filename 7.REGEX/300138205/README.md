@@ -3,7 +3,7 @@
 ## 👤 Étudiant
 
 - Identifiant : **300138205**
-- Nom: Taylor
+- Nom: Taylor Ngue Ngan
 - Cours : Programmation système
 -Durée : 90 à 120 minutes
 - Environnement : Ubuntu 22.04 (Jammy)
@@ -19,8 +19,9 @@ Utiliser des expressions régulières (Regex)
 Générer un rapport automatique
 Être automatisé (cron / tâche planifiée)
 
-----
+---
 # 📂 Structure du projet
+
 REGEX/
 ├── analyse_nginx.ps1
 ├── analyse_nginx.py
