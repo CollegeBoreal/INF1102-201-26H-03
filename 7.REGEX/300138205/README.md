@@ -22,12 +22,13 @@ Générer un rapport automatique
 ---
 # 📂 Structure du projet
 
+```
 REGEX/
-├── analyse_nginx.ps1
-├── analyse_nginx.py
+├── analyse_nginx.ps1           # Script PowerShell complet à exécuter
+├── analyse_nginx.py            # Script Python complet à exécuter
 ├── rapport_nginx_ps1_YYYY-MM-DD.txt
 └── rapport_nginx_py_YYYY-MM-DD.txt
-
+```
 -----
 
 
