@@ -1,4 +1,15 @@
 
+**Nom de l’étudiant :** Elhadji Arona Barry  
+**ID:** 300141429
+**Cours :** INF1102 — Systèmes et DevOps  
+**Programme :** Informatique / Réseautique  
+**Institution :** Collège Boréal  
+**Session :** Hiver 2026  
+**Environnement :** Ubuntu 22.04 (PowerShell Core)  
+**Dépôt GitHub :** INF1102-201-26H-03 / 6.PWSH  
+
+---
+
 
 ### 1. Mettre à jour le système
 
