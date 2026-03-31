@@ -104,21 +104,21 @@ Ajout :
 
 ### 🔹 Création des fichiers
 
-
+<img src="images/1_5.png" alt="Capture d’écran">
 
 ### 🔹 Script Bash
 
-
+<img src="images/2_5.png" alt="Capture d’écran">
 ### 🔹 Exécution + logs
 
-
+<img src="images/3_5.png" alt="Capture d’écran">
 
 ### 🔹 Cron
-
+<img src="images/4_5.png" alt="Capture d’écran">
 
 ### 🔹 Résultat backup
 
-
+<img src="images/5_5.png" alt="Capture d’écran">
 
 ---
 
