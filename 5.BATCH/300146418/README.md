@@ -1,168 +1,145 @@
-- Distribution Linux : Ubuntu Server
-- Accès sudo
-- Terminal
-- Service cron actif
+# 🧪 TP – Automatisation d’administration avec script Bash
+
+**Nom :** Ikram Sidhoum
+**ID :** 300146418
 
 ---
 
-## 📁 Structure utilisée
+## 🎯 Objectif
 
-Avant exécution :
+Ce TP consiste à créer un script Bash sous Linux permettant d’automatiser plusieurs tâches d’administration système :
 
-```text
-/entreprise/
-│
-├── data/
-│   ├── fichier1.txt
-│   ├── fichier2.txt
-│
-├── backup/
-│
-└── logs/
+* Sauvegarde des fichiers
+* Test de connectivité réseau
+* Création d’un utilisateur temporaire
+* Génération de logs
+* Compression des données
+* Planification avec cron
 
-Après exécution :
+---
 
-/entreprise/
-│
-├── data/
-│   ├── fichier1.txt
-│   ├── fichier2.txt
-│
-├── backup/
-│   ├── fichier1.txt
-│   ├── fichier2.txt
-│   └── backup_YYYY-MM-DD.tar.gz
-│
-└── logs/
-    └── log.txt
-⚙️ Préparation de l’environnement
+## 🏗️ Structure du projet
 
-Les dossiers ont été créés avec :
+```
+300146418/
+├── script_gestion.sh
+├── README.md
+└── images/
+```
 
+---
+
+## ⚙️ Étapes réalisées
+
+### 1️⃣ Préparation de l’environnement
+
+Création des dossiers :
+
+```bash
 sudo mkdir -p /entreprise/data
 sudo mkdir -p /entreprise/backup
 sudo mkdir -p /entreprise/logs
+```
 
-Les fichiers de test ont été créés avec :
+Création des fichiers :
 
+```bash
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
-📄 Script utilisé
+```
 
-Le script principal est :
+---
 
-/entreprise/script_gestion.sh
+### 2️⃣ Script Bash
 
-Contenu du script :
+Le script permet :
 
-#!/bin/bash
+* Tester la connexion réseau (`ping`)
+* Copier les fichiers
+* Créer un utilisateur temporaire
+* Générer un log
+* Créer une archive `.tar.gz`
 
-LOG="/entreprise/logs/log.txt"
-DATE=$(date)
+Exécution :
 
-echo "===================================" >> $LOG
-echo "Début exécution : $DATE" >> $LOG
-
-# 1. Vérification réseau
-echo "Test réseau..." >> $LOG
-ping -c 4 8.8.8.8 >> $LOG 2>&1
-
-# 2. Sauvegarde des fichiers
-echo "Sauvegarde en cours..." >> $LOG
-cp -r /entreprise/data/* /entreprise/backup/ >> $LOG 2>&1
-
-# 3. Création utilisateur temporaire
-USER_TEMP="employe_temp"
-
-if id "$USER_TEMP" &>/dev/null; then
-    echo "Utilisateur existe déjà." >> $LOG
-else
-    sudo useradd $USER_TEMP
-    echo "$USER_TEMP:Temp1234" | sudo chpasswd
-    echo "Utilisateur créé." >> $LOG
-fi
-
-# 4. Compression archive
-tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
-
-echo "Fin exécution : $(date)" >> $LOG
-echo "===================================" >> $LOG
-▶️ Exécution manuelle
-
-Le script a été exécuté manuellement avec :
-
+```bash
 sudo /entreprise/script_gestion.sh
-✅ Vérifications réalisées
-1. Vérification de la sauvegarde
-ls /entreprise/backup
+```
 
-Résultat attendu :
+---
 
-fichier1.txt
-fichier2.txt
-backup_YYYY-MM-DD.tar.gz
-2. Vérification du fichier log
-cat /entreprise/logs/log.txt
+### 3️⃣ Planification avec cron
 
-Le fichier log contient :
-
-Début exécution
-Test réseau
-Sauvegarde en cours
-Création utilisateur
-Compression archive
-Fin exécution
-3. Vérification de l’utilisateur temporaire
-cat /etc/passwd | grep employe_temp
-
-Résultat :
-
-l’utilisateur employe_temp a bien été créé
-⏰ Planification avec Cron
-
-La tâche planifiée a été ajoutée avec :
-
+```bash
 sudo crontab -e
+```
 
-Ligne utilisée :
+Ajout :
 
+```bash
 0 2 * * * /entreprise/script_gestion.sh
+```
 
-Cette ligne permet d’exécuter automatiquement le script tous les jours à 2h00.
+---
 
-🔍 Vérification de Cron
-Vérifier que le service cron fonctionne
-systemctl status cron
-Vérifier la tâche planifiée
-sudo crontab -l
-Vérifier les journaux cron
-journalctl -u cron
+## 📜 Commandes utilisées (Résumé)
 
-ou
+| Commande     | Description                      |
+| ------------ | -------------------------------- |
+| `mkdir -p`   | Créer des dossiers               |
+| `tee`        | Écrire dans un fichier avec sudo |
+| `cp -r`      | Copier des fichiers              |
+| `ping`       | Tester le réseau                 |
+| `useradd`    | Créer utilisateur                |
+| `chpasswd`   | Définir mot de passe             |
+| `tar -czvf`  | Créer archive                    |
+| `chmod +x`   | Rendre script exécutable         |
+| `crontab -e` | Planifier tâches                 |
+| `cat`        | Lire fichier                     |
+| `grep`       | Rechercher texte                 |
 
-cat /var/log/syslog | grep CRON
-📌 Résultats obtenus
+---
 
-À la fin du TP :
+## 📸 Captures d’écran
 
-Le test réseau fonctionne correctement
-Les fichiers sont copiés dans /entreprise/backup
-Une archive compressée est générée
-Le fichier log enregistre toutes les opérations
-L’utilisateur employe_temp est créé
-L’exécution automatique avec cron est configurée
-📸 Preuves
+### 🔹 Création des fichiers
 
-Les captures d’écran sont disponibles dans le dossier :
+<img src="images/1_5.png" alt="Capture d’écran">
 
-images/
-🧠 Conclusion
+### 🔹 Script Bash
 
-Ce TP m’a permis de pratiquer :
+<img src="images/2_5.png" alt="Capture d’écran">
+### 🔹 Exécution + logs
 
-l’écriture d’un script Bash structuré
-la gestion de fichiers et de dossiers
-la création d’utilisateurs sous Linux
-la journalisation des opérations
-la planification automatique avec cron
-la vérification et le diagnostic des erreurs
+<img src="images/3_5.png" alt="Capture d’écran">
+
+### 🔹 Cron
+<img src="images/4_5.png" alt="Capture d’écran">
+
+### 🔹 Résultat backup
+
+<img src="images/5_5.png" alt="Capture d’écran">
+
+---
+
+## ✅ Résultat final
+
+Après exécution :
+
+✔ Les fichiers sont copiés dans `/entreprise/backup`
+✔ Une archive `.tar.gz` est créée
+✔ Un utilisateur temporaire est créé
+✔ Un fichier log est généré
+✔ Le script est automatisé avec cron
+
+---
+
+## 🧠 Conclusion
+
+Ce TP m’a permis de :
+
+* Comprendre l’automatisation avec Bash
+* Manipuler les utilisateurs Linux
+* Utiliser cron pour planifier des tâches
+* Gérer et analyser des logs
+* Diagnostiquer des erreurs système
