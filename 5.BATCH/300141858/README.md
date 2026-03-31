@@ -8,17 +8,13 @@
 
 ## 🎯 Objectif
 
-L’objectif de ce TP est de mettre en pratique l’automatisation des tâches système sous Linux à l’aide d’un script Bash.
+Ce TP consiste à automatiser des tâches système sous Linux avec un script Bash :
 
-Le script permet de :
-
-- sauvegarder un dossier d’entreprise
-- créer un utilisateur temporaire
-- tester la connectivité réseau
-- générer un fichier journal (log)
-- compresser les données
-- automatiser l’exécution avec `cron`
-- vérifier et diagnostiquer les erreurs
+- sauvegarde des données  
+- création d’un utilisateur  
+- test réseau  
+- génération de logs  
+- automatisation avec cron  
 
 ---
 
@@ -26,94 +22,36 @@ Le script permet de :
 
 ```bash
 /entreprise/
-├── data/       # fichiers sources
-├── backup/     # sauvegardes et archives
-└── logs/       # journaux d’exécution
+├── data/
+├── backup/
+└── logs/
+
 📂 Création de l’environnement
 sudo mkdir -p /entreprise/data
 sudo mkdir -p /entreprise/backup
 sudo mkdir -p /entreprise/logs
-📁 Création des fichiers de test
+📁 Fichiers de test
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
-📜 Script Bash utilisé
-script_gestion.sh
+📜 Script
 #!/bin/bash
-
-LOG="/entreprise/logs/log.txt"
-DATE=$(date)
-
-echo "===================================" >> $LOG
-echo "Début exécution : $DATE" >> $LOG
-
-# Test réseau
-echo "Test réseau..." >> $LOG
-ping -c 4 8.8.8.8 >> $LOG 2>&1
-
-# Sauvegarde
-echo "Sauvegarde en cours..." >> $LOG
-cp -r /entreprise/data/* /entreprise/backup/ >> $LOG 2>&1
-
-# Création utilisateur
-USER_TEMP="employe_temp"
-
-if id "$USER_TEMP" &>/dev/null; then
-    echo "Utilisateur existe déjà." >> $LOG
-else
-    sudo useradd $USER_TEMP
-    echo "$USER_TEMP:Temp1234" | sudo chpasswd
-    echo "Utilisateur créé." >> $LOG
-fi
-
-# Compression
-tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
-
-echo "Fin exécution : $(date)" >> $LOG
-echo "===================================" >> $LOG
-⚙️ Fonctionnalités du script
-✔ Test de connectivité réseau avec ping
-✔ Sauvegarde des fichiers avec cp
-✔ Création d’un utilisateur avec useradd
-✔ Compression des données avec tar
-✔ Journalisation complète dans log.txt
-▶️ Exécution du script
+...
+▶️ Exécution
 sudo /entreprise/script_gestion.sh
-💾 Résultat obtenu
-
-Après exécution :
-
-les fichiers sont copiés dans /entreprise/backup
-une archive .tar.gz est créée
-un utilisateur employe_temp est ajouté
-un fichier log est généré dans /entreprise/logs
-⏰ Automatisation avec cron
-sudo crontab -e
-
-Ajouter la ligne suivante :
-
-0 2 * * * /entreprise/script_gestion.sh
-
-➡ Exécution automatique tous les jours à 2h00.
-
-🔍 Vérification
-ls /entreprise/backup
-cat /etc/passwd | grep employe_temp
-cat /entreprise/logs/log.txt
-sudo crontab -l
-systemctl status cron
 📸 Preuves
-📌 Structure créée
-
-📌 Fichiers data
-
-📌 Script Bash
-
-📌 Exécution du script
-
-📌 Backup et archive
-
-📌 Utilisateur créé
-
-📌 Fichier log
-
-📌 Cron configuré
+📌 Structure
+<p align="center"> <img src="images/1_structure.png" width="600"> </p>
+📌 Data
+<p align="center"> <img src="images/2_data.png" width="600"> </p>
+📌 Script
+<p align="center"> <img src="images/3_script.png" width="600"> </p>
+📌 Exécution
+<p align="center"> <img src="images/4_execution.png" width="600"> </p>
+📌 Backup
+<p align="center"> <img src="images/5_backup.png" width="600"> </p>
+📌 Utilisateur
+<p align="center"> <img src="images/6_user.png" width="600"> </p>
+📌 Log
+<p align="center"> <img src="images/7_log.png" width="600"> </p>
+📌 Cron
+<p align="center"> <img src="images/8_cron.png" width="600"> </p>
