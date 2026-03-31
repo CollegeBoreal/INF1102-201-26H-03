@@ -7,6 +7,7 @@
 - Cours : Programmation système
 -Durée : 90 à 120 minutes
 -Environnement : Ubuntu 22.04 (Jammy)
+----
 # -Shell : PowerShell (pwsh)
 ---
 # 🎯 Objectifs
@@ -79,7 +80,9 @@ nano analyse_nginx.ps1 dans le repertoire REGEX
 pwsh ./REGEX/analyse_nginx.ps1
 ```
 <img width="1919" height="816" alt="image" src="https://github.com/user-attachments/assets/8482ed7b-c074-4af1-ac82-43f97c039cb0" />
+
 le fichier powershell
+
 <img width="720" height="113" alt="image" src="https://github.com/user-attachments/assets/d45408f4-74c0-45aa-8419-be81e8effefa" />
 
 
