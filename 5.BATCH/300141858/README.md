@@ -108,37 +108,23 @@ systemctl status cron
 ### 📌 Structure créée
 [![Structure](images/1_structure.png)](images/1_structure.png)
 
----
-
 ### 📌 Fichiers data
 [![Data](images/2_data.png)](images/2_data.png)
-
----
 
 ### 📌 Script Bash
 [![Script](images/3_script.png)](images/3_script.png)
 
----
-
 ### 📌 Exécution du script
 [![Execution](images/4_execution.png)](images/4_execution.png)
-
----
 
 ### 📌 Backup et archive
 [![Backup](images/5_backup.png)](images/5_backup.png)
 
----
-
 ### 📌 Utilisateur créé
 [![User](images/6_user.png)](images/6_user.png)
 
----
-
 ### 📌 Fichier log
 [![Log](images/7_log.png)](images/7_log.png)
-
----
 
 ### 📌 Cron configuré
 [![Cron](images/8_cron.png)](images/8_cron.png)
