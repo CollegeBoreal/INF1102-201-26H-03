@@ -1,0 +1,61 @@
+{
+  "Date": "2026-03-31T14:57:43.7997386-04:00",
+  "User": "desktop-5g5bp80\\abdou",
+  "Host": "DESKTOP-5G5BP80",
+  "CPU": [
+    {
+      "ProcessName": "ChatGPT",
+      "CPU": 6610.21875
+    },
+    {
+      "ProcessName": "dwm",
+      "CPU": 1599.4375
+    },
+    {
+      "ProcessName": "explorer",
+      "CPU": 967.859375
+    },
+    {
+      "ProcessName": "sqlservr",
+      "CPU": 924.90625
+    },
+    {
+      "ProcessName": "System",
+      "CPU": 908.15625
+    }
+  ],
+  "Memory": [
+    {
+      "ProcessName": "Memory Compression",
+      "WS": 1079685120
+    },
+    {
+      "ProcessName": "ChatGPT",
+      "WS": 1067880448
+    },
+    {
+      "ProcessName": "explorer",
+      "WS": 377081856
+    },
+    {
+      "ProcessName": "chrome",
+      "WS": 322637824
+    },
+    {
+      "ProcessName": "msedgewebview2",
+      "WS": 301596672
+    }
+  ],
+  "Disk": [
+    {
+      "Name": "C",
+      "Used": 162180247552,
+      "Free": 92955066368
+    },
+    {
+      "Name": "Temp",
+      "Used": 162180247552,
+      "Free": 92955066368
+    }
+  ]
+}
