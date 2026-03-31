@@ -29,7 +29,7 @@
 |:hash:| Boréal :id:                | README.md | images | devops_batch.ps1  | :link: IP |
 |------|----------------------------|-----------|--------|-------------------|------------|
 | 0 | [300133071](../300133071/README.md) [<image src='https://avatars0.githubusercontent.com/u/181301859?s=460&v=4' width=20 height=20></image>](https://github.com/nelsonwilliam237) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.194 |
-| 1 | [300137754](../300137754/README.md) [<image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image>](https://github.com/josephbeni1) | :x: | :x: | :x: | 10.7.237.195 |
+| 1 | [300137754](../300137754/README.md) [<image src='https://avatars0.githubusercontent.com/u/174143444?s=460&v=4' width=20 height=20></image>](https://github.com/josephbeni1) | :heavy_check_mark: | :x: | :x: | 10.7.237.195 |
 | 2 | [300138205](../300138205/README.md) [<image src='https://avatars0.githubusercontent.com/u/200685761?s=460&v=4' width=20 height=20></image>](https://github.com/taylor123marc) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.196 |
 | 3 | [300138573](../300138573/README.md) [<image src='https://avatars0.githubusercontent.com/u/185266428?s=460&v=4' width=20 height=20></image>](https://github.com/nourmiri) | :x: | :x: | :x: | 10.7.237.197 |
 | 4 | [300138576](../300138576/README.md) [<image src='https://avatars0.githubusercontent.com/u/185265742?s=460&v=4' width=20 height=20></image>](https://github.com/houja13) | :x: | :x: | :x: | 10.7.237.198 |
