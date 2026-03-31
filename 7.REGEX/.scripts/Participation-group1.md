@@ -34,8 +34,8 @@
 | 3 | [300138573](../300138573/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/185266428?s=460&v=4' width=20 height=20></image>](https://github.com/nourmiri) | :x: | :x: | :x: | :x: | 10.7.237.197 |
 | 4 | [300138576](../300138576/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/185265742?s=460&v=4' width=20 height=20></image>](https://github.com/houja13) | :x: | :x: | :x: | :x: | 10.7.237.198 |
 | 5 | [300141368](../300141368/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/132600996?s=460&v=4' width=20 height=20></image>](https://github.com/daniella-diwa) | :x: | :x: | :x: | :x: | 10.7.237.199 |
-| 6 | [300141429](../300141429/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image>](https://github.com/barrynetwork) | :x: | :x: | :x: | :x: | 10.7.237.200 |
+| 6 | [300141429](../300141429/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/231347874?s=460&v=4' width=20 height=20></image>](https://github.com/barrynetwork) | :2nd_place_medal: | :x: | :x: | :x: | 10.7.237.200 |
 | 7 | [300141625](../300141625/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image>](https://github.com/Mamefatim14) | :x: | :x: | :x: | :x: | 10.7.237.201 |
 | 8 | [300141657](../300141657/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image>](https://github.com/leandre00126) | :x: | :x: | :x: | :x: | 10.7.237.202 |
 | 9 | [300141716](../300141716/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image>](https://github.com/nabilaouladbouih) | :x: | :x: | :x: | :x: | 10.7.237.203 |
-| :abacus: | \$\\frac{1}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ =  |
+| :abacus: | \$\\frac{2}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ =  |
