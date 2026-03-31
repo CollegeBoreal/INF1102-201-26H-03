@@ -106,7 +106,9 @@ Résultat rapport.txt
 Résultat rapport.json
 Liste des fichiers
 
-<img src="images/photo.png" alt="Capture d’écran" width="600">
+<img src="images/1_6.png" alt="Capture d’écran" width="600">
+<img src="images/2_6.png" alt="Capture d’écran" width="600">
+
 ## 🧠 Conclusion
 
 Ce TP permet de :
