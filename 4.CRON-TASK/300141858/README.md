@@ -78,28 +78,28 @@ systemctl status cron
 ## 📸 Preuves
 
 ### 📌 Logs Nginx
-![Logs](images/Screenshot 2026-03-31 114255.png)
+![Logs](images/logs.png)
 
 ### 📌 Extraction des IP
-![Extraction](images/Screenshot 2026-03-31 114310.png)
+![Extraction](images/extraction.png)
 
 ### 📌 Résultat des IP uniques
-![Result](images/Screenshot 2026-03-31 114334.png)
+![Result](images/result.png)
 
 ### 📌 Script exécuté
-![Script](images/Screenshot 2026-03-31 114457.png)
+![Script](images/script.png)
 
 ### 📌 Fichier nginx_ips.txt
-![IPs](images/Screenshot 2026-03-31 114608.png)
+![IPs](images/ips.png)
 
 ### 📌 Log d’exécution
-![Log](images/Screenshot 2026-03-31 114803.png)
+![Log](images/log.png)
 
 ### 📌 Cron configuré
-![Cron](images/Screenshot 2026-03-31 115032.png)
+![Cron](images/cron.png)
 
 ### 📌 Service cron actif
-![Cron Status](images/Screenshot 2026-03-31 115056.png)
+![Cron Status](images/cron_status.png)
 
 ---
 
