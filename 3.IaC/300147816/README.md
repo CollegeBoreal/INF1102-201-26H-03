@@ -1,8 +1,10 @@
-#🚀 Projet IaC - Déploiement Automatisé sur Proxmox
+**#🚀 Projet IaC - Déploiement Automatisé sur Proxmox**
 
 **👤 Étudiant**
 **Identifiant:** 300147816  
+
 **Cours :** Programmation Système / Infrastructure as Code  
+
 **Outil utilisé :** OpenTofu (Alternative open-source à Terraform)
 
 ---
@@ -19,9 +21,13 @@ Contrairement à une installation manuelle, cette méthode permet de :
 * Éliminer les erreurs humaines lors de la configuration réseau et système.
 
 ## 🛠️ Outils & Technologies
+
 * **OpenTofu v1.6+** : Moteur d'orchestration pour le déploiement.
+
 * **Proxmox VE 7** : Hyperviseur cible pour héberger la VM.
+
 * **Provider Telmate/Proxmox** : Plugin permettant à OpenTofu de communiquer avec Proxmox.
+
 * **Cloud-Init** : Pour la configuration automatique de l'utilisateur `ubuntu` et de l'IP au premier démarrage.
 
 ## 2. Configuration de l'environnement
@@ -36,7 +42,7 @@ Pour ce projet, j'ai configuré les fichiers suivants dans mon répertoire `3001
 
 * `terraform.tfvars` : Valeurs spécifiques à mon matricule (IP statique : **10.7.237.213**).
 
-## contenu de terraform.tfvars
+## 3. contenu de terraform.tfvars
 
 ```text
 pm_vm_name      = "vm300133071"
@@ -47,7 +53,7 @@ pm_token_id     = "tofu@pve!opentofu"
 pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
 
 ```
-## 3. Étapes de déploiement de l'infrastructure
+## 4. Étapes de déploiement de l'infrastructure
 
 J'ai suivi le cycle de vie standard de l'IaC pour déployer la VM
 
@@ -65,7 +71,7 @@ La VM a été déployée avec succès sur le nœud `labinfo`.
 
 ### 1. Preuve visuelle (Interface Proxmox)
 
-![Capture Proxmox 300147816](./monproxmox.JPG)
+![Capture Proxmox 300147816](./images/monproxmox.JPG)
 
 *Cette image montre la VM `vm300147816` active et fonctionnelle sur l'IP 10.7.237.213.*
 
@@ -77,6 +83,6 @@ La connexion à la VM a été validée via la commande :
 ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.213
 ```
 
-#🧠 Conclusion
+**🧠 Conclusion**
 
 Ce laboratoire prouve qu'avec l'IaC, l'infrastructure devient un logiciel. En quelques secondes, une VM complète avec configuration réseau et clés SSH a été provisionnée sans aucune intervention manuelle dans l'interface graphique de Proxmox.
