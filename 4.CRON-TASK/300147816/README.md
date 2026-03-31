@@ -58,7 +58,7 @@ awk '{print $1}' $LOG_FILE | sort | uniq > $OUTPUT_FILE
 
 echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 ```
-![Automatisation](./images/automatisation1)
+![Automatisation](./images/automatisation1.JPG)
 
 ***Explication*
 
