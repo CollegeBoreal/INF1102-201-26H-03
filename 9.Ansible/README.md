@@ -108,8 +108,8 @@ state: present
 
 | Étape         | Outil     |
 | ------------- | --------- |
-| Provisioning  | Terraform |
-| Configuration | Ansible   |
+| Provisioning  | Terraform (tofu) |
+| Configuration | Ansible  (puppet, chef) |
 
 ---
 
