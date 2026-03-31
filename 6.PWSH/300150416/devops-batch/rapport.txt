@@ -1,25 +1,25 @@
 ===== RAPPORT DEVOPS =====
-Date : 03/26/2026 16:57:44
-Utilisateur : root
+Date : 03/31/2026 19:35:07
+Utilisateur : ubuntu
 Machine : vm300150416
 
 Top 5 processus par CPU :
-multipathd - CPU: 19.86
-rcu_sched - CPU: 17.06
-snapd - CPU: 15.31
-systemd - CPU: 9.2899999
-irqbalance - CPU: 8.47
+multipathd - CPU: 73.19
+snapd - CPU: 54.28
+rcu_sched - CPU: 52.09
+irqbalance - CPU: 32.74
+systemd-journald - CPU: 30.01
 
 Top 5 processus par mémoire :
-pwsh - Mémoire: 100610048
-snapd - Mémoire: 39854080
-multipathd - Mémoire: 27750400
-unattended-upgrade-shutdown - Mémoire: 21872640
-packagekitd - Mémoire: 20889600
+pwsh - Mémoire: 163082240
+pwsh - Mémoire: 157220864
+pwsh - Mémoire: 101122048
+systemd-journald - Mémoire: 63639552
+snapd - Mémoire: 40357888
 
 Espace disque :
 Filesystem      Size  Used Avail Use% Mounted on
-tmpfs           197M 1000K  196M   1% /run
+tmpfs           197M 1004K  196M   1% /run
 /dev/sda1       9.6G  3.1G  6.5G  33% /
 tmpfs           982M     0  982M   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
