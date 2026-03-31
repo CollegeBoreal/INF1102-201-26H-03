@@ -22,11 +22,11 @@ puis génère automatiquement un rapport texte et JSON.
 
 ## 📸 Résultat — PowerShell 7.6.0
 
-![PowerShell version](images/pwsh_version.png)
+![PowerShell version](PWSH.png)
 
 ## 📊 Résultat — Rapport DevOps
 
-![Rapport DevOps](images/rapport_devops.png)
+![Rapport DevOps](SUDO.png)
 
 ## 📁 Structure du projet
 
