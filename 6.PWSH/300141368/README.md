@@ -153,7 +153,7 @@ Ajouter le **shebang** pour Linux :
 
 📄 CODE COMPLET À INTÉGRER
 
-<img width="1840" height="1131" alt="image" src="https://github.com/user-attachments/assets/7f9a0a77-0fdc-4cfa-b21b-207d32470f59" />
+
 
 ```powershell
 #!/usr/bin/env pwsh
@@ -230,7 +230,7 @@ $reportObj | ConvertTo-Json -Depth 5 | Set-Content $rapportJson
 Write-Output ""
 Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 ```
-
+<img width="1840" height="1131" alt="image" src="https://github.com/user-attachments/assets/7f9a0a77-0fdc-4cfa-b21b-207d32470f59" />
 
 ## 🔹 PARTIE 4. Exécuter le batch
 
