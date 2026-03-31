@@ -47,6 +47,7 @@ echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 -   Cette capture montre l’historique complet des archives générées automatiquement par cron, avec un fichier de sauvegarde créé chaque jour à 02h00, ce qui confirme que la planification fonctionne correctement
 
 
-5.
+5.<img width="1026" height="113" alt="image" src="https://github.com/user-attachments/assets/9a143eaa-39be-4bc8-9af2-b43185a92f20" />
+
 
  
