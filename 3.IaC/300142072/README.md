@@ -42,6 +42,6 @@ ssh -i ~/.ssh/siga.pk `
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
   ubuntu@10.7.237.205
 ```
-![](images/3-5.png)
+![](images/3-41.png)
 
   
