@@ -7,6 +7,7 @@
   
 ⭐ Tests manuels
 Vérfier :
+
 -Les fichiers copiés dans /entreprise/backup
 
 -L’archive .tar.gz
