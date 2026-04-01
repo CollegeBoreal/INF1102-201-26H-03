@@ -25,12 +25,12 @@ touch provider.tf main.tf variables.tf terraform.tfvars
   ![](images/3-1.png)
   
 - provider.tf
-  ![](images/3-2.png)
+![](images/3-2.png)
   
 -variables.tf
-  ![](images/3-3.png)
+![](images/3-3.png)
   
 -terraforms.tfvars
-  ![](images/3-4.png)
+![](images/3-4.png)
 
   
