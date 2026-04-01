@@ -20,43 +20,55 @@ L’objectif est de se familiariser avec **Ansible** et le concept d’**Infrast
 ├── playbook.yml
 └── files/index.html
 ```
-
-mkdir -p <ID>/files
-
+---
 le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même quand il existait, Ansible n’est pas conçu pour tourner nativement sur Windows.
 
-Solution recommandée (la vraie bonne méthode)
+🔹utiliser — WSL (recommandé)
 
-Ansible fonctionne sur Linux. Sur Windows, tu dois passer par :
-
-🔹option 1 — WSL (recommandé)
 Installe WSL :
 
+```powershell
 wsl --install
+```
 
 Redémarre ton PC
 Ouvre Ubuntu (installé automatiquement)
+
 Installe Ansible :
 
+```powershell
 wsl
+```
+<img src="images/1.png" width=50%>
 
+```bash
 sudo apt update
 sudo apt install ansible-core -y
+```
+<img src="images/2.png" width=50%>
 
-commande utile
+execution du playbook
+
+<img src="images/3.png" width=50%>
+
+resultat
+
+<img src="images/4.png" width=50%>
+
+commandes utile
+
+```powershell
 wsl -u root       # lancer WSL en mode root
 wsl -l -v         # lister les distributions installées
+```
+```text
+Idempotence signifie que tu peux exécuter la même tâche plusieurs fois sans changer le résultat si l’état désiré est déjà atteint.
 
-🔹 Option 2 — Installer via Python (moins recommandé)
+present	Assure que la ressource existe (package installé, fichier présent). Ne démarre pas un service.
+started	Pour un service, assure qu’il est en cours d’exécution. Ne l’installe pas si le package n’existe pas (mais souvent combiné avec enabled pour démarrage automatique).
 
-pip install ansible
-
-⚠️ Mais :
-
-Certaines fonctionnalités ne marcheront pas bien
-Ce n’est pas officiellement supporté sur Windows
-
-🔹Option 3 — Utiliser Docker
+become: yes permet d’exécuter la tâche avec les privilèges root (ou un autre utilisateur via become_user).
+```
 
 ## ✅ Conclusion et apprentissages
 
