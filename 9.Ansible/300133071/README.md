@@ -26,7 +26,7 @@ L’objectif est de se familiariser avec **Ansible** et le concept d’**Infrast
 ---
 le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même quand il existait, Ansible n’est pas conçu pour tourner nativement sur Windows.
 
-🔹utiliser — WSL (recommandé)
+🔹Solution utilisé — WSL
 
 Installe WSL :
 
