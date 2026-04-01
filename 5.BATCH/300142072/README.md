@@ -8,7 +8,10 @@
 ⭐ Tests manuels
 Vérfier :
 -Les fichiers copiés dans /entreprise/backup
+
 -L’archive .tar.gz
+
 -L’utilisateur créé :
+
 ![](images/5-2.png)
 
