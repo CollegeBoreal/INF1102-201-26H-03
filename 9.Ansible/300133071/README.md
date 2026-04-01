@@ -16,6 +16,9 @@ L’objectif est de se familiariser avec **Ansible** et le concept d’**Infrast
 ### 1️⃣ Créer la structure des fichiers
 ```bash
 <300133071>/
+├──files
+    ├── index.html
+├── images
 ├── inventory.ini
 ├── playbook.yml
 └── files/index.html
