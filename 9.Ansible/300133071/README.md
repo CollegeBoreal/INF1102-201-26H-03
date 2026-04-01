@@ -41,21 +41,21 @@ Installe Ansible :
 ```powershell
 wsl
 ```
-<img src="images/1.png" width=50%>
+<img src="images/1.png" style="max-width:50%; height:auto;">
 
 ```bash
 sudo apt update
 sudo apt install ansible-core -y
 ```
-<img src="images/2.png" width=50%>
+<img src="images/2.png" style="max-width:50%; height:auto;">
 
 execution du playbook
 
-<img src="images/3.png" width=50%>
+<img src="images/3.png" style="max-width:50%; height:auto;">
 
 resultat
 
-<img src="images/4.png" width=50%>
+<img src="images/4.png" style="max-width:50%; height:auto;">
 
 commandes utile
 
