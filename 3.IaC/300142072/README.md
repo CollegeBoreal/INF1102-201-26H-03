@@ -21,6 +21,6 @@ touch provider.tf main.tf variables.tf terraform.tfvars
 ```
 🆎 Configuration des fichiers
 
-- main.tf
+- main.tf 
   
 ![](images/3-1.png)
