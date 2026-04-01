@@ -35,7 +35,6 @@ wsl --install
 ```
 
 Redémarre ton PC
-Ouvre Ubuntu (installé automatiquement)
 
 Installe Ansible :
 
