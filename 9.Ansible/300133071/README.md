@@ -36,12 +36,12 @@ wsl --install
 
 Redémarre ton PC
 
-Installe Ansible :
-
 ```powershell
 wsl
 ```
 <img src="images/1.png" style="max-width:50%; height:auto;">
+
+Installe Ansible :
 
 ```bash
 sudo apt update
