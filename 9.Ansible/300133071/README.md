@@ -43,7 +43,7 @@ wsl
 ```
 <img src="images/1.png" style="max-width:50%; height:auto;">
 
-Installe Ansible :
+Installé Ansible :
 
 ```bash
 sudo apt update
@@ -51,7 +51,7 @@ sudo apt install ansible-core -y
 ```
 <img src="images/2.png" style="max-width:50%; height:auto;">
 
-Execution du playbook
+Exécution du playbook
 
 <img src="images/3.png" style="max-width:50%; height:auto;">
 
