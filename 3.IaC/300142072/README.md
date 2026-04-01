@@ -33,4 +33,15 @@ touch provider.tf main.tf variables.tf terraform.tfvars
 -terraforms.tfvars
 ![](images/3-4.png)
 
+⭐ Test d'acces a la VM proxmox
+
+on utilise la commande suivantes en mettant le nom de notre clef publique :
+```
+ssh -i ~/.ssh/siga.pk `
+  -o StrictHostKeyChecking=no `
+  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
+  ubuntu@10.7.237.205
+```
+![](images/3-5.png)
+
   
