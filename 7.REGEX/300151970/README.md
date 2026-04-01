@@ -1,5 +1,5 @@
 
-# 7. TP REGEX
+# 7. REGEX
 
 **Informations de l’étudiant**
 
