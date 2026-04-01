@@ -51,15 +51,15 @@ sudo apt install ansible-core -y
 ```
 <img src="images/2.png" style="max-width:50%; height:auto;">
 
-execution du playbook
+Execution du playbook
 
 <img src="images/3.png" style="max-width:50%; height:auto;">
 
-resultat
+Resultat
 
 <img src="images/4.png" style="max-width:50%; height:auto;">
 
-commandes utile
+Commandes utile
 
 ```powershell
 wsl -u root       # lancer WSL en mode root
