@@ -44,4 +44,7 @@ ssh -i ~/.ssh/siga.pk `
 ```
 ![](images/3-41.png)
 
+Par la suite , on pourra telecharger nginx et custom notre page web.
+
+![](images/3-5.png)
   
