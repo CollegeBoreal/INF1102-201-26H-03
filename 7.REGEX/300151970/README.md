@@ -1,7 +1,19 @@
 
 # 7. TP REGEX
 
-Je suis étudiant au Collège Boréal – Campus Toronto  
-Étudiant: Babatunde Adissa Fadolle Arouna
+**Informations de l’étudiant**
 
-Numéro : 300151970
+**Nom et Prénoms** : Babatundé Adissa Fadolle Arouna
+
+**Numéro étudiant** : 300151970
+
+**Programme** : Techniques des systèmes informatiques
+
+**Cours** : INF 1102-201 – Programmation de systèmes
+
+**Session** : Hiver 2026
+
+**Professeur** : Brice Robert
+
+**Date de remise** : 01/04/2026
+
