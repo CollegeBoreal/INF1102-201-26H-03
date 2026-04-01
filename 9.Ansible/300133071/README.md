@@ -37,7 +37,7 @@ wsl --install
 Redémarre ton PC
 
 ```powershell
-wsl
+wsl ou bash
 ```
 <img src="images/1.png" style="max-width:50%; height:auto;">
 
