@@ -65,14 +65,14 @@ Commandes utile
 wsl -u root       # lancer WSL en mode root
 wsl -l -v         # lister les distributions installées
 ```
-```text
+
 Idempotence signifie que tu peux exécuter la même tâche plusieurs fois sans changer le résultat si l’état désiré est déjà atteint.
 
 present	Assure que la ressource existe (package installé, fichier présent). Ne démarre pas un service.
 started	Pour un service, assure qu’il est en cours d’exécution. Ne l’installe pas si le package n’existe pas (mais souvent combiné avec enabled pour démarrage automatique).
 
 become: yes permet d’exécuter la tâche avec les privilèges root (ou un autre utilisateur via become_user).
-```
+
 
 ## ✅ Conclusion et apprentissages
 
