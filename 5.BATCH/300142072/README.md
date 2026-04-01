@@ -2,6 +2,13 @@
 
 ⭐ Création du sritpt batch
 
-- creation du fichier nano avec ```sudo nano /entreprise/script_gestion.sh```
+- création du fichier nano avec ```sudo nano /entreprise/script_gestion.sh```
   ![](images/5-1.png)
+  
+⭐ Tests manuels
+Vérfier :
+-Les fichiers copiés dans /entreprise/backup
+-L’archive .tar.gz
+-L’utilisateur créé :
+![](images/5-2.png)
 
