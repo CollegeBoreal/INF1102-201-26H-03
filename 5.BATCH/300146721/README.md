@@ -122,6 +122,9 @@ else
     echo "Utilisateur créé." >> $LOG
 fi
 
+
+<img width="50%" height="50%" alt="image" src="images/le script.PNG" />
+
 # Compression
 tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
 
@@ -148,9 +151,8 @@ sudo /entreprise/script_gestion.sh
 ```
 
 ---
-
 ## 🔍 Vérification
-
+<img width="50%" height="50%" alt="image" src="images/script_gestion_entreprise.PNG" />
 ### Vérifier les sauvegardes
 
 ```bash
@@ -162,6 +164,7 @@ ls -l /entreprise/backup
 ```bash
 id employe_temp
 ```
+<img width="50%" height="50%" alt="image" src="images/id employé_temp.PNG" />
 
 ### Vérifier le journal d'exécution
 
@@ -170,6 +173,7 @@ cat /entreprise/logs/log.txt
 ```
 
 ---
+<img width="50%" height="50%" alt="image" src="images/ls entreprise backup.PNG" />
 
 ## ⏰ Automatisation avec Cron
 
@@ -184,7 +188,7 @@ sudo crontab -e
 ```cron
 0 2 * * * /entreprise/script_gestion.sh
 ```
-
+<img width="50%" height="50%" alt="image" src="images/sudo crontab -l.PNG" />
 ### Signification de la règle cron
 
 | Champ | Valeur | Signification |
