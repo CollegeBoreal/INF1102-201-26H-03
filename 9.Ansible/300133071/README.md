@@ -28,6 +28,8 @@ le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même
 
 🔹Solution utilisé — WSL
 
+WSL(Windows Subsystem for Linux) est une fonctionnalité de Windows qui te permet de faire tourner une distribution Linux directement sur Windows, sans machine virtuelle complète.
+
 Installe WSL :
 
 ```powershell
