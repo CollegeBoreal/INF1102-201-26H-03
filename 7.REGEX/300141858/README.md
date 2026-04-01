@@ -1,44 +1,50 @@
-\# TP 7 - REGEX
+# TP 7 - REGEX
 
+## Étudiant
+- Nom : Abdou karim NIANG
+- ID : 300141858
 
+## Objectif
+Ce TP consiste à analyser le fichier `/var/log/nginx/access.log` avec des expressions régulières en PowerShell et en Python, puis à automatiser l’exécution avec cron.
 
-\## Étudiant
+## Fichiers
+- `analyse_nginx.ps1`
+- `analyse_nginx.py`
+- `images/`
 
-\- Nom : Abdou karim NIANG
+## Vérification du log Nginx
+![Log Nginx fichier](images/01-log-nginx-fichier.png)
 
-\- ID : 300141858
+![Log Nginx contenu](images/02-log-nginx-contenu.png)
 
+## Création du dossier de travail
+![Création dossier](images/03-creation-dossier-regex.png)
 
+## Script PowerShell
+![Script PowerShell](images/04-script-powershell.png)
 
-\## Objectif
+## Vérification des fichiers créés
+![Fichiers créés](images/05-fichiers-creates.png)
 
-Analyser le fichier `/var/log/nginx/access.log` avec des expressions régulières en PowerShell et en Python.
+## Installation de PowerShell
+![Installation PowerShell](images/06-installation-powershell.png)
 
+## Exécution du script PowerShell
+![Exécution PowerShell](images/07-execution-powershell.png)
 
+## Rapport PowerShell
+![Rapport PowerShell](images/08-rapport-powershell.png)
 
-\## Fichiers
+## Première exécution Python
+![Première exécution Python](images/09-execution-python-incorrecte.png)
 
-\- analyse\_nginx.ps1
+## Correction du script Python
+![Python corrigé](images/10-python-corrige.png)
 
-\- analyse\_nginx.py
+## Automatisation cron
+![Crontab](images/11-crontab.png)
 
-\- rapport\_nginx\_ps1\_YYYY-MM-DD.txt
+## Vérification cron dans syslog
+![Vérification cron](images/12-verification-cron.png)
 
-\- rapport\_nginx\_py\_YYYY-MM-DD.txt
-
-
-
-\## Regex utilisées
-
-\- IP : `(\\d{1,3}\\.){3}\\d{1,3}`
-
-\- Code HTTP : `" (\\d{3}) `
-
-\- Page GET : `"GET (\[^ ]+)`
-
-
-
-\## Captures
-
-Les preuves seront ajoutées dans le dossier `images/`.
-
+![Vérification cron finale](images/13-verification-cron-finale.png)
