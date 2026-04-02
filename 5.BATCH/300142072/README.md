@@ -24,11 +24,13 @@ Vérfier :
 ![](images/5-3.png)
 
 
-⭐Plannification avec Cron
+⭐Plannification avec Cron et Vérification de l'éxécution
 
 ![](images/5-4.png)
 
-⭐Vérification de l'éxécution
+
+⭐ Gestion des erreurs
+
 
 ![](images/5-5.png)
 
