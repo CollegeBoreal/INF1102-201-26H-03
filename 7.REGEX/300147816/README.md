@@ -1,6 +1,6 @@
-📝 Travail Pratique : Analyse de Logs (REGEX)
+**📝 Travail Pratique : Analyse de Logs (REGEX)**
 
-👤 Informations de l'étudiant
+**👤 Informations de l'étudiant**
 
 - **Nom :** HANANE ZERROUKI
 
@@ -25,11 +25,17 @@ Le projet inclut également une automatisation de l’exécution des scripts.
 **📂 Structure du Répertoire**
 
 300147816/
+
 ├── analyse_nginx.ps1      # Script d'extraction PowerShell
+
 ├── analyse_nginx.py       # Script d'analyse Python
+
 ├── README.md              # Documentation du projet
+
 ├── REGEX/                 # Dossier des rapports (créé via mkdir)
+
 │   └── rapport_nginx_py_2026-04-02.txt
+
 └── images/                # Captures d'écran des exécutions
 
 L'image suivante confirme cette structure:
@@ -42,7 +48,7 @@ L'image suivante confirme cette structure:
 
 Avant l'exécution, le dossier de destination a été créé pour éviter les erreurs de chemin :
 
-![Preparer l'environnement](./images/rgesx.JPG)
+![Preparer l'environnement](./images/rgex.JPG)
 
 **⚡ Script PowerShell**
 
@@ -69,7 +75,7 @@ Voici la commande qui permet de créer le fichier **analyse_nginx.py**
 
 qui a le contenu suivant:
 
-[Contenu](./images/44.JPG)
+![Contenu](./images/44.JPG)
 
 **▶️ Exécution**
 
@@ -86,6 +92,9 @@ La commande suivante permet d'ouvrir l'éditeur de configuration des tâches :
 ![Automatisation](./images/cron.JPG)
 
 Une tâche planifiée a été ajoutée à la crontab pour exécuter le script chaque nuit à 2h00 :
+```
+0 2 * * * /usr/bin/pwsh /home/ubuntu/INF1102-201-26H-03/7.REGEX/300147816/analyse_nginx.ps1
+```
 
 ![Suite Automatisation](./images/5.JPG)
 
