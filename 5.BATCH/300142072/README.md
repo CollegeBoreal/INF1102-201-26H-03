@@ -20,5 +20,13 @@ Vérfier :
 
 
 -Verification du fichier log
+
 ![](images/5-3.png)
+
+
+⭐Plannification avec Cron
+
+![](images/5-4.png)
+
+
 
