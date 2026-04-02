@@ -60,7 +60,11 @@ cat /etc/passwd | grep employe_temp
 <img width="743" height="81" alt="image" src="https://github.com/user-attachments/assets/3e4f9ed1-9f2c-4332-948a-7c2b1b0dce37" />
 
 <img width="1492" height="751" alt="image" src="https://github.com/user-attachments/assets/e727c245-0b09-44ac-abea-03805653d392" />
+## Consulter les journaux :
 
+```bash
+journalctl -u cron
+```
 <img width="1443" height="591" alt="image" src="https://github.com/user-attachments/assets/c2a9e68b-6485-422d-a399-675b6a4d68c6" />
 
 
