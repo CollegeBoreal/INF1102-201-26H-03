@@ -32,6 +32,10 @@ Le projet inclut également une automatisation de l’exécution des scripts.
 │   └── rapport_nginx_py_2026-04-02.txt
 └── images/                # Captures d'écran des exécutions
 
+L'image suivante confirme cette structure:
+
+![Structure du repertoire](./images/verification.JPG)
+
 **🛠️ Étapes de réalisation**
 
 ## 1. Préparation de l'environnement
