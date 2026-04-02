@@ -5,6 +5,7 @@
 **📅 Date :** Mars 2026
 
 **🎯 Objectif :** 
+
 - Développer un script de gestion industrielle pour automatiser la sauvegarde, la gestion des utilisateurs et le diagnostic réseau.
 
 - Planifier l’exécution automatique avec cron
@@ -69,23 +70,69 @@ Le script utilise des chemins absolus pour garantir son exécution par Cron.
 
 **Permissions :** J'ai activé les droits d'exécution avec sudo chmod +x /entreprise/script_gestion.sh.
 
+**🔹 PARTIE 4 – Test manuel**
 
+Avant d'automatiser, j'ai lancé le script manuellement pour vérifier chaque étape, donc,j'exécute le script :
 
+```bash
+sudo /entreprise/script_gestion.sh
+```
+![Lancement de script](./images/3.JPG)
 
+## Vérification de l'utilisateur :
 
+![Utilisateur](./images/utilisateur.JPG)
 
+La photo confirme que la commande utilisée assure que l'utilisateur a bien été injecté dans le système
 
+## Vérification du Log :
 
+![Log](./images/monlog.JPG)
 
+Le fichier /entreprise/logs/log.txt montre le succès de toutes les opérations.
 
+**⏰ 4. Planification avec Cron**
 
+Pour que la sauvegarde soit totalement autonome, j'ai configuré la crontab de l'utilisateur root.
 
+Éditons la crontab :
 
+![Installer cron](.images/instalcron.JPG)
 
+Ajouter :
 
+```
+0 2 * * * /entreprise/script_gestion.sh
+```
+![Contenu de cron](./images/contenudecron.JPG)
 
+➡ Exécution tous les jours à 2h00
 
+- J'ai également validé que le service Cron est actif sur la machine :
 
+![Execution](./images/run.JPG)
+
+- Consulter les journaux :
+
+![Consulter les journaux](./images/journal1.JPG)
+
+ ou:
+
+![Consulter les journaux](./images/journal2.JPG)
+
+**📊 Résultat attendu**
+
+Après exécution automatique :
+
+✔ Sauvegarde des fichiers effectuée
+
+✔ Archive compressée générée
+
+✔ Utilisateur temporaire créé
+
+✔ Logs détaillés disponibles
+
+✔ Exécution automatique quotidienne fonctionnelle
 
 **🧨. Conclusion**
 
@@ -96,3 +143,12 @@ Ce TP m'a permis de maîtriser les piliers de l'administration Linux :
 - **Sécurité :** Automatiser les sauvegardes critiques et la gestion des accès.
 
 - **Surveillance :** Utiliser les fichiers logs pour diagnostiquer l'état du système en différé.
+
+## ✍️ Auteur
+**HANANE ZERROUKI** 🆔 Étudiante : 300147816
+
+📅 Mars 2026 — Laboratoire Batch
+
+
+![Badge](https://img.shields.io/static/v1?label=PROJET&message=COMPLETE&color=brightgreen&logo=powershell&logoColor=white)
+
