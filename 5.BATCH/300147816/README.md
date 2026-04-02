@@ -83,7 +83,7 @@ sudo /entreprise/script_gestion.sh
 
 ![Utilisateur](./images/utilisateur.JPG)
 
-La photo confirme que la commande utilisée assure que l'utilisateur a bien été injecté dans le système
+La photo confirme que l'utilisateur a bien été injecté dans le système
 
 ## Vérification du Log :
 
@@ -97,7 +97,7 @@ Pour que la sauvegarde soit totalement autonome, j'ai configuré la crontab de l
 
 Éditons la crontab :
 
-![Installer cron](.images/instalcron.JPG)
+![Installer cron](./images/instalcron.JPG)
 
 Ajouter :
 
