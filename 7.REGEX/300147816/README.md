@@ -83,7 +83,7 @@ On éxécute le fichier comme suit:
 
 ![Execution](./images/execution2.JPG)
 
-**⏰ PARTIE 3 — Automatisatio (Cron)**
+**⏰ — Automatisatio (Cron)**
 
 ## Configuration de la Crontab
 
@@ -98,7 +98,7 @@ Une tâche planifiée a été ajoutée à la crontab pour exécuter le script ch
 
 ![Suite Automatisation](./images/5.JPG)
 
-**🔍 PARTIE 4 — Vérification du service Cron** 
+**🔍— Vérification du service Cron** 
 
 La commande suivante a été utilisée pour confirmer que le démon cron est bien actif sur le système :
 
