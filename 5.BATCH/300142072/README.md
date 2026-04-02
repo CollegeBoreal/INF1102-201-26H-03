@@ -18,3 +18,7 @@ Vérfier :
 
 ![](images/5-2.png)
 
+
+-Verification du fichier log
+![](images/5-3.png)
+
