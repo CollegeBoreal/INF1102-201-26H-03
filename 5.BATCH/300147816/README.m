@@ -54,7 +54,6 @@ J'ai rédigé le script script_gestion.sh dans /entreprise/. Ce script est le c�
 
 Ce script a le contenu suivant:
 ![Contenu](./images/hh.JPG)
-
 **Points clés du code **:
 
 - **Test réseau :** Vérifie la connexion avec un ping vers Google.
@@ -67,32 +66,18 @@ Ce script a le contenu suivant:
 
 Le script utilise des chemins absolus pour garantir son exécution par Cron.
 
-**Permissions :** J'ai activé les droits d'exécution avec sudo chmod +x /entreprise/script_gestion.sh.
+**Permissions :** J'ai activé les droits d'exécution avec **sudo chmod +x /entreprise/script_gestion.sh.**
 
+**🔹 PARTIE 4 – Test manuel**
 
+Avant d'automatiser, j'ai lancé le script manuellement pour vérifier chaque étape, donc, j'exécute: 
 
+```bash
+sudo /entreprise/script_gestion.sh
+```
 
+## Vérification de l'utilisateur :
 
+La commande **cat /etc/passwd | grep employe_temp** confirme que l'utilisateur a bien été injecté dans le système.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-**🧨. Conclusion**
-
-Ce TP m'a permis de maîtriser les piliers de l'administration Linux :
-
-- **Industrialisation :** Passer de commandes manuelles à un script reproductible.
-
-- **Sécurité :** Automatiser les sauvegardes critiques et la gestion des accès.
-
-- **Surveillance :** Utiliser les fichiers logs pour diagnostiquer l'état du système en différé.
+![Utilisateur](./images/1.JPG)
