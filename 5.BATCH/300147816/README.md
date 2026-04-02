@@ -1,6 +1,6 @@
 **🚀 Rapport : Automatisation d'administration avec Script Shell (Linux)**
 
-**👤 Étudiant :** 300147816
+**👤 Étudiant :** 300147816 - HANANE ZERROUKI 
 
 **📅 Date :** Mars 2026
 
@@ -70,7 +70,7 @@ Le script utilise des chemins absolus pour garantir son exécution par Cron.
 
 **Permissions :** J'ai activé les droits d'exécution avec sudo chmod +x /entreprise/script_gestion.sh.
 
-**🔹 PARTIE 4 – Test manuel**
+**🔹 PARTIE 3 – Test manuel**
 
 Avant d'automatiser, j'ai lancé le script manuellement pour vérifier chaque étape, donc,j'exécute le script :
 
