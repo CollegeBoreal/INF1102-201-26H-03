@@ -34,7 +34,7 @@ on edit la crontab avec la commande suivante : ``` crontab -e```
 
 Ajout de la ligne 0 * * * * /home/ubuntu/scruter_nginx.sh au niveau de la crontab
 
-![](images/4-1.png)
+![](images/4-1.png) 
 
 verifier que le cron est bien actif 
 
