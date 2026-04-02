@@ -32,7 +32,8 @@ Accès sudo
 Terminal
 
 Service cron actif
-📁 Structure du projet
+
+## 📁 Structure du projet
 
 Création des dossiers nécessaires :
 ```bash
