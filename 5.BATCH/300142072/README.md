@@ -28,5 +28,9 @@ Vérfier :
 
 ![](images/5-4.png)
 
+⭐Vérification de l'éxécution
+
+![](images/5-5.png)
+
 
 
