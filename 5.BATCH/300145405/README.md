@@ -49,8 +49,11 @@ Création des fichiers test :
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 ```
+## ▶️ Test manuel
 
-
+```bash
+cat /etc/passwd | grep employe_temp
+```
 <img width="997" height="93" alt="image" src="https://github.com/user-attachments/assets/c476c4c6-b114-462b-b06d-01988422e9dd" />
 
 <img width="743" height="81" alt="image" src="https://github.com/user-attachments/assets/3e4f9ed1-9f2c-4332-948a-7c2b1b0dce37" />
