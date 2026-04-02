@@ -1,4 +1,9 @@
 
+## 👨‍💻 Auteur
+
+* Étudiant : **300145405**
+* nom: Elhadj Sadou Barry
+
 # 🧪 TP 6 — PowerShell DevOps (PWSH)
 
 ## 📌 Description
@@ -186,9 +191,7 @@ Il permet également de comprendre la différence entre Bash et PowerShell, nota
 
 ---
 
-## 👨‍💻 Auteur
 
-* Étudiant : **300145405**
 
 
 
