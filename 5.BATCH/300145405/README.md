@@ -1,5 +1,38 @@
 \#300145405
 
+## 👤 Étudiant
+
+- Identifiant : **300145405**
+- Nom: Elhadj Sadou Barry 
+- Cours : Programmation système 
+- Thème : **Script de Gestion Automatisée sous Linux (IaC)**
+## 🎯 Objectif
+
+Ce projet consiste à développer un script Batch (Bash) permettant d’automatiser plusieurs tâches administratives sous Linux :
+
+📁 Sauvegarde des données d’une entreprise
+
+👤 Création d’un utilisateur temporaire
+
+🌐 Test de la connectivité réseau
+
+📝 Génération d’un fichier de logs
+
+⏰ Planification automatique avec cron
+
+🔍 Vérification et diagnostic des exécutions
+
+-----
+## 🖥 Environnement requis
+
+Distribution Linux (ex : Ubuntu Server)
+
+Accès sudo
+
+Terminal
+
+Service cron actif
+
 <img width="704" height="130" alt="image" src="https://github.com/user-attachments/assets/6f068f95-bb81-4a39-aa86-dfa010e70fbe" />
 
 
