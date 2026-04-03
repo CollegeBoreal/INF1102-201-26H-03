@@ -1,4 +1,4 @@
-**# 🌍 Projet de Surveillance de la Qualité de l'Air (AQI) - Montréal**
+** 🌍 Projet de Surveillance de la Qualité de l'Air (AQI) - Montréal**
 
 **Étudiant :** Hanane Zerrouki  
 
@@ -24,11 +24,14 @@ Conformément aux exigences du script de test :
 
 * `RAPPORT.ipynb` : Analyse visuelle et graphique.
 
-## 🛠️ Étapes Réalisées (
+## 🛠️ Étapes Réalisées 
 
-Avant de commencer, j'ai récupérer un token à partir de ce site:
+Avant de commencer, j'ai utilisé ce site pour avoir un nouveau token:
 
 ![Token](./images/token.JPG)
+
+
+Aprés avoir saisi mon adresse email et mon nom j'ai réussi à avoir le nouveau token:
 
 ![Token](./images/token2.JPG)
 
@@ -38,11 +41,11 @@ Le script utilise `curl` pour l'API. Les permissions d'exécution ont été acco
 
 Je teste le script analyse.sh comme suit:
 
-![Test](./images/testsuccess.JPG)
+![Test](./images/testsucces.JPG)
 
  Un nouveau fichier air quality est crée:
 
-![Air quality](./images/Air.JPG)
+![Air quality](./images/air.JPG)
 
 ### 2. Automatisation avec Cron
 
