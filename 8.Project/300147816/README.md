@@ -1,4 +1,4 @@
-** 🌍 Projet de Surveillance de la Qualité de l'Air (AQI) - Montréal**
+**🌍Projet de Surveillance de la Qualité de l'Air (AQI) - Montréal**
 
 **Étudiant :** Hanane Zerrouki  
 
@@ -61,7 +61,7 @@ Ce script a le contenu suivant:
 
 **Étape 4 : Le Rapport Jupyter (RAPPORT.ipynb)**
 
-C'est ici que je mets mes graphiques. Dans une cellule de code, j'ai utilisé ce type de visualisation :
+C'est ici que je mets mes graphiques. Dans une cellule de code, j'ai utilisé ce type de visualisation :(J'ai utilisé GOOGLE COLAB)
 ```
 import matplotlib.pyplot as plt
 # Simulation de données pour le graphique
@@ -73,7 +73,7 @@ plt.title("Évolution de la pollution (AQI)")
 plt.ylabel("Indice AQI")
 plt.show()
 ```
-### 1. Script de Collecte et Permissions
+### 👘Script de Collecte et Permissions
 
 Le script utilise `curl` pour l'API. Les permissions d'exécution ont été accordées avec `chmod +x`.
 
@@ -131,7 +131,7 @@ L'utilisation de Google Colab a permis de transformer les données JSON brutes e
 
 - **Conclusion :** Cette étape automatise le passage de la donnée technique à une information compréhensible pour l'utilisateur final, facilitant ainsi la prise de décision.
 
-### 2. Automatisation avec Cron
+### ⏰ Automatisation avec Cron
 
 Pour garantir une collecte de données régulière sans intervention manuelle, j'ai mis en place une tâche planifiée: L'automatisation est gérée par la Crontab de l'utilisateur Ubuntu.
 
