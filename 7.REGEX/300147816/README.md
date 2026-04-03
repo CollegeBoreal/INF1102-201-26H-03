@@ -8,7 +8,7 @@
 
 - **Date :** 2 avril 2026
 
-- **Cours :** INF1102 - Progrannation Systèmes
+- **Cours :** INF1102 - Programmation Systèmes
 
 **🎯 Objectif de l'activité**
 
