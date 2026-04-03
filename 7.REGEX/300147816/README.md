@@ -1,6 +1,6 @@
 **📝 Travail Pratique : Analyse de Logs (REGEX)**
 
-**👤 Informations de l'étudiant**
+**👤 Informations de l'étudiante**
 
 - **Nom :** HANANE ZERROUKI
 
@@ -8,7 +8,7 @@
 
 - **Date :** 2 avril 2026
 
-- **Cours :** INF1102 - Systèmes d'exploitation et automatisation
+- **Cours :** INF1102 - Progrannation Systèmes
 
 **🎯 Objectif de l'activité**
 
