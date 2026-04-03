@@ -168,3 +168,11 @@ Avant de conclure, il est essentiel de mettre en perspective les données récol
 ## ✅ Conclusion
 
 Le projet est entièrement fonctionnel, automatisé. Grâce à l'intégration de scripts Bash pour la collecte, de Cron pour la planification, et de Python pour l'analyse, le pipeline de données est robuste.et respecte la structure de fichiers demandée pour la correction automatique.
+
+## ✍️ Auteur
+**HANANE ZERROUKI** 🆔 Étudiante : 300147816
+
+📅 Avril 2026 — Projet
+
+
+![Badge](https://img.shields.io/static/v1?label=PROJET&message=COMPLETE&color=brightgreen&logo=powershell&logoColor=white)
