@@ -59,8 +59,12 @@ Le script génère un fichier rapport contenant :
 ---
 
 ## 📸 Captures d’écran
+<img width="938" height="74" alt="Capture d’écran 2026-04-04 152831 - Copie" src="https://github.com/user-attachments/assets/6e2d750e-6ae2-4dcd-8218-c0e0eca61354" />
+<img width="1094" height="444" alt="Capture d’écran 2026-04-04 152921" src="https://github.com/user-attachments/assets/2322a298-e2ff-44b5-bc16-a702ecd344a0" />
+<img width="1750" height="823" alt="Capture d’écran 2026-04-04 153326 - Copie" src="https://github.com/user-attachments/assets/d6808367-7de1-4e70-b065-90b52283f23e" />
 
-(ajoute ici tes captures)
+
+
 
 ---
 
