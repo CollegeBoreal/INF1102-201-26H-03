@@ -14,3 +14,8 @@ REGEX/
 ```Powershell
 
 ```
+⬆️ Sortie
+```Powershell
+
+
+```
