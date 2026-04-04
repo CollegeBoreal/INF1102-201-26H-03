@@ -20,3 +20,9 @@ REGEX/
 REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 
 ```
+#PARTIE 1 — Script PowerShell
+
+```Powershell
+
+nano
+```
