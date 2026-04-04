@@ -12,10 +12,11 @@ REGEX/
 
 ⬇️ Entrée
 ```Powershell
-
+/var/log/nginx/access.log
 ```
 ⬆️ Sortie
 ```Powershell
 
+REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 
 ```
