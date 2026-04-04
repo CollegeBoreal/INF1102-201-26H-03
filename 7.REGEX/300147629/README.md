@@ -27,5 +27,11 @@ nano analyse_nginx.ps1
 ```
 <img width="1887" height="1015" alt="Capt1_7rexi" src="https://github.com/user-attachments/assets/4c419efc-3a07-40fb-966a-67b970af1d00" />
 
-#
+#▶️ Exécution
+
+```Powershell
+pwsh ./REGEX/analyse_nginx.ps1
+
+```
+
 
