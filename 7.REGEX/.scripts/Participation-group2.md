@@ -36,6 +36,6 @@
 | 5 | [300145940](../300145940/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/234069235?s=460&v=4' width=20 height=20></image>](https://github.com/TasnimMarzouki) | :x: | :x: | :x: | :x: | 10.7.237.209 |
 | 6 | [300146418](../300146418/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/198275764?s=460&v=4' width=20 height=20></image>](https://github.com/IkramSidhoum) | :x: | :x: | :x: | :x: | 10.7.237.210 |
 | 7 | [300146721](../300146721/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image>](https://github.com/smailikh) | :x: | :x: | :x: | :x: | 10.7.237.211 |
-| 8 | [300147629](../300147629/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image>](https://github.com/zoumarbalde-blip) | :x: | :x: | :x: | :x: | 10.7.237.212 |
-| 9 | [300147816](../300147816/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image>](https://github.com/HananeZerrouki) | :2nd_place_medal: | :heavy_check_mark: | :x: | :x: | 10.7.237.213 |
-| :abacus: | \$\\frac{5}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ =  |
+| 8 | [300147629](../300147629/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image>](https://github.com/zoumarbalde-blip) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.212 |
+| 9 | [300147816](../300147816/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image>](https://github.com/HananeZerrouki) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.213 |
+| :abacus: | \$\\frac{6}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ =  |
