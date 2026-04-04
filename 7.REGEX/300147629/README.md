@@ -40,4 +40,9 @@ nano analyse_nginx.py
 ```
 <img width="1918" height="1020" alt="cap3_7r" src="https://github.com/user-attachments/assets/ba1eb4a6-0239-432b-b257-9b8c22d97bbf" />
 
+# Exécution
+```Powershell
+python3 REGEX/analyse_nginx.py
+```
+
 #
