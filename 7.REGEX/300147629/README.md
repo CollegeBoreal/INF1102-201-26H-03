@@ -10,3 +10,7 @@ REGEX/
 <img width="768" height="87" alt="image" src="https://github.com/user-attachments/assets/3aeefd9b-5f65-40a1-b825-8a42da74cc9e" />
 
 
+⬇️ Entrée
+```Powershell
+
+```
