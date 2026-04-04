@@ -27,11 +27,17 @@ nano analyse_nginx.ps1
 ```
 <img width="1887" height="1015" alt="Capt1_7rexi" src="https://github.com/user-attachments/assets/4c419efc-3a07-40fb-966a-67b970af1d00" />
 
-#▶️ Exécution
+#Exécution
 
 ```Powershell
 pwsh ./REGEX/analyse_nginx.ps1
 
 ```
+#🐍 PARTIE 2 — Script Python
 
+```Powershell
+nano analyse_nginx.py
+```
+<img width="1918" height="1020" alt="cap3_7r" src="https://github.com/user-attachments/assets/ba1eb4a6-0239-432b-b257-9b8c22d97bbf" />
 
+#
