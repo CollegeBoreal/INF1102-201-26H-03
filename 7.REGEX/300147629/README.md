@@ -23,6 +23,9 @@ REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 #PARTIE 1 — Script PowerShell
 
 ```Powershell
-
-nano
+nano analyse_nginx.ps1
 ```
+<img width="1887" height="1015" alt="Capt1_7rexi" src="https://github.com/user-attachments/assets/4c419efc-3a07-40fb-966a-67b970af1d00" />
+
+#
+
