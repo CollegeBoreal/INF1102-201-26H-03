@@ -55,5 +55,11 @@ crontab -e
 ```
 <img width="1918" height="917" alt="cap5_7_c" src="https://github.com/user-attachments/assets/2a9a1eb6-5af2-49dc-a651-1cd934557d94" />
 
-#
+#✅ Vérification
+```Powershell
+grep CRON /var/log/syslog
+
+```
+<img width="971" height="571" alt="image" src="https://github.com/user-attachments/assets/8275d4d8-a93c-4ba5-9e05-6762589134b8" />
+
 
