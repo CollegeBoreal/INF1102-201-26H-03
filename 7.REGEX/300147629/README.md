@@ -45,4 +45,15 @@ nano analyse_nginx.py
 python3 REGEX/analyse_nginx.py
 ```
 
+#PARTIE 3 — Automatisation
+```Powershell
+crontab -e
+```
+#Ajouter ce contenu
+```Powershell
+0 2 * * * /usr/bin/pwsh /home/user/REGEX/analyse_nginx.ps1
+```
+<img width="1918" height="917" alt="cap5_7_c" src="https://github.com/user-attachments/assets/2a9a1eb6-5af2-49dc-a651-1cd934557d94" />
+
 #
+
