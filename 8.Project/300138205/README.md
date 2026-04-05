@@ -98,26 +98,32 @@ Le fichier JSON sert donc de pont entre la collecte des données et leur analyse
 <img width="985" height="612" alt="image" src="https://github.com/user-attachments/assets/96b1117a-a781-4c90-884e-51d377680cda" />
 
 ---
-🚀 Compétences développées
+# 🚀 Compétences développées
+---
 1️⃣ Programmation et scripting
 - Utilisation de Python 3 pour le traitement de données et la génération de rapports.
 - Utilisation de PowerShell pour automatiser la récupération des données depuis une API.
 - Gestion des fichiers et des répertoires (os, chemins relatifs, création automatique de dossiers).
 2️⃣ Analyse de données
 - Lecture et traitement de fichiers JSON.
-
+  
+---
 3️⃣ Visualisation
 - Création de graphiques clairs et informatifs avec Matplotlib et Seaborn :
 - Barres horizontales et verticales
 - Graphiques à double axe
 - Évolution temporelle des cas et décès
 - Personnalisation complète : couleurs, titres, labels, axes, mise en page
+
+  ---
 4️⃣ Automatisation et workflow
 - Mise en place d’un pipeline complet :
 - Récupération des données via PowerShell
 - Stockage centralisé dans covid_data.json
 - Analyse et génération automatique de graphiques et rapport texte
 - Découplage clair entre collecte des données et analyse pour un projet reproductible
+
+  ---
 5️⃣ Documentation et bonnes pratiques
 - Structuration du projet avec dossiers scripts/, data/, output/.
 - Génération automatique d’un rapport synthétique : statistiques mondiales et par pays, tendances historiques.
