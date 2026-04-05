@@ -3,7 +3,7 @@
 ## 👤 Étudiant
 
 - Identifiant : **300138205**
-- Nom: Taylor
+- Nom: Taylor Ngue Ngan
 - Cours : Programmation système 
 - Thème : **Analyse de données COVID via API publique**
 ---
