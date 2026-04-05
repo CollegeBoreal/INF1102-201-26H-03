@@ -70,7 +70,7 @@ Automatiser la configuration et le déploiement d'un serveur web Nginx pour diff
 
 **🆔 ID étudiant :** 300147816
 
-Opérationnel (déploiement Ansible)
+**✅Status:**Opérationnel (déploiement Ansible)
 
 **📄 Description :** Infrastructure as Code (IaC)
 
