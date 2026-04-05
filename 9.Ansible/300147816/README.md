@@ -107,7 +107,7 @@ On ouvre l'URL : **http://10.7.237.213**
 
 - **✅ Idempotence:** Exécuter plusieurs fois sans effet de bord
 
-- **✅ SSH vs Locl **: Comprendre quand utiliser chaque méthode
+-  Comprendre quand utiliser chaque méthode
 
 **🔓Conclusion**
 
