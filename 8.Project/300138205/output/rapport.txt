@@ -1,0 +1,45 @@
+=================================================================
+        RAPPORT D'ANALYSE — DONNÉES COVID-19
+        Généré le 05/04/2026 à 06:54
+=================================================================
+
+SOURCE DES DONNÉES
+----------------------------------------
+  API       : API fictive
+  Endpoint  : /covid
+  Extraction: 05/04/2026
+
+STATISTIQUES MONDIALES
+----------------------------------------
+  Cas confirmés  : 299 048
+  Décès          : 7 347
+  Guérisons      : 184 644
+  Cas actifs     : 107 057
+  Létalité monde : 2.46 %
+
+STATISTIQUES PAR PAYS
+----------------------------------------
+  Pays                  Cas      Décès   Létalité   Guérison
+  ----------------------------------------------------------
+  Germany            95 415      4 455      4.67%     37.57%
+  Italy              79 892      1 646      2.06%     75.44%
+  France             56 712        136      0.24%     81.16%
+  Spain              49 104        434      0.88%     54.63%
+  Portugal           17 925        676      3.77%     87.44%
+
+ANALYSE — FRANCE (30 DERNIERS JOURS)
+----------------------------------------
+  Période    : 07/03/2026 → 05/04/2026
+  Moy. cas/j : 263
+  Max cas/j  : 470 (17/03/2026)
+  Moy. décès : 6
+  Total décès: 173
+
+CONCLUSIONS
+----------------------------------------
+  • Pays le plus touché en valeur absolue : Germany (95 415 cas)
+  • Pays avec le plus faible taux de létalité : France (0.24%)
+  • Létalité mondiale : 2.46%
+  • 5 graphiques générés dans : output/
+
+=================================================================
