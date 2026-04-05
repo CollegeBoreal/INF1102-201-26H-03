@@ -103,7 +103,9 @@ Le fichier JSON sert donc de pont entre la collecte des données et leur analyse
 1️⃣ Programmation et scripting
 - Utilisation de Python 3 pour le traitement de données et la génération de rapports.
 - Utilisation de PowerShell pour automatiser la récupération des données depuis une API.
-- Gestion des fichiers et des répertoires (os, chemins relatifs, création automatique de dossiers).
+- Gestion des fichiers et des répertoires (os, chemins relatifs, création automatique de dossiers)
+
+---
 2️⃣ Analyse de données
 - Lecture et traitement de fichiers JSON.
   
