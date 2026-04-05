@@ -60,85 +60,10 @@ Automatiser la configuration et le déploiement d'un serveur web Nginx pour diff
 
 - **service:** permet de démarrer nginx, voici la commande équivalente: **sudo systemctl enable --now nginx**
 
-#3. Page HTML personnalisée : files/index.html
-```
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Air - Hanane</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f0f4f8; 
-            color: #333; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            min-height: 100vh;
-            margin: 0;
-        }
-        .card { 
-            background: white; 
-            padding: 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-            text-align: center; 
-            border-top: 8px solid #3498db; 
-            max-width: 500px;
-            margin: 20px;
-        }
-        h1 { 
-            color: #2c3e50; 
-            margin-bottom: 10px; 
-            font-size: 24px; 
-        }
-        .id-badge { 
-            background: #3498db; 
-            color: white; 
-            padding: 5px 15px; 
-            border-radius: 5px; 
-            font-size: 14px; 
-            font-weight: bold; 
-            display: inline-block;
-        }
-        .status { 
-            margin: 25px 0; 
-            padding: 15px; 
-            background: #e8f4f8; 
-            border-left: 5px solid #3498db; 
-            border-radius: 5px; 
-        }
-        .footer { 
-            margin-top: 30px; 
-            font-size: 12px; 
-            color: #95a5a6; 
-            border-top: 1px solid #eee; 
-            padding-top: 15px; 
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <div class="icon">🌍</div>
-        <h1>Monitoring de l'Air - Montréal</h1>
-        <div class="id-badge">Étudiante ID : 300147816</div>
+## 3. Page HTML personnalisée : files/index.html
 
-        <div class="status">
-            <strong>Statut du Serveur :</strong> Opérationnel <br>
-            Déploiement automatique effectué via <strong>Ansible</strong>.
-        </div>
+![Page HTML](./images/7.JPG)
 
-        <p>Ce serveur Web a été configuré de manière déclarative (IaC) pour héberger les résultats d'analyse de la qualité de l'air.</p>
-
-        <div class="footer">
-            Projet Infrastructure IT & Automatisation | 2026
-        </div>
-    </div>
-</body>
-</html>
-```
 **Affichage attendu :**
 
 **🌍 Titre :** "Monitoring de l'Air - Montréal"
@@ -182,7 +107,7 @@ On ouvre l'URL : **http://10.7.237.213**
 
 - **✅ Idempotence:** Exécuter plusieurs fois sans effet de bord
 
-- **✅ SSH vs Loca **: Comprendre quand utiliser chaque méthode
+- **✅ SSH vs Locl **: Comprendre quand utiliser chaque méthode
 
 **🔓Conclusion**
 
