@@ -63,6 +63,12 @@ python3 scripts/analyse.py
 ```
 <img width="1473" height="569" alt="image" src="https://github.com/user-attachments/assets/73177de1-d6d5-4077-9f5d-59c028f81eca" />
 <img width="1478" height="548" alt="image" src="https://github.com/user-attachments/assets/a65494aa-34bc-498b-8346-60279f1448d0" />
+<img width="1452" height="272" alt="image" src="https://github.com/user-attachments/assets/1b59adec-02b9-49a2-84fe-f3a7a486cb85" />
+<img width="1465" height="735" alt="image" src="https://github.com/user-attachments/assets/ff80ffdb-5cd2-4980-abec-5ab2c5173243" />
+<img width="1453" height="727" alt="image" src="https://github.com/user-attachments/assets/50a3b8bc-5c28-4b0d-b0de-8799fb8f1acf" />
+
+
+
 
 -----
 # 🏘️ creation du fichier qui va recenser tous les cas et faire sont analyse grace au script analyse.py
@@ -90,5 +96,31 @@ Le fichier JSON sert donc de pont entre la collecte des données et leur analyse
 <img width="1288" height="261" alt="image" src="https://github.com/user-attachments/assets/478405e5-159c-472c-910a-3b6375d93192" />
 <img width="1112" height="670" alt="image" src="https://github.com/user-attachments/assets/922c0359-5c0e-4eaf-b0b6-bb0a2f40ba1b" />
 <img width="985" height="612" alt="image" src="https://github.com/user-attachments/assets/96b1117a-a781-4c90-884e-51d377680cda" />
+
+---
+🚀 Compétences développées
+1️⃣ Programmation et scripting
+- Utilisation de Python 3 pour le traitement de données et la génération de rapports.
+- Utilisation de PowerShell pour automatiser la récupération des données depuis une API.
+- Gestion des fichiers et des répertoires (os, chemins relatifs, création automatique de dossiers).
+2️⃣ Analyse de données
+- Lecture et traitement de fichiers JSON.
+
+3️⃣ Visualisation
+- Création de graphiques clairs et informatifs avec Matplotlib et Seaborn :
+- Barres horizontales et verticales
+- Graphiques à double axe
+- Évolution temporelle des cas et décès
+- Personnalisation complète : couleurs, titres, labels, axes, mise en page
+4️⃣ Automatisation et workflow
+- Mise en place d’un pipeline complet :
+- Récupération des données via PowerShell
+- Stockage centralisé dans covid_data.json
+- Analyse et génération automatique de graphiques et rapport texte
+- Découplage clair entre collecte des données et analyse pour un projet reproductible
+5️⃣ Documentation et bonnes pratiques
+- Structuration du projet avec dossiers scripts/, data/, output/.
+- Génération automatique d’un rapport synthétique : statistiques mondiales et par pays, tendances historiques.
+
 
 
