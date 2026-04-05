@@ -68,12 +68,12 @@ python3 scripts/analyse.py
 # 🏘️ creation du fichier qui va recenser tous les cas et faire sont analyse grace au script analyse.py
 
 Le fichier covid_data.json est la source unique de toutes les analyses de mon projet. Il contient :
-
+'''
 1️⃣ metadata : informations sur la source et l’extraction des données (utile pour le rapport et la traçabilité).
 2️⃣global : statistiques mondiales (cas totaux, décès, guérisons, actifs).
 📉countries : données détaillées par pays (cas, décès, taux de mortalité, etc.) pour les graphiques.
 4️⃣historical : données quotidiennes (exemple : France 30 derniers jours) pour les graphiques d’évolution.
-
+'''
 Sans ce fichier, analyse.py ne peut pas fonctionner, car tout est basé sur ces données JSON.
 # Découplage entre récupération et analyse
 analyse.ps1 : télécharge les données depuis une API ou un endpoint externe et les sauvegarde dans covid_data.json.
