@@ -1,6 +1,6 @@
 **🚀 TP Ansible - Déploiement automatisé: Qualité de l'Air Montréal**
 
-**👤 Étudiant:**
+**👤 Étudiante:**
 
 ⁕**Nom :** Hanane Zerrouki
 
@@ -30,25 +30,25 @@ Automatiser la configuration et le déploiement d'un serveur web Nginx pour diff
     
 **📄 Contenu des fichiers**
 
-#1. Fichier d'inventaire : inventory.ini
+## 1. Fichier d'inventaire : inventory.ini
 
 ![Fichier d'inventaire](./images/1.JPG)
 
 **Explication:**
 
-- [web]  :                   Groupe d'hôtes nommé "web"
+- **[web]  :**                   Groupe d'hôtes nommé "web"
 
-- 10.7.237.213   :           Adresse IP du serveur cible
+- **10.7.237.213   :**           Adresse IP du serveur cible
 
-- ansible_user=ubuntu:       Utilisateur pour l'exécution
+- **ansible_user=ubuntu:**       Utilisateur pour l'exécution
 
-- ansible_connection=local: Exécution locale (pas de SSH car Ansible est sur le serveur)
+- **ansible_connection=local:**    Exécution locale (pas de SSH car Ansible est sur le serveur)
 
 **💡 Note :** 
 
-**ansible_connection=local** est utilisé car Ansible est installé DIRECTEMENT sur le serveur cible. Pas besoin de clé SSH.
+**ansible_connection=local** est utilisé car Ansible est installé **DIRECTEMENT sur le serveur cible**. Pas besoin de clé SSH.
 
-#2. Playbook Ansible : playbook.yml
+## 2. Playbook Ansible : playbook.yml
 
 ![Fichier Playbook](./images/2.JPG)
 
@@ -145,7 +145,7 @@ Automatiser la configuration et le déploiement d'un serveur web Nginx pour diff
 
 **🆔 ID étudiant :** 300147816
 
-**✅ Statut **: Opérationnel (déploiement Ansible)
+**✅ Statu:** Opérationnel(déploiement Ansible)
 
 **📄 Description :** Infrastructure as Code (IaC)
 
@@ -162,11 +162,11 @@ Automatiser la configuration et le déploiement d'un serveur web Nginx pour diff
 
 **🌐 Vérification du déploiement**
 
-##Depuis le terminal :
+## Depuis le terminal :
 
 ![Verification depuis le terminal](./images/5.JPG)
 
-##Depuis un navigateur :
+## Depuis un navigateur :
 
 On ouvre l'URL : **http://10.7.237.213**
 
@@ -182,7 +182,7 @@ On ouvre l'URL : **http://10.7.237.213**
 
 - **✅ Idempotence:** Exécuter plusieurs fois sans effet de bord
 
-- **✅ SSH vs Local **: Comprendre quand utiliser chaque méthode
+- **✅ SSH vs Loca **: Comprendre quand utiliser chaque méthode
 
 **🔓Conclusion**
 
