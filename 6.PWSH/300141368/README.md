@@ -132,6 +132,7 @@ Shell : **PowerShell (pwsh)**
 ```bash
 sudo mkdir /devops-batch
 ```
+<img width="837" height="158" alt="image" src="https://github.com/user-attachments/assets/f264f618-010d-4083-acde-7336fd0212a1" />
 
 ## 🔹 PARTIE 2 – Créer le script principal
 
@@ -152,6 +153,8 @@ Ajouter le **shebang** pour Linux :
 ## 🔹 PARTIE 3 - Script complet (exemple)
 
 📄 CODE COMPLET À INTÉGRER
+
+
 
 ```powershell
 #!/usr/bin/env pwsh
@@ -228,7 +231,7 @@ $reportObj | ConvertTo-Json -Depth 5 | Set-Content $rapportJson
 Write-Output ""
 Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 ```
-
+<img width="1840" height="1131" alt="image" src="https://github.com/user-attachments/assets/7f9a0a77-0fdc-4cfa-b21b-207d32470f59" />
 
 ## 🔹 PARTIE 4. Exécuter le batch
 
@@ -243,4 +246,7 @@ Résultat attendu :
 
   * `rapport.txt`
   * `rapport.json`
+
+<img width="924" height="762" alt="image" src="https://github.com/user-attachments/assets/e41cf601-f002-4c82-ba89-4bb8135bfc8c" />
+<img width="603" height="83" alt="image" src="https://github.com/user-attachments/assets/5a68744f-8fd4-43c1-98f9-085adddce7ab" />
 

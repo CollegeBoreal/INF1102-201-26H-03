@@ -1,6 +1,6 @@
 **📊 README :** Surveillance Système et Automatisation des Logs
 
-**👤 Étudiant :** 300147816
+**👤 Étudiant :** 300147816 - HANANE ZERROUKI
 
 **Cours :** Programmation Système / Administration Linux
 
@@ -26,7 +26,7 @@ Pour surveiller les performances de ma VM (CPU, Mémoire, Disque), j'utilise les
 
 ![Stockage](./images/espacedisque.JPG)
 
-**📂 3. Analyse des Logs et Extraction d'IP**
+**📂 2. Analyse des Logs et Extraction d'IP**
 
 Le serveur Nginx enregistre les requêtes dans /var/log/nginx/access.log. Pour isoler les visiteurs, j'utilise une combinaison de commandes puissantes :
 
@@ -42,7 +42,7 @@ Le serveur Nginx enregistre les requêtes dans /var/log/nginx/access.log. Pour i
 
 L'image montre bien la liste des IP obtenue par cette commande
 
-**⚙️ 4. Automatisation avec Script Shell**
+**⚙️ 43. Automatisation avec Script Shell**
 
 J'ai créé le script scruter_nginx.sh pour automatiser cette tâche de diagnostic. 
 
@@ -60,7 +60,7 @@ echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 ```
 ![Automatisation](./images/automatisation1.JPG)
 
-***Explication*
+**Explication**
 
 Pour que ce script puisse être lancé automatiquement par le système, j'ai dû modifier ses permissions avec la commande chmod +x. La capture ci-dessous confirme que le script est maintenant prêt :
 
@@ -79,7 +79,7 @@ Pour que ce script puisse être lancé automatiquement par le système, j'ai dû
 ![Les logs](./images/log.JPG)
 ---
 
-**🕒 5. Programmation CRON (Tâches planifiées)**
+**🕒 4. Programmation CRON (Tâches planifiées)**
 
 - Pour garantir une surveillance continue sans intervention manuelle, le script est planifié avec cron.
 
@@ -91,7 +91,7 @@ L'image suivante montre ma ligne de planification
 
 Fréquence : Exécution automatique de script au début de chaque heure.
 
-**✅ 6. Vérification du statut des services**
+**✅5. Vérification du statut des services**
 
 Pour s'assurer que le système d'analyse et le serveur sont opérationnels, on vérifie les services systemd.
 
@@ -103,7 +103,7 @@ Statut Cron : systemctl status cron.
 
 ![Cron](./images/moncron.JPG)
 
-**✅ 7. Conclusion**
+**✅6. Conclusion**
 
 Ce laboratoire sur la gestion des tâches planifiées (Cron) et l'analyse de logs m'a permis de mettre en place une solution de monitoring complète pour un serveur Web Nginx.
 
@@ -125,7 +125,7 @@ Le système est désormais autonome, documenté et prêt pour une analyse plus p
 ## ✍️ Auteur
 **HANANE ZERROUKI** 🆔 Étudiante : 300147816
 
-📅 Mars 2026 — Laboratoire DevOps PowerShell
+📅 Mars 2026 — Laboratoire Surveillance Système et Automatisation des Logs
 
 
 ![Badge](https://img.shields.io/static/v1?label=PROJET&message=COMPLETE&color=brightgreen&logo=powershell&logoColor=white)
