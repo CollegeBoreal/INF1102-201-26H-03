@@ -18,6 +18,7 @@ REGEX/
 ├── rapport_nginx_ps1_YYYY-MM-DD.txt
 └── rapport_nginx_py_YYYY-MM-DD.txt
 ```
+<img width="859" height="417" alt="image" src="https://github.com/user-attachments/assets/8d0b8c06-0bc2-425b-bd33-bb96c4acb8cf" />
 
 
 ## 📥 Entrée
