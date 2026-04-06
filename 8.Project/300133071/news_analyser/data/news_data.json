@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-04-05T23:06:22.538513",
+  "total_articles": 30,
+  "top_words": {
+    "trump": 6,
+    "easter": 5,
+    "iran": 5,
+    "pope": 3,
+    "message": 3,
+    "strait": 3,
+    "college": 2,
+    "mourning": 2,
+    "dinosaurs": 2,
+    "brush": 2,
+    "supernatural": 2,
+    "hunt": 2,
+    "injured": 2,
+    "choose": 2,
+    "peace": 2,
+    "android": 1,
+    "butlers": 1,
+    "proposes": 1,
+    "slashing": 1,
+    "nasa": 1,
+    "budget": 1,
+    "changing": 1,
+    "robotics": 1,
+    "mostly": 1,
+    "doing": 1,
+    "chores": 1,
+    "home": 1,
+    "make": 1,
+    "money": 1,
+    "training": 1,
+    "robots": 1,
+    "clean": 1,
+    "orders": 1,
+    "citizenship": 1,
+    "lists": 1,
+    "expands": 1,
+    "alleged": 1,
+    "voter": 1,
+    "fraud": 1,
+    "russia": 1,
+    "again": 1,
+    "claims": 1,
+    "taken": 1,
+    "eastern": 1,
+    "ukrainian": 1,
+    "region": 1,
+    "real": 1,
+    "picture": 1,
+    "very": 1,
+    "different": 1
+  },
+  "articles": [
+    {
+      "title": "Pope Leo’s Easter message",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353821"
+    },
+    {
+      "title": "Android butlers",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353835"
+    },
+    {
+      "title": "Trump proposes slashing NASA budget",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353838"
+    },
+    {
+      "title": "How AI is changing college",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353839"
+    },
+    {
+      "title": "Mourning for dinosaurs",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353844"
+    },
+    {
+      "title": "A brush with the supernatural",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353846"
+    },
+    {
+      "title": "There’s a hot new job in robotics – and it’s mostly doing chores at home",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353847"
+    },
+    {
+      "title": "Make money training robots how to clean",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353849"
+    },
+    {
+      "title": "Trump orders citizenship lists as DOJ expands alleged voter fraud hunt",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353850"
+    },
+    {
+      "title": "Russia again claims to have taken an eastern Ukrainian region. The real picture is very different",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353852"
+    },
+    {
+      "title": "Hiding alone in a mountain crevice in Iran, the injured American knew what to do: survive and evade",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353853"
+    },
+    {
+      "title": "Trump appears to set new deadline for Tuesday night if no deal is reached to reopen strait",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353855"
+    },
+    {
+      "title": "Trump warns Iran to ‘open the Fuckin’ Strait’ or face severe consequences",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353857"
+    },
+    {
+      "title": "Oil prices climb after Trump threatens Iran over Strait of Hormuz",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353858"
+    },
+    {
+      "title": "What we know about the war, now in its 6th week",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353859"
+    },
+    {
+      "title": "See apparent aircraft wreckage after US rescue in Iran",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353861"
+    },
+    {
+      "title": "‘Profoundly shocking’: Analyst reacts to Trump’s social media post on Iran",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353862"
+    },
+    {
+      "title": "Empty streets in Jerusalem’s Old City marks a quiet Easter",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353864"
+    },
+    {
+      "title": "Catch up on today’s global news",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353867"
+    },
+    {
+      "title": "New Artemis II image includes part of moon never before seen by human eyes",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353868"
+    },
+    {
+      "title": "Pope Leo urges those who ‘unleash wars’ to choose peace in his first Easter message",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353870"
+    },
+    {
+      "title": "‘Choose peace’: Pope’s anti-war Easter message",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353871"
+    },
+    {
+      "title": "3 killed as high winds topple a tree on an Easter egg hunt in Germany",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353873"
+    },
+    {
+      "title": "Why California Democrats are sweating the race to replace Newsom",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353874"
+    },
+    {
+      "title": "More than a dozen injured after vehicle hits parade-goers during Louisiana celebration",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353876"
+    },
+    {
+      "title": "Backpacks full of explosives found near Russian gas pipeline close to Serbia-Hungary border",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353879"
+    },
+    {
+      "title": "A prominent historian investigating the death of Jesus experienced a conversion – and a brush with the supernatural",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353880"
+    },
+    {
+      "title": "AI is making college students sound the same in class",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353882"
+    },
+    {
+      "title": "In war-wary Taiwan, some civilians prepare to flee the worst-case scenario",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353883"
+    },
+    {
+      "title": "Mourning for dinosaurs, 65 million years too late",
+      "summary": "",
+      "source": "CNN",
+      "scraped_at": "2026-04-05T23:06:21.353885"
+    }
+  ]
+}
