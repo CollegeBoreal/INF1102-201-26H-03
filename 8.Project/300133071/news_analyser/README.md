@@ -8,7 +8,6 @@ analyser la fréquence des mots et générer des visualisations.
 ## 🗂️ Structure du projet
 
 ```
-news_analyser/
 ├── scripts/
 │   ├── analyse.py      ← Script Python principal
 │   └── analyse.ps1     ← Lanceur PowerShell (Windows)
