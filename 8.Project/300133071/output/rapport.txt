@@ -1,0 +1,38 @@
+============================================================
+  RAPPORT D'ANALYSE — CNN
+  Généré le 05/04/2026 à 23:06
+============================================================
+
+  Articles analysés : 30
+  Mots uniques      : 167
+
+────────────────────────────────────────────────────────────
+  TOP 10 DES MOTS LES PLUS FRÉQUENTS
+────────────────────────────────────────────────────────────
+
+   1. trump                   6 fois  ██████
+   2. easter                  5 fois  █████
+   3. iran                    5 fois  █████
+   4. pope                    3 fois  ███
+   5. message                 3 fois  ███
+   6. strait                  3 fois  ███
+   7. college                 2 fois  ██
+   8. mourning                2 fois  ██
+   9. dinosaurs               2 fois  ██
+  10. brush                   2 fois  ██
+
+────────────────────────────────────────────────────────────
+  INTERPRÉTATION
+────────────────────────────────────────────────────────────
+
+  Les actualités de CNN ce jour portent principalement sur :
+  
+    • Sujets variés (aucun thème dominant identifié)
+  
+  Cette analyse est basée sur la fréquence des mots dans les
+  titres et résumés des articles. Les résultats reflètent
+  les préoccupations éditoriales du site à ce moment précis.
+
+============================================================
+  Fin du rapport
+============================================================

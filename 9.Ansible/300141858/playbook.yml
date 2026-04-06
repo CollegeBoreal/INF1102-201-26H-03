@@ -1,0 +1,21 @@
+- name: Installer et configurer nginx
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Copier la page HTML
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.nginx-debian.html
+
+    - name: Demarrer nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
