@@ -1,0 +1,18 @@
+===== RAPPORT D'ANALYSE DES LOGS =====
+Total de lignes : 8
+Total d'erreurs HTTP : 3
+Erreurs 404 : 2
+Erreurs 500 : 1
+
+Top 5 IP :
+3 - 192.168.1.10
+2 - 192.168.1.11
+2 - 192.168.1.12
+1 - 192.168.1.13
+
+Top 5 URLs :
+3 - /index.html
+2 - /contact.html
+1 - /about.html
+1 - /products.html
+1 - /services.html
