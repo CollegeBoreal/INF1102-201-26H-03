@@ -46,24 +46,30 @@ ansible-playbook -i inventory.ini playbook.yml
 # 3. Vérifier
 curl http://10.7.237.206
 ```
+**Ansible Instalee**
+<img width="1463" height="488" alt="ansible instalee" src="https://github.com/user-attachments/assets/b74a5efb-3d7d-455d-aa0b-e3123d39e378" />
+**test ping reussi**
+<img width="1557" height="582" alt="ping true" src="https://github.com/user-attachments/assets/53ffc828-9a3e-4e63-bf47-4be5c24f2896" />
 
 ---
+
 
 ## Résultats
 
 **Premier déploiement** — `ok=5 | changed=2`
 Le handler `restart nginx` s'est déclenché automatiquement suite à la copie du fichier HTML.
 
-![Déploiement réussi](images/deploiement_reussi12.png)
+
+<img width="1918" height="613" alt="tache8" src="https://github.com/user-attachments/assets/8c576323-b54e-4e01-9cef-76f414e09ede" />
 
 **Test d'idempotence** (2e exécution) — `ok=4 | changed=0`
 Aucune modification appliquée : preuve que le playbook est idempotent.
 
-![Idempotence](images/tout_okay.png)
+<img width="1666" height="526" alt="tout okay" src="https://github.com/user-attachments/assets/8d22edaa-2318-4f47-b0e8-ff57ed6c5a83" />
+
 
 **Page déployée dans le navigateur**
-
-![Page web](images/deploiement_reussi12.png)
+<img width="1871" height="932" alt="deploiement reussi12" src="https://github.com/user-attachments/assets/cd6e382a-05fe-4974-b242-3b32033e893c" />
 
 ---
 
