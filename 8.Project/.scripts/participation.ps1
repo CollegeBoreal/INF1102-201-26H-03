@@ -52,8 +52,8 @@ Write-PresenceHeader
 $i = 0
 $s = 0
 
-foreach ($entry in $STUDENTS) {
-    $parts = $entry -split '\|'
+for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
+    $parts = $ACTIVE_GROUP[$g] -split '\|'
     $StudentID = $parts[0]
     $GitHubID  = $parts[1]
     $AvatarID  = $parts[2]
