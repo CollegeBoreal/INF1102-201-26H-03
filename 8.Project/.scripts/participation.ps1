@@ -26,7 +26,7 @@ foreach ($entry in $STUDENTS) {
     $checks = Get-StudentChecks -Paths $paths
     $url    = Get-GitHubAvatarLink -GitHubID $GitHubID -AvatarID $AvatarID
 
-    # $result = Get-StudentReport -id $StudentID
+    $result = Get-StudentReport -id $StudentID
 
     Write-StudentRow `
         -Index $i `

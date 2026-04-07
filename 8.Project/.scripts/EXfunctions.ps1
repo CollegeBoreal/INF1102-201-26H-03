@@ -12,7 +12,7 @@ function Get-StudentReport {
         [string]$id
     )
 
-    $py = "$id/IO.py"
+    $py = "$id/scripts/analyse.py"
     $nb = "$id/RAPPORT.ipynb"
 
     # --- IO.py execution ---
@@ -20,7 +20,7 @@ function Get-StudentReport {
     if (Test-Path $py) {
         Push-Location $id
         try {
-            python3 "IO.py" *> $null
+            python3 "scripts/analyse.py" *> $null
             if ($LASTEXITCODE -eq 0) {
                 $execPyIcon = ":rocket:"
             }
@@ -44,7 +44,16 @@ function Get-StudentReport {
     if (Test-Path $nb) {
         $rapportIcon = ":receipt:"
 
-        $json = Get-Content $nb -Raw | ConvertFrom-Json
+        $json = $null
+        try {
+            $raw = Get-Content $nb -Raw
+            $raw = $raw.Trim([char]0xFEFF)  # remove BOM if present
+            $json = $raw | ConvertFrom-Json -ErrorAction Stop
+        }
+        catch {
+            $errorIcon = ":boom:"
+            return
+        }
 
         # Count errors
         $errors = @(
