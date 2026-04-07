@@ -152,6 +152,8 @@ journalctl -u cron
 ```
 
 ---
+<img width="827" height="376" alt="C55" src="https://github.com/user-attachments/assets/7f92b21c-54a3-44a9-8bab-b0d4295af499" />
+
 
 ## 📊 10. Analyse avancée (Bonus)
 
