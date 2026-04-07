@@ -10,7 +10,7 @@
 | Étudiant | hamdi hicham |
 | Numéro | 300151042 |
 | Machine | vm300151042 |
-| IP | 10.7.237.214 |
+| IP | 10.7.237.220 |
 | OS | Ubuntu 22.04 (Jammy) |
 
 ## 📋 Description
@@ -34,15 +34,15 @@ dans deux langages complémentaires : **PowerShell** et **Python**.
 
 ## 📸 Exécution des scripts
 
-![Exécution](images/nginx2.png)
+
 
 ## 📊 Rapport PowerShell
 
-![Rapport PowerShell](images/nginx3.png)
+
 
 ## 📊 Rapport Python
 
-![Rapport Python](images/nginx1.png)
+
 
 ## ▶️ Exécution
 ```bash
