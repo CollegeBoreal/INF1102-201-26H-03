@@ -32,16 +32,40 @@ dans deux langages complémentaires : **PowerShell** et **Python**.
 - ✅ Classer le Top 5 des IP et pages les plus actives
 - ✅ Automatiser l'exécution avec une tâche **cron**
 
-## 📸 Exécution des scripts
-
 
 
 ## 📊 Rapport PowerShell
 
+Rapport Nginx - 2026-04-07 21:02:30
+----------------------------------
+Total requêtes : 2
+Erreurs HTTP : 1
+Erreurs 404 : 1
+Erreurs 500 : 0
+
+Top 5 IP :
+2 127.0.0.1
+
+Top 5 pages :
+1 /
+1 /index.html
 
 
 ## 📊 Rapport Python
 
+Rapport Nginx - 2026-04-07 21:02:30
+----------------------------------
+Total requêtes : 2
+Erreurs HTTP : 1
+Erreurs 404 : 1
+Erreurs 500 : 0
+
+Top 5 IP :
+2 127.0.0.1
+
+Top 5 pages :
+1 /
+1 /index.html
 
 
 ## ▶️ Exécution
