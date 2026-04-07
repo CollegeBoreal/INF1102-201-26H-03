@@ -27,6 +27,7 @@ L’objectif est de se familiariser avec Ansible et le concept d’Infrastructur
 ├── inventory.ini
 └── playbook.yml
 
+
 ---
 
 ## ⚙️ Étapes réalisées
@@ -39,18 +40,17 @@ touch inventory.ini playbook.yml
 touch files/index.html
 
 👉 Cette étape permet de créer les fichiers nécessaires au projet.
-
-<img width="704" height="43" alt="cree les fichiers " src="https://github.com/user-attachments/assets/76d5a55f-2062-4ab2-aa5b-8544d960ddea" />
+<img width="704" height="43" alt="cree les fichiers " src="https://github.com/user-attachments/assets/9336bea6-4b27-4807-bf3e-8315f5bdc583" />
 
 
 2️⃣ Création de la page web
 
 Une page HTML personnalisée a été créée contenant :
-<img width="764" height="24" alt="cree le site web" src="https://github.com/user-attachments/assets/80bfc97a-6f7d-429e-8cf5-cd73fef53a2c" />
 
+<img width="764" height="24" alt="cree le site web" src="https://github.com/user-attachments/assets/4a0c8dff-103d-4b0b-bd08-8307474db13b" />
 
 3️⃣ Configuration de l’inventory
-<img width="366" height="109" alt="image" src="https://github.com/user-attachments/assets/1094ff93-45de-4e4d-bc90-5b66577c2188" />
+<img width="366" height="109" alt="scripts inventory" src="https://github.com/user-attachments/assets/6b0b2ae7-38d8-4032-80d7-247c7935450b" />
 
 👉 Permet de définir le serveur cible pour Ansible.
 
@@ -86,8 +86,8 @@ Démarrage du service
 ansible-playbook -i inventory.ini playbook.yml
 
 👉 Cette commande exécute toutes les tâches automatiquement.
+<img width="1358" height="304" alt="lance le playbook" src="https://github.com/user-attachments/assets/edcbd1b4-2441-4307-b778-d8424c9430ae" />
 
-<img width="1358" height="304" alt="lance le playbook" src="https://github.com/user-attachments/assets/d1a62f47-319c-46d1-8ad4-e081b834f1c8" />
 
 6️⃣ Vérification du résultat
 
@@ -95,11 +95,12 @@ Accès via navigateur :
 
 http://10.7.237.217
 
-👉 La page web personnalisée s’affiche correctement.
-<img width="1365" height="710" alt="site web" src="https://github.com/user-attachments/assets/861a8bcf-35dc-45e0-8704-3352c05a3a75" />
+👉 La page web personnalisée s’affiche correctement
+<img width="1365" height="710" alt="site web" src="https://github.com/user-attachments/assets/96d44920-c284-4d7a-a7ec-da5926cf0a25" />
 
 
 🧠 Concepts importants
+
 ✔️ Idempotence
 
 Exécuter plusieurs fois le playbook ne change rien si tout est déjà configuré.
@@ -121,6 +122,3 @@ Assure que le service est en cours d’exécution.
 Ce TP montre que Ansible permet d’automatiser le déploiement de services de manière simple, rapide et fiable.
 
 Grâce à l’approche IaC, les configurations sont reproductibles et faciles à maintenir.
-
-
----
