@@ -36,6 +36,8 @@ dans deux langages complémentaires : **PowerShell** et **Python**.
 
 ## 📊 Rapport PowerShell
 
+<img width="454" height="270" alt="Capture77" src="https://github.com/user-attachments/assets/acc7b327-411b-4588-8fee-c98a2962da63" />
+
 Rapport Nginx - 2026-04-07 21:02:30
 ----------------------------------
 Total requêtes : 2
@@ -52,6 +54,8 @@ Top 5 pages :
 
 
 ## 📊 Rapport Python
+
+<img width="426" height="226" alt="Capture88" src="https://github.com/user-attachments/assets/0cfb54ca-eb08-432f-ad5d-36b086dbc6d9" />
 
 Rapport Nginx - 2026-04-07 21:02:30
 ----------------------------------
