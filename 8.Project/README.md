@@ -64,6 +64,7 @@ plt.savefig('../output/meteo.png')
 
 * `scripts/analyse.ps1` : exécute le scraping Python
 * `scripts/analyse.py` : collecte titres, compte mots, génère histogramme
+* `scripts/requirements.txt` : Liste les librairies `python` utilisées
 * `RAPPORT.ipynb` : visualisation mots fréquents et résumé
 * `output/rapport.txt` : top 10 mots clés
 
