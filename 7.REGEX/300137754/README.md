@@ -196,7 +196,7 @@ crontab -e
 ```
 
 ---
-![](images/G_application.png)
+![](images/fichier_crontab.png)
 # 🔍 **PARTIE 4 — Vérification**
 
 ```bash
