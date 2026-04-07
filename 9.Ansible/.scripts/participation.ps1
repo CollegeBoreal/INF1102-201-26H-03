@@ -6,7 +6,8 @@
 
 param(
     [ValidateSet(1,2,3)]
-    [int]$Group = 1
+    [int]$Group = 1,
+    [switch]$Check
 )
 
 # Import variables from another script (students.ps1)
