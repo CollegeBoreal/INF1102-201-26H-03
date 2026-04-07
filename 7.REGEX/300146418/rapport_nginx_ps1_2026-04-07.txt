@@ -1,0 +1,10 @@
+Rapport Nginx - 04/07/2026 21:35:49
+----------------------------------
+Total requêtes : 0
+Erreurs HTTP : 0
+Erreurs 404 : 0
+Erreurs 500 : 0
+
+Top 5 IP :
+
+Top 5 pages :

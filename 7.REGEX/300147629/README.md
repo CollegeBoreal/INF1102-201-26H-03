@@ -1,0 +1,65 @@
+#Les fichiers de mon Projet
+```Powershell
+
+REGEX/
+├── analyse_nginx.ps1           # Script PowerShell complet à exécuter
+├── analyse_nginx.py            # Script Python complet à exécuter
+├── rapport_nginx_ps1_YYYY-MM-DD.txt
+└── rapport_nginx_py_YYYY-MM-DD.txt
+```
+<img width="768" height="87" alt="image" src="https://github.com/user-attachments/assets/3aeefd9b-5f65-40a1-b825-8a42da74cc9e" />
+
+
+⬇️ Entrée
+```Powershell
+/var/log/nginx/access.log
+```
+⬆️ Sortie
+```Powershell
+
+REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
+
+```
+#PARTIE 1 — Script PowerShell
+
+```Powershell
+nano analyse_nginx.ps1
+```
+<img width="1887" height="1015" alt="Capt1_7rexi" src="https://github.com/user-attachments/assets/4c419efc-3a07-40fb-966a-67b970af1d00" />
+
+#Exécution
+
+```Powershell
+pwsh ./REGEX/analyse_nginx.ps1
+
+```
+#🐍 PARTIE 2 — Script Python
+
+```Powershell
+nano analyse_nginx.py
+```
+<img width="1918" height="1020" alt="cap3_7r" src="https://github.com/user-attachments/assets/ba1eb4a6-0239-432b-b257-9b8c22d97bbf" />
+
+# Exécution
+```Powershell
+python3 REGEX/analyse_nginx.py
+```
+
+#PARTIE 3 — Automatisation
+```Powershell
+crontab -e
+```
+#Ajouter ce contenu
+```Powershell
+0 2 * * * /usr/bin/pwsh /home/user/REGEX/analyse_nginx.ps1
+```
+<img width="1918" height="917" alt="cap5_7_c" src="https://github.com/user-attachments/assets/2a9a1eb6-5af2-49dc-a651-1cd934557d94" />
+
+#✅ Vérification
+```Powershell
+grep CRON /var/log/syslog
+
+```
+<img width="971" height="571" alt="image" src="https://github.com/user-attachments/assets/8275d4d8-a93c-4ba5-9e05-6762589134b8" />
+
+

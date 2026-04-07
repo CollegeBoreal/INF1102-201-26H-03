@@ -1,7 +1,7 @@
 **#🚀 Projet IaC - Déploiement Automatisé sur Proxmox**
 
 **👤 Étudiant**
-**Identifiant:** 300147816  
+**Identifiant:** 300147816 - HANANE ZERROUKI  
 
 **Cours :** Programmation Système / Infrastructure as Code  
 
@@ -45,10 +45,10 @@ Pour ce projet, j'ai configuré les fichiers suivants dans mon répertoire `3001
 ## 3. contenu de terraform.tfvars
 
 ```text
-pm_vm_name      = "vm300133071"
-pm_ipconfig0    = "ip=10.7.237.194/23,gw=10.7.237.1"
+pm_vm_name      = "vm300147816"
+pm_ipconfig0    = "ip=10.7.237.213/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
-pm_url          = "https://10.7.237.16:8006/api2/json"
+pm_url          = "https://10.7.237.13:8006/api2/json"
 pm_token_id     = "tofu@pve!opentofu"
 pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
 

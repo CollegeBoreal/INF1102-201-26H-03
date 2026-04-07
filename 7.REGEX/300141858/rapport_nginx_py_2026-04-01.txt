@@ -1,0 +1,17 @@
+ubuntu@vm300141858:~/REGEX$ cat rapport_nginx_py_2026-04-01.txt
+Rapport Nginx - 2026-04-01 02:36:22.913551
+----------------------------------
+Total requêtes : 5
+Erreurs HTTP : 2
+Erreurs 404 : 2
+Erreurs 500 : 0
+
+Top 5 IP :
+2 10.250.0.181
+2 10.250.0.162
+1 127.0.0.1
+
+Top 5 pages :
+3 /
+2 /favicon.ico
+ubuntu@vm300141858:~/REGEX$
