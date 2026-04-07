@@ -1,7 +1,7 @@
 ## 👤 Étudiant
 
-- Identifiant : **300138205**
-- Nom: Taylor Ngue Ngan
+- Identifiant : **300133071**
+- Nom: Nelson William
 - Cours : Programmation système 
 - Thème : **News Analyser — Scraping & Analyse de texte**
 
