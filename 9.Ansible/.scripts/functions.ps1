@@ -82,8 +82,8 @@ function Write-PresenceHeader {
     Write-Output "## :a: Présence"
     Write-Output ""
 
-    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: analyse.py | :receipt: RAPPORT | :writing_hand: Sgn | :framed_picture: Figures | analyse.ps1 | rapport.txt | :boom: Erreurs |"
-    Write-Output "|------|-------------|-----------|--------|---------------------|-------------------|--------------------|--------------------------|-------------|-------------|----------------|"
+    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: analyse.py | analyse.ps1 | rapport.txt | :link: SSH |"
+    Write-Output "|------|-------------|-----------|--------|---------------------|-------------|-------------|------------|"
 }
 
 
@@ -99,6 +99,6 @@ function Write-StudentRow {
         [string]$ReadmePath
     )
 
-    Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | $($Result.IO_Exec) | [$($Result.Rapport)](../$StudentID/RAPPORT.ipynb) | $($Result.Signature) | $(Num-ToEmoji $($Result.FiguresCount)) | [$($Checks.IN)](../$INPath) | [$($Checks.OUT)](../$OUTPath) | $($Result.Errors) |"
+    Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | $($Checks.IN)](../$INPath) | [$($Checks.OUT)](../$OUTPath) |  |"
 }
 
