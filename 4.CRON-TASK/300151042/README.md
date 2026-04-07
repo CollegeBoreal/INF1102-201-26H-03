@@ -118,6 +118,8 @@ cat /home/ubuntu/nginx_ips.txt
 ```
 
 ---
+<img width="716" height="64" alt="C44" src="https://github.com/user-attachments/assets/f85f4550-4e9b-45ce-9bd1-bd56062bcf2b" />
+
 
 ## ⏰ 8. Automatisation avec CRON
 
