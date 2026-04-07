@@ -1,0 +1,17 @@
+Rapport Nginx - 04/06/2026 01:59:55
+----------------------------------
+Total requêtes : 4
+Erreurs HTTP : 2
+Erreurs 404 : 1
+Erreurs 500 : 1
+
+Top 5 IP :
+2 192.168.1.10
+1 192.168.1.11
+1 192.168.1.12
+
+Top 5 pages :
+1 /admin
+1 /dashboard
+1 /index.html
+1 /login
