@@ -1,7 +1,5 @@
-#!/bin/bash
+Write-Host "Analyse en cours..."
 
-echo "Analyse en cours..."
+python analyse.py data\sample.log
 
-python3 scripts/analyse.py data/sample.log
-
-echo "Rapport genere dans output/rapport.txt"
+Write-Host "Rapport genere dans output\rapport.txt"
