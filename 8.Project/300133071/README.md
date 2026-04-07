@@ -84,5 +84,5 @@ jupyter notebook RAPPORT.ipynb
 | User-Agent réaliste | ✅ |
 | Gestion des erreurs | ✅ |
 
-# Nuages de mots de Cnn le 2026-04-05:23h03
+Nuages de mots de Cnn le 2026-04-05:23h03
 <img src="output/wordcloud.png" style="max-width:50%; height:auto;">
