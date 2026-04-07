@@ -1,0 +1,1 @@
+echo "Analyse des logs réalisée avec Python et PowerShell." > 8.Project\300150485\rapport.txt
