@@ -1,6 +1,6 @@
-# 📰 Scraper BBC News — Projet Bash + Python
+# 📰 Scraper BBC News
 
-> **Amel Zourane** | **300150195**
+> **Amel Zourane** | **300150195**  
 > **INF1102-201-26H-03** | **Collège Boréal** | **2026**
 
 ---
@@ -9,8 +9,6 @@
 
 Ce projet automatise la récupération et l'analyse des nouvelles **BBC News** via flux RSS.
 Il extrait les titres, identifie les mots les plus fréquents et génère un rapport complet.
-
-### Ce projet permet de :
 
 - ✅ Récupérer 20 titres BBC News via RSS en temps réel
 - ✅ Analyser les mots fréquents avec des expressions régulières
@@ -33,26 +31,16 @@ Il extrait les titres, identifie les mots les plus fréquents et génère un rap
 ---
 
 ## 📂 Structure du projet
-300150195/
-│
-├── 📁 scripts/
-│   ├── analyse.ps1      # Script PowerShell principal
-│   └── analyse.py       # Script Python — scraping + analyse
-│
-├── 📁 data/
-│   └── sample.log       # Fichier de logs
-│
-├── 📁 output/
-│   └── rapport.txt      # Rapport généré automatiquement
-│
-├── 📁 images/
-│   ├── projet1.png      # Résultat script Python
-│   ├── projet2.png      # Résultat script PowerShell
-│   ├── projet3.png      # Version Jupyter
-│   └── projet4.png      # Création RAPPORT.ipynb
-│
-├── 📄 RAPPORT.ipynb     # Rapport Jupyter Notebook
-└── 📄 README.md
+
+| Fichier | Description |
+|---------|-------------|
+| `scripts/analyse.ps1` | Script PowerShell principal |
+| `scripts/analyse.py` | Script Python — scraping + analyse |
+| `data/sample.log` | Fichier de logs |
+| `output/rapport.txt` | Rapport généré automatiquement |
+| `RAPPORT.ipynb` | Rapport Jupyter Notebook |
+| `README.md` | Ce fichier |
+
 ---
 
 ## ▶️ Exécution
@@ -94,17 +82,15 @@ pwsh scripts/analyse.ps1
 ---
 
 ## 📊 Exemple de rapport généré
-==================================================
-RAPPORT SCRAPER BBC NEWS
-Date        : 2026-04-07
-Source      : BBC News RSS
-Titres      : 20
-TOP 10 MOTS LES PLUS FRÉQUENTS :
-watch                █████ (3)
-kanye                ████ (2)
-west                 ████ (2)
-artemis              ████ (2)
-police               ████ (2)
+
+| Mot | Fréquence |
+|-----|-----------|
+| watch | 3 |
+| kanye | 2 |
+| west | 2 |
+| artemis | 2 |
+| police | 2 |
+
 ---
 
 ## ✅ Compétences couvertes
