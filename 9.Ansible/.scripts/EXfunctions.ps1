@@ -12,7 +12,7 @@ function Get-StudentReport {
         [string]$id
     )
 
-    $py = "$id/scripts/analyse.py"
+    $py = "$id/laybook.yml"
     $nb = "$id/RAPPORT.ipynb"
 
     # --- IO.py execution ---
@@ -20,7 +20,7 @@ function Get-StudentReport {
     if (Test-Path $py) {
         Push-Location $id
         try {
-            python3 "scripts/analyse.py" *> $null
+            ansible-playbook -i inventory.ini playbook.yml -u ubuntu -e ansible_ssh_private_key_file=~/.ssh/b300098957@ramena *> $null
             if ($LASTEXITCODE -eq 0) {
                 $execPyIcon = ":rocket:"
             }
