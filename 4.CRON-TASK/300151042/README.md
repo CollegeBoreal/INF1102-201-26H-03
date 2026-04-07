@@ -118,6 +118,8 @@ cat /home/ubuntu/nginx_ips.txt
 ```
 
 ---
+<img width="716" height="64" alt="C44" src="https://github.com/user-attachments/assets/f85f4550-4e9b-45ce-9bd1-bd56062bcf2b" />
+
 
 ## ⏰ 8. Automatisation avec CRON
 
@@ -150,6 +152,8 @@ journalctl -u cron
 ```
 
 ---
+<img width="827" height="376" alt="C55" src="https://github.com/user-attachments/assets/7f92b21c-54a3-44a9-8bab-b0d4295af499" />
+
 
 ## 📊 10. Analyse avancée (Bonus)
 
