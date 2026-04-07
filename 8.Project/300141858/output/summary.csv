@@ -1,0 +1,16 @@
+id,source,date,title,primary_theme,cti_score,severity,high_terms,medium_terms,low_terms
+1,CyberDaily,2026-04-01,Major cloud data breach exposes enterprise credentials across multiple regions,Data Breach,11,Medium,3,1,0
+2,ThreatWire,2026-04-01,Ransomware campaign disrupts hospital systems and emergency operations,Ransomware,15,Medium,5,0,0
+3,TechShield,2026-04-02,AI-powered detection reduces phishing success in corporate email environments,Phishing,2,Low,0,1,0
+4,CloudSec Post,2026-04-02,Zero trust adoption accelerates as firms modernize access management,Identity & Access,1,Low,0,0,1
+5,IoT Monitor,2026-04-02,Researchers discover critical vulnerabilities in smart building IoT devices,IoT Vulnerabilities,14,Medium,4,1,0
+6,DataSphere,2026-04-03,Privacy regulators pressure firms after customer data exposure incident,Privacy & Compliance,15,Medium,3,3,0
+7,NetSecure News,2026-04-03,Machine learning improves anomaly detection in network traffic analysis,Network Threats,6,Low,2,0,0
+8,CyberDaily,2026-04-03,Critical software patch fixes authentication bypass vulnerability,Identity & Access,19,High,5,2,0
+9,ThreatWire,2026-04-04,Phishing remains a leading cause of account compromise and internal breaches,Phishing,4,Low,1,0,1
+10,CloudSec Post,2026-04-04,Cloud compliance programs expand to reduce cyber risk in digital transformation,Cloud Security,8,Medium,0,2,4
+11,AI Security Review,2026-04-04,Threat intelligence platforms combine AI and automation for faster cyber defense,AI Security,2,Low,0,1,0
+12,InfraWatch,2026-04-05,Public infrastructure operators review resilience after cyber attack simulation,Resilience & Recovery,8,Medium,1,1,3
+13,BreachReport,2026-04-05,Exposed database leaves sensitive customer information accessible online,Data Breach,10,Medium,2,2,0
+14,Mobile Threat Journal,2026-04-05,Security analysts track malicious mobile applications stealing credentials,Phishing,15,Medium,5,0,0
+15,CyberDaily,2026-04-06,"Enterprises prioritize cyber resilience, identity security, and cloud protection",Identity & Access,2,Low,0,0,2
