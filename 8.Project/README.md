@@ -1,5 +1,12 @@
 # 📽️ Project
 
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) |  |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) |  |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) |  |
+
+
 **5 idées de projets Web Scraping / API / automatisation** adaptées au cours, avec **consignes, scripts, Notebook et livrables attendus**, prêts à distribuer aux étudiants.
 
 ---

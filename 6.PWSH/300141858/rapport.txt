@@ -1,0 +1,30 @@
+===== RAPPORT DEVOPS =====
+Date : 03/31/2026 14:57:43
+Utilisateur : desktop-5g5bp80\abdou
+Machine : DESKTOP-5G5BP80
+
+Top 5 CPU :
+ChatGPT - CPU: 6610.21875
+dwm - CPU: 1599.4375
+explorer - CPU: 967.859375
+sqlservr - CPU: 924.90625
+System - CPU: 908.15625
+
+Top 5 mémoire :
+Memory Compression - RAM: 1079685120
+ChatGPT - RAM: 1067880448
+explorer - RAM: 377081856
+chrome - RAM: 322637824
+msedgewebview2 - RAM: 301596672
+
+Disque :
+
+Name         Used        Free
+----         ----        ----
+C    162180247552 92955066368
+Temp 162180247552 92955066368
+
+
+
+Test SSH :
+Résultat : banner exchange: Connection to UNKNOWN port -1: Connection refused

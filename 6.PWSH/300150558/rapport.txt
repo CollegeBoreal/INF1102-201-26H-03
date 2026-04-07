@@ -1,0 +1,20 @@
+===== RAPPORT DEVOPS =====
+Date : 03/31/2026 19:48:34
+Utilisateur : ubuntu
+Machine : vm300150558
+
+Top 5 processus CPU :
+snapd - CPU 129.9
+multipathd - CPU 77.93
+rcu_sched - CPU 51.43
+irqbalance - CPU 47.58
+systemd - CPU 32.31
+
+Espace disque :
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  1.0M  196M   1% /run
+/dev/sda1       9.6G  2.9G  6.7G  30% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+tmpfs           197M  4.0K  197M   1% /run/user/1000
