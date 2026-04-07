@@ -34,6 +34,7 @@ foreach ($entry in $STUDENTS) {
         -GitHubLink $url `
         -Checks $checks `
         -Result $result `
+        -INPath $paths.IN `
         -OUTPath $paths.OUT `
         -ReadmePath $paths.README
 

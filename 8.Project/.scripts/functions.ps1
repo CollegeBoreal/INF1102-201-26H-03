@@ -82,8 +82,8 @@ function Write-PresenceHeader {
     Write-Output "## :a: Présence"
     Write-Output ""
 
-    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: IO.py | :receipt: RAPPORT | :writing_hand: Sgn | :framed_picture: Figures | etudiants.txt | resultats.txt | :boom: Erreurs |"
-    Write-Output "|------|-------------|-----------|--------|----------------|-------------------|--------------------|--------------------------|---------------|---------------|----------------|"
+    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: analyse.py | :receipt: RAPPORT | :writing_hand: Sgn | :framed_picture: Figures | analyse.ps1 | rapport.txt | :boom: Erreurs |"
+    Write-Output "|------|-------------|-----------|--------|---------------------|-------------------|--------------------|--------------------------|-------------|-------------|----------------|"
 }
 
 
