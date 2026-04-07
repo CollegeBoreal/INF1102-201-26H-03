@@ -60,7 +60,12 @@ Le script affiche en console :
 - L'**espace disque** (`df -h`)
 - Le résultat du **test SSH** vers `127.0.0.1`
 
-![Exécution du script](images/Exécuter_le_script.PNG)
+
+```
+
+<img width="50%" height="50%" alt="image" src="images/Exécuter_le_script.PNG" />
+
+---
 
 ---
 
@@ -72,8 +77,11 @@ Vérification du contenu du fichier `rapport.txt` généré :
 cat /devops-batch/rapport.txt
 ```
 
-![Lecture du rapport texte](images/Lire_les_rapports.PNG)
+```
 
+<img width="50%" height="50%" alt="image" src="images/Lire_les_rapports.PNG" />
+
+---
 ---
 
 ## 🔹 PARTIE 4 — Lecture du rapport JSON
@@ -84,8 +92,10 @@ Vérification du contenu du fichier `rapport.json` généré par `ConvertTo-Json
 cat /devops-batch/rapport.json
 ```
 
-![Rapport JSON généré](images/Rapport_JSON.PNG)
+```
+<img width="50%" height="50%" alt="image" src="images/Rapport_JSON.PNG" />
 
+---
 ---
 
 ## 🔹 PARTIE 5 — Vérification des fichiers générés
@@ -102,8 +112,12 @@ ls -l /devops-batch/
 | `rapport.json`      | 1196 o  | Rapport au format JSON   |
 | `rapport.txt`       | 847 o   | Rapport au format texte  |
 
-![Vérification des fichiers générés](images/Vérifier_les_fichiers_générés.PNG)
 
+```
+
+<img width="50%" height="50%" alt="image" src="images/Vérifier_les_fichiers_générés.PNG" />
+
+---
 ---
 
 ## 🔄 Diagramme de flux du script
