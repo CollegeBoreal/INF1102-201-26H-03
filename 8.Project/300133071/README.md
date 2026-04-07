@@ -38,6 +38,7 @@ cd scripts
 .\analyse.ps1              # BBC par défaut
 .\analyse.ps1 -Site cnn    # CNN
 ```
+<img src="images/3.png" style="max-width:50%; height:auto;">
 
 ### Option B — Python direct
 ```bash
@@ -54,7 +55,7 @@ python analyse.py --site cnn   # CNN
 pip install requests beautifulsoup4 matplotlib pandas
 pip install wordcloud   # Optionnel (nuage de mots)
 ```
-
+<img src="images/1.png" style="max-width:50%; height:auto;">
 ---
 
 ## 📓 Notebook Jupyter
@@ -63,7 +64,7 @@ pip install wordcloud   # Optionnel (nuage de mots)
 pip install jupyter
 jupyter notebook RAPPORT.ipynb
 ```
-
+<img src="images/2.png" style="max-width:50%; height:auto;">
 ---
 
 ## ✅ Fonctionnalités
@@ -82,3 +83,5 @@ jupyter notebook RAPPORT.ipynb
 | Délais entre requêtes (poli) | ✅ |
 | User-Agent réaliste | ✅ |
 | Gestion des erreurs | ✅ |
+
+<img src="output/worldcloud.png" style="max-width:50%; height:auto;">
