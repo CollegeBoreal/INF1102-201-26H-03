@@ -28,13 +28,21 @@ Le script doit :
 
 7.REGEX/
 └── 300146418/
+
 ├── REGEX/
+
 │ ├── analyse_nginx.ps1
+
 │ ├── analyse_nginx.py
+
 │ ├── rapport_nginx_ps1_YYYY-MM-DD.txt
+
 │ └── rapport_nginx_py_YYYY-MM-DD.txt
+
 ├── README.md
+
 └── images/
+
 
 
 ---
