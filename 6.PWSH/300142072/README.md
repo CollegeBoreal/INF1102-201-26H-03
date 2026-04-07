@@ -7,3 +7,7 @@
 ![](images/6-2.png)
 
 ![](images/6-3.png)
+
+🫀 Création d'un batch DevOps PowerShell
+
+ ![](images/6-4.png)
