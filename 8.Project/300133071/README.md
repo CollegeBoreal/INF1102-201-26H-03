@@ -1,3 +1,10 @@
+## 👤 Étudiant
+
+- Identifiant : **300138205**
+- Nom: Taylor Ngue Ngan
+- Cours : Programmation système 
+- Thème : **News Analyser — Scraping & Analyse de texte**
+
 # 📰 News Analyser — Scraping & Analyse de texte
 
 Projet Python complet pour scrapper des actualités (BBC ou CNN),
