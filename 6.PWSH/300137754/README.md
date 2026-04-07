@@ -73,14 +73,14 @@ sudo pwsh devops_batch.ps1
 
 ### 🖥️ Lancement de PowerShell
 
-<img width="261" height="42" alt="pwsh" src="Lancement.png" />
+<img width="261" height="42" alt="pwsh" src="images/Lancement.png" />
 
 
 ---
 
 ### ⚙️ Exécution du script
 
-<img width="859" height="366" alt="exécuter le batch" src="Execution.png" />
+<img width="859" height="366" alt="exécuter le batch" src="images/Execution.png" />
 
 
 ---
