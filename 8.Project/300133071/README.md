@@ -84,4 +84,4 @@ jupyter notebook RAPPORT.ipynb
 | User-Agent réaliste | ✅ |
 | Gestion des erreurs | ✅ |
 
-<img src="output/worldcloud.png" style="max-width:50%; height:auto;">
+<img src="output/wordcloud.png" style="max-width:50%; height:auto;">
