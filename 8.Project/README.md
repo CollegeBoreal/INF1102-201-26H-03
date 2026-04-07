@@ -64,7 +64,6 @@ plt.savefig('../output/meteo.png')
 
 * `scripts/analyse.ps1` : exécute le scraping Python
 * `scripts/analyse.py` : collecte titres, compte mots, génère histogramme
-* `scripts/requirements.txt` : Liste les librairies `python` utilisées
 * `RAPPORT.ipynb` : visualisation mots fréquents et résumé
 * `output/rapport.txt` : top 10 mots clés
 
@@ -146,7 +145,8 @@ Créer un projet permettan l'utilisation des languages de scripts appris en cour
 │
 ├── scripts/
 │   ├── analyse.sh       # Script Bash principal
-│   └── analyse.py       # Script Python appelé par Bash
+│   ├── analyse.py       # Script Python appelé par Bash
+│   └── requirements.txt # Liste les librairies `python` utilisées
 │
 ├── data/
 │   └── sample.log       # Fichier d’exemple pour tests
