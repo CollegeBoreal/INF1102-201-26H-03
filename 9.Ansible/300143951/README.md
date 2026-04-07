@@ -16,7 +16,7 @@ Machine physique (Windows 11 + WSL/Ubuntu)
         │
         │  SSH (clé ED25519)
         ▼
-VM Hyper-V – ubuntu@vm300143951 (10.7.237.206)
+VM Proxmox – ubuntu@vm300143951 (10.7.237.206)
         └── nginx → /var/www/html/index.nginx-debian.html
 ```
 

@@ -1,0 +1,23 @@
+---
+- name: Déploiement Nginx
+  hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Installer Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Copier la page web
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+
+    - name: Démarrer Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
