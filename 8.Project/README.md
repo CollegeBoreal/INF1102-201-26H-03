@@ -145,7 +145,8 @@ Créer un projet permettan l'utilisation des languages de scripts appris en cour
 │
 ├── scripts/
 │   ├── analyse.sh       # Script Bash principal
-│   └── analyse.py       # Script Python appelé par Bash
+│   ├── analyse.py       # Script Python appelé par Bash
+│   └── requirements.txt # Liste les librairies `python` utilisées
 │
 ├── data/
 │   └── sample.log       # Fichier d’exemple pour tests
