@@ -16,7 +16,7 @@
 
 |:hash:| Boréal :id: | README.md | images | :rocket: analyse.py | analyse.ps1 | rapport.txt | :link: SSH |
 |------|-------------|-----------|--------|---------------------|-------------|-------------|------------|
-| 0 | [300150195](../300150195/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :x: | :x: | [:x:](../300150195/files/index.html) | [:x:](..//var/www/html/index.nginx-debian.html) |  |
+| 0 | [300150195](../300150195/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :x: | :x: | [:heavy_check_mark:](../300150195/files/index.html) | [:x:](..//var/www/html/index.nginx-debian.html) |  |
 | 1 | [300150385](../300150385/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image>](https://github.com/belka1996) | :x: | :x: | [:x:](../300150385/files/index.html) | [:x:](..//var/www/html/index.nginx-debian.html) |  |
 | 2 | [300150416](../300150416/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image>](https://github.com/hachemsouyadi) | :x: | :x: | [:x:](../300150416/files/index.html) | [:x:](..//var/www/html/index.nginx-debian.html) |  |
 | 3 | [300150433](../300150433/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image>](https://github.com/zakariadjellouli) | :2nd_place_medal: | :heavy_check_mark: | [:heavy_check_mark:](../300150433/files/index.html) | [:x:](..//var/www/html/index.nginx-debian.html) |  |
