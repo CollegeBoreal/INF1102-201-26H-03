@@ -53,6 +53,7 @@ pwsh
 ```
 
 ---
+https://github.com/CollegeBoreal/INF1102-201-26H-03/blob/main/6.PWSH/300151042/images/Capture4.PNG
 
 ## 📁 5. Structure du projet
 
