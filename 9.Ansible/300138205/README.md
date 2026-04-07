@@ -15,8 +15,16 @@
 * Différencier **script impératif vs approche déclarative**
 * Écrire un **playbook Ansible en YAML**
 * Déployer automatiquement **Nginx + page HTML**
+---
+  
 installation de wsl
 <img width="956" height="216" alt="image" src="https://github.com/user-attachments/assets/fe684dd9-eae3-4551-9cf1-73ebe4f03867" />
+
+---
+🌀Verification du status de Ubuntu
+```powershell
+wsl --unregister Ubuntu
+``
 ---
 💻connection à notre conteneur wsl
 
@@ -25,8 +33,9 @@ wsl -d Ubuntu
 ```
 <img width="1268" height="195" alt="image" src="https://github.com/user-attachments/assets/d4eba712-df40-41db-b43a-8bc23673e159" />
 
+
 ---
-installation de ansible dans mon powershell à travers mon powershell
+installation de ansible dans mon powershell 
 ```powershell
 sudo apt update
 sudo apt install ansible -y
