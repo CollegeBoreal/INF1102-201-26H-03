@@ -56,6 +56,7 @@ pip install requests beautifulsoup4 matplotlib pandas
 pip install wordcloud   # Optionnel (nuage de mots)
 ```
 <img src="images/1.png" style="max-width:50%; height:auto;">
+
 ---
 
 ## 📓 Notebook Jupyter
@@ -65,6 +66,7 @@ pip install jupyter
 jupyter notebook RAPPORT.ipynb
 ```
 <img src="images/2.png" style="max-width:50%; height:auto;">
+
 ---
 
 ## ✅ Fonctionnalités
@@ -84,5 +86,8 @@ jupyter notebook RAPPORT.ipynb
 | User-Agent réaliste | ✅ |
 | Gestion des erreurs | ✅ |
 
-# Nuages de mots de Cnn le 2026-04-05:23h03
+---
+
 <img src="output/wordcloud.png" style="max-width:50%; height:auto;">
+
+📅 2026-04-05 ⌛ 23h03
