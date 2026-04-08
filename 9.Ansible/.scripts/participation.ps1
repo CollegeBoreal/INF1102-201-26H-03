@@ -6,7 +6,8 @@
 
 param(
     [ValidateSet(1,2,3)]
-    [int]$Group = 1
+    [int]$Group = 1,
+    [switch]$Check
 )
 
 # Import variables from another script (students.ps1)
@@ -62,7 +63,9 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $checks = Get-StudentChecks -Paths $paths
     $url    = Get-GitHubAvatarLink -GitHubID $GitHubID -AvatarID $AvatarID
 
-    # $result = Get-StudentReport -id $StudentID
+    if ($Check) {
+        $result = Get-StudentReport -id $StudentID
+    }
 
     Write-StudentRow `
         -Index $i `

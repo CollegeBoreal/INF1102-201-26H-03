@@ -12,7 +12,7 @@ function Get-StudentReport {
         [string]$id
     )
 
-    $py = "$id/laybook.yml"
+    $py = "$id/playbook.yml"
     $nb = "$id/RAPPORT.ipynb"
 
     # --- IO.py execution ---
