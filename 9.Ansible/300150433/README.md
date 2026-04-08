@@ -38,6 +38,7 @@ L’objectif est de se familiariser avec Ansible et le concept d’Infrastructur
 mkdir -p files
 touch inventory.ini playbook.yml
 touch files/index.html
+```
 
 👉 Cette étape permet de créer les fichiers nécessaires au projet.
 
