@@ -41,20 +41,20 @@ touch files/index.html
 
 👉 Cette étape permet de créer les fichiers nécessaires au projet.
 
-2️⃣ Création de la page web
+###2️⃣ Création de la page web
 
 Une page HTML personnalisée a été créée contenant :
 
 Nom : Djellouli Zakaria
 ID : 300150433
 Cours : Programmation de systèmes
-3️⃣ Configuration de l’inventory
+###3️⃣ Configuration de l’inventory
 [web]
 10.7.237.217 ansible_user=ubuntu
 
 👉 Permet de définir le serveur cible pour Ansible.
 
-4️⃣ Création du playbook
+###4️⃣ Création du playbook
 
 Le playbook permet d’automatiser :
 
@@ -82,12 +82,12 @@ Démarrage du service
         name: nginx
         state: started
         enabled: yes
-5️⃣ Exécution du playbook
+###5️⃣ Exécution du playbook
 ansible-playbook -i inventory.ini playbook.yml
 
 👉 Cette commande exécute toutes les tâches automatiquement.
 
-6️⃣ Vérification du résultat
+###6️⃣ Vérification du résultat
 
 Accès via navigateur :
 
