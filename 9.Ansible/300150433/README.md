@@ -20,13 +20,15 @@ L’objectif est de se familiariser avec Ansible et le concept d’Infrastructur
 
 ## 📁 Structure du projet
 
-
+```
 300150433/
-├── files/
-│ └── index.html
+├──files
+    ├── index.html
+├── images
 ├── inventory.ini
-└── playbook.yml
-
+├── playbook.yml
+└── files/index.html
+```
 
 ---
 
