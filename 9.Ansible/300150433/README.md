@@ -10,9 +10,9 @@
 
 Ce TP a pour but de créer un système automatisé permettant de :
 
-- Installer Nginx sur un serveur distant
-- Déployer une page web personnalisée
-- Démarrer et activer le service Nginx
+- Installer Nginx sur un serveur distant  
+- Déployer une page web personnalisée  
+- Démarrer et activer le service Nginx  
 
 L’objectif est de se familiariser avec Ansible et le concept d’Infrastructure as Code (IaC).
 
@@ -40,17 +40,17 @@ touch inventory.ini playbook.yml
 touch files/index.html
 
 👉 Cette étape permet de créer les fichiers nécessaires au projet.
-<img width="704" height="43" alt="cree les fichiers " src="https://github.com/user-attachments/assets/9336bea6-4b27-4807-bf3e-8315f5bdc583" />
-
 
 2️⃣ Création de la page web
 
 Une page HTML personnalisée a été créée contenant :
 
-<img width="764" height="24" alt="cree le site web" src="https://github.com/user-attachments/assets/4a0c8dff-103d-4b0b-bd08-8307474db13b" />
-
+Nom : Djellouli Zakaria
+ID : 300150433
+Cours : Programmation de systèmes
 3️⃣ Configuration de l’inventory
-<img width="366" height="109" alt="scripts inventory" src="https://github.com/user-attachments/assets/6b0b2ae7-38d8-4032-80d7-247c7935450b" />
+[web]
+10.7.237.217 ansible_user=ubuntu
 
 👉 Permet de définir le serveur cible pour Ansible.
 
@@ -86,8 +86,6 @@ Démarrage du service
 ansible-playbook -i inventory.ini playbook.yml
 
 👉 Cette commande exécute toutes les tâches automatiquement.
-<img width="1358" height="304" alt="lance le playbook" src="https://github.com/user-attachments/assets/edcbd1b4-2441-4307-b778-d8424c9430ae" />
-
 
 6️⃣ Vérification du résultat
 
@@ -95,12 +93,9 @@ Accès via navigateur :
 
 http://10.7.237.217
 
-👉 La page web personnalisée s’affiche correctement
-<img width="1365" height="710" alt="site web" src="https://github.com/user-attachments/assets/96d44920-c284-4d7a-a7ec-da5926cf0a25" />
-
+👉 La page web personnalisée s’affiche correctement.
 
 🧠 Concepts importants
-
 ✔️ Idempotence
 
 Exécuter plusieurs fois le playbook ne change rien si tout est déjà configuré.
