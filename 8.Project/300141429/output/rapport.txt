@@ -1,0 +1,5 @@
+Rapport de taux de change CAD → USD
+=================================
+
+Date : 2026-04-02
+Taux : 1 CAD = 0.71896 USD

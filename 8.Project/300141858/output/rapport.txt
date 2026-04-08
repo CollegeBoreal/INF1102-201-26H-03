@@ -1,0 +1,80 @@
+==============================================================
+ CYBERPULSE INTELLIGENCE - THREAT TREND ANALYSIS REPORT
+==============================================================
+
+1. EXECUTIVE SUMMARY
+--------------------
+Total articles analyzed: 15
+Average cleaned title length: 6.87 words
+Average cleaned summary length: 14.27 words
+Average Cyber Threat Index (CTI): 8.80
+Dominant cyber theme: Identity & Access
+
+2. TOP 10 KEYWORDS
+------------------
+ 1. cloud              7
+ 2. access             6
+ 3. identity           5
+ 4. credentials        4
+ 5. incident           4
+ 6. detection          4
+ 7. phishing           4
+ 8. threat             4
+ 9. applications       4
+10. critical           4
+
+3. THEME DISTRIBUTION
+---------------------
+- Identity & Access        -> 21
+- Data Breach              -> 19
+- Cloud Security           -> 19
+- Phishing                 -> 17
+- AI Security              -> 17
+- Ransomware               -> 15
+- IoT Vulnerabilities      -> 14
+- Resilience & Recovery    -> 13
+- Network Threats          -> 12
+- Privacy & Compliance     -> 9
+
+4. SEVERITY DISTRIBUTION
+------------------------
+- Medium   -> 8
+- Low      -> 6
+- High     -> 1
+
+5. TOP 3 MOST CRITICAL ARTICLES
+-------------------------------
+Article 8 | CTI=19 | High
+Source : CyberDaily
+Theme  : Identity & Access
+Title  : Critical software patch fixes authentication bypass vulnerability
+
+Article 2 | CTI=15 | Medium
+Source : ThreatWire
+Theme  : Ransomware
+Title  : Ransomware campaign disrupts hospital systems and emergency operations
+
+Article 6 | CTI=15 | Medium
+Source : DataSphere
+Theme  : Privacy & Compliance
+Title  : Privacy regulators pressure firms after customer data exposure incident
+
+6. ANALYTICAL INTERPRETATION
+----------------------------
+The analyzed corpus shows a strong concentration of cyber risk narratives around data exposure, ransomware disruption, cloud security, phishing, and identity control. These patterns suggest that modern organizations remain highly exposed to both external attacks and internal control weaknesses.
+
+The severity assessment reveals that the sample is not dominated by low-level awareness topics only. Several articles contain high-risk language such as critical vulnerability, breach, compromise, exposed data, ransomware, and malicious activity, indicating that the dataset captures operationally relevant cyber events.
+
+Cloud environments, identity systems, and sensitive data repositories appear repeatedly, which reflects current enterprise priorities in cybersecurity strategy. In parallel, AI and machine learning emerge as enabling technologies for faster detection, alert triage, and anomaly identification.
+
+7. CONCLUSION
+-------------
+CyberPulse Intelligence demonstrates how a scripting-based workflow can transform a simple collection of news articles into a structured cyber threat analysis product. By combining text preprocessing, thematic scoring, severity assessment, CTI ranking, automated graphics, and reporting, the project delivers a strong prototype for cyber intelligence monitoring.
+
+8. FUTURE IMPROVEMENTS
+----------------------
+- Connect to a real API or RSS feed for live ingestion
+- Add sentiment analysis and named entity extraction
+- Track daily or weekly trends over time
+- Compare multiple publishers and source reliability
+- Export a dashboard-ready dataset for BI tools

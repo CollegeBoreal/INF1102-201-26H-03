@@ -54,6 +54,8 @@ pwsh
 
 ---
 
+<img width="1366" height="768" alt="Capture4" src="https://github.com/user-attachments/assets/f000d8d4-2d11-4801-98c4-05902453e333" />
+
 ## 📁 5. Structure du projet
 
 ```id="w6k2p9"
@@ -174,6 +176,8 @@ Les rapports contiennent :
 * les informations système
 
 ---
+<img width="1011" height="730" alt="verification" src="https://github.com/user-attachments/assets/a3c70a91-1130-496c-bdfc-a84d485407bb" />
+
 
 ## 🧠 13. Conclusion
 
