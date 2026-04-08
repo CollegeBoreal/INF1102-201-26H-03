@@ -118,6 +118,6 @@ jupyter notebook RAPPORT.ipynb
 
 ## Auteur
 
-Étudiant : *(DIABATE AWA ODENDO)*  
+Étudiant :DIABATE AWA ODENDO 
 Cours : INF1102  
 Session : Hiver 2026
