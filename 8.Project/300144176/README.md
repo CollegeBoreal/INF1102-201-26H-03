@@ -6,11 +6,11 @@
 **API utilisée :** [Weatherstack](https://weatherstack.com/) (plan gratuit)  
 ## Structure du projet
 
+
 ```
 300144176/
 │
-├── scripts/<img width="949" height="377" alt="Screenshot 2026-04-08 153601" src="https://github.com/user-attachments/assets/81413fac-55f3-43a4-ad24-f2ab8ad1bb83" />
-
+├── scripts/
 │   ├── analyse.ps1       # Script PowerShell : appel API + lancement Python
 │   └── analyse.py        # Script Python : analyse + graphiques + rapport texte
 │
@@ -25,6 +25,15 @@
 ├── RAPPORT.ipynb         # Rapport Jupyter avec visualisations et analyse
 └── README.md             # Ce fichier
 ```
+
+
+
+
+<img width="949" height="377" alt="Screenshot 2026-04-08 153601" src="https://github.com/user-attachments/assets/640a15d5-df7d-4c61-aec9-612d129b58ea" />
+
+
+
+
 
 ---
 
