@@ -27,8 +27,8 @@ Génère un rapport automatique
 Peut être automatisé (cron / tâche planifiée)
 
  ## 1. Fichiers
-
-    REGEX/
+ 
+REGEX/
 ├── analyse_nginx.ps1           # Script PowerShell complet à exécuter
 ├── analyse_nginx.py            # Script Python complet à exécuter
 ├── rapport_nginx_ps1_YYYY-MM-DD.txt
