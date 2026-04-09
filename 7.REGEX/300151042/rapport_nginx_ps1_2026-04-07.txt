@@ -1,0 +1,17 @@
+===============================
+      RAPPORT D’ANALYSE NGINX
+===============================
+
+Date du rapport : 2026-04-07 21:02:30
+
+Total des requêtes : 2
+Total des erreurs HTTP : 1
+Nombre d’erreurs 404 : 1
+Nombre d’erreurs 500 : 0
+
+Top 5 des adresses IP :
+- 127.0.0.1 : 2 requêtes
+
+Top 5 des pages demandées :
+- / : 1 requête
+- /index.html : 1 requête

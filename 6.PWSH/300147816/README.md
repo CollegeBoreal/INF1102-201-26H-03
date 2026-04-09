@@ -1,4 +1,5 @@
-# Laboratoire — Batch DevOps PowerShell (300147816)
+# Laboratoire — Batch DevOps PowerShell (300147816 - HANANE ZERROUKI)
+
 **🧨 Objectif de laboratoire:**
 
 Ce projet documente l'installation de PowerShell Core sur Ubuntu 22.04 et la création d'un script de surveillance système capable de générer des rapports aux formats **Texte** et **JSON**

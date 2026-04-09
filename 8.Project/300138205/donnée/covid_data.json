@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "source": "disease.sh - Open Disease Data",
+    "endpoint": "https://disease.sh/v3/covid-19",
+    "extracted": "2026-04-05 06:53:59",
+    "pays": [
+      "France",
+      "Canada",
+      "Germany",
+      "Italy",
+      "US"
+    ]
+  },
+  "global": {
+    "type": "global",
+    "date": "2026-04-05 06:53:59",
+    "cases": 704753890,
+    "deaths": 7010681,
+    "recovered": 675619811,
+    "active": 22123398,
+    "critical": 34794,
+    "tests": 7026505313,
+    "population": 7944935131,
+    "updated": "2026-04-05 06:51:37"
+  },
+  "countries": [
+    {
+      "country": "France",
+      "countryCode": "FR",
+      "continent": "Europe",
+      "cases": 40138560,
+      "todayCases": 0,
+      "deaths": 167642,
+      "todayDeaths": 0,
+      "recovered": 39970918,
+      "todayRecovered": 0,
+      "active": 0,
+      "critical": 0,
+      "casesPerMillion": 612013,
+      "deathsPerMillion": 2556,
+      "tests": 271490188,
+      "testsPerMillion": 4139547,
+      "population": 65584518,
+      "mortalityRate": 0.42,
+      "recoveryRate": 99.58
+    },
+    {
+      "country": "Canada",
+      "countryCode": "CA",
+      "continent": "North America",
+      "cases": 4946090,
+      "todayCases": 0,
+      "deaths": 59034,
+      "todayDeaths": 0,
+      "recovered": 4881312,
+      "todayRecovered": 350,
+      "active": 5744,
+      "critical": 99,
+      "casesPerMillion": 128843,
+      "deathsPerMillion": 1538,
+      "tests": 66572774,
+      "testsPerMillion": 1734189,
+      "population": 38388419,
+      "mortalityRate": 1.19,
+      "recoveryRate": 98.69
+    },
+    {
+      "country": "Germany",
+      "countryCode": "DE",
+      "continent": "Europe",
+      "cases": 38828995,
+      "todayCases": 0,
+      "deaths": 183027,
+      "todayDeaths": 0,
+      "recovered": 38240600,
+      "todayRecovered": 0,
+      "active": 405368,
+      "critical": 0,
+      "casesPerMillion": 462891,
+      "deathsPerMillion": 2182,
+      "tests": 122332384,
+      "testsPerMillion": 1458359,
+      "population": 83883596,
+      "mortalityRate": 0.47,
+      "recoveryRate": 98.48
+    },
+    {
+      "country": "Italy",
+      "countryCode": "IT",
+      "continent": "Europe",
+      "cases": 26723249,
+      "todayCases": 0,
+      "deaths": 196487,
+      "todayDeaths": 0,
+      "recovered": 26361218,
+      "todayRecovered": 0,
+      "active": 165544,
+      "critical": 22,
+      "casesPerMillion": 443445,
+      "deathsPerMillion": 3261,
+      "tests": 281126449,
+      "testsPerMillion": 4665010,
+      "population": 60262770,
+      "mortalityRate": 0.74,
+      "recoveryRate": 98.65
+    },
+    {
+      "country": "USA",
+      "countryCode": "US",
+      "continent": "North America",
+      "cases": 111820082,
+      "todayCases": 0,
+      "deaths": 1219487,
+      "todayDeaths": 0,
+      "recovered": 109814428,
+      "todayRecovered": 0,
+      "active": 786167,
+      "critical": 940,
+      "casesPerMillion": 333985,
+      "deathsPerMillion": 3642,
+      "tests": 1186851502,
+      "testsPerMillion": 3544901,
+      "population": 334805269,
+      "mortalityRate": 1.09,
+      "recoveryRate": 98.21
+    }
+  ],
+  "historical": [
+    {
+      "date": "2/8/23",
+      "cases": 39757008,
+      "deaths": 165541,
+      "recovered": 0
+    },
+    {
+      "date": "2/9/23",
+      "cases": 39760676,
+      "deaths": 165558,
+      "recovered": 0
+    },
+    {
+      "date": "2/10/23",
+      "cases": 39764042,
+      "deaths": 165578,
+      "recovered": 0
+    },
+    {
+      "date": "2/11/23",
+      "cases": 39764042,
+      "deaths": 165578,
+      "recovered": 0
+    },
+    {
+      "date": "2/12/23",
+      "cases": 39764042,
+      "deaths": 165578,
+      "recovered": 0
+    },
+    {
+      "date": "2/13/23",
+      "cases": 39770404,
+      "deaths": 165628,
+      "recovered": 0
+    },
+    {
+      "date": "2/14/23",
+      "cases": 39775390,
+      "deaths": 165663,
+      "recovered": 0
+    },
+    {
+      "date": "2/15/23",
+      "cases": 39779373,
+      "deaths": 165698,
+      "recovered": 0
+    },
+    {
+      "date": "2/16/23",
+      "cases": 39783394,
+      "deaths": 165725,
+      "recovered": 0
+    },
+    {
+      "date": "2/17/23",
+      "cases": 39786983,
+      "deaths": 165753,
+      "recovered": 0
+    },
+    {
+      "date": "2/18/23",
+      "cases": 39786983,
+      "deaths": 165753,
+      "recovered": 0
+    },
+    {
+      "date": "2/19/23",
+      "cases": 39786983,
+      "deaths": 165753,
+      "recovered": 0
+    },
+    {
+      "date": "2/20/23",
+      "cases": 39795116,
+      "deaths": 165800,
+      "recovered": 0
+    },
+    {
+      "date": "2/21/23",
+      "cases": 39800890,
+      "deaths": 165832,
+      "recovered": 0
+    },
+    {
+      "date": "2/22/23",
+      "cases": 39805492,
+      "deaths": 165870,
+      "recovered": 0
+    },
+    {
+      "date": "2/23/23",
+      "cases": 39809981,
+      "deaths": 165889,
+      "recovered": 0
+    },
+    {
+      "date": "2/24/23",
+      "cases": 39813898,
+      "deaths": 165918,
+      "recovered": 0
+    },
+    {
+      "date": "2/25/23",
+      "cases": 39813898,
+      "deaths": 165918,
+      "recovered": 0
+    },
+    {
+      "date": "2/26/23",
+      "cases": 39813898,
+      "deaths": 165918,
+      "recovered": 0
+    },
+    {
+      "date": "2/27/23",
+      "cases": 39821524,
+      "deaths": 165970,
+      "recovered": 0
+    },
+    {
+      "date": "2/28/23",
+      "cases": 39827175,
+      "deaths": 166004,
+      "recovered": 0
+    },
+    {
+      "date": "3/1/23",
+      "cases": 39831700,
+      "deaths": 166029,
+      "recovered": 0
+    },
+    {
+      "date": "3/2/23",
+      "cases": 39835896,
+      "deaths": 166050,
+      "recovered": 0
+    },
+    {
+      "date": "3/3/23",
+      "cases": 39839090,
+      "deaths": 166071,
+      "recovered": 0
+    },
+    {
+      "date": "3/4/23",
+      "cases": 39839090,
+      "deaths": 166071,
+      "recovered": 0
+    },
+    {
+      "date": "3/5/23",
+      "cases": 39839090,
+      "deaths": 166071,
+      "recovered": 0
+    },
+    {
+      "date": "3/6/23",
+      "cases": 39847236,
+      "deaths": 166114,
+      "recovered": 0
+    },
+    {
+      "date": "3/7/23",
+      "cases": 39854299,
+      "deaths": 166138,
+      "recovered": 0
+    },
+    {
+      "date": "3/8/23",
+      "cases": 39860410,
+      "deaths": 166165,
+      "recovered": 0
+    },
+    {
+      "date": "3/9/23",
+      "cases": 39866718,
+      "deaths": 166176,
+      "recovered": 0
+    }
+  ]
+}
