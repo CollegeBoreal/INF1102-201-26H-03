@@ -28,15 +28,7 @@ Peut être automatisé (cron / tâche planifiée)
 
  ## 1. Fichiers
  
-REGEX/
 
-├── analyse_nginx.ps1       
-                                            # Script PowerShell complet à exécuter
-├── analyse_nginx.py       
-                                            # Script Python complet à exécuter
-├── rapport_nginx_ps1_YYYY-MM-DD.txt
-
-└── rapport_nginx_py_YYYY-MM-DD.txt
 
 
 ##  Connexion au serveur (réussie)
