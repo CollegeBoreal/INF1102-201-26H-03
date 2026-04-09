@@ -1,25 +1,5 @@
 #!/usr/bin/env pwsh
 
-function Num-ToEmoji {
-    param (
-        [int]$n
-    )
-
-    switch ($n) {
-        0 { ":zero:" }
-        1 { ":one:" }
-        2 { ":two:" }
-        3 { ":three:" }
-        4 { ":four:" }
-        5 { ":five:" }
-        6 { ":six:" }
-        7 { ":seven:" }
-        8 { ":eight:" }
-        9 { ":nine:" }
-        default { ":keycap_ten:" }
-    }
-}
-
 function Test-ItemExists {
     param(
         [string]$Path
@@ -40,10 +20,8 @@ function Get-StudentPaths {
     return @{
         README   = "$StudentID/README.md"
         Images   = "$StudentID/images"
-        PY       = "$StudentID/playbook.yml"
-        NB       = "$StudentID/inventory.ini"
-        IN       = "$StudentID/files/index.html"
-        OUT      = "/var/www/html/index.nginx-debian.html"
+        PB       = "$StudentID/playbook.yml"
+        INI      = "$StudentID/inventory.ini"
     }
 }
 
@@ -55,25 +33,22 @@ function Get-StudentChecks {
     return @{
         README = Test-CommonItemExists -Path $Paths.README -IsReadme
         Images = Test-CommonItemExists -Path $Paths.Images
-        PY     = Test-ItemExists -Path $Paths.PY
-        NB     = Test-ItemExists -Path $Paths.NB
-        IN     = Test-ItemExists -Path $Paths.IN
-        OUT    = Test-ItemExists -Path $Paths.OUT
+        PB     = Test-ItemExists -Path $Paths.PB
+        INI    = Test-ItemExists -Path $Paths.INI
     }
 }
 
 function Test-AllRequiredFilesPresent {
     param(
-        [hashtable]$Checks
+        [hashtable]$Checks,
+        [PSCustomObject]$Result
     )
 
     return (
-        $Checks.README -eq ":1st_place_medal:" -or ":2nd_place_medal:" -and
-        $Checks.Images -eq ":heavy_check_mark:" -and
-        $Checks.PY     -eq ":heavy_check_mark:" -and
-        $Checks.NB     -eq ":heavy_check_mark:" -and
-        $Checks.IN     -eq ":heavy_check_mark:" -and
-        $Checks.OUT    -eq ":heavy_check_mark:"
+        $Checks.README      -eq ":1st_place_medal:" -or ":2nd_place_medal:" -and
+        $Checks.Images      -eq ":heavy_check_mark:" -and
+        $Result.execPyIcon  -eq ":rocket:" -and
+        $Checks.INI         -eq ":heavy_check_mark:"
     )
 }
 
@@ -82,8 +57,8 @@ function Write-PresenceHeader {
     Write-Output "## :a: Présence"
     Write-Output ""
 
-    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: analyse.py | analyse.ps1 | rapport.txt | :link: SSH |"
-    Write-Output "|------|-------------|-----------|--------|---------------------|-------------|-------------|------------|"
+    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini |"
+    Write-Output "|------|-------------|-----------|--------|-----------------------|-------------------------------|"
 }
 
 
@@ -94,11 +69,11 @@ function Write-StudentRow {
         [string]$GitHubLink,
         [hashtable]$Checks,
         [PSCustomObject]$Result,
-        [string]$INPath,
-        [string]$OUTPath,
+        [string]$PBPath,
+        [string]$INIPath,
         [string]$ReadmePath
     )
 
-    Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.IO_Exec)](../$INPath) | [$($Checks.OUT)](../$OUTPath) |  |"
+    Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Result.IO_Exec)](../$PBPath) | [$($Checks.INI)](../$INIPath) |  |"
 }
 

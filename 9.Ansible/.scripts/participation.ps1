@@ -63,6 +63,10 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $checks = Get-StudentChecks -Paths $paths
     $url    = Get-GitHubAvatarLink -GitHubID $GitHubID -AvatarID $AvatarID
 
+    $result = [PSCustomObject]@{
+        Id            = $StudentID
+        IO_Exec       = ":grey_question:"
+    }
     if ($Check) {
         $result = Get-StudentReport -id $StudentID
     }
@@ -73,8 +77,8 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
         -GitHubLink $url `
         -Checks $checks `
         -Result $result `
-        -INPath $paths.IN `
-        -OUTPath $paths.OUT `
+        -PBPath $paths.PB `
+        -INIPath $paths.INI `
         -ReadmePath $paths.README
 
     if (Test-AllRequiredFilesPresent -Checks $checks) {
