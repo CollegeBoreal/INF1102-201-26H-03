@@ -15,15 +15,36 @@
 
 **Professeur** : Brice Robert
 
-**Date de remise** : 01/04/2026
+**Date de remise** : 09/04/2026
 
 
+## Objectif
+Créer un script qui :
 
-## ✅ Connexion au serveur (réussie)
+Analyse /var/log/nginx/access.log
+Utilise des expressions régulières
+Génère un rapport automatique
+Peut être automatisé (cron / tâche planifiée)
+
+ ## 1. Fichiers
+
+    REGEX/
+├── analyse_nginx.ps1           # Script PowerShell complet à exécuter
+├── analyse_nginx.py            # Script Python complet à exécuter
+├── rapport_nginx_ps1_YYYY-MM-DD.txt
+└── rapport_nginx_py_YYYY-MM-DD.txt
+
+
+##  Connexion au serveur (réussie)
 
 ```bash
 ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty ubuntu@10.7.237.223
 ```
+
+<img width="1491" height="715" alt="1" src="https://github.com/user-attachments/assets/c22e00c4-c717-493c-b95e-aae142d0ae38" />
+
+<img width="1491" height="98" alt="1 1" src="https://github.com/user-attachments/assets/d6a2b245-43d1-494d-ab9f-7fe58be2eb5c" />
+
 
 ###  Résultat obtenu
 
@@ -36,6 +57,20 @@ ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/s
 * L’environnement Linux est accessible pour exécuter les scripts
 
 ---
+
+## PARTIE 1 — Script PowerShell
+
+```bash
+nano analyse_nginx.ps1
+```
+
+<img width="767" height="69" alt="2" src="https://github.com/user-attachments/assets/6c83749d-9c30-4593-bfbc-d69df346f9c5" />
+
+
+## Dans l'éditeur nano, j'ai collé ceci:
+
+<img width="1477" height="755" alt="ps1" src="https://github.com/user-attachments/assets/cf6706a0-4139-4d36-bf38-7d58ff227b88" />
+
 
 ## Exécution du script Python
 
