@@ -89,9 +89,6 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 
 ---
 
-<img width="1477" height="755" alt="ps1" src="https://github.com/user-attachments/assets/cf6706a0-4139-4d36-bf38-7d58ff227b88" />
-
-
 ### 2.2 Exécution du script PowerShell
 
 ```powershell
