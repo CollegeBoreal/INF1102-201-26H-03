@@ -205,6 +205,8 @@ crontab -e
 grep CRON /var/log/syslog
 ```
 
+<img width="1471" height="703" alt="126" src="https://github.com/user-attachments/assets/0be97be7-1041-4ce8-bfc2-2f228ebd888e" />
+
 * **Résultat attendu :** Présence de lignes montrant l’exécution de la tâche
 
   * Exemple : `(ubuntu) CMD (/home/ubuntu/REGEX/analyse_nginx.sh)`
