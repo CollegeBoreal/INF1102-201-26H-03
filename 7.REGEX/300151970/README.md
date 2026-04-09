@@ -1,7 +1,7 @@
 **TP 7 — Analyse des logs Nginx (Regex)**
 
 
-## 👤 Étudiant**
+## 👤 Étudiant
 
 **Nom et Prénoms** : Babatundé Adissa Fadolle Arouna
 
