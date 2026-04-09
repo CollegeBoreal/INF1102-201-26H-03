@@ -186,12 +186,15 @@ python3 REGEX/analyse_nginx.py
 ```bash
 crontab -e
 ```
+<img width="1478" height="70" alt="124" src="https://github.com/user-attachments/assets/0eb6857b-e6f2-42d6-830b-f89379b80457" />
 
 * **Exemple d’entrée pour exécution quotidienne à 02h00 :**
 
 ```cron
 0 2 * * * /home/ubuntu/REGEX/analyse_nginx.sh
 ```
+<img width="1488" height="756" alt="Crontab -e" src="https://github.com/user-attachments/assets/92f85a34-4c45-4960-b735-327f25645f9e" />
+
 
 * **Résultat attendu :** Tâche cron installée correctement
 * **Commentaire :** Le script sera exécuté automatiquement tous les jours à 2h
