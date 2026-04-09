@@ -89,6 +89,8 @@ projet_musique/
 API Last.fm
 Documentation matplotlib
 
+![Graphique Top Artistes](output/graph.png)
+
 
 ---
 
