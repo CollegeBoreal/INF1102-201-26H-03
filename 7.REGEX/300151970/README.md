@@ -45,7 +45,7 @@ ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/s
 ### 2.1 Création du fichier avec nano
 
 ```bash
-nano REGEX/analyse_nginx.ps1
+nano analyse_nginx.ps1
 ```
 
 <img width="767" height="69" alt="2" src="https://github.com/user-attachments/assets/6c83749d-9c30-4593-bfbc-d69df346f9c5" />
@@ -92,7 +92,7 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 ### 2.2 Exécution du script PowerShell
 
 ```powershell
-pwsh REGEX/analyse_nginx.ps1
+ pwsh REGEX/analyse_nginx.ps1
 ```
 
 <img width="1480" height="60" alt="10" src="https://github.com/user-attachments/assets/e8cd6787-f12e-4ef0-a0d8-0d6e9ad79289" />
@@ -117,6 +117,8 @@ pwsh REGEX/analyse_nginx.ps1
 ```bash
 nano REGEX/analyse_nginx.py
 ```
+
+<img width="1472" height="47" alt="11" src="https://github.com/user-attachments/assets/9ba084f0-c541-47a5-9dd0-2286979eb557" />
 
 * **Contenu collé dans nano :**
 
@@ -167,6 +169,8 @@ with open(rapport, 'w') as f:
 ```bash
 python3 REGEX/analyse_nginx.py
 ```
+
+<img width="1483" height="51" alt="123" src="https://github.com/user-attachments/assets/3fb1dd0e-f2dc-4573-94bd-132054aa4ca2" />
 
 * **Résultat attendu :**
 
