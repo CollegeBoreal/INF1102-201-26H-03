@@ -43,7 +43,7 @@ wsl
 ```
 <img src="images/.png" style="max-width:50%; height:auto;">
 
-Installé Ansible :
+Installer Ansible :
 
 ```bash
 sudo apt update
