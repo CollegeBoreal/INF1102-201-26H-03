@@ -95,6 +95,9 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 pwsh REGEX/analyse_nginx.ps1
 ```
 
+<img width="1480" height="60" alt="10" src="https://github.com/user-attachments/assets/e8cd6787-f12e-4ef0-a0d8-0d6e9ad79289" />
+
+
 * **Résultat attendu :**
 
   * ✅ Rapport généré : `REGEX/rapport_nginx_ps1_2026-04-09.txt`
