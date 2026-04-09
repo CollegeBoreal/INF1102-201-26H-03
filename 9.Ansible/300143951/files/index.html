@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Map Optimun — Création Web & Référencement Google</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream: #f5f0e8;
+      --gold:  #c9a84c;
+      --gold2: #e8c96a;
+      --ink:   #0d0d0d;
+      --charcoal: #1a1a1a;
+      --mid:   #2e2e2e;
+      --muted: #8a8474;
+      --white: #fdfcfa;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--ink);
+      color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* ─── CUSTOM CURSOR ─────────────────────────────── */
+    #cursor {
+      position: fixed; top: 0; left: 0; z-index: 9999;
+      pointer-events: none;
+    }
+    .cur-ring {
+      position: absolute; width: 36px; height: 36px;
+      border: 1px solid var(--gold); border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease, width 0.3s, height 0.3s, opacity 0.3s;
+    }
+    .cur-dot {
+      position: absolute; width: 5px; height: 5px;
+      background: var(--gold); border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    body:hover .cur-ring { opacity: 1; }
+
+    /* ─── NOISE OVERLAY ─────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 1;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+    }
+
+    /* ─── NAV ───────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.8rem 4rem;
+      mix-blend-mode: normal;
+      transition: background 0.5s;
+    }
+    nav.scrolled { background: rgba(13,13,13,0.92); backdrop-filter: blur(12px); }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 300; letter-spacing: 0.12em;
+      color: var(--cream); text-decoration: none;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-family: 'DM Sans', sans-serif; font-size: 0.78rem;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      position: relative; transition: color 0.3s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -3px; left: 0;
+      width: 0; height: 1px; background: var(--gold);
+      transition: width 0.4s ease;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta {
+      font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 0.65rem 1.6rem; border: 1px solid var(--gold);
+      color: var(--gold); text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--ink); }
+
+    /* ─── HERO ──────────────────────────────────────── */
+    #hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 0 4rem; overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=1800&q=80') center/cover no-repeat;
+      filter: brightness(0.18) saturate(0.5);
+      transform: scale(1.05);
+      animation: heroZoom 12s ease-out forwards;
+    }
+    @keyframes heroZoom { to { transform: scale(1); } }
+
+    .hero-line {
+      position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      animation: lineSlide 2s ease forwards;
+    }
+    @keyframes lineSlide { from { opacity: 0; transform: scaleY(0); } to { opacity: 1; transform: scaleY(1); } }
+
+    .hero-content { position: relative; z-index: 2; max-width: 820px; }
+
+    .hero-tag {
+      display: inline-block; font-family: 'Space Mono', monospace;
+      font-size: 0.7rem; letter-spacing: 0.25em; color: var(--gold);
+      margin-bottom: 2rem; opacity: 0;
+      animation: fadeUp 0.9s 0.4s ease forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 7.5rem);
+      font-weight: 300; line-height: 0.95;
+      letter-spacing: -0.01em;
+      opacity: 0; animation: fadeUp 1s 0.7s ease forwards;
+    }
+    .hero-title em { font-style: italic; color: var(--gold); }
+
+    .hero-sub {
+      margin-top: 2.5rem; font-size: 1rem; font-weight: 300;
+      color: var(--muted); max-width: 480px; line-height: 1.8;
+      opacity: 0; animation: fadeUp 1s 1s ease forwards;
+    }
+
+    .hero-actions {
+      display: flex; align-items: center; gap: 2.5rem; margin-top: 3.5rem;
+      opacity: 0; animation: fadeUp 1s 1.3s ease forwards;
+    }
+    .btn-primary {
+      display: inline-block; padding: 1rem 2.5rem;
+      background: var(--gold); color: var(--ink);
+      font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; font-weight: 500;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    .btn-ghost {
+      font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      display: flex; align-items: center; gap: 0.7rem;
+      transition: color 0.3s;
+    }
+    .btn-ghost::after { content: '→'; transition: transform 0.3s; }
+    .btn-ghost:hover { color: var(--cream); }
+    .btn-ghost:hover::after { transform: translateX(5px); }
+
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 0.8rem;
+      opacity: 0; animation: fadeIn 1s 2s forwards;
+    }
+    .scroll-line {
+      width: 1px; height: 60px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+    /* ─── MARQUEE ───────────────────────────────────── */
+    .marquee-wrap {
+      border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid);
+      overflow: hidden; padding: 1.2rem 0; background: var(--charcoal);
+    }
+    .marquee-track {
+      display: flex; gap: 3rem; white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+    .marquee-track span {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
+      font-style: italic; color: var(--muted); flex-shrink: 0;
+    }
+    .marquee-track span.dot { color: var(--gold); font-style: normal; }
+    @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+    /* ─── SECTIONS COMMUNES ─────────────────────────── */
+    section { padding: 8rem 4rem; }
+    .section-label {
+      font-family: 'Space Mono', monospace; font-size: 0.65rem;
+      letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 300; line-height: 1.1;
+    }
+    .section-title em { font-style: italic; color: var(--gold); }
+
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.9s ease, transform 0.9s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── SERVICES ──────────────────────────────────── */
+    #services { background: var(--charcoal); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; margin-top: 5rem;
+      border: 1px solid var(--mid);
+    }
+    .service-card {
+      padding: 3rem; border-right: 1px solid var(--mid);
+      position: relative; overflow: hidden;
+      transition: background 0.4s;
+    }
+    .service-card:last-child { border-right: none; }
+    .service-card::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(201,168,76,0.08), transparent);
+      opacity: 0; transition: opacity 0.4s;
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-card:hover { background: rgba(201,168,76,0.04); }
+
+    .service-num {
+      font-family: 'Space Mono', monospace; font-size: 0.65rem;
+      color: var(--gold); letter-spacing: 0.2em; margin-bottom: 2rem;
+    }
+    .service-icon {
+      font-size: 2rem; margin-bottom: 1.5rem; display: block;
+    }
+    .service-name {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.7rem;
+      font-weight: 400; margin-bottom: 1rem; line-height: 1.2;
+    }
+    .service-desc {
+      font-size: 0.88rem; color: var(--muted); line-height: 1.8;
+    }
+    .service-arrow {
+      display: block; margin-top: 2rem; color: var(--gold);
+      font-size: 1.2rem; transition: transform 0.3s;
+    }
+    .service-card:hover .service-arrow { transform: translateX(8px); }
+
+    /* ─── ABOUT / PHOTO ─────────────────────────────── */
+    #about {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8rem; align-items: center; padding: 8rem 4rem;
+    }
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img {
+      width: 100%; aspect-ratio: 3/4; object-fit: cover;
+      filter: grayscale(30%); display: block;
+    }
+    .about-img-accent {
+      position: absolute; bottom: -1.5rem; right: -1.5rem;
+      width: 60%; aspect-ratio: 1;
+      object-fit: cover; border: 4px solid var(--ink);
+      filter: grayscale(50%);
+    }
+    .about-badge {
+      position: absolute; top: -1.5rem; left: -1.5rem;
+      background: var(--gold); color: var(--ink);
+      padding: 1.2rem; font-family: 'Space Mono', monospace;
+      font-size: 0.65rem; text-align: center; letter-spacing: 0.1em;
+      line-height: 1.6;
+    }
+    .about-text { font-size: 1.05rem; color: var(--muted); line-height: 1.9; margin-top: 2rem; }
+    .about-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 3rem;
+      font-weight: 300; color: var(--gold); line-height: 1;
+    }
+    .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.4rem; letter-spacing: 0.1em; }
+
+    /* ─── PORTFOLIO ─────────────────────────────────── */
+    #portfolio { background: var(--charcoal); }
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto; gap: 1.5rem; margin-top: 4rem;
+    }
+    .port-item {
+      overflow: hidden; position: relative;
+    }
+    .port-item:nth-child(1) { grid-column: 1/8; grid-row: 1; }
+    .port-item:nth-child(2) { grid-column: 8/13; grid-row: 1; }
+    .port-item:nth-child(3) { grid-column: 1/5; grid-row: 2; }
+    .port-item:nth-child(4) { grid-column: 5/13; grid-row: 2; }
+
+    .port-item img {
+      width: 100%; height: 320px; object-fit: cover; display: block;
+      filter: grayscale(40%) brightness(0.85);
+      transition: transform 0.7s ease, filter 0.5s;
+    }
+    .port-item:nth-child(1) img,
+    .port-item:nth-child(4) img { height: 420px; }
+    .port-item:hover img { transform: scale(1.04); filter: grayscale(0%) brightness(0.9); }
+
+    .port-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,13,13,0.85) 0%, transparent 50%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 2rem; opacity: 0; transition: opacity 0.4s;
+    }
+    .port-item:hover .port-overlay { opacity: 1; }
+    .port-cat { font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .port-name { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; }
+
+    /* ─── PROCESS ───────────────────────────────────── */
+    #process { overflow: hidden; }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; margin-top: 5rem; position: relative;
+    }
+    .process-steps::before {
+      content: ''; position: absolute;
+      top: 2rem; left: 1rem; right: 1rem; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .step { padding: 0 2rem; padding-top: 5rem; position: relative; }
+    .step-dot {
+      position: absolute; top: calc(2rem - 5px); left: 2rem;
+      width: 10px; height: 10px; border-radius: 50%; background: var(--gold);
+      box-shadow: 0 0 20px var(--gold);
+    }
+    .step-num {
+      font-family: 'Space Mono', monospace; font-size: 0.65rem;
+      color: var(--gold); letter-spacing: 0.2em; margin-bottom: 1.2rem;
+    }
+    .step-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;
+      font-weight: 400; margin-bottom: 1rem;
+    }
+    .step-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.8; }
+
+    /* ─── TESTIMONIAL ───────────────────────────────── */
+    #testimonials { background: var(--charcoal); text-align: center; }
+    .testimonial-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+      font-weight: 300; font-style: italic;
+      line-height: 1.5; max-width: 860px; margin: 3rem auto 2.5rem;
+      color: var(--cream);
+    }
+    .testimonial-author {
+      font-family: 'Space Mono', monospace; font-size: 0.65rem;
+      letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold);
+    }
+    .testimonial-avatar {
+      width: 56px; height: 56px; border-radius: 50%;
+      object-fit: cover; margin: 1.5rem auto 0.8rem;
+      border: 2px solid var(--gold);
+    }
+    .t-stars { color: var(--gold); letter-spacing: 0.1em; margin-bottom: 2rem; }
+
+    /* ─── CONTACT ───────────────────────────────────── */
+    #contact {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8rem; align-items: start;
+    }
+    .contact-info .section-title { margin-bottom: 2rem; }
+    .contact-desc { font-size: 1rem; color: var(--muted); line-height: 1.9; margin-bottom: 3rem; }
+    .contact-line {
+      display: flex; align-items: flex-start; gap: 1.2rem; margin-bottom: 1.8rem;
+    }
+    .contact-line-icon { color: var(--gold); font-size: 1.1rem; margin-top: 0.1rem; }
+    .contact-line-text { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+    .contact-line-text strong { color: var(--cream); display: block; font-weight: 400; margin-bottom: 0.2rem; }
+
+    .contact-form { padding-top: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.2rem; }
+    .form-group label {
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--charcoal); border: 1px solid var(--mid);
+      color: var(--cream); padding: 1rem 1.2rem;
+      font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 300;
+      outline: none; transition: border-color 0.3s;
+      appearance: none; resize: none;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--gold); }
+    .form-group textarea { height: 140px; }
+
+    .form-submit {
+      width: 100%; padding: 1.2rem;
+      background: var(--gold); color: var(--ink);
+      border: none; cursor: pointer;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8rem;
+      font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .form-submit:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    .form-note { font-size: 0.72rem; color: var(--muted); margin-top: 1rem; text-align: center; }
+
+    /* ─── FOOTER ────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--mid); padding: 4rem;
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--charcoal);
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;
+      font-weight: 300; letter-spacing: 0.1em; color: var(--cream);
+    }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a { font-size: 0.75rem; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.72rem; color: var(--muted); }
+
+    /* ─── KEYFRAMES ─────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(30px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+  </style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor">
+  <div class="cur-ring" id="curRing"></div>
+  <div class="cur-dot"  id="curDot"></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">Map<span>.</span>Optimun</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#portfolio">Réalisations</a></li>
+    <li><a href="#process">Processus</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Démarrer un projet</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag">✦ Agence digitale premium</div>
+    <h1 class="hero-title">
+      Votre présence<br/>
+      <em>web, réinventée</em>
+    </h1>
+    <p class="hero-sub">
+      Nous concevons des expériences numériques qui convertissent.
+      Création de sites, référencement Google et stratégie digitale pour les marques qui souhaitent dominer leur marché.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">Obtenir un audit gratuit</a>
+      <a class="btn-ghost" href="#portfolio">Voir nos projets</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Découvrir</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Création Web</span><span class="dot">✦</span>
+    <span>Référencement SEO</span><span class="dot">✦</span>
+    <span>Design UX/UI</span><span class="dot">✦</span>
+    <span>Google Ads</span><span class="dot">✦</span>
+    <span>E-commerce</span><span class="dot">✦</span>
+    <span>Stratégie Digitale</span><span class="dot">✦</span>
+    <span>Refonte de site</span><span class="dot">✦</span>
+    <span>Audit SEO</span><span class="dot">✦</span>
+    <!-- duplicate for seamless loop -->
+    <span>Création Web</span><span class="dot">✦</span>
+    <span>Référencement SEO</span><span class="dot">✦</span>
+    <span>Design UX/UI</span><span class="dot">✦</span>
+    <span>Google Ads</span><span class="dot">✦</span>
+    <span>E-commerce</span><span class="dot">✦</span>
+    <span>Stratégie Digitale</span><span class="dot">✦</span>
+    <span>Refonte de site</span><span class="dot">✦</span>
+    <span>Audit SEO</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="reveal">
+    <div class="section-label">✦ Ce que nous faisons</div>
+    <h2 class="section-title">Des services pensés<br/><em>pour votre croissance</em></h2>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <span class="service-icon">◈</span>
+      <div class="service-name">Création<br/>de sites web</div>
+      <p class="service-desc">Sites vitrines, portfolios et plateformes sur-mesure. Chaque pixel est pensé pour convertir vos visiteurs en clients.</p>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <span class="service-icon">◉</span>
+      <div class="service-name">Référencement<br/>Google (SEO)</div>
+      <p class="service-desc">Audit complet, optimisation on-page, netlinking et suivi mensuel. Nous vous positionnons là où vos clients cherchent.</p>
+      <span class="service-arrow">→</span>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <span class="service-icon">◇</span>
+      <div class="service-name">Design<br/>UX / UI</div>
+      <p class="service-desc">Interfaces épurées, ergonomiques et mémorables. Parce qu'un bon design est invisible — mais son absence, elle, se remarque.</p>
+      <span class="service-arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-img-wrap reveal">
+    <img class="about-img"
+         src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&q=80"
+         alt="Équipe Map Optimun"/>
+    <img class="about-img-accent"
+         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80"
+         alt="Travail en équipe"/>
+    <div class="about-badge">
+      Fondée<br/>en 2019<br/>✦<br/>Toronto
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="section-label">✦ Qui sommes-nous</div>
+    <h2 class="section-title">L'expertise<br/><em>au service</em><br/>de votre vision</h2>
+    <p class="about-text">
+      Map Optimun est une agence digitale indépendante spécialisée dans la création de sites web performants et le référencement Google. Nous croyons qu'une stratégie digitale réussie naît de la rencontre entre un design fort et une visibilité organique maîtrisée.
+    </p>
+    <div class="about-stats">
+      <div>
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Projets livrés</div>
+      </div>
+      <div>
+        <div class="stat-num">98%</div>
+        <div class="stat-label">Clients satisfaits</div>
+      </div>
+      <div>
+        <div class="stat-num">5 ans</div>
+        <div class="stat-label">D'expérience</div>
+      </div>
+      <div>
+        <div class="stat-num">#1</div>
+        <div class="stat-label">Résultats Google obtenus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="reveal">
+    <div class="section-label">✦ Nos réalisations</div>
+    <h2 class="section-title">Des projets qui<br/><em>parlent d'eux-mêmes</em></h2>
+  </div>
+  <div class="portfolio-grid reveal">
+    <div class="port-item">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80" alt="Projet Lumière"/>
+      <div class="port-overlay">
+        <div class="port-cat">E-commerce · SEO</div>
+        <div class="port-name">Lumière Studio</div>
+      </div>
+    </div>
+    <div class="port-item">
+      <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=700&q=80" alt="Projet Nex"/>
+      <div class="port-overlay">
+        <div class="port-cat">Site vitrine</div>
+        <div class="port-name">Nex Architecture</div>
+      </div>
+    </div>
+    <div class="port-item">
+      <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=700&q=80" alt="Projet Verta"/>
+      <div class="port-overlay">
+        <div class="port-cat">Refonte · SEO</div>
+        <div class="port-name">Verta Finance</div>
+      </div>
+    </div>
+    <div class="port-item">
+      <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=900&q=80" alt="Projet Oré"/>
+      <div class="port-overlay">
+        <div class="port-cat">UX · Google Ads</div>
+        <div class="port-name">Oré Cosmétique</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="reveal">
+    <div class="section-label">✦ Notre méthode</div>
+    <h2 class="section-title">Un processus<br/><em>clair et efficace</em></h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="step">
+      <div class="step-dot"></div>
+      <div class="step-num">01</div>
+      <div class="step-title">Découverte</div>
+      <p class="step-desc">Audit de votre situation actuelle, analyse de la concurrence, définition de vos objectifs.</p>
+    </div>
+    <div class="step">
+      <div class="step-dot"></div>
+      <div class="step-num">02</div>
+      <div class="step-title">Stratégie</div>
+      <p class="step-desc">Conception du plan digital : architecture, mots-clés, positionnement et calendrier éditorial.</p>
+    </div>
+    <div class="step">
+      <div class="step-dot"></div>
+      <div class="step-num">03</div>
+      <div class="step-title">Création</div>
+      <p class="step-desc">Design, développement et optimisation technique pour une performance maximale.</p>
+    </div>
+    <div class="step">
+      <div class="step-dot"></div>
+      <div class="step-num">04</div>
+      <div class="step-title">Croissance</div>
+      <p class="step-desc">Suivi mensuel, reporting SEO, ajustements continus pour maintenir et améliorer vos positions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section id="testimonials">
+  <div class="reveal">
+    <div class="section-label">✦ Ils nous font confiance</div>
+    <div class="t-stars">★ ★ ★ ★ ★</div>
+    <blockquote class="testimonial-quote">
+      « Map Optimun a transformé notre visibilité en ligne. En trois mois, notre trafic organique a doublé et nos demandes de contact ont explosé. »
+    </blockquote>
+    <img class="testimonial-avatar"
+         src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&q=80"
+         alt="Sophia R."/>
+    <div class="testimonial-author">Sophia R. — Directrice, Lumière Studio</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info reveal">
+    <div class="section-label">✦ Contact</div>
+    <h2 class="section-title">Parlons de<br/><em>votre projet</em></h2>
+    <p class="contact-desc">Vous avez un projet en tête ? Décrivez-le nous et recevez un audit et une proposition personnalisée sous 48h.</p>
+    <div class="contact-line">
+      <span class="contact-line-icon">◈</span>
+      <div class="contact-line-text">
+        <strong>Adresse</strong>
+        123 King Street West, Toronto, ON M5H 1J9
+      </div>
+    </div>
+    <div class="contact-line">
+      <span class="contact-line-icon">◉</span>
+      <div class="contact-line-text">
+        <strong>Email</strong>
+        hello@mapoptimun.com
+      </div>
+    </div>
+    <div class="contact-line">
+      <span class="contact-line-icon">◇</span>
+      <div class="contact-line-text">
+        <strong>Téléphone</strong>
+        +1 (416) 000-0000
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form reveal" onsubmit="return false;">
+    <div class="form-row">
+      <div class="form-group">
+        <label>Prénom</label>
+        <input type="text" placeholder="Votre prénom"/>
+      </div>
+      <div class="form-group">
+        <label>Nom</label>
+        <input type="text" placeholder="Votre nom"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="votre@email.com"/>
+    </div>
+    <div class="form-group">
+      <label>Service souhaité</label>
+      <select>
+        <option value="" disabled selected>Choisir un service…</option>
+        <option>Création de site web</option>
+        <option>Référencement SEO</option>
+        <option>Design UX/UI</option>
+        <option>Google Ads</option>
+        <option>Audit complet</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Décrivez votre projet en quelques lignes…"></textarea>
+    </div>
+    <button type="submit" class="form-submit">Envoyer le message</button>
+    <p class="form-note">Réponse garantie sous 48h • Aucun engagement</p>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Map<span>.</span>Optimun</div>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2025 Map Optimun — Tous droits réservés</div>
+</footer>
+
+<script>
+  // ── Cursor ───────────────────────────────────────────
+  const ring = document.getElementById('curRing');
+  const dot  = document.getElementById('curDot');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+  });
+
+  (function animCursor() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) *.12;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(animCursor);
+  })();
+
+  document.querySelectorAll('a, button, .service-card, .port-item').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      ring.style.width  = '60px'; ring.style.height = '60px';
+      ring.style.borderColor = 'rgba(201,168,76,0.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width  = '36px'; ring.style.height = '36px';
+      ring.style.borderColor = 'var(--gold)';
+    });
+  });
+
+  // ── Nav scroll ───────────────────────────────────────
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Scroll reveal ────────────────────────────────────
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i * 0.05) + 's';
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── Parallax hero bg ─────────────────────────────────
+  window.addEventListener('scroll', () => {
+    const bg = document.querySelector('.hero-bg');
+    if (bg) bg.style.transform = `scale(1) translateY(${window.scrollY * 0.25}px)`;
+  });
+</script>
+</body>
+</html>

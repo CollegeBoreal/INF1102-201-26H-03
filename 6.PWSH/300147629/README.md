@@ -27,4 +27,8 @@ sudo pwsh /devops-batch/devops_batch.ps1
 ```
 <img width="616" height="532" alt="6-Fin png" src="https://github.com/user-attachments/assets/504302c2-f8e1-4163-96de-3712ec447876" />
 
+#Pages Personnalyser
+<img width="1917" height="933" alt="image" src="https://github.com/user-attachments/assets/e15635d8-25f9-4a3c-9905-11d8e62125f6" />
+
+
 
