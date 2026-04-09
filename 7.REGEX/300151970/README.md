@@ -115,7 +115,7 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 ### 3.1 Création du fichier avec nano
 
 ```bash
-nano REGEX/analyse_nginx.py
+nano analyse_nginx.py
 ```
 
 <img width="1472" height="47" alt="11" src="https://github.com/user-attachments/assets/9ba084f0-c541-47a5-9dd0-2286979eb557" />
