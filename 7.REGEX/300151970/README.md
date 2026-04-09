@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 Créer un script qui :
 
@@ -23,7 +23,7 @@ Créer un script qui :
 
 ---
 
-## 1️⃣ Connexion au serveur
+## 1️ Connexion au serveur
 
 ```bash
 ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty ubuntu@10.7.237.223
@@ -175,7 +175,7 @@ python3 REGEX/analyse_nginx.py
 
 ---
 
-## 4️⃣ Partie 3 — Automatisation avec cron
+## 4️ Partie 3 — Automatisation avec cron
 
 ### 4.1 Création d’une tâche planifiée
 
