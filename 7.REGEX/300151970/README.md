@@ -40,9 +40,9 @@ ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/s
 
 ---
 
-## 2️ Partie 1 — Script PowerShell
+## Partie 1 — Script PowerShell
 
-### 2.1 Création du fichier avec nano
+### 1.1 Création du fichier avec nano
 
 ```bash
 nano analyse_nginx.ps1
@@ -89,7 +89,7 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 
 ---
 
-### 2.2 Exécution du script PowerShell
+### 1.2 Exécution du script PowerShell
 
 ```powershell
  pwsh REGEX/analyse_nginx.ps1
@@ -110,9 +110,9 @@ $top_pages | ForEach-Object { "$($_.Name) : $($_.Count)" } | Out-File $rapport -
 
 ---
 
-## 3️ Partie 2 — Script Python
+## Partie 2 — Script Python
 
-### 3.1 Création du fichier avec nano
+### 2.1 Création du fichier avec nano
 
 ```bash
 nano analyse_nginx.py
@@ -164,7 +164,7 @@ with open(rapport, 'w') as f:
 
 ---
 
-### 3.2 Exécution du script Python
+### 2.2 Exécution du script Python
 
 ```bash
 python3 REGEX/analyse_nginx.py
@@ -179,9 +179,9 @@ python3 REGEX/analyse_nginx.py
 
 ---
 
-## 4️ Partie 3 — Automatisation avec cron
+## Partie 3 — Automatisation avec cron
 
-### 4.1 Création d’une tâche planifiée
+### 3.1 Création d’une tâche planifiée
 
 ```bash
 crontab -e
@@ -199,7 +199,7 @@ crontab -e
 * **Résultat attendu :** Tâche cron installée correctement
 * **Commentaire :** Le script sera exécuté automatiquement tous les jours à 2h
 
-### 4.2 Vérification des tâches cron
+### 3.2 Vérification des tâches cron
 
 ```bash
 grep CRON /var/log/syslog
@@ -214,7 +214,7 @@ grep CRON /var/log/syslog
 
 ---
 
-## 5️ Résultats attendus dans les rapports
+## 4 Résultats attendus dans les rapports
 
 Chaque rapport (PowerShell ou Python) doit contenir :
 
@@ -226,7 +226,7 @@ Chaque rapport (PowerShell ou Python) doit contenir :
 
 ---
 
-## 6️ Conclusion
+## 5 Conclusion
 
 * Tous les scripts (Python et PowerShell) fonctionnent correctement
 * Les rapports sont générés automatiquement dans le dossier `REGEX`
