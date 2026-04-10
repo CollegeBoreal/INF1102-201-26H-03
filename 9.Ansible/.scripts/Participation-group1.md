@@ -26,4 +26,4 @@
 | 7 | [300141625](../300141625/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/188626020?s=460&v=4' width=20 height=20></image>](https://github.com/Mamefatim14) | :x: | :x: | [:x:](../300141625/playbook.yml) | [:x:](../300141625/inventory.ini) |
 | 8 | [300141657](../300141657/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/194731088?s=460&v=4' width=20 height=20></image>](https://github.com/leandre00126) | :2nd_place_medal: | :x: | [:x:](../300141657/playbook.yml) | [:x:](../300141657/inventory.ini) |
 | 9 | [300141716](../300141716/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/125617838?s=460&v=4' width=20 height=20></image>](https://github.com/nabilaouladbouih) | :x: | :x: | [:x:](../300141716/playbook.yml) | [:x:](../300141716/inventory.ini) |
-| :abacus: | \$\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+| :abacus: | \$\frac{2}{10}\$ = 20% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 2 |

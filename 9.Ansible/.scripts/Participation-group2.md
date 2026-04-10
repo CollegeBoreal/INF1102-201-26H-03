@@ -26,4 +26,4 @@
 | 7 | [300146721](../300146721/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/222739217?s=460&v=4' width=20 height=20></image>](https://github.com/smailikh) | :x: | :x: | [:x:](../300146721/playbook.yml) | [:x:](../300146721/inventory.ini) |
 | 8 | [300147629](../300147629/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/231347782?s=460&v=4' width=20 height=20></image>](https://github.com/zoumarbalde-blip) | :x: | :x: | [:x:](../300147629/playbook.yml) | [:x:](../300147629/inventory.ini) |
 | 9 | [300147816](../300147816/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/230452383?s=460&v=4' width=20 height=20></image>](https://github.com/HananeZerrouki) | :1st_place_medal: | :heavy_check_mark: | [:heavy_check_mark:](../300147816/playbook.yml) | [:heavy_check_mark:](../300147816/inventory.ini) |
-| :abacus: | \$\frac{0}{10}\$ = 0% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 0 |
+| :abacus: | \$\frac{3}{10}\$ = 30% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 3 |
