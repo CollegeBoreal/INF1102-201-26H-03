@@ -48,8 +48,11 @@ $ErrorActionPreference = "Stop"
 . ../.scripts/commons.ps1
 
 Write-ParticipationHeader
-Write-PresenceHeader -Check
-
+if ($Check) {
+    Write-PresenceHeader -Check
+} else {
+    Write-PresenceHeader
+}
 
 $i = 0
 $s = 0
@@ -64,24 +67,29 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     $checks = Get-StudentChecks -Paths $paths
     $url    = Get-GitHubAvatarLink -GitHubID $GitHubID -AvatarID $AvatarID
 
+
+    $params = @{
+        Index       = $i
+        StudentID   = $StudentID
+        GitHubLink  = $url
+        Checks      = $checks
+        Result      = $result
+        PBPath      = $paths.PB
+        INIPath     = $paths.INI
+        ReadmePath  = $paths.README
+    }
+
+
     $result = [PSCustomObject]@{
         Id            = $StudentID
         IO_Exec       = ":grey_question:"
     }
     if ($Check) {
         $result = Get-StudentReport -id $StudentID
+        $params.Check = $true
     }
 
-    Write-StudentRow `
-        -Check `
-        -Index $i `
-        -StudentID $StudentID `
-        -GitHubLink $url `
-        -Checks $checks `
-        -Result $result `
-        -PBPath $paths.PB `
-        -INIPath $paths.INI `
-        -ReadmePath $paths.README
+    Write-StudentRow @params
 
     if (Test-AllRequiredFilesPresent -Checks $checks) {
         $s++
