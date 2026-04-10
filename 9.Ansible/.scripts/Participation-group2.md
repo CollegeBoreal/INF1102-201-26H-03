@@ -14,7 +14,7 @@
 
 ## :a: Présence
 
-|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini |
+|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: inventory.ini |
 |------|-------------|-----------|--------|-----------------------|-------------------------------|
 | 0 | [300141858](../300141858/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/205304457?s=460&v=4' width=20 height=20></image>](https://github.com/karimcode24) | :1st_place_medal: | :heavy_check_mark: | [:heavy_check_mark:](../300141858/playbook.yml) | [:heavy_check_mark:](../300141858/inventory.ini) |
 | 1 | [300142072](../300142072/README.md) :point_right: [<image src='https://avatars0.githubusercontent.com/u/230452797?s=460&v=4' width=20 height=20></image>](https://github.com/sigadiarra) | :x: | :x: | [:x:](../300142072/playbook.yml) | [:x:](../300142072/inventory.ini) |

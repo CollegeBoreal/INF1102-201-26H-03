@@ -63,10 +63,10 @@ function Write-PresenceHeader {
 
     if ($Check) {
         # Présence table
-        Write-Output "|:hash:| Boréal :id:                | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
+        Write-Output "|:hash:| Boréal :id:                | README.md | images | :rocket: playbook.yml | :page_facing_up: inventory.ini | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
         Write-Output "|------|----------------------------|-----------|--------|-----------------------|-------------------------------|----|----------------------------------------------------------------------------------------------------------|"
     } else {
-        Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini |"
+        Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: inventory.ini |"
         Write-Output "|------|-------------|-----------|--------|-----------------------|-------------------------------|"
     }
 
