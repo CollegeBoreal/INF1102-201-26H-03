@@ -22,7 +22,7 @@ if id "$USER_TEMP" &>/dev/null; then
 else
     sudo useradd $USER_TEMP
     echo "$USER_TEMP:Temp1234" | sudo chpasswd
-    echo "Utilisateur créé." >> $LOG
+    echo "Utilisateur créé !" >> $LOG
 fi
 
 # 4. Compression archive
