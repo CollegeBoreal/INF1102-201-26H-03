@@ -96,20 +96,15 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
         StudentID   = $StudentID
         GitHubLink  = $url
         Checks      = $checks
-        Result      = $result
         PBPath      = $paths.PB
         INIPath     = $paths.INI
         ReadmePath  = $paths.README
     }
 
-
-    $result = [PSCustomObject]@{
-        Id            = $StudentID
-        IO_Exec       = ":grey_question:"
-    }
     if ($Check) {
         $result = Get-StudentReport -id $StudentID
-        $params.Check = $true
+        $params.Check  = $true
+        $params.Result = $result
         # Vérification VM
         $params.VM = ":red_circle: ${ServerID}"
         if ($VM_STATUS.ContainsKey($StudentID)) {
