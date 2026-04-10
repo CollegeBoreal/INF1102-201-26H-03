@@ -21,7 +21,7 @@ function Get-StudentReport {
         try {
             ansible-playbook -i $ini $pb -u ubuntu -e ansible_ssh_private_key_file=~/.ssh/b300098957@ramena *> $null
             if ($LASTEXITCODE -eq 0) {
-                $execPyIcon = ":rocket:"
+                $execPyIcon = ":link:"
             }
             else {
                 $execPyIcon = ":bangbang:"

@@ -48,7 +48,8 @@ $ErrorActionPreference = "Stop"
 . ../.scripts/commons.ps1
 
 Write-ParticipationHeader
-Write-PresenceHeader
+Write-PresenceHeader -Check
+
 
 $i = 0
 $s = 0
@@ -72,6 +73,7 @@ for ($g = 0; $g -lt $ACTIVE_GROUP.Count; $g++) {
     }
 
     Write-StudentRow `
+        -Check `
         -Index $i `
         -StudentID $StudentID `
         -GitHubLink $url `

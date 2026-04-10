@@ -53,17 +53,29 @@ function Test-AllRequiredFilesPresent {
 }
 
 function Write-PresenceHeader {
+    param(
+        [switch]$Check
+    )
+
     Write-Output ""
     Write-Output "## :a: Présence"
     Write-Output ""
 
-    Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini |"
-    Write-Output "|------|-------------|-----------|--------|-----------------------|-------------------------------|"
+    if ($Check) {
+        # Présence table
+        Write-Output "|:hash:| Boréal :id:                | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini | VM | <image src='https://avatars0.githubusercontent.com/u/62551735?s=460&v=4' width=20 height=20></image> SSH |"
+        Write-Output "|------|----------------------------|-----------|--------|-----------------------|-------------------------------|----|----------------------------------------------------------------------------------------------------------|"
+    } else {
+        Write-Output "|:hash:| Boréal :id: | README.md | images | :rocket: playbook.yml | :page_facing_up: invetory.ini |"
+        Write-Output "|------|-------------|-----------|--------|-----------------------|-------------------------------|"
+    }
+
 }
 
 
 function Write-StudentRow {
     param(
+        [switch]$Check,
         [int]$Index,
         [string]$StudentID,
         [string]$GitHubLink,
@@ -74,6 +86,11 @@ function Write-StudentRow {
         [string]$ReadmePath
     )
 
-    Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Result.IO_Exec)](../$PBPath) | [$($Checks.INI)](../$INIPath) |  |"
+    if ($Check) {
+        Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.PB)](../$PBPath) | [$($Checks.INI)](../$INIPath) | | $($Result.IO_Exec) |"
+    } else {
+        Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.PB)](../$PBPath) | [$($Checks.INI)](../$INIPath) |"
+    }
+
 }
 
