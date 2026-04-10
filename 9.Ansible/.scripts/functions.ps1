@@ -76,6 +76,7 @@ function Write-PresenceHeader {
 function Write-StudentRow {
     param(
         [switch]$Check,
+        [string]$VM, 
         [int]$Index,
         [string]$StudentID,
         [string]$GitHubLink,
@@ -87,7 +88,7 @@ function Write-StudentRow {
     )
 
     if ($Check) {
-        Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.PB)](../$PBPath) | [$($Checks.INI)](../$INIPath) | | $($Result.IO_Exec) |"
+        Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.PB)](../$PBPath) | [$($Checks.INI)](../$INIPath) | $($VM) | $($Result.IO_Exec) |"
     } else {
         Write-Output "| $Index | [$StudentID](../$ReadmePath) :point_right: $GitHubLink | $($Checks.README) | $($Checks.Images) | [$($Checks.PB)](../$PBPath) | [$($Checks.INI)](../$INIPath) |"
     }
