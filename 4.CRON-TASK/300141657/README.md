@@ -22,3 +22,13 @@
 <p align="center">
   <img src="images/Image8.png" alt="État du service CRON" width="900">
 </p>
+
+## Structure du projet
+
+```bash
+300141657/
+├── README.md
+└── images/
+    ├── Image6.png
+    ├── Image7.png
+    └── Image8.png
