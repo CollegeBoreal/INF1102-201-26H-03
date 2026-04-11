@@ -1,4 +1,35 @@
+# TP IaC avec OpenTofu et Proxmox - 300141657
+**Leandre Manizan**
 
+## Description
+
+Dans ce travail, j’ai utilisé l’approche **Infrastructure as Code (IaC)** avec **OpenTofu** et **Proxmox** afin de gérer une machine virtuelle Ubuntu à partir du code.
+
+L’objectif était de vérifier que l’environnement OpenTofu fonctionne correctement, de valider la configuration, d’appliquer les changements sur Proxmox, puis de confirmer que la machine virtuelle est accessible en **SSH** et qu’un service web **NGINX** fonctionne correctement.
+
+---
+
+## Objectifs
+
+Ce TP permet de démontrer les éléments suivants :
+
+- initialiser un projet OpenTofu
+- vérifier le plan d’exécution
+- appliquer la configuration sur Proxmox
+- confirmer la présence de la machine virtuelle sur Proxmox
+- accéder à la machine virtuelle en SSH
+- installer NGINX
+- vérifier le bon fonctionnement du serveur web
+
+---
+
+## Technologies utilisées
+
+- **OpenTofu**
+- **Proxmox VE**
+- **Ubuntu Server**
+- **SSH**
+- **NGINX**
 ```
 pm_vm_name      = "vm300141657"
 pm_ipconfig0    = "ip=10.7.237.202/23,gw=10.7.237.1"
