@@ -55,11 +55,12 @@ Capture
 <p align="center"> <img src="images/Image12.png" alt="Vérification de la machine virtuelle sur Proxmox" width="900"> </p>
 5. Vérification de l’accès au serveur avec SSH
 Commande
-
+```
 ssh -i ~/.ssh/leandre.pk `
   -o StrictHostKeyChecking=no `
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
   ubuntu@10.7.237.202
+  ```
   
 Rôle
 
