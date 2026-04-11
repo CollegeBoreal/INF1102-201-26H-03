@@ -12,17 +12,16 @@ function Get-StudentReport {
         [string]$id
     )
 
-    $py = "$id/playbook.yml"
-    $nb = "$id/RAPPORT.ipynb"
+    $pb = "$id/playbook.yml"
+    $ini = "$id/inventory.ini"
 
     # --- IO.py execution ---
     $execPyIcon = ":grey_question:"
-    if (Test-Path $py) {
-        Push-Location $id
+    if (Test-Path $pb) {
         try {
-            ansible-playbook -i inventory.ini playbook.yml -u ubuntu -e ansible_ssh_private_key_file=~/.ssh/b300098957@ramena *> $null
+            ansible-playbook -i $ini $pb -u ubuntu -e ansible_ssh_private_key_file=~/.ssh/b300098957@ramena *> $null
             if ($LASTEXITCODE -eq 0) {
-                $execPyIcon = ":rocket:"
+                $execPyIcon = ":link:"
             }
             else {
                 $execPyIcon = ":bangbang:"
@@ -30,77 +29,11 @@ function Get-StudentReport {
         } catch {
             $execPyIcon = ":boom:"
         }
-        finally {
-            Pop-Location
-        }
-    }
-
-    # --- Notebook analysis ---
-    $rapportIcon = ":x:"
-    $errorIcon = ":x:"
-    $signIcon = ":x:"
-    $figuresCount = 0
-
-    if (Test-Path $nb) {
-        $rapportIcon = ":receipt:"
-
-        $json = $null
-        try {
-            $raw = Get-Content $nb -Raw
-            $raw = $raw.Trim([char]0xFEFF)  # remove BOM if present
-            $json = $raw | ConvertFrom-Json -ErrorAction Stop
-        }
-        catch {
-            $errorIcon = ":boom:"
-            return
-        }
-
-        # Count errors
-        $errors = @(
-            $json.cells |
-            ForEach-Object { $_.outputs } |
-            Where-Object { $_.output_type -eq "error" }
-        )
-        $errorCount = $errors.Count
-
-        if ($errorCount -eq 0) {
-            $errorIcon = ""
-
-            # Count figures (text/plain containing "Figure")
-            $figures = @(
-                $json.cells |
-                ForEach-Object { $_.outputs } |
-                Where-Object {
-                    $_.output_type -eq "display_data" -and
-                    $_.data."text/plain" -match "Figure"
-                }
-            )
-            $figuresCount = $figures.Count
-        }
-        else {
-            $errorIcon = ":boom:"
-        }
-
-        # Check signature (ID in markdown)
-        $signatures = @(
-            $json.cells |
-            Where-Object { $_.cell_type -eq "markdown" } |
-            ForEach-Object { $_.source } |
-            Where-Object { $_ -match $id }
-        )
-
-        if ($signatures.Count -gt 0) {
-            $signIcon = ":writing_hand:"
-        }
     }
 
     # --- Return structured result ---
     return [PSCustomObject]@{
         Id            = $id
         IO_Exec       = $execPyIcon
-        Rapport       = $rapportIcon
-        Errors        = $errorIcon
-        FiguresCount  = $figuresCount
-        Signature     = $signIcon
     }
 }
