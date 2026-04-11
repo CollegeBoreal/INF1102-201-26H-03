@@ -1,8 +1,8 @@
 # TP – Automatisation d’administration avec script Batch (Linux)
 
 ## Informations de l’étudiant
-- **Identifiant :** 300141429
-- **Nom :** Elhadji Arona
+- **Identifiant :** 300141657
+- **Nom :** Leandre Manizan
 - **Cours :** Programmation système
 - **Thème :** BATCH
 
