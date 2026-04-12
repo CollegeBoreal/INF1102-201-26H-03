@@ -35,7 +35,7 @@ La gestion de configuration consiste à contrôler et maintenir l’état d’un
 ├── playbook.yml
 
 └── files/
-
+       |
        └── index.html
 
 
