@@ -25,7 +25,7 @@ ips_counts = [count for ip, count in top_ips]
 
 plt.bar(ips_labels, ips_counts)
 plt.title("Top IP")
-plt.savefig("output/graphique.png")
+plt.savefig("images/graphique.png")
 
 # rapport texte
 with open("output/rapport.txt", "w") as out:
