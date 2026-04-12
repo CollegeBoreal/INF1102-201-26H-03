@@ -1,1 +1,5 @@
-
+2026-04-12 10:00:01 GET https://www.google.com 200 0.23s
+2026-04-12 10:05:01 GET https://www.google.com 200 0.19s
+2026-04-12 10:10:01 GET https://www.google.com 404 0.31s
+2026-04-12 10:15:01 GET https://www.google.com 200 0.22s
+2026-04-12 10:20:01 GET https://www.google.com 500 1.52s
