@@ -16,13 +16,20 @@ Professeur : Brice Robert
 
 Date de remise : 09/04/2026
 
-🎯 Objectifs
+Objectifs
+
 Comprendre la gestion de configuration
+
 Expliquer le concept de Infrastructure as Code (IaC)
+
 Différencier script impératif vs approche déclarative
+
 Écrire un playbook Ansible en YAML
+
 Déployer automatiquement Nginx + page HTML
-🧠 1. Qu’est-ce que la gestion de configuration ?
-👉 La gestion de configuration consiste à :
+
+1. Qu’est-ce que la gestion de configuration ?
+
+2. La gestion de configuration consiste à :
 
 Maintenir un système dans un état cohérent, reproductible et automatisé
