@@ -29,11 +29,17 @@
 La gestion de configuration consiste à contrôler et maintenir l’état d’un système informatique de manière cohérente, automatisée et reproductible.
 
 /
+
 ├── files
+
 │   └── index.html
+
 ├── images
+
 ├── inventory.ini
+
 ├── playbook.yml
+
 └── files/index.html
 
 
