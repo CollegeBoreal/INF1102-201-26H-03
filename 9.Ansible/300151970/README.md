@@ -31,7 +31,7 @@ La gestion de configuration consiste à contrôler et maintenir l’état d’un
 🆔/                                                                                                                                                                                                                   
 ├── inventory.ini                                                                                                                                                                                                     
 ├── playbook.yml                                                                                                                                                                                                      
-└── files/                                                                                                                                                                                                               
+└── files/            
        └── index.html
 
 
