@@ -2,7 +2,7 @@ import re
 from collections import Counter
 from datetime import datetime
 
-logfile = "/var/log/nginx/access.log"
+logfile = "/var/log/nginx/access.log.1"
 
 with open(logfile) as f:
     lines = f.readlines()

@@ -1,4 +1,4 @@
-$logfile = "/var/log/nginx/access.log"
+$logfile = "/var/log/nginx/access.log.1"
 $rapport = "REGEX/rapport_nginx_ps1_$(Get-Date -Format yyyy-MM-dd).txt"
 
 $lines = Get-Content $logfile
@@ -28,9 +28,7 @@ $ips = $lines | ForEach-Object {
 
 "`nTop 5 IP :" | Out-File $rapport -Append
 $ips | Group-Object | Sort-Object Count -Descending | Select-Object -First 5 |
-ForEach-Object {
-    "$($_.Count) $($_.Name)" | Out-File $rapport -Append
-}
+ForEach-Object { "$($_.Count) $($_.Name)" | Out-File $rapport -Append }
 
 $pages = $lines | ForEach-Object {
     if ($_ -match '"GET ([^ ]+)') { $matches[1] }
@@ -38,8 +36,6 @@ $pages = $lines | ForEach-Object {
 
 "`nTop 5 pages :" | Out-File $rapport -Append
 $pages | Group-Object | Sort-Object Count -Descending | Select-Object -First 5 |
-ForEach-Object {
-    "$($_.Count) $($_.Name)" | Out-File $rapport -Append
-}
+ForEach-Object { "$($_.Count) $($_.Name)" | Out-File $rapport -Append }
 
 Write-Host "✅ Rapport généré : $rapport"
