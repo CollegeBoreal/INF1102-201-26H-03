@@ -24,28 +24,5 @@
 
 ---
 
-## 1. Qu’est-ce que la gestion de configuration ?
 
-La gestion de configuration consiste à contrôler et maintenir l’état d’un système informatique de manière cohérente, automatisée et reproductible.
 
-Elle permet de :
-- Standardiser les environnements
-- Éviter les erreurs manuelles
-- Automatiser les déploiements
-- Garantir la stabilité des systèmes
-
----
-
-## 2. Définition de la gestion de configuration
-
-La gestion de configuration consiste à maintenir un système dans un état cohérent, reproductible et automatisé.
-
----
-
-## 3. Infrastructure as Code (IaC)
-
-L’Infrastructure as Code est une approche qui consiste à gérer et provisionner l’infrastructure informatique à l’aide de fichiers de configuration lisibles (comme YAML), plutôt que de configurations manuelles.
-
----
-
-## 4. Approche impérative vs déclarative
