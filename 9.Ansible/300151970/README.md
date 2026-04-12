@@ -10,7 +10,7 @@
 - **Cours :** INF 1102-201 – Programmation de systèmes  
 - **Session :** Hiver 2026  
 - **Professeur :** Brice Robert  
-- **Date de remise :** 09/04/2026  
+- **Date de remise :** 12/04/2026  
 
 ---
 
