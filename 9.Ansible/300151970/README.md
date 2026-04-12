@@ -26,12 +26,11 @@
 
 ## Travail demandé
 1️⃣ Créer la structure des fichiers
-La gestion de configuration consiste à contrôler et maintenir l’état d’un système informatique de manière cohérente, automatisée et reproductible.
-
-🆔/300151970                                                                                                                                                                                                                           
-├── inventory.ini
-├── playbook.yml
-└── files/
+La gestion de configuration consiste à contrôler et maintenir l’état d’un système informatique de manière cohérente, automatisée et reproductible.                                                                    
+🆔/                                                                                                                                                                                                                   
+├── inventory.ini                                                                                                                                                                                                     
+├── playbook.yml                                                                                                                                                                                                      
+└── files/                                                                                                                                                                                                               
     └── index.html
 
 
