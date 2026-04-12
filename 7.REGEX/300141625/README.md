@@ -2,7 +2,7 @@
 
 ## 🎯 Objectif
 Créer un script qui :
-- Analyse /var/log/nginx/access.log
+- Analyse `/var/log/nginx/access.log`
 - Utilise des expressions régulières
 - Génère un rapport automatique
 - Peut être automatisé (cron / tâche planifiée)
@@ -13,18 +13,22 @@ REGEX/
 ├── images/
 ├── analyse_nginx.ps1
 └── analyse_nginx.py
+## ▶️ Étapes effectuées sur Ubuntu
 
-## ▶️ Exécution
+### 1. Création des scripts
+![Création des scripts](images/01.png)
 
-### PowerShell
-```powershell
-pwsh ./analyse_nginx.ps1
-```
+### 2. Exécution Python
+![Exécution Python](images/02.png)
 
-### Python
-```bash
-python3 analyse_nginx.py
-```
+### 3. Installation PowerShell
+![Installation PowerShell](images/03.png)
+
+### 4. Exécution PowerShell
+![Exécution PowerShell](images/04.png)
+
+### 5. Rapport généré
+![Rapport généré](images/05.png)
 
 ## 👤 Auteur
 - Nom : Fatou
