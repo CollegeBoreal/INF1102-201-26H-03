@@ -2,7 +2,6 @@ Rapport de monitoring - 2026-04-12
 -----------------------------------
 Site surveillé : https://www.google.com
 Total requêtes : 5
-Succès (200)   : 3
-Erreurs (404)  : 1
-Erreurs (500)  : 1
-Temps moyen    : 0.49s
+Succès (200)   : 5
+Erreurs        : 0
+Temps moyen    : 0.24s

@@ -24,7 +24,10 @@ def monitorer_site(url, output_file):
     erreurs = total - succes
     temps_moyen = round(sum(r['duree'] for r in resultats) / total, 2)
 
-    with open(output_file, 'a') as f:
+    with open(output_file, 'w') as f:
+        f.write(f"Rapport de monitoring - {datetime.now().date()}\n")
+        f.write("-----------------------------------\n")
+        f.write(f"Site surveillé : {url}\n")
         f.write(f"Total requêtes : {total}\n")
         f.write(f"Succès (200)   : {succes}\n")
         f.write(f"Erreurs        : {erreurs}\n")
@@ -33,6 +36,5 @@ def monitorer_site(url, output_file):
     print("✅ Analyse terminée")
 
 if __name__ == "__main__":
-    log_file = sys.argv[1] if len(sys.argv) > 1 else "../data/sample.log"
-    output_file = sys.argv[2] if len(sys.argv) > 2 else "../output/rapport.txt"
+    output_file = sys.argv[2] if len(sys.argv) > 2 else "output/rapport.txt"
     monitorer_site("https://www.google.com", output_file)
