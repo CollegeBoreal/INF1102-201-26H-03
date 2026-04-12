@@ -1,4 +1,20 @@
-## Captures d’écran
+# TP : Analyse des logs Nginx avec Regex (PowerShell & Python)
+
+## Informations
+
+**Nom :** Léandre Manizan  
+**Numéro étudiant :** 300141657  
+**Cours :** INF1102-201-26H-03  
+**Travail :** TP Regex Nginx
+
+---
+
+## Objectif
+
+Ce TP consiste à analyser le fichier de logs Nginx suivant :
+
+```bash
+/var/log/nginx/access.log
 
 ### 1. Structure du dossier `REGEX`
 
