@@ -5,6 +5,13 @@ Ce projet consiste à surveiller la disponibilité d'un site web et mesurer le t
 - un **fichier texte** (`output/rapport.txt`) automatique
 - un **rapport Jupyter** (`RAPPORT.ipynb`) avec visualisations et commentaires
 
+## 🎓 Compétences développées
+- Scripting Bash et Python
+- Monitoring de site web
+- Automatisation des tâches
+- Génération de rapports
+- Débogage
+
 ## 📂 Structure du projet
 300141625/
 ├── scripts/
@@ -17,6 +24,20 @@ Ce projet consiste à surveiller la disponibilité d'un site web et mesurer le t
 │   └── rapport.txt
 ├── RAPPORT.ipynb
 └── README.md
+## 📸 Étapes effectuées sur Ubuntu
+
+### 1. Exécution du script Bash
+![Bash](images/001.png)
+
+### 2. Exécution du script Python
+![Python](images/002.png)
+
+### 3. Rapport généré
+![Rapport](images/003.png)
+
+### 4. Structure des fichiers
+![Structure](images/004.png)
+
 ## ▶️ Exécution
 
 ### Bash
@@ -28,11 +49,6 @@ bash scripts/analyse.sh
 ```bash
 python3 scripts/analyse.py data/sample.log
 ```
-
-## 📦 Dépendances
-- Python >= 3.8
-- Module Python : `requests`
-- Jupyter Notebook
 
 ## ✅ Conclusion
 Ce projet démontre comment automatiser la surveillance d'un site web et générer des rapports automatiques pour faciliter le diagnostic et la maintenance des systèmes.
