@@ -30,10 +30,15 @@ La gestion de configuration consiste à contrôler et maintenir l’état d’un
 
 /
 ├──files
+
     ├── index.html
+    
 ├── images
+
 ├── inventory.ini
+
 ├── playbook.yml
+
 └── files/index.html
 
 ---
