@@ -1,5 +1,6 @@
 import sys
 from collections import Counter
+import matplotlib.pyplot as plt
 
 file = sys.argv[1]
 
@@ -12,14 +13,21 @@ with open(file) as f:
         
         if len(parts) >= 6:
             ips.append(parts[0])
-            
-            # Nettoyer l'URL (enlever les guillemets)
             url = parts[5].replace('"', '')
             urls.append(url)
 
 top_ips = Counter(ips).most_common(3)
 top_urls = Counter(urls).most_common(3)
 
+# ✅ GRAPHIQUE (AU BON ENDROIT)
+ips_labels = [ip for ip, count in top_ips]
+ips_counts = [count for ip, count in top_ips]
+
+plt.bar(ips_labels, ips_counts)
+plt.title("Top IP")
+plt.savefig("output/graphique.png")
+
+# rapport texte
 with open("output/rapport.txt", "w") as out:
     out.write("=== RAPPORT ===\n\n")
     
