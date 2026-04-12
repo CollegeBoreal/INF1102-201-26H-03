@@ -140,4 +140,6 @@ J’ai également appris à utiliser différentes bibliothèques Python pour le 
 
 ### 5. Résultat graphique généré
 
+![wait](https://github.com/user-attachments/assets/adef4526-5ec2-486f-b78d-2974fbec818e)
+
 ---
