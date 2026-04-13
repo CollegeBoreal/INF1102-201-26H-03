@@ -81,4 +81,6 @@ url
 ```
 Get-Content .\output\rapport.txt
 ```
+<img width="1088" height="566" alt="rapport-txt" src="https://github.com/user-attachments/assets/e0807f7a-f97b-459b-a493-5839f2e43d96" />
+
 ---
