@@ -66,11 +66,15 @@ Get-Content .\scripts\analyse.py
 ## 📄 Fichier CSV
 
 Le fichier data/prices.csv contient :
-
+```
 date
 heure
 produit
 prix
+url
+```
+<img width="948" height="406" alt="prices-csv" src="https://github.com/user-attachments/assets/079d72e8-b37d-4eee-aa91-3fe729c9f0ec" />
+
 ---
 ## 📈 Résultats
 🧾 Rapport texte
