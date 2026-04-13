@@ -32,7 +32,7 @@ Ce projet permet de suivre le prix d’un produit sur un site web, d’enregistr
 ├── RAPPORT.ipynb           # Notebook Jupyter avec graphiques et analyses
 └── README.md               # Ce fichier
 ```
-Pour montrer la structure du projet on utilise:
+Pour afficher la structure du projet on tape la commande:
 ```
 tree /f
 ```
