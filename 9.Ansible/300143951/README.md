@@ -60,16 +60,19 @@ curl http://10.7.237.206
 Le handler `restart nginx` s'est déclenché automatiquement suite à la copie du fichier HTML.
 
 
-<img width="1918" height="613" alt="tache8" src="https://github.com/user-attachments/assets/8c576323-b54e-4e01-9cef-76f414e09ede" />
+<img width="1689" height="954" alt="Screenshot 2026-04-08 075810" src="https://github.com/user-attachments/assets/e892c717-f393-453b-a8f9-cc5cd38fffe0" />
+
 
 **Test d'idempotence** (2e exécution) — `ok=4 | changed=0`
 Aucune modification appliquée : preuve que le playbook est idempotent.
 
-<img width="1666" height="526" alt="tout okay" src="https://github.com/user-attachments/assets/8d22edaa-2318-4f47-b0e8-ff57ed6c5a83" />
+<img width="1915" height="929" alt="Screenshot 2026-04-08 075913" src="https://github.com/user-attachments/assets/2292fb33-c636-4b92-8fb8-30195776436e" />
+
 
 
 **Page déployée dans le navigateur**
-<img width="1871" height="932" alt="deploiement reussi12" src="https://github.com/user-attachments/assets/cd6e382a-05fe-4974-b242-3b32033e893c" />
+
+<img width="1916" height="971" alt="mapopp" src="https://github.com/user-attachments/assets/453d9e23-eabb-4498-9b07-b400647e1071" />
 
 ---
 

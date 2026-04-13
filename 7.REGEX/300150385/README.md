@@ -79,6 +79,26 @@ Un rapport est généré automatiquement.
 
 ---
 
+⏰ Automatisation avec CRON
+
+Nous avons configuré une tâche planifiée afin d’exécuter automatiquement le script PowerShell chaque jour.
+
+crontab -e
+
+Commande ajoutée :
+
+0 2 * * * /usr/bin/pwsh /home/ubuntu/REGEX/analyse_nginx.ps1
+
+👉 Cette commande permet d’exécuter le script tous les jours à 2h du matin.
+
+![wait](https://github.com/user-attachments/assets/d48c245b-a0a2-4580-9c0d-9adee7fc45bb)
+
+
+📝 Commentaire
+
+Cette étape permet d’automatiser l’analyse des logs sans intervention manuelle.
+Le système exécute automatiquement le script et génère les rapports chaque jour.
+
 ## 📊 Résultats
 
 Les deux scripts donnent des résultats similaires, ce qui confirme que l’analyse est correcte.

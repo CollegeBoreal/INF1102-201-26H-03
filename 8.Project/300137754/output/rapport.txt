@@ -1,0 +1,27 @@
+============================================================
+  RAPPORT DE SUIVI DE PRIX E-COMMERCE
+  Généré le : 2025-04-10 09:00:03
+============================================================
+
+Produit  : Fjallraven Backpack
+Prix     : $110.00
+Tendance : 📉 Baisse de $-3.20 (-2.8%)
+Précédent: $113.20
+URL      : https://fakestoreapi.com/products/1
+------------------------------------------------------------
+Produit  : Casual Premium T-Shirt
+Prix     : $23.50
+Tendance : 📈 Hausse de +$1.50 (+7.3%)
+Précédent: $22.00
+URL      : https://fakestoreapi.com/products/2
+------------------------------------------------------------
+Produit  : Cotton T-Shirt
+Prix     : $56.49
+Tendance : 📈 Hausse de +$1.50 (+2.8%)
+Précédent: $54.99
+URL      : https://fakestoreapi.com/products/3
+------------------------------------------------------------
+
+Total produits suivis : 3
+Source : Fake Store API (https://fakestoreapi.com)
+============================================================

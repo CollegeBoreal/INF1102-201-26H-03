@@ -1,30 +1,171 @@
 ---
-- name: Installer et configurer nginx
+# ============================================================
+#  Map Optimun – Déploiement Nginx — VERSION CORRIGÉE
+#  Identifiant : 300143951
+#  Usage :
+#    ansible-playbook -i inventory.ini playbook.yml
+#    ansible-playbook -i inventory.ini playbook.yml --tags install
+#    ansible-playbook -i inventory.ini playbook.yml --tags deploy
+#    ansible-playbook -i inventory.ini playbook.yml --check
+# ============================================================
+
+- name: "🚀 Map Optimun — Déploiement Nginx automatisé"
   hosts: web
   become: yes
 
-  handlers:
-    - name: restart nginx
-      service:
-        name: nginx
-        state: restarted
+  # ── Variables centralisées ───────────────────────────────
+  vars:
+    nginx_package: nginx
+    web_root: /var/www/html
+    html_src: files/index.html
+    html_dest: "{{ web_root }}/index.nginx-debian.html"
+    nginx_service: nginx
+    open_ports:
+      - "80/tcp"
+      - "443/tcp"
 
+  # ── Vérification préalable ───────────────────────────────
+  pre_tasks:
+    - name: "🔍 Vérifier la connectivité (ping)"
+      ping:
+      tags: always
+
+    - name: "📋 Informations du système cible"
+      debug:
+        msg: |
+          Hôte : {{ inventory_hostname }}
+          OS   : {{ ansible_distribution }} {{ ansible_distribution_version }}
+          IP   : {{ ansible_default_ipv4.address }}
+          User : {{ ansible_user_id }}
+      tags: always
+
+  # ── Handlers ─────────────────────────────────────────────
+  # IMPORTANT : Ansible n'accepte pas de block: dans un handler.
+  # Solution : deux handlers chaînés via listen:
+  handlers:
+    - name: "✅ Valider la config nginx"
+      command: nginx -t
+      changed_when: false
+      listen: "reload nginx"
+
+    - name: "🔄 Redémarrer nginx"
+      service:
+        name: "{{ nginx_service }}"
+        state: restarted
+      listen: "reload nginx"
+
+  # ── Tâches principales ───────────────────────────────────
   tasks:
 
-    - name: Installer nginx
-      apt:
-        name: nginx
-        state: present
-        update_cache: yes
+    # ── Bloc 1 : Installation ─────────────────────────────
+    - name: "📦 Installation"
+      tags: install
+      block:
+        - name: "Mettre à jour le cache apt"
+          apt:
+            update_cache: yes
+            cache_valid_time: 3600
 
-    - name: Copier la page HTML
-      copy:
-        src: files/index.html
-        dest: /var/www/html/index.nginx-debian.html
-      notify: restart nginx
+        - name: "Installer nginx"
+          apt:
+            name: "{{ nginx_package }}"
+            state: present
 
-    - name: Démarrer nginx et activer au démarrage
-      service:
-        name: nginx
-        state: started
-        enabled: yes
+      rescue:
+        - name: "❌ Échec installation"
+          debug:
+            msg: "Installation de {{ nginx_package }} échouée. Vérifiez la connectivité réseau."
+
+    # ── Bloc 2 : Pare-feu ────────────────────────────────
+    - name: "🔥 Pare-feu"
+      tags: firewall
+      block:
+        - name: "Autoriser {{ item }}"
+          ufw:
+            rule: allow
+            port: "{{ item.split('/')[0] }}"
+            proto: "{{ item.split('/')[1] }}"
+          loop: "{{ open_ports }}"
+
+      rescue:
+        - name: "⚠️ UFW absent — pare-feu ignoré"
+          debug:
+            msg: "UFW non disponible sur cette VM. Continuons sans pare-feu."
+
+    # ── Bloc 3 : Déploiement HTML ────────────────────────
+    - name: "🌐 Déploiement HTML"
+      tags: deploy
+      block:
+        - name: "Vérifier que le répertoire web existe"
+          file:
+            path: "{{ web_root }}"
+            state: directory
+            mode: '0755'
+            owner: www-data
+            group: www-data
+
+        - name: "Copier la page HTML"
+          copy:
+            src: "{{ html_src }}"
+            dest: "{{ html_dest }}"
+            owner: www-data
+            group: www-data
+            mode: '0644'
+          notify: "reload nginx"   # déclenche les deux handlers via listen:
+
+      rescue:
+        - name: "❌ Échec déploiement"
+          debug:
+            msg: "Impossible de copier {{ html_src }}. Vérifiez que files/index.html existe."
+
+    # ── Bloc 4 : Service ─────────────────────────────────
+    - name: "⚙️ Service nginx"
+      tags: service
+      block:
+        - name: "Démarrer nginx et activer au démarrage"
+          service:
+            name: "{{ nginx_service }}"
+            state: started
+            enabled: yes
+
+        # IMPORTANT : flush_handlers force l'exécution du handler ICI,
+        # avant le check HTTP. Sans ça, nginx ne serait pas encore
+        # redémarré au moment du test uri:
+        - name: "Forcer l'exécution des handlers en attente"
+          meta: flush_handlers
+
+        - name: "Vérifier que nginx répond sur le port 80"
+          uri:
+            url: "http://{{ ansible_default_ipv4.address }}"
+            status_code: 200
+            timeout: 10
+          register: http_check
+          retries: 3
+          delay: 5
+
+        - name: "✅ Rapport final"
+          debug:
+            msg: |
+              ╔══════════════════════════════════════╗
+              ║  Déploiement réussi !               ║
+              ║  URL  → http://{{ ansible_default_ipv4.address }}
+              ║  Code → {{ http_check.status }}
+              ╚══════════════════════════════════════╝
+
+      rescue:
+        - name: "❌ Échec service nginx"
+          debug:
+            msg: "nginx ne répond pas. Consultez : journalctl -u nginx"
+
+  # ── Post-tâches ──────────────────────────────────────────
+  post_tasks:
+    - name: "📊 Statut final nginx"
+      command: systemctl status nginx --no-pager
+      register: nginx_status
+      changed_when: false
+      tags: always
+
+    - name: "Afficher le statut"
+      debug:
+        var: nginx_status.stdout_lines
+      tags: always

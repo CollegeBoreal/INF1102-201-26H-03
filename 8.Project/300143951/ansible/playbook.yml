@@ -1,0 +1,188 @@
+---
+# =============================================================
+#  Projet IDH Afrique — Playbook Ansible
+#  Étudiant : Frank Laurel | ID : 300143951
+#  Cours    : TSI — Collège Boréal — Session Hiver 2025
+# =============================================================
+#
+#  Usage :
+#    ansible-playbook -i ansible/inventory.ini ansible/playbook.yml
+#    ansible-playbook -i ansible/inventory.ini ansible/playbook.yml --check  (dry-run)
+#
+# =============================================================
+
+- name: "Déploiement Projet IDH Afrique — Frank Laurel 300143951"
+  hosts: vm_ubuntu
+  become: yes
+  vars:
+    student_user: ubuntu
+    project_dir: "/home/ubuntu/300143951"
+    repo_url: "https://https://github.com/CollegeBoreal/INF1102-201-26H-03/tree/main/8.Project/300143951.git"
+    jupyter_port: 8888
+
+  tasks:
+
+    # ── 1. Mise à jour du système ────────────────────────────
+    - name: "Mise à jour du cache APT"
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    # ── 2. Installation des dépendances système ──────────────
+    - name: "Installation des paquets système requis"
+      apt:
+        name:
+          - python3
+          - python3-pip
+          - python3-venv
+          - git
+          - curl
+          - jupyter-notebook
+        state: present
+
+    # ── 3. Clone ou mise à jour du dépôt ────────────────────
+    - name: "Vérification si le projet existe déjà"
+      stat:
+        path: "{{ project_dir }}"
+      register: project_stat
+
+    - name: "Clonage du dépôt GitHub"
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ project_dir }}"
+        version: main
+        force: no
+      become_user: "{{ student_user }}"
+      when: not project_stat.stat.exists
+      ignore_errors: yes  # Si pas encore sur GitHub, on copie manuellement
+
+    - name: "Création du dossier projet si git clone non disponible"
+      file:
+        path: "{{ project_dir }}"
+        state: directory
+        owner: "{{ student_user }}"
+        group: "{{ student_user }}"
+        mode: '0755'
+      when: not project_stat.stat.exists
+
+    # ── 4. Création de la structure de dossiers ──────────────
+    - name: "Création des dossiers du projet"
+      file:
+        path: "{{ item }}"
+        state: directory
+        owner: "{{ student_user }}"
+        group: "{{ student_user }}"
+        mode: '0755'
+      loop:
+        - "{{ project_dir }}/scripts"
+        - "{{ project_dir }}/data"
+        - "{{ project_dir }}/data/raw"
+        - "{{ project_dir }}/output"
+        - "{{ project_dir }}/notebooks"
+        - "{{ project_dir }}/ansible"
+
+    # ── 5. Copie des scripts sur la VM ───────────────────────
+    - name: "Copie du script Python principal"
+      copy:
+        src: "../scripts/analyse.py"
+        dest: "{{ project_dir }}/scripts/analyse.py"
+        owner: "{{ student_user }}"
+        mode: '0755'
+
+    - name: "Copie du script Bash"
+      copy:
+        src: "../scripts/analyse.sh"
+        dest: "{{ project_dir }}/scripts/analyse.sh"
+        owner: "{{ student_user }}"
+        mode: '0755'
+
+    - name: "Copie du fichier requirements.txt"
+      copy:
+        src: "../scripts/requirements.txt"
+        dest: "{{ project_dir }}/scripts/requirements.txt"
+        owner: "{{ student_user }}"
+
+    - name: "Copie du Notebook Jupyter"
+      copy:
+        src: "../RAPPORT.ipynb"
+        dest: "{{ project_dir }}/RAPPORT.ipynb"
+        owner: "{{ student_user }}"
+
+    - name: "Copie du README"
+      copy:
+        src: "../README.md"
+        dest: "{{ project_dir }}/README.md"
+        owner: "{{ student_user }}"
+
+    # ── 6. Environnement Python virtuel ──────────────────────
+    - name: "Création du virtualenv Python"
+      command:
+        cmd: python3 -m venv "{{ project_dir }}/venv"
+        creates: "{{ project_dir }}/venv"
+      become_user: "{{ student_user }}"
+
+    - name: "Installation des dépendances Python dans le venv"
+      pip:
+        requirements: "{{ project_dir }}/scripts/requirements.txt"
+        virtualenv: "{{ project_dir }}/venv"
+        state: present
+      become_user: "{{ student_user }}"
+
+    # ── 7. Rendre les scripts exécutables ────────────────────
+    - name: "Permissions exécutables sur analyse.sh"
+      file:
+        path: "{{ project_dir }}/scripts/analyse.sh"
+        mode: '0755'
+
+    # ── 8. Configuration CRON quotidien ──────────────────────
+    - name: "Configuration de la tâche CRON quotidienne (6h00)"
+      cron:
+        name: "IDH Afrique — Mise à jour quotidienne"
+        minute: "0"
+        hour: "6"
+        job: "bash {{ project_dir }}/scripts/analyse.sh >> {{ project_dir }}/output/cron.log 2>&1"
+        user: "{{ student_user }}"
+        state: present
+
+    # ── 9. Exécution initiale de l'analyse ───────────────────
+    - name: "Lancement de l'analyse initiale"
+      command:
+        cmd: "bash {{ project_dir }}/scripts/analyse.sh"
+        chdir: "{{ project_dir }}"
+      become_user: "{{ student_user }}"
+      register: analyse_result
+      ignore_errors: yes
+
+    - name: "Résultat de l'analyse initiale"
+      debug:
+        msg: "{{ analyse_result.stdout_lines[-5:] | default(['(pas de sortie)']) }}"
+
+    # ── 10. Vérification du rapport généré ───────────────────
+    - name: "Vérification que le rapport a été généré"
+      stat:
+        path: "{{ project_dir }}/output/rapport.txt"
+      register: rapport_stat
+
+    - name: "Statut du rapport"
+      debug:
+        msg: >
+          {% if rapport_stat.stat.exists %}
+          ✅ Rapport généré avec succès : {{ project_dir }}/output/rapport.txt
+          {% else %}
+          ⚠️  Rapport non généré — vérifier les logs dans output/execution.log
+          {% endif %}
+
+    # ── 11. Affichage du résumé final ────────────────────────
+    - name: "Résumé du déploiement"
+      debug:
+        msg:
+          - "══════════════════════════════════════════════"
+          - "  ✅ DÉPLOIEMENT IDH AFRIQUE TERMINÉ"
+          - "  Étudiant : Frank Laurel | ID : 300143951"
+          - "══════════════════════════════════════════════"
+          - "  Projet : {{ project_dir }}"
+          - "  CRON   : Tous les jours à 06h00"
+          - "  Jupyter: jupyter notebook --no-browser"
+          - "           --ip=0.0.0.0 --port={{ jupyter_port }}"
+          - "══════════════════════════════════════════════"
+
