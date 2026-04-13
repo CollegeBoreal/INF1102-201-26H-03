@@ -36,3 +36,41 @@ Pour afficher la structure du projet on tape la commande:
 ```
 tree /f
 ```
+---
+⚙️ Scripts
+analyse.ps1
+
+Script PowerShell qui :
+
+exécute le script Python
+planifie ou automatise la récupération des données
+```
+Get-Content .\scripts\analyse.ps1
+```
+---
+analyse.py
+
+Script Python qui :
+
+récupère le prix (scraping)
+enregistre dans data/prices.csv
+génère output/rapport.txt
+```
+Get-Content .\scripts\analyse.py
+```
+---
+📄 Fichier CSV
+
+Le fichier data/prices.csv contient :
+
+date
+heure
+produit
+prix
+---
+📈 Résultats
+🧾 Rapport texte
+```
+Get-Content .\output\rapport.txt
+```
+---
