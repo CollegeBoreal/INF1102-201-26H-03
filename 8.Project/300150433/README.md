@@ -31,23 +31,17 @@ Il permet de :
 
 ---
 
-# 📂 Structure du projet
 
-300150433/
-│
-├── scripts/
-│ ├── analyse.ps1
-│ └── analyse.py
-│
-├── data/
-│ └── sample.log
-│
-├── output/
-│ └── rapport.txt
-│
-├── RAPPORT.ipynb
-├── create_notebook.py
-└── README.md
+## 📂 Structure du projet
+
+| Fichier | Description |
+|---------|-------------|
+| `scripts/analyse.ps1` | Script PowerShell qui récupère les titres RSS et lance l’analyse |
+| `scripts/analyse.py` | Script Python qui analyse les données et génère le rapport |
+| `output/rapport.txt` | Rapport final généré automatiquement |
+| `RAPPORT.ipynb` | Notebook Jupyter pour visualiser et analyser les résultats |
+| `create_notebook.py` | Script permettant de générer automatiquement le notebook |
+| `README.md` | Documentation du projet |
 
 
 ---
