@@ -82,7 +82,7 @@ tofu apply
 
 ```
 
-<img src="images/1.png" alt="Connexion Promox" width="600" /> 
+
 via 
 <a href="https://10.7.237.16:8006/#v1:0:18:4:::::::" target="_blank" rel="noopener noreferrer">Serveur Promox</a>
 
