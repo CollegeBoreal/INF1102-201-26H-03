@@ -62,8 +62,8 @@ Ce travail permet de :
 ## contenu de terraform.tfvars
 
 ```text
-pm_vm_name      = "vm300133071"
-pm_ipconfig0    = "ip=10.7.237.194/23,gw=10.7.237.1"
+pm_vm_name      = "vm300137754"
+pm_ipconfig0    = "ip=10.7.237.195/23,gw=10.7.237.1"
 pm_nameserver   = "10.7.237.3"
 pm_url          = "https://10.7.237.16:8006/api2/json"
 pm_token_id     = "tofu@pve!opentofu"
