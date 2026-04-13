@@ -13,6 +13,7 @@ Ce projet permet de suivre le prix d’un produit sur un site web, d’enregistr
 ---
 
 ## 🗂️ Structure du projet
+```
 300137754/
 ├── scripts/
 │   ├── analyse.sh          # Orchestrateur Bash (vérif. env + appel Python)
