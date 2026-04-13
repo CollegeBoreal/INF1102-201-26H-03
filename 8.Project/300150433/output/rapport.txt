@@ -1,0 +1,50 @@
+==================================================
+   GLOBAL NEWS ANALYZER REPORT
+==================================================
+Date        : 2026-04-13 20:51:58
+Articles    : 20
+==================================================
+
+HEADLINES:
+--------------------------------------------------
+1. 2026-04-13 20:51:58 | BBC News
+2. 2026-04-13 20:51:58 | <![CDATA[Southport killer's parents failed in 'moral duty' to report son, public inquiry finds]]>
+3. 2026-04-13 20:51:58 | <![CDATA[Five key failures of killer's parents and agencies ahead of Southport attack]]>
+4. 2026-04-13 20:51:58 | <![CDATA[EasyJet passengers describe EU border 'nightmare' after flight leaves without them]]>
+5. 2026-04-13 20:51:58 | <![CDATA[Henry Zeffman: Starmer seeks closer ties with EU - and doesn't mind reopening Brexit divisions]]>
+6. 2026-04-13 20:51:58 | <![CDATA[Italian PM condemns ally Trump over 'unacceptable' Pope criticism]]>
+7. 2026-04-13 20:51:58 | <![CDATA[Ex-Nigerian oil minister denies taking bribes]]>
+8. 2026-04-13 20:51:58 | <![CDATA[Orbán era swept away by Péter Magyar's Hungary election landslide]]>
+9. 2026-04-13 20:51:58 | <![CDATA[Man who threw girlfriend from tower block jailed]]>
+10. 2026-04-13 20:51:58 | <![CDATA[Trump deletes post depicting him as Jesus-like figure after backlash]]>
+11. 2026-04-13 20:51:58 | <![CDATA[Britney Spears goes into rehab after driving under the influence arrest]]>
+12. 2026-04-13 20:51:58 | <![CDATA[Lib Dems call for inquiry into Farage Bitcoin deal]]>
+13. 2026-04-13 20:51:58 | <![CDATA[US blockade of Iranian ports explained in two minutes]]>
+14. 2026-04-13 20:51:58 | <![CDATA[This blockade is a gamble. Will it work?]]>
+15. 2026-04-13 20:51:58 | <![CDATA[Israelis war-weary but most oppose Iran ceasefire, poll suggests]]>
+16. 2026-04-13 20:51:58 | <![CDATA[Tracking the ships crossing the Strait of Hormuz]]>
+17. 2026-04-13 20:51:58 | <![CDATA[Trump threat to Iranian civilians 'wrong', Starmer says]]>
+18. 2026-04-13 20:51:58 | <![CDATA[Euphoria is back with more shock and scandal, but mixed reviews]]>
+19. 2026-04-13 20:51:58 | <![CDATA[Katya Adler: Celebration in Budapest, relief in Brussels but a blow for Moscow]]>
+20. 2026-04-13 20:51:58 | <![CDATA[Where does McIlroy rank among golf's greats after Masters defence?]]>
+
+TOP WORDS:
+--------------------------------------------------
+cdata           (19)
+after           (4)
+and             (3)
+trump           (3)
+the             (3)
+but             (3)
+southport       (2)
+killer          (2)
+parents         (2)
+inquiry         (2)
+
+STATISTICS:
+--------------------------------------------------
+Average length : 94.60
+Longest word   : unacceptable
+
+==================================================
+Report generated successfully
