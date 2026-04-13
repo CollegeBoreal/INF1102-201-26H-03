@@ -33,7 +33,7 @@ Il permet de :
 
 # 📂 Structure du projet
 
-
+---
 📁 300150433/
 │
 ├── scripts/
@@ -49,8 +49,6 @@ Il permet de :
 ├── RAPPORT.ipynb
 ├── create_notebook.py
 └── README.md
-
-
 ---
 
 # ▶️ Exécution
