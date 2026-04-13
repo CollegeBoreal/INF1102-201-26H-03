@@ -60,6 +60,8 @@ génère output/rapport.txt
 ```
 Get-Content .\scripts\analyse.py
 ```
+<img width="1106" height="612" alt="get_content-py" src="https://github.com/user-attachments/assets/9b63fcf8-9398-498c-b6d2-9f94681c760e" />
+
 ---
 ## 📄 Fichier CSV
 
