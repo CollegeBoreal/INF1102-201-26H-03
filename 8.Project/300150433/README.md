@@ -49,7 +49,7 @@ Il permet de :
 ├── RAPPORT.ipynb
 ├── create_notebook.py
 └── README.md
----
+
 
 # ▶️ Exécution
 
@@ -99,10 +99,10 @@ Résultats finaux affichés dans le notebook après exécution.
 
 
 📊 Résultats obtenus
-✔ 20 articles récupérés
-✔ Analyse des mots fréquents
-✔ Statistiques générées automatiquement
-✔ Rapport structuré
+- ✔ 20 articles récupérés
+- ✔ Analyse des mots fréquents
+- ✔ Statistiques générées automatiquement
+- ✔ Rapport structuré
 🧠 Compétences développées
 Python (Regex, Counter)
 PowerShell scripting
