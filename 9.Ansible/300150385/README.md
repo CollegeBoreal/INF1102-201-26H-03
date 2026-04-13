@@ -44,9 +44,17 @@ Le but est d’installer **Nginx**, de configurer automatiquement une page HTML 
 ```bash
 ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.215
 
+![wait](https://github.com/user-attachments/assets/d63a1e86-6a3a-4014-b321-083ca92a9eea)
+
+![wait](https://github.com/user-attachments/assets/e6bcdf70-71b0-4c17-acdf-9d3ea24128c7)
+
 🔹 2. Installation d’Ansible
 sudo apt update
 sudo apt install ansible-core -y
+
+![wait](https://github.com/user-attachments/assets/ebd34d6c-d3ae-447f-859e-806ee42fb005)
+
+
 
 🔹 3. Création du playbook
 
@@ -59,7 +67,9 @@ Démarrer le service
 🔹 4. Exécution du playbook
 ansible-playbook -i inventory.ini playbook.yml
 
-📸 Captures d’écran
+![wait](https://github.com/user-attachments/assets/cee0919c-7e1a-401f-a4d5-10ec46489a2a)
+
+
 🔐 Connexion SSH
 
 📂 Structure du projet
@@ -76,6 +86,9 @@ Le serveur web est entièrement configuré automatiquement.
 Le site est accessible via :
 
 👉 http://10.7.237.215
+
+![wait](https://github.com/user-attachments/assets/ebaa8a44-01b3-4821-ba0c-bd3e916cf8e1)
+
 
 🧠 Conclusion
 
