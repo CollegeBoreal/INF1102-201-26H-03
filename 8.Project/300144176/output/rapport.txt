@@ -1,0 +1,14 @@
+=======================================================
+  RAPPORT MÉTÉO — Toronto, Canada
+=======================================================
+Date analyse   : 2026-04-08 15:37:29
+Heure locale   : 2026-04-08 15:34
+Conditions     : Sunny
+Température    : 6 °C (ressenti 4 °C)
+Humidité       : 65 %
+Vent           : 13 km/h (ESE)
+Nuages         : 25 %
+Visibilité     : 24 km
+Pression       : 1031 hPa
+Indice UV      : 4
+=======================================================

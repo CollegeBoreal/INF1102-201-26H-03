@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMNZ Luxury Intro</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #050505;
+      --soft-white: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.5);
+      --line: rgba(255,255,255,0.16);
+      --gold: rgba(212, 186, 132, 0.75);
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: var(--bg);
+      overflow: hidden;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: white;
+    }
+
+    /* PRELOADER */
+    .preloader {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at center, rgba(255,255,255,0.03), transparent 18%),
+        radial-gradient(circle at center, rgba(212,186,132,0.06), transparent 30%),
+        #020202;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: loaderOut 1.2s ease forwards;
+      animation-delay: 3.4s;
+    }
+
+    .preloader::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,0.015), transparent 18%, transparent 82%, rgba(255,255,255,0.015)),
+        radial-gradient(circle at center, rgba(255,255,255,0.02), transparent 55%);
+      pointer-events: none;
+    }
+
+    .loader-inner {
+      position: relative;
+      text-align: center;
+      transform: translateY(8px);
+      animation: loaderLift 2.8s ease-out forwards;
+    }
+
+    .loader-line {
+      width: 0;
+      height: 1px;
+      margin: 0 auto 24px;
+      background: linear-gradient(to right, transparent, var(--line), transparent);
+      animation: lineOpen 1.6s ease forwards;
+      animation-delay: 0.25s;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      gap: 0.18em;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.2rem, 10vw, 7.5rem);
+      letter-spacing: 0.08em;
+      color: var(--soft-white);
+      text-shadow:
+        0 0 16px rgba(255,255,255,0.04),
+        0 0 36px rgba(212,186,132,0.05);
+    }
+
+    .logo span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(24px) scale(0.96);
+      animation: letterReveal 1s ease forwards;
+    }
+
+    .logo span:nth-child(1) { animation-delay: 0.35s; }
+    .logo span:nth-child(2) { animation-delay: 0.5s; }
+    .logo span:nth-child(3) { animation-delay: 0.65s; }
+    .logo span:nth-child(4) { animation-delay: 0.8s; }
+
+    .loader-sub {
+      margin-top: 18px;
+      font-size: 0.78rem;
+      letter-spacing: 0.55em;
+      text-transform: uppercase;
+      color: var(--muted);
+      opacity: 0;
+      animation: fadeUp 1.2s ease forwards;
+      animation-delay: 1.2s;
+    }
+
+    .loader-glow {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 240px;
+      height: 240px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 65%);
+      filter: blur(18px);
+      opacity: 0;
+      animation: glowPulse 3s ease-in-out infinite;
+      animation-delay: 0.8s;
+    }
+
+    /* MAIN CONTENT */
+    .page {
+      min-height: 100vh;
+      opacity: 0;
+      transform: scale(1.02);
+      animation: pageIn 1.5s ease forwards;
+      animation-delay: 3.75s;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(255,255,255,0.04), transparent 18%),
+        linear-gradient(to bottom, #040404, #080808 40%, #050505 100%);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(50px);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+      top: 18%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: haloFloat 8s ease-in-out infinite;
+    }
+
+    .hero::after {
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(212,186,132,0.04), transparent 72%);
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: haloFloat 10s ease-in-out infinite reverse;
+    }
+
+    .hero-small {
+      font-size: 0.8rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.46);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.6rem, 11vw, 8rem);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.96);
+      line-height: 0.95;
+      text-shadow: 0 0 22px rgba(255,255,255,0.04);
+      animation: softFloat 5.5s ease-in-out infinite;
+    }
+
+    .hero-line {
+      width: min(380px, 75vw);
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.18), transparent);
+      margin: 1.8rem 0 1.6rem;
+    }
+
+    .hero-text {
+      max-width: 680px;
+      font-size: 0.95rem;
+      line-height: 1.9;
+      color: rgba(255,255,255,0.62);
+    }
+
+    .hero-btns {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.95rem 1.6rem;
+      border: 1px solid rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      transition: 0.35s ease;
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn:hover {
+      border-color: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.06);
+      transform: translateY(-2px);
+    }
+
+    .btn.gold {
+      border-color: rgba(212,186,132,0.28);
+      color: rgba(236,223,192,0.92);
+    }
+
+    .corner-mark {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.72rem;
+      letter-spacing: 0.55em;
+      color: rgba(255,255,255,0.34);
+      text-transform: uppercase;
+    }
+
+    @keyframes letterReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes lineOpen {
+      from {
+        width: 0;
+        opacity: 0;
+      }
+      to {
+        width: min(280px, 65vw);
+        opacity: 1;
+      }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% {
+        opacity: 0.35;
+        transform: translate(-50%, -50%) scale(0.92);
+      }
+      50% {
+        opacity: 0.85;
+        transform: translate(-50%, -50%) scale(1.06);
+      }
+    }
+
+    @keyframes loaderLift {
+      0% {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes loaderOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    }
+
+    @keyframes pageIn {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes softFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes haloFloat {
+      0%, 100% { transform: translateX(-50%) translateY(0) scale(1); }
+      50% { transform: translateX(-50%) translateY(-12px) scale(1.04); }
+    }
+
+    @media (max-width: 768px) {
+      .loader-sub {
+        letter-spacing: 0.32em;
+        font-size: 0.68rem;
+      }
+
+      .hero-text {
+        font-size: 0.88rem;
+        line-height: 1.8;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        width: min(320px, 100%);
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="loader-inner">
+      <div class="loader-glow"></div>
+      <div class="loader-line"></div>
+
+      <div class="logo" aria-label="LMNZ">
+        <span>L</span>
+        <span>M</span>
+        <span>N</span>
+        <span>Z</span>
+      </div>
+
+      <div class="loader-sub">Luxury Motion</div>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-small">Maison / Identity / Signature</div>
+      <h1 class="hero-title">BIENVENUE A LMNZGLOBALSHOP</h1>
+      <div class="hero-line"></div>
+      <p class="hero-text">
+        Une entrée sobre, noire et élégante. Le logo apparaît lentement,
+        laisse respirer l’espace, puis révèle le contenu avec douceur.
+        C’est exactement le type d’ambiance premium qui fonctionne bien
+        pour une marque mode, bijouterie ou luxe.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#" class="btn gold">Découvrir</a>
+        <a href="#" class="btn">Collection</a>
+      </div>
+
+      <div class="corner-mark">LMNZ Signature</div>
+    </section>
+  </main>
+
+  <script>
+    const preloader = document.getElementById("preloader");
+
+    setTimeout(() => {
+      document.body.style.overflow = "auto";
+    }, 3900);
+
+    preloader.addEventListener("animationend", (e) => {
+      if (e.animationName === "loaderOut") {
+        preloader.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

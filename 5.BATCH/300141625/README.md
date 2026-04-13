@@ -1,30 +1,52 @@
-# Rapport – Script Bash d'automatisation sous Linux
+# Lab 5 – Script Bash d'automatisation sous Linux
 
 ## 🎯 Objectif
-Automatiser la sauvegarde, la création d'utilisateur temporaire, 
-la vérification réseau et la planification avec cron.
+Programmer un script Batch sous Linux permettant de :
+- Sauvegarder un dossier d'entreprise
+- Créer un utilisateur temporaire
+- Tester la connectivité réseau
+- Générer un fichier journal (log)
+- Planifier l'exécution automatique avec cron
 
-## 1️⃣ Sauvegarde des fichiers
-Vérification des fichiers copiés dans `/entreprise/backup/`
+## 📂 Structure
+300141625/
+├── entreprise/
+│   └── script_gestion.sh
+├── images/
+└── README.md
+## 📸 Étapes effectuées sur Ubuntu
 
-![backup](images/1.png)
+### 1. Sauvegarde et backup
+![Backup](images/1.png)
 
-## 2️⃣ Utilisateur temporaire créé
-Vérification de l'utilisateur `employe_temp`
+### 2. Utilisateur temporaire créé
+![Utilisateur](images/2.png)
 
-![utilisateur](images/2.png)
+### 3. Fichier log généré
+![Log](images/3.png)
 
-## 3️⃣ Fichier log
-Contenu du journal d'exécution
+### 4. Planification cron
+![Cron](images/4.png)
 
-![log](images/3.png)
+### 5. Vérification cron actif
+![Cron status](images/5.png)
 
-## 4️⃣ Crontab configuré
-Exécution automatique tous les jours à 2h00
+## ▶️ Exécution
+```bash
+sudo chmod +x /entreprise/script_gestion.sh
+sudo /entreprise/script_gestion.sh
+```
 
-![crontab](images/4.png)
+## ⏰ Planification
+```bash
+sudo crontab -e
+# Ajouter :
+0 2 * * * /entreprise/script_gestion.sh
+```
 
-## 5️⃣ Cron actif
-Vérification que le service cron est en cours d'exécution
+## ✅ Conclusion
+Ce script automatise la sauvegarde, la gestion des utilisateurs et la journalisation sur un système Linux Ubuntu.
 
-![cron status](images/5.png)
+## 👤 Auteur
+- Nom : Fatou
+- ID Boréal : 300141625

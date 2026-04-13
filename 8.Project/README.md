@@ -1,5 +1,12 @@
 # 📽️ Project
 
+| #️⃣ | Participations | Vérifications |
+|-|-|-| 
+| 🥇 | [:tada: Participation](.scripts/Participation-group1.md) |  |
+| 🥈 | [:tada: Participation](.scripts/Participation-group2.md) |  |
+| 🥉 | [:tada: Participation](.scripts/Participation-group3.md) |  |
+
+
 **5 idées de projets Web Scraping / API / automatisation** adaptées au cours, avec **consignes, scripts, Notebook et livrables attendus**, prêts à distribuer aux étudiants.
 
 ---
@@ -138,7 +145,8 @@ Créer un projet permettan l'utilisation des languages de scripts appris en cour
 │
 ├── scripts/
 │   ├── analyse.sh       # Script Bash principal
-│   └── analyse.py       # Script Python appelé par Bash
+│   ├── analyse.py       # Script Python appelé par Bash
+│   └── requirements.txt # Liste les librairies `python` utilisées
 │
 ├── data/
 │   └── sample.log       # Fichier d’exemple pour tests

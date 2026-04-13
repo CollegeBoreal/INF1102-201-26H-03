@@ -1,0 +1,30 @@
+===== RAPPORT DEVOPS =====
+Date : 04/01/2026 19:56:22
+Utilisateur : root
+Machine : vm300146721
+
+Top 5 processus par CPU :
+snapd - CPU: 301
+rcu_sched - CPU: 268.86
+systemd - CPU: 140.47
+kcompactd0 - CPU: 129.19
+cron - CPU: 28.85
+
+Top 5 processus par mémoire :
+pwsh - Mémoire: 100896768
+snapd - Mémoire: 40169472
+multipathd - Mémoire: 27906048
+systemd-journald - Mémoire: 18354176
+unattended-upgrade-shutdown - Mémoire: 17346560
+
+Espace disque :
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M 1016K  196M   1% /run
+/dev/sda1       9.6G  2.7G  6.9G  29% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+
+Test SSH vers 127.0.0.1 :
+Résultat : Host key verification failed.
