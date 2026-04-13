@@ -1,5 +1,0 @@
-📊 Rapport Monitoring - 2026-04-13 17:09:46.692640
-----------------------------------
-✅ https://www.google.com - Status: 200 - Temps: 0.27s
-✅ https://www.github.com - Status: 200 - Temps: 0.59s
-✅ https://www.wikipedia.org - Status: 403 - Temps: 0.21s
