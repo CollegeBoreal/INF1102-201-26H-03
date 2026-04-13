@@ -13,3 +13,20 @@ Ce projet permet de suivre le prix d’un produit sur un site web, d’enregistr
 ---
 
 ## 🗂️ Structure du projet
+300137754/
+├── scripts/
+│   ├── analyse.sh          # Orchestrateur Bash (vérif. env + appel Python)
+│   ├── analyse.py          # Scraping API + écriture CSV + rapport.txt
+│   └── requirements.txt    # Dépendances Python
+│
+├── data/
+│   ├── prices.csv          # Historique des prix 
+│   └── scraping.log        # Log d'exécution
+│
+├── output/
+│   ├── rapport.txt         # Rapport texte (prix actuel + variation)
+│   ├── graph_evolution.png # Courbes d'évolution (généré par Jupyter)
+│   └── graph_variation.png # Variation J/J-1 (généré par Jupyter)
+│
+├── RAPPORT.ipynb           # Notebook Jupyter avec graphiques et analyses
+└── README.md               # Ce fichier
