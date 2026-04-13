@@ -103,6 +103,7 @@ Résultats finaux affichés dans le notebook après exécution.
 - ✔ Analyse des mots fréquents
 - ✔ Statistiques générées automatiquement
 - ✔ Rapport structuré
+  
 🧠 Compétences développées
 Python (Regex, Counter)
 PowerShell scripting
