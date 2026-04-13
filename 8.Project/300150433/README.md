@@ -33,7 +33,6 @@ Il permet de :
 
 # 📂 Structure du projet
 
-
 300150433/
 │
 ├── scripts/
@@ -50,6 +49,8 @@ Il permet de :
 ├── create_notebook.py
 └── README.md
 
+
+---
 
 # ▶️ Exécution
 
