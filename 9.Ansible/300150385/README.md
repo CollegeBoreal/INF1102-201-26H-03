@@ -41,12 +41,10 @@ Le but est d’installer **Nginx**, de configurer automatiquement une page HTML 
 
 ### 🔹 1. Connexion à la machine virtuelle
 
-```bash
 ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.215
 
 ![wait](https://github.com/user-attachments/assets/d63a1e86-6a3a-4014-b321-083ca92a9eea)
 
-![wait](https://github.com/user-attachments/assets/e6bcdf70-71b0-4c17-acdf-9d3ea24128c7)
 
 🔹 2. Installation d’Ansible
 sudo apt update
