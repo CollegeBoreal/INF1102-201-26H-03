@@ -37,7 +37,7 @@ Pour afficher la structure du projet on tape la commande:
 tree /f
 ```
 ---
-⚙️ Scripts
+## ⚙️ Scripts
 analyse.ps1
 
 Script PowerShell qui :
@@ -48,7 +48,7 @@ planifie ou automatise la récupération des données
 Get-Content .\scripts\analyse.ps1
 ```
 ---
-analyse.py
+## analyse.py
 
 Script Python qui :
 
@@ -59,7 +59,7 @@ génère output/rapport.txt
 Get-Content .\scripts\analyse.py
 ```
 ---
-📄 Fichier CSV
+## 📄 Fichier CSV
 
 Le fichier data/prices.csv contient :
 
@@ -68,7 +68,7 @@ heure
 produit
 prix
 ---
-📈 Résultats
+## 📈 Résultats
 🧾 Rapport texte
 ```
 Get-Content .\output\rapport.txt
