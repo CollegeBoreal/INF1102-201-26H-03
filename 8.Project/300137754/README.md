@@ -1,4 +1,4 @@
-# 📊 Projet 3 – Suivi de prix
+# 📊 Projet 3 – Suivi de prix de produits e-commerce
 
 **Nom :** Beni Joseph Ephraim Mundhu  
 **Numéro étudiant :** 300137754  
