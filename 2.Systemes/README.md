@@ -46,18 +46,18 @@ La programmation par scripts permet :
 
 *   **But** : interagir directement avec le **système d’exploitation** (processus, fichiers, E/S, automatisation)
 
-*   **Shell**  
+*   **[Shell](1.Shells)**  
     Interface utilisateur ⇄ OS  
     Interprète les commandes, gère les processus et les flux  
     Ex. `bash`, `PowerShell`
 
-*   **Scripting**  
+*   **[Scripting](2.Scripting)**  
     Scripts interprétés pour **automatiser** des tâches système
     *   Bash : simple, Unix
     *   PowerShell : objets, robuste
     *   Python : complexe, maintenable
 
-*   **Pipelines**  
+*   **[Pipelines](3.Pipelines)**  
     Chaînage de commandes (sortie → entrée)
     ```bash
     cmd1 | cmd2 | cmd3
