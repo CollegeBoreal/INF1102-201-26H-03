@@ -1,13 +1,16 @@
 import re
 from collections import Counter
 from datetime import datetime
+import matplotlib.pyplot as plt
+import os
 
 input_file = "data/sample.log"
 output_file = "output/rapport.txt"
+graph_file = "images/graphique.png"
 
 titles = []
 
-# Lecture du fichier log
+# 📥 Lecture du fichier log
 try:
     with open(input_file) as f:
         for line in f:
@@ -16,27 +19,36 @@ except:
     print("Erreur lecture fichier log")
     titles = []
 
-# Extraction des mots
+# 🔤 Extraction des mots (FIX)
 words = []
+
 for t in titles:
-    found = re.findall(r'\b[a-zA-Z]{3,}\b', t.lower())
+    # enlever balises XML / CDATA
+    t = re.sub(r'<[^>]+>', '', t)
+
+    # extraire mots
+    found = re.findall(r'[a-zA-Z]+', t.lower())
     words.extend(found)
+
+# ❌ mots inutiles (optionnel mais pro)
+stop_words = {"the", "and", "for", "with", "from", "that", "this", "are"}
+words = [w for w in words if w not in stop_words]
 
 top_words = Counter(words).most_common(10)
 
-# Sécurité calcul moyenne
+# 📊 Moyenne
 if titles:
     avg_length = sum(len(t) for t in titles) / len(titles)
 else:
     avg_length = 0
 
-# Sécurité mot le plus long
+# 🔠 Mot le plus long
 if words:
     longest_word = max(words, key=len)
 else:
     longest_word = "Aucun mot trouvé"
 
-# Génération du rapport
+# 📄 Génération du rapport
 now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 with open(output_file, "w") as f:
@@ -69,25 +81,25 @@ with open(output_file, "w") as f:
     f.write("Report generated successfully\n")
 
 print("✔ Rapport généré :", output_file)
-# ========================
+
 # 📊 Génération graphique
-# ========================
+if top_words:
+    labels = [w for w, c in top_words]
+    values = [c for w, c in top_words]
 
-import matplotlib.pyplot as plt
-
-# Préparer données
-labels = [w for w, c in top_words]
-values = [c for w, c in top_words]
-
-if labels and values:
     plt.figure()
     plt.bar(labels, values)
     plt.title("Top 10 mots les plus fréquents")
     plt.xlabel("Mots")
     plt.ylabel("Fréquence")
-    
-    # Sauvegarde image
-    plt.savefig("output/graphique.png")
-    print("📊 Graphique généré : output/graphique.png")
+    plt.xticks(rotation=45)
+
+    # créer dossier images si pas existant
+    os.makedirs("images", exist_ok=True)
+
+    plt.savefig(graph_file)
+    print("📊 Graphique généré :", graph_file)
+
+    plt.close()
 else:
     print("⚠️ Pas assez de données pour générer un graphique")
