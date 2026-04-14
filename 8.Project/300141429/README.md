@@ -35,6 +35,7 @@ Ce projet a pour objectif de démontrer l’utilisation de plusieurs langages de
 ```powershell
 pwsh scripts/analyse.ps1
 ```
+![](images/pro5.png)
 Ces commandes :
 
 récupèrent automatiquement les titres depuis BBC News
