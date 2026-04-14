@@ -167,24 +167,24 @@ with open("fichier_sans_vide.txt", "w") as f:
 
 ## **1. Symboles essentiels**
 
-| Regex   | Signification            | Exemple   | Résultat    |
-| ------- | ------------------------ | --------- | ----------- |
-| `.`     | N’importe quel caractère | `a.c`     | abc, a1c    |
-| `\d`    | Chiffre (0–9)            | `\d\d`    | 12, 45      |
-| `\w`    | Lettre ou chiffre        | `\w+`     | abc123      |
-| `\s`    | Espace                   | `\s+`     | "   "       |
-| `^`     | Début de ligne           | `^Hello`  | Hello world |
-| `$`     | Fin de ligne             | `end$`    | the end     |
-| `*`     | 0 ou plusieurs           | `ab*c`    | ac, abc     |
-| `+`     | 1 ou plusieurs           | `ab+c`    | abc         |
-| `?`     | 0 ou 1                   | `colou?r` | color       |
-| `{n}`   | Exactement n             | `\d{3}`   | 123         |
-| `{n,}`  | n ou plus                | `\d{2,}`  | 12, 123     |
-| `{n,m}` | entre n et m             | `\d{2,4}` | 12, 1234    |
-| `[]`    | Choix de caractères      | `[abc]`   | a, b, c     |
-| `[^]`   | Négation                 | `[^0-9]`  | lettre      |
-| `()`    | Groupe                   | `(ab)+`   | abab        |
-| `\|`    | OU                       | `chat\|chien`| chat     |
+| Regex   | Signification            | Exemple       | Résultat    |
+| ------- | ------------------------ | ------------- | ----------- |
+| `.`     | N’importe quel caractère | `a.c`         | abc, a1c    |
+| `\d`    | Chiffre (0–9)            | `\d\d`        | 12, 45      |
+| `\w`    | Lettre ou chiffre        | `\w+`         | abc123      |
+| `\s`    | Espace                   | `\s+`         | "   "       |
+| `^`     | Début de ligne           | `^Hello`      | Hello world |
+| `$`     | Fin de ligne             | `end$`        | the end     |
+| `*`     | 0 ou plusieurs           | `ab*c`        | ac, abc     |
+| `+`     | 1 ou plusieurs           | `ab+c`        | abc         |
+| `?`     | 0 ou 1                   | `colou?r`     | color       |
+| `{n}`   | Exactement n             | `\d{3}`       | 123         |
+| `{n,}`  | n ou plus                | `\d{2,}`      | 12, 123     |
+| `{n,m}` | entre n et m             | `\d{2,4}`     | 12, 1234    |
+| `[]`    | Choix de caractères      | `[abc]`       | a, b, c     |
+| `[^]`   | Négation                 | `[^0-9]`      | lettre      |
+| `()`    | Groupe                   | `(ab)+`       | abab        |
+| `\|`    | OU                       | `chat\|chien` | chat        |
 
 ---
 
@@ -377,12 +377,12 @@ REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 
 # 🧠 **3. Regex utiles**
 
-| Élément   | Regex                   |           |
-| --------- | ----------------------- | --------- |
-| IP        | `(\d{1,3}\.){3}\d{1,3}` |           |
-| Code HTTP | `" (\d{3}) `            |           |
-| Pages GET | `"GET ([^ ]+)`          |           |
-| Erreurs   | `" (4 \| 5)\d{2} `      |           |
+| Élément   | Regex                   |
+| --------- | ----------------------- |
+| IP        | `(\d{1,3}\.){3}\d{1,3}` |
+| Code HTTP | `" (\d{3}) `            |
+| Pages GET | `"GET ([^ ]+)`          |
+| Erreurs   | `" (4 \| 5)\d{2} `      |
 
 ---
 
