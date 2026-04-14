@@ -1,0 +1,22 @@
+- name: Déploiement Nginx – Oumar Zouma (300147629)
+  hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Installer nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Déployer la page HTML personnalisée
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.nginx-debian.html
+
+    - name: Activer et démarrer nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
