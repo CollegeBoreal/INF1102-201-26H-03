@@ -33,6 +33,7 @@ Ce projet décrit une VM Ubuntu clonée à partir du template :
 - Ressources : 2 CPU / 2 GB RAM
 - Réseau : bridge `vmbr0`
 - Adresse IP prévue : **10.7.237.215**
+![wait](https://github.com/user-attachments/assets/4ca2f01d-8273-49d5-a939-d038d40205b5)
 
 ---
 
