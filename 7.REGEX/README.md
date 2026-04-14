@@ -184,7 +184,7 @@ with open("fichier_sans_vide.txt", "w") as f:
 | `[]`    | Choix de caractères      | `[abc]`   | a, b, c     |        |      |
 | `[^]`   | Négation                 | `[^0-9]`  | lettre      |        |      |
 | `()`    | Groupe                   | `(ab)+`   | abab        |        |      |
-| `       | `                        | OU        | `chat       | chien` | chat |
+| `       \| `                        | OU        | `chat       \| chien` | chat |
 
 ---
 
