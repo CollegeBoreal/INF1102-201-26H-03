@@ -1,4 +1,4 @@
-Voici une **explication claire, progressive et concrète** de la notion de **pipeline**, en restant dans le contexte du scripting et de l’automatisation.
+Une **explication claire, progressive et concrète** de la notion de **pipeline**, en restant dans le contexte du scripting et de l’automatisation.
 
 ***
 
