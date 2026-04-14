@@ -1,3 +1,7 @@
+**Nom :** Beni Joseph Ephraim Mundhu  
+**Numéro étudiant :** 300137754  
+**Cours :** INF1102-201-26H-03  
+---
 ## 🎯 **Objectif**
 
 Créer un script qui :
