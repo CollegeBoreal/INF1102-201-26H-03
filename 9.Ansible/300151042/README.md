@@ -72,7 +72,7 @@ Page HTML (files/index.html)
 </body>
 </html>
 
-▶️ Exécution
+## ▶️ Exécution
 
 Tester la connexion :
 ansible web -i inventory.ini -m ping
