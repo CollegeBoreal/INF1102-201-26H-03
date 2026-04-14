@@ -84,3 +84,28 @@ Get-Content .\output\rapport.txt
 <img width="1088" height="566" alt="rapport-txt" src="https://github.com/user-attachments/assets/e0807f7a-f97b-459b-a493-5839f2e43d96" />
 
 ---
+
+## 📊 Tableau des données
+<img width="1128" height="741" alt="Capture d&#39;écran 2026-04-14 163241" src="https://github.com/user-attachments/assets/e49a6e70-4b48-4e13-91d7-3d4632f62874" />
+
+---
+## 📉 Graphique d’évolution
+<img width="1135" height="745" alt="Capture d&#39;écran 2026-04-14 160517" src="https://github.com/user-attachments/assets/10219775-c2aa-4b51-98ca-41748b39892e" />
+
+<img width="1171" height="630" alt="Capture d&#39;écran 2026-04-14 160543" src="https://github.com/user-attachments/assets/f8f8adf7-a69f-43d3-84c3-3037bf2004a3" />
+
+<img width="1109" height="723" alt="Capture d&#39;écran 2026-04-14 160603" src="https://github.com/user-attachments/assets/721e56d4-8fda-494e-999c-ae704e869c4b" />
+
+<img width="1104" height="389" alt="Capture d&#39;écran 2026-04-14 160611" src="https://github.com/user-attachments/assets/48bc6af7-af0d-47bb-a4f6-189b7816cea8" />
+
+---
+## 📓 Notebook Jupyter
+
+```
+Le fichier RAPPORT.ipynb :
+
+charge les données
+nettoie les valeurs
+affiche un graphique
+calcule la variation des prix
+```
