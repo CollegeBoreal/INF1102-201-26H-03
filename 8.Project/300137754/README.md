@@ -36,3 +36,51 @@ Pour afficher la structure du projet on tape la commande:
 ```
 tree /f
 ```
+---
+## ⚙️ Scripts
+analyse.ps1
+
+Script PowerShell qui :
+
+exécute le script Python
+planifie ou automatise la récupération des données
+```
+Get-Content .\scripts\analyse.ps1
+```
+<img width="1070" height="425" alt="get-content-ps1" src="https://github.com/user-attachments/assets/b8667163-43e4-4d1a-8d40-15538995aa62" />
+
+---
+analyse.py
+
+Script Python qui :
+
+récupère le prix (scraping)
+enregistre dans data/prices.csv
+génère output/rapport.txt
+```
+Get-Content .\scripts\analyse.py
+```
+<img width="1106" height="612" alt="get_content-py" src="https://github.com/user-attachments/assets/9b63fcf8-9398-498c-b6d2-9f94681c760e" />
+
+---
+## 📄 Fichier CSV
+
+Le fichier data/prices.csv contient :
+```
+date
+heure
+produit
+prix
+url
+```
+<img width="948" height="406" alt="prices-csv" src="https://github.com/user-attachments/assets/079d72e8-b37d-4eee-aa91-3fe729c9f0ec" />
+
+---
+## 📈 Résultats
+🧾 Rapport texte
+```
+Get-Content .\output\rapport.txt
+```
+<img width="1088" height="566" alt="rapport-txt" src="https://github.com/user-attachments/assets/e0807f7a-f97b-459b-a493-5839f2e43d96" />
+
+---
