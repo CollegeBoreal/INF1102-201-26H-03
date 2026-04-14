@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 RAPPORT QUALITÉ DE L'AIR - 2026-04-14 21:26:51
+=======
+RAPPORT QUALITÉ DE L'AIR - 2026-04-14 21:28:58
+>>>>>>> 752c4671e5a79561deed4112b1867ca44d98905d
 Station : Montreal
 Indice AQI : 27
 Diagnostic : Bon

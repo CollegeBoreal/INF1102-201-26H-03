@@ -75,8 +75,8 @@ Script permettant de générer automatiquement le notebook Jupyter.
 <img width="912" height="623" alt="nano  create notebook" src="https://github.com/user-attachments/assets/bf93389b-67bd-4a94-b0f3-c482832048cd" />
 
 ### ⚡ Exécution PowerShell
-Exécution du script PowerShell pour récupérer et traiter les données.
-<img width="815" height="120" alt="pwsh analyse ps1" src="https://github.com/user-attachments/assets/05cb6959-313d-4eee-97ae-efef99dbb94b" />
+<img width="834" height="139" alt="image" src="https://github.com/user-attachments/assets/e927f182-d131-485a-8f2e-cdad421ccb4a" />
+
 
 ### 📄 Rapport généré
 Affichage du rapport texte contenant les résultats de l’analyse.
