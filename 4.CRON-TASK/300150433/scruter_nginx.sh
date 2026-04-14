@@ -14,3 +14,5 @@ echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 
 # Extraire les visiteurs les plus actifs
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq -c | sort -nr > /home/ubuntu/nginx_ips_freq.txt
+
+echo "Analyse terminée avec succès"

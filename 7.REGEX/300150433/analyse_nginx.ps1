@@ -49,4 +49,4 @@ ForEach-Object {
     "$($_.Count) $($_.Name)" | Out-File $rapport -Append
 }
 
-Write-Host "Rapport généré : $rapport"
+Write-Host "Rapport généré ! : $rapport"

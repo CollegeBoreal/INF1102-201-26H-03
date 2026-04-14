@@ -1,0 +1,107 @@
+﻿[
+  {
+    "id": 1,
+    "source": "CyberDaily",
+    "title": "Major cloud data breach exposes enterprise credentials across multiple regions",
+    "summary": "Security teams are investigating a significant cloud security breach that exposed enterprise credentials, customer records, and access tokens. Analysts recommend stronger identity controls, encryption, and continuous monitoring.",
+    "date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "source": "ThreatWire",
+    "title": "Ransomware campaign disrupts hospital systems and emergency operations",
+    "summary": "A coordinated ransomware attack disrupted hospital infrastructure, delayed medical operations, and forced incident response teams to activate backup recovery procedures and containment plans.",
+    "date": "2026-04-01"
+  },
+  {
+    "id": 3,
+    "source": "TechShield",
+    "title": "AI-powered detection reduces phishing success in corporate email environments",
+    "summary": "Organizations are using artificial intelligence and machine learning to identify phishing messages, detect suspicious links, and automate email threat classification.",
+    "date": "2026-04-02"
+  },
+  {
+    "id": 4,
+    "source": "CloudSec Post",
+    "title": "Zero trust adoption accelerates as firms modernize access management",
+    "summary": "Enterprises are investing in zero trust security models to improve identity verification, reduce unauthorized access, and secure hybrid cloud applications.",
+    "date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "source": "IoT Monitor",
+    "title": "Researchers discover critical vulnerabilities in smart building IoT devices",
+    "summary": "Security researchers identified critical vulnerabilities in connected sensors, cameras, and building automation systems, raising concerns about patch management and lateral movement risks.",
+    "date": "2026-04-02"
+  },
+  {
+    "id": 6,
+    "source": "DataSphere",
+    "title": "Privacy regulators pressure firms after customer data exposure incident",
+    "summary": "A new data exposure incident has increased regulatory scrutiny, with investigators demanding stronger governance, protection controls, audit trails, and incident documentation.",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 7,
+    "source": "NetSecure News",
+    "title": "Machine learning improves anomaly detection in network traffic analysis",
+    "summary": "Security operations centers are using machine learning to detect abnormal traffic, malicious behavior, and early indicators of compromise in enterprise networks.",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 8,
+    "source": "CyberDaily",
+    "title": "Critical software patch fixes authentication bypass vulnerability",
+    "summary": "Vendors released an emergency patch for a critical authentication vulnerability affecting remote access services, identity workflows, and internal web applications.",
+    "date": "2026-04-03"
+  },
+  {
+    "id": 9,
+    "source": "ThreatWire",
+    "title": "Phishing remains a leading cause of account compromise and internal breaches",
+    "summary": "Security awareness teams continue to warn that phishing emails, credential theft, and social engineering remain among the most common causes of cyber incidents.",
+    "date": "2026-04-04"
+  },
+  {
+    "id": 10,
+    "source": "CloudSec Post",
+    "title": "Cloud compliance programs expand to reduce cyber risk in digital transformation",
+    "summary": "Organizations are strengthening compliance frameworks, encryption policies, and cloud monitoring capabilities to support secure digital transformation strategies.",
+    "date": "2026-04-04"
+  },
+  {
+    "id": 11,
+    "source": "AI Security Review",
+    "title": "Threat intelligence platforms combine AI and automation for faster cyber defense",
+    "summary": "Threat intelligence tools are using automation and AI to correlate events, prioritize alerts, and support faster detection and response across security teams.",
+    "date": "2026-04-04"
+  },
+  {
+    "id": 12,
+    "source": "InfraWatch",
+    "title": "Public infrastructure operators review resilience after cyber attack simulation",
+    "summary": "Infrastructure operators are improving resilience planning, backup strategies, and recovery workflows after simulations revealed weaknesses in operational continuity.",
+    "date": "2026-04-05"
+  },
+  {
+    "id": 13,
+    "source": "BreachReport",
+    "title": "Exposed database leaves sensitive customer information accessible online",
+    "summary": "A misconfigured database exposed sensitive customer information, including identifiers and contact records, highlighting gaps in access control and security review processes.",
+    "date": "2026-04-05"
+  },
+  {
+    "id": 14,
+    "source": "Mobile Threat Journal",
+    "title": "Security analysts track malicious mobile applications stealing credentials",
+    "summary": "Mobile threat researchers identified malicious applications designed to steal credentials, monitor user activity, and bypass standard detection controls.",
+    "date": "2026-04-05"
+  },
+  {
+    "id": 15,
+    "source": "CyberDaily",
+    "title": "Enterprises prioritize cyber resilience, identity security, and cloud protection",
+    "summary": "Executive security strategies increasingly focus on resilience, strong identity governance, privileged access control, and layered cloud defense mechanisms.",
+    "date": "2026-04-06"
+  }
+]

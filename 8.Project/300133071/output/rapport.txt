@@ -1,31 +1,31 @@
 ============================================================
-  RAPPORT D'ANALYSE — CNN
-  Généré le 05/04/2026 à 23:06
+  RAPPORT D'ANALYSE — BBC NEWS
+  Généré le 07/04/2026 à 13:18
 ============================================================
 
-  Articles analysés : 30
-  Mots uniques      : 167
+  Articles analysés : 1
+  Mots uniques      : 13
 
 ────────────────────────────────────────────────────────────
   TOP 10 DES MOTS LES PLUS FRÉQUENTS
 ────────────────────────────────────────────────────────────
 
-   1. trump                   6 fois  ██████
-   2. easter                  5 fois  █████
-   3. iran                    5 fois  █████
-   4. pope                    3 fois  ███
-   5. message                 3 fois  ███
-   6. strait                  3 fois  ███
-   7. college                 2 fois  ██
-   8. mourning                2 fois  ██
-   9. dinosaurs               2 fois  ██
-  10. brush                   2 fois  ██
+   1. multiple                1 fois  █
+   2. languages               1 fois  █
+   3. trump                   1 fois  █
+   4. something               1 fois  █
+   5. revolutionarily         1 fois  █
+   6. wonderful               1 fois  █
+   7. happen                  1 fois  █
+   8. deadline                1 fois  █
+   9. tuesday                 1 fois  █
+  10. iran                    1 fois  █
 
 ────────────────────────────────────────────────────────────
   INTERPRÉTATION
 ────────────────────────────────────────────────────────────
 
-  Les actualités de CNN ce jour portent principalement sur :
+  Les actualités de BBC News ce jour portent principalement sur :
   
     • Sujets variés (aucun thème dominant identifié)
   

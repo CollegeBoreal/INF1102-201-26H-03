@@ -1,0 +1,121 @@
+=================================================================
+  RAPPORT — ANALYSE DU DÉVELOPPEMENT HUMAIN EN AFRIQUE
+  Généré le : 2026-04-11 16:41:21
+  Étudiant  : Frank Laurel | ID : 300143951
+  Cours     : TSI — Collège Boréal
+=================================================================
+
+  Pays analysés : Cameroun, Nigeria, Afrique du Sud, Ghana, Sénégal, Kenya, Côte d'Ivoire, Éthiopie
+  Indicateurs   : 6
+  Source        : World Bank Open Data API
+
+─────────────────────────────────────────────────────────────────
+  📊 PIB par habitant (USD)
+─────────────────────────────────────────────────────────────────
+   1. Afrique du Sud          6267.19 USD
+   2. Côte d'Ivoire           2727.89 USD
+   3. Ghana                   2390.77 USD
+   4. Kenya                   2132.43 USD
+   5. Cameroun                1830.01 USD ◀ FOCUS
+   6. Sénégal                 1773.22 USD
+   7. Éthiopie                1133.88 USD
+   8. Nigeria                 1084.16 USD
+
+  Moyenne : 2417.44 USD
+  Max     : 6267.19 USD
+  Min     : 1084.16 USD
+
+─────────────────────────────────────────────────────────────────
+  📊 Espérance de vie
+─────────────────────────────────────────────────────────────────
+   1. Sénégal                   68.92 ans
+   2. Éthiopie                  67.60 ans
+   3. Afrique du Sud            66.31 ans
+   4. Ghana                     65.69 ans
+   5. Kenya                     63.83 ans
+   6. Côte d'Ivoire             62.11 ans
+
+  Moyenne : 65.75 ans
+  Max     : 68.92 ans
+  Min     : 62.11 ans
+
+─────────────────────────────────────────────────────────────────
+  📊 Mortalité infantile (/ 1 000)
+─────────────────────────────────────────────────────────────────
+   1. Nigeria                  115.60 ‰
+   2. Cameroun                  64.80 ‰ ◀ FOCUS
+   3. Côte d'Ivoire             64.50 ‰
+   4. Éthiopie                  44.50 ‰
+   5. Kenya                     38.80 ‰
+   6. Sénégal                   36.50 ‰
+   7. Ghana                     35.90 ‰
+   8. Afrique du Sud            35.10 ‰
+
+  Moyenne : 54.46 ‰
+  Max     : 115.60 ‰
+  Min     : 35.10 ‰
+
+─────────────────────────────────────────────────────────────────
+  📊 Taux d'alphabétisation
+─────────────────────────────────────────────────────────────────
+   1. Afrique du Sud            91.15 %
+   2. Ghana                     76.49 %
+   3. Cameroun                  72.55 % ◀ FOCUS
+   4. Nigeria                   70.41 %
+   5. Éthiopie                  60.46 %
+   6. Sénégal                   50.36 %
+   7. Côte d'Ivoire             50.00 %
+
+  Moyenne : 67.35 %
+  Max     : 91.15 %
+  Min     : 50.00 %
+
+─────────────────────────────────────────────────────────────────
+  📊 Accès à l'électricité
+─────────────────────────────────────────────────────────────────
+   1. Ghana                     89.50 %
+   2. Afrique du Sud            87.70 %
+   3. Kenya                     76.20 %
+   4. Sénégal                   74.20 %
+   5. Cameroun                  72.00 % ◀ FOCUS
+   6. Nigeria                   61.20 %
+   7. Éthiopie                  55.40 %
+
+  Moyenne : 73.74 %
+  Max     : 89.50 %
+  Min     : 55.40 %
+
+─────────────────────────────────────────────────────────────────
+  📊 Accès à Internet
+─────────────────────────────────────────────────────────────────
+   1. Afrique du Sud            78.36 %
+   2. Ghana                     72.18 %
+   3. Sénégal                   60.12 %
+   4. Cameroun                  46.26 % ◀ FOCUS
+   5. Côte d'Ivoire             41.43 %
+   6. Nigeria                   41.21 %
+   7. Kenya                     34.98 %
+   8. Éthiopie                  21.94 %
+
+  Moyenne : 49.56 %
+  Max     : 78.36 %
+  Min     : 21.94 %
+
+=================================================================
+  CONCLUSION
+=================================================================
+
+  Ce rapport présente une analyse comparative des indicateurs
+  de développement humain pour 8 pays d'Afrique subsaharienne.
+  Le Cameroun est mis en évidence comme pays de référence.
+
+  Les données proviennent exclusivement de l'API publique
+  de la Banque Mondiale (World Bank Open Data).
+
+  Pour les visualisations détaillées, consulter :
+  → output/graph_*.png     (évolutions temporelles)
+  → output/bar_*.png       (comparaisons récentes)
+  → output/heatmap_idh.png (tableau de bord global)
+  → RAPPORT.ipynb          (rapport interactif Jupyter)
+
+=================================================================

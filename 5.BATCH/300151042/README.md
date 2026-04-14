@@ -105,6 +105,8 @@ sudo /entreprise/script_gestion.sh
 ```
 
 ---
+<img width="857" height="572" alt="Capturegit" src="https://github.com/user-attachments/assets/a0ab8b72-21c0-4e05-827f-169ddb067204" />
+
 
 ## 🔍 7. Vérification des résultats
 
@@ -145,6 +147,7 @@ Ajout de la tâche :
 ➡ Exécution automatique chaque jour à 02h00
 
 ---
+<img width="1366" height="768" alt="crontab" src="https://github.com/user-attachments/assets/fcee8fdf-5f70-4c90-8f53-2ea075c6a966" />
 
 ## 🧪 9. Vérification du service CRON
 
@@ -165,6 +168,8 @@ cat /var/log/syslog | grep CRON
 ```
 
 ---
+
+<img width="688" height="525" alt="cron" src="https://github.com/user-attachments/assets/4acdae6c-6830-4cc8-b1ce-1d541aa0a954" />
 
 ## ⚠️ 10. Dépannage
 

@@ -1,0 +1,59 @@
+﻿{
+    "request":  {
+                    "type":  "City",
+                    "query":  "Toronto, Canada",
+                    "language":  "en",
+                    "unit":  "m"
+                },
+    "location":  {
+                     "name":  "Toronto",
+                     "country":  "Canada",
+                     "region":  "Ontario",
+                     "lat":  "43.667",
+                     "lon":  "-79.417",
+                     "timezone_id":  "America/Toronto",
+                     "localtime":  "2026-04-08 15:34",
+                     "localtime_epoch":  1775662440,
+                     "utc_offset":  "-4.0"
+                 },
+    "current":  {
+                    "observation_time":  "07:34 PM",
+                    "temperature":  6,
+                    "weather_code":  113,
+                    "weather_icons":  [
+                                          "https://cdn.worldweatheronline.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png"
+                                      ],
+                    "weather_descriptions":  [
+                                                 "Sunny"
+                                             ],
+                    "astro":  {
+                                  "sunrise":  "06:47 AM",
+                                  "sunset":  "07:53 PM",
+                                  "moonrise":  "02:03 AM",
+                                  "moonset":  "10:11 AM",
+                                  "moon_phase":  "Waning Gibbous",
+                                  "moon_illumination":  70
+                              },
+                    "air_quality":  {
+                                        "co":  "287.85",
+                                        "no2":  "34.65",
+                                        "o3":  "63",
+                                        "so2":  "10.75",
+                                        "pm2_5":  "16.65",
+                                        "pm10":  "16.95",
+                                        "us-epa-index":  "2",
+                                        "gb-defra-index":  "2"
+                                    },
+                    "wind_speed":  13,
+                    "wind_degree":  105,
+                    "wind_dir":  "ESE",
+                    "pressure":  1031,
+                    "precip":  0,
+                    "humidity":  65,
+                    "cloudcover":  25,
+                    "feelslike":  4,
+                    "uv_index":  4,
+                    "visibility":  24,
+                    "is_day":  "yes"
+                }
+}

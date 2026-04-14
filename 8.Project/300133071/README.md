@@ -1,3 +1,10 @@
+## 👤 Étudiant
+
+- Identifiant : **300133071**
+- Nom: Nelson William
+- Cours : Programmation système 
+- Thème : **News Analyser — Scraping & Analyse de texte**
+
 # 📰 News Analyser — Scraping & Analyse de texte
 
 Projet Python complet pour scrapper des actualités (BBC ou CNN),
@@ -31,6 +38,7 @@ cd scripts
 .\analyse.ps1              # BBC par défaut
 .\analyse.ps1 -Site cnn    # CNN
 ```
+<img src="images/3.png" style="max-width:50%; height:auto;">
 
 ### Option B — Python direct
 ```bash
@@ -47,6 +55,7 @@ python analyse.py --site cnn   # CNN
 pip install requests beautifulsoup4 matplotlib pandas
 pip install wordcloud   # Optionnel (nuage de mots)
 ```
+<img src="images/1.png" style="max-width:50%; height:auto;">
 
 ---
 
@@ -56,6 +65,7 @@ pip install wordcloud   # Optionnel (nuage de mots)
 pip install jupyter
 jupyter notebook RAPPORT.ipynb
 ```
+<img src="images/2.png" style="max-width:50%; height:auto;">
 
 ---
 
@@ -75,3 +85,9 @@ jupyter notebook RAPPORT.ipynb
 | Délais entre requêtes (poli) | ✅ |
 | User-Agent réaliste | ✅ |
 | Gestion des erreurs | ✅ |
+
+---
+
+<img src="output/wordcloud.png" style="max-width:50%; height:auto;">
+
+📅 2026-04-05 ⌛ 23h03
