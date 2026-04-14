@@ -18,18 +18,18 @@ Une **expression régulière (Regex)** est une **chaîne spéciale utilisée pou
 
 ## **2. Composants de base des Regex 🧩**
 
-| Symbole | Signification              | Exemple                                |       |                            |
-| ------- | -------------------------- | -------------------------------------- | ----- | -------------------------- |
-| `.`     | n’importe quel caractère   | `a.c` → `abc`, `a2c`, `a-c`            |       |                            |
-| `*`     | 0 ou plusieurs répétitions | `ab*c` → `ac`, `abc`, `abbc`           |       |                            |
-| `+`     | 1 ou plusieurs répétitions | `ab+c` → `abc`, `abbc`                 |       |                            |
-| `?`     | 0 ou 1 répétition          | `colou?r` → `color`, `colour`          |       |                            |
-| `^`     | Début de ligne             | `^Hello` → lignes commençant par Hello |       |                            |
-| `$`     | Fin de ligne               | `end$` → lignes finissant par end      |       |                            |
-| `[]`    | Classe de caractères       | `[aeiou]` → une voyelle                |       |                            |
-| `[^]`   | Négation                   | `[^0-9]` → tout sauf un chiffre        |       |                            |
-| `()`    | Groupement / capture       | `(ab)+` → `ab`, `abab`                 |       |                            |
-| `       | `                          | OU logique                             | `chat | chien` → “chat” ou “chien” |
+| Symbole | Signification              | Exemple                                |
+| ------- | -------------------------- | -------------------------------------- |
+| `.`     | n’importe quel caractère   | `a.c` → `abc`, `a2c`, `a-c`            |
+| `*`     | 0 ou plusieurs répétitions | `ab*c` → `ac`, `abc`, `abbc`           |
+| `+`     | 1 ou plusieurs répétitions | `ab+c` → `abc`, `abbc`                 |
+| `?`     | 0 ou 1 répétition          | `colou?r` → `color`, `colour`          |
+| `^`     | Début de ligne             | `^Hello` → lignes commençant par Hello |
+| `$`     | Fin de ligne               | `end$` → lignes finissant par end      |
+| `[]`    | Classe de caractères       | `[aeiou]` → une voyelle                |
+| `[^]`   | Négation                   | `[^0-9]` → tout sauf un chiffre        |
+| `()`    | Groupement / capture       | `(ab)+` → `ab`, `abab`                 |
+| `\|`    | OU logique                 | `chat \| chien` → “chat” ou “chien”    |
 
 ---
 
@@ -152,7 +152,7 @@ with open("fichier_sans_vide.txt", "w") as f:
 | Chercher un mot        | `grep "mot" fichier`      | `Select-String -Pattern "mot"`          | `re.search(r"mot", texte)`    |
 | Vérifier un chiffre    | `grep "[0-9]" fichier`    | `"abc" -match "\d"`                     | `re.findall(r"\d", texte)`    |
 | Extraire texte         | `sed -E 's/.*: (.*)/\1/'` | `$matches[1]`                           | `match.group(1)`              |
-| Supprimer lignes vides | `grep -v "^\s*$"`         | `Where-Object { $_ -notmatch "^\s*$" }` | `[l for l in f if l.strip()]` |
+| Supprimer lignes vides | `grep -v "^\s*$"`         | `Where-Object{$_ -notmatch "^\s*$"}`    | `[l for l in f if l.strip()]` |
 
 ---
 
@@ -167,24 +167,24 @@ with open("fichier_sans_vide.txt", "w") as f:
 
 ## **1. Symboles essentiels**
 
-| Regex   | Signification            | Exemple   | Résultat    |        |      |
-| ------- | ------------------------ | --------- | ----------- | ------ | ---- |
-| `.`     | N’importe quel caractère | `a.c`     | abc, a1c    |        |      |
-| `\d`    | Chiffre (0–9)            | `\d\d`    | 12, 45      |        |      |
-| `\w`    | Lettre ou chiffre        | `\w+`     | abc123      |        |      |
-| `\s`    | Espace                   | `\s+`     | "   "       |        |      |
-| `^`     | Début de ligne           | `^Hello`  | Hello world |        |      |
-| `$`     | Fin de ligne             | `end$`    | the end     |        |      |
-| `*`     | 0 ou plusieurs           | `ab*c`    | ac, abc     |        |      |
-| `+`     | 1 ou plusieurs           | `ab+c`    | abc         |        |      |
-| `?`     | 0 ou 1                   | `colou?r` | color       |        |      |
-| `{n}`   | Exactement n             | `\d{3}`   | 123         |        |      |
-| `{n,}`  | n ou plus                | `\d{2,}`  | 12, 123     |        |      |
-| `{n,m}` | entre n et m             | `\d{2,4}` | 12, 1234    |        |      |
-| `[]`    | Choix de caractères      | `[abc]`   | a, b, c     |        |      |
-| `[^]`   | Négation                 | `[^0-9]`  | lettre      |        |      |
-| `()`    | Groupe                   | `(ab)+`   | abab        |        |      |
-| `       | `                        | OU        | `chat       | chien` | chat |
+| Regex   | Signification            | Exemple       | Résultat    |
+| ------- | ------------------------ | ------------- | ----------- |
+| `.`     | N’importe quel caractère | `a.c`         | abc, a1c    |
+| `\d`    | Chiffre (0–9)            | `\d\d`        | 12, 45      |
+| `\w`    | Lettre ou chiffre        | `\w+`         | abc123      |
+| `\s`    | Espace                   | `\s+`         | "   "       |
+| `^`     | Début de ligne           | `^Hello`      | Hello world |
+| `$`     | Fin de ligne             | `end$`        | the end     |
+| `*`     | 0 ou plusieurs           | `ab*c`        | ac, abc     |
+| `+`     | 1 ou plusieurs           | `ab+c`        | abc         |
+| `?`     | 0 ou 1                   | `colou?r`     | color       |
+| `{n}`   | Exactement n             | `\d{3}`       | 123         |
+| `{n,}`  | n ou plus                | `\d{2,}`      | 12, 123     |
+| `{n,m}` | entre n et m             | `\d{2,4}`     | 12, 1234    |
+| `[]`    | Choix de caractères      | `[abc]`       | a, b, c     |
+| `[^]`   | Négation                 | `[^0-9]`      | lettre, caractères |
+| `()`    | Groupement / capture     | `(ab)+`       | abab        |
+| `\|`    | OU                       | `chat\|chien` | chat        |
 
 ---
 
@@ -377,12 +377,12 @@ REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 
 # 🧠 **3. Regex utiles**
 
-| Élément   | Regex                   |           |
-| --------- | ----------------------- | --------- |
-| IP        | `(\d{1,3}\.){3}\d{1,3}` |           |
-| Code HTTP | `" (\d{3}) `            |           |
-| Pages GET | `"GET ([^ ]+)`          |           |
-| Erreurs   | `" (4 \| 5)\d{2} `      |           |
+| Élément   | Regex                   |
+| --------- | ----------------------- |
+| IP        | `(\d{1,3}\.){3}\d{1,3}` |
+| Code HTTP | ` (\d{3}) `             |
+| Pages GET | `GET ([^ ]+)`           |
+| Erreurs   | ` (4 \| 5)\d{2} `       |
 
 ---
 
