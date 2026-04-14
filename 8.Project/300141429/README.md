@@ -1,6 +1,6 @@
 # 📽️ Projet – Scraping et analyse de BBC News
 
-## 👤 Informations de l’étudiant
+## 👤 Elhadji Arona Barry
 Nom : Elhadji Arona Barry  
 Matricule : 300141429  
 Cours : INF1102  
@@ -43,7 +43,10 @@ génèrent le fichier data/articles.json
 produisent le rapport texte output/rapport.txt
 
 📊 Analyse et visualisation
+
 <img width="753" height="360" alt="image" src="https://github.com/user-attachments/assets/4b77b022-3c3b-4248-b57c-9cbabfd5a868" />
+
+
 Le fichier RAPPORT.ipynb contient :
 
 le chargement des données
