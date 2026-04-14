@@ -187,14 +187,14 @@ Un pipeline devient un problème quand :
 
 La notion de pipeline dépasse largement Bash :
 
-| Domaine    | Pipeline                |      |        |
-| ---------- | ----------------------- | ---- | ------ |
-| Shell      | \`cmd1                  | cmd2 | cmd3\` |
-| PowerShell | Objets dans le pipeline |      |        |
-| CI/CD      | Jobs successifs         |      |        |
-| Data       | ETL                     |      |        |
-| Cloud      | Event pipelines         |      |        |
-| DevOps     | GitOps                  |      |        |
+| Domaine    | Pipeline                |
+| ---------- | ----------------------- |
+| Shell      | \`cmd1 \| cmd2 \| cmd3\`|
+| PowerShell | Objets dans le pipeline |
+| CI/CD      | Jobs successifs         |
+| Data       | ETL                     |
+| Cloud      | Event pipelines         |
+| DevOps     | GitOps                  |
 
 Le pipeline est **un modèle universel de traitement séquentiel**.
 
