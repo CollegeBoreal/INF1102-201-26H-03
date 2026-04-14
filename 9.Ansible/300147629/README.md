@@ -11,6 +11,8 @@ Installer Nginx sur un serveur distant
 Déployer automatiquement une page web personnalisée
 
 Activer et démarrer le service Nginx
+
+
 #📁 Structure du projet
 ```Powershell
 
