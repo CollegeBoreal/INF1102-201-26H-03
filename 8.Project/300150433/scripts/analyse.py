@@ -69,3 +69,25 @@ with open(output_file, "w") as f:
     f.write("Report generated successfully\n")
 
 print("✔ Rapport généré :", output_file)
+# ========================
+# 📊 Génération graphique
+# ========================
+
+import matplotlib.pyplot as plt
+
+# Préparer données
+labels = [w for w, c in top_words]
+values = [c for w, c in top_words]
+
+if labels and values:
+    plt.figure()
+    plt.bar(labels, values)
+    plt.title("Top 10 mots les plus fréquents")
+    plt.xlabel("Mots")
+    plt.ylabel("Fréquence")
+    
+    # Sauvegarde image
+    plt.savefig("output/graphique.png")
+    print("📊 Graphique généré : output/graphique.png")
+else:
+    print("⚠️ Pas assez de données pour générer un graphique")
