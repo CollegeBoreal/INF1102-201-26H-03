@@ -152,7 +152,7 @@ with open("fichier_sans_vide.txt", "w") as f:
 | Chercher un mot        | `grep "mot" fichier`      | `Select-String -Pattern "mot"`          | `re.search(r"mot", texte)`    |
 | Vérifier un chiffre    | `grep "[0-9]" fichier`    | `"abc" -match "\d"`                     | `re.findall(r"\d", texte)`    |
 | Extraire texte         | `sed -E 's/.*: (.*)/\1/'` | `$matches[1]`                           | `match.group(1)`              |
-| Supprimer lignes vides | `grep -v "^\s*$"`         | `Where-Object { $_ -notmatch "^\s*$" }` | `[l for l in f if l.strip()]` |
+| Supprimer lignes vides | `grep -v "^\s*$"`         | `Where-Object{$_ -notmatch "^\s*$"}`    | `[l for l in f if l.strip()]` |
 
 ---
 
