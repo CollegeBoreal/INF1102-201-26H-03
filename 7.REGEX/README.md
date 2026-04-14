@@ -18,18 +18,18 @@ Une **expression régulière (Regex)** est une **chaîne spéciale utilisée pou
 
 ## **2. Composants de base des Regex 🧩**
 
-| Symbole | Signification              | Exemple                                |       |                            |
-| ------- | -------------------------- | -------------------------------------- | ----- | -------------------------- |
-| `.`     | n’importe quel caractère   | `a.c` → `abc`, `a2c`, `a-c`            |       |                            |
-| `*`     | 0 ou plusieurs répétitions | `ab*c` → `ac`, `abc`, `abbc`           |       |                            |
-| `+`     | 1 ou plusieurs répétitions | `ab+c` → `abc`, `abbc`                 |       |                            |
-| `?`     | 0 ou 1 répétition          | `colou?r` → `color`, `colour`          |       |                            |
-| `^`     | Début de ligne             | `^Hello` → lignes commençant par Hello |       |                            |
-| `$`     | Fin de ligne               | `end$` → lignes finissant par end      |       |                            |
-| `[]`    | Classe de caractères       | `[aeiou]` → une voyelle                |       |                            |
-| `[^]`   | Négation                   | `[^0-9]` → tout sauf un chiffre        |       |                            |
-| `()`    | Groupement / capture       | `(ab)+` → `ab`, `abab`                 |       |                            |
-| `       | `                          | OU logique                             | `chat | chien` → “chat” ou “chien” |
+| Symbole | Signification              | Exemple                                |
+| ------- | -------------------------- | -------------------------------------- |
+| `.`     | n’importe quel caractère   | `a.c` → `abc`, `a2c`, `a-c`            |
+| `*`     | 0 ou plusieurs répétitions | `ab*c` → `ac`, `abc`, `abbc`           |
+| `+`     | 1 ou plusieurs répétitions | `ab+c` → `abc`, `abbc`                 |
+| `?`     | 0 ou 1 répétition          | `colou?r` → `color`, `colour`          |
+| `^`     | Début de ligne             | `^Hello` → lignes commençant par Hello |
+| `$`     | Fin de ligne               | `end$` → lignes finissant par end      |
+| `[]`    | Classe de caractères       | `[aeiou]` → une voyelle                |
+| `[^]`   | Négation                   | `[^0-9]` → tout sauf un chiffre        |
+| `()`    | Groupement / capture       | `(ab)+` → `ab`, `abab`                 |
+| `|`     | OU logique                 | `chat \| chien` → “chat” ou “chien”    |
 
 ---
 
