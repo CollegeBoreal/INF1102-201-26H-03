@@ -1,39 +1,22 @@
-# ⛽ Projet — Analyse du prix de l’essence à Toronto
+# ⛽ Gas Price Analysis — Toronto
 
-## 👤 Étudiante
+## 👤 Student
 
-* Identifiant : 300141716
-* Nom : Nabila Oulad-Bouih
-* Cours : INF1102 — Programmation système
-* Thème : Analyse du prix de l’essence et du pétrole
-
----
-
-## 🎯 Objectif du projet
-
-Ce projet a pour objectif d’analyser le prix de l’essence à Toronto en lien avec le prix du pétrole mondial (Brent), dans un contexte géopolitique marqué par les tensions au Moyen-Orient.
-
-L’objectif est de :
-
-* comprendre l’impact du pétrole sur les prix locaux
-* automatiser la génération d’un rapport
-* analyser des données simples avec Python
+* Name: Nabila Oulad-Bouih
+* ID: 300141716
+* Course: INF1102 — System Programming
 
 ---
 
-## 📦 Livrables
+## 🎯 Project Goal
 
-* `scripts/analyse.py` → script principal Python
-* `scripts/analyse.sh` → script bash (optionnel)
-* `data/prix_energie.csv` → données utilisées
-* `output/rapport.txt` → rapport généré automatiquement
-* `RAPPORT.ipynb` → analyse avec statistiques et graphiques
-* `images/` → captures d’écran
-* `README.md` → documentation du projet
+This project analyzes gas prices in Toronto and compares them with global oil prices (Brent).
+
+It also shows how geopolitical events (Middle East tensions) can impact local prices.
 
 ---
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
 ```
 300141716/
@@ -42,167 +25,135 @@ L’objectif est de :
 │   └── analyse.sh
 ├── data/
 │   └── prix_energie.csv
-├── images/
-│   ├── tableau.png
-│   ├── statistiques.png
-│   ├── graphique_essence.png
-│   ├── graphique_brent.png
-│   └── notebook.png
 ├── output/
 │   └── rapport.txt
+├── images/
 ├── RAPPORT.ipynb
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Run the Project
 
-Aucune dépendance externe nécessaire.
+### ▶️ Run Python Script
 
-Vérifier Python :
-
-```bash
-python --version
-```
-
----
-
-## 🚀 Exécution
-
-### 🔹 Exécuter le script Python
-
-```bash
+```powershell
 python scripts/analyse.py
 ```
 
-### 🔹 Afficher le rapport
-
-Windows :
+### 📄 Output
 
 ```powershell
 Get-Content output\rapport.txt -Encoding utf8
 ```
 
-Linux / VM :
+Example:
 
-```bash
-cat output/rapport.txt
+```
+Projet : Suivi du prix de l'essence à Toronto
+Date : 2026-04-14
+Ville suivie : Toronto
+...
 ```
 
 ---
 
-## 📊 Analyse des données
+## 📊 Data Analysis (Notebook)
 
-Le projet utilise un fichier CSV contenant :
+The notebook uses:
 
-* les dates
-* le prix de l’essence à Toronto
-* le prix du pétrole Brent
-
-Le notebook permet de :
-
-* charger les données avec Python
-* afficher un tableau (DataFrame)
-* calculer des statistiques (moyenne, min, max)
-* visualiser les données avec des graphiques
+* `pandas` → to load and analyze data
+* `matplotlib` → to create graphs
 
 ---
 
-## 📈 Résultats
+### 📋 Load Data
 
-Le projet génère :
-
-* un tableau des données
-* des statistiques descriptives
-* un graphique du prix de l’essence
-* un graphique du prix du Brent
-
-Ces résultats montrent une évolution similaire entre les deux variables.
+```python
+df = pd.read_csv("data/prix_energie.csv")
+df
+```
 
 ---
 
-## 🔍 Interprétation
+### 📈 Statistics
 
-On observe que :
-
-* le prix de l’essence augmente progressivement
-* le prix du Brent augmente également
-* les deux évoluent dans le même sens
-
-➡️ Cela montre qu’une hausse du pétrole brut peut influencer les prix locaux de l’essence.
+```python
+df.describe()
+```
 
 ---
 
-## 🌍 Contexte géopolitique
+### 📉 Graph (Gas Price)
 
-Le prix du pétrole est influencé par :
-
-* les tensions au Moyen-Orient
-* les conflits internationaux
-* les décisions de production (OPEP)
-
-➡️ Une augmentation du prix du pétrole peut entraîner une hausse du prix de l’essence.
+```python
+plt.plot(df["date"], df["essence_toronto"])
+```
 
 ---
 
-## 📓 Notebook Jupyter
+### 📉 Graph (Brent)
 
-Le fichier `RAPPORT.ipynb` contient :
-
-* le chargement des données
-* les statistiques descriptives
-* les graphiques
-* une analyse des résultats
-* une conclusion
+```python
+plt.plot(df["date"], df["brent"])
+```
 
 ---
 
-## 📸 Captures
+## 📸 Results
 
-### Tableau des données
+### 🔹 Table
 
-![Tableau](images/tableau.png)
+![Table](images/tableau.png)
 
-### Statistiques
+### 🔹 Statistics
 
-![Statistiques](images/statistiques.png)
+![Stats](images/statistiques.png)
 
-### Graphique essence
+### 🔹 Gas Graph
 
-![Essence](images/graphique_essence.png)
+![Gas](images/graphique_essence.png)
 
-### Graphique Brent
+### 🔹 Brent Graph
 
 ![Brent](images/graphique_brent.png)
 
-### Notebook
+---
+
+## 💻 PowerShell Execution
+
+### Script execution
+
+![Execution](images/execution.png)
+
+### Report output
+
+![Report](images/rapport.png)
+
+---
+
+## 📓 Notebook
 
 ![Notebook](images/notebook.png)
 
 ---
 
-## 🧠 Compétences développées
+## 🧠 Key Takeaways
 
-* Python scripting
-* Analyse de données
-* Utilisation de pandas et matplotlib
-* Visualisation de données
-* Organisation de projet
-* Documentation technique
+* Gas prices follow global oil trends
+* Brent price increases → gas price increases
+* External events (Middle East) affect local economy
 
 ---
 
 ## ✅ Conclusion
 
-Ce projet montre comment :
+This project shows how to:
 
-* analyser des données avec Python
-* automatiser un rapport
-* créer des visualisations
-* comprendre un phénomène réel
-
-Les événements géopolitiques peuvent influencer le prix du pétrole, ce qui a un impact direct sur les prix de l’essence à Toronto.
+* automate a report using Python
+* analyze simple data
+* visualize trends
+* connect global events to real-life impact
 
 ---
-
