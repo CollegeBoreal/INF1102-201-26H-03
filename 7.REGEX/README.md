@@ -380,9 +380,9 @@ REGEX/rapport_nginx_ps1_YYYY-MM-DD.txt
 | Élément   | Regex                   |
 | --------- | ----------------------- |
 | IP        | `(\d{1,3}\.){3}\d{1,3}` |
-| Code HTTP | `" (\d{3}) `            |
-| Pages GET | `"GET ([^ ]+)`          |
-| Erreurs   | `" (4 \| 5)\d{2} `      |
+| Code HTTP | ` (\d{3}) `             |
+| Pages GET | `GET ([^ ]+)`           |
+| Erreurs   | ` (4 \| 5)\d{2} `       |
 
 ---
 
