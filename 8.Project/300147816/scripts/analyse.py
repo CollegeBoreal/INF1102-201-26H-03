@@ -1,8 +1,18 @@
 import sys
 import json
+import os
 from datetime import datetime
 
-def analyser(fichier):
+def analyser():
+    # On définit le chemin fixe vers le fichier JSON
+    # Comme ton script est dans 'scripts/', on remonte d'un cran pour trouver 'data/'
+    fichier = "data/air_quality.json"
+    
+    # Sécurité : on vérifie si le fichier existe
+    if not os.path.exists(fichier):
+        print(f"Erreur : Le fichier {fichier} est introuvable.")
+        return
+
     with open(fichier, 'r') as f:
         data = json.load(f)
     
@@ -16,7 +26,11 @@ def analyser(fichier):
         elif aqi <= 100: niveau = "Modéré"
         else: niveau = "Insalubre"
 
-        # Génération du livrable output/rapport.txt
+        # On s'assure que le dossier output existe
+        if not os.path.exists('output'):
+            os.makedirs('output')
+
+        # Génération du rapport
         with open('output/rapport.txt', 'w') as out:
             out.write(f"RAPPORT QUALITÉ DE L'AIR - {tps}\n")
             out.write(f"Station : {ville}\n")
@@ -26,4 +40,5 @@ def analyser(fichier):
         print(f"Analyse réussie pour {ville} (AQI: {aqi})")
 
 if __name__ == "__main__":
-    analyser(sys.argv[1])
+    # On appelle la fonction sans passer d'argument sys.argv
+    analyser()

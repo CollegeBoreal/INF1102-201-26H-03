@@ -1,21 +1,22 @@
 #!/bin/bash
-# Script de récupération de la qualité de l'air
+
+# Configuration
 CITY="Montreal"
 TOKEN="15021a914a52a8cad461e6c678f2895c3325a7d6" 
 DATA_FILE="data/air_quality.json"
 
-# Récupération des données en cours via API
+# Création du dossier data s'il n'existe pas
+mkdir -p data
+
+# 1. Récupération des données via API
+echo "Récupération des données pour $CITY..."
 curl -s "https://api.waqi.info/feed/$CITY/?token=$TOKEN" -o "$DATA_FILE"
 
-# Lancement de l'analyse Python
-python3 scripts/analyse.py "$DATA_FILE"
-
-# Vérifier si le fichier a bien été créé avant de lancer Python
+# 2. Vérification et lancement de l'analyse
 if [ -f "$DATA_FILE" ]; then
-    echo "Succès ! Données enregistrées dans $DATA_FILE"
-  #On lance l'analyse Python
-    
-    python3 scripts/analyse.py "$DATA_FILE"
+    echo "Succès ! Données enregistrées. Lancement de l'analyse..."
+    # On lance Python SANS argument maintenant
+    python3 scripts/analyse.py
 else
     echo "Erreur lors de la récupération des données."
 fi

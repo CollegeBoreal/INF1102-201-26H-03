@@ -1,19 +1,32 @@
-import sys
+import requests
+from bs4 import BeautifulSoup
+from collections import Counter
 import json
+import re
 
-data_file = sys.argv[1]
-output_file = sys.argv[2]
+url = "https://www.bbc.com/news"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
 
-with open(data_file, 'r') as f:
-    data = json.load(f)
+titles = [h.text.strip() for h in soup.find_all("h2")]
 
-taux = data["rates"]["USD"]
-date = data["date"]
+# Sauvegarde des titres
+with open("data/articles.json", "w") as f:
+    json.dump(titles, f, indent=2)
 
-with open(output_file, 'w') as f:
-    f.write("Rapport de taux de change CAD → USD\n")
-    f.write("=================================\n\n")
-    f.write(f"Date : {date}\n")
-    f.write(f"Taux : 1 CAD = {taux} USD\n")
+# Nettoyage et comptage des mots
+words = []
+for title in titles:
+    clean = re.findall(r"\b[a-zA-Z]{4,}\b", title.lower())
+    words.extend(clean)
 
-print("Analyse terminée")
+counter = Counter(words)
+top_words = counter.most_common(10)
+
+# Génération du rapport texte
+with open("output/rapport.txt", "w") as f:
+    f.write("TOP 10 mots les plus fréquents (BBC News)\n\n")
+    for word, count in top_words:
+        f.write(f"{word} : {count}\n")
+
+print("Rapport généré avec succès.")

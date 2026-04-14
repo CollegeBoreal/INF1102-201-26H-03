@@ -1,5 +1,12 @@
-Rapport de taux de change CAD → USD
-=================================
+TOP 10 mots les plus fréquents (BBC News)
 
-Date : 2026-04-02
-Taux : 1 CAD = 0.71896 USD
+with : 11
+after : 9
+trump : 8
+pope : 6
+iran : 5
+blockade : 5
+they : 4
+harry : 4
+meghan : 4
+jesus : 4
