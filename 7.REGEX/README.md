@@ -29,7 +29,7 @@ Une **expression régulière (Regex)** est une **chaîne spéciale utilisée pou
 | `[]`    | Classe de caractères       | `[aeiou]` → une voyelle                |
 | `[^]`   | Négation                   | `[^0-9]` → tout sauf un chiffre        |
 | `()`    | Groupement / capture       | `(ab)+` → `ab`, `abab`                 |
-| `|`     | OU logique                 | `chat \| chien` → “chat” ou “chien”    |
+| `\|`    | OU logique                 | `chat \| chien` → “chat” ou “chien”    |
 
 ---
 
