@@ -183,7 +183,7 @@ with open("fichier_sans_vide.txt", "w") as f:
 | `{n,m}` | entre n et m             | `\d{2,4}`     | 12, 1234    |
 | `[]`    | Choix de caractères      | `[abc]`       | a, b, c     |
 | `[^]`   | Négation                 | `[^0-9]`      | lettre, caractères |
-| `()`    | Groupe                   | `(ab)+`       | abab        |
+| `()`    | Groupement / capture     | `(ab)+`       | abab        |
 | `\|`    | OU                       | `chat\|chien` | chat        |
 
 ---
