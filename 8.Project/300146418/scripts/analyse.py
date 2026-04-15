@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import re
 from collections import Counter
 from pathlib import Path
@@ -12,6 +13,7 @@ IMAGES_DIR = BASE_DIR / "images"
 IMAGES_DIR.mkdir(exist_ok=True)
 OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
+print("Début de l'analyse...")
 pattern = re.compile(
     r'(?P<ip>\d+\.\d+\.\d+\.\d+).+"(?:GET|POST)\s(?P<url>\S+)\sHTTP/[\d.]+"\s(?P<status>\d{3})'
 )
@@ -81,6 +83,10 @@ plt.ylabel("Nombre")
 plt.tight_layout()
 plt.savefig(IMAGES_DIR / "http_status.png")
 plt.close()
+
+print("Analyse terminée.")
+print(f"Rapport généré : {OUTPUT_FILE}")
+print(f"Images générées dans : {IMAGES_DIR}")
 
 print("Analyse terminée.")
 print(f"Rapport généré : {OUTPUT_FILE}")
