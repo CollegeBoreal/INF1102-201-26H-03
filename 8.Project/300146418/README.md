@@ -23,7 +23,7 @@ Le but est de :
 
 ## 📁 Structure du projet
 
-
+``` bash
 300146418/
 ├── scripts/
 ├── data/
@@ -31,13 +31,12 @@ Le but est de :
 ├── images/
 ├── RAPPORT.ipynb
 └── README.md
+```
 
 
 
 
 
-
----
 
 ## 📄 Fichier de données
 
@@ -45,7 +44,7 @@ Le fichier `sample.log` contient les logs à analyser.
 
 📷 Exemple :
 
-![Sample Log](images/sample_log.png)
+![Sample Log](images/8.1.png)
 
 ---
 
@@ -60,7 +59,7 @@ Le script `analyse.py` :
 
 📷 Code Python :
 
-![Analyse Python](images/analyse_py.png)
+![Analyse Python](images/8.2.png)
 
 ---
 
@@ -70,7 +69,7 @@ Le script `analyse.ps1` permet d'exécuter automatiquement l’analyse.
 
 📷 Script PowerShell :
 
-![PowerShell](images/ps1.png)
+![PowerShell](images/8.3.png)
 
 ---
 
@@ -87,7 +86,7 @@ Le fichier `output/rapport.txt` contient :
 
 📷 Résultat :
 
-![Rapport](images/output.png)
+![Rapport](images/8.4.png)
 
 ---
 
@@ -99,9 +98,7 @@ Les graphiques sont générés avec matplotlib :
 - Top URLs
 - Codes HTTP
 
-📷 Exemple :
 
-![Graphique](images/graph.png)
 
 ---
 
