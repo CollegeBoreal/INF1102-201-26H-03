@@ -1,89 +1,218 @@
-Infrastructure as Code (IaC) – Exercices OpenTofu & Proxmox
+# 🧩 Infrastructure as Code (IaC) – TP
 
-👤 Étudiant
+## 👤 Informations
 
-Identifiant Boréal : 300138576
+* **Nom** : Hajar Jabre
+* **ID Boréal** : 300138576
+* **Cours** : INF1102 – Programmation système
+* **Sujet** : Infrastructure as Code avec OpenTofu
 
-Cours : Programmation système / DevOps
+---
 
-Thème : Infrastructure as Code (IaC)
+## 📘 1. Introduction
 
-📌 Objectif du laboratoire
+L’administration traditionnelle des systèmes se fait souvent manuellement, ce qui entraîne des erreurs et des incohérences.
+L’Infrastructure as Code (IaC) permet d’automatiser la gestion des infrastructures avec du code.
 
-L’objectif de ce laboratoire est de mettre en pratique le concept d’Infrastructure as Code (IaC) en utilisant OpenTofu avec Proxmox VE 7 afin de déployer automatiquement une machine virtuelle Linux via une configuration déclarative.
+---
 
-Ce travail permet de :
+## 🧠 2. Objectif du TP
 
-Comprendre la différence entre configuration manuelle et IaC
-Décrire une infrastructure sous forme de code
-Automatiser la création d’une VM
-Utiliser un provider OpenTofu réel (Proxmox)
-Déployer un service web accessible depuis un navigateur
-🧠 Concepts abordés
-Infrastructure as Code (IaC)
-Approche déclarative
-Providers OpenTofu
-Virtualisation avec Proxmox VE
-Cloud-Init
-Installation automatisée de services (NGINX)
-Gestion des variables et des secrets
-Automatisation et reproductibilité
-Vérification fonctionnelle via navigateur
+* Comprendre l’IaC
+* Utiliser OpenTofu
+* Automatiser une tâche
+* Utiliser Git pour versionner
 
-🛠️ Outils utilisés
-OpenTofu (compatible Terraform)
-Proxmox VE 7
-Provider Telmate Proxmox
-Git & GitHub
-SSH
-Ubuntu Server (Cloud Image)
-NGINX (serveur web)
-📁 Structure du projet
-🆔/
-├── provider.tf
-├── main.tf
-├── variables.tf
-├── terraform.tfvars   (non versionné)
-└── README.md
-contenu de terraform.tfvars
-pm_vm_name      = "vm300133071"
-pm_ipconfig0    = "ip=10.7.237.194/23,gw=10.7.237.1"
-pm_nameserver   = "10.7.237.3"
-pm_url          = "https://10.7.237.16:8006/api2/json"
-pm_token_id     = "tofu@pve!opentofu"
-pm_token_secret = "4fa24fc3-bd8c-4916-ba6e-09a8aecc3b00"
+---
 
-Déploiement
-Commandes utilisées :
+## ⚙️ 3. Installation et vérification
 
+### 🔹 Commande :
+
+```bash
+tofu version
+```
+
+### ✅ Résultat attendu :
+
+* Version affichée (ex : OpenTofu v1.11.4)
+
+📸 **Capture à ajouter :**
+👉 Capture du terminal montrant la version
+
+---
+
+## 📁 4. Création du projet
+
+### 🔹 Commandes :
+
+```bash
+mkdir 300138576
+cd 300138576
+New-Item provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
+```
+
+### ✅ Résultat attendu :
+
+* Les fichiers sont créés dans le dossier
+
+📸 **Capture à ajouter :**
+👉 Explorateur de fichiers OU terminal montrant les fichiers
+
+---
+
+## ⚙️ 5. Configuration OpenTofu
+
+### 🔹 Exemple dans `main.tf` :
+
+```hcl
+resource "local_file" "test" {
+  filename = "preuve.txt"
+  content  = "Test IaC réussi - Hajar Jabre"
+}
+```
+
+📸 **Capture à ajouter :**
+👉 Contenu du fichier `main.tf`
+
+---
+
+## 🚀 6. Initialisation
+
+### 🔹 Commande :
+
+```bash
 tofu init
+```
+
+### ✅ Résultat attendu :
+
+* Message : *OpenTofu has been successfully initialized*
+
+📸 **Capture à ajouter :**
+👉 Résultat complet de `tofu init`
+
+---
+
+## 📊 7. Planification
+
+### 🔹 Commande :
+
+```bash
 tofu plan
+```
+
+### ✅ Résultat attendu :
+
+* Affichage des ressources à créer
+  OU
+* message d’erreur (dans notre cas)
+
+📸 **Capture à ajouter :**
+👉 Résultat de `tofu plan`
+
+---
+
+## ❗ 8. Problème rencontré (IMPORTANT)
+
+### 🔹 Erreur :
+
+Connexion refusée au serveur Proxmox :
+
+```text
+connectex: No connection could be made
+```
+
+### 🔹 Analyse :
+
+* Le ping fonctionne ✔
+* Le port 8006 est bloqué ❌
+
+📸 **Captures à ajouter :**
+👉 Résultat du `ping 10.7.237.198`
+👉 Erreur complète de `tofu plan`
+
+---
+
+## 🧪 9. Test local (preuve de fonctionnement)
+
+### 🔹 Commande :
+
+```bash
 tofu apply
+```
 
-Connexion Promox
+### ✅ Résultat attendu :
 
-via Serveur Promox
-🔍 Vérification
-Connexion à la VM via SSH :
+* Création du fichier `preuve.txt`
 
-ssh -i ~/.ssh/williamkey.pk `
-  -o StrictHostKeyChecking=no `
-  -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
-  ubuntu@10.7.237.194
-Accès web
-Depuis un navigateur, saisir l’adresse IP de la VM :
+📸 **Captures à ajouter :**
+👉 Résultat de `tofu apply`
+👉 Fichier `preuve.txt` dans le dossier
 
-http://10.7.237.194:80
+---
 
-Deploiement du serveur web
+## 🧾 10. Git et envoi sur GitHub
 
-✅ Résultats obtenus
-VM Ubuntu déployée automatiquement
+### 🔹 Commandes :
 
-Infrastructure reproductible
+```bash
+git add .
+git commit -m "TP IaC"
+git pull origin main --rebase
+git push
+```
 
-Aucune configuration manuelle sur Proxmox
+### ✅ Résultat attendu :
 
-Déploiement rapide et fiable
+* Projet envoyé sur GitHub
 
-Infrastructure entièrement décrite par du code
+📸 **Captures à ajouter :**
+👉 Terminal avec `git push` réussi
+👉 Repository GitHub (page web)
+
+---
+
+## ✅ 11. Résultat final
+
+* OpenTofu fonctionne ✔
+* Projet créé ✔
+* Git fonctionnel ✔
+* Problème réseau identifié ✔
+
+---
+
+## 🧠 12. Conclusion
+
+L’IaC permet d’automatiser la gestion des infrastructures de manière fiable et reproductible.
+Même en présence d’un problème réseau, il est possible d’analyser et comprendre les erreurs.
+
+---
+
+## 📌 13. Organisation des captures
+
+👉 Place tes images dans un dossier :
+
+```
+images/
+```
+
+👉 Exemple dans README :
+
+```md
+![tofu version](images/version.png)
+![tofu init](images/init.png)
+![tofu plan](images/plan.png)
+```
+
+---
+
+## 🎯 14. Remarque finale
+
+Ce TP démontre :
+
+* la compréhension de l’IaC
+* l’utilisation d’un outil professionnel
+* la capacité à résoudre un problème technique
+
+---
