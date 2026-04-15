@@ -9,14 +9,14 @@
 
 ---
 
-## 📘 1. Introduction
+## 1. Introduction
 
 L’administration traditionnelle des systèmes se fait souvent manuellement, ce qui entraîne des erreurs et des incohérences.
 L’Infrastructure as Code (IaC) permet d’automatiser la gestion des infrastructures avec du code.
 
 ---
 
-## 🧠 2. Objectif du TP
+## 2. Objectif du TP
 
 * Comprendre l’IaC
 * Utiliser OpenTofu
@@ -25,15 +25,17 @@ L’Infrastructure as Code (IaC) permet d’automatiser la gestion des infrastru
 
 ---
 
-## ⚙️ 3. Installation et vérification
+## 3. Installation et vérification
 
-### 🔹 Commande :
+###  Commande :
 
 ```bash
 tofu version
 ```
 
-### ✅ Résultat attendu :
+<img width="625" height="64" alt="1" src="https://github.com/user-attachments/assets/794ffa08-4729-49fa-a61f-7a05c24687f0" />
+
+###  Résultat attendu :
 
 * Version affichée (ex : OpenTofu v1.11.4)
 
