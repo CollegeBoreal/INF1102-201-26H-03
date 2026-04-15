@@ -204,7 +204,6 @@ L’affichage de la page par défaut de NGINX confirme que :
 Cela valide que l’infrastructure déployée via OpenTofu est pleinement opérationnelle.
 
 
-<img width="1918" height="975" alt="final" src="https://github.com/user-attachments/assets/bb2ab910-a0f2-4594-ac4a-324fdd3a1df7" />
 
 ---
 ## Structure du dépôt
