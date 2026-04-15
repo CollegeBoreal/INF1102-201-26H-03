@@ -104,8 +104,6 @@ Cette étape :
 
 Le code est ainsi transformé en infrastructure fonctionnelle.
 
-<img width="614" height="486" alt="5" src="https://github.com/user-attachments/assets/237b11ad-688a-4456-a2dc-0e5448c61535" />
-
 
 
 ---
