@@ -104,38 +104,17 @@ Affichage des ressources à créer
 
   
 
----
-
-## ❗ 8. Problème rencontré (IMPORTANT)
-
-### 🔹 Erreur :
-
-Connexion refusée au serveur Proxmox :
-
-```text
-connectex: No connection could be made
-```
-
-### 🔹 Analyse :
-
-* Le ping fonctionne ✔
-* Le port 8006 est bloqué ❌
-
-📸 **Captures à ajouter :**
-👉 Résultat du `ping 10.7.237.198`
-👉 Erreur complète de `tofu plan`
-
----
-
-## 🧪 9. Test local (preuve de fonctionnement)
+## 8. Test local (preuve de fonctionnement)
 
 ### 🔹 Commande :
 
 ```bash
 tofu apply
 ```
+<img width="614" height="486" alt="5" src="https://github.com/user-attachments/assets/10592ea4-83e9-4235-bb5d-e32ba7fc98be" />
 
-### ✅ Résultat attendu :
+
+### Résultat attendu :
 
 * Création du fichier `preuve.txt`
 
@@ -145,9 +124,9 @@ tofu apply
 
 ---
 
-## 🧾 10. Git et envoi sur GitHub
+## 9. Git et envoi sur GitHub
 
-### 🔹 Commandes :
+### Commandes :
 
 ```bash
 git add .
@@ -156,17 +135,7 @@ git pull origin main --rebase
 git push
 ```
 
-### ✅ Résultat attendu :
-
-* Projet envoyé sur GitHub
-
-📸 **Captures à ajouter :**
-👉 Terminal avec `git push` réussi
-👉 Repository GitHub (page web)
-
----
-
-## ✅ 11. Résultat final
+## 10. Résultat final
 
 * OpenTofu fonctionne ✔
 * Projet créé ✔
@@ -175,7 +144,7 @@ git push
 
 ---
 
-## 🧠 12. Conclusion
+## 12. Conclusion
 
 L’IaC permet d’automatiser la gestion des infrastructures de manière fiable et reproductible.
 Même en présence d’un problème réseau, il est possible d’analyser et comprendre les erreurs.
