@@ -61,7 +61,7 @@ nano provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
 
 ## 5. Configuration OpenTofu
 
-### 🔹 Exemple dans `main.tf` :
+### Exemple dans `main.tf` :
 
 ```hcl
 resource "local_file" "test" {
@@ -70,31 +70,27 @@ resource "local_file" "test" {
 }
 ```
 
-📸 **Capture à ajouter :**
-👉 Contenu du fichier `main.tf`
 
----
+## 6. Initialisation
 
-## 🚀 6. Initialisation
-
-### 🔹 Commande :
+### Commande :
 
 ```bash
 tofu init
 ```
 
-### ✅ Résultat attendu :
+### Résultat attendu :
 
 * Message : *OpenTofu has been successfully initialized*
 
-📸 **Capture à ajouter :**
-👉 Résultat complet de `tofu init`
+<img width="620" height="242" alt="3" src="https://github.com/user-attachments/assets/1ed775ac-d845-4034-b946-6bfa1981dcb7" />
+
 
 ---
 
-## 📊 7. Planification
+## 7. Planification
 
-### 🔹 Commande :
+### Commande :
 
 ```bash
 tofu plan
