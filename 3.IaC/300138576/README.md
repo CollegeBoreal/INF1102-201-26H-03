@@ -1,4 +1,4 @@
-# 🧩 Infrastructure as Code (IaC) – TP
+# Infrastructure as Code (IaC) – TP
 
 ## 👤 Informations
 
