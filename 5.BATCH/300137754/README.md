@@ -14,3 +14,22 @@ Le script doit permettre de :
 - Planifier l’exécution automatique avec **cron**
 
 ---
+Crontab</br>
+
+<img width="1065" height="72" alt="sudo_crontab" src="https://github.com/user-attachments/assets/fd8f95f2-af75-476d-99d1-4a138c3acf44" />
+
+
+---
+Les fichiers copiés dans /entreprise/backup
+L’archive .tar.gz</br>
+
+
+
+---
+L’utilisateur créé </br>
+
+
+
+--- 
+Le fichier log</br>
+
