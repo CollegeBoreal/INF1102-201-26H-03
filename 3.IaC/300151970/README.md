@@ -104,7 +104,8 @@ Cette étape :
 
 Le code est ainsi transformé en infrastructure fonctionnelle.
 
-<img width="1440" height="711" alt="tofu apply" src="https://github.com/user-attachments/assets/a59f6f5f-ea77-46a4-ac25-16168ca07b0d" />
+<img width="614" height="486" alt="5" src="https://github.com/user-attachments/assets/237b11ad-688a-4456-a2dc-0e5448c61535" />
+
 
 
 ---
