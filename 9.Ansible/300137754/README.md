@@ -41,7 +41,8 @@ Redémarre ton PC
 ```powershell
 wsl
 ```
-<img src="images/.png" style="max-width:50%; height:auto;">
+<img width="935" height="22" alt="Capture d&#39;écran 2026-04-14 234211" src="https://github.com/user-attachments/assets/455421e1-3c77-438a-b981-53237792e894" />
+
 
 Installer Ansible :
 
@@ -49,15 +50,14 @@ Installer Ansible :
 sudo apt update
 sudo apt install ansible-core -y
 ```
-<img src="images/.png" style="max-width:50%; height:auto;">
 
 Exécution du playbook
 
-<img src="images/.png" style="max-width:50%; height:auto;">
+<img width="1125" height="410" alt="Capture d&#39;écran 2026-04-14 234313" src="https://github.com/user-attachments/assets/c6e87322-df2d-469c-9f26-b2164d482b0f" />
 
 Resultat
 
-<img src="images/.png" style="max-width:50%; height:auto;">
+<img width="1919" height="968" alt="Capture d&#39;écran 2026-04-14 234358" src="https://github.com/user-attachments/assets/804da49b-b200-43a5-99fa-d30b03f4d0e4" />
 
 Commandes utile
 

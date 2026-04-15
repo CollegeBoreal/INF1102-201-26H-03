@@ -1,0 +1,1 @@
+Write-Output "Analyse nginx OK"
