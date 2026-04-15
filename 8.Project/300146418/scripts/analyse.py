@@ -1,43 +1,87 @@
 #!/usr/bin/env python3
-
 import re
-import sys
 from collections import Counter
+from pathlib import Path
+import matplotlib.pyplot as plt
 
-if len(sys.argv) < 2:
-    print("Usage: python3 scripts/analyse.py data/sample.log")
-    sys.exit(1)
+BASE_DIR = Path(__file__).resolve().parent.parent
+LOG_FILE = BASE_DIR / "data" / "sample.log"
+OUTPUT_FILE = BASE_DIR / "output" / "rapport.txt"
+IMAGES_DIR = BASE_DIR / "images"
 
-logfile = sys.argv[1]
-output_file = "output/rapport.txt"
+IMAGES_DIR.mkdir(exist_ok=True)
+OUTPUT_FILE.parent.mkdir(exist_ok=True)
 
-with open(logfile, "r", encoding="utf-8") as f:
-    lines = f.readlines()
+pattern = re.compile(
+    r'(?P<ip>\d+\.\d+\.\d+\.\d+).+"(?:GET|POST)\s(?P<url>\S+)\sHTTP/[\d.]+"\s(?P<status>\d{3})'
+)
 
-data = "".join(lines)
+ips = []
+urls = []
+statuses = []
 
-# Regex
-ips = re.findall(r'(\d{1,3}(?:\.\d{1,3}){3})', data)
-urls = re.findall(r'"GET ([^ ]+)', data)
-codes = re.findall(r'" (\d{3}) ', data)
+with open(LOG_FILE, "r", encoding="utf-8") as f:
+    for line in f:
+        match = pattern.search(line)
+        if match:
+            ips.append(match.group("ip"))
+            urls.append(match.group("url"))
+            statuses.append(match.group("status"))
 
-top_ips = Counter(ips).most_common(5)
-top_urls = Counter(urls).most_common(5)
-errors = [c for c in codes if c.startswith(("4", "5"))]
+ip_counter = Counter(ips)
+url_counter = Counter(urls)
+status_counter = Counter(statuses)
 
-with open(output_file, "w", encoding="utf-8") as f:
-    f.write("===== RAPPORT D'ANALYSE DES LOGS =====\n")
-    f.write(f"Total de lignes : {len(lines)}\n")
-    f.write(f"Total d'erreurs HTTP : {len(errors)}\n")
-    f.write(f"Erreurs 404 : {codes.count('404')}\n")
-    f.write(f"Erreurs 500 : {codes.count('500')}\n\n")
+total_requests = len(urls)
+top_ip = ip_counter.most_common(3)
+top_url = url_counter.most_common(3)
 
-    f.write("Top 5 IP :\n")
-    for ip, count in top_ips:
-        f.write(f"{count} - {ip}\n")
+with open(OUTPUT_FILE, "w", encoding="utf-8") as out:
+    out.write("RAPPORT D'ANALYSE DES LOGS\n")
+    out.write("=" * 35 + "\n\n")
+    out.write(f"Nombre total de requêtes : {total_requests}\n\n")
 
-    f.write("\nTop 5 URLs :\n")
-    for url, count in top_urls:
-        f.write(f"{count} - {url}\n")
+    out.write("Top 3 des adresses IP :\n")
+    for ip, count in top_ip:
+        out.write(f"- {ip} : {count} requêtes\n")
 
-print("Rapport généré dans output/rapport.txt")
+    out.write("\nTop 3 des URLs :\n")
+    for url, count in top_url:
+        out.write(f"- {url} : {count} accès\n")
+
+    out.write("\nCodes de statut HTTP :\n")
+    for status, count in status_counter.items():
+        out.write(f"- {status} : {count}\n")
+
+plt.figure(figsize=(8, 5))
+plt.bar([x[0] for x in top_ip], [x[1] for x in top_ip])
+plt.title("Top 3 des adresses IP")
+plt.xlabel("Adresse IP")
+plt.ylabel("Nombre de requêtes")
+plt.xticks(rotation=15)
+plt.tight_layout()
+plt.savefig(IMAGES_DIR / "top_ip.png")
+plt.close()
+
+plt.figure(figsize=(8, 5))
+plt.bar([x[0] for x in top_url], [x[1] for x in top_url])
+plt.title("Top 3 des URLs")
+plt.xlabel("URL")
+plt.ylabel("Nombre d'accès")
+plt.xticks(rotation=15)
+plt.tight_layout()
+plt.savefig(IMAGES_DIR / "top_urls.png")
+plt.close()
+
+plt.figure(figsize=(8, 5))
+plt.bar(list(status_counter.keys()), list(status_counter.values()))
+plt.title("Répartition des codes HTTP")
+plt.xlabel("Code HTTP")
+plt.ylabel("Nombre")
+plt.tight_layout()
+plt.savefig(IMAGES_DIR / "http_status.png")
+plt.close()
+
+print("Analyse terminée.")
+print(f"Rapport généré : {OUTPUT_FILE}")
+print(f"Images générées dans : {IMAGES_DIR}")
