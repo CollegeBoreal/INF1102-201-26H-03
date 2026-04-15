@@ -37,33 +37,29 @@ tofu version
 
 ###  Résultat attendu :
 
-* Version affichée (ex : OpenTofu v1.11.4)
-
-📸 **Capture à ajouter :**
-👉 Capture du terminal montrant la version
+* Version affichée : OpenTofu v1.11.4
 
 ---
 
-## 📁 4. Création du projet
+##  4. Création du projet
 
-### 🔹 Commandes :
+### Commandes :
 
 ```bash
 mkdir 300138576
 cd 300138576
-New-Item provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
+nano provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
 ```
 
-### ✅ Résultat attendu :
+### Résultat attendu :
 
 * Les fichiers sont créés dans le dossier
 
-📸 **Capture à ajouter :**
-👉 Explorateur de fichiers OU terminal montrant les fichiers
+<img width="613" height="196" alt="2" src="https://github.com/user-attachments/assets/a70bbda1-3971-471a-bcfe-f8fbe704071c" />
 
 ---
 
-## ⚙️ 5. Configuration OpenTofu
+## 5. Configuration OpenTofu
 
 ### 🔹 Exemple dans `main.tf` :
 
