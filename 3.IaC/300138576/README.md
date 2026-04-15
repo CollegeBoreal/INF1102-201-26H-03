@@ -96,14 +96,13 @@ tofu init
 tofu plan
 ```
 
-### ✅ Résultat attendu :
+###  Résultat attendu :
 
-* Affichage des ressources à créer
-  OU
-* message d’erreur (dans notre cas)
+Affichage des ressources à créer
 
-📸 **Capture à ajouter :**
-👉 Résultat de `tofu plan`
+<img width="686" height="455" alt="4" src="https://github.com/user-attachments/assets/ed11854f-2911-4dbf-a8f4-88b63c113e10" />
+
+  
 
 ---
 
