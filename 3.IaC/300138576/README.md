@@ -28,10 +28,15 @@ L’Infrastructure as Code (IaC) permet d’automatiser la gestion des infrastru
  ## Structure du projet
  
 🆔/ 300138576
+
 ├── provider.tf
+
 ├── main.tf
+
 ├── variables.tf
+
 ├── terraform.tfvars   (non versionné)
+
 └── README.md
  
 ## 3. Installation et vérification
