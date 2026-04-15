@@ -40,6 +40,38 @@ La programmation par scripts permet :
 * d’assurer la cohérence des configurations
 * de gagner du temps en administration système
 
+***
+
+### 📝 Programmation de systèmes 
+
+*   **But** : interagir directement avec le **système d’exploitation** (processus, fichiers, E/S, automatisation)
+
+*   **[Shell](1.Shells)**  
+    Interface utilisateur ⇄ OS  
+    Interprète les commandes, gère les processus et les flux  
+    Ex. `bash`, `PowerShell`
+
+*   **[Scripting](2.Scripting)**  
+    Scripts interprétés pour **automatiser** des tâches système
+    *   Bash : simple, Unix
+    *   PowerShell : objets, robuste
+    *   Python : complexe, maintenable
+
+*   **[Pipelines](3.Pipelines)**  
+    Chaînage de commandes (sortie → entrée)
+    ```bash
+    cmd1 | cmd2 | cmd3
+    ```
+    *   Texte (Bash) : rapide
+    *   Objets (PowerShell) : fiable
+
+*   **Évolution typique**  
+    `Commande → Script → Pipeline → Application`
+
+👉 **Idée clé** :  
+Shell = interface, Scripting = automatisation, Pipeline = structuration.
+
+
 ---
 
 ## 2. Rôle des scripts en administration système

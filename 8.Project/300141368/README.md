@@ -92,7 +92,5 @@ Documentation matplotlib
 
 ---
 
-💡 **Astuce** : tu peux mettre un **aperçu du graphique** directement dans le README avec Markdown :
-
 ```markdown
 
