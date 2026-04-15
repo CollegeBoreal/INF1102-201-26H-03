@@ -95,7 +95,7 @@ provider "proxmox" {
 }
 ```
 
-### `main.tf` :
+###  nano `main.tf` :
 
 ```hcl
 resource "proxmox_vm_qemu" "vm1" {
