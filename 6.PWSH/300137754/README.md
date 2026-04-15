@@ -35,6 +35,8 @@ sudo apt install -y powershell
 pwsh
 ```
 
+<img width="789" height="154" alt="pwsh" src="https://github.com/user-attachments/assets/1338ce5c-d488-4d66-b578-5555dfc4236b" />
+
 ---
 
 ### 🔹 3. Création du dossier du projet
@@ -43,6 +45,7 @@ pwsh
 sudo mkdir /devops-batch
 cd /devops-batch
 ```
+<img width="726" height="52" alt="Capture d&#39;écran 2026-04-14 233125" src="https://github.com/user-attachments/assets/1b1a91e9-2a78-4da5-bba9-290a48c2bcbe" />
 
 ---
 
@@ -51,6 +54,8 @@ cd /devops-batch
 ```bash
 sudo nano devops_batch.ps1
 ```
+<img width="1090" height="530" alt="Capture d&#39;écran 2026-04-14 233322" src="https://github.com/user-attachments/assets/d9372d2a-a21f-41d7-8d97-505a80c5a382" />
+
 
 Ajout du script PowerShell pour :
 
@@ -67,6 +72,7 @@ Ajout du script PowerShell pour :
 ```bash
 sudo pwsh devops_batch.ps1
 ```
+<img width="1088" height="540" alt="Capture d&#39;écran 2026-04-14 233412" src="https://github.com/user-attachments/assets/910b2627-ccac-4986-ba04-79a0b99415c3" />
 
 ---
 
