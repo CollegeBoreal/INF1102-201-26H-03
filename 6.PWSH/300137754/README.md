@@ -80,7 +80,7 @@ sudo pwsh devops_batch.ps1
 
 ### 🖥️ Lancement de PowerShell
 
-<img width="261" height="42" alt="pwsh" src="images/Lancement.png" />
+<img width="789" height="154" alt="pwsh" src="https://github.com/user-attachments/assets/1338ce5c-d488-4d66-b578-5555dfc4236b" />
 
 
 ---
