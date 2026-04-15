@@ -142,15 +142,6 @@ tofu apply
 ```
 <img width="614" height="486" alt="5" src="https://github.com/user-attachments/assets/10592ea4-83e9-4235-bb5d-e32ba7fc98be" />
 
-
-### Résultat attendu :
-
-* Création du fichier `preuve.txt`
-
-📸 **Captures à ajouter :**
-👉 Résultat de `tofu apply`
-👉 Fichier `preuve.txt` dans le dossier
-
 ---
 
 ## 9. Git et envoi sur GitHub
@@ -173,32 +164,14 @@ git push
 
 ---
 
-## 12. Conclusion
+## 11. Conclusion
 
 L’IaC permet d’automatiser la gestion des infrastructures de manière fiable et reproductible.
 Même en présence d’un problème réseau, il est possible d’analyser et comprendre les erreurs.
 
 ---
 
-## 📌 13. Organisation des captures
-
-👉 Place tes images dans un dossier :
-
-```
-images/
-```
-
-👉 Exemple dans README :
-
-```md
-![tofu version](images/version.png)
-![tofu init](images/init.png)
-![tofu plan](images/plan.png)
-```
-
----
-
-## 🎯 14. Remarque finale
+##  12. Remarque finale
 
 Ce TP démontre :
 
