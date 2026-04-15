@@ -1,8 +1,8 @@
-# 🧩 Infrastructure as Code (IaC) – TP
+# Infrastructure as Code (IaC) – TP
 
 ## 👤 Informations
 
-* **Nom** : Hajar Jabre
+* **Nom** : Hajar Jabre 
 * **ID Boréal** : 300138576
 * **Cours** : INF1102 – Programmation système
 * **Sujet** : Infrastructure as Code avec OpenTofu
@@ -25,6 +25,20 @@ L’Infrastructure as Code (IaC) permet d’automatiser la gestion des infrastru
 
 ---
 
+ ## Structure du projet
+ 
+🆔/ 300138576
+
+├── provider.tf
+
+├── main.tf
+
+├── variables.tf
+
+├── terraform.tfvars   (non versionné)
+
+└── README.md
+ 
 ## 3. Installation et vérification
 
 ###  Commande :
@@ -61,15 +75,92 @@ nano provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
 
 ## 5. Configuration OpenTofu
 
-### Exemple dans `main.tf` :
+### nano provider.tf
 
 ```hcl
-resource "local_file" "test" {
-  filename = "preuve.txt"
-  content  = "Test IaC réussi - Hajar Jabre"
+terraform {
+  required_providers {
+    proxmox = {
+      source  = "telmate/proxmox"
+      version = ">= 2.9.0"
+    }
+  }
+}
+
+provider "proxmox" {
+  pm_api_url      = var.pm_url
+  pm_api_token_id = var.pm_token_id
+  pm_api_token_secret = var.pm_token_secret
+  pm_tls_insecure = true
 }
 ```
 
+###  nano `main.tf` :
+
+```hcl
+resource "proxmox_vm_qemu" "vm1" {
+  name        = var.pm_vm_name
+  target_node = "labinfo"
+  clone       = "ubuntu-jammy-template"
+
+  cores   = 2
+  sockets = 1
+  memory  = 2048
+
+  scsihw = "virtio-scsi-pci"
+
+  disk {
+    size    = "10G"
+    type    = "scsi"
+    storage = "local-lvm"
+  }
+
+  network {
+    model  = "virtio"
+    bridge = "vmbr0"
+  }
+
+  os_type = "cloud-init"
+
+  ipconfig0 = var.pm_ipconfig0
+  nameserver = var.pm_nameserver
+
+  ciuser  = "ubuntu"
+  sshkeys = <<EOF
+   ${file("~/.ssh/ma_cle.pub")}
+   ${file("~/.ssh/cle_publique_du_prof.pub")}
+  EOF
+}
+```
+
+## nano variables.tf
+
+```hcl
+variable "pm_vm_name" {
+  type = string
+}
+
+variable "pm_ipconfig0" {
+  type = string
+}
+
+variable "pm_nameserver" {
+  type = string
+}
+
+variable "pm_url" {
+  type = string
+}
+
+variable "pm_token_id" {
+  type = string
+}
+
+variable "pm_token_secret" {
+  type      = string
+  sensitive = true
+}
+```
 
 ## 6. Initialisation
 
@@ -96,59 +187,28 @@ tofu init
 tofu plan
 ```
 
-### ✅ Résultat attendu :
+###  Résultat attendu :
 
-* Affichage des ressources à créer
-  OU
-* message d’erreur (dans notre cas)
+Affichage des ressources à créer
 
-📸 **Capture à ajouter :**
-👉 Résultat de `tofu plan`
+<img width="686" height="455" alt="4" src="https://github.com/user-attachments/assets/ed11854f-2911-4dbf-a8f4-88b63c113e10" />
 
----
+  
 
-## ❗ 8. Problème rencontré (IMPORTANT)
-
-### 🔹 Erreur :
-
-Connexion refusée au serveur Proxmox :
-
-```text
-connectex: No connection could be made
-```
-
-### 🔹 Analyse :
-
-* Le ping fonctionne ✔
-* Le port 8006 est bloqué ❌
-
-📸 **Captures à ajouter :**
-👉 Résultat du `ping 10.7.237.198`
-👉 Erreur complète de `tofu plan`
-
----
-
-## 🧪 9. Test local (preuve de fonctionnement)
+## 8. Test local (preuve de fonctionnement)
 
 ### 🔹 Commande :
 
 ```bash
 tofu apply
 ```
-
-### ✅ Résultat attendu :
-
-* Création du fichier `preuve.txt`
-
-📸 **Captures à ajouter :**
-👉 Résultat de `tofu apply`
-👉 Fichier `preuve.txt` dans le dossier
+<img width="614" height="486" alt="5" src="https://github.com/user-attachments/assets/10592ea4-83e9-4235-bb5d-e32ba7fc98be" />
 
 ---
 
-## 🧾 10. Git et envoi sur GitHub
+## 9. Git et envoi sur GitHub
 
-### 🔹 Commandes :
+### Commandes :
 
 ```bash
 git add .
@@ -157,17 +217,7 @@ git pull origin main --rebase
 git push
 ```
 
-### ✅ Résultat attendu :
-
-* Projet envoyé sur GitHub
-
-📸 **Captures à ajouter :**
-👉 Terminal avec `git push` réussi
-👉 Repository GitHub (page web)
-
----
-
-## ✅ 11. Résultat final
+## 10. Résultat final
 
 * OpenTofu fonctionne ✔
 * Projet créé ✔
@@ -176,32 +226,14 @@ git push
 
 ---
 
-## 🧠 12. Conclusion
+## 11. Conclusion
 
 L’IaC permet d’automatiser la gestion des infrastructures de manière fiable et reproductible.
 Même en présence d’un problème réseau, il est possible d’analyser et comprendre les erreurs.
 
 ---
 
-## 📌 13. Organisation des captures
-
-👉 Place tes images dans un dossier :
-
-```
-images/
-```
-
-👉 Exemple dans README :
-
-```md
-![tofu version](images/version.png)
-![tofu init](images/init.png)
-![tofu plan](images/plan.png)
-```
-
----
-
-## 🎯 14. Remarque finale
+##  12. Remarque finale
 
 Ce TP démontre :
 
