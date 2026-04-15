@@ -28,8 +28,10 @@ L’archive .tar.gz</br>
 ---
 L’utilisateur créé </br>
 
-
+<img width="888" height="42" alt="utilisateur" src="https://github.com/user-attachments/assets/82151831-0cf6-4ccb-b229-3fd86c496f47" />
 
 --- 
 Le fichier log</br>
+
+<img width="1094" height="405" alt="log" src="https://github.com/user-attachments/assets/eca334a1-e136-49dc-ae13-e9be0623acf7" />
 
