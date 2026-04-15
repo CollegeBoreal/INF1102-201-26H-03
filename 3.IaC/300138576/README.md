@@ -75,7 +75,27 @@ nano provider.tf, main.tf, variables.tf, terraform.tfvars -ItemType File
 
 ## 5. Configuration OpenTofu
 
-### Exemple dans `main.tf` :
+### nano provider.tf
+
+```hcl
+terraform {
+  required_providers {
+    proxmox = {
+      source  = "telmate/proxmox"
+      version = ">= 2.9.0"
+    }
+  }
+}
+
+provider "proxmox" {
+  pm_api_url      = var.pm_url
+  pm_api_token_id = var.pm_token_id
+  pm_api_token_secret = var.pm_token_secret
+  pm_tls_insecure = true
+}
+```
+
+### `main.tf` :
 
 ```hcl
 resource "proxmox_vm_qemu" "vm1" {
@@ -113,6 +133,34 @@ resource "proxmox_vm_qemu" "vm1" {
 }
 ```
 
+## nano variables.tf
+
+```hcl
+variable "pm_vm_name" {
+  type = string
+}
+
+variable "pm_ipconfig0" {
+  type = string
+}
+
+variable "pm_nameserver" {
+  type = string
+}
+
+variable "pm_url" {
+  type = string
+}
+
+variable "pm_token_id" {
+  type = string
+}
+
+variable "pm_token_secret" {
+  type      = string
+  sensitive = true
+}
+```
 
 ## 6. Initialisation
 
