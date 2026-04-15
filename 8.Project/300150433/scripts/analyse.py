@@ -2,104 +2,73 @@ import re
 from collections import Counter
 from datetime import datetime
 import matplotlib.pyplot as plt
-import os
 
 input_file = "data/sample.log"
 output_file = "output/rapport.txt"
-graph_file = "images/graphique.png"
+image_file = "images/graphique.png"
 
 titles = []
 
-# 📥 Lecture du fichier log
-try:
-    with open(input_file) as f:
-        for line in f:
-            titles.append(line.strip())
-except:
-    print("Erreur lecture fichier log")
-    titles = []
+# Lecture fichier
+with open(input_file, "r") as f:
+    for line in f:
+        titles.append(line.strip())
 
-# 🔤 Extraction des mots (FIX)
+# Nettoyage + extraction mots
 words = []
 
 for t in titles:
-    # enlever balises XML / CDATA
-    t = re.sub(r'<[^>]+>', '', t)
+    t = re.sub(r'<[^>]+>', '', t)          # enlever HTML
+    t = re.sub(r'[^a-zA-Z ]', ' ', t)      # garder lettres
+    parts = t.lower().split()
+    words.extend(parts)
 
-    # extraire mots
-    found = re.findall(r'[a-zA-Z]+', t.lower())
-    words.extend(found)
+# Stop words
+stop_words = {
+    "the","and","for","with","from","this","that","have","will",
+    "after","about","their","they","been","said","more","than",
+    "into","over","when","were","news","bbc"
+}
 
-# ❌ mots inutiles (optionnel mais pro)
-stop_words = {"the", "and", "for", "with", "from", "that", "this", "are"}
-words = [w for w in words if w not in stop_words]
+words = [w for w in words if w not in stop_words and len(w) > 3]
 
-top_words = Counter(words).most_common(10)
+# Top mots
+top = Counter(words).most_common(10)
 
-# 📊 Moyenne
-if titles:
-    avg_length = sum(len(t) for t in titles) / len(titles)
-else:
-    avg_length = 0
+# Générer graphique
+if top:
+    labels = [w for w, c in top]
+    values = [c for w, c in top]
 
-# 🔠 Mot le plus long
-if words:
-    longest_word = max(words, key=len)
-else:
-    longest_word = "Aucun mot trouvé"
+    plt.figure(figsize=(10,6))
+    bars = plt.bar(labels, values)
 
-# 📄 Génération du rapport
-now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-with open(output_file, "w") as f:
-    f.write("=" * 50 + "\n")
-    f.write("   GLOBAL NEWS ANALYZER REPORT\n")
-    f.write("=" * 50 + "\n")
-    f.write(f"Date        : {now}\n")
-    f.write(f"Articles    : {len(titles)}\n")
-    f.write("=" * 50 + "\n\n")
-
-    f.write("HEADLINES:\n")
-    f.write("-" * 50 + "\n")
-    for i, t in enumerate(titles[:20], 1):
-        f.write(f"{i}. {t}\n")
-
-    f.write("\nTOP WORDS:\n")
-    f.write("-" * 50 + "\n")
-    if top_words:
-        for w, c in top_words:
-            f.write(f"{w:<15} ({c})\n")
-    else:
-        f.write("Aucun mot trouvé\n")
-
-    f.write("\nSTATISTICS:\n")
-    f.write("-" * 50 + "\n")
-    f.write(f"Average length : {avg_length:.2f}\n")
-    f.write(f"Longest word   : {longest_word}\n")
-
-    f.write("\n" + "=" * 50 + "\n")
-    f.write("Report generated successfully\n")
-
-print("✔ Rapport généré :", output_file)
-
-# 📊 Génération graphique
-if top_words:
-    labels = [w for w, c in top_words]
-    values = [c for w, c in top_words]
-
-    plt.figure()
-    plt.bar(labels, values)
     plt.title("Top 10 mots les plus fréquents")
     plt.xlabel("Mots")
     plt.ylabel("Fréquence")
     plt.xticks(rotation=45)
 
-    # créer dossier images si pas existant
-    os.makedirs("images", exist_ok=True)
+    for bar in bars:
+        y = bar.get_height()
+        plt.text(bar.get_x()+bar.get_width()/2, y, int(y),
+                 ha='center', va='bottom')
 
-    plt.savefig(graph_file)
-    print("📊 Graphique généré :", graph_file)
+    plt.grid(axis='y', linestyle='--', alpha=0.6)
 
+    plt.tight_layout()
+    plt.savefig(image_file)
     plt.close()
-else:
-    print("⚠️ Pas assez de données pour générer un graphique")
+
+# Rapport texte
+now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+with open(output_file, "w") as f:
+    f.write("=== GLOBAL NEWS ANALYZER ===\n")
+    f.write(f"Date: {now}\n")
+    f.write(f"Articles: {len(titles)}\n\n")
+
+    f.write("TOP WORDS:\n")
+    for w, c in top:
+        f.write(f"{w}: {c}\n")
+
+print("✔ Rapport + graphique générés")

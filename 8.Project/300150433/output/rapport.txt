@@ -1,42 +1,5 @@
-==================================================
-   GLOBAL NEWS ANALYZER REPORT
-==================================================
-Date        : 2026-04-14 23:41:53
-Articles    : 20
-==================================================
-
-HEADLINES:
---------------------------------------------------
-1. 2026-04-14 23:41:52 | BBC News
-2. 2026-04-14 23:41:52 | <![CDATA[Trump hints Iran talks could resume this week as US maritime blockade continues]]>
-3. 2026-04-14 23:41:52 | <![CDATA[UK faces biggest hit to growth from Iran war of major economies, IMF says]]>
-4. 2026-04-14 23:41:52 | <![CDATA[Help to Buy mostly helped high earners, IFS says]]>
-5. 2026-04-14 23:41:52 | <![CDATA[King not meeting Epstein survivors, but state visit could help ease US-UK tensions]]>
-6. 2026-04-14 23:41:52 | <![CDATA[As former Nato chief warns about defence spending, how much has the military shrunk?]]>
-7. 2026-04-14 23:41:52 | <![CDATA[Butterfly numbers are dropping but here are five species you may see more of]]>
-8. 2026-04-14 23:41:52 | <![CDATA['Welcome home': Watch joyful reunion as Orion capsule opened after splashdown]]>
-9. 2026-04-14 23:41:52 | <![CDATA[Woman asked to leave bar after wheelchair deemed a 'safety risk']]>
-10. 2026-04-14 23:41:52 | <![CDATA[Number of asylum hotels falls to 185 after 11 close]]>
-11. 2026-04-14 23:41:52 | <![CDATA[US-Kuwaiti journalist detained in Kuwait after social media posts, watchdog says]]>
-12. 2026-04-14 23:41:52 | <![CDATA[Driver jailed over death of mum hit by crane while pushing pram]]>
-13. 2026-04-14 23:41:52 | <![CDATA[JD Vance defends backing 'great guy' Orbán's campaign after landslide defeat]]>
-14. 2026-04-14 23:41:52 | <![CDATA[Tracking the ships crossing the Strait of Hormuz]]>
-15. 2026-04-14 23:41:52 | <![CDATA[Why and how is US blockading Iranian ports in Strait of Hormuz?]]>
-16. 2026-04-14 23:41:52 | <![CDATA[Oil prices continue to fall on hopes of new US-Iran peace talks]]>
-17. 2026-04-14 23:41:52 | <![CDATA[Lebanon seeks peace, but Hezbollah needs to be convinced first]]>
-18. 2026-04-14 23:41:52 | <![CDATA[How a Primark trainer ended gang's £1m Rightmove burglary spree]]>
-19. 2026-04-14 23:41:52 | <![CDATA[The Papers: 'UK economy takes triple hit' and 'Cheers, Timmy!']]>
-20. 2026-04-14 23:41:52 | <![CDATA[UFOs and a Tardis - why unusual holiday stays are booming]]>
+=== GLOBAL NEWS ANALYZER ===
+Date: 2026-04-15 02:10:06
+Articles: 20
 
 TOP WORDS:
---------------------------------------------------
-bbc             (1)
-news            (1)
-
-STATISTICS:
---------------------------------------------------
-Average length : 97.35
-Longest word   : news
-
-==================================================
-Report generated successfully
