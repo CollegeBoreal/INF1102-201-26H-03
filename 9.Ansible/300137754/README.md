@@ -55,7 +55,6 @@ sudo apt install ansible-core -y
 Avec la commande:
 ```
 ansible-playbook -i inventory.ini playbook.yml
-
 ```
 <img width="1125" height="410" alt="Capture d&#39;écran 2026-04-14 234313" src="https://github.com/user-attachments/assets/c6e87322-df2d-469c-9f26-b2164d482b0f" />
 
