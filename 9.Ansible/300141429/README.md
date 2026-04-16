@@ -39,9 +39,9 @@ wsl --install
 ## Redémarrer le PC
 
 ```powershell
-wsl
+wsl ou wsl -d ubuntu
 ```
-
+<img width="1098" height="517" alt="Capture d’écran 2026-04-16 132735" src="https://github.com/user-attachments/assets/30c042e2-fc61-4b0d-ba12-ee3c0fae12ec" />
 
 ---
 ## Installer Ansible :
@@ -56,12 +56,11 @@ Avec la commande:
 ```
 ansible-playbook -i inventory.ini playbook.yml
 ```
-
+<img width="1483" height="497" alt="Capture d’écran 2026-04-16 133058" src="https://github.com/user-attachments/assets/4e0751dd-cb3b-46b0-9a41-3e068328de5e" />
 
 ---
 ## Resultat
-
-
+<img width="1912" height="962" alt="Capture d’écran 2026-04-16 133604" src="https://github.com/user-attachments/assets/3682271a-e482-45db-9936-48a8b8ea4359" />
 
 ---
 ## Commandes utile
