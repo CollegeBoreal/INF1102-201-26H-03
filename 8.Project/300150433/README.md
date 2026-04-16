@@ -75,8 +75,8 @@ Script permettant de générer automatiquement le notebook Jupyter.
 <img width="912" height="623" alt="nano  create notebook" src="https://github.com/user-attachments/assets/bf93389b-67bd-4a94-b0f3-c482832048cd" />
 
 ### ⚡ Exécution PowerShell
-Exécution du script PowerShell pour récupérer et traiter les données.
-<img width="815" height="120" alt="pwsh analyse ps1" src="https://github.com/user-attachments/assets/05cb6959-313d-4eee-97ae-efef99dbb94b" />
+<img width="834" height="139" alt="image" src="https://github.com/user-attachments/assets/e927f182-d131-485a-8f2e-cdad421ccb4a" />
+
 
 ### 📄 Rapport généré
 Affichage du rapport texte contenant les résultats de l’analyse.
@@ -92,6 +92,9 @@ Interface Jupyter utilisée pour visualiser et analyser les données.
 Résultats finaux affichés dans le notebook après exécution.
 <img width="1363" height="651" alt="lancer rapport depuis jupyter" src="https://github.com/user-attachments/assets/eb37b672-5d0d-4414-8e3d-b3199d5e5594" />
 
+## 📊 Graphique généré
+Diagramme représentant les mots les plus fréquents extraits des titres.
+<img width="1189" height="590" alt="graphique_2" src="https://github.com/user-attachments/assets/3531ba96-b74e-4200-a01d-a6e82dd4e784" />
 
 📊 Résultats obtenus
 - ✔ 20 articles récupérés

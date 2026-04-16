@@ -109,3 +109,7 @@ nettoie les valeurs
 affiche un graphique
 calcule la variation des prix
 ```
+---
+## ✅ Conclusion
+
+Ce projet montre comment automatiser le suivi de prix avec Python et visualiser les données avec un graphique.
