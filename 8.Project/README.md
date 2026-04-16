@@ -225,3 +225,15 @@ python3 scripts/analyse.py data/sample.log
 5. Commenter le code pour que ce soit clair pour le correcteur.
 
 ---
+
+# :books: References
+
+Le **Regex** n'a pas été inventé par Perl, mais Perl l'a transformé en la puissance que nous connaissons aujourd'hui.
+
+### L'évolution du Regex
+* **Années 50 - 70 (Les Fondations) :** Les mathématiques de Stephen Kleene sont intégrées aux outils Unix comme `ed`, `sed` et surtout `grep`.
+* **1987 (La Révolution Perl) :** Larry Wall intègre le Regex directement dans la syntaxe de Perl. Il invente les fonctionnalités modernes (quantificateurs paresseux, lookaheads, backreferences).
+* **1997 (Le Standard PCRE) :** La bibliothèque **PCRE** (*Perl Compatible Regular Expressions*) est créée. Elle permet à presque tous les langages modernes (Python, JS, PHP) d'adopter la syntaxe de Perl.
+
+### En résumé
+Si vous utilisez le Regex aujourd'hui dans votre outil d'IA ou votre IDE, vous utilisez probablement le style **"Perl-Compatible"**. Perl est devenu le "standard mondial" du traitement de texte, même pour ceux qui ne codent pas en Perl.
