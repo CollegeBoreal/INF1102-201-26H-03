@@ -162,8 +162,30 @@ Ces différences peuvent s’expliquer par plusieurs facteurs :
 
 Ce graphique permet donc de comparer visuellement les performances des sites et d’identifier rapidement lequel est le plus rapide ou le plus lent.
 
+
+
 <img width="577" height="516" alt="image" src="https://github.com/user-attachments/assets/721888ad-72cf-49d0-8d8b-bbb637cc6971" />
+
 Ce graphique montre la variation des temps de réponse entre les sites. GitHub est le plus lent, tandis que le site du Collège Boréal est le plus rapide. La courbe permet de visualiser clairement les différences de performance.
+
+
+<img width="703" height="335" alt="image" src="https://github.com/user-attachments/assets/b7a823dd-4c45-4bf2-ad36-99ada9cae31a" />
+
+### Capture : Historique des commandes du projet
+
+Cette capture montre l’historique des commandes utilisées pour réaliser le projet.
+
+On y retrouve toutes les étapes principales :
+- la création du dossier du projet (`mkdir projet_web`)
+- la création de la structure des dossiers (scripts, data, output)
+- la création des fichiers nécessaires (analyse.py, analyse.sh, requirements.txt, README.md)
+- la modification des fichiers avec nano
+- l’exécution du script principal (`bash scripts/analyse.sh`)
+- la génération et la vérification du fichier `rapport.txt`
+- l’affichage des fichiers générés dans le dossier output
+- le lancement de Jupyter Notebook pour créer le rapport
+
+Cette capture permet de démontrer que le projet a été réalisé étape par étape et que toutes les commandes ont été exécutées correctement.
 
 
 
