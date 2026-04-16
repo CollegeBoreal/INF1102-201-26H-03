@@ -92,6 +92,9 @@ Interface Jupyter utilisée pour visualiser et analyser les données.
 Résultats finaux affichés dans le notebook après exécution.
 <img width="1363" height="651" alt="lancer rapport depuis jupyter" src="https://github.com/user-attachments/assets/eb37b672-5d0d-4414-8e3d-b3199d5e5594" />
 
+## 📊 Graphique généré
+Diagramme représentant les mots les plus fréquents extraits des titres.
+<img width="1189" height="590" alt="graphique_2" src="https://github.com/user-attachments/assets/3531ba96-b74e-4200-a01d-a6e82dd4e784" />
 
 📊 Résultats obtenus
 - ✔ 20 articles récupérés

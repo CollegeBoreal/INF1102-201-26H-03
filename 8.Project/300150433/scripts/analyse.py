@@ -1,93 +1,74 @@
 import re
 from collections import Counter
 from datetime import datetime
+import matplotlib.pyplot as plt
 
 input_file = "data/sample.log"
 output_file = "output/rapport.txt"
+image_file = "images/graphique.png"
 
 titles = []
 
-# Lecture du fichier log
-try:
-    with open(input_file) as f:
-        for line in f:
-            titles.append(line.strip())
-except:
-    print("Erreur lecture fichier log")
-    titles = []
+# Lecture fichier
+with open(input_file, "r") as f:
+    for line in f:
+        titles.append(line.strip())
 
-# Extraction des mots
+# Nettoyage + extraction mots
 words = []
+
 for t in titles:
-    found = re.findall(r'\b[a-zA-Z]{3,}\b', t.lower())
-    words.extend(found)
+    t = re.sub(r'<[^>]+>', '', t)          # enlever HTML
+    t = re.sub(r'[^a-zA-Z ]', ' ', t)      # garder lettres
+    parts = t.lower().split()
+    words.extend(parts)
 
-top_words = Counter(words).most_common(10)
+# Stop words
+stop_words = {
+    "the","and","for","with","from","this","that","have","will",
+    "after","about","their","they","been","said","more","than",
+    "into","over","when","were","news","bbc"
+}
 
-# Sécurité calcul moyenne
-if titles:
-    avg_length = sum(len(t) for t in titles) / len(titles)
-else:
-    avg_length = 0
+words = [w for w in words if w not in stop_words and len(w) > 3]
 
-# Sécurité mot le plus long
-if words:
-    longest_word = max(words, key=len)
-else:
-    longest_word = "Aucun mot trouvé"
+# Top mots
+top = Counter(words).most_common(10)
 
-# Génération du rapport
-now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+# Générer graphique
+if top:
+    labels = [w for w, c in top]
+    values = [c for w, c in top]
 
-with open(output_file, "w") as f:
-    f.write("=" * 50 + "\n")
-    f.write("   GLOBAL NEWS ANALYZER REPORT\n")
-    f.write("=" * 50 + "\n")
-    f.write(f"Date        : {now}\n")
-    f.write(f"Articles    : {len(titles)}\n")
-    f.write("=" * 50 + "\n\n")
+    plt.figure(figsize=(10,6))
+    bars = plt.bar(labels, values)
 
-    f.write("HEADLINES:\n")
-    f.write("-" * 50 + "\n")
-    for i, t in enumerate(titles[:20], 1):
-        f.write(f"{i}. {t}\n")
-
-    f.write("\nTOP WORDS:\n")
-    f.write("-" * 50 + "\n")
-    if top_words:
-        for w, c in top_words:
-            f.write(f"{w:<15} ({c})\n")
-    else:
-        f.write("Aucun mot trouvé\n")
-
-    f.write("\nSTATISTICS:\n")
-    f.write("-" * 50 + "\n")
-    f.write(f"Average length : {avg_length:.2f}\n")
-    f.write(f"Longest word   : {longest_word}\n")
-
-    f.write("\n" + "=" * 50 + "\n")
-    f.write("Report generated successfully\n")
-
-print("✔ Rapport généré :", output_file)
-# ========================
-# 📊 Génération graphique
-# ========================
-
-import matplotlib.pyplot as plt
-
-# Préparer données
-labels = [w for w, c in top_words]
-values = [c for w, c in top_words]
-
-if labels and values:
-    plt.figure()
-    plt.bar(labels, values)
     plt.title("Top 10 mots les plus fréquents")
     plt.xlabel("Mots")
     plt.ylabel("Fréquence")
-    
-    # Sauvegarde image
-    plt.savefig("output/graphique.png")
-    print("📊 Graphique généré : output/graphique.png")
-else:
-    print("⚠️ Pas assez de données pour générer un graphique")
+    plt.xticks(rotation=45)
+
+    for bar in bars:
+        y = bar.get_height()
+        plt.text(bar.get_x()+bar.get_width()/2, y, int(y),
+                 ha='center', va='bottom')
+
+    plt.grid(axis='y', linestyle='--', alpha=0.6)
+
+    plt.tight_layout()
+    plt.savefig(image_file)
+    plt.close()
+
+# Rapport texte
+now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+with open(output_file, "w") as f:
+    f.write("=== GLOBAL NEWS ANALYZER ===\n")
+    f.write(f"Date: {now}\n")
+    f.write(f"Articles: {len(titles)}\n\n")
+
+    f.write("TOP WORDS:\n")
+    for w, c in top:
+        f.write(f"{w}: {c}\n")
+
+print("✔ Rapport + graphique générés")

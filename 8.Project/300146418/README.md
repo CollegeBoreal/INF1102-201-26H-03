@@ -1,172 +1,145 @@
-# 🚀 TP IaC – OpenTofu & Proxmox
+# 📊 Projet INF1102 - Analyse de logs
 
-## 👩‍💻 Informations
-
-* **Nom** : Ikram Sidhoum
-* **Identifiant Boréal** : 300146418
-* **Cours** : INF1102 – Administration systèmes
-* **Année** : 2026
+## 👩‍💻 Étudiante
+Ikram Sidhoum  
+ID : 300146418  
 
 ---
 
-## 🎯 Objectif du projet
+## 🎯 Objectif
 
-Ce projet consiste à **déployer automatiquement une machine virtuelle Ubuntu** à l’aide d’une approche **Infrastructure as Code (IaC)**, puis à configurer un **serveur web NGINX** accessible via une adresse IP.
+Ce projet consiste à analyser un fichier de logs web en utilisant :
 
----
+- Python 🐍
+- PowerShell 💻
+- Jupyter Notebook 📒
 
-## 🏗️ Technologies utilisées
-
-* OpenTofu (IaC)
-* Proxmox VE
-* Ubuntu Server
-* NGINX
-* SSH
-* HTML / CSS
+Le but est de :
+- extraire les informations importantes
+- générer un rapport texte
+- produire des graphiques
 
 ---
 
-## ⚙️ Fonctionnement du projet
+## 📁 Structure du projet
 
-Le projet suit les étapes suivantes :
-
-1. Création d’une VM Ubuntu avec OpenTofu
-2. Configuration réseau (IP statique)
-3. Connexion via SSH
-4. Installation de NGINX
-5. Déploiement d’un site web portfolio
-6. Accès via navigateur
-
----
-
-## 🌐 Accès au site
-
-Le site web est accessible via :
-
-```
-http://10.7.237.210
-```
-
----
-
-## 📂 Structure du projet
-
-```
+``` bash
 300146418/
-├── README.md
-├── index.html
-├── images/
 ├── scripts/
-├── main.tf
+├── data/
+├── output/
+├── images/
+├── RAPPORT.ipynb
+└── README.md
 ```
+
+
+
+
+
+
+## 📄 Fichier de données
+
+Le fichier `sample.log` contient les logs à analyser.
+
+📷 Exemple :
+
+![Sample Log](images/8.1.png)
 
 ---
 
-## 💻 Déploiement
+## 🧠 Script Python
 
-### 1. Initialisation
+Le script `analyse.py` :
 
-```bash
-tofu init
-```
+- lit le fichier log
+- extrait IP, URL et status HTTP
+- génère un rapport
+- crée des graphiques
 
-### 2. Planification
+📷 Code Python :
 
-```bash
-tofu plan
-```
-
-### 3. Déploiement
-
-```bash
-tofu apply
-```
+![Analyse Python](images/8.2.png)
 
 ---
 
-## 🔧 Configuration serveur
+## ⚙️ Script PowerShell
 
-### Installation NGINX
+Le script `analyse.ps1` permet d'exécuter automatiquement l’analyse.
 
-```bash
-sudo apt update
-sudo apt install nginx -y
-```
+📷 Script PowerShell :
 
-### Vérification
-
-```bash
-sudo systemctl status nginx
-```
+![PowerShell](images/8.3.png)
 
 ---
 
-## 🌍 Vérification du site
+## 📊 Résultats
 
-### Depuis la VM :
+### 📄 Rapport texte
 
-```bash
-curl http://localhost
-```
+Le fichier `output/rapport.txt` contient :
 
-### Depuis navigateur :
+- nombre total de requêtes
+- top IP
+- top URLs
+- codes HTTP
 
-```
-http://10.7.237.210
-```
+📷 Résultat :
 
----
-
-## 📸 Captures d’écran
-
-Les captures sont disponibles dans le dossier :
-
-```
-images/
-```
-
-Elles montrent :
-
-* Déploiement OpenTofu
-* Connexion SSH
-* Installation NGINX
-* Site web en ligne
-* Vérification
+![Rapport](images/8.4.png)
 
 ---
 
-## 🧠 Compétences développées
+### 📈 Graphiques
 
-* Infrastructure as Code
-* Virtualisation
-* Administration Linux
-* Déploiement Web
-* Automatisation
+Les graphiques sont générés avec matplotlib :
 
----
+- Top IP
+- Top URLs
+- Codes HTTP
 
-## 📊 Résultat
 
-✔ Machine virtuelle fonctionnelle
-✔ Serveur web NGINX actif
-✔ Site web accessible via IP
-✔ Déploiement automatisé réussi
 
 ---
 
-## 🏁 Conclusion
+## 📒 Notebook Jupyter
 
-Ce projet démontre la capacité à :
+Le fichier `RAPPORT.ipynb` contient :
 
-* Automatiser une infrastructure complète
-* Déployer un serveur web
-* Appliquer une approche moderne DevOps
-* Créer un site web fonctionnel
+- analyse détaillée
+- visualisations
+- interprétation des résultats
 
 ---
 
-## 📌 Auteur
+## ⚠️ Problèmes rencontrés
 
-**Ikram Sidhoum**
-Collège Boréal – INF1102
-2026
+### 1. pandas non détecté
+Solution : installation dans le kernel Jupyter
+
+### 2. variables non définies
+Solution : exécuter les cellules dans le bon ordre
+
+### 3. conflit NumPy / matplotlib
+Solution : downgrade de NumPy
+
+### 4. warning Axes3D
+Impact : aucun (graphiques 2D uniquement)
+
+---
+
+## ✅ Conclusion
+
+Ce projet montre :
+
+- l’utilisation de scripts pour automatiser une analyse
+- la manipulation de données avec Python
+- la création de visualisations
+- la production d’un rapport structuré
+
+Ce type de projet est utilisé en entreprise pour :
+- surveiller les serveurs
+- détecter les erreurs
+- analyser le trafic web
+
+---
