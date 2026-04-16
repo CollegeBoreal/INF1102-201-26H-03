@@ -1,238 +1,68 @@
-\# 🧪 BATCH - 300141858
+# 🧪 TP – Automatisation d’administration avec script Batch (Linux)
 
+## 👤 Étudiant
+**Nom : Abdou Karim NIANG**  
+**ID : 300141858**
 
+---
 
-\## 🎯 Objectif
+## 🎯 Objectif
 
+Ce TP consiste à automatiser des tâches système sous Linux avec un script Bash :
 
+- sauvegarde des données  
+- création d’un utilisateur  
+- test réseau  
+- génération de logs  
+- automatisation avec cron  
 
-L’objectif de ce TP est de :
+---
 
-
-
-\- automatiser des tâches d’administration système sous Linux
-
-\- sauvegarder un dossier d’entreprise
-
-\- créer un utilisateur temporaire
-
-\- tester la connectivité réseau
-
-\- générer un fichier journal (log)
-
-\- planifier l’exécution automatique avec `cron`
-
-\- vérifier le bon fonctionnement et diagnostiquer les erreurs
-
-
-
-\---
-
-
-
-\## 📁 Structure utilisée
-
-
-
-Le projet utilise la structure suivante :
-
-
+## 🏗️ Structure du projet
 
 ```bash
-
 /entreprise/
+├── data/
+├── backup/
+└── logs/
 
-├── data/       # fichiers sources
-
-├── backup/     # sauvegardes et archives
-
-└── logs/       # journaux d’exécution
-
-
-
-📂 Fichiers de test
-
-
-
-Création des fichiers :
-
-
-
+📂 Création de l’environnement
+sudo mkdir -p /entreprise/data
+sudo mkdir -p /entreprise/backup
+sudo mkdir -p /entreprise/logs
+📁 Fichiers de test
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
-
 echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
 
+```md
+📜 Script
+#!/bin/bash
+...
+▶️ Exécution
+sudo /entreprise/script_gestion.sh
 
+## 📸 Preuves
 
-⚙️ Script utilisé
+### 📌 Structure
+![Structure](images/1_structure.png)
 
-📜 script\_gestion.sh
+### 📌 Data
+![Data](images/2_data.png)
 
-\#!/bin/bash
+### 📌 Script
+![Script](images/3_script.png)
 
+### 📌 Exécution
+![Execution](images/4_execution.png)
 
+### 📌 Backup
+![Backup](images/5_backup.png)
 
-LOG="/entreprise/logs/log.txt"
+### 📌 Utilisateur
+![User](images/6_user.png)
 
-DATE=$(date)
+### 📌 Log
+![Log](images/7_log.png)
 
-
-
-echo "===================================" >> $LOG
-
-echo "Début exécution : $DATE" >> $LOG
-
-
-
-\# Test réseau
-
-echo "Test réseau..." >> $LOG
-
-ping -c 4 8.8.8.8 >> $LOG 2>\&1
-
-
-
-\# Sauvegarde
-
-echo "Sauvegarde en cours..." >> $LOG
-
-cp -r /entreprise/data/\* /entreprise/backup/ >> $LOG 2>\&1
-
-
-
-\# Création utilisateur
-
-USER\_TEMP="employe\_temp"
-
-
-
-if id "$USER\_TEMP" \&>/dev/null; then
-
-&#x20;   echo "Utilisateur existe déjà." >> $LOG
-
-else
-
-&#x20;   sudo useradd $USER\_TEMP
-
-&#x20;   echo "$USER\_TEMP:Temp1234" | sudo chpasswd
-
-&#x20;   echo "Utilisateur créé." >> $LOG
-
-fi
-
-
-
-\# Compression
-
-tar -czvf /entreprise/backup/backup\_$(date +%F).tar.gz /entreprise/data >> $LOG 2>\&1
-
-
-
-echo "Fin exécution : $(date)" >> $LOG
-
-echo "===================================" >> $LOG
-
-
-
-▶️ Exécution du script
-
-sudo /entreprise/script\_gestion.sh
-
-
-
-🔍 Vérification
-
-ls /entreprise/backup
-
-cat /etc/passwd | grep employe\_temp
-
-cat /entreprise/logs/log.txt
-
-sudo crontab -l
-
-systemctl status cron
-
-
-
-📸 Preuves
-
-
-
-\## 📸 Preuves
-
-
-
-\### 📌 Structure créée
-
-!\[Structure](images/1\_structure.png)
-
-
-
-\---
-
-
-
-\### 📌 Fichiers data
-
-!\[Data](images/2\_data.png)
-
-
-
-\---
-
-
-
-\### 📌 Script Bash
-
-!\[Script](images/3\_script.png)
-
-
-
-\---
-
-
-
-\### 📌 Exécution du script
-
-!\[Execution](images/4\_execution.png)
-
-
-
-\---
-
-
-
-\### 📌 Backup et archive
-
-!\[Backup](images/5\_backup.png)
-
-
-
-\---
-
-
-
-\### 📌 Utilisateur créé
-
-!\[User](images/6\_user.png)
-
-
-
-\---
-
-
-
-\### 📌 Fichier log
-
-!\[Log](images/7\_log.png)
-
-
-
-\---
-
-
-
-\### 📌 Cron configuré
-
-!\[Cron](images/8\_cron.png)
-
+### 📌 Cron
+![Cron](images/8_cron.png)

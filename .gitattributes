@@ -1,0 +1,7 @@
+# Generated participation / correction files
+**/.scripts/Participation*.md   merge=ours
+**/.scripts/Intermediaire*.md  merge=ours
+
+# Generated outputs / reports
+**/output/*.txt                merge=ours
+

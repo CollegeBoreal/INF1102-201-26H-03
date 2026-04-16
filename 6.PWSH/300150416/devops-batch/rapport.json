@@ -1,0 +1,58 @@
+{
+  "Date": "2026-03-31T19:35:07.1904532+00:00",
+  "Utilisateur": "ubuntu",
+  "Machine": "vm300150416",
+  "TopCPU": [
+    {
+      "Process": "multipathd",
+      "CPU": 73.19
+    },
+    {
+      "Process": "snapd",
+      "CPU": 54.28
+    },
+    {
+      "Process": "rcu_sched",
+      "CPU": 52.09
+    },
+    {
+      "Process": "irqbalance",
+      "CPU": 32.74
+    },
+    {
+      "Process": "systemd-journald",
+      "CPU": 30.01
+    }
+  ],
+  "TopMemory": [
+    {
+      "Process": "pwsh",
+      "Memory": 163082240
+    },
+    {
+      "Process": "pwsh",
+      "Memory": 157220864
+    },
+    {
+      "Process": "pwsh",
+      "Memory": 101122048
+    },
+    {
+      "Process": "systemd-journald",
+      "Memory": 63639552
+    },
+    {
+      "Process": "snapd",
+      "Memory": 40357888
+    }
+  ],
+  "Disk": [
+    "Filesystem      Size  Used Avail Use% Mounted on",
+    "tmpfs           197M 1004K  196M   1% /run",
+    "/dev/sda1       9.6G  3.1G  6.5G  33% /",
+    "tmpfs           982M     0  982M   0% /dev/shm",
+    "tmpfs           5.0M     0  5.0M   0% /run/lock",
+    "/dev/sda15      105M  6.1M   99M   6% /boot/efi",
+    "tmpfs           197M  4.0K  197M   1% /run/user/1000"
+  ]
+}

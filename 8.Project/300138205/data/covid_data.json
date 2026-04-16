@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "source": "API fictive",
+    "endpoint": "/covid",
+    "extracted": "05/04/2026",
+    "pays": [
+      "France",
+      "Germany",
+      "Italy",
+      "Spain",
+      "Portugal"
+    ]
+  },
+  "global": {
+    "cases": 299048,
+    "deaths": 7347,
+    "recovered": 184644,
+    "active": 107057
+  },
+  "countries": [
+    {
+      "country": "France",
+      "cases": 56712,
+      "deaths": 136,
+      "casesPerMillion": 907392,
+      "mortalityRate": 0.24,
+      "recoveryRate": 81.16
+    },
+    {
+      "country": "Germany",
+      "cases": 95415,
+      "deaths": 4455,
+      "casesPerMillion": 3912015,
+      "mortalityRate": 4.67,
+      "recoveryRate": 37.57
+    },
+    {
+      "country": "Italy",
+      "cases": 79892,
+      "deaths": 1646,
+      "casesPerMillion": 1278272,
+      "mortalityRate": 2.06,
+      "recoveryRate": 75.44
+    },
+    {
+      "country": "Spain",
+      "cases": 49104,
+      "deaths": 434,
+      "casesPerMillion": 1522224,
+      "mortalityRate": 0.88,
+      "recoveryRate": 54.63
+    },
+    {
+      "country": "Portugal",
+      "cases": 17925,
+      "deaths": 676,
+      "casesPerMillion": 179250,
+      "mortalityRate": 3.77,
+      "recoveryRate": 87.44
+    }
+  ],
+  "historical": [
+    {
+      "date": "2026-03-07",
+      "daily_new": 214,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-08",
+      "daily_new": 52,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-09",
+      "daily_new": 321,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-10",
+      "daily_new": 361,
+      "daily_deaths": 1
+    },
+    {
+      "date": "2026-03-11",
+      "daily_new": 148,
+      "daily_deaths": 8
+    },
+    {
+      "date": "2026-03-12",
+      "daily_new": 236,
+      "daily_deaths": 3
+    },
+    {
+      "date": "2026-03-13",
+      "daily_new": 420,
+      "daily_deaths": 8
+    },
+    {
+      "date": "2026-03-14",
+      "daily_new": 159,
+      "daily_deaths": 8
+    },
+    {
+      "date": "2026-03-15",
+      "daily_new": 450,
+      "daily_deaths": 0
+    },
+    {
+      "date": "2026-03-16",
+      "daily_new": 107,
+      "daily_deaths": 6
+    },
+    {
+      "date": "2026-03-17",
+      "daily_new": 470,
+      "daily_deaths": 1
+    },
+    {
+      "date": "2026-03-18",
+      "daily_new": 221,
+      "daily_deaths": 3
+    },
+    {
+      "date": "2026-03-19",
+      "daily_new": 154,
+      "daily_deaths": 5
+    },
+    {
+      "date": "2026-03-20",
+      "daily_new": 230,
+      "daily_deaths": 4
+    },
+    {
+      "date": "2026-03-21",
+      "daily_new": 355,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-22",
+      "daily_new": 373,
+      "daily_deaths": 5
+    },
+    {
+      "date": "2026-03-23",
+      "daily_new": 116,
+      "daily_deaths": 1
+    },
+    {
+      "date": "2026-03-24",
+      "daily_new": 346,
+      "daily_deaths": 7
+    },
+    {
+      "date": "2026-03-25",
+      "daily_new": 364,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-26",
+      "daily_new": 74,
+      "daily_deaths": 1
+    },
+    {
+      "date": "2026-03-27",
+      "daily_new": 232,
+      "daily_deaths": 2
+    },
+    {
+      "date": "2026-03-28",
+      "daily_new": 235,
+      "daily_deaths": 5
+    },
+    {
+      "date": "2026-03-29",
+      "daily_new": 280,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-03-30",
+      "daily_new": 81,
+      "daily_deaths": 6
+    },
+    {
+      "date": "2026-03-31",
+      "daily_new": 413,
+      "daily_deaths": 4
+    },
+    {
+      "date": "2026-04-01",
+      "daily_new": 359,
+      "daily_deaths": 5
+    },
+    {
+      "date": "2026-04-02",
+      "daily_new": 436,
+      "daily_deaths": 10
+    },
+    {
+      "date": "2026-04-03",
+      "daily_new": 361,
+      "daily_deaths": 6
+    },
+    {
+      "date": "2026-04-04",
+      "daily_new": 278,
+      "daily_deaths": 9
+    },
+    {
+      "date": "2026-04-05",
+      "daily_new": 58,
+      "daily_deaths": 5
+    }
+  ]
+}

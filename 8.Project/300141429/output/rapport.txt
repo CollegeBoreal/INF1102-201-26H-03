@@ -1,0 +1,12 @@
+TOP 10 mots les plus fréquents (BBC News)
+
+with : 11
+after : 9
+trump : 8
+pope : 6
+iran : 5
+blockade : 5
+they : 4
+harry : 4
+meghan : 4
+jesus : 4

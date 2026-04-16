@@ -76,6 +76,30 @@ jobs:
           pwsh .scripts/run.ps1
           Set-Location ..
 
+          ##
+          ## Évaluation du chapitre 7.REGEX
+          ##
+          Write-Host "Evaluating chapter 7.REGEX Participation"
+          Set-Location 7.REGEX
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 8.Project
+          ##
+          Write-Host "Evaluating chapter 8.Project Participation"
+          Set-Location 8.Project
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
+          ##
+          ## Évaluation du chapitre 9.Ansible
+          ##
+          Write-Host "Evaluating chapter 9.Ansible Participation"
+          Set-Location 9.Ansible
+          pwsh .scripts/run.ps1
+          Set-Location ..
+
       - name: Commit files
         shell: pwsh
         run: |

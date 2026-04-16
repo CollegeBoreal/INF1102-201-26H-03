@@ -1,0 +1,38 @@
+============================================================
+  RAPPORT D'ANALYSE — BBC NEWS
+  Généré le 07/04/2026 à 13:18
+============================================================
+
+  Articles analysés : 1
+  Mots uniques      : 13
+
+────────────────────────────────────────────────────────────
+  TOP 10 DES MOTS LES PLUS FRÉQUENTS
+────────────────────────────────────────────────────────────
+
+   1. multiple                1 fois  █
+   2. languages               1 fois  █
+   3. trump                   1 fois  █
+   4. something               1 fois  █
+   5. revolutionarily         1 fois  █
+   6. wonderful               1 fois  █
+   7. happen                  1 fois  █
+   8. deadline                1 fois  █
+   9. tuesday                 1 fois  █
+  10. iran                    1 fois  █
+
+────────────────────────────────────────────────────────────
+  INTERPRÉTATION
+────────────────────────────────────────────────────────────
+
+  Les actualités de BBC News ce jour portent principalement sur :
+  
+    • Sujets variés (aucun thème dominant identifié)
+  
+  Cette analyse est basée sur la fréquence des mots dans les
+  titres et résumés des articles. Les résultats reflètent
+  les préoccupations éditoriales du site à ce moment précis.
+
+============================================================
+  Fin du rapport
+============================================================

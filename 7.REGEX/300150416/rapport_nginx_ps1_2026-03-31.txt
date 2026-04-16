@@ -1,0 +1,14 @@
+Rapport Nginx - 03/31/2026 20:56:19
+----------------------------------
+Total requetes : 5
+Erreurs HTTP : 1
+Erreurs 404 : 1
+Erreurs 500 : 0
+
+Top 5 IP :
+3 127.0.0.1
+2 10.7.237.124
+
+Top 5 pages :
+4 /
+1 /favicon.ico

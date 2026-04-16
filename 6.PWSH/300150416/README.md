@@ -159,3 +159,10 @@ Ce TP démontre :
 ID : 300150416
 Collège Boréal
 
+## 📸 Captures
+
+### Installation PowerShell
+![Installation PowerShell](images/120.png)
+
+### Vérification version PowerShell
+![Version PowerShell](images/130.png)

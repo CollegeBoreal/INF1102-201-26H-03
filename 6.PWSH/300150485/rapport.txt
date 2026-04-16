@@ -1,0 +1,32 @@
+===== RAPPORT DEVOPS =====
+Date : 03/24/2026 22:06:56
+Utilisateur : root
+Machine : vm300150485
+Top CPU :
+
+ NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
+ ------    -----      -----     ------      --  -- -----------
+      0     0.00       0.00     235.20      14   0 rcu_sched
+      0     0.00      38.56     115.14   57407 …07 snapd
+      0     0.00       0.00     112.49      31   0 kcompactd0
+      0     0.00      11.47      88.94       1   1 systemd
+      0     0.00       0.00      20.06      15   0 migration/0
+
+Top mémoire :
+
+ NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
+ ------    -----      -----     ------      --  -- -----------
+      0     0.00     104.05       1.31   66389 …88 pwsh
+      0     0.00      38.56     115.14   57407 …07 snapd
+      0     0.00      26.61       0.33   65345 …45 multipathd
+      0     0.00      19.33       0.10     742 742 unattended-upgrade-shutdown
+      0     0.00      17.36       0.12     658 658 networkd-dispatcher
+
+Disque :
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M 1016K  196M   1% /run
+/dev/sda1       9.6G  3.9G  5.7G  41% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+tmpfs           197M  4.0K  197M   1% /run/user/1000

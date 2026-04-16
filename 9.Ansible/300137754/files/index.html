@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Watches</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .navbar button {
+            padding: 10px 20px;
+            border: none;
+            background: #27ae60;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background: #219150;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            background: white;
+            color: #333;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #ddd;
+        }
+
+        /* PRODUITS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #27ae60;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px 15px;
+            border: none;
+            background: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #1a252f;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>⌚ Luxury Watches</h2>
+        <button onclick="alert('Connexion en cours...')">Se connecter</button>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Découvrez l’élégance du temps</h1>
+        <p>Les meilleures montres au meilleur prix</p>
+        <button onclick="scrollToProducts()">Voir les montres</button>
+    </div>
+
+    <!-- PRODUITS -->
+    <div class="products" id="products">
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Montre 1">
+            <h3>Montre Classique</h3>
+            <div class="price">199$</div>
+            <button onclick="acheter('Montre Classique')">Acheter</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Montre 2">
+            <h3>Montre Sport</h3>
+            <div class="price">149$</div>
+            <button onclick="acheter('Montre Sport')">Acheter</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250" alt="Montre 3">
+            <h3>Montre Luxe</h3>
+            <div class="price">399$</div>
+            <button onclick="acheter('Montre Luxe')">Acheter</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2026 - Boutique de montres | ID : 300137754
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        function acheter(produit) {
+            alert("🛒 Vous avez ajouté : " + produit);
+        }
+
+        function scrollToProducts() {
+            document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
