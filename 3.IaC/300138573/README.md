@@ -40,7 +40,7 @@ une VM Ubuntu à partir d’un template cloud-init sur Proxmox.
 ```bash
 tofu init
 ```
-
+ 
 ```bash
 tofu plan
 ```
