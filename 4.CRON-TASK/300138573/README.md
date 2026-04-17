@@ -64,7 +64,7 @@ Cette commande permet de se connecter à la machine virtuelle via SSH avec une c
 Fichier utilisé :
 
 ```bash
-Cat /var/log/nginx/access.log
+cat /var/log/nginx/access.log
 ```
 
 <img width="1168" height="119" alt="Tronc-task5" src="https://github.com/user-attachments/assets/97235481-bf2a-42ba-a63c-fe7ea17bcde8" />
@@ -85,9 +85,8 @@ awk '{print $1}' /var/log/nginx/access.log
 ### Résultat obtenu
 
 127.0.0.1
-127.0.0.1
 
-📸 image 2
+127.0.0.1
 
 ### Explication
 
