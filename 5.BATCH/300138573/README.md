@@ -46,56 +46,66 @@ PARTIE 1 – Préparation de l’environnement
 Étape 1 : Création de la structure
 Commande :
 
+```bash
 sudo mkdir -p /entreprise/data
+
 sudo mkdir -p /entreprise/backup
+
 sudo mkdir -p /entreprise/logs
-
-<img width="1482" height="76" alt="batch3" src="https://github.com/user-attachments/assets/10ab3119-a87f-4b49-a405-460a73a63efc" />
-
+```
 
 Pour verifier, il faut taper :
 
+```bash
 ls -R /entreprise
+```
 
+<img width="1482" height="217" alt="batch111" src="https://github.com/user-attachments/assets/bffe128f-3ac9-4282-a357-d01dc5ff4cae" />
 
-
-
-Résultat attendu :
-
-/entreprise:
-backup data logs script_gestion.sh
-
-/entreprise/backup:
-
-/entreprise/data:
-fichier1.txt  fichier2.txt
-
-/entreprise/logs:
-Explication : L’option -p permet de créer les dossiers parents si nécessaire.
+**Explication**: L’option -p permet de créer les dossiers parents si nécessaire.
 
 Création de fichiers de test
-Commande :
 
+## Commande :
+
+```bash
 echo "Fichier 1" | sudo tee /entreprise/data/fichier1.txt
-echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
-image3
-Pour verifier
 
+echo "Fichier 2" | sudo tee /entreprise/data/fichier2.txt
+```
+
+## Pour verifier
+
+```bash
 ls /entreprise/data
-image4
-Résultat attendu :
+```
+
+<img width="1483" height="217" alt="batch112" src="https://github.com/user-attachments/assets/d60be29d-afc2-4b89-8bb3-4490e2b9a738" />
+
+## Résultat attendu :
 
 fichier1.txt
 fichier2.txt
-Explication : La commande tee permet d’écrire dans un fichier avec les droits administrateur.
 
-PARTIE 2 – Création du script Bash
-Étape 3 : Création du script
-Commande :
+**Explication** : La commande tee permet d’écrire dans un fichier avec les droits administrateur.
 
+
+**PARTIE 2** – Création du script Bash
+
+## Étape 3 : Création du script
+
+ ##Commande :
+
+```bash
 sudo nano /entreprise/script_gestion.sh
-image5
+```
+
 Contenu complet du script dans l’éditeur nano
+
+```bash
+
+```
+
 #!/bin/bash
 
 LOG="/entreprise/logs/log.txt"
