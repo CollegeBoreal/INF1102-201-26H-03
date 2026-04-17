@@ -194,13 +194,14 @@ Commande :
 crontab -e
 ```
 
-📸 image 9
+<img width="1454" height="75" alt="Tronc-task10" src="https://github.com/user-attachments/assets/17f16727-3c32-4e89-ac01-de4b9b3aa362" />
 
 Configuration :
 
 ```bash
 0 * * * * /home/ubuntu/scruter_nginx.sh
 ```
+<img width="1482" height="749" alt="Tronc-task11" src="https://github.com/user-attachments/assets/ff6acfd5-4b2a-4a1e-b9bd-32c6bd1a0c78" />
 
 ---
 
@@ -210,7 +211,7 @@ Configuration :
 systemctl status cron
 ```
 
-📸 image 10
+<img width="1482" height="545" alt="Tronc-task12" src="https://github.com/user-attachments/assets/c6e18a32-6949-4bbe-99cc-8811d5ad9f24" />
 
 ### Résultat
 
@@ -225,11 +226,10 @@ Structure :
 300138573
 │
 ├── README.md
-├── scruter_nginx.sh
-└── images
-└── gitkeep
 
-📸 image 11
+├── scruter_nginx.sh
+
+└── images
 
 ---
 
@@ -243,8 +243,7 @@ git commit -m "CRON TASK"
 git pull --rebase origin main
 git push origin main
 ```
-
-📸 image 12
+<img width="1482" height="749" alt="Tronc-task11" src="https://github.com/user-attachments/assets/40f45a4a-9414-4ec5-89e0-3f3f1febfde2" />
 
 ---
 
