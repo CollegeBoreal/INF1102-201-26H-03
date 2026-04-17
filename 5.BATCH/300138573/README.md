@@ -34,10 +34,12 @@ Pour accéder au serveur Ubuntu, j’ai utilisé une connexion SSH avec une clé
 
 Commande utilisée
 
+```bash
 ssh -i ~/.ssh/ma_cle.pk \
 -o StrictHostKeyChecking=no \
 -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
 ubuntu@10.7.237.197
+```
 
 <img width="1482" height="762" alt="image0" src="https://github.com/user-attachments/assets/8767f274-df59-482d-8677-11e0f838372f" />
 
