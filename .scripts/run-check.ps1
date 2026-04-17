@@ -6,8 +6,8 @@ $dirs = @(
     "5.BATCH",
     "6.PWSH",
     "7.REGEX"
-    "9.Ansible"
 )
+    #"9.Ansible"
 
 foreach ($dir in $dirs) {
     Push-Location $dir
