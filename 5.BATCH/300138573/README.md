@@ -104,163 +104,153 @@ Contenu complet du script dans l’éditeur nano
 
 ```bash
 
+#!/bin/bash
+
+LOG="/entreprise/logs/log.txt"
+DATE=$(date)
+
+echo "===================================" >> $LOG
+echo "Début exécution : $DATE" >> $LOG
+
+# 1. Vérification réseau
+echo "Test réseau..." >> $LOG
+ping -c 4 8.8.8.8 >> $LOG 2>&1
+
+# 2. Sauvegarde des fichiers
+echo "Sauvegarde en cours..." >> $LOG
+cp -r /entreprise/data/* /entreprise/backup/ >> $LOG 2>&1
+
+# 3. Création utilisateur temporaire
+USER_TEMP="employe_temp"
+
+if id "$USER_TEMP" &>/dev/null; then
+    echo "Utilisateur existe déjà." >> $LOG
+else
+    sudo useradd $USER_TEMP
+    echo "$USER_TEMP:Temp1234" | sudo chpasswd
+    echo "Utilisateur créé." >> $LOG
+fi
+
+# 4. Compression archive
+tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
+
+echo "Fin exécution : $(date)" >> $LOG
+echo "===================================" >> $LOG
 ```
 
-#!/bin/bash
-
-LOG="/entreprise/logs/log.txt"
-DATE=$(date)
-
-echo "===================================" >> $LOG
-echo "Début exécution : $DATE" >> $LOG
-
-# 1. Vérification réseau
-echo "Test réseau..." >> $LOG
-ping -c 4 8.8.8.8 >> $LOG 2>&1
-
-# 2. Sauvegarde des fichiers
-echo "Sauvegarde en cours..." >> $LOG
-cp -r /entreprise/data/* /entreprise/backup/ >> $LOG 2>&1
-
-# 3. Création utilisateur temporaire
-USER_TEMP="employe_temp"
-
-if id "$USER_TEMP" &>/dev/null; then
-    echo "Utilisateur existe déjà." >> $LOG
-else
-    sudo useradd $USER_TEMP
-    echo "$USER_TEMP:Temp1234" | sudo chpasswd
-    echo "Utilisateur créé." >> $LOG
-fi
-
-# 4. Compression archive
-tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
-
-echo "Fin exécution : $(date)" >> $LOG
-echo "===================================" >> $LOG
----
-
-### Code du script
-
-```bash
-#!/bin/bash
-
-LOG="/entreprise/logs/log.txt"
-DATE=$(date)
-
-echo "===================================" >> $LOG
-echo "Début exécution : $DATE" >> $LOG
-
-# 1. Vérification réseau
-echo "Test réseau..." >> $LOG
-ping -c 4 8.8.8.8 >> $LOG 2>&1
-
-# 2. Sauvegarde des fichiers
-echo "Sauvegarde en cours..." >> $LOG
-cp -r /entreprise/data/* /entreprise/backup/ >> $LOG 2>&1
-
-# 3. Création utilisateur temporaire
-USER_TEMP="employe_temp"
-
-if id "$USER_TEMP" &>/dev/null; then
-    echo "Utilisateur existe déjà." >> $LOG
-else
-    sudo useradd $USER_TEMP
-    echo "$USER_TEMP:Temp1234" | sudo chpasswd
-    echo "Utilisateur créé." >> $LOG
-fi
-
-# 4. Compression archive
-tar -czvf /entreprise/backup/backup_$(date +%F).tar.gz /entreprise/data >> $LOG 2>&1
-
-echo "Fin exécution : $(date)" >> $LOG
-echo "===================================" >> $LOG
-Explication : Ce script permet :
+**Explication** : Ce script permet :
 
 de tester la connectivité réseau
 de sauvegarder les fichiers
 de créer un utilisateur temporaire
 de compresser les données
 de journaliser toutes les opérations
-PARTIE 3 – Rendre le script exécutable
-Commande :
 
+**PARTIE 3** – Rendre le script exécutable
+
+##Commande## :
+
+```bash
 sudo chmod +x /entreprise/script_gestion.sh
-image6
-Pour verifier il faut taper:
+```
 
+## Pour verifier il faut taper:
+
+```bash
 ls -l /entreprise
-image7
-Résultat attendu : Le script possède les permissions d’exécution.
+```
 
-PARTIE 4 – Test manuel
+<img width="1482" height="239" alt="batch113" src="https://github.com/user-attachments/assets/6d4f8383-0eb4-4751-bca0-4118d06cfd62" />
+
+**Résultat attendu** : Le script possède les permissions d’exécution.
+
+**PARTIE 4** – Test manuel
+
 Exécution du script
-sudo /entreprise/script_gestion.sh
-image8
-Exécution dans le terminal
-Vérifications
-1. Vérification de la sauvegarde
-ls /entreprise/backup
-image9
-Résultat attendu :
 
-backup_2026-03-18.tar.gz fichier1.txt fichier2.txt
+```bash
+sudo /entreprise/script_gestion.sh
+```
+
+## Exécution dans le terminal
+
+**Vérifications**
+
+1. Vérification de la sauvegarde
+   
+```bash
+ls /entreprise/backup
+```
+<img width="1482" height="209" alt="batch114" src="https://github.com/user-attachments/assets/9bceb7d9-692f-4880-9999-f85248b843a8" />
+
 
 2. Vérification de l’utilisateur
+
+
+```bash
 cat /etc/passwd | grep employe_temp
-image10
-Résultat attendu : L’utilisateur apparaît dans le système.
+```
 
-3. Vérification du log
+**Résultat attendu** : L’utilisateur apparaît dans le système.
+
+4. Vérification du log
+   
+```bash
 cat /entreprise/logs/log.txt
-image11
-Résultat attendu :
+```
 
-Début exécution : ...
-Test réseau...
-Sauvegarde en cours...
-Utilisateur créé.
-Fin exécution : ...
-Explication : Le fichier log enregistre toutes les actions exécutées.
+<img width="1482" height="762" alt="batch115" src="https://github.com/user-attachments/assets/c0fcdc12-98d7-4ebb-bbb1-d91c5d6d8476" />
 
-PARTIE 5 – Planification avec cron
-Étape 5 : Configuration
+
+## PARTIE 5 – Planification avec cron
+
+**Étape 5** : Configuration
+
+```bash
 sudo crontab -e
-image12 0
-Ajouter :
+```
 
+<img width="1482" height="102" alt="batch116" src="https://github.com/user-attachments/assets/8a961fae-7cef-48c7-a6cd-0278d6213975" />
+
+## Ajouter :
+
+```bash
 0 2 * * * /entreprise/script_gestion.sh
-image12
+```
+
+<img width="1482" height="762" alt="batch1" src="https://github.com/user-attachments/assets/2c9272e7-1c72-44cf-837b-ff3c7967e4c9" />
+
 ligne ajoutée dans la crontab
 Explication : Exécution automatique tous les jours à 02h00.
 
-PARTIE 6 – Vérification du service cron
+## PARTIE 6 – Vérification du service cron
+
+```bash
 systemctl status cron
-image13
-Vérification des journaux
+```
+
+<img width="1482" height="536" alt="batch117" src="https://github.com/user-attachments/assets/5071c548-31b9-41ab-bc1f-9175e98f698b" />
+
+
+## Vérification des journaux
+
+```bash
 journalctl -u cron
-image14
+```
+
+<img width="1482" height="762" alt="batch118" src="https://github.com/user-attachments/assets/31d1b633-e954-4211-ba65-cd6cc16862b4" />
+
 ou
 
+```bash
 cat /var/log/syslog | grep CRON
+```
 
-image15
+<img width="1482" height="762" alt="batch119" src="https://github.com/user-attachments/assets/522e738d-c8f5-411d-8ba1-1c73408793f4" />
 
-## PARTIE 7 – Dépannage
-Problème	Cause	Solution
-Permission denied	Script non exécutable	chmod +x
-Échec useradd	Droits insuffisants	utiliser sudo
-Archive vide	Mauvais chemin	vérifier /entreprise/data
-Cron ne fonctionne pas	PATH incorrect	chemins absolus
-PARTIE 8 – Améliorations
-Suppression utilisateur
-sudo userdel -r employe_temp
-Gestion d’erreurs
-if [ $? -ne 0 ]; then
-   echo "Erreur lors de la sauvegarde" >> $LOG
-fi
 
-Conclusion
+## Conclusion
+
 Ce TP permet de maîtriser l’automatisation sous Linux via Bash.
 
 Les compétences acquises :
