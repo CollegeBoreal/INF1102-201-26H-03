@@ -53,11 +53,13 @@ tofu apply
 
 ## Connexion à la VM via SSH :
 
+```bash
 ssh -i ~/.ssh/williamkey.pk `
   -o StrictHostKeyChecking=no `
   -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty `
   ubuntu@10.7.237.197
-
+```
+<img width="1482" height="762" alt="image0" src="https://github.com/user-attachments/assets/ca130ef7-8235-45b7-8766-2ab52731c693" />
 
 <img width="1482" height="496" alt="Iac 2" src="https://github.com/user-attachments/assets/ebdf4bc5-b7e2-4df1-8b59-727751da6ccf" />
 
