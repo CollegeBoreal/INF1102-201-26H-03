@@ -231,7 +231,7 @@ Structure :
 300138573
 
 │
-├── README.md
+── README.md
 
 ├── scruter_nginx.sh
 
