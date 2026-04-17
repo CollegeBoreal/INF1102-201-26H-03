@@ -48,6 +48,9 @@ ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/s
 
 <img width="1482" height="762" alt="image0" src="https://github.com/user-attachments/assets/187bfd91-3457-4a20-b8b3-c274d4ad94a2" />
 
+<img width="1482" height="212" alt="Tronc-task1" src="https://github.com/user-attachments/assets/2ec64db5-558c-465c-9fa5-86c345b4cf30" />
+
+
 Connexion réussie au serveur Ubuntu.
 
 ### Explication
