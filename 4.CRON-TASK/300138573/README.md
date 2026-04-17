@@ -63,7 +63,11 @@ Cette commande permet de se connecter à la machine virtuelle via SSH avec une c
 
 Fichier utilisé :
 
-/var/log/nginx/access.log
+```bash
+Cat /var/log/nginx/access.log
+```
+
+<img width="1168" height="119" alt="Tronc-task5" src="https://github.com/user-attachments/assets/97235481-bf2a-42ba-a63c-fe7ea17bcde8" />
 
 Ce fichier contient toutes les requêtes HTTP du serveur.
 
@@ -76,8 +80,7 @@ Commande utilisée :
 ```bash
 awk '{print $1}' /var/log/nginx/access.log
 ```
-
-📸 image 1
+<img width="1482" height="121" alt="Tronc-task6" src="https://github.com/user-attachments/assets/3c371447-7cda-446b-bf3c-838105b3833a" />
 
 ### Résultat obtenu
 
