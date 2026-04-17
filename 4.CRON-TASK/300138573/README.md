@@ -224,6 +224,7 @@ Service actif (running)
 Structure :
 
 300138573
+
 │
 ├── README.md
 
@@ -243,7 +244,9 @@ git commit -m "CRON TASK"
 git pull --rebase origin main
 git push origin main
 ```
-<img width="1482" height="749" alt="Tronc-task11" src="https://github.com/user-attachments/assets/40f45a4a-9414-4ec5-89e0-3f3f1febfde2" />
+
+<img width="1449" height="637" alt="Tronc-task111" src="https://github.com/user-attachments/assets/8308ef97-2e9b-4235-aa58-92a503cee2ed" />
+
 
 ---
 
