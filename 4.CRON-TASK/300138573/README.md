@@ -6,12 +6,19 @@
 ## 📌 Informations de l’étudiant  
 
 Nom : Nour Miri 
+
 Numéro étudiant : 300138573 
+
 Cours : INF1102 – Programmation des Systèmes 
+
 Collège Boréal - Campus Toronto 
+
 Programme : Techniques des systèmes informatiques 
+
 Session : Hiver 2026 
+
 Professeur : Brice Robert 
+
 Laboratoire : CRON-TASK — Analyse des logs Nginx 
 
 ---
@@ -35,12 +42,11 @@ Les objectifs étaient :
 Commande utilisée :
 
 ```bash
-ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no ubuntu@10.7.237.197
+ssh -i ~/.ssh/ma_cle.pk -o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty ubuntu@10.7.237.197
 ````
 
-📸 image 0
 
-### Résultat obtenu
+<img width="1482" height="762" alt="image0" src="https://github.com/user-attachments/assets/187bfd91-3457-4a20-b8b3-c274d4ad94a2" />
 
 Connexion réussie au serveur Ubuntu.
 
