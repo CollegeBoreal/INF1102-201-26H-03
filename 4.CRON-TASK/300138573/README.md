@@ -101,8 +101,10 @@ Commande :
 ```bash
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq
 ```
+<img width="1482" height="132" alt="Tronc-task8" src="https://github.com/user-attachments/assets/7666c91a-7aa0-4896-a451-fda3ffe7cc22" />
 
-📸 image 3
+<img width="1482" height="78" alt="Tronc-task7" src="https://github.com/user-attachments/assets/45510547-e6e4-4110-9dbb-f45582a909a1" />
+
 
 ### Résultat obtenu
 
@@ -123,15 +125,14 @@ Commande :
 awk '{print $1}' /var/log/nginx/access.log | sort | uniq > /home/ubuntu/nginx_ips.txt
 ```
 
-📸 image 4
-
 ### Vérification :
 
 ```bash
 cat /home/ubuntu/nginx_ips.txt
 ```
 
-📸 image 5
+<img width="1482" height="132" alt="Tronc-task8" src="https://github.com/user-attachments/assets/16ab4050-b431-4f14-adb4-53980f345b4e" />
+
 
 ### Résultat
 
