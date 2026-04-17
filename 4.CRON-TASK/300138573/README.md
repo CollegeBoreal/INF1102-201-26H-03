@@ -148,18 +148,21 @@ Commande :
 nano /home/ubuntu/scruter_nginx.sh
 ```
 
-📸 image 6
-
 ### Contenu du script
 
 ```bash
 #!/bin/bash
 
+# Fichier des logs
 LOG_FILE="/var/log/nginx/access.log"
+
+# Fichier de sortie
 OUTPUT_FILE="/home/ubuntu/nginx_ips.txt"
 
+# Extraire les IP uniques et les stocker
 awk '{print $1}' $LOG_FILE | sort | uniq > $OUTPUT_FILE
 
+# Optionnel : ajouter un timestamp à chaque exécution
 echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 ```
 
@@ -171,8 +174,6 @@ echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
 chmod +x /home/ubuntu/scruter_nginx.sh
 ```
 
-📸 image 7
-
 ---
 
 ### Test du script
@@ -181,7 +182,8 @@ chmod +x /home/ubuntu/scruter_nginx.sh
 /home/ubuntu/scruter_nginx.sh
 ```
 
-📸 image 8
+<img width="1428" height="125" alt="Tronc-task9" src="https://github.com/user-attachments/assets/70cf420d-0034-44e9-a23a-c9a187bab374" />
+
 
 ### Résultat
 
