@@ -1,10 +1,15 @@
 ## TP Automatisation d’administration avec script Bash (Linux)
 
 Informations de l’étudiant
+
 Nom et Prénoms:Miri nour
+
 Numéro étudiant: 300138573
+
 Programme : Techniques des systèmes informatiques
+
 Cours : INF 1102-201 – Programmation de systèmes
+
 Professeur : Brice Robert
 
 
@@ -32,8 +37,11 @@ Commande utilisée
 ssh -i ~/.ssh/ma_cle.pk \
 -o StrictHostKeyChecking=no \
 -o UserKnownHostsFile=/tmp/ssh_known_hosts_empty \
-ubuntu@10.7.237.223
-image0
+ubuntu@10.7.237.197
+
+<img width="1482" height="762" alt="image0" src="https://github.com/user-attachments/assets/8767f274-df59-482d-8677-11e0f838372f" />
+
+
 PARTIE 1 – Préparation de l’environnement
 Étape 1 : Création de la structure
 Commande :
@@ -41,10 +49,17 @@ Commande :
 sudo mkdir -p /entreprise/data
 sudo mkdir -p /entreprise/backup
 sudo mkdir -p /entreprise/logs
-image1
+
+<img width="1482" height="76" alt="batch3" src="https://github.com/user-attachments/assets/10ab3119-a87f-4b49-a405-460a73a63efc" />
+
+
 Pour verifier, il faut taper :
+
 ls -R /entreprise
-image2
+
+
+
+
 Résultat attendu :
 
 /entreprise:
@@ -218,8 +233,10 @@ image14
 ou
 
 cat /var/log/syslog | grep CRON
+
 image15
-PARTIE 7 – Dépannage
+
+## PARTIE 7 – Dépannage
 Problème	Cause	Solution
 Permission denied	Script non exécutable	chmod +x
 Échec useradd	Droits insuffisants	utiliser sudo
@@ -232,25 +249,7 @@ Gestion d’erreurs
 if [ $? -ne 0 ]; then
    echo "Erreur lors de la sauvegarde" >> $LOG
 fi
-Résultat attendu
-Avant exécution
-/entreprise/
-├── data/
-├── backup/
-└── logs/
-Après exécution
-/entreprise/
-├── data/
-│   ├── fichier1.txt
-│   ├── fichier2.txt
-│
-├── backup/
-│   ├── fichier1.txt
-│   ├── fichier2.txt
-│   └── backup_YYYY-MM-DD.tar.gz
-│
-└── logs/
-    └── log.txt
+
 Conclusion
 Ce TP permet de maîtriser l’automatisation sous Linux via Bash.
 
