@@ -2,41 +2,102 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>🆔 : 300138205 ( Taylor )</title>
+    <title>🆔 Taylor - 300138205</title>
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            font-family: 'Segoe UI', Arial, sans-serif;
             color: white;
             text-align: center;
         }
 
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .container {
-            margin-top: 20%;
+            margin-top: 15%;
+        }
+
+        .card {
+            display: inline-block;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 30px rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
-            font-size: 2.5em;
-            background-color: rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 2em;
+            color: #00ffd5;
+            margin-top: 15px;
+        }
+
+        .id {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-top: 10px;
         }
 
         p {
             margin-top: 20px;
             font-size: 1.2em;
-            color: #ffd700;
+            color: #ffffffcc;
+        }
+
+        .badge {
+            margin-top: 25px;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255, 0, 100, 0.5);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #cccccc;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>🚀 Déploiement réussi avec Ansible</h1>
-        <p>Bienvenue sur ton serveur 🎉</p>
+        <div class="card">
+            <h1>🚀 Déploiement réussi avec Ansible</h1>
+
+            <div class="name">👤 Taylor</div>
+            <div class="id">🆔 300138205</div>
+
+            <p>Bienvenue sur ton serveur DevOps 🎉</p>
+
+            <div class="badge">✔ Serveur opérationnel</div>
+
+            <div class="footer">
+                ⚡ Automatisé avec Ansible
+            </div>
+        </div>
     </div>
 </body>
 </html>
