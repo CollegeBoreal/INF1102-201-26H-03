@@ -26,14 +26,20 @@
  ## Travail demandé
 
 Structure du projet
+
 /300151970
+
 ├── files/
 │   └── index.html
+
 ├── images/
+
 ├── inventory.ini
+
 ├── playbook.yml
+
 └── README.md
-└── files/index.html
+
 
 
 le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même quand il existait, Ansible n’est pas conçu pour tourner nativement sur Windows.
