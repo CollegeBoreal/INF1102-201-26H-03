@@ -166,7 +166,7 @@ Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 ![rapport json](./screenshots/3_rapport_json.png)
  
 ### Contenu de `rapport.txt`
-![rapport txt](./screenshots/4_rapport_txt.png)
+![rapport txt](images/4.png)
  
 ---
  
