@@ -1,7 +1,15 @@
 import json
 import matplotlib.pyplot as plt
+import sys
 
-with open("../data/result.json") as f:
+# Vérifier argument
+if len(sys.argv) < 2:
+    print("Usage: python analyse.py <fichier_json>")
+    exit()
+
+file = sys.argv[1]
+
+with open(file) as f:
     data = json.load(f)
 
 print("URL :", data["url"])
