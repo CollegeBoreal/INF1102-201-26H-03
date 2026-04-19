@@ -90,11 +90,14 @@ present Assure que la ressource existe (package installé, fichier présent). Ne
 
 become: yes permet d’exécuter la tâche avec les privilèges root (ou un autre utilisateur via become_user).
 
-✅ Conclusion et apprentissages
-Conclusion
+## Conclusion et apprentissages
+
+## Conclusion
+
 Le TP montre qu’Ansible permet de déployer et configurer des services de manière automatisée et fiable. Grâce à l’approche déclarative, l’état des serveurs peut être géré facilement, reproductible et sécurisé.
 
-Choses apprises
+## Choses apprises
+
 Comprendre le fonctionnement d’Ansible et son idempotence
 Installer et utiliser Ansible sur WSL ou Linux
 Créer un playbook pour installer Nginx, déployer une page web et gérer les services
