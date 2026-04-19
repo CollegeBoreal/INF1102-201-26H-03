@@ -38,55 +38,24 @@ ID/
 ├── playbook.yml
 └── files/
     └── index.html
--------------------------
-📄 1. Inventory
-Fichier : inventory.ini
-[web]
-IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
-👉 Remplacer IP_VM par l’adresse IP de votre machine virtuelle.
------------------------------
-⚙️ 2. Playbook Ansible
-Fichier : playbook.yml
-- name: Installer et configurer nginx
-  hosts: web
-  become: yes
-
-  tasks:
-
-    - name: Installer nginx
-      apt:
-        name: nginx
-        state: present
-        update_cache: yes
-
-    - name: Copier la page HTML
-      copy:
-        src: files/index.html
-        dest: /var/www/html/index.nginx-debian.html
-
-    - name: Démarrer nginx
-      service:
-        name: nginx
-        state: started
-        enabled: yes
 ---------------------------------
 🌐 3. Page HTML
-Fichier : files/index.html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>🆔 : 300145405</title>
-</head>
-<body>
-    <h1>🚀 Déploiement réussi avec Ansible</h1>
-</body>
-</html>
+-Fichier : files/index.html
+-<!DOCTYPE html>
+-<html>
+-<head>
+ -   <title>🆔 : 300145405</title>
+-</head>
+-<body>
+ -   <h1>🚀 Déploiement réussi avec Ansible</h1>
+-</body>
+-</html>
 ------------------------------
-✅ Vérification
-Ouvrir dans un navigateur :
-http://10.7.237.208
-Ou utiliser :
-curl http:// 10.7.237.208
+##✅ Vérification
+-Ouvrir dans un navigateur :
+-http://10.7.237.208
+-Ou utiliser :
+-curl http:// 10.7.237.208
 
 
 
