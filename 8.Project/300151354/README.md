@@ -45,7 +45,7 @@ sudo apt update
  
 > **Capture 1 — Mise à jour du système (sudo apt update)**
 >
-> ![sudo apt update](1.png)
+> ![sudo apt update](images/1.png)
  
 ---
  
@@ -57,7 +57,7 @@ pip3 --version
  
 > **Capture 2 — Vérification de pip3**
 >
-![sudo apt update](captures/1.png)
+![sudo apt update](images/2.png)
  
 ---
  
@@ -69,7 +69,7 @@ pip3 install matplotlib
  
 > **Capture 3 — Installation de matplotlib**
 >
-> ![installation matplotlib](captures/3_install_matplotlib.png)
+> ![installation matplotlib](images/3.png)
  
 ---
  
@@ -84,7 +84,7 @@ pwsh analyse.ps1
  
 > **Capture 4 — Exécution du script PowerShell**
 >
-> ![powershell execution](captures/4_powershell_execution.png)
+> ![powershell execution](images/4.png)
  
 Ce script :
 - Envoie une requête HTTP vers `https://www.google.com`
@@ -105,7 +105,7 @@ python3 analyse.py
  
 > **Capture 5 — Exécution du script Python et contenu du rapport**
 >
-> ![python execution](images/1.png)
+> ![python execution](images/5.png)
  
 Ce script :
 - Lit le fichier `data/result.json`
@@ -133,7 +133,7 @@ ls
  
 > **Capture 6 — Fichiers générés dans output/**
 >
-> ![output ls](captures/6_output_ls.png)
+> ![output ls](images/6.png)
  
 **Fichiers présents :**
 ```
@@ -150,7 +150,7 @@ cat rapport.txt
  
 > **Capture 7 — Contenu de rapport.txt**
 >
-> ![rapport.txt](captures/7_rapport_txt.png)
+> ![rapport.txt](images/7.png)
  
 ```
 === RAPPORT MONITORING ===
@@ -176,7 +176,7 @@ data
  
 > **Capture 8 — Affichage des données JSON dans Jupyter**
 >
-> ![jupyter json](captures/8_jupyter_json.png)
+> ![jupyter json](images/8.png)
  
 **Résultat :**
 ```python
