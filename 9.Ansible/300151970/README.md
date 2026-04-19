@@ -24,5 +24,31 @@
 
 ---
 
+ ## Travail demandé
+ 
+Créer la structure des fichiers
 
+/300151970
+├──files
+    ├── index.html
+├── images
+├── inventory.ini
+├── playbook.yml
+└── files/index.html
+
+
+le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même quand il existait, Ansible n’est pas conçu pour tourner nativement sur Windows.
+
+🔹Solution utilisé — WSL
+
+WSL(Windows Subsystem for Linux) est une fonctionnalité de Windows qui te permet de faire tourner une distribution Linux directement sur Windows, sans machine virtuelle complète.
+
+Installe WSL :
+
+wsl --install
+Redémarre ton PC
+
+```bash
+wsl
+```
 
