@@ -1,5 +1,5 @@
 📸 Aperçu du déploiement
-<p align="center"> <img src="images/Screenshot%202026-04-10%20112308.png" width="700"/> </p>
+<p align="center"> <img src="images/1.png" width="700"/> </p>
 🏗️ Infrastructure as Code avec OpenTofu et Proxmox
 📌 But du projet
 
