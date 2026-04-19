@@ -1,32 +1,23 @@
 import json
 import matplotlib.pyplot as plt
 
-# Lire données
+# Lire le JSON
 with open("../data/result.json") as f:
     data = json.load(f)
 
-url = data["url"]
-status = data["status"]
-time = data["time"]
-
 # Affichage
-print(f"URL: {url}")
-print(f"Status: {status}")
-print(f"Temps de réponse: {time} ms")
-
-# Rapport texte
-with open("../output/rapport.txt", "w") as f:
-    f.write("=== RAPPORT MONITORING ===\n")
-    f.write(f"URL: {url}\n")
-    f.write(f"Status: {status}\n")
-    f.write(f"Temps: {time} ms\n")
+print("URL :", data["url"])
+print("Status :", data["status"])
+print("Temps :", data["time"], "ms")
 
 # Graphique
 labels = ["Temps (ms)"]
-values = [time]
+values = [data["time"]]
 
 plt.bar(labels, values)
 plt.title("Temps de réponse du site")
+
+# ⚠️ TRÈS IMPORTANT
 plt.savefig("../output/graph.png")
 
 print("Analyse terminée.")
