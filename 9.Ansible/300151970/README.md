@@ -24,22 +24,15 @@
 ---
 
  ## Travail demandé
- 
-Créer la structure des fichiers
 
+Structure du projet
 /300151970
-
-├──files
-
-    |
-    ─ index.html
-    
-├── images
-
+├── files/
+│   └── index.html
+├── images/
 ├── inventory.ini
-
 ├── playbook.yml
-
+└── README.md
 └── files/index.html
 
 
