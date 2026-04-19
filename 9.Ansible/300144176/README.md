@@ -24,7 +24,10 @@ L’objectif est de se familiariser avec **Ansible** et le concept d’**Infrast
 ├── playbook.yml
 └── files/index.html
 ```
-<img width="1093" height="328" alt="image" src="https://github.com/user-attachments/assets/89e960da-07d7-4969-8713-23fb2824767a" />
+
+
+<img width="1093" height="328" alt="image" src="https://github.com/user-attachments/assets/8e9bc939-2264-4114-ba1d-873052103732" />
+
 
 
 <img width="1917" height="375" alt="image" src="https://github.com/user-attachments/assets/188502a6-754b-4895-98d7-29ec1bbe2ab8" />
