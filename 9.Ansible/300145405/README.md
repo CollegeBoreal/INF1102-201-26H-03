@@ -35,7 +35,7 @@ sudo apt install ansible -y
 <img width="945" height="424" alt="image" src="https://github.com/user-attachments/assets/e7667c59-b639-480b-a819-f2d7cc43f9e5" />
 
 <img width="945" height="552" alt="image" src="https://github.com/user-attachments/assets/bce902f3-681c-4e8e-8641-6af120a8bd9b" />
---------
+
 ## Verfication
 
 <img width="945" height="534" alt="image" src="https://github.com/user-attachments/assets/58773ed8-c817-4b76-8275-e9a3533bc5c7" />
