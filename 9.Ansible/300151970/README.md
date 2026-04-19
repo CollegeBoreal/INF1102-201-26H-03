@@ -31,8 +31,8 @@ Créer la structure des fichiers
 /300151970
 
 ├──files
-
-      ├── index.html
+    |
+    ─ index.html
     
 ├── images
 
