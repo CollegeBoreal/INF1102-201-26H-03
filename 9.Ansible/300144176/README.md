@@ -33,17 +33,6 @@ L’objectif est de se familiariser avec **Ansible** et le concept d’**Infrast
 <img width="1892" height="984" alt="image" src="https://github.com/user-attachments/assets/f7e61c72-2e58-418d-aa8d-67d6fbd34dbd" />
 
 
-
-
-
-Idempotence signifie que tu peux exécuter la même tâche plusieurs fois sans changer le résultat si l’état désiré est déjà atteint.
-
-present	Assure que la ressource existe (package installé, fichier présent). Ne démarre pas un service.
-started	Pour un service, assure qu’il est en cours d’exécution. Ne l’installe pas si le package n’existe pas (mais souvent combiné avec enabled pour démarrage automatique).
-
-become: yes permet d’exécuter la tâche avec les privilèges root (ou un autre utilisateur via become_user).
-
-
 ## ✅ Conclusion et apprentissages
 
 ### Conclusion
