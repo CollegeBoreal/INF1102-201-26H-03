@@ -157,13 +157,13 @@ Write-Output "Rapports générés : $rapportTxt et $rapportJson"
 ## 📸 Captures d'écran
  
 ### Fichiers générés dans `/devops-batch`
-![ls devops-batch](./screenshots/1_ls.png)
+![ls devops-batch](images/1.png)
  
 ### Exécution du script — rapport affiché dans le terminal
-![rapport terminal](./screenshots/2_execution.png)
+![rapport terminal](images/2.png)
  
 ### Contenu de `rapport.json`
-![rapport json](./screenshots/3_rapport_json.png)
+![rapport json](images/3.png)
  
 ### Contenu de `rapport.txt`
 ![rapport txt](images/4.png)
