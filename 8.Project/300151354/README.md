@@ -105,7 +105,7 @@ python3 analyse.py
  
 > **Capture 5 — Exécution du script Python et contenu du rapport**
 >
-> ![python execution](captures/5_python_execution.png)
+> ![python execution](images/1.png)
  
 Ce script :
 - Lit le fichier `data/result.json`
