@@ -1,12 +1,23 @@
-🚀 Déploiement automatisé de Nginx avec Ansible
-📌 Objectif du projet
-Ce projet a pour but de mettre en pratique les concepts de gestion de configuration et d’Infrastructure as Code (IaC) en utilisant Ansible.
-L’objectif est de créer un système automatisé capable de :
-•	Installer Nginx
-•	Déployer une page HTML personnalisée
-•	Démarrer et activer le service web
+# Laboratoire Gestion de configuration avec Ansible (IaC)
+---
+## 👤 Étudiant
+
+- Identifiant : **300145405**
+- Nom: Sadou barry
+- Cours : Programmation système
+- Environnement : Ubuntu 22.04 (Jammy)
+- Shell : PowerShell (pwsh)
+
+---
+## 🎯 Objectifs
+
+* Comprendre la **gestion de configuration**
+* Expliquer le concept de **Infrastructure as Code (IaC)**
+* Différencier **script impératif vs approche déclarative**
+* Écrire un **playbook Ansible en YAML**
+* Déployer automatiquement **Nginx + page HTML**
 ________________________________________
-🧠 Concepts clés
+##🧠 Concepts clés
 🔧 Gestion de configuration
 Maintenir un système dans un état :
 •	Cohérent
@@ -76,10 +87,6 @@ Fichier : files/index.html
     <h1>🚀 Déploiement réussi avec Ansible</h1>
 </body>
 </html>
-________________________________________
-▶️ Exécution du projet
-Lancer le playbook avec la commande :
-ansible-playbook -i inventory.ini playbook.yml
 ________________________________________
 ✅ Vérification
 Ouvrir dans un navigateur :
