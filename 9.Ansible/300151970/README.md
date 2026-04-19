@@ -22,24 +22,17 @@
 - Déployer automatiquement un serveur **Nginx** avec une page HTML  
 
 ---
+Créer la structure des fichiers
 
- ## Travail demandé
-
-Structure du projet
-
+```bash
 /300151970
-
-├── files/
-│   └── index.html
-
-├── images/
-
+├──files
+    ├── index.html
+├── images
 ├── inventory.ini
-
 ├── playbook.yml
-
-└── README.md
-
+└── files/index.html
+```
 
 
 le package ansible n’existe pas (ou plus) directement sur Chocolatey. Et même quand il existait, Ansible n’est pas conçu pour tourner nativement sur Windows.
