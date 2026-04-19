@@ -202,7 +202,7 @@ plt.show()
  
 > **Capture 9 — Graphique d'évolution du temps de réponse**
 >
-> ![graphique](captures/9_graphique.png)
+> ![graphique](images/9.png)
  
 ---
  
