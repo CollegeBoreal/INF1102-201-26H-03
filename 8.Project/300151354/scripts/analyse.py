@@ -2,7 +2,6 @@ import json
 import matplotlib.pyplot as plt
 import sys
 
-# Vérifier argument
 if len(sys.argv) < 2:
     print("Usage: python analyse.py <fichier_json>")
     exit()
