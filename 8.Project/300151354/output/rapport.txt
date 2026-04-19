@@ -1,0 +1,4 @@
+=== RAPPORT MONITORING ===
+URL: https://www.google.com
+Status: 200
+Temps: 688.0782 ms
