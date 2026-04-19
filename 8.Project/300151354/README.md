@@ -45,7 +45,7 @@ sudo apt update
  
 > **Capture 1 — Mise à jour du système (sudo apt update)**
 >
-> ![sudo apt update](captures/1_apt_update.png)
+> ![sudo apt update](1.png)
  
 ---
  
