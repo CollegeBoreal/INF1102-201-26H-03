@@ -16,27 +16,21 @@
 * Différencier **script impératif vs approche déclarative**
 * Écrire un **playbook Ansible en YAML**
 * Déployer automatiquement **Nginx + page HTML**
-________________________________________
+-------------------
 ##🧠 Concepts clés
 🔧 Gestion de configuration
 Maintenir un système dans un état :
 •	Cohérent
 •	Reproductible
 •	Automatisé
-________________________________________
+--------------
 ☁️ Infrastructure as Code (IaC)
 L’infrastructure est définie à l’aide de code plutôt que manuellement.
 👉 Avantages :
 •	Automatisation
 •	Réduction des erreurs
 •	Reproductibilité
-________________________________________
-⚖️ Impératif vs Déclaratif
-Approche	Description
-Impératif	Décrit les étapes (ex: script bash)
-Déclaratif	Décrit l’état final souhaité (Ansible)
-👉 Ansible utilise une approche déclarative
-________________________________________
+--------------------
 
 🧱 Structure du projet
 ID/
@@ -44,13 +38,13 @@ ID/
 ├── playbook.yml
 └── files/
     └── index.html
-________________________________________
+-------------------------
 📄 1. Inventory
 Fichier : inventory.ini
 [web]
 IP_VM ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/ma_cle.pk
 👉 Remplacer IP_VM par l’adresse IP de votre machine virtuelle.
-________________________________________
+-----------------------------
 ⚙️ 2. Playbook Ansible
 Fichier : playbook.yml
 - name: Installer et configurer nginx
@@ -75,7 +69,7 @@ Fichier : playbook.yml
         name: nginx
         state: started
         enabled: yes
-________________________________________
+---------------------------------
 🌐 3. Page HTML
 Fichier : files/index.html
 <!DOCTYPE html>
@@ -87,7 +81,7 @@ Fichier : files/index.html
     <h1>🚀 Déploiement réussi avec Ansible</h1>
 </body>
 </html>
-________________________________________
+------------------------------
 ✅ Vérification
 Ouvrir dans un navigateur :
 http://10.7.237.208
