@@ -117,7 +117,7 @@ Ou ouvrir dans un navigateur : `http://10.7.237.221`
  
 | Tâche | Statut |
 |---|---|
-| Connexion SSH à la VM | ✅ |
+| Installation d'Ansible | ✅ |
 | Installation de Nginx | ✅ |
 | Déploiement de la page HTML | ✅ |
 | Démarrage du service Nginx | ✅ |
