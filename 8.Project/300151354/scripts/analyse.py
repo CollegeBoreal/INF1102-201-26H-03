@@ -4,19 +4,19 @@ matplotlib.use('Agg')
 import json
 import matplotlib.pyplot as plt
 
-with open("data/result.json") as f:
-    data = json.load(f)
+try:
+    with open("data/result.json") as f:
+        data = json.load(f)
 
-print("URL :", data["url"])
-print("Status :", data["status"])
-print("Temps :", data["time"], "ms")
+    print("URL :", data["url"])
+    print("Status :", data["status"])
+    print("Temps :", data["time"], "ms")
 
-labels = ["Temps (ms)"]
-values = [data["time"]]
+    plt.bar(["Temps"], [data["time"]])
+    plt.savefig("output/graph.png")
 
-plt.bar(labels, values)
-plt.title("Temps de réponse du site")
+    print("Analyse terminée.")
 
-plt.savefig("output/graph.png")
-
-print("Analyse terminée.")
+except Exception as e:
+    print("Error:", e)
+    exit(1)
