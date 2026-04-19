@@ -8,7 +8,7 @@ with open("../data/result.json") as f:
 # Affichage
 print("URL :", data["url"])
 print("Status :", data["status"])
-print("Temps :", data["time"], "ms")
+print("Temps de réponse :", data["time"], "ms")
 
 # Graphique
 labels = ["Temps (ms)"]
@@ -17,7 +17,7 @@ values = [data["time"]]
 plt.bar(labels, values)
 plt.title("Temps de réponse du site")
 
-# ⚠️ TRÈS IMPORTANT
+# Sauvegarde
 plt.savefig("../output/graph.png")
 
 print("Analyse terminée.")
