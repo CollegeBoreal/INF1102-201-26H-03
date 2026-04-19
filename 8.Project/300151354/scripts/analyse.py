@@ -1,12 +1,11 @@
+import matplotlib
+matplotlib.use('Agg')
+
 import json
 import matplotlib.pyplot as plt
 
-print("START SCRIPT")
-
 with open("data/result.json") as f:
     data = json.load(f)
-
-print("DATA LOADED")
 
 print("URL :", data["url"])
 print("Status :", data["status"])
@@ -20,5 +19,4 @@ plt.title("Temps de réponse du site")
 
 plt.savefig("output/graph.png")
 
-print("FILE SAVED")
 print("Analyse terminée.")
