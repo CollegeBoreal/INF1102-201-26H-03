@@ -57,7 +57,7 @@ pip3 --version
  
 > **Capture 2 — Vérification de pip3**
 >
-> ![pip3 version](captures/2_pip3_version.png)
+![sudo apt update](captures/1.png)
  
 ---
  
