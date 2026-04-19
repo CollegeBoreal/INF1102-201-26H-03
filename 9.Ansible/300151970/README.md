@@ -32,7 +32,7 @@ Créer la structure des fichiers
 
 ├──files
 
-   ├── index.html
+      ├── index.html
     
 ├── images
 
