@@ -346,7 +346,6 @@ Après exécution, les fichiers suivants sont générés dans `output/` :
 
 ---
 
-> 📸 **[INSÉRER ICI]** : Capture d'écran du terminal montrant l'exécution réussie de `bash scripts/analyse.sh` avec les 48 indicateurs traités et le message ✅ ANALYSE COMPLÈTE TERMINÉE.
 
 ---
 
@@ -477,13 +476,12 @@ ansible -i ansible/inventory.ini vm_ubuntu -m ping
 |---|---|
 | **Programmation** | `scripts/analyse.py` — appels API, traitement données, graphiques |
 | **Systèmes** | VM Ubuntu 22.04 — déploiement, permissions, chemins |
-| **IaC** | `Dockerfile` (bonus) + structure reproductible |
+| **IaC** | `Dockerfile`  + structure reproductible |
 | **CRON** | Tâche planifiée quotidienne à 06h00 via crontab |
 | **BATCH** | `scripts/analyse.sh` — orchestration complète avec logging |
 | **PWSH** | `scripts/analyse.ps1` — appels API et délégation Python |
 | **REGEX** | 4 expressions régulières pour validation et nettoyage des données |
 | **Ansible** | Playbook complet (19 tâches, 0 erreur) — inventaire, déploiement |
-| **GitHub** | Versionnage + CI GitHub Actions (test dry-run automatique) |
 | **Jupyter** | Rapport interactif avec 5 sections et visualisations |
 
 ---
@@ -553,5 +551,5 @@ ipykernel>=6.25.0     # Kernel Jupyter
 
 ---
 
-*Projet réalisé dans le cadre du cours TSI (INF1102) — Collège Boréal — Session Hiver 2025*  
+*Projet réalisé dans le cadre du cours TSI (INF1102) — Collège Boréal — Session Hiver 2026*  
 *Frank Laurel | ID : 300143951*

@@ -8,7 +8,7 @@ Write-Host "[1] Running Python analysis..."
 Push-Location $PSScriptRoot
 Set-Location ..
 
-python .\scripts\analyse.py
+python analyse.py
 
 Write-Host ""
 Write-Host "[2] Analysis completed."

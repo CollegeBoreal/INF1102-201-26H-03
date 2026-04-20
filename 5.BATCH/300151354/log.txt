@@ -1,0 +1,63 @@
+===================================
+Début exécution : Wed Apr 15 23:40:56 UTC 2026
+Test réseau...
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=106 time=14.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=106 time=14.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=106 time=14.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=106 time=14.6 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 14.118/14.275/14.567/0.180 ms
+Création dossiers...
+Création fichiers test...
+Sauvegarde...
+Compression...
+./entreprise/data/
+./entreprise/data/file1.txt
+./entreprise/data/file2.txt
+Fin exécution : Wed Apr 15 23:40:59 UTC 2026
+===================================
+===================================
+Début exécution : Sun Apr 19 09:49:35 UTC 2026
+Test réseau...
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=106 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=106 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=106 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=106 time=14.2 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 14.165/14.192/14.205/0.016 ms
+Création dossiers...
+Création fichiers test...
+Sauvegarde...
+Compression...
+./entreprise/data/
+./entreprise/data/file1.txt
+./entreprise/data/file2.txt
+Fin exécution : Sun Apr 19 09:49:38 UTC 2026
+===================================
+===================================
+Début exécution : Sun Apr 19 09:51:09 UTC 2026
+Test réseau...
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=106 time=14.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=106 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=106 time=14.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=106 time=14.1 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 14.137/14.213/14.326/0.073 ms
+Création dossiers...
+Création fichiers test...
+Sauvegarde...
+Compression...
+./entreprise/data/
+./entreprise/data/file1.txt
+./entreprise/data/file2.txt
+Fin exécution : Sun Apr 19 09:51:12 UTC 2026
+===================================
