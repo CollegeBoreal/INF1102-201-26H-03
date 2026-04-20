@@ -1,6 +1,6 @@
 Projet : Suivi du prix de l'essence à Toronto
 
-Date : 2026-04-19
+Date : 2026-04-20
 
 Ville suivie : Toronto
 Prix essence : à compléter avec la source officielle
