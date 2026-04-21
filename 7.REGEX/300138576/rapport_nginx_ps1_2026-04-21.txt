@@ -1,0 +1,15 @@
+📊 Rapport Nginx - 04/21/2026 03:48:34
+----------------------------------
+Total requêtes : 134
+Erreurs HTTP : 3
+Erreurs 404 : 3
+Erreurs 500 : 0
+
+Top 5 IP :
+134 127.0.0.1
+
+Top 5 pages :
+131 /
+1 /404page
+1 /index.html
+1 /test
