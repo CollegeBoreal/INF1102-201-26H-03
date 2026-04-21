@@ -1,0 +1,23 @@
+===== RAPPORT DEVOPS =====
+Date : 04/21/2026 03:21:04
+Utilisateur : root
+Machine : vm300138576
+Top CPU :
+rcu_sched - CPU: 67.13
+snapd - CPU: 33.49
+systemd - CPU: 17.63
+kcompactd0 - CPU: 12.6199999
+kworker/1:1-events - CPU: 4.22
+Top Memory :
+pwsh - Memory: 106586112
+snapd - Memory: 38940672
+multipathd - Memory: 27906048
+systemd-journald - Memory: 25513984
+unattended-upgrade-shutdown - Memory: 21741568
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M 1016K  196M   1% /run
+/dev/sda1       9.6G  3.0G  6.6G  31% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+tmpfs           197M  4.0K  197M   1% /run/user/1000

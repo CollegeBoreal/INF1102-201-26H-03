@@ -1,0 +1,20 @@
+===================================
+Début exécution : Tue Apr 21 02:52:19 UTC 2026
+Test réseau...
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=106 time=16.0 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=106 time=16.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=106 time=15.9 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=106 time=15.8 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 15.844/15.928/16.028/0.071 ms
+Sauvegarde en cours...
+Utilisateur créé.
+tar: Removing leading `/' from member names
+/entreprise/data/
+/entreprise/data/fichier2.txt
+/entreprise/data/fichier1.txt
+Fin exécution : Tue Apr 21 02:52:22 UTC 2026
+===================================
