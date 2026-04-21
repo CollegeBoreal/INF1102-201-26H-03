@@ -31,7 +31,7 @@ Créer la structure des fichiers
 ├── images
 ├── inventory.ini
 ├── playbook.yml
-└── files/index.html
+└── README.md
 ```
 
 
