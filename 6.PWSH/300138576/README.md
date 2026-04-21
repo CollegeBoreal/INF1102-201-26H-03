@@ -1,7 +1,7 @@
 # 🔧 Lab PWSH – DevOps Batch PowerShell sous Linux
 
 ## 🎯 Objectif
-
+.
 Ce laboratoire a pour objectif de créer un script PowerShell (pwsh) sous Linux permettant de :
 
 * Vérifier l’état du système (CPU, mémoire, disque)
