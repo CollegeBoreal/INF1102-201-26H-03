@@ -26,8 +26,7 @@ Créer la structure des fichiers
 
 ```bash
 /300151970
-├──files
-    ├── index.html
+├──files/index.html
 ├── images
 ├── inventory.ini
 ├── playbook.yml
