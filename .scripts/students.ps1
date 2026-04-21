@@ -120,3 +120,6 @@ $TOFU_SECRET_GROUP_2 = $TOFU_SECRETS[1]
 $TOFU_SECRET_GROUP_3 = $TOFU_SECRETS[2] 
 
 $PK_PROF="b300098957@ramena"
+
+# https://${env:LMS_URL}/course/view.php?id=3
+$LMS_COURSE=3
