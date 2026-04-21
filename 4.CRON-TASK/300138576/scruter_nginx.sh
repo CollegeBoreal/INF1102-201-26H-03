@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# Fichier des logs
 LOG_FILE="/var/log/nginx/access.log"
+OUTPUT_FILE="nginx_ips.txt"
+EXEC_LOG="nginx_ips.log"
 
-# Fichier de sortie
-OUTPUT_FILE="/home/ubuntu/nginx_ips.txt"
-
-# Extraire les IP uniques et les stocker
-awk '{print $1}' $LOG_FILE | sort | uniq > $OUTPUT_FILE
-
-# Optionnel : ajouter un timestamp à chaque exécution
-echo "Script exécuté le $(date)" >> /home/ubuntu/nginx_ips.log
+awk '{print $1}' "$LOG_FILE" | sort | uniq > "$OUTPUT_FILE"
+echo "Script exécuté le $(date)" >> "$EXEC_LOG"
