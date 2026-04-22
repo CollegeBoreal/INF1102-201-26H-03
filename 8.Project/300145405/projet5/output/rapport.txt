@@ -1,0 +1,10 @@
+=== RAPPORT DE MONITORING ===
+
+Vérifications totales : 3
+Réponses OK (200)     : 3
+Erreurs               : 0
+Temps moyen           : 0.246 s
+Temps minimum         : 0.242 s
+Temps maximum         : 0.253 s
+
+Codes HTTP détectés   : {200: 3}
