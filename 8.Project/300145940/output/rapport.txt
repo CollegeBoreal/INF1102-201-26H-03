@@ -1,0 +1,25 @@
+===== RAPPORT DE SURVEILLANCE NGINX =====
+Total requêtes : 10
+Total erreurs HTTP : 4
+Total erreurs 404 : 2
+Total erreurs 500 : 1
+
+Top 5 IP :
+3 - 192.168.1.10
+2 - 192.168.1.11
+1 - 192.168.1.12
+1 - 192.168.1.13
+1 - 192.168.1.14
+
+Top 5 URLs :
+3 - /index.html
+2 - /login
+2 - /products
+1 - /contact
+1 - /about
+
+Répartition des codes HTTP :
+6 - 200
+2 - 404
+1 - 500
+1 - 403
