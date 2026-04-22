@@ -1,17 +1,15 @@
 # =========================
 # CONFIG
 # =========================
-$LMSAssignmentID = 9
+$LMSAssignmentID = 8
 $DEBUG = $false
 
 $EmojiToScore = @{
-    ":x:" = 60
-    ":2nd_place_medal:" = 61
-    ":1st_place_medal:" = 62
-    ":red_circle:" = 67
-    ":green_circle:" = 68
-    ":boom:" = 69
-    ":link:" = 70
+    ":x:" = 51
+    ":2nd_place_medal:" = 52
+    ":1st_place_medal:" = 53
+    ":boom:" = 58
+    ":link:" = 59
 }
 
 function Get-ParticipationGrades {
@@ -45,43 +43,32 @@ function Get-ParticipationGrades {
                 continue
             }
 
-            # "levels": { "id": 60, "score": 0 },
-            #           { "id": 61, "score": 1 },
-            #           { "id": 62, "score": 2 } 
+            # "levels": { "id": 51, "score": 0 },
+            #           { "id": 52, "score": 1 },
+            #           { "id": 53, "score": 2 } 
             $readEmoji = ($cols[3]).Trim()
             $readScore = $EmojiToScore[$readEmoji]
 
-            # "levels": { "id": 63, "score": 0 },
-            #           { "id": 64, "score": 1 },
+            # "levels": { "id": 54, "score": 0 },
+            #           { "id": 55, "score": 1 },
             $imgEmoji = ($cols[4]).Trim()
             if ($imgEmoji -match ':x:') {
-                $imgScore = 63
+                $imgScore = 54
             } else {
-                $imgScore = 64
+                $imgScore = 55
             }
 
-            # "levels": { "id": 65, "score": 0 },
-            #           { "id": 66, "score": 1 },
+            # "levels": { "id": 56, "score": 0 },
+            #           { "id": 57, "score": 1 },
             $mainEmoji = ($cols[5]).Trim()
             if ($mainEmoji -match ':x:') {
-                $mainScore = 65
+                $mainScore = 56
             } else {
-                $mainScore = 66
+                $mainScore = 57
             }
 
-            # "levels": { "id": 67, "score": 0 },
-            #           { "id": 68, "score": 1 },
-            $vmEmoji = ($cols[6]).Trim()
-            if ($vmEmoji -match ':green_circle:') {
-                $vmEmoji = ':green_circle:'
-                $vmScore = $EmojiToScore[$vmEmoji]
-            } else {
-                $vmEmoji = ':red_circle:'
-                $vmScore = $EmojiToScore[$vmEmoji]
-            }
-
-            # "levels": { "id": 69, "score": 0 },
-            #           { "id": 70, "score": 1 },
+            # "levels": { "id": 58, "score": 0 },
+            #           { "id": 59, "score": 1 },
             $linkEmoji = ($cols[7]).Trim()
             $linkScore = $EmojiToScore[$linkEmoji]
 
@@ -90,7 +77,6 @@ function Get-ParticipationGrades {
                     , $readEmoji, $readScore
                     , $imgEmoji, $imgScore
                     , $mainEmoji, $mainScore
-                    , $vmScore, $vmEmoji
                     , $linkScore, $linkEmoji
             }
 
@@ -99,7 +85,6 @@ function Get-ParticipationGrades {
                 readme    = $readScore
                 image     = $imgScore
                 main      = $mainScore
-                vm        = $vmScore
                 link      = $linkScore
             }
         }
@@ -119,7 +104,6 @@ function New-LMSRubricFromEntry {
          "readme"
         , "image"
         , "main"
-        , "vm"
         , "link"
     )
 
@@ -131,11 +115,10 @@ function New-LMSRubricFromEntry {
 
     # Build rubric
     $rubric = @(
-        @{ criterionid = 26;  levelid = $Entry.readme;    remark = "Quantité README.md " }
-        @{ criterionid = 27;  levelid = $Entry.image;     remark = "Présence répertoire images " }
-        @{ criterionid = 28;  levelid = $Entry.main;      remark = "Présence code source" }
-        @{ criterionid = 29;  levelid = $Entry.vm;        remark = "Présence de la VM" }
-        @{ criterionid = 30;  levelid = $Entry.link;      remark = "Présence du la clé SSH Prof" }
+        @{ criterionid = 22;  levelid = $Entry.readme;    remark = "Quantité README.md " }
+        @{ criterionid = 23;  levelid = $Entry.image;     remark = "Présence répertoire images " }
+        @{ criterionid = 24;  levelid = $Entry.main;      remark = "Présence code source" }
+        @{ criterionid = 25;  levelid = $Entry.link;      remark = "Présence du la clé SSH Prof" }
     )
 
     # Validate level IDs (avoid Moodle crash)
