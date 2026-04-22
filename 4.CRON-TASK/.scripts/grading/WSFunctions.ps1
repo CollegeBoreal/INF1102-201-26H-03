@@ -1,0 +1,216 @@
+# =========================
+# CONFIG
+# =========================
+$LMSAssignmentID = 9
+$DEBUG = $false
+
+$EmojiToScore = @{
+    ":x:" = 60
+    ":2nd_place_medal:" = 61
+    ":1st_place_medal:" = 62
+    ":red_circle:" = 67
+    ":green_circle:" = 68
+    ":boom:" = 69
+    ":link:" = 70
+}
+
+function Get-ParticipationGrades {
+    param (
+        [Parameter(Mandatory)]
+        [string]$Path
+    )
+
+    $lines = Get-Content $Path
+    $results = @()
+
+    foreach ($line in $lines) {
+
+        # Only data rows start with "| <number> |"
+        if ($line -match '^\|\s*\d+\s*\|') {
+
+            $cols = $line -split '\|'
+
+            # Columns (0 is empty):
+            # 1 = index
+            # 2 = Boréal ID link column
+            # 3-4 = others
+
+            if ($DEBUG) { Write-Output $cols. }
+
+            # if ($cols.Count -lt 6) { continue }
+
+            if ($cols[2] -match '(\d{9})') {
+                $borealId = $matches[1]
+            } else {
+                continue
+            }
+
+            # "levels": { "id": 60, "score": 0 },
+            #           { "id": 61, "score": 1 },
+            #           { "id": 62, "score": 2 } 
+            $readEmoji = ($cols[3]).Trim()
+            $readScore = $EmojiToScore[$readEmoji]
+
+            # "levels": { "id": 63, "score": 0 },
+            #           { "id": 64, "score": 1 },
+            $imgEmoji = ($cols[4]).Trim()
+            if ($imgEmoji -match ':x:') {
+                $imgScore = 63
+            } else {
+                $imgScore = 64
+            }
+
+            # "levels": { "id": 65, "score": 0 },
+            #           { "id": 66, "score": 1 },
+            $mainEmoji = ($cols[5]).Trim()
+            if ($mainEmoji -match ':x:') {
+                $mainScore = 65
+            } else {
+                $mainScore = 66
+            }
+
+            # "levels": { "id": 67, "score": 0 },
+            #           { "id": 68, "score": 1 },
+            $vmEmoji = ($cols[6]).Trim()
+            if ($vmEmoji -match ':green_circle:') {
+                $vmEmoji = ':green_circle:'
+                $vmScore = $EmojiToScore[$vmEmoji]
+            } else {
+                $vmEmoji = ':red_circle:'
+                $vmScore = $EmojiToScore[$vmEmoji]
+            }
+
+            # "levels": { "id": 69, "score": 0 },
+            #           { "id": 70, "score": 1 },
+            $linkEmoji = ($cols[7]).Trim()
+            $linkScore = $EmojiToScore[$linkEmoji]
+
+            if ($DEBUG) {
+                Write-Output $borealId
+                    , $readEmoji, $readScore
+                    , $imgEmoji, $imgScore
+                    , $mainEmoji, $mainScore
+                    , $vmScore, $vmEmoji
+                    , $linkScore, $linkEmoji
+            }
+
+            $results += [PSCustomObject]@{
+                borealId  = $borealId
+                readme    = $readScore
+                image     = $imgScore
+                main      = $mainScore
+                vm        = $vmScore
+                link      = $linkScore
+            }
+        }
+    }
+
+    return $results
+}
+
+function New-LMSRubricFromEntry {
+    param (
+        [Parameter(Mandatory)]
+        [object]$Entry
+    )
+
+    # Validate required fields exist
+    $requiredFields = @(
+         "readme"
+        , "image"
+        , "main"
+        , "vm"
+        , "link"
+    )
+
+    foreach ($field in $requiredFields) {
+        if (-not $Entry.PSObject.Properties.Name -contains $field) {
+            throw "Missing field '$field' in entry"
+        }
+    }
+
+    # Build rubric
+    $rubric = @(
+        @{ criterionid = 26;  levelid = $Entry.readme;    remark = "Quantité README.md " }
+        @{ criterionid = 27;  levelid = $Entry.image;     remark = "Présence répertoire images " }
+        @{ criterionid = 28;  levelid = $Entry.main;      remark = "Présence code source" }
+        @{ criterionid = 29;  levelid = $Entry.vm;        remark = "Présence de la VM" }
+        @{ criterionid = 30;  levelid = $Entry.link;      remark = "Présence du la clé SSH Prof" }
+    )
+
+    # Validate level IDs (avoid Moodle crash)
+    foreach ($r in $rubric) {
+        if (-not $r.levelid) {
+            throw "Invalid levelid for criterion $($r.criterionid)"
+        }
+    }
+
+    return $rubric
+}
+
+function Send-LMSRubricGrade {
+    param (
+        [Parameter(Mandatory)]
+        [string]$LMS_URL,
+
+        [Parameter(Mandatory)]
+        [string]$TOKEN,
+
+        [Parameter(Mandatory)]
+        [int]$AssignmentId,
+
+        [Parameter(Mandatory)]
+        [int]$UserId,
+
+        [Parameter(Mandatory)]
+        [array]$Rubric,
+
+        [int]$AttemptNumber = 0,
+
+        [string]$WorkflowState = "graded"
+    )
+
+    # -------------------------
+    # BUILD BASE PAYLOAD
+    # -------------------------
+    $body = @{
+        wstoken            = $TOKEN
+        wsfunction         = "local_gradesaver_save_grade"
+        moodlewsrestformat = "json"
+        assignmentid       = $AssignmentId
+        userid             = $UserId
+        attemptnumber      = $AttemptNumber
+        workflowstate      = $WorkflowState
+    }
+
+    # -------------------------
+    # ADD RUBRIC DYNAMICALLY
+    # -------------------------
+    for ($i = 0; $i -lt $Rubric.Count; $i++) {
+        $entry = $Rubric[$i]
+
+        if (-not $entry.criterionid -or -not $entry.levelid) {
+            throw "Invalid rubric entry at index $i"
+        }
+
+        $body["rubric[criteria][$i][criterionid]"] = $entry.criterionid
+        $body["rubric[criteria][$i][levelid]"]     = $entry.levelid
+        $body["rubric[criteria][$i][remark]"]      = $entry.remark
+    }
+
+    if ($DEBUG) { $body | ConvertTo-Json -Depth 10 }
+
+    # -------------------------
+    # CALL MOODLE API
+    # -------------------------
+    try {
+        $response = Invoke-RestMethod -Method Post `
+            -Uri "https://$LMS_URL/webservice/rest/server.php" `
+            -Body $body
+
+        return $response
+    }
+    catch {
+        throw "Moodle API call failed: $($_.Exception.Message)"
+    }
+}
