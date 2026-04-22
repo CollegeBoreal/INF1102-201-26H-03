@@ -1,3 +1,24 @@
+function Get-RubricLevelIdFromEmoji {
+    param (
+        [Parameter(Mandatory)]
+        [string]$Emoji,
+
+        [Parameter(Mandatory)]
+        [int]$FailLevelId,
+
+        [Parameter(Mandatory)]
+        [int]$PassLevelId
+    )
+
+    $Emoji = $Emoji.Trim()
+
+    if ($Emoji -match ':x:' -or $Emoji -match '❌') {
+        return $FailLevelId
+    }
+
+    return $PassLevelId
+}
+
 function Get-LMSGradableUsers {
     param (
         [Parameter(Mandatory)]

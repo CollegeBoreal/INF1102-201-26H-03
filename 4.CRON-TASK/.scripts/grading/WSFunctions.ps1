@@ -52,20 +52,18 @@ function Get-ParticipationGrades {
             # "levels": { "id": 54, "score": 0 },
             #           { "id": 55, "score": 1 },
             $imgEmoji = ($cols[4]).Trim()
-            if ($imgEmoji -match ':x:') {
-                $imgScore = 54
-            } else {
-                $imgScore = 55
-            }
+            $imgScore = Get-RubricLevelIdFromEmoji `
+                -Emoji $imgEmoji `
+                -FailLevelId 54 `
+                -PassLevelId 55
 
             # "levels": { "id": 56, "score": 0 },
             #           { "id": 57, "score": 1 },
             $mainEmoji = ($cols[5]).Trim()
-            if ($mainEmoji -match ':x:') {
-                $mainScore = 56
-            } else {
-                $mainScore = 57
-            }
+            $mainScore = Get-RubricLevelIdFromEmoji `
+                -Emoji $mainEmoji `
+                -FailLevelId 56 `
+                -PassLevelId 57
 
             # "levels": { "id": 58, "score": 0 },
             #           { "id": 59, "score": 1 },
