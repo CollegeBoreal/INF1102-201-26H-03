@@ -8,14 +8,14 @@
 https://${LMS_URL}/course/view.php?id=3
 ```
 
-## :one: LMS Assignment ID = 7
+## :one: LMS Assignment ID = 9
 
 ```
 https://${LMS_URL}/mod/assign/view.php?id=7
 ```
 
-- [ ] "id": 7 :point_left: Take this as the assignment number !!!
-- [ ] "cmid": 11
+- [ ] "id": 9 :point_left: Take this as the assignment number !!!
+- [ ] "cmid": 13
 
 ```bash
 curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
@@ -31,25 +31,25 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
 ```
 ```json
 {
-  "id": 7,
-  "cmid": 11,
-  "name": "3.IaC"
-}
-{
   "id": 8,
   "cmid": 12,
   "name": "4.CRON-TASK"
 }
+{
+  "id": 9,
+  "cmid": 13,
+  "name": "3.IaC"
+}
 ```
 
-## :two: Rubric Definition CMID = 11
+## :two: Rubric Definition CMID = 13
 
 ```bash
 curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
 -d "wstoken=${API_SYNC_TOKEN}" \
 -d "wsfunction=core_grading_get_definitions" \
 -d "moodlewsrestformat=json" \
--d "cmids[0]=11" \
+-d "cmids[0]=13" \
 -d "areaname=submissions" | jq .
 ```
 ```
@@ -63,47 +63,47 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
 {
   "areas": [
     {
-      "cmid": 11,
-      "contextid": 446,
+      "cmid": 13,
+      "contextid": 448,
       "component": "mod_assign",
       "areaname": "submissions",
       "activemethod": "rubric",
       "definitions": [
         {
-          "id": 6,
+          "id": 8,
           "method": "rubric",
-          "name": "🅰️ Présence",
+          "name": "Présence",
           "description": "",
           "descriptionformat": 1,
           "status": 20,
           "copiedfromid": null,
-          "timecreated": 1776795179,
+          "timecreated": 1776801503,
           "usercreated": 3,
-          "timemodified": 1776797648,
+          "timemodified": 1776801503,
           "usermodified": 3,
           "timecopied": 0,
           "rubric": {
             "rubric_criteria": [
               {
-                "id": 17,
+                "id": 26,
                 "sortorder": 1,
                 "description": "README.md",
                 "descriptionformat": 1,
                 "levels": [
                   {
-                    "id": 40,
+                    "id": 60,
                     "score": 0,
                     "definition": "❌",
                     "definitionformat": 1
                   },
                   {
-                    "id": 41,
+                    "id": 61,
                     "score": 1,
                     "definition": "🥈",
                     "definitionformat": 1
                   },
                   {
-                    "id": 42,
+                    "id": 62,
                     "score": 2,
                     "definition": "🥇",
                     "definitionformat": 1
@@ -111,19 +111,19 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
                 ]
               },
               {
-                "id": 18,
+                "id": 27,
                 "sortorder": 2,
                 "description": "images",
                 "descriptionformat": 1,
                 "levels": [
                   {
-                    "id": 43,
+                    "id": 63,
                     "score": 0,
                     "definition": "❌",
                     "definitionformat": 1
                   },
                   {
-                    "id": 44,
+                    "id": 64,
                     "score": 1,
                     "definition": "✔️",
                     "definitionformat": 1
@@ -131,19 +131,19 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
                 ]
               },
               {
-                "id": 19,
+                "id": 28,
                 "sortorder": 3,
                 "description": "main.tf",
                 "descriptionformat": 1,
                 "levels": [
                   {
-                    "id": 45,
+                    "id": 65,
                     "score": 0,
                     "definition": "❌",
                     "definitionformat": 1
                   },
                   {
-                    "id": 46,
+                    "id": 66,
                     "score": 1,
                     "definition": "✔️",
                     "definitionformat": 1
@@ -151,19 +151,19 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
                 ]
               },
               {
-                "id": 20,
+                "id": 29,
                 "sortorder": 4,
                 "description": "VM",
                 "descriptionformat": 1,
                 "levels": [
                   {
-                    "id": 47,
+                    "id": 67,
                     "score": 0,
-                    "definition": "🔴 ",
+                    "definition": "🔴",
                     "definitionformat": 1
                   },
                   {
-                    "id": 48,
+                    "id": 68,
                     "score": 1,
                     "definition": "🟢",
                     "definitionformat": 1
@@ -171,19 +171,19 @@ curl -X POST "https://${LMS_URL}/webservice/rest/server.php" \
                 ]
               },
               {
-                "id": 21,
+                "id": 30,
                 "sortorder": 5,
-                "description": "🎓 SSH",
+                "description": "SSH",
                 "descriptionformat": 1,
                 "levels": [
                   {
-                    "id": 49,
+                    "id": 69,
                     "score": 0,
                     "definition": "💥",
                     "definitionformat": 1
                   },
                   {
-                    "id": 50,
+                    "id": 70,
                     "score": 1,
                     "definition": "🔗",
                     "definitionformat": 1
