@@ -69,12 +69,11 @@ python3 scripts/analyse.py data/sample.log
 ```bash
 jupyter notebook RAPPORT.ipynb
 ```
-<img width="945" height="215" alt="image" src="https://github.com/user-attachments/assets/4567896a-e1f2-4522-ac54-4cc3d119aad0" />
+<img width="945" height="274" alt="image" src="https://github.com/user-attachments/assets/911bc1dd-5dad-40e2-bd0f-25abeb6167cf" />
 
 Ouvrir le fichier, puis : Kernel → Restart & Run All
-
-<img width="945" height="215" alt="image" src="https://github.com/user-attachments/assets/f65ca5c8-016a-4e51-91a6-ca929aeb2c1d" />
-
+<img width="945" height="719" alt="image" src="https://github.com/user-attachments/assets/01550141-c44c-4de0-9688-2a6301da418a" />
+  
 ---
 
 ## 4. Dépendances
