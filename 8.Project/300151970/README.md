@@ -5,15 +5,15 @@
 `
   ## INFORMATIONS DE L ETUDIANT
 
-  Etudiant   : Babatunde Adissa Fadolle Arouna | 300151970
+  **Etudiant** : Babatunde Adissa Fadolle Arouna | 300151970
   
-  Hiver      : 2026
+  **Hiver** : 2026
   
-  Programme  : Techniques des systemes informatiques
+  **Programme**  : Techniques des systemes informatiques
   
-  Cours      : INF 1102-201 Programmation de systemes
+  **Cours** : INF 1102-201 Programmation de systemes
   
-  Professeur : Brice Robert
+  **Professeur** : Brice Robert
   
 
  ## 1. OBJECTIF DU PROJET
