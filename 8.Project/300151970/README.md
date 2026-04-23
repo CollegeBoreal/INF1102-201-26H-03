@@ -106,6 +106,9 @@ ubuntu@10.7.237.223
   pip3 install -r scripts/requirements.txt
   ```
 
+<img width="1471" height="703" alt="Projet 4" src="https://github.com/user-attachments/assets/6c0ce294-c66e-48ca-b7d6-d8398d198a9b" />
+
+
 <img width="1471" height="703" alt="Projet 4" src="https://github.com/user-attachments/assets/1e390cde-738b-4456-a830-edb83ded7143" />
 
 <img width="1467" height="285" alt="Projet 4-1" src="https://github.com/user-attachments/assets/3d5ffec3-9d23-4167-9c01-da72f6b0264f" />
