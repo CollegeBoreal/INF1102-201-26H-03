@@ -33,7 +33,8 @@ Les technologies utilisees sont :
   - Jupyter Notebook : rapport interactif avec visualisations
 
     
-  2. STRUCTURE DU PROJET
+    
+  ## 2. STRUCTURE DU PROJET
 
 ```
 /300151970/
