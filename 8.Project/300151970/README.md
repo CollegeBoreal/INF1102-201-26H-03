@@ -15,8 +15,7 @@
   Cours      : INF 1102-201 Programmation de systemes
   
   Professeur : Brice Robert
-================================================================
-
+  
 
 ================================================================
   1. OBJECTIF DU PROJET
@@ -37,9 +36,8 @@ Les technologies utilisees sont :
   - Bash (VM Ubuntu) : orchestration du pipeline
   - Jupyter Notebook : rapport interactif avec visualisations
 
-================================================================
+    
   2. STRUCTURE DU PROJET
-================================================================
 
 ```
 /300151970/
@@ -71,9 +69,7 @@ Les technologies utilisees sont :
 ````
 
 
-================================================================
-  3. ENVIRONNEMENT D EXECUTION
-================================================================
+ ## 3. ENVIRONNEMENT D EXECUTION
 
 
   TERMINAL 1 - PowerShell Windows
