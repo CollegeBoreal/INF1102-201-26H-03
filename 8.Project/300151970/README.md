@@ -88,20 +88,6 @@ ubuntu@10.7.237.223
 
  ## 4. INSTALLATION DES DEPENDANCES
 
-
-  Connexion a la VM :
-  
-   ````
-  ssh -i $HOME\.ssh\ma_cle.pk `
--o StrictHostKeyChecking=no `
--o UserKnownHostsFile=NUL `
-ubuntu@10.7.237.223
-````
-
- ## Aller dans le projet :
-  
-    cd ~/300151970
-
  ## Installer les dependances Python :
   
     pip3 install -r scripts/requirements.txt
