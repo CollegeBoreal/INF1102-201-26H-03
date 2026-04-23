@@ -152,6 +152,11 @@ ubuntu@10.7.237.223
     cat output/rapport.txt
     ```
     
+    <img width="948" height="95" alt="Projet 6" src="https://github.com/user-attachments/assets/f92c1ec7-3d14-4204-8d2c-789d20df20ed" />
+
+
+
+
    
   ## ETAPE 6 - Pousser sur Git
 
