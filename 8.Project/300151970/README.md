@@ -89,8 +89,23 @@ ubuntu@10.7.237.223
  ## 4. INSTALLATION DES DEPENDANCES
 
  ## Installer les dependances Python :
-  
-    pip3 install -r scripts/requirements.txt
+ 
+**Mise à jour et installation de python**
+
+ ```bash
+ sudo apt update
+ sudo apt install python3 python3-pip -y
+  ```
+ <img width="1468" height="485" alt="Projet 2" src="https://github.com/user-attachments/assets/cf7c1ef9-75cf-4244-9e0a-8b549d925dd8" />
+ 
+ 
+  ```bash
+  pip3 install -r scripts/requirements.txt
+  ```
+
+ <img width="1471" height="417" alt="Projet 1" src="https://github.com/user-attachments/assets/11a96f46-6068-473a-a9ff-70b2bdb77b8d" />
+
+ 
 
 
   ## Dependances installes :
