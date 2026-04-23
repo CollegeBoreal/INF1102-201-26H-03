@@ -1,0 +1,17 @@
+=== RAPPORT D'ANALYSE DES LOGS ===
+
+Top 3 des IP:
+192.168.1.10 : 4
+192.168.1.11 : 2
+192.168.1.12 : 2
+
+Top 3 des URLs:
+/index.html : 4
+/about.html : 2
+/contact.html : 1
+
+Codes HTTP:
+200 : 7
+404 : 1
+500 : 1
+403 : 1
