@@ -91,7 +91,7 @@ ubuntu@10.7.237.223
  ## Installer les dependances Python :
   
     pip3 install -r scripts/requirements.txt
-    
+
 
   ## Dependances installes :
   
@@ -103,9 +103,8 @@ ubuntu@10.7.237.223
 ```
 
 
-================================================================
-  5. EXECUTION DU PROJET
-================================================================
+  ## 5. EXECUTION DU PROJET
+
 
   ETAPE 1 - Connexion a la VM
   ----------------------------
