@@ -170,37 +170,7 @@ ubuntu@10.7.237.223
   <img width="1487" height="878" alt="final" src="https://github.com/user-attachments/assets/45e94d0f-3884-4828-bb10-fddafc4109c2" />
 
 
-
-  ## 6. CAPTURES D ECRAN ATTENDUES
-
-  **Placez vos captures dans le dossier images/ :**
-  
-
-  1. images/capture_execution.png
-     -> Capture du terminal apres bash scripts/analyse.sh
-     -> Doit montrer les 4 graphiques generes et le rapport
-     
-
-  3. images/capture_rapport.png
-     -> Capture du contenu de output/rapport.txt
-     -> Commande : cat output/rapport.txt
-     
-
-  5. images/capture_graphique_barres.png
-     -> Capture des 2 diagrammes en bandes generes
-     -> Ouvrir les PNG dans un visualiseur si disponible
-     
-
-  7. images/capture_graphique_circulaire.png
-     -> Capture des 2 diagrammes circulaires generes
-     
-
-  9. images/capture_jupyter.png
-     -> Capture du RAPPORT.ipynb ouvert dans le navigateur
-     -> Doit montrer les cellules executees avec les graphiques
-
-
-  ## 7. RESULTATS ATTENDUS
+  ## 6. RESULTATS ATTENDUS
 
   ```
   Apres execution, vous devez voir dans output/ :
