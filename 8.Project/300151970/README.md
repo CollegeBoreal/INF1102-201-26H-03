@@ -98,12 +98,19 @@ ubuntu@10.7.237.223
   ```
  <img width="1471" height="417" alt="Projet 1" src="https://github.com/user-attachments/assets/11a96f46-6068-473a-a9ff-70b2bdb77b8d" />
 
+ <img width="1468" height="485" alt="Projet 2" src="https://github.com/user-attachments/assets/cf7c1ef9-75cf-4244-9e0a-8b549d925dd8" />
+
+ 
 
   ```bash
   pip3 install -r scripts/requirements.txt
   ```
 
- <img width="1468" height="485" alt="Projet 2" src="https://github.com/user-attachments/assets/cf7c1ef9-75cf-4244-9e0a-8b549d925dd8" />
+<img width="1471" height="703" alt="Projet 4" src="https://github.com/user-attachments/assets/1e390cde-738b-4456-a830-edb83ded7143" />
+
+<img width="1467" height="285" alt="Projet 4-1" src="https://github.com/user-attachments/assets/3d5ffec3-9d23-4167-9c01-da72f6b0264f" />
+
+
 
 
   ## Dependances installes :
