@@ -213,6 +213,12 @@ ubuntu@10.7.237.223
     - Interpretation (ville la plus chaude, humide, etc.)
   ```
 
+  <img width="1650" height="900" alt="graph_barres_humidite_vent" src="https://github.com/user-attachments/assets/2276d2bf-8f76-4b0c-aea6-1392a0593a9e" />
+  <img width="1650" height="900" alt="graph_barres_temperatures" src="https://github.com/user-attachments/assets/eda86566-7bcc-4331-9837-3a899daeebab" />
+  <img width="1050" height="1050" alt="graph_circulaire_nuages" src="https://github.com/user-attachments/assets/22eb27dc-a90c-49f2-b4a6-67d4cb87d008" />
+  <img width="1050" height="1050" alt="graph_circulaire_humidite" src="https://github.com/user-attachments/assets/78e568a2-9e16-45df-a396-b60b1d4cf69e" />
+
+
  ##  8. TECHNOLOGIES UTILISEES
 
   ```
