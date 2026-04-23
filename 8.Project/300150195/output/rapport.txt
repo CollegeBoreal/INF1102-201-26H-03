@@ -1,7 +1,7 @@
 ==================================================
   RAPPORT SCRAPER BBC NEWS
 ==================================================
-Date        : 2026-04-23 21:24:57
+Date        : 2026-04-23 22:15:36
 Source      : BBC News RSS
 Titres      : 20
 ==================================================
@@ -12,12 +12,12 @@ Titres      : 20
  2. Police arrest two over alleged drug sales through shops in West Midlands after BBC investigation
  3. Masked Iranian forces appear to seize ships in staged video
  4. Rapist who infected men and boys with HIV jailed
- 5. Proxy attacks in UK a real and growing concern, says PM
+ 5. PM's ex-chief of staff says he doesn't recognise claims about his behaviour
  6. Huge chunk of glacier blocks Everest route in peak climbing season
- 7. US government watchdog to investigate Epstein files release
- 8. Sara Cox replaces Scott Mills on Radio 2 breakfast show
- 9. No rape took place outside Epsom church, say police
-10. Meta says it will cut 8,000 jobs as AI spending grows
+ 7. Proxy attacks in UK a real and growing concern, says PM
+ 8. US government watchdog to investigate Epstein files release
+ 9. Sara Cox replaces Scott Mills on Radio 2 breakfast show
+10. No rape took place outside Epsom church, say police
 11. Which airlines are cancelling flights to the UK - and what can you do?
 12. My rapist deliberately gave me HIV. I was just 15
 13. Lyse Doucet: In Tehran, money is short and a return to war looms over daily life
@@ -27,21 +27,21 @@ Titres      : 20
 17. The boy who vanished: 50 years on from the disappearance of Sandy Davidson
 18. Meet the 19-metre octopus that prowled the seas 100 million years ago
 19. Three men guilty of 'callous' Brighton beach rape
-20. Health data of 500,000 people offered for sale online in China after UK Biobank breach
+20. Meta says it will cut 8,000 jobs as AI spending grows
 
 ==================================================
 🔤 TOP 10 MOTS LES PLUS FRÉQUENTS :
 --------------------------------------------------
+says                 ███ (3)
 bbc                  ██ (2)
 police               ██ (2)
 over                 ██ (2)
-after                ██ (2)
 rapist               ██ (2)
 who                  ██ (2)
 men                  ██ (2)
 hiv                  ██ (2)
-says                 ██ (2)
+about                ██ (2)
 rape                 ██ (2)
 
 ==================================================
-✅ Rapport généré : 2026-04-23 21:24:57
+✅ Rapport généré : 2026-04-23 22:15:36
