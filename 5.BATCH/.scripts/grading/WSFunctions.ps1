@@ -5,7 +5,7 @@
 # =====================================================================
 
 # LMS assignment ID where participation grades will be submitted
-$LMSAssignmentID = 8
+$LMSAssignmentID = 20
 
 # Enables verbose/debug output when set to $true
 $DEBUG = $false
@@ -13,8 +13,8 @@ $DEBUG = $false
 # Explicit emoji → rubric level mapping for DB execution criterion
 # (Used when the emoji represents more than pass/fail)
 $EmojiToScore = @{
-    ":boom:" = 58
-    ":link:" = 59
+    ":boom:" = 229
+    ":link:" = 230
 }
 
 # =====================================================================
@@ -65,7 +65,7 @@ function Get-ParticipationGrades {
             # README.md quantity (fail/silver/gold)
             # ---------------------------------
             $readEmoji = ($cols[3]).Trim()
-            $levels = @(51, 52, 53)  # fail, silver, gold
+            $levels = @(222, 223, 224)  # fail, silver, gold
             $readScore = Get-RubricLevelIdFromReadmeEmoji `
                 -Emoji $readEmoji `
                 -Levels $levels
@@ -76,23 +76,23 @@ function Get-ParticipationGrades {
             $imgEmoji = ($cols[4]).Trim()
             $imgScore = Get-RubricLevelIdFromEmoji `
                 -Emoji $imgEmoji `
-                -FailLevelId 54 `
-                -PassLevelId 55
+                -FailLevelId 225 `
+                -PassLevelId 226
 
             # If README.md exceeds expectations,
             # images folder is implicitly considered present
-            if ($readScore -gt 53) {
-                $imgScore = 55
+            if ($readScore -gt 224) {
+                $imgScore = 226
             }
 
             # ---------------------------------
-            # main.py presence
+            # script_gestion.sh presence
             # ---------------------------------
             $mainEmoji = ($cols[5]).Trim()
             $mainScore = Get-RubricLevelIdFromEmoji `
                 -Emoji $mainEmoji `
-                -FailLevelId 56 `
-                -PassLevelId 57
+                -FailLevelId 227 `
+                -PassLevelId 228
 
             # ---------------------------------
             # Execute SSH Link
@@ -159,10 +159,10 @@ function New-LMSRubricFromEntry {
 
     # Construct rubric payload in LMS criterion order
     $rubric = @(
-        @{ criterionid = 22;  levelid = $Entry.readme;    remark = "Quantité README.md " }
-        @{ criterionid = 23;  levelid = $Entry.image;     remark = "Présence répertoire images " }
-        @{ criterionid = 24;  levelid = $Entry.main;      remark = "Présence code source" }
-        @{ criterionid = 25;  levelid = $Entry.link;      remark = "Présence du devoir sur la VM" }
+        @{ criterionid = 96;  levelid = $Entry.readme;    remark = "Quantité README.md " }
+        @{ criterionid = 97;  levelid = $Entry.image;     remark = "Présence répertoire images " }
+        @{ criterionid = 98;  levelid = $Entry.main;      remark = "Présence code source" }
+        @{ criterionid = 99;  levelid = $Entry.link;      remark = "Présence du devoir sur la VM" }
     )
 
     # Safety check: ensure all level IDs exist
