@@ -100,11 +100,15 @@ ubuntu@10.7.237.223
 
  <img width="1468" height="485" alt="Projet 2" src="https://github.com/user-attachments/assets/cf7c1ef9-75cf-4244-9e0a-8b549d925dd8" />
 
+
+
  
 
   ```bash
   pip3 install -r scripts/requirements.txt
   ```
+
+
 
 <img width="1471" height="703" alt="Projet 4" src="https://github.com/user-attachments/assets/6c0ce294-c66e-48ca-b7d6-d8398d198a9b" />
 
