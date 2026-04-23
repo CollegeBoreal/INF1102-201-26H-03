@@ -1,0 +1,67 @@
+{
+  "villes": [
+    {
+      "name": "Toronto",
+      "dt": 1745157600,
+      "weather": [{"id": 803, "main": "Clouds", "description": "nuageux", "icon": "04d"}],
+      "main": {
+        "temp": 9.4,
+        "feels_like": 6.8,
+        "temp_min": 7.1,
+        "temp_max": 11.2,
+        "pressure": 1012,
+        "humidity": 72
+      },
+      "visibility": 10000,
+      "wind": {"speed": 4.1, "deg": 230},
+      "clouds": {"all": 75},
+      "sys": {
+        "country": "CA",
+        "sunrise": 1745139600,
+        "sunset": 1745187000
+      }
+    },
+    {
+      "name": "Montreal",
+      "dt": 1745157600,
+      "weather": [{"id": 800, "main": "Clear", "description": "ciel degage", "icon": "01d"}],
+      "main": {
+        "temp": 11.2,
+        "feels_like": 9.0,
+        "temp_min": 8.5,
+        "temp_max": 13.8,
+        "pressure": 1015,
+        "humidity": 58
+      },
+      "visibility": 10000,
+      "wind": {"speed": 3.2, "deg": 180},
+      "clouds": {"all": 10},
+      "sys": {
+        "country": "CA",
+        "sunrise": 1745140200,
+        "sunset": 1745187600
+      }
+    },
+    {
+      "name": "Vancouver",
+      "dt": 1745157600,
+      "weather": [{"id": 501, "main": "Rain", "description": "pluie moderee", "icon": "10d"}],
+      "main": {
+        "temp": 13.5,
+        "feels_like": 11.8,
+        "temp_min": 11.0,
+        "temp_max": 15.2,
+        "pressure": 1008,
+        "humidity": 88
+      },
+      "visibility": 8000,
+      "wind": {"speed": 5.8, "deg": 270},
+      "clouds": {"all": 90},
+      "sys": {
+        "country": "CA",
+        "sunrise": 1745145000,
+        "sunset": 1745193000
+      }
+    }
+  ]
+}

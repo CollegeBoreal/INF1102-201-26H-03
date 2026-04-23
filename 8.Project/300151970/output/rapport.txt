@@ -1,0 +1,65 @@
+============================================================
+  RAPPORT METEO - 3 GRANDES VILLES DU CANADA
+============================================================
+  Etudiant   : Babatunde Adissa Fadolle Arouna | 300151970
+  Hiver      : 2026
+  Programme  : Techniques des systemes informatiques
+  Cours      : INF 1102-201 Programmation de systemes
+  Professeur : Brice Robert
+============================================================
+  Date       : 22/04/2026 a 16:00
+============================================================
+
+--- TORONTO ---
+  Condition    : Nuageux
+  Temperature  : 9.4 C  (ressentie : 6.8 C)
+  Min / Max    : 7.1 C / 11.2 C
+  Humidite     : 72 %
+  Pression     : 1012 hPa
+  Vent         : 14.8 km/h
+  Nuages       : 75 %
+  Visibilite   : 10.0 km
+  Lever soleil : 09:00
+  Coucher      : 22:10
+
+--- MONTREAL ---
+  Condition    : Ciel degage
+  Temperature  : 11.2 C  (ressentie : 9.0 C)
+  Min / Max    : 8.5 C / 13.8 C
+  Humidite     : 58 %
+  Pression     : 1015 hPa
+  Vent         : 11.5 km/h
+  Nuages       : 10 %
+  Visibilite   : 10.0 km
+  Lever soleil : 09:10
+  Coucher      : 22:20
+
+--- VANCOUVER ---
+  Condition    : Pluie moderee
+  Temperature  : 13.5 C  (ressentie : 11.8 C)
+  Min / Max    : 11.0 C / 15.2 C
+  Humidite     : 88 %
+  Pression     : 1008 hPa
+  Vent         : 20.9 km/h
+  Nuages       : 90 %
+  Visibilite   : 8.0 km
+  Lever soleil : 10:30
+  Coucher      : 23:50
+
+--- GRAPHIQUES GENERES ---
+  1. graph_barres_temperatures.png    (diagramme en bandes)
+  2. graph_barres_humidite_vent.png   (diagramme en bandes)
+  3. graph_circulaire_humidite.png    (diagramme circulaire)
+  4. graph_circulaire_nuages.png      (diagramme circulaire)
+
+--- INTERPRETATION ---
+  Ville la plus chaude   : Vancouver (13.5 C)
+  Ville la plus froide   : Toronto (9.4 C)
+  Ville la plus humide   : Vancouver (88 %)
+  Ville la plus nuageuse : Vancouver (90 %)
+  Vent le plus fort      : Vancouver (20.9 km/h)
+
+============================================================
+  Source : OpenWeatherMap (api.openweathermap.org)
+  Genere automatiquement par analyse.py
+============================================================
