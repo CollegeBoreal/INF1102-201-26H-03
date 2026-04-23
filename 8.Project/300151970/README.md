@@ -158,6 +158,9 @@ ubuntu@10.7.237.223
     ls output/
     cat output/rapport.txt
     ```
+
+    <img width="948" height="95" alt="Projet 6" /assets/a008681b-1b6f-4233-9cd4-4f7482fc1836" />
+
     
     
 
