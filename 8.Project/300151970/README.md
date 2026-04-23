@@ -16,10 +16,7 @@
   Professeur : Brice Robert
   
 
-================================================================
-  1. OBJECTIF DU PROJET
-================================================================
-
+ ## 1. OBJECTIF DU PROJET
 
 Ce projet recupere automatiquement les donnees meteo de trois
 grandes villes canadiennes (Toronto, Montreal, Vancouver) via
