@@ -69,7 +69,7 @@ Les technologies utilisees sont :
  ## 3. ENVIRONNEMENT D EXECUTION
 
 
-  TERMINAL 1 - PowerShell Windows
+  TERMINAL - PowerShell Windows
   --------------------------------
   
   Utilise pour :
@@ -86,39 +86,35 @@ Les technologies utilisees sont :
 ubuntu@10.7.237.223
 ````
 
-  TERMINAL 2 - VM Ubuntu 22.04 via SSH
-  --------------------------------------
-  
-  Utilise pour :
-    - Executer analyse.sh et analyse.py
-    - Generer les graphiques et le rapport texte
-    - Gerer Git (add, commit, push)
-    - Lancer Jupyter Notebook
+ ## 4. INSTALLATION DES DEPENDANCES
 
-  Chemin du projet sur la VM :
-    ~/300151970/
-
-================================================================
-  4. INSTALLATION DES DEPENDANCES
-================================================================
 
   Connexion a la VM :
-    ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.223
+  
+   ````
+  ssh -i $HOME\.ssh\ma_cle.pk `
+-o StrictHostKeyChecking=no `
+-o UserKnownHostsFile=NUL `
+ubuntu@10.7.237.223
+````
 
-  Aller dans le projet :
+ ## Aller dans le projet :
+  
     cd ~/300151970
 
-  Installer les dependances Python :
+ ## Installer les dependances Python :
   
     pip3 install -r scripts/requirements.txt
+    
 
-  Dependances installes :
+  ## Dependances installes :
   
+  ```bash
     - matplotlib >= 3.5.0  : generation des graphiques
     - requests  >= 2.28.0  : appels HTTP (optionnel pour API)
     - numpy                 : calculs numeriques pour graphiques
     - python3               : interpretatation des scripts
-
+```
 
 
 ================================================================
