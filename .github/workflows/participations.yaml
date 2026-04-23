@@ -1,114 +1,77 @@
 name: Participations
 
-on: [push]
+on:
+  push:
 
 jobs:
   presence:
     name: Vérification de la participation
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      # ------------------------------------------------------------------
+      # Checkout repository
+      # ------------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Run PowerShell script
+      # ------------------------------------------------------------------
+      # Push grades to LMS
+      # ------------------------------------------------------------------
+      - name: Run PowerShell script (LMS sync)
         shell: pwsh
         env:
-          LMS_URL: ${{ secrets.LMS_URL }}            # GitHub variable
-          API_SYNC_TOKEN: ${{ secrets.API_SYNC_TOKEN }} # GitHub secret
-        run: pwsh .scripts/push_grades.ps1
+          LMS_URL: ${{ secrets.LMS_URL }}
+          API_SYNC_TOKEN: ${{ secrets.API_SYNC_TOKEN }}
+        run: |
+          pwsh .scripts/push_grades.ps1
 
+      # ------------------------------------------------------------------
+      # Evaluate all chapters
+      # ------------------------------------------------------------------
       - name: Évaluer les chapitres
         shell: pwsh
         run: |
-          ##
-          ## Évaluation du chapitre 0.PlanDeCours
-          ##
-          Write-Host "Evaluating chapter 0.PlanDeCours Participation"
-          Set-Location 0.PlanDeCours
-          pwsh .scripts/run.ps1
-          Set-Location ..
+          $chapters = @(
+            "0.PlanDeCours",
+            "1.Programmation/1.IDE",
+            "1.Programmation/2.Jupyter",
+            "3.IaC",
+            "4.CRON-TASK",
+            "5.BATCH",
+            "6.PWSH",
+            "7.REGEX",
+            "8.Project",
+            "9.Ansible"
+          )
 
-          ##
-          ## Évaluation du chapitre 1.IDE
-          ##
-          Write-Host "Evaluating chapter 1.IDE Participation"
-          Set-Location 1.Programmation/1.IDE
-          pwsh .scripts/run.ps1
-          Set-Location ../..
+          foreach ($chapter in $chapters) {
+              Write-Host "--------------------------------------------"
+              Write-Host "Evaluating chapter $chapter Participation"
+              Push-Location $chapter
+              pwsh .scripts/run.ps1
+              Pop-Location
+          }
 
-          ##
-          ## Évaluation du chapitre 2.Jupyter
-          ##
-          Write-Host "Evaluating chapter 2.Jupyter Participation"
-          Set-Location 1.Programmation/2.Jupyter
-          pwsh .scripts/run.ps1
-          Set-Location ../..
-
-          ##
-          ## Évaluation du chapitre 3.IaC
-          ##
-          Write-Host "Evaluating chapter 3.IaC Participation"
-          Set-Location 3.IaC
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 4.CRON-TASK
-          ##
-          Write-Host "Evaluating chapter 4.CRON-TASK Participation"
-          Set-Location 4.CRON-TASK
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 5.BATCH
-          ##
-          Write-Host "Evaluating chapter 5.BATCH Participation"
-          Set-Location 5.BATCH
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 6.PWSH
-          ##
-          Write-Host "Evaluating chapter 6.PWSH Participation"
-          Set-Location 6.PWSH
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 7.REGEX
-          ##
-          Write-Host "Evaluating chapter 7.REGEX Participation"
-          Set-Location 7.REGEX
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 8.Project
-          ##
-          Write-Host "Evaluating chapter 8.Project Participation"
-          Set-Location 8.Project
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
-          ##
-          ## Évaluation du chapitre 9.Ansible
-          ##
-          Write-Host "Evaluating chapter 9.Ansible Participation"
-          Set-Location 9.Ansible
-          pwsh .scripts/run.ps1
-          Set-Location ..
-
+      # ------------------------------------------------------------------
+      # Commit generated files
+      # ------------------------------------------------------------------
       - name: Commit files
         shell: pwsh
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Vérification de la participation" -a
 
+          if (git status --porcelain) {
+              git commit -am "Vérification de la participation"
+          } else {
+              Write-Host "No changes to commit"
+          }
+
+      # ------------------------------------------------------------------
+      # Push changes back to repository
+      # ------------------------------------------------------------------
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
