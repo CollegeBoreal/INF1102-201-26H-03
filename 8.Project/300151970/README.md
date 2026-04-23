@@ -3,9 +3,8 @@
 # INF 1102-201 | Programmation de systemes | Hiver 2026
 
 `
-================================================================
-  INFORMATIONS DE L ETUDIANT
-================================================================
+  ## INFORMATIONS DE L ETUDIANT
+
   Etudiant   : Babatunde Adissa Fadolle Arouna | 300151970
   
   Hiver      : 2026
