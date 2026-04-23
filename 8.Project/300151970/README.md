@@ -134,11 +134,18 @@ ubuntu@10.7.237.223
     bash scripts/analyse.sh
   ```
 
-    Ce script fait automatiquement :
+<img width="1417" height="712" alt="Projet 5" src="https://github.com/user-attachments/assets/d3bd5839-27cf-42dd-ab96-f85398e9023a" />
+<img width="1460" height="552" alt="Projet 5-1" src="https://github.com/user-attachments/assets/75d0f796-59d2-419e-8076-f82f46282328" />
+<img width="1466" height="585" alt="Projet 5-2" src="https://github.com/user-attachments/assets/8408ec34-824f-4ea2-a2ef-7328554b190e" />
+<img width="1157" height="622" alt="Projet 5-3" src="https://github.com/user-attachments/assets/09609c42-9795-4094-a1ca-87764b412a55" />
+
+
+## Ce script fait automatiquement :
       [1/4] Verifie que le fichier JSON existe
       [2/4] Cree le dossier output/ si absent
       [3/4] Installe les dependances Python
       [4/4] Lance analyse.py pour l analyse et les graphiques
+      
 
   ETAPE 4 - Ou lancer Python directement
   ----------------------------------------
@@ -152,7 +159,7 @@ ubuntu@10.7.237.223
     cat output/rapport.txt
     ```
     
-    <img width="948" height="95" alt="Projet 6" src="https://github.com/user-attachments/assets/f92c1ec7-3d14-4204-8d2c-789d20df20ed" />
+    
 
 
 
