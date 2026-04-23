@@ -30,7 +30,7 @@
 
 |:hash:| Boréal :id:                | README.md | images | main.tf | :link: IP |
 |------|----------------------------|-----------|--------|---------|------------|
-| 0 | [300150195](../300150195/README.md) [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :2nd_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.214 |
+| 0 | [300150195](../300150195/README.md) [<image src='https://avatars0.githubusercontent.com/u/211596474?s=460&v=4' width=20 height=20></image>](https://github.com/amelzourane) | :x: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.214 |
 | 1 | [300150385](../300150385/README.md) [<image src='https://avatars0.githubusercontent.com/u/205994785?s=460&v=4' width=20 height=20></image>](https://github.com/belka1996) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.215 |
 | 2 | [300150416](../300150416/README.md) [<image src='https://avatars0.githubusercontent.com/u/211596263?s=460&v=4' width=20 height=20></image>](https://github.com/hachemsouyadi) | :2nd_place_medal: | :x: | :heavy_check_mark: | 10.7.237.216 |
 | 3 | [300150433](../300150433/README.md) [<image src='https://avatars0.githubusercontent.com/u/211743410?s=460&v=4' width=20 height=20></image>](https://github.com/zakariadjellouli) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.217 |
@@ -40,4 +40,4 @@
 | 7 | [300151354](../300151354/README.md) [<image src='https://avatars0.githubusercontent.com/u/212047331?s=460&v=4' width=20 height=20></image>](https://github.com/massinissamakoudi) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.221 |
 | 8 | [300151607](../300151607/README.md) [<image src='https://avatars0.githubusercontent.com/u/205996126?s=460&v=4' width=20 height=20></image>](https://github.com/oussama-rgb-art) | :x: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.222 |
 | 9 | [300151970](../300151970/README.md) [<image src='https://avatars0.githubusercontent.com/u/212268227?s=460&v=4' width=20 height=20></image>](https://github.com/adissa29) | :1st_place_medal: | :heavy_check_mark: | :heavy_check_mark: | 10.7.237.223 |
-| :abacus: | \$\\frac{9}{10}\$ = 90% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 9 |
+| :abacus: | \$\\frac{8}{10}\$ = 80% | \$\displaystyle\sum_{i=1}^{10} s_i\$ = 8 |

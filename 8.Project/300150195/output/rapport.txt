@@ -1,47 +1,47 @@
 ==================================================
   RAPPORT SCRAPER BBC NEWS
 ==================================================
-Date        : 2026-04-07 21:36:16
+Date        : 2026-04-23 21:02:12
 Source      : BBC News RSS
 Titres      : 20
 ==================================================
 
 📰 TITRES RÉCUPÉRÉS :
 --------------------------------------------------
- 1. Watch: Iranians form human chains at bridges and power plants
- 2. Wireless Festival cancelled after Kanye West blocked from coming to UK
- 3. Has Artemis II shown we can land on the Moon again?
- 4. Bill Gates set to testify before US Congress in Epstein investigation
- 5. Strictly star will not face rape charges, police say
- 6. Plan 2 student loan interest rates capped at 6% in England
- 7. Dad, 84, 'under awful stress' as son's care package set to end
- 8. Temperatures hit 25C making it the warmest day in the UK for six months
- 9. One gunman killed and two injured in shooting at Israeli consulate in Istanbul 
-10. Ex-footballer Joey Barton denies golf club attack
-11. Tracking recent US-Israeli strikes on Iranian infrastructure
-12. What the US military could do if Iran fails to meet Trump's ultimatum   
-13. Two major airlines cut flights and hike fares as fuel prices surge
-14. Oil price fluctuates ahead of Trump's Iran deal deadline
-15. Watch: Artemis II's historic lunar flyby... in 90 seconds
-16. Kanye West controversies - how did we get here?
-17. My great-aunt shot Mussolini in the face
-18. Watch: Mum of twins who says home was bombed in Lebanon speaks to BBC
-19. China is winning one AI race, the US another - but either might pull ahead
-20. Fake Australian, Chinese and Brazilian police stations: BBC goes inside a seized scam compound
+ 1. Trump tells BBC that King's visit could 'absolutely' help repair relations with UK
+ 2. Police arrest two over alleged drug sales through shops in West Midlands after BBC investigation
+ 3. Masked Iranian forces appear to seize ships in staged video
+ 4. Rapist who infected men and boys with HIV jailed
+ 5. Proxy attacks in UK a real and growing concern, says PM
+ 6. Huge chunk of glacier blocks Everest route in peak climbing season
+ 7. US government watchdog to investigate Epstein files release
+ 8. Sara Cox replaces Scott Mills on Radio 2 breakfast show
+ 9. No rape took place outside Epsom church, say police
+10. Meta says it will cut 8,000 jobs as AI spending grows
+11. Which airlines are cancelling flights to the UK - and what can you do?
+12. My rapist deliberately gave me HIV. I was just 15
+13. Lyse Doucet: In Tehran, money is short and a return to war looms over daily life
+14. Key takeaways from senior official on Mandelson vetting
+15. Watch: Girl describes finding rare Mexican axolotl in Wales
+16. A tiny island church where couples worry about high tide making them late
+17. The boy who vanished: 50 years on from the disappearance of Sandy Davidson
+18. Meet the 19-metre octopus that prowled the seas 100 million years ago
+19. Three men guilty of 'callous' Brighton beach rape
+20. Health data of 500,000 people offered for sale online in China after UK Biobank breach
 
 ==================================================
 🔤 TOP 10 MOTS LES PLUS FRÉQUENTS :
 --------------------------------------------------
-watch                ███ (3)
-kanye                ██ (2)
-west                 ██ (2)
-artemis              ██ (2)
-set                  ██ (2)
-face                 ██ (2)
+bbc                  ██ (2)
 police               ██ (2)
-one                  ██ (2)
-two                  ██ (2)
-israeli              ██ (2)
+over                 ██ (2)
+after                ██ (2)
+rapist               ██ (2)
+who                  ██ (2)
+men                  ██ (2)
+hiv                  ██ (2)
+says                 ██ (2)
+rape                 ██ (2)
 
 ==================================================
-✅ Rapport généré : 2026-04-07 21:36:16
+✅ Rapport généré : 2026-04-23 21:02:12
