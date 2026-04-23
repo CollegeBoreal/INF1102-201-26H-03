@@ -146,19 +146,17 @@ ubuntu@10.7.237.223
 
   ETAPE 5 - Verifier les fichiers generes
   ----------------------------------------
+    
+    ``` bash
     ls output/
     cat output/rapport.txt
+    ````
+    <img width="948" height="95" alt="Projet 6" src="https://github.com/user-attachments/assets/69fbda78-8d8e-4af4-ab01-1e8490f60e89" />
+    <img width="1478" height="412" alt="Projet 6-2" src="https://github.com/user-attachments/assets/36bfbbcf-f49a-40a8-92c3-41d676945747" />
+    <img width="1327" height="568" alt="Projet 6-1" src="https://github.com/user-attachments/assets/c910af76-012a-4a71-ac54-b958fbf931f7" />
 
-  ETAPE 6 - Ouvrir le Notebook Jupyter
-  --------------------------------------
-    jupyter notebook RAPPORT.ipynb
 
-    NOTE : Si vous etes sur la VM sans interface graphique,
-    utilisez l option --no-browser et copiez le lien affiche
-    dans votre navigateur Windows.
-    
-
-  ETAPE 7 - Pousser sur Git
+  ## ETAPE 6 - Pousser sur Git
 
   ```
     git add .
