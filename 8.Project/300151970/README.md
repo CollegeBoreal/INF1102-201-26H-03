@@ -158,15 +158,6 @@ ubuntu@10.7.237.223
     ls output/
     cat output/rapport.txt
     ```
-
-    <img width="948" height="95" alt="Projet 6" /assets/a008681b-1b6f-4233-9cd4-4f7482fc1836" />
-
-    
-    
-
-
-
-
    
   ## ETAPE 6 - Pousser sur Git
 
@@ -175,6 +166,9 @@ ubuntu@10.7.237.223
     git commit -m "Projet 1 - Suivi meteo - Babatunde Adissa Fadolle Arouna 300151970"
     git push
 ```
+
+  <img width="1487" height="878" alt="final" src="https://github.com/user-attachments/assets/45e94d0f-3884-4828-bb10-fddafc4109c2" />
+
 
 
   ## 6. CAPTURES D ECRAN ATTENDUES
