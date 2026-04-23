@@ -105,18 +105,11 @@ ubuntu@10.7.237.223
 
   ## 5. EXECUTION DU PROJET
 
-
-  ETAPE 1 - Connexion a la VM
-  ----------------------------
-    ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.223
-
-  ETAPE 2 - Aller dans le projet
-  --------------------------------
-    cd ~/300151970
-
-  ETAPE 3 - Lancer le script Bash principal
-  ------------------------------------------
+  **ETAPE 3** - Lancer le script Bash principal
+  
+   ```bash
     bash scripts/analyse.sh
+  ```
 
     Ce script fait automatiquement :
       [1/4] Verifie que le fichier JSON existe
@@ -140,42 +133,49 @@ ubuntu@10.7.237.223
     NOTE : Si vous etes sur la VM sans interface graphique,
     utilisez l option --no-browser et copiez le lien affiche
     dans votre navigateur Windows.
+    
 
   ETAPE 7 - Pousser sur Git
-  --------------------------
+
+  ```
     git add .
     git commit -m "Projet 1 - Suivi meteo - Babatunde Adissa Fadolle Arouna 300151970"
     git push
+```
 
-================================================================
-  6. CAPTURES D ECRAN ATTENDUES
-================================================================
 
-  Placez vos captures dans le dossier images/ :
+  ## 6. CAPTURES D ECRAN ATTENDUES
+
+  **Placez vos captures dans le dossier images/ :**
+  
 
   1. images/capture_execution.png
      -> Capture du terminal apres bash scripts/analyse.sh
      -> Doit montrer les 4 graphiques generes et le rapport
+     
 
-  2. images/capture_rapport.png
+  3. images/capture_rapport.png
      -> Capture du contenu de output/rapport.txt
      -> Commande : cat output/rapport.txt
+     
 
-  3. images/capture_graphique_barres.png
+  5. images/capture_graphique_barres.png
      -> Capture des 2 diagrammes en bandes generes
      -> Ouvrir les PNG dans un visualiseur si disponible
+     
 
-  4. images/capture_graphique_circulaire.png
+  7. images/capture_graphique_circulaire.png
      -> Capture des 2 diagrammes circulaires generes
+     
 
-  5. images/capture_jupyter.png
+  9. images/capture_jupyter.png
      -> Capture du RAPPORT.ipynb ouvert dans le navigateur
      -> Doit montrer les cellules executees avec les graphiques
 
-================================================================
-  7. RESULTATS ATTENDUS
-================================================================
 
+  ## 7. RESULTATS ATTENDUS
+
+  ```
   Apres execution, vous devez voir dans output/ :
     rapport.txt                    -> rapport texte complet
     graph_barres_temperatures.png  -> 4 barres par ville (temp)
@@ -188,11 +188,11 @@ ubuntu@10.7.237.223
     - Details meteo pour chaque ville (temp, humidite, vent...)
     - Liste des graphiques generes
     - Interpretation (ville la plus chaude, humide, etc.)
+  ```
 
-================================================================
-  8. TECHNOLOGIES UTILISEES
-================================================================
+ ##  8. TECHNOLOGIES UTILISEES
 
+  ```
   PowerShell (Windows)
     - Invoke-RestMethod : appel API REST OpenWeatherMap
     - ConvertTo-Json    : conversion en JSON
@@ -214,14 +214,15 @@ ubuntu@10.7.237.223
     - Visualisation interactive des donnees
     - Documentation avec cellules Markdown
     - Export des graphiques
+  ```
 
-================================================================
-  9. SOURCE DES DONNEES
-================================================================
+  ## 9. SOURCE DES DONNEES
 
+  ```
   API      : OpenWeatherMap
   URL      : https://openweathermap.org/api
   Endpoint : http://api.openweathermap.org/data/2.5/weather
   Params   : q={ville}&appid={cle}&units=metric&lang=fr
   Format   : JSON
   Limite   : 60 appels/minute (plan gratuit)
+```
