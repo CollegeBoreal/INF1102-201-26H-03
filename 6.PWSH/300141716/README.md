@@ -1,100 +1,105 @@
-🧪 Laboratoire DevOps — Script PowerShell (Linux)
+# 🚀 Laboratoire DevOps — Déploiement Nginx avec Ansible
 
-📌 Aperçu
+## 📌 Aperçu
 
+Ce laboratoire consiste à automatiser le déploiement d’un serveur web avec Ansible sous Linux (Ubuntu).
 
+Le playbook permet d’installer Nginx, de déployer une page HTML personnalisée et de démarrer automatiquement le service.
 
-Ce laboratoire consiste à créer un script PowerShell sous Linux (Ubuntu) permettant d’automatiser des vérifications système.
+---
 
-Le script collecte des informations sur le système (CPU, mémoire, disque), teste la connexion SSH et génère des rapports en format TXT et JSON.
-
-
-
-🎯 Objectifs
-
-
+## 🎯 Objectifs
 
 À la fin de ce laboratoire, j’ai été capable de :
 
+* Créer un playbook Ansible fonctionnel
+* Automatiser le déploiement d’un serveur web
+* Installer et configurer Nginx
+* Déployer une page HTML personnalisée
+* Vérifier le fonctionnement du serveur via HTTP
+* Comprendre l’approche Infrastructure as Code (IaC)
 
+---
 
-Créer un script PowerShell fonctionnel sous Linux
+## 🗂️ Structure du projet</br>
 
-Automatiser des tâches système
-
-Surveiller les ressources (CPU, mémoire, disque)
-
-Tester la connectivité SSH
-
-Générer des rapports en TXT et JSON
-
-📁 Structure du projet
-
-devops-batch/
-
-│── devops\_batch.ps1
-
-│── rapport.txt
-
-│── rapport.json
-
+```text
+300141716/
+│── inventory.ini
+│── playbook.yml
+│── files/
+│   └── index.html
 │── images/
+```
 
-⚙️ Script PowerShell
+<img width="50%" height="50%" src="images/structure.png" />
 
+---
 
+## ▶️ Test de connexion Ansible</br>
 
-📸 Script :
+Commande :</br>
 
+```bash
+ansible -i inventory.ini web -m ping
+```
 
+<img width="50%" height="50%" src="images/ping.png" />
 
-!\[Script](images/script.png)
+---
 
-▶️ Exécution du script
+## ▶️ Exécution du playbook</br>
 
-pwsh devops\_batch.ps1
+Commande :</br>
 
+```bash
+ansible-playbook -i inventory.ini playbook.yml
+```
 
+<img width="50%" height="50%" src="images/playbook.png" />
 
-📸 Exécution :
+---
 
+## 🌐 Vérification du serveur web</br>
 
+Commande :</br>
 
-!\[Execution](images/run.png)
+```bash
+curl http://localhost
+```
 
-📄 Résultat TXT
+<img width="50%" height="50%" src="images/result.png" />
 
+---
 
+## 🚀 Résultat
 
-📸 rapport.txt :
+Le déploiement fonctionne correctement et permet :
 
+* d’installer automatiquement Nginx
+* de configurer un serveur web
+* de déployer une page HTML personnalisée
+* de démarrer le service automatiquement
+* de vérifier l’accès via HTTP
 
+---
 
-!\[TXT](images/result\_txt.png)
+## 🧠 Avantages d’Ansible
 
-📄 Résultat JSON
+⚡ Automatisation rapide : déploie des services en quelques commandes
 
+🔐 Connexion sécurisée : utilise SSH sans agent
 
+🧩 Idempotence : évite les changements inutiles
 
-📸 rapport.json :
+🌍 Infrastructure as Code : configuration reproductible
 
+📦 Gestion simple : pas besoin d’installation côté client
 
+---
 
-!\[JSON](images/result\_json.png)
+## 💡 Conclusion
 
-🚀 Résultat
+Ce laboratoire montre que Ansible permet d’automatiser efficacement le déploiement et la configuration des serveurs.
 
-
-
-Le script fonctionne correctement et permet :
-
-
-
-d’automatiser la collecte d’informations système
-
-de générer des rapports lisibles
-
-de vérifier le service SSH
-
-d’utiliser PowerShell dans un environnement Linux
-
+Grâce à cette approche, l’infrastructure devient rapide à déployer, reproductible et fiable.
