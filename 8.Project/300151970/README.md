@@ -2,20 +2,26 @@
 
 # INF 1102-201 | Programmation de systemes | Hiver 2026
 
-````
+`
 ================================================================
   INFORMATIONS DE L ETUDIANT
 ================================================================
   Etudiant   : Babatunde Adissa Fadolle Arouna | 300151970
+  
   Hiver      : 2026
+  
   Programme  : Techniques des systemes informatiques
+  
   Cours      : INF 1102-201 Programmation de systemes
+  
   Professeur : Brice Robert
 ================================================================
-````
+
+
 ================================================================
   1. OBJECTIF DU PROJET
 ================================================================
+
 
 Ce projet recupere automatiquement les donnees meteo de trois
 grandes villes canadiennes (Toronto, Montreal, Vancouver) via
@@ -35,7 +41,8 @@ Les technologies utilisees sont :
   2. STRUCTURE DU PROJET
 ================================================================
 
-~/300151970/
+```
+/300151970/
 |
 |-- scripts/
 |   |-- analyse.ps1       # PowerShell : appelle l API OpenWeatherMap
@@ -61,23 +68,34 @@ Les technologies utilisees sont :
 |
 |-- RAPPORT.ipynb    # Notebook Jupyter avec analyses et visualisations
 `-- README.md        # Ce fichier - instructions completes
+````
+
 
 ================================================================
   3. ENVIRONNEMENT D EXECUTION
 ================================================================
 
+
   TERMINAL 1 - PowerShell Windows
   --------------------------------
+  
   Utilise pour :
     - Se connecter a la VM via SSH
     - Executer analyse.ps1 pour appeler l API OpenWeatherMap
     - Sauvegarder les donnees dans data/meteo_raw.json
 
-  Connexion SSH :
-    ssh -i ~/.ssh/ma_cle.pk ubuntu@10.7.237.223
+  ## Connexion SSH :
+
+  ````
+  ssh -i $HOME\.ssh\ma_cle.pk `
+-o StrictHostKeyChecking=no `
+-o UserKnownHostsFile=NUL `
+ubuntu@10.7.237.223
+````
 
   TERMINAL 2 - VM Ubuntu 22.04 via SSH
   --------------------------------------
+  
   Utilise pour :
     - Executer analyse.sh et analyse.py
     - Generer les graphiques et le rapport texte
@@ -98,16 +116,17 @@ Les technologies utilisees sont :
     cd ~/300151970
 
   Installer les dependances Python :
+  
     pip3 install -r scripts/requirements.txt
 
   Dependances installes :
+  
     - matplotlib >= 3.5.0  : generation des graphiques
     - requests  >= 2.28.0  : appels HTTP (optionnel pour API)
     - numpy                 : calculs numeriques pour graphiques
     - python3               : interpretatation des scripts
 
-  Verifier les installations :
-    pip3 list | grep -E "matplotlib|requests|numpy"
+
 
 ================================================================
   5. EXECUTION DU PROJET
