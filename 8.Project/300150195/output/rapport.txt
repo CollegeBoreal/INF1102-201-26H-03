@@ -1,7 +1,7 @@
 ==================================================
   RAPPORT SCRAPER BBC NEWS
 ==================================================
-Date        : 2026-04-24 02:01:12
+Date        : 2026-04-24 02:36:33
 Source      : BBC News RSS
 Titres      : 20
 ==================================================
@@ -21,10 +21,10 @@ Titres      : 20
 11. No rape took place outside Epsom church, say police
 12. Weekly quiz: What did Madonna lose at Coachella?
 13. Headscarf with a beret: Muslim designers showcase floral dresses and boxy streetwear in Paris
-14. My rapist deliberately gave me HIV. I was just 15
-15. 'Missing scientist' cases have stoked wild speculation. For loved ones, the theories are hurtful
-16. Which airlines are cancelling flights to the UK - and what can you do?
-17. Lyse Doucet: In Tehran, money is short and a return to war looms over daily life
+14. The Papers: 'Stop sharing data with China' and 'Shoot and kill'
+15. My rapist deliberately gave me HIV. I was just 15
+16. 'Missing scientist' cases have stoked wild speculation. For loved ones, the theories are hurtful
+17. Which airlines are cancelling flights to the UK - and what can you do?
 18. Watch: Girl describes finding rare Mexican axolotl in Wales
 19. US government watchdog to investigate Epstein files release
 20. Three men guilty of 'callous' Brighton beach rape
@@ -44,4 +44,4 @@ visit                █ (1)
 could                █ (1)
 
 ==================================================
-✅ Rapport généré : 2026-04-24 02:01:12
+✅ Rapport généré : 2026-04-24 02:36:33
