@@ -13,6 +13,7 @@ Ce projet consiste à surveiller la disponibilité d'un site web et mesurer le t
 - Débogage
 
 ## 📂 Structure du projet
+```
 300141625/
 ├── scripts/
 │   ├── analyse.sh
@@ -24,6 +25,7 @@ Ce projet consiste à surveiller la disponibilité d'un site web et mesurer le t
 │   └── rapport.txt
 ├── RAPPORT.ipynb
 └── README.md
+```
 ## 📸 Étapes effectuées sur Ubuntu
 
 ### 1. Exécution du script Bash
