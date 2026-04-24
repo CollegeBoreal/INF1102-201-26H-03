@@ -1,7 +1,7 @@
 ==================================================
   RAPPORT SCRAPER BBC NEWS
 ==================================================
-Date        : 2026-04-23 22:27:25
+Date        : 2026-04-24 02:01:12
 Source      : BBC News RSS
 Titres      : 20
 ==================================================
@@ -9,39 +9,39 @@ Titres      : 20
 📰 TITRES RÉCUPÉRÉS :
 --------------------------------------------------
  1. Trump tells BBC that King's visit could 'absolutely' help repair relations with UK
- 2. Police arrest two over alleged drug sales through shops in West Midlands after BBC investigation
- 3. Masked Iranian forces appear to seize ships in staged video
- 4. Rapist who infected men and boys with HIV jailed
- 5. PM's ex-chief of staff says he doesn't recognise claims about his behaviour
- 6. Huge chunk of glacier blocks Everest route in peak climbing season
- 7. Proxy attacks in UK a real and growing concern, says PM
- 8. US government watchdog to investigate Epstein files release
- 9. Sara Cox replaces Scott Mills on Radio 2 breakfast show
-10. No rape took place outside Epsom church, say police
-11. Which airlines are cancelling flights to the UK - and what can you do?
-12. My rapist deliberately gave me HIV. I was just 15
-13. Lyse Doucet: In Tehran, money is short and a return to war looms over daily life
-14. Key takeaways from senior official on Mandelson vetting
-15. Watch: Girl describes finding rare Mexican axolotl in Wales
-16. A tiny island church where couples worry about high tide making them late
-17. The boy who vanished: 50 years on from the disappearance of Sandy Davidson
-18. Meet the 19-metre octopus that prowled the seas 100 million years ago
-19. Three men guilty of 'callous' Brighton beach rape
-20. Meta says it will cut 8,000 jobs as AI spending grows
+ 2. Assisted dying bill to run out of time as Lords hold final debate
+ 3. Ringo Starr: 'I made all my mistakes on stage'
+ 4. Stock markets are too high and set to fall, says Bank of England deputy
+ 5. Southport dads: 'Running for our girls has made us like brothers'
+ 6. PM's ex-chief of staff says he doesn't recognise claims about his behaviour
+ 7. US soldier charged after winning $400,000 betting on removal of Maduro
+ 8. Huge chunk of glacier blocks Everest route in peak climbing season
+ 9. Proxy attacks in UK a real and growing concern, says PM
+10. Masked Iranian forces appear to seize ships in staged video
+11. No rape took place outside Epsom church, say police
+12. Weekly quiz: What did Madonna lose at Coachella?
+13. Headscarf with a beret: Muslim designers showcase floral dresses and boxy streetwear in Paris
+14. My rapist deliberately gave me HIV. I was just 15
+15. 'Missing scientist' cases have stoked wild speculation. For loved ones, the theories are hurtful
+16. Which airlines are cancelling flights to the UK - and what can you do?
+17. Lyse Doucet: In Tehran, money is short and a return to war looms over daily life
+18. Watch: Girl describes finding rare Mexican axolotl in Wales
+19. US government watchdog to investigate Epstein files release
+20. Three men guilty of 'callous' Brighton beach rape
 
 ==================================================
 🔤 TOP 10 MOTS LES PLUS FRÉQUENTS :
 --------------------------------------------------
 says                 ███ (3)
-bbc                  ██ (2)
-police               ██ (2)
-over                 ██ (2)
-rapist               ██ (2)
-who                  ██ (2)
-men                  ██ (2)
-hiv                  ██ (2)
-about                ██ (2)
+made                 ██ (2)
 rape                 ██ (2)
+what                 ██ (2)
+trump                █ (1)
+tells                █ (1)
+bbc                  █ (1)
+king                 █ (1)
+visit                █ (1)
+could                █ (1)
 
 ==================================================
-✅ Rapport généré : 2026-04-23 22:27:25
+✅ Rapport généré : 2026-04-24 02:01:12
